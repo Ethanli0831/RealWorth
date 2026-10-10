@@ -7,7 +7,11 @@ scorecard, and historical returns in inflation regimes. The website uses
 plain HTML, CSS, vanilla JavaScript and Chart.js from a pinned CDN; there is no
 frontend build or API server. Educational research, not financial advice.
 
-**Website:** https://ethanli0831.github.io/RealWorth/
+**Website address after Pages activation:** https://ethanli0831.github.io/RealWorth/
+
+GitHub Pages is awaiting the repository owner's `main /docs` setting. Current
+integration and workflow tokens cannot create the Pages site (HTTP 403). The
+dashboard works locally; this address is not yet a verified live deployment.
 
 **Source:** https://github.com/Ethanli0831/RealWorth
 
@@ -265,9 +269,12 @@ staleness. Regime thresholds change as the sample expands. The sample covers
 US inflation and a period dominated by Bitcoin's bull markets; past returns
 do not predict future returns.
 
-### Validation status (2026-10-09)
+### Validation status (2026-10-10)
 
 - All **20** calculation and failure-safety tests pass.
+- All **10** JavaScript tests and **11** real Chromium functional scenarios pass.
+- GitHub Actions successfully installs dependencies, runs the calculation and
+  JavaScript tests, and refreshes the real dataset using Python 3.11.
 - The historical run with `--end 2025-12-31` succeeds, leaves October 2025
   real growth/CPI YoY as `null`, and resumes real growth in November.
 - The default run succeeds and the generated data file currently covers
@@ -282,7 +289,10 @@ The supplied paper and notebook are references, not runtime dependencies.
 They are not copied into this public repository. Their cash proxy and real
 return conventions vary between sections, and the supplied notebook does not
 include the cited Sharpe/Calmar implementation. Matching the published table
-has therefore **not** been verified. No formula is tuned to force a match.
+was checked: **0/11** values meet the original within-0.01 tolerance. The
+approved independent exact-return method does not reproduce those tables.
+See [PAPER_COMPARISON.md](PAPER_COMPARISON.md) for values and differences.
+No formula is tuned to force a match.
 
 ## Licence
 

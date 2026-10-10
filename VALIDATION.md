@@ -20,9 +20,55 @@
 
 ## Deployment
 
-Source, branch-based GitHub Pages and Actions are being configured after local
-checks. Remote run IDs and live verification results will be recorded here
-after completion; local checks alone do not prove deployment.
+- All implementation stages were committed separately and pushed to
+  [main](https://github.com/Ethanli0831/RealWorth/tree/main).
+- GitHub's Python 3.11 runner successfully installed the pinned dependencies,
+  passed 20 Python and 10 JavaScript tests, and downloaded the real dataset.
+  [Current-version push run](https://github.com/Ethanli0831/RealWorth/actions/runs/38082246509)
+  succeeded.
+- Two consecutive manual updates succeeded:
+  [first](https://github.com/Ethanli0831/RealWorth/actions/runs/38082328304)
+  and [second](https://github.com/Ethanli0831/RealWorth/actions/runs/38082537872).
+  The remote main SHA remained
+  `763a36b3489ae8e9fb29c03fbcdc50059be13d5d` before and after both runs.
+  Neither run created an unnecessary data commit; the second skipped the
+  Pages rebuild because its data was unchanged.
+- **Public hosting is blocked, not complete.** The GitHub API reports
+  `has_pages: false`. Both the installed integration token and the repository's
+  workflow token received HTTP 403 when trying to create the Pages site.
+  The [publication attempt](https://github.com/Ethanli0831/RealWorth/actions/runs/38082242207)
+  records `Resource not accessible by integration` in its failure annotation.
+- The repository owner must open
+  [Settings → Pages](https://github.com/Ethanli0831/RealWorth/settings/pages),
+  choose **Deploy from a branch → main → /docs → Save**. Then run
+  **Publish website** manually if a rebuild is needed and verify the actual
+  public address `https://ethanli0831.github.io/RealWorth/`.
+  That address has not been certified live during this setup.
+
+## Cloud environment
+
+The complete saved installation script was executed successfully in the
+virtual environment: pinned development dependencies, 20 Python tests,
+10 JavaScript tests and 11 Chromium scenarios. The virtualenv HTTP server
+startup command was separately verified against the dashboard and five-asset
+JSON. Reusable installation and startup instructions were saved to the cloud
+configuration draft. Saving a draft does not publish it; the owner must review
+and save its environment settings, then publish the environment for reuse.
+
+## Homework completion
+
+| Requirement | Outcome |
+| --- | --- |
+| Data pipeline, retry and safe JSON writes | Implemented and verified locally and on GitHub. |
+| Original paper values within 0.01 | **0/11 pass**; original replication criterion is unmet under the approved independent exact methodology. |
+| Three interactive dashboard tools | Implemented; real-browser and mobile viewport checks passed. |
+| Per-stage Git commits | Created and pushed. |
+| Scheduled monthly refresh and two manual runs | Configured; both manual runs passed without redundant commits. |
+| GitHub Pages main /docs and a working public site | **Blocked by HTTP 403** until the owner activates Pages; live verification remains pending. |
+| README, methodology, MIT licence and screenshot | Complete. |
+| Sources, limitations and failure guidance | Documented. |
+| Quiz and two mistakes | Quiz and actual development mistakes documented; student answers remain a human task. |
+| Student's physical-phone check | Pending; responsive Chromium checks passed. |
 
 ## Human checks
 

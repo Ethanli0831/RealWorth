@@ -398,6 +398,101 @@
     });
     update();
   }
+  function renderScorecard(data) {
+    const body = document.getElementById("scorecard-body");
+    if (!body) return;
+    body.replaceChildren();
+    for (const asset of data.meta.assets) {
+      const metrics = data.scorecard[asset];
+      const row = document.createElement("tr");
+      row.dataset.asset = asset;
+      const name = document.createElement("th");
+      name.scope = "row";
+      name.textContent = asset;
+      const ticker = document.createElement("span");
+      ticker.className = "ticker";
+      ticker.textContent = TICKERS[asset];
+      name.append(ticker);
+      row.append(name);
+      for (const key of [
+        "ann_real_return",
+        "ann_volatility",
+        "sharpe",
+        "max_drawdown",
+        "calmar",
+        "current_drawdown",
+      ]) {
+        const cell = document.createElement("td");
+        cell.dataset.metric = key;
+        const value = metrics[key];
+        cell.textContent =
+          value === null
+            ? "Not defined"
+            : ["sharpe", "calmar"].includes(key)
+              ? value.toFixed(3)
+              : percent(value);
+        if (key.includes("drawdown")) {
+          const severity = risk(value);
+          cell.className = severity.className;
+          const label = document.createElement("span");
+          label.className = "risk-label";
+          label.textContent = severity.label;
+          cell.append(label);
+        }
+        row.append(cell);
+      }
+      const label = document.createElement("td");
+      label.className = "verdict";
+      label.textContent = verdict(metrics);
+      row.append(label);
+      body.append(row);
+    }
+    plot("drawdown-chart", {
+      type: "bar",
+      data: {
+        labels: data.meta.assets,
+        datasets: [
+          {
+            label: "Max real drawdown (%)",
+            data: data.meta.assets.map(
+              (asset) => data.scorecard[asset].max_drawdown,
+            ),
+            backgroundColor: data.meta.assets.map((asset) =>
+              data.scorecard[asset].max_drawdown < -40
+                ? colors.red
+                : data.scorecard[asset].max_drawdown <= -15
+                  ? colors.gold
+                  : colors.green,
+            ),
+            borderRadius: 4,
+            barPercentage: 0.65,
+          },
+        ],
+      },
+      options: chartOptions({
+        indexAxis: "y",
+        scales: {
+          x: {
+            min: -100,
+            max: 0,
+            grid: { color: colors.grid },
+            ticks: { callback: (v) => `${v}%`, color: colors.muted },
+          },
+          y: {
+            grid: { display: false },
+            border: { display: false },
+            ticks: { color: colors.ink },
+          },
+        },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: { label: (context) => percent(context.parsed.x) },
+          },
+        },
+      }),
+    });
+  }
   async function initDashboard() {
     if (!document.getElementById("calculator-form")) return;
     const status = document.getElementById("load-status");
@@ -418,6 +513,7 @@
       document.getElementById("chart-warning").hidden =
         typeof global.Chart === "function";
       renderCalculator(data);
+      renderScorecard(data);
       document.getElementById("dashboard").setAttribute("aria-busy", "false");
       const age =
         (Date.now() - Date.parse(`${data.meta.last_updated}T00:00:00Z`)) /

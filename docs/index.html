@@ -229,7 +229,95 @@
         </div>
       </section>
 
-      <section id="scorecard" class="tool" aria-labelledby="scorecard-title"><h2 id="scorecard-title">Store-of-Value Scorecard</h2><p>This tool will be added in the next step.</p></section>
+      <section id="scorecard" class="tool" aria-labelledby="scorecard-title">
+        <div class="section-heading">
+          <span class="section-number">02</span>
+          <div>
+            <p class="eyebrow">Compare the trade-offs</p>
+            <h2 id="scorecard-title">Store-of-Value Scorecard</h2>
+            <p>
+              Keeping purchasing power is one thing. Keeping your nerve is
+              another. Compare growth with the risk taken to earn it.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <div
+            class="table-wrap"
+            tabindex="0"
+            role="region"
+            aria-label="Asset scorecard; scroll horizontally to see all columns"
+          >
+            <table class="score-table">
+              <caption class="sr-only">
+                Full-history real performance. Bitcoin begins September 2014;
+                ETFs begin January 2014. Undefined ratios are labelled Not
+                defined.
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Asset</th>
+                  <th scope="col">Real return<br />(% per year)</th>
+                  <th scope="col">Volatility<br />(% per year)</th>
+                  <th scope="col">Sharpe<br />(ratio)</th>
+                  <th scope="col">Max drawdown<br />(%)</th>
+                  <th scope="col">Calmar<br />(ratio)</th>
+                  <th scope="col">Current drawdown<br />(%)</th>
+                  <th scope="col">Verdict for this sample</th>
+                </tr>
+              </thead>
+              <tbody id="scorecard-body"></tbody>
+            </table>
+          </div>
+          <div class="legend" aria-label="Drawdown severity">
+            <span class="risk-low"
+              ><i aria-hidden="true"></i> Mild: better than −15%</span
+            ><span class="risk-medium"
+              ><i aria-hidden="true"></i> Significant: −15% to −40%</span
+            ><span class="risk-high"
+              ><i aria-hidden="true"></i> Severe: worse than −40%</span
+            >
+          </div>
+          <p class="explanation">
+            Sharpe compares average return above T-bills with the variability of
+            those monthly returns; Calmar compares annualised real growth with
+            the largest observed loss from a peak. A strong Sharpe can coexist
+            with a very deep drawdown—it does not tell you how painful the worst
+            decline felt.
+          </p>
+          <details class="rules">
+            <summary>How the verdicts are assigned</summary>
+            <p>
+              Negative real annual return: “Loses to inflation”. Otherwise,
+              drawdown worse than −40%: “Positive return, deep drawdowns”; −15%
+              to −40%: “Grows, with drawdown risk”; better than −15%: “Preserved
+              purchasing power”. These describe this historical sample, not
+              future safety.
+            </p>
+          </details>
+          <div class="chart-heading">
+            <h3>The deepest fall in purchasing power</h3>
+            <span>Max real drawdown · closer to zero is milder</span>
+          </div>
+          <div class="chart-container short">
+            <canvas
+              id="drawdown-chart"
+              role="img"
+              aria-label="Maximum real drawdown for the five assets, also listed in the scorecard table"
+            ></canvas>
+            <p class="chart-fallback" hidden>
+              Chart unavailable. The exact drawdowns are listed in the table
+              above.
+            </p>
+          </div>
+          <p class="tiny">
+            Assets use their own available histories. CAGR uses calendar time;
+            monthly risk statistics exclude unavailable CPI pairs. BIL’s Sharpe
+            is not defined because it is its own risk-free proxy. Drawdowns use
+            observed months and can miss losses during CPI gaps.
+          </p>
+        </div>
+      </section>
       <section id="regime" class="tool" aria-labelledby="regime-title"><h2 id="regime-title">Inflation Regime Tracker</h2><p>This tool will be added in the next step.</p></section>
     </main>
     <footer class="site-footer wrap">

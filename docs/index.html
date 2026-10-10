@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Look beyond headline returns. Compare Bitcoin, gold, stocks and Treasuries after inflation, through drawdowns and across inflation regimes."
+    />
+    <meta name="theme-color" content="#142b2b" />
+    <title>Is Bitcoin Digital Gold? — RealWorth</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.js"
+      integrity="sha384-sitkSLEO56SJYRloHWybrHos3JVvByQSlOZYJ1HiExytjxUlVOernDbpQcOgwtW8"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="assets/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#calculator">Skip to the tools</a>
+    <header class="site-header wrap">
+      <a class="brand" href="./" aria-label="RealWorth home"
+        ><span class="brand-mark" aria-hidden="true">R<span>W</span></span
+        >RealWorth<span class="brand-note">A research project</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#calculator">Calculator</a><a href="#scorecard">Scorecard</a
+        ><a href="#regime">Inflation</a
+        ><a href="methodology.html"
+          >Methodology <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+    <main class="wrap" id="dashboard" aria-busy="true">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">The store-of-value dashboard</p>
+          <p class="disclaimer">
+            <span aria-hidden="true">ⓘ</span> Educational research. Not
+            financial advice.
+          </p>
+          <h1 id="page-title">Is Bitcoin<br /><em>digital gold?</em></h1>
+          <p class="hero-description">
+            A big return is only half the story. See what your money really
+            earned—and what you would have had to endure along the way.
+          </p>
+          <a class="button" href="#calculator"
+            >Find your real return <span aria-hidden="true">↓</span></a
+          >
+          <p class="data-stamp" id="data-stamp">
+            Loading monthly research data…
+          </p>
+        </div>
+        <aside class="hero-card" aria-label="Bitcoin risk in context">
+          <div class="card-kicker">
+            <span class="dot"></span> Beyond the headline return
+          </div>
+          <p class="hero-card-label">Bitcoin’s worst real drawdown</p>
+          <p class="hero-number" id="hero-drawdown">—</p>
+          <p class="hero-card-detail">
+            The largest fall from a prior peak in purchasing power, observed at
+            month end.
+          </p>
+          <svg
+            class="hero-illustration"
+            viewBox="0 0 360 88"
+            role="img"
+            aria-label="Illustration of a rise, a steep fall, and a recovery; not market data"
+          >
+            <path
+              d="M0 74 L35 62 L65 67 L104 26 L133 38 L165 8 L194 64 L225 77 L252 52 L288 61 L325 25 L360 11"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+            />
+            <path
+              d="M165 8 L194 64 L225 77"
+              fill="none"
+              stroke="#f6a393"
+              stroke-width="3"
+            />
+          </svg>
+          <p class="tiny">
+            Illustration. Metrics above use actual monthly observations.
+          </p>
+          <a href="#scorecard"
+            >Compare all five assets <span aria-hidden="true">→</span></a
+          >
+        </aside>
+      </section>
+
+      <div class="asset-strip" aria-label="Assets in this study">
+        <span>Five ways to hold value</span
+        ><span><b>₿</b> Bitcoin <small>BTC-USD</small></span
+        ><span><b>◈</b> Gold <small>GLD</small></span
+        ><span><b>↗</b> S&amp;P 500 <small>SPY</small></span
+        ><span><b>≋</b> T-Bills <small>BIL</small></span
+        ><span><b>⌁</b> LT Bonds <small>TLT</small></span>
+      </div>
+      <p id="load-status" class="notice" role="status">
+        Loading data. Controls will become available shortly.
+      </p>
+      <p id="chart-warning" class="notice" hidden>
+        Charts could not load. All calculations and the data tables still work.
+        Check your connection to the chart CDN.
+      </p>
+      <noscript
+        ><p class="notice error">
+          Enable JavaScript to use the interactive tools. You can still read the
+          <a href="methodology.html">methodology</a> and
+          <a href="data/data.json">derived dataset</a>.
+        </p></noscript
+      >
+
+      <section id="calculator" class="tool" aria-labelledby="calculator-title">
+        <div class="section-heading">
+          <span class="section-number">01</span>
+          <div>
+            <p class="eyebrow">Make the research personal</p>
+            <h2 id="calculator-title">What did it really earn?</h2>
+            <p>
+              Choose a month-end investment. Compare the dollars you made with
+              the purchasing power you kept.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <form id="calculator-form">
+            <fieldset id="calculator-inputs" disabled>
+              <legend class="sr-only">Your investment</legend>
+              <div class="input-grid">
+                <label
+                  >Asset<select id="asset" name="asset">
+                    <option>Bitcoin</option>
+                    <option>Gold</option>
+                    <option>S&amp;P 500</option>
+                    <option>T-Bills</option>
+                    <option>LT Bonds</option>
+                  </select></label
+                >
+                <label
+                  >Buy month<input
+                    id="buy-month"
+                    name="buy-month"
+                    type="month"
+                    required
+                    aria-describedby="month-help"
+                /></label>
+                <label
+                  >Holding period<select
+                    id="holding-period"
+                    name="holding-period"
+                  >
+                    <option value="12">1 year</option>
+                    <option value="36">3 years</option>
+                    <option value="60">5 years</option>
+                    <option value="120">10 years</option>
+                    <option value="latest">Until latest data</option>
+                  </select></label
+                >
+                <label
+                  >Amount invested (USD)<input
+                    id="amount"
+                    name="amount"
+                    type="number"
+                    min="1"
+                    max="1000000000"
+                    step="any"
+                    value="1000"
+                    required
+                    inputmode="decimal"
+                /></label>
+              </div>
+              <div class="form-bottom">
+                <p class="tiny" id="month-help">
+                  Buys and sells occur at month end. “Latest” means the last
+                  month with released CPI.
+                </p>
+                <button class="button" type="submit">
+                  Calculate return <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </fieldset>
+          </form>
+          <p id="calculator-error" class="notice error" role="alert" hidden></p>
+          <div id="calculator-results" hidden aria-live="polite">
+            <p class="result-period" id="result-period"></p>
+            <div class="result-grid">
+              <article class="result-card">
+                <h3>Nominal value at end</h3>
+                <p class="result-value" id="nominal-value"></p>
+                <p id="nominal-return"></p>
+                <small>Before accounting for inflation</small>
+              </article>
+              <article class="result-card featured">
+                <h3>Value after inflation</h3>
+                <p class="result-value" id="real-value"></p>
+                <p id="real-return"></p>
+                <small id="real-units"></small>
+              </article>
+              <article class="result-card">
+                <h3>Worst drop along the way</h3>
+                <p class="result-value" id="hold-drawdown"></p>
+                <p id="hold-severity"></p>
+                <small>Fall from an earlier real-value peak</small>
+              </article>
+            </div>
+            <p class="plain-summary" id="calculator-summary"></p>
+            <p id="gap-warning" class="notice" hidden></p>
+            <div class="chart-heading">
+              <h3>Your purchasing power over time</h3>
+              <span>In buy-month USD</span>
+            </div>
+            <div class="chart-container">
+              <canvas
+                id="investment-chart"
+                role="img"
+                aria-label="Real investment value over the selected holding period"
+              ></canvas>
+              <p class="chart-fallback" hidden>
+                Chart unavailable. The return and observed drawdown are shown
+                above.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="scorecard" class="tool" aria-labelledby="scorecard-title"><h2 id="scorecard-title">Store-of-Value Scorecard</h2><p>This tool will be added in the next step.</p></section>
+      <section id="regime" class="tool" aria-labelledby="regime-title"><h2 id="regime-title">Inflation Regime Tracker</h2><p>This tool will be added in the next step.</p></section>
+    </main>
+    <footer class="site-footer wrap">
+      <div>
+        <a class="brand" href="./">RealWorth</a>
+        <p>Educational research project, not financial advice.</p>
+        <p class="tiny">
+          Sources: Yahoo Finance · FRED (CPIAUCSL). Monthly observations, US
+          dollars.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="methodology.html">Methodology</a
+        ><a href="https://github.com/Ethanli0831/RealWorth"
+          >GitHub repository ↗</a
+        ><a href="data/data.json">Derived data</a>
+      </div>
+    </footer>
+  </body>
+</html>

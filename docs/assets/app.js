@@ -493,6 +493,192 @@
       }),
     });
   }
+  function renderRegime(data) {
+    if (!document.getElementById("cpi-chart")) return;
+    const regime = data.regime;
+    text("current-inflation", percent(regime.current_yoy));
+    text(
+      "inflation-month",
+      `${monthLabel(data.meta.data_through)} · year-over-year change`,
+    );
+    text(
+      "regime-badge",
+      regime.current_regime === null
+        ? "Current regime: no data"
+        : `${regime.current_regime}-inflation regime`,
+    );
+    document.getElementById("regime-badge").className =
+      `badge ${regime.current_regime === "Low" ? "low" : regime.current_regime === null ? "neutral" : ""}`;
+    text("quartile-badge", regime.current_quartile ?? "Quartile: no data");
+    text(
+      "regime-thresholds",
+      `Sample median ${percent(regime.median_threshold)} · Q25 ${percent(regime.q25)} · Q75 ${percent(regime.q75)}. Thresholds use shared, observed return months.`,
+    );
+    const threshold = (label, value, color) => ({
+      label: `${label} (${percent(value)})`,
+      data: regime.cpi_dates.map(() => value),
+      borderColor: color,
+      borderDash: [5, 5],
+      borderWidth: 1,
+      pointRadius: 0,
+    });
+    plot("cpi-chart", {
+      type: "line",
+      data: {
+        labels: regime.cpi_dates.map(monthLabel),
+        datasets: [
+          {
+            label: "CPI YoY",
+            data: regime.cpi_yoy,
+            borderColor: colors.green,
+            borderWidth: 2,
+            pointRadius: 0,
+            pointHitRadius: 8,
+            tension: 0.2,
+            spanGaps: false,
+          },
+          threshold("Median", regime.median_threshold, colors.gold),
+          threshold("Q25", regime.q25, "#728db0"),
+          threshold("Q75", regime.q75, "#ae7380"),
+        ],
+      },
+      options: chartOptions({
+        plugins: {
+          legend: {
+            display: true,
+            position: "bottom",
+            labels: { boxWidth: 16, boxHeight: 2, font: { size: 9 } },
+          },
+          tooltip: {
+            callbacks: {
+              label: (context) =>
+                `${context.dataset.label}: ${percent(context.parsed.y)}`,
+            },
+          },
+        },
+        scales: {
+          x: {
+            grid: { display: false },
+            ticks: { maxTicksLimit: 5, maxRotation: 0, color: colors.muted },
+          },
+          y: {
+            grid: { color: colors.grid },
+            ticks: { color: colors.muted, callback: (value) => `${value}%` },
+          },
+        },
+      }),
+    });
+    function update(mode) {
+      const quartiles = mode === "quartile";
+      const groups = quartiles ? ["Top 25%", "Bottom 25%"] : ["High", "Low"];
+      const source = quartiles ? regime.by_quartile : regime.by_median;
+      document
+        .getElementById("median-toggle")
+        .setAttribute("aria-pressed", String(!quartiles));
+      document
+        .getElementById("quartile-toggle")
+        .setAttribute("aria-pressed", String(quartiles));
+      plot("regime-chart", {
+        type: "bar",
+        data: {
+          labels: data.meta.assets,
+          datasets: groups.map((group, i) => ({
+            label: group,
+            data: data.meta.assets.map((asset) => source[group][asset]),
+            backgroundColor: i === 0 ? colors.green : colors.gold,
+            borderRadius: 3,
+            barPercentage: 0.8,
+          })),
+        },
+        options: chartOptions({
+          plugins: {
+            legend: {
+              display: true,
+              position: "bottom",
+              labels: { boxWidth: 12, font: { size: 11 } },
+            },
+            tooltip: {
+              callbacks: {
+                label: (context) =>
+                  `${context.dataset.label}: ${percent(context.parsed.y)} per month`,
+              },
+            },
+          },
+          scales: {
+            x: {
+              grid: { display: false },
+              ticks: {
+                color: colors.muted,
+                maxRotation: 0,
+                font: { size: 10 },
+              },
+            },
+            y: {
+              grid: { color: colors.grid },
+              ticks: { color: colors.muted, callback: (v) => `${v}%` },
+            },
+          },
+        }),
+      });
+      document
+        .getElementById("regime-chart")
+        .setAttribute(
+          "aria-label",
+          `Mean nominal monthly returns for the five assets: ${groups.join(" versus ")}. Exact values are in the data table.`,
+        );
+      const head = document.getElementById("regime-table-head");
+      const body = document.getElementById("regime-table-body");
+      head.replaceChildren();
+      body.replaceChildren();
+      const headings = document.createElement("tr");
+      for (const label of [
+        "Asset",
+        ...groups.map((group) => `${group} (% per month)`),
+      ]) {
+        const cell = document.createElement("th");
+        cell.scope = "col";
+        cell.textContent = label;
+        headings.append(cell);
+      }
+      head.append(headings);
+      for (const asset of data.meta.assets) {
+        const row = document.createElement("tr");
+        const name = document.createElement("th");
+        name.scope = "row";
+        name.textContent = asset;
+        row.append(name);
+        for (const group of groups) {
+          const cell = document.createElement("td");
+          cell.textContent = percent(source[group][asset]);
+          row.append(cell);
+        }
+        body.append(row);
+      }
+      if (quartiles)
+        text(
+          "regime-summary",
+          `In the highest-inflation quartile, Bitcoin returned ${percent(source["Top 25%"].Bitcoin)} per month on average versus ${percent(source["Top 25%"].Gold)} for gold. In the lowest quartile, Bitcoin averaged ${percent(source["Bottom 25%"].Bitcoin)} versus ${percent(source["Bottom 25%"].Gold)} for gold. These are nominal returns.`,
+        );
+      else if (regime.current_regime !== null) {
+        const group = source[regime.current_regime];
+        text(
+          "regime-summary",
+          `We are currently in a ${regime.current_regime.toLowerCase()}-inflation regime. Historically, in these months Bitcoin returned ${percent(group.Bitcoin)} per month on average versus ${percent(group.Gold)} for gold. These are nominal returns, before subtracting inflation.`,
+        );
+      } else
+        text(
+          "regime-summary",
+          "Current CPI YoY is unavailable because a required CPI observation is missing. We do not assign a current regime. The chart and table still compare historical months with observed inflation.",
+        );
+    }
+    document
+      .getElementById("median-toggle")
+      .addEventListener("click", () => update("median"));
+    document
+      .getElementById("quartile-toggle")
+      .addEventListener("click", () => update("quartile"));
+    update("median");
+  }
   async function initDashboard() {
     if (!document.getElementById("calculator-form")) return;
     const status = document.getElementById("load-status");
@@ -514,6 +700,7 @@
         typeof global.Chart === "function";
       renderCalculator(data);
       renderScorecard(data);
+      renderRegime(data);
       document.getElementById("dashboard").setAttribute("aria-busy", "false");
       const age =
         (Date.now() - Date.parse(`${data.meta.last_updated}T00:00:00Z`)) /

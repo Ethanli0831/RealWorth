@@ -318,7 +318,100 @@
           </p>
         </div>
       </section>
-      <section id="regime" class="tool" aria-labelledby="regime-title"><h2 id="regime-title">Inflation Regime Tracker</h2><p>This tool will be added in the next step.</p></section>
+      <section id="regime" class="tool" aria-labelledby="regime-title">
+        <div class="section-heading">
+          <span class="section-number">03</span>
+          <div>
+            <p class="eyebrow">Put inflation in context</p>
+            <h2 id="regime-title">Inflation Regime Tracker</h2>
+            <p>
+              Inflation is rising. Does Bitcoin protect you? Start with what
+              happened in comparable months—not with a promise.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="regime-layout">
+            <div>
+              <p class="eyebrow">US consumer price inflation</p>
+              <p class="inflation-number" id="current-inflation">—</p>
+              <p class="inflation-label" id="inflation-month">Year over year</p>
+              <div>
+                <span class="badge" id="regime-badge">Loading regime…</span
+                ><span class="badge neutral" id="quartile-badge">—</span>
+              </div>
+              <p class="tiny" id="regime-thresholds"></p>
+            </div>
+            <div>
+              <div class="chart-heading">
+                <h3>US inflation over the sample</h3>
+                <span>Year-over-year CPI change (%)</span>
+              </div>
+              <div class="chart-container short">
+                <canvas
+                  id="cpi-chart"
+                  role="img"
+                  aria-label="US CPI year-over-year inflation with historical median and quartile threshold lines"
+                ></canvas>
+                <p class="chart-fallback" hidden>
+                  Chart unavailable. Current inflation and threshold values are
+                  shown alongside it.
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr class="regime-divider" />
+          <div class="chart-heading regime-chart-heading">
+            <div>
+              <h3>How did assets perform in these months?</h3>
+              <span>Average nominal monthly return · not annualised</span>
+            </div>
+            <div
+              class="toggle"
+              role="group"
+              aria-label="Inflation regime comparison"
+            >
+              <button id="median-toggle" type="button" aria-pressed="true">
+                High vs Low</button
+              ><button id="quartile-toggle" type="button" aria-pressed="false">
+                Top vs Bottom 25%
+              </button>
+            </div>
+          </div>
+          <div class="chart-container">
+            <canvas
+              id="regime-chart"
+              role="img"
+              aria-label="Average monthly asset returns in high and low inflation regimes"
+            ></canvas>
+            <p class="chart-fallback" hidden>
+              Chart unavailable. Open the monthly return data table below to
+              compare the groups.
+            </p>
+          </div>
+          <p class="plain-summary" id="regime-summary" aria-live="polite"></p>
+          <details class="rules">
+            <summary>View monthly return data</summary>
+            <div class="table-wrap">
+              <table class="regime-table">
+                <caption class="sr-only">
+                  Mean nominal monthly returns in the selected inflation groups
+                </caption>
+                <thead id="regime-table-head"></thead>
+                <tbody id="regime-table-body"></tbody>
+              </table>
+            </div>
+          </details>
+          <div class="caveat">
+            <p>
+              Past regime averages do not predict future returns or prove an
+              inflation hedge. The sample starts in 2014 and uses US inflation
+              only. Missing CPI months are shown as gaps and excluded from
+              regime averages.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="site-footer wrap">
       <div>

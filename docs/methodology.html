@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Understand RealWorth's exact purchasing-power calculations, risk ratios, inflation regimes and data limitations."
+    />
+    <meta name="theme-color" content="#142b2b" />
+    <title>Methodology — RealWorth</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script defer src="assets/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#methodology">Skip to methodology</a>
+    <header class="site-header wrap">
+      <a class="brand" href="./"
+        ><span class="brand-mark" aria-hidden="true">R<span>W</span></span
+        >RealWorth<span class="brand-note">A research project</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="index.html#calculator">Calculator</a
+        ><a href="index.html#scorecard">Scorecard</a
+        ><a href="index.html#regime">Inflation</a
+        ><a href="#methodology" aria-current="page">Methodology</a>
+      </nav>
+    </header>
+    <main class="wrap prose" id="methodology">
+      <p class="eyebrow">Understand the numbers</p>
+      <p class="disclaimer">Educational research. Not financial advice.</p>
+      <h1>How we measure<br /><em>what money keeps.</em></h1>
+      <p>
+        RealWorth compares historical purchasing power, the risk of holding
+        through losses, and returns during different inflation regimes. Every
+        number comes from the same generated dataset. No metric is a
+        recommendation to buy an asset.
+      </p>
+      <h2>Sources and the sample</h2>
+      <p>
+        Daily adjusted closes come from Yahoo Finance through
+        <code>yfinance</code> and are sampled at each month’s last available
+        close. Adjustments include ETF distributions. The study begins in
+        January 2014; Yahoo’s Bitcoin history begins in September 2014. CPI
+        comes from FRED’s seasonally adjusted US consumer price index,
+        <a href="https://fred.stlouisfed.org/series/CPIAUCSL">CPIAUCSL</a>. Only
+        completed months through the latest released CPI observation are used.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Asset</th>
+              <th scope="col">Yahoo ticker</th>
+              <th scope="col">What it represents</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Bitcoin</th>
+              <td>BTC-USD</td>
+              <td>Bitcoin in US dollars</td>
+            </tr>
+            <tr>
+              <th scope="row">Gold</th>
+              <td>GLD</td>
+              <td>Gold ETF, not physical gold ownership</td>
+            </tr>
+            <tr>
+              <th scope="row">S&amp;P 500</th>
+              <td>SPY</td>
+              <td>US stock-market ETF</td>
+            </tr>
+            <tr>
+              <th scope="row">T-Bills</th>
+              <td>BIL</td>
+              <td>Short-term US Treasury bill ETF</td>
+            </tr>
+            <tr>
+              <th scope="row">LT Bonds</th>
+              <td>TLT</td>
+              <td>Long-term US Treasury bond ETF</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        BIL is the risk-free <em>proxy</em> in the Sharpe calculation because it
+        holds very short Treasury bills. It is still an ETF: fees, price
+        changes, and inflation affect its returns. TLT holds long-duration
+        coupon-paying Treasury bonds, which can fall sharply when interest rates
+        rise.
+      </p>
+      <h2>1. Real-return calculator</h2>
+      <p>
+        A buy month means buying at that month’s end. One year means 12 months
+        later. “Until latest data” ends at the dataset’s last month, not today’s
+        market price. If a selected period runs beyond the available data, we
+        ask you to shorten it.
+      </p>
+      <div class="formula">
+        <code
+          >nominal return[t] = price[t] / price[t−1] − 1<br />inflation[t] =
+          CPI[t] / CPI[t−1] − 1<br />real return[t] = (1 + nominal return[t]) /
+          (1 + inflation[t]) − 1<br /><br />nominal growth[t] = price[t] /
+          price[baseline]<br />real growth[t] = nominal growth[t] ×
+          CPI[baseline] / CPI[t]<br /><br />holding return = growth[end] /
+          growth[buy] − 1<br />end value = amount invested × growth[end] /
+          growth[buy]</code
+        >
+      </div>
+      <p>
+        The website uses the <strong>exact</strong> inflation adjustment,
+        approved for this independent project, rather than the paper’s
+        approximation <code>nominal return − inflation</code>. Real investment
+        value is expressed in <strong>buy-month dollars</strong>: it tells you
+        how much purchasing power your investment kept relative to when you
+        bought.
+      </p>
+      <p>
+        Worst holding-period drawdown is the largest observed drop from any
+        earlier real-value peak <em>within that holding period</em>. The lowest
+        dollar value during a hold is a separate calculation; it is not
+        necessarily the trough of the largest percentage drawdown.
+      </p>
+      <h2>2. Store-of-Value Scorecard</h2>
+      <p>
+        Each asset uses its own available history. This means Bitcoin and the
+        ETFs have different start dates. Annual real return is geometric growth,
+        not an arithmetic average of unusually strong months.
+      </p>
+      <div class="formula">
+        <code
+          >CAGR = final real growth^(12 / elapsed calendar months) − 1<br />volatility
+          = sample standard deviation(monthly real returns) × √12<br /><br />excess[t]
+          = asset real return[t] − BIL real return[t]<br />Sharpe = √12 ×
+          mean(excess) / sample standard deviation(excess)<br /><br />drawdown[t]
+          = real growth[t] / prior running peak[t] − 1<br />max drawdown =
+          minimum(drawdown)<br />Calmar = real CAGR / absolute value(max
+          drawdown)<br />current drawdown = latest real growth / all-time
+          observed peak − 1</code
+        >
+      </div>
+      <p>
+        Sample standard deviations use <code>ddof=1</code>. BIL’s own excess
+        returns are zero, so its Sharpe is undefined, not zero. A Calmar ratio
+        is also undefined when there is no drawdown; the site displays “Not
+        defined”.
+      </p>
+      <p>
+        Verdicts are descriptive rules. A negative real CAGR is “Loses to
+        inflation”. Otherwise, a drawdown worse than −40% is “Positive return,
+        deep drawdowns”; −15% to −40% is “Grows, with drawdown risk”; better
+        than −15% is “Preserved purchasing power”. Colour labels supplement the
+        numbers: mild, significant, and severe. These rules do not certify
+        future safety.
+      </p>
+      <h2>3. Inflation Regime Tracker</h2>
+      <div class="formula">
+        <code
+          >CPI YoY[t] = CPI[t] / CPI[t−12] − 1<br />High: CPI YoY &gt; sample
+          median<br />Low: CPI YoY ≤ sample median<br />Bottom 25%: CPI YoY ≤
+          Q25<br />Top 25%: CPI YoY ≥ Q75<br />Middle 50%: between Q25 and
+          Q75</code
+        >
+      </div>
+      <p>
+        The median and quartiles use months with nominal returns for all five
+        assets and known CPI YoY, normally October 2014 onward. Quartiles use
+        linear interpolation. Thresholds are recalculated as new months arrive.
+        Group averages are arithmetic means of
+        <strong>nominal monthly returns</strong>, before inflation. They are not
+        real returns or annualised numbers. A relationship between returns and
+        inflation is not evidence that inflation caused those returns.
+      </p>
+      <h2>Missing observations stay missing</h2>
+      <p>
+        FRED has no CPI observation for October 2025. We do not invent one. That
+        month’s real growth and CPI YoY are <code>null</code> in the JSON and
+        shown as a gap in charts. If a buy or end month has missing CPI, the
+        calculator reports nominal value but marks real value “No data”.
+      </p>
+      <p>
+        When CPI is known again, real growth resumes using its ratio to the
+        baseline CPI. Known endpoints allow an exact multi-month return even
+        with an unknown intermediate month. CAGR still counts every elapsed
+        calendar month. Monthly volatility and Sharpe exclude both the missing
+        CPI month and its following month: the two-month move is never treated
+        as one monthly return.
+      </p>
+      <p>
+        Drawdowns use known observations. An unknown month might hide a higher
+        peak or lower trough, so the reported decline may understate the true
+        worst fall. Missing YoY observations are excluded from regime groups; if
+        the prior-year CPI is missing, even a known current CPI cannot establish
+        a current YoY regime.
+      </p>
+      <h2>What this research cannot tell you</h2>
+      <ul>
+        <li>
+          The sample starts in 2014 and includes major Bitcoin bull markets.
+          Later results can differ substantially.
+        </li>
+        <li>
+          Only US CPI is used. Results do not describe purchasing power in every
+          country or currency.
+        </li>
+        <li>
+          Month-end observations miss intra-month crashes. CPI gaps add further
+          uncertainty to drawdowns.
+        </li>
+        <li>
+          Taxes, transaction costs, custody costs and personal inflation are not
+          modelled. ETF management costs are reflected in adjusted prices.
+        </li>
+        <li>
+          Yahoo and FRED may revise historical observations. Regime thresholds
+          and computed results can change.
+        </li>
+        <li>
+          Past performance and regime averages do not predict future returns.
+        </li>
+      </ul>
+      <h2>Reproducibility and updates</h2>
+      <p>
+        <code>scripts/build_data.py</code> downloads data, validates it and
+        atomically writes <code>docs/data/data.json</code>. Downloads get three
+        attempts; a failure preserves the last working file. The site publishes
+        derived growth indices and metrics, not raw Yahoo price series.
+        <a href="https://github.com/Ethanli0831/RealWorth"
+          >The source repository</a
+        >
+        explains local use.
+      </p>
+      <p>
+        GitHub Actions refreshes on the 18th of each month at 06:00 UTC, also
+        supports manual runs, and checks changes pushed to main. Only a changed
+        JSON file is committed by the monthly job. It explicitly requests a
+        GitHub Pages rebuild so the refreshed data reaches the website.
+      </p>
+      <p>
+        Based on the research paper:
+        <em
+          >“Digital Gold or High-Beta Gamble? Evaluating Bitcoin as a Store of
+          Value and Inflation Hedge”</em
+        >, Ethan (GitHub: Ethanli0831), 2026. This independent implementation
+        uses revised, explicitly documented formulas. It does not claim exact
+        reproduction of the paper’s tables. See the
+        <a
+          href="https://github.com/Ethanli0831/RealWorth/blob/main/PAPER_COMPARISON.md"
+          >numerical comparison</a
+        >.
+      </p>
+      <section class="panel quiz-card" aria-labelledby="quiz-title">
+        <p class="eyebrow">Explain it in your own words</p>
+        <h2 id="quiz-title" style="margin-top: 0">
+          A five-question self-check
+        </h2>
+        <p>
+          This is a learning exercise, not an automatically graded test. Write
+          your answer, then compare it with the explanation. One question at a
+          time.
+        </p>
+        <p id="quiz-progress" class="tiny"></p>
+        <h3 id="quiz-question"></h3>
+        <label for="quiz-response" class="sr-only">Your answer</label
+        ><textarea
+          id="quiz-response"
+          class="quiz-input"
+          placeholder="Explain your reasoning…"
+        ></textarea>
+        <p class="notice" id="quiz-answer" hidden aria-live="polite"></p>
+        <div class="quiz-actions">
+          <button class="button" id="quiz-show" type="button">
+            Show explanation</button
+          ><button class="text-button" id="quiz-next" type="button" hidden>
+            Next question
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <div>
+        <a class="brand" href="./">RealWorth</a>
+        <p>Educational research project, not financial advice.</p>
+        <p class="tiny">Sources: Yahoo Finance · FRED (CPIAUCSL).</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Back to dashboard</a
+        ><a href="https://github.com/Ethanli0831/RealWorth"
+          >GitHub repository ↗</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

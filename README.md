@@ -2,9 +2,35 @@
 
 An independent educational project comparing Bitcoin (`BTC-USD`), gold (`GLD`),
 the S&P 500 (`SPY`), Treasury bills (`BIL`), and long-term Treasury bonds (`TLT`).
-The first step is the data pipeline; the three web tools and monthly GitHub
-Actions workflow will be added in later steps. Educational research, not
-financial advice.
+Three interactive tools show investment returns after inflation, a risk
+scorecard, and historical returns in inflation regimes. The website uses
+plain HTML, CSS, vanilla JavaScript and Chart.js from a pinned CDN; there is no
+frontend build or API server. Educational research, not financial advice.
+
+**Website:** https://ethanli0831.github.io/RealWorth/
+
+**Source:** https://github.com/Ethanli0831/RealWorth
+
+![RealWorth's calculator, five-asset scorecard and inflation charts](docs/assets/screenshot.png)
+
+## Use the website locally
+
+From the repository root, run:
+
+```sh
+python -m http.server 8000 --directory docs
+```
+
+Open `http://localhost:8000` in a browser. Opening `index.html` directly with
+`file://` will not load the JSON. You can serve the existing dataset without
+installing the financial-data dependencies. Chart.js needs Internet access;
+if its CDN is unavailable, calculations and tables still work with a clear
+chart warning.
+
+The calculator buys and sells at month end. Try Bitcoin, November 2021, one
+year, $1,000; then select Gold for comparison. Choose “Until latest data” to
+use the most recent released CPI month. Missing CPI produces No data and
+chart gaps, not an invented inflation rate.
 
 ## Run the data pipeline
 
@@ -44,7 +70,88 @@ Run the calculation and failure-safety tests:
 
 ```sh
 python -m unittest discover -s tests -v
+node --test tests/test_dashboard.js
 ```
+
+Node 22 or newer is used only for these dependency-free JavaScript tests.
+It is not needed to serve the site. For optional real-browser checks:
+
+```sh
+python -m pip install -r requirements-dev.txt
+python -m playwright install chromium
+python tests/browser_smoke.py
+```
+
+The browser test starts an ephemeral local server and checks all tools,
+desktop/mobile layouts, the self-check quiz, and failure states. In cloud
+machines where Chromium and Python have different HTTPS proxy trust stores,
+the test downloads official Chart.js with system TLS verification, verifies
+the same pinned SHA-384 checksum used in the page, then routes those bytes
+to the browser. TLS verification and SRI remain enabled. Production pages
+continue to use the CDN directly.
+
+To compare the paper without replacing the live dataset:
+
+```sh
+python scripts/compare_paper.py > PAPER_COMPARISON.md
+```
+
+See [PAPER_COMPARISON.md](PAPER_COMPARISON.md) for actual differences. The
+original within-0.01 paper criterion is not passed: this independent project
+uses the explicitly approved exact-return method. It does not force numbers
+to match the paper.
+
+## Monthly automatic update
+
+[update-data.yml](.github/workflows/update-data.yml) runs on the **18th of every
+month at 06:00 UTC**, can be run manually, and validates changes pushed to main.
+It uses Ubuntu and Python 3.11, caches pip downloads, installs pinned packages,
+runs the tests and rebuilds derived JSON. It commits **only** a changed
+`docs/data/data.json` as `github-actions[bot]`, with the message
+`Monthly data update YYYY-MM`. An unchanged repeat run makes no data commit.
+No custom API keys or secrets are required: GitHub supplies its own scoped
+workflow token.
+
+The workflow explicitly requests a Pages rebuild with `pages: write` after
+an automated data commit. A push using `GITHUB_TOKEN` alone does not trigger
+Pages reliably. Concurrency prevents two refresh jobs from modifying data
+simultaneously. A source failure stops the job and preserves the previous
+JSON; the Actions tab shows the failure.
+
+## GitHub Pages setup and checks
+
+1. Open the repository → **Settings → Pages**. Under Build and deployment,
+   select **Deploy from a branch**, choose **main** and **/docs**, then **Save**.
+2. Open **Settings → Actions → General → Workflow permissions**. The workflow
+   explicitly requests `contents: write` and `pages: write`. If your repository
+   or organisation restricts those requests, permit the required writes; use
+   **Read and write permissions** if that is the available setting. No permission
+   to approve pull requests is needed.
+3. Open **Actions → Monthly data update → Run workflow**, select **main**, and
+   click **Run workflow**. Open the run and check every step has a green tick.
+4. Run it again on the same UTC date. “Commit only changed derived data” should
+   say **Data unchanged; no commit**. Genuine vendor revisions can still change
+   metrics and produce a legitimate update.
+5. In **Settings → Pages**, follow **Visit site**. The expected address is
+   `https://ethanli0831.github.io/RealWorth/`. Confirm all three sections and
+   the methodology page load. Test on your own phone as well.
+
+## What the files do
+
+| File | Main ideas to understand |
+|---|---|
+| `requirements.txt` | yfinance fetches assets; pandas aligns months; numpy supports calculations; requests fetches CPI. Versions are pinned. |
+| `scripts/build_data.py` | Downloads with retries; validates dates and values; computes exact indices and metrics; atomically replaces one JSON file. |
+| `docs/index.html` | Accessible page structure; labelled inputs; three anchored tools; visible disclaimer and source links. |
+| `docs/assets/style.css` | Shared colours and typography; single-column layout below 700px; contained table scrolling; large tap targets and focus styles. |
+| `docs/assets/app.js` | Validates one dataset; computes endpoint ratios and observed drawdowns; renders tables and charts; handles missing data and errors. |
+| `docs/methodology.html` | Defines formulas; explains sources and missing CPI; describes limitations; offers a five-question self-check. |
+| `.github/workflows/update-data.yml` | Defines triggers and permissions; runs tests and refresh; commits JSON only; requests Pages rebuild. |
+| `tests/` | Synthetic arithmetic/failure cases; real-data JavaScript checks; real Chromium functional and mobile checks. |
+
+See [LEARNING.md](LEARNING.md) for a short guide and two actual mistakes caught
+during development. The self-check is not automatically graded: being able to
+explain the files remains a student task.
 
 ## Calculation conventions
 
@@ -163,11 +270,14 @@ do not predict future returns.
 - For a November 2021–November 2022 hold, observed max real drawdown is about
   **−71.89%** for Bitcoin and **−18.82%** for gold under the exact formula.
 
-These are pipeline checks. The website, GitHub Actions and GitHub Pages
-deployment have not yet been implemented or validated.
+Website and deployment results are recorded in [VALIDATION.md](VALIDATION.md).
 
 The supplied paper and notebook are references, not runtime dependencies.
 They are not copied into this public repository. Their cash proxy and real
 return conventions vary between sections, and the supplied notebook does not
 include the cited Sharpe/Calmar implementation. Matching the published table
 has therefore **not** been verified. No formula is tuned to force a match.
+
+## Licence
+
+Software is licensed under the [MIT License](LICENSE).

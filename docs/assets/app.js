@@ -718,8 +718,58 @@
       document.getElementById("dashboard").setAttribute("aria-busy", "false");
     }
   }
+  function initQuiz() {
+    if (!document.getElementById("quiz-question")) return;
+    const questions = [
+      [
+        "An investment returns 12% while inflation is 3%. How do you calculate its exact real return?",
+        "Divide 1.12 by 1.03 and subtract 1: about 8.74%. Subtracting 3% from 12% gives a 9% approximation, not the exact answer.",
+      ],
+      [
+        "An asset falls from a real-value peak of $200 to $100. What is its drawdown, and does the original buy price change that?",
+        "The drawdown is $100 / $200 − 1 = −50%. Drawdown is measured from a prior peak, not from your purchase price.",
+      ],
+      [
+        "How are High/Low inflation regimes defined, and what happens to a missing CPI month?",
+        "High is strictly above the historical median CPI YoY; Low includes ties at the median. A missing CPI YoY observation belongs to neither group. The quartiles use Q25 and Q75 thresholds.",
+      ],
+      [
+        "What runs each month, what file may it commit, and what happens if a download fails?",
+        "GitHub Actions runs on the 18th at 06:00 UTC. The Python script builds derived JSON, and the workflow commits only docs/data/data.json if changed. It requests a Pages rebuild. A failed download stops the job and retains the old file.",
+      ],
+      [
+        "Name one reason these historical results do not prove that Bitcoin will protect you from future inflation.",
+        "Possible answers: the sample includes major Bitcoin bull markets; it covers only US inflation; monthly observations miss intra-month crashes; missing CPI can hide a peak or trough; or regime associations do not establish causation or predict future returns.",
+      ],
+    ];
+    let index = 0;
+    const answer = document.getElementById("quiz-answer");
+    const show = document.getElementById("quiz-show");
+    const next = document.getElementById("quiz-next");
+    function display() {
+      text("quiz-progress", `Question ${index + 1} of ${questions.length}`);
+      text("quiz-question", questions[index][0]);
+      answer.hidden = true;
+      answer.textContent = questions[index][1];
+      document.getElementById("quiz-response").value = "";
+      show.hidden = false;
+      next.hidden = true;
+      next.textContent = index === 4 ? "Start again" : "Next question";
+    }
+    show.addEventListener("click", () => {
+      answer.hidden = false;
+      show.hidden = true;
+      next.hidden = false;
+    });
+    next.addEventListener("click", () => {
+      index = (index + 1) % questions.length;
+      display();
+    });
+    display();
+  }
   function init() {
     initDashboard();
+    initQuiz();
   }
   if (document.readyState === "loading")
     document.addEventListener("DOMContentLoaded", init);

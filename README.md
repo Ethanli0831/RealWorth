@@ -136,6 +136,12 @@ JSON; the Actions tab shows the failure.
    `https://ethanli0831.github.io/RealWorth/`. Confirm all three sections and
    the methodology page load. Test on your own phone as well.
 
+If an installed GitHub integration cannot edit Pages settings, the optional
+**Publish website** workflow can enable the same `main /docs` source using
+GitHub's built-in `pages: write` workflow token. Run it from the Actions tab;
+it does not require a personal token. It is manually triggered only, so
+disabling Pages later will not automatically recreate it on a schedule.
+
 ## What the files do
 
 | File | Main ideas to understand |

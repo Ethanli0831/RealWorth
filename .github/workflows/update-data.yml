@@ -1,0 +1,85 @@
+name: Monthly data update
+
+on:
+  schedule:
+    - cron: "0 6 18 * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: monthly-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Set up Node for dependency-free JavaScript tests
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install pinned Python dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Test calculations and failure safety
+        run: python -m unittest discover -s tests -v
+
+      - name: Refresh derived data
+        run: python scripts/build_data.py
+
+      - name: Test dashboard calculations
+        run: node --test tests/test_dashboard.js
+
+      - name: Commit only changed derived data
+        id: commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add -- docs/data/data.json
+          if git diff --cached --quiet -- docs/data/data.json; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+            echo 'Data unchanged; no commit.'
+          else
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m "Monthly data update $(date -u +'%Y-%m')" -- docs/data/data.json
+            git push origin HEAD:main
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          fi
+
+      # GITHUB_TOKEN commits do not automatically trigger a Pages build.
+      # Explicitly rebuild the branch-based main /docs site.
+      - name: Request GitHub Pages build
+        if: steps.commit.outputs.changed == 'true' || github.event_name == 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if gh api "repos/$REPOSITORY/pages" > /dev/null 2> /tmp/pages-status-error; then
+            gh api --method POST "repos/$REPOSITORY/pages/builds" --jq '.status'
+          elif rg -q 'HTTP 404' /tmp/pages-status-error; then
+            echo '::warning::GitHub Pages is not enabled yet. Configure main /docs in Settings > Pages.'
+          else
+            cat /tmp/pages-status-error >&2
+            exit 1
+          fi

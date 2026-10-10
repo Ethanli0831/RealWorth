@@ -4,7 +4,9 @@ Run: python tests/browser_smoke.py [--base-url https://host/project/]
 The default starts an ephemeral local static server. CDN JavaScript is fetched
 with system TLS verification and its pinned SHA-384 checked before routing it
 to Chromium, whose cloud proxy trust store can differ from system Python.
-No HTTPS verification is disabled. Data requests use the actual site.
+No HTTPS verification is disabled. Data requests use the actual site. For
+cloud browsers without the system proxy CA, --system-tls-transport fetches
+the public site through Python's verified HTTPS transport before fulfillment.
 """
 
 import argparse
@@ -19,6 +21,7 @@ import shutil
 import threading
 from urllib.parse import urlsplit
 from urllib.request import urlopen
+from urllib.error import HTTPError
 
 from playwright.sync_api import sync_playwright
 
@@ -36,6 +39,8 @@ class QuietHandler(SimpleHTTPRequestHandler):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--base-url")
+    parser.add_argument("--system-tls-transport", action="store_true",
+                        help="Fetch the HTTPS test site with system TLS verification for cloud Chromium proxy trust differences")
     parser.add_argument("--screenshot", type=Path)
     parser.add_argument("--mobile-screenshot", type=Path)
     args = parser.parse_args()
@@ -46,6 +51,8 @@ def main():
         server = ThreadingHTTPServer(("127.0.0.1", 0), functools.partial(QuietHandler, directory=str(ROOT / "docs")))
         threading.Thread(target=server.serve_forever, daemon=True).start()
         base = f"http://127.0.0.1:{server.server_port}/"
+    if args.system_tls_transport and urlsplit(base).scheme != "https":
+        parser.error("--system-tls-transport requires an HTTPS --base-url")
     with urlopen(CDN, timeout=30) as response:
         chart_js = response.read()
         chart_type = response.headers.get("Content-Type", "application/javascript")
@@ -71,6 +78,18 @@ def main():
         with sync_playwright() as p:
             browser = p.chromium.launch(**options)
             context = browser.new_context(viewport={"width": 1440, "height": 1000}, reduced_motion="reduce")
+            if args.system_tls_transport:
+                def fetch_verified_site(route):
+                    assert route.request.method == "GET", "Smoke checks only support read-only site requests"
+                    try:
+                        response = urlopen(route.request.url, timeout=30)
+                    except HTTPError as error:
+                        response = error
+                    with response:
+                        route.fulfill(status=response.code,
+                                      content_type=response.headers.get("Content-Type", "application/octet-stream"),
+                                      body=response.read())
+                context.route(base + "**", fetch_verified_site)
             context.route(CDN, lambda route: route.fulfill(status=200, headers={"content-type": chart_type, "access-control-allow-origin": cors}, body=chart_js))
             page = context.new_page()
             errors = []

@@ -33,17 +33,21 @@
   `763a36b3489ae8e9fb29c03fbcdc50059be13d5d` before and after both runs.
   Neither run created an unnecessary data commit; the second skipped the
   Pages rebuild because its data was unchanged.
-- **Public hosting is blocked, not complete.** The GitHub API reports
-  `has_pages: false`. Both the installed integration token and the repository's
-  workflow token received HTTP 403 when trying to create the Pages site.
-  The [publication attempt](https://github.com/Ethanli0831/RealWorth/actions/runs/38082242207)
-  records `Resource not accessible by integration` in its failure annotation.
-- The repository owner must open
-  [Settings → Pages](https://github.com/Ethanli0831/RealWorth/settings/pages),
-  choose **Deploy from a branch → main → /docs → Save**. Then run
-  **Publish website** manually if a rebuild is needed and verify the actual
-  public address `https://ethanli0831.github.io/RealWorth/`.
-  That address has not been certified live during this setup.
+- **Public hosting is complete.** The owner enabled **Deploy from a branch →
+  main → /docs**. GitHub reports Pages status `built`, and the
+  [initial Pages deployment](https://github.com/Ethanli0831/RealWorth/actions/runs/38091297269)
+  succeeded. The earlier token creation request failed with HTTP 403; owner
+  activation resolved that blocker.
+- [The live website](https://ethanli0831.github.io/RealWorth/) returned HTTPS
+  200 for the index, methodology, JSON, JavaScript and CSS. All five responses
+  exactly matched their committed files.
+- **11 real Chromium scenarios passed against the public site**, including
+  all four Chart.js charts, calculator, exact scorecard values, inflation
+  toggle, mobile layout, quiz and graceful error states. Actual remote HTTPS
+  responses were fetched with Python's verified system TLS before routing
+  into Chromium because the cloud browser does not trust the proxy's CA.
+  Certificate checks remained enabled; no local site files substituted for
+  remote content. Official CDN bytes also passed the pinned SHA-384 check.
 
 ## Cloud environment
 
@@ -64,7 +68,7 @@ and save its environment settings, then publish the environment for reuse.
 | Three interactive dashboard tools | Implemented; real-browser and mobile viewport checks passed. |
 | Per-stage Git commits | Created and pushed. |
 | Scheduled monthly refresh and two manual runs | Configured; both manual runs passed without redundant commits. |
-| GitHub Pages main /docs and a working public site | **Blocked by HTTP 403** until the owner activates Pages; live verification remains pending. |
+| GitHub Pages main /docs and a working public site | Complete; deployment succeeded, public HTTPS checks and 11 browser scenarios passed. |
 | README, methodology, MIT licence and screenshot | Complete. |
 | Sources, limitations and failure guidance | Documented. |
 | Quiz and two mistakes | Quiz and actual development mistakes documented; student answers remain a human task. |

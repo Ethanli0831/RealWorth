@@ -7,11 +7,10 @@ scorecard, and historical returns in inflation regimes. The website uses
 plain HTML, CSS, vanilla JavaScript and Chart.js from a pinned CDN; there is no
 frontend build or API server. Educational research, not financial advice.
 
-**Website address after Pages activation:** https://ethanli0831.github.io/RealWorth/
+**Live website:** https://ethanli0831.github.io/RealWorth/
 
-GitHub Pages is awaiting the repository owner's `main /docs` setting. Current
-integration and workflow tokens cannot create the Pages site (HTTP 403). The
-dashboard works locally; this address is not yet a verified live deployment.
+GitHub Pages serves `main /docs`. The public site and all three tools were
+verified after deployment; see [VALIDATION.md](VALIDATION.md).
 
 **Source:** https://github.com/Ethanli0831/RealWorth
 
@@ -94,6 +93,18 @@ the same pinned SHA-384 checksum used in the page, then routes those bytes
 to the browser. TLS verification and SRI remain enabled. Production pages
 continue to use the CDN directly.
 
+To check the live site from a cloud browser that does not trust the system's
+HTTPS proxy certificate, run:
+
+```sh
+python tests/browser_smoke.py --base-url https://ethanli0831.github.io/RealWorth/ --system-tls-transport
+```
+
+This option fetches actual public pages, assets and data with Python's verified
+HTTPS transport before the browser executes them. It does not replace remote
+content with local files or disable certificate checks. Normal browsers can
+omit the option.
+
 To compare the paper without replacing the live dataset:
 
 ```sh
@@ -140,11 +151,12 @@ JSON; the Actions tab shows the failure.
    `https://ethanli0831.github.io/RealWorth/`. Confirm all three sections and
    the methodology page load. Test on your own phone as well.
 
-If an installed GitHub integration cannot edit Pages settings, the optional
-**Publish website** workflow can enable the same `main /docs` source using
-GitHub's built-in `pages: write` workflow token. Run it from the Actions tab;
-it does not require a personal token. It is manually triggered only, so
-disabling Pages later will not automatically recreate it on a schedule.
+The optional **Publish website** workflow requests a fresh build from the
+Actions tab and does not require a personal token. If Pages is disabled, it
+also attempts to enable the same `main /docs` source. GitHub denied this
+creation request during setup even with `pages: write`, so the owner enabled
+Pages in Settings instead. Do not rely on the workflow to bypass that
+permission requirement. It is manually triggered only.
 
 ## What the files do
 

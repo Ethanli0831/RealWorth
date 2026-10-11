@@ -14,6 +14,8 @@ verified after deployment; see [VALIDATION.md](VALIDATION.md).
 
 **Source:** https://github.com/Ethanli0831/RealWorth
 
+**中文网站说明书：** [操作方法、指标解读与维护说明](USER_GUIDE.zh-CN.md)
+
 ![RealWorth's calculator, five-asset scorecard and inflation charts](docs/assets/screenshot.png)
 
 ## Use the website locally

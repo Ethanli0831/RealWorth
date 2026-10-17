@@ -26,7 +26,7 @@ from build_research import stamp, parse_date, write_atomic, ROOT
 
 OUTPUT = ROOT / 'docs/data/intelligence.json'
 USER_AGENT = 'RealWorthResearch/1.0 (+https://ethanli0831.github.io/RealWorth/)'
-ALLOWED = ('bbc.com', 'bbc.co.uk', 'theguardian.com', 'cnbc.com', 'ecb.europa.eu', 'federalreserve.gov', 'sciencedaily.com', 'home.cern')
+ALLOWED = ('bbc.com', 'bbc.co.uk', 'theguardian.com', 'cnbc.com', 'ecb.europa.eu', 'federalreserve.gov', 'sciencedaily.com', 'home.cern', 'home.web.cern.ch')
 MODEL = 'Qwen/Qwen2.5-0.5B-Instruct'
 HOSTED_MODEL = 'openai/gpt-4.1-mini'
 DIRECTIONS = {'up', 'down', 'mixed', 'unclear'}
@@ -125,7 +125,9 @@ def parse_model_output(text, evidence):
     if isinstance(chain,str):
         value['chain']=[s.strip() for s in re.split(r'\s*(?:→|->|\n)\s*',chain) if s.strip()]
     elif isinstance(chain,list) and chain and all(isinstance(s,dict) for s in chain):
-        value['chain']=[s.get('description') or s.get('text') or s.get('step') for s in chain]
+        value['chain']=['; '.join(f'{k}: {v}' for k,v in step.items() if isinstance(v,str)) for step in chain]
+    elif isinstance(chain,dict):
+        value['chain']=[f'{k}: {v}' for k,v in chain.items() if isinstance(v,str)]
     try:
         return validate_analysis(value, evidence)
     except ValueError:
@@ -180,7 +182,7 @@ def build(research, previous, provider, max_ai, now):
         for group in groups.values():
             if index < len(group): candidates.append(group[index])
     candidates = candidates[:10]
-    candidates.append({'title':'Historical case: CERN lead-to-gold transmutation','url':research['gold_case']['url'],'publisher':'CERN','published_at':None,'historical':True})
+    candidates.insert(0,{'title':'Historical case: CERN lead-to-gold transmutation','url':research['gold_case']['url'],'publisher':'CERN','published_at':None,'historical':True})
     prior = {a['url']:a for a in previous.get('articles', [])}
     articles, generated, model = [], 0, None
     provider_failed = False

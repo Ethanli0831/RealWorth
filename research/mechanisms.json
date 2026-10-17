@@ -1,0 +1,137 @@
+[
+  {
+    "id": "transmutation",
+    "name": "Gold transmutation / supply technology",
+    "pattern": "(?=.*(?:\\bgold\\b|黄金))(?=.*(?:transmut|artificial|nuclear|lead into|lead to|合成|人造))",
+    "chain": [
+      "A report claims that gold nuclei can be produced by nuclear transmutation.",
+      "First check reproducible yield, energy cost, usable output, isotope stability and commercial scale.",
+      "Only economically competitive, scalable production could materially change gold supply; a laboratory observation alone is insufficient.",
+      "A changed scarcity narrative could affect comparisons with Bitcoin, but adoption and capital flows would still need separate evidence."
+    ],
+    "gold": "Potential supply pressure only if competitive production at meaningful scale is demonstrated; otherwise no established supply effect.",
+    "bitcoin": "Ambiguous: a digital-scarcity narrative could benefit, while shared risk sentiment or liquidity could dominate.",
+    "counter": "Look for an independently replicated cost per usable gram, annual capacity and actual changes in gold supply or ETF flows.",
+    "horizon": "Years for a credible industrial supply change; narrative reactions could be faster."
+  },
+  {
+    "id": "policy",
+    "name": "Interest rates / central banks",
+    "pattern": "\\b(fed|federal reserve|ecb|central bank|interest rate|rate cut|rate hike|monetary policy|boe|bank of england)\\b",
+    "chain": [
+      "A headline concerns a central bank, interest rates or monetary policy.",
+      "Check the actual decision, prior market expectations and the central bank's guidance.",
+      "Policy surprises can change real yields, the dollar, borrowing costs and available liquidity.",
+      "Gold and Bitcoin may respond through different real-yield, liquidity and risk-appetite channels."
+    ],
+    "gold": "Lower real yields can help a non-yielding asset; a stronger dollar or higher real yields can offset it.",
+    "bitcoin": "Easier liquidity may help risk appetite, but recession concerns, leverage liquidations or regulation can offset it.",
+    "counter": "Check inflation-adjusted yields, the dollar and the surprise relative to what markets already priced.",
+    "horizon": "Hours to months, depending on the surprise and follow-through."
+  },
+  {
+    "id": "inflation",
+    "name": "Inflation surprise",
+    "pattern": "\\b(inflation|consumer price|cpi|price pressures|pce)\\b",
+    "chain": [
+      "A headline reports inflation or price pressure.",
+      "Compare the release with consensus and identify energy, core and demand components.",
+      "Higher inflation can increase demand for purchasing-power protection while also prompting tighter policy.",
+      "The balance between hedge demand and real-yield/liquidity effects determines the plausible asset channel."
+    ],
+    "gold": "Inflation concern can support hedge demand; rising real yields or a stronger dollar can work against it.",
+    "bitcoin": "Scarcity demand is possible, but tighter liquidity can hurt; a consistent inflation hedge is not established by the headline.",
+    "counter": "Check core inflation, real yields, policy expectations and whether the surprise persists.",
+    "horizon": "Days to quarters."
+  },
+  {
+    "id": "credit",
+    "name": "Banking / credit stress",
+    "pattern": "\\b(bank failure|bank run|banking crisis|credit stress|credit crunch|default|delinquenc|liquidity crisis|insolven|bankrupt)\\b",
+    "chain": [
+      "A headline flags potential credit, banking or repayment stress.",
+      "Distinguish an isolated borrower from system-wide funding pressure.",
+      "Forced deleveraging can initially create a demand for cash; later policy easing can change liquidity conditions.",
+      "Safe-haven demand and forced selling can therefore point in opposite directions."
+    ],
+    "gold": "Safe-haven demand may support gold, while margin calls or a dollar shortage can initially force selling.",
+    "bitcoin": "Risk reduction and leveraged selling may hurt first; later liquidity easing or distrust of intermediaries could support a different channel.",
+    "counter": "Check credit spreads, funding markets, deposit data and the scale of policy support.",
+    "horizon": "Immediate funding pressure through several quarters."
+  },
+  {
+    "id": "fiscal",
+    "name": "Sovereign debt / fiscal credibility",
+    "pattern": "\\b(sovereign|government debt|public debt|debt ceiling|budget deficit|fiscal|treasury auction|bond vigilante)\\b",
+    "chain": [
+      "A headline concerns public borrowing, fiscal policy or sovereign credit.",
+      "Check currency denomination, maturity, interest costs and the government's funding capacity.",
+      "A change in fiscal credibility can affect yields, currency confidence and expectations of future policy financing.",
+      "Debasement narratives and higher real yields can pull gold and Bitcoin in different directions."
+    ],
+    "gold": "Currency-confidence concerns may help demand; higher real yields can be a headwind.",
+    "bitcoin": "A scarcity narrative may attract attention, but capital controls, volatility and tighter funding can work against it.",
+    "counter": "Check debt-service costs, auction results, currency moves and whether financing conditions actually deteriorate.",
+    "horizon": "Weeks to years."
+  },
+  {
+    "id": "crypto",
+    "name": "Bitcoin regulation / institutional flows",
+    "pattern": "\\b(bitcoin|crypto|digital asset|stablecoin)\\b",
+    "chain": [
+      "A headline concerns digital assets, regulation or institutional participation.",
+      "Read the actual rule, filing or flow data; distinguish a proposal from an effective decision.",
+      "Changes to access, custody, funding or market integrity can alter Bitcoin demand and liquidity.",
+      "A gold effect requires evidence of substitution or a shared macro channel rather than an assumed one-for-one relationship."
+    ],
+    "gold": "No automatic effect; look for actual substitution, gold ETF flows or shared dollar/real-yield changes.",
+    "bitcoin": "Direction depends on access, enforceable rules, actual flows and whether the development was already priced.",
+    "counter": "Check official filings, effective dates, net flows and leverage rather than social-media claims.",
+    "horizon": "Days to months; implementation can take longer."
+  },
+  {
+    "id": "energy",
+    "name": "Energy / geopolitical supply shock",
+    "pattern": "\\b(oil|crude|energy prices|geopolit|war|sanction|middle east|shipping disruption)\\b",
+    "chain": [
+      "A headline concerns a geopolitical or energy-supply shock.",
+      "Check whether physical supply or shipping is disrupted, and distinguish an announcement from delivery data.",
+      "Higher energy costs can lift inflation while weakening real spending and growth.",
+      "Safe-haven demand, policy responses and cash demand can create competing asset effects."
+    ],
+    "gold": "Safe-haven demand can help, but real yields, the dollar and liquidation pressure still matter.",
+    "bitcoin": "Often exposed to risk appetite and liquidity; a safe-haven response must be observed rather than assumed.",
+    "counter": "Check physical energy supply, sustained price changes, real yields and cross-asset fund flows.",
+    "horizon": "Hours to quarters."
+  },
+  {
+    "id": "gold",
+    "name": "Gold demand / supply",
+    "pattern": "\\b(gold|bullion|precious metal)\\b",
+    "chain": [
+      "A headline concerns gold demand, production or market access.",
+      "Separate a price report from evidence of changed physical supply, official buying or investment flows.",
+      "A sustained change in demand or commercially usable supply can alter the gold balance.",
+      "Bitcoin would need a separate substitution, scarcity-narrative or shared-liquidity channel."
+    ],
+    "gold": "Direction depends on whether net demand or economically usable supply changed and on the size relative to the market.",
+    "bitcoin": "No direct mechanical link; substitution is a hypothesis that requires flow evidence.",
+    "counter": "Check quantities, costs, central-bank disclosures, ETF flows and the size relative to annual gold supply.",
+    "horizon": "Days to years, depending on physical capacity and demand persistence."
+  },
+  {
+    "id": "growth",
+    "name": "Growth / labour market",
+    "pattern": "\\b(gdp|recession|economic growth|economic slowdown|jobs|payroll|unemployment|labour market|labor market)\\b",
+    "chain": [
+      "A headline concerns growth or the labour market.",
+      "Compare the release with expectations, revisions and other activity measures.",
+      "Slower growth can weaken earnings and credit quality while changing expected interest rates.",
+      "Policy easing and risk aversion can compete, so one headline does not determine the asset direction."
+    ],
+    "gold": "Lower real yields or defensive demand may help; cash demand and a stronger dollar can offset them.",
+    "bitcoin": "Risk aversion can hurt; eventual easier liquidity could support a different outcome.",
+    "counter": "Check revisions, unemployment, credit spreads and actual monetary conditions.",
+    "horizon": "Days to quarters."
+  }
+]

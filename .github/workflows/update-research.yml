@@ -1,0 +1,60 @@
+name: Economic weather and news update
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build_research.py'
+      - 'research/**'
+      - 'tests/test_research.py'
+      - '.github/workflows/update-research.yml'
+
+permissions:
+  contents: write
+  pages: write
+
+# Share the writer lock with the monthly updater to avoid competing pushes.
+concurrency:
+  group: monthly-data
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install pinned dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Test evidence parsing and macro logic
+        run: python -m unittest discover -s tests -p test_research.py -v
+      - name: Fetch macro readings and publisher headlines
+        run: python scripts/build_research.py
+      - name: Commit research data only
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add -- docs/data/research.json
+          if git diff --cached --quiet -- docs/data/research.json; then
+            echo 'Research unchanged.'
+          else
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m "Refresh economic weather and news $(date -u +'%Y-%m-%d %H:%M')" -- docs/data/research.json
+            git push origin HEAD:main
+          fi
+      - name: Rebuild the public website
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: gh api --method POST "repos/$REPOSITORY/pages/builds" --jq '.status'

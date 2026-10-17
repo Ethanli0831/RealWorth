@@ -1,0 +1,861 @@
+{
+  "meta": {
+    "checked_at": "2026-10-17T22:56:28Z",
+    "region": "United States",
+    "refresh": "Hourly scheduled scan; GitHub queue and publisher delays apply.",
+    "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
+    "news_window_days": 14,
+    "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
+  },
+  "macro": {
+    "checked_at": "2026-10-17T22:56:28Z",
+    "stale": false,
+    "failures": [
+      {
+        "series": "GDPC1",
+        "error": "ReadTimeout"
+      },
+      {
+        "series": "CPIAUCSL",
+        "error": "ReadTimeout"
+      },
+      {
+        "series": "FEDFUNDS",
+        "error": "ReadTimeout"
+      },
+      {
+        "series": "UNRATE",
+        "error": "ReadTimeout"
+      },
+      {
+        "series": "TDSP",
+        "error": "ReadTimeout"
+      },
+      {
+        "series": "QUSPAM770A",
+        "error": "ReadTimeout"
+      },
+      {
+        "series": "GFDEGDQ188S",
+        "error": "ReadTimeout"
+      },
+      {
+        "series": "BAMLH0A0HYM2",
+        "error": "ReadTimeout"
+      },
+      {
+        "series": "DFII10",
+        "error": "ReadTimeout"
+      },
+      {
+        "series": "T10Y3M",
+        "error": "ReadTimeout"
+      }
+    ],
+    "indicators": [
+      {
+        "id": "GDPC1",
+        "name": "Real GDP growth, year over year",
+        "value": null,
+        "unit": "%",
+        "period": null,
+        "stale": true,
+        "change": null,
+        "source": "https://fred.stlouisfed.org/series/GDPC1"
+      },
+      {
+        "id": "CPIAUCSL",
+        "name": "CPI inflation, year over year",
+        "value": null,
+        "unit": "%",
+        "period": null,
+        "stale": true,
+        "change": null,
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL"
+      },
+      {
+        "id": "FEDFUNDS",
+        "name": "Federal funds rate",
+        "value": null,
+        "unit": "%",
+        "period": null,
+        "stale": true,
+        "change": null,
+        "source": "https://fred.stlouisfed.org/series/FEDFUNDS"
+      },
+      {
+        "id": "UNRATE",
+        "name": "Unemployment rate",
+        "value": null,
+        "unit": "%",
+        "period": null,
+        "stale": true,
+        "change": null,
+        "source": "https://fred.stlouisfed.org/series/UNRATE"
+      },
+      {
+        "id": "TDSP",
+        "name": "Household debt service / disposable income",
+        "value": null,
+        "unit": "%",
+        "period": null,
+        "stale": true,
+        "change": null,
+        "source": "https://fred.stlouisfed.org/series/TDSP"
+      },
+      {
+        "id": "QUSPAM770A",
+        "name": "Private non-financial credit / GDP",
+        "value": null,
+        "unit": "%",
+        "period": null,
+        "stale": true,
+        "change": null,
+        "source": "https://fred.stlouisfed.org/series/QUSPAM770A"
+      },
+      {
+        "id": "GFDEGDQ188S",
+        "name": "Federal debt / GDP",
+        "value": null,
+        "unit": "%",
+        "period": null,
+        "stale": true,
+        "change": null,
+        "source": "https://fred.stlouisfed.org/series/GFDEGDQ188S"
+      },
+      {
+        "id": "BAMLH0A0HYM2",
+        "name": "US high-yield credit spread",
+        "value": null,
+        "unit": "percentage points",
+        "period": null,
+        "stale": true,
+        "change": null,
+        "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+      },
+      {
+        "id": "DFII10",
+        "name": "10-year Treasury real yield",
+        "value": null,
+        "unit": "%",
+        "period": null,
+        "stale": true,
+        "change": null,
+        "source": "https://fred.stlouisfed.org/series/DFII10"
+      },
+      {
+        "id": "T10Y3M",
+        "name": "10-year minus 3-month Treasury yield",
+        "value": null,
+        "unit": "percentage points",
+        "period": null,
+        "stale": true,
+        "change": null,
+        "source": "https://fred.stlouisfed.org/series/T10Y3M"
+      }
+    ],
+    "weather": "Mixed or incomplete readings",
+    "growth_direction": "Unknown",
+    "inflation_direction": "Unknown",
+    "short_cycle": "Incomplete short-cycle evidence",
+    "pressure_flags": [],
+    "long_cycle": "Not identified: these US indicators do not establish a complete long-term debt-cycle phase.",
+    "outlook": "If growth keeps slowing while inflation rises, watch for a policy trade-off. If inflation eases without worsening credit or employment, a softer adjustment is more plausible. These are conditional scenarios, not probability forecasts."
+  },
+  "news": [
+    {
+      "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
+      "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
+      "published_at": "2026-10-16T22:34:29Z",
+      "source_id": "cnbc",
+      "publisher": "CNBC Economy",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "fiscal"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
+      "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
+      "published_at": "2026-10-16T16:27:31Z",
+      "source_id": "cnbc",
+      "publisher": "CNBC Economy",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "policy"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
+      "url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-16T05:00:17Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "energy"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "'I paid thousands to a company for jobs that never came'",
+      "url": "https://www.bbc.co.uk/news/articles/c9j3dvezpdz0o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-15T17:19:49Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "growth"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "People in the US: what is your personal ‘recession indicator’?",
+      "url": "https://www.theguardian.com/business/2026/oct/15/what-is-your-personal-recession-indicator",
+      "published_at": "2026-10-15T16:55:41Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "growth"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "Economists: Hot PPI shows Fed's work is not done",
+      "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
+      "published_at": "2026-10-15T15:37:59Z",
+      "source_id": "cnbc",
+      "publisher": "CNBC Economy",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "policy"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "Tech market sell-off deepens amid fears over US inflation and AI debt",
+      "url": "https://www.theguardian.com/business/2026/oct/15/tech-market-sell-off-deepens-amid-fears-over-us-inflation-and-ai-debt",
+      "published_at": "2026-10-15T14:33:12Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "inflation"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "IMF sees milder global slowdown as AI boom offsets war hit — warns resilience is nearing limits",
+      "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
+      "published_at": "2026-10-15T06:35:31Z",
+      "source_id": "cnbc",
+      "publisher": "CNBC Economy",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "energy"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "How high inflation became a 'fact of life' in the U.S.",
+      "url": "https://www.cnbc.com/2026/10/14/high-inflation-fed-expectations.html",
+      "published_at": "2026-10-14T17:20:23Z",
+      "source_id": "cnbc",
+      "publisher": "CNBC Economy",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "inflation"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "Netflix to shed 1,000 jobs in steepest cuts since 2022",
+      "url": "https://www.bbc.co.uk/news/articles/c6zxj0gzk4x4o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-14T16:47:32Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "growth"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "US inflation rises more than expected - here's what is happening with prices",
+      "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-14T15:26:14Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "inflation"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "US inflation rose to 3.7% in September in blow to Republicans before midterms",
+      "url": "https://www.theguardian.com/business/2026/oct/14/inflation-numbers-september",
+      "published_at": "2026-10-14T14:29:42Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "inflation"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "Civil servant faked illness with make-up to juggle five jobs, court hears",
+      "url": "https://www.bbc.co.uk/news/articles/cqgkvdyx5d6jo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-14T11:57:22Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "growth"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "'I applied for 200 jobs' - How 'spray and pray' AI job applications can backfire",
+      "url": "https://www.bbc.co.uk/news/articles/c623dnkn8pkyo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-14T08:27:17Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "growth"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "'Godzilla El Niño' is wreaking havoc with Philippine central bank's inflation forecasts",
+      "url": "https://www.cnbc.com/2026/10/14/godzilla-el-nino-asia-inflation-philippines.html",
+      "published_at": "2026-10-14T04:24:28Z",
+      "source_id": "cnbc",
+      "publisher": "CNBC Economy",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "policy",
+        "inflation"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "The latest inflation data is expected to show price increases are accelerating",
+      "url": "https://www.cnbc.com/2026/10/13/september-consumer-price-index-inflation.html",
+      "published_at": "2026-10-13T18:05:57Z",
+      "source_id": "cnbc",
+      "publisher": "CNBC Economy",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "inflation"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "World Bank jobs council urges 'crisis-era' employment support measures as IMF warns of AI ‘tsunami’",
+      "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html",
+      "published_at": "2026-10-13T13:09:55Z",
+      "source_id": "cnbc",
+      "publisher": "CNBC Economy",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "growth"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "IMF warns bond yields could see a 'disorderly' spike as debt, inflation risks worsen",
+      "url": "https://www.cnbc.com/2026/10/13/treasury-yields-imf-debt-inflation-.html",
+      "published_at": "2026-10-13T04:54:07Z",
+      "source_id": "cnbc",
+      "publisher": "CNBC Economy",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "inflation"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "India’s retail inflation jumps to 5.54% in September, above estimates",
+      "url": "https://www.cnbc.com/2026/10/12/india-inflation-oil-energy-iran-war.html",
+      "published_at": "2026-10-12T10:49:24Z",
+      "source_id": "cnbc",
+      "publisher": "CNBC Economy",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "inflation"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "Americans' debt problems are flashing a warning not seen since the Great Recession",
+      "url": "https://www.cnbc.com/2026/10/09/american-debt-delinquency.html",
+      "published_at": "2026-10-09T19:18:24Z",
+      "source_id": "cnbc",
+      "publisher": "CNBC Economy",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "growth"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "Treasury's Bessent hires Trump's controversial former Fed board pick, Judy Shelton, as advisor",
+      "url": "https://www.cnbc.com/2026/10/09/judy-shelton-scott-bessent-treasury.html",
+      "published_at": "2026-10-09T13:09:19Z",
+      "source_id": "cnbc",
+      "publisher": "CNBC Economy",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "policy"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "Inflation on many everyday items was entirely due to tariffs, NY Fed says",
+      "url": "https://www.cnbc.com/2026/10/08/inflation-tariffs-trump-fed-consumer-goods.html",
+      "published_at": "2026-10-08T17:31:03Z",
+      "source_id": "cnbc",
+      "publisher": "CNBC Economy",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "policy",
+        "inflation"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "How oil-rich Alberta's economy might fare if it broke away from Canada",
+      "url": "https://www.bbc.co.uk/news/articles/cy745jznvxpo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-07T23:10:13Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "energy"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "Inflation fears on the rise as one-year outlook in Fed survey hits highest level since May 2023",
+      "url": "https://www.cnbc.com/2026/10/07/inflation-fears-on-the-rise-as-one-year-outlook-in-fed-survey-hits-highest-since-may-2023.html",
+      "published_at": "2026-10-07T18:44:36Z",
+      "source_id": "cnbc",
+      "publisher": "CNBC Economy",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "policy",
+        "inflation"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "India’s central bank hikes rates for the first time since 2023 as inflation risks build",
+      "url": "https://www.cnbc.com/2026/10/07/india-rbi-interest-rates-inflation.html",
+      "published_at": "2026-10-07T11:55:36Z",
+      "source_id": "cnbc",
+      "publisher": "CNBC Economy",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "policy",
+        "inflation"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "Philip R. Lane: Diagnostic Challenges for ECB Monetary Policy",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261005~1d8d998ef4.en.html",
+      "published_at": "2026-10-05T08:00:00Z",
+      "source_id": "ecb",
+      "publisher": "European Central Bank",
+      "source_kind": "Primary institutional release",
+      "topics": [
+        "policy"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    }
+  ],
+  "feed_health": [
+    {
+      "id": "fed",
+      "name": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "checked_at": "2026-10-17T22:56:28Z",
+      "status": "Unavailable; retained dated headlines",
+      "error": "ParseError",
+      "last_success": null,
+      "matched": 0
+    },
+    {
+      "id": "ecb",
+      "name": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/rss/press.html",
+      "checked_at": "2026-10-17T22:56:28Z",
+      "status": "Fetched",
+      "error": null,
+      "last_success": "2026-10-17T22:56:28Z",
+      "matched": 1
+    },
+    {
+      "id": "bbc",
+      "name": "BBC Business",
+      "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "checked_at": "2026-10-17T22:56:28Z",
+      "status": "Fetched",
+      "error": null,
+      "last_success": "2026-10-17T22:56:28Z",
+      "matched": 7
+    },
+    {
+      "id": "guardian",
+      "name": "The Guardian Business",
+      "url": "https://www.theguardian.com/business/rss",
+      "checked_at": "2026-10-17T22:56:28Z",
+      "status": "Fetched",
+      "error": null,
+      "last_success": "2026-10-17T22:56:28Z",
+      "matched": 3
+    },
+    {
+      "id": "cnbc",
+      "name": "CNBC Economy",
+      "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
+      "checked_at": "2026-10-17T22:56:28Z",
+      "status": "Fetched",
+      "error": null,
+      "last_success": "2026-10-17T22:56:28Z",
+      "matched": 15
+    },
+    {
+      "id": "cern",
+      "name": "CERN",
+      "url": "https://home.cern/api/news/news/feed.rss",
+      "checked_at": "2026-10-17T22:56:28Z",
+      "status": "Unavailable; retained dated headlines",
+      "error": "HTTPError",
+      "last_success": null,
+      "matched": 0
+    }
+  ],
+  "sources": [
+    {
+      "name": "Ray Dalio · Economic Principles",
+      "category": "Framework",
+      "url": "https://www.economicprinciples.org/",
+      "access": "Public explanations; book availability varies",
+      "watch": "Debt service versus income; credit creation; deleveraging mechanisms; domestic versus foreign-currency debt.",
+      "limits": "Conceptual framework, not an official real-time stage classification."
+    },
+    {
+      "name": "Bridgewater Associates",
+      "category": "Fund research",
+      "url": "https://www.bridgewater.com/research-and-insights",
+      "access": "Selected public research; institutional research is not all public",
+      "watch": "Growth and inflation surprises, policy constraints, liquidity and portfolio sensitivities.",
+      "limits": "The dashboard is independent and is not a Bridgewater forecast or endorsement."
+    },
+    {
+      "name": "J.P. Morgan Global Research",
+      "category": "Bank research",
+      "url": "https://www.jpmorgan.com/insights/global-research",
+      "access": "Public summaries; full research may require client access",
+      "watch": "Global growth, rates, credit spreads and earnings revisions.",
+      "limits": "Distinguish published research from a bank's positioning or sales commentary."
+    },
+    {
+      "name": "Goldman Sachs Insights",
+      "category": "Bank research",
+      "url": "https://www.goldmansachs.com/insights",
+      "access": "Public insights; some research is client-only",
+      "watch": "Growth, inflation, financial conditions, commodity supply and demand.",
+      "limits": "Read publication dates and assumptions; forecasts can disagree."
+    },
+    {
+      "name": "Morgan Stanley Insights",
+      "category": "Bank research",
+      "url": "https://www.morganstanley.com/insights",
+      "access": "Public summaries; full reports may require access",
+      "watch": "Macro outlook, policy, equity earnings and cross-asset strategy.",
+      "limits": "Equity earnings are a useful cross-check, not a debt-cycle measure by themselves."
+    },
+    {
+      "name": "Bank of America Institute",
+      "category": "Bank research",
+      "url": "https://institute.bankofamerica.com/",
+      "access": "Public reports",
+      "watch": "Consumer spending, household cash flow and business activity.",
+      "limits": "Bank customer samples are not the entire economy."
+    },
+    {
+      "name": "Citi GPS",
+      "category": "Bank research",
+      "url": "https://www.citigroup.com/global/insights/citigps",
+      "access": "Selected public reports; other research requires access",
+      "watch": "Structural risks, global growth, technology and debt sustainability.",
+      "limits": "Long-horizon themes need separate evidence for near-term market effects."
+    },
+    {
+      "name": "UBS Chief Investment Office",
+      "category": "Bank research",
+      "url": "https://www.ubs.com/global/en/wealthmanagement/insights/chief-investment-office.html",
+      "access": "Public outlooks; access varies by report",
+      "watch": "Base, upside and downside scenarios; rates, currencies and earnings.",
+      "limits": "Separate conditional scenarios from high-conviction predictions."
+    },
+    {
+      "name": "Deutsche Bank Research",
+      "category": "Bank research",
+      "url": "https://www.dbresearch.com/",
+      "access": "Selected public research; access varies",
+      "watch": "Credit conditions, fiscal policy and regional economic cycles.",
+      "limits": "Check geographic coverage before applying a conclusion to the US."
+    },
+    {
+      "name": "HSBC Global Research",
+      "category": "Bank research",
+      "url": "https://www.research.hsbc.com/",
+      "access": "Many reports require client access",
+      "watch": "Global trade, emerging markets, currencies and international credit.",
+      "limits": "Listed as a reading source; paywalled text is not scraped."
+    },
+    {
+      "name": "The Economist · Finance & economics",
+      "category": "Journalism",
+      "url": "https://www.economist.com/finance-and-economics",
+      "access": "Mostly subscription",
+      "watch": "Debt, productivity, monetary policy and historical comparisons.",
+      "limits": "Journalistic interpretation; trace important claims to primary data."
+    },
+    {
+      "name": "Financial Times · Global economy",
+      "category": "Journalism",
+      "url": "https://www.ft.com/global-economy",
+      "access": "Mostly subscription",
+      "watch": "Fiscal credibility, bond markets, banks and international policy.",
+      "limits": "News and opinion are different evidence types."
+    },
+    {
+      "name": "Reuters · Markets",
+      "category": "Journalism",
+      "url": "https://www.reuters.com/markets/",
+      "access": "Access varies by region and article",
+      "watch": "Dated policy decisions, market reactions and attributed statements.",
+      "limits": "A market move after an event does not establish a causal effect."
+    },
+    {
+      "name": "IMF · Global Financial Stability Report",
+      "category": "Primary data & institutions",
+      "url": "https://www.imf.org/en/Publications/GFSR",
+      "access": "Public",
+      "watch": "Leverage, refinancing, sovereign and financial-sector vulnerabilities.",
+      "limits": "Publication lag and scenario assumptions matter."
+    },
+    {
+      "name": "BIS · Quarterly Review",
+      "category": "Primary data & institutions",
+      "url": "https://www.bis.org/publ/quarterly.htm",
+      "access": "Public",
+      "watch": "Private-sector credit, debt-service ratios and cross-border funding.",
+      "limits": "Credit aggregates have coverage differences and release lags."
+    },
+    {
+      "name": "Federal Reserve · Financial Stability Report",
+      "category": "Primary data & institutions",
+      "url": "https://www.federalreserve.gov/publications/financial-stability-report.htm",
+      "access": "Public",
+      "watch": "Valuations, business and household borrowing, leverage and funding risks.",
+      "limits": "Financial vulnerability is not a prediction of a crisis date."
+    },
+    {
+      "name": "New York Fed · Household Debt and Credit",
+      "category": "Primary data & institutions",
+      "url": "https://www.newyorkfed.org/microeconomics/hhdc",
+      "access": "Public",
+      "watch": "Delinquencies, household credit growth and repayment pressure.",
+      "limits": "Households are only one part of a country's debt cycle."
+    },
+    {
+      "name": "Congressional Budget Office",
+      "category": "Primary data & institutions",
+      "url": "https://www.cbo.gov/topics/budget",
+      "access": "Public",
+      "watch": "Government interest costs, deficits and long-term debt projections.",
+      "limits": "Government debt alone does not identify private-sector deleveraging."
+    }
+  ],
+  "mechanisms": [
+    {
+      "id": "transmutation",
+      "name": "Gold transmutation / supply technology",
+      "pattern": "(?=.*(?:\\bgold\\b|黄金))(?=.*(?:transmut|artificial|nuclear|lead into|lead to|合成|人造))",
+      "chain": [
+        "A report claims that gold nuclei can be produced by nuclear transmutation.",
+        "First check reproducible yield, energy cost, usable output, isotope stability and commercial scale.",
+        "Only economically competitive, scalable production could materially change gold supply; a laboratory observation alone is insufficient.",
+        "A changed scarcity narrative could affect comparisons with Bitcoin, but adoption and capital flows would still need separate evidence."
+      ],
+      "gold": "Potential supply pressure only if competitive production at meaningful scale is demonstrated; otherwise no established supply effect.",
+      "bitcoin": "Ambiguous: a digital-scarcity narrative could benefit, while shared risk sentiment or liquidity could dominate.",
+      "counter": "Look for an independently replicated cost per usable gram, annual capacity and actual changes in gold supply or ETF flows.",
+      "horizon": "Years for a credible industrial supply change; narrative reactions could be faster."
+    },
+    {
+      "id": "policy",
+      "name": "Interest rates / central banks",
+      "pattern": "\\b(fed|federal reserve|ecb|central bank|interest rate|rate cut|rate hike|monetary policy|boe|bank of england)\\b",
+      "chain": [
+        "A headline concerns a central bank, interest rates or monetary policy.",
+        "Check the actual decision, prior market expectations and the central bank's guidance.",
+        "Policy surprises can change real yields, the dollar, borrowing costs and available liquidity.",
+        "Gold and Bitcoin may respond through different real-yield, liquidity and risk-appetite channels."
+      ],
+      "gold": "Lower real yields can help a non-yielding asset; a stronger dollar or higher real yields can offset it.",
+      "bitcoin": "Easier liquidity may help risk appetite, but recession concerns, leverage liquidations or regulation can offset it.",
+      "counter": "Check inflation-adjusted yields, the dollar and the surprise relative to what markets already priced.",
+      "horizon": "Hours to months, depending on the surprise and follow-through."
+    },
+    {
+      "id": "inflation",
+      "name": "Inflation surprise",
+      "pattern": "\\b(inflation|consumer price|cpi|price pressures|pce)\\b",
+      "chain": [
+        "A headline reports inflation or price pressure.",
+        "Compare the release with consensus and identify energy, core and demand components.",
+        "Higher inflation can increase demand for purchasing-power protection while also prompting tighter policy.",
+        "The balance between hedge demand and real-yield/liquidity effects determines the plausible asset channel."
+      ],
+      "gold": "Inflation concern can support hedge demand; rising real yields or a stronger dollar can work against it.",
+      "bitcoin": "Scarcity demand is possible, but tighter liquidity can hurt; a consistent inflation hedge is not established by the headline.",
+      "counter": "Check core inflation, real yields, policy expectations and whether the surprise persists.",
+      "horizon": "Days to quarters."
+    },
+    {
+      "id": "credit",
+      "name": "Banking / credit stress",
+      "pattern": "\\b(bank failure|bank run|banking crisis|credit stress|credit crunch|default|delinquenc|liquidity crisis|insolven|bankrupt)\\b",
+      "chain": [
+        "A headline flags potential credit, banking or repayment stress.",
+        "Distinguish an isolated borrower from system-wide funding pressure.",
+        "Forced deleveraging can initially create a demand for cash; later policy easing can change liquidity conditions.",
+        "Safe-haven demand and forced selling can therefore point in opposite directions."
+      ],
+      "gold": "Safe-haven demand may support gold, while margin calls or a dollar shortage can initially force selling.",
+      "bitcoin": "Risk reduction and leveraged selling may hurt first; later liquidity easing or distrust of intermediaries could support a different channel.",
+      "counter": "Check credit spreads, funding markets, deposit data and the scale of policy support.",
+      "horizon": "Immediate funding pressure through several quarters."
+    },
+    {
+      "id": "fiscal",
+      "name": "Sovereign debt / fiscal credibility",
+      "pattern": "\\b(sovereign|government debt|public debt|debt ceiling|budget deficit|fiscal|treasury auction|bond vigilante)\\b",
+      "chain": [
+        "A headline concerns public borrowing, fiscal policy or sovereign credit.",
+        "Check currency denomination, maturity, interest costs and the government's funding capacity.",
+        "A change in fiscal credibility can affect yields, currency confidence and expectations of future policy financing.",
+        "Debasement narratives and higher real yields can pull gold and Bitcoin in different directions."
+      ],
+      "gold": "Currency-confidence concerns may help demand; higher real yields can be a headwind.",
+      "bitcoin": "A scarcity narrative may attract attention, but capital controls, volatility and tighter funding can work against it.",
+      "counter": "Check debt-service costs, auction results, currency moves and whether financing conditions actually deteriorate.",
+      "horizon": "Weeks to years."
+    },
+    {
+      "id": "crypto",
+      "name": "Bitcoin regulation / institutional flows",
+      "pattern": "\\b(bitcoin|crypto|digital asset|stablecoin)\\b",
+      "chain": [
+        "A headline concerns digital assets, regulation or institutional participation.",
+        "Read the actual rule, filing or flow data; distinguish a proposal from an effective decision.",
+        "Changes to access, custody, funding or market integrity can alter Bitcoin demand and liquidity.",
+        "A gold effect requires evidence of substitution or a shared macro channel rather than an assumed one-for-one relationship."
+      ],
+      "gold": "No automatic effect; look for actual substitution, gold ETF flows or shared dollar/real-yield changes.",
+      "bitcoin": "Direction depends on access, enforceable rules, actual flows and whether the development was already priced.",
+      "counter": "Check official filings, effective dates, net flows and leverage rather than social-media claims.",
+      "horizon": "Days to months; implementation can take longer."
+    },
+    {
+      "id": "energy",
+      "name": "Energy / geopolitical supply shock",
+      "pattern": "\\b(oil|crude|energy prices|geopolit|war|sanction|middle east|shipping disruption)\\b",
+      "chain": [
+        "A headline concerns a geopolitical or energy-supply shock.",
+        "Check whether physical supply or shipping is disrupted, and distinguish an announcement from delivery data.",
+        "Higher energy costs can lift inflation while weakening real spending and growth.",
+        "Safe-haven demand, policy responses and cash demand can create competing asset effects."
+      ],
+      "gold": "Safe-haven demand can help, but real yields, the dollar and liquidation pressure still matter.",
+      "bitcoin": "Often exposed to risk appetite and liquidity; a safe-haven response must be observed rather than assumed.",
+      "counter": "Check physical energy supply, sustained price changes, real yields and cross-asset fund flows.",
+      "horizon": "Hours to quarters."
+    },
+    {
+      "id": "gold",
+      "name": "Gold demand / supply",
+      "pattern": "\\b(gold|bullion|precious metal)\\b",
+      "chain": [
+        "A headline concerns gold demand, production or market access.",
+        "Separate a price report from evidence of changed physical supply, official buying or investment flows.",
+        "A sustained change in demand or commercially usable supply can alter the gold balance.",
+        "Bitcoin would need a separate substitution, scarcity-narrative or shared-liquidity channel."
+      ],
+      "gold": "Direction depends on whether net demand or economically usable supply changed and on the size relative to the market.",
+      "bitcoin": "No direct mechanical link; substitution is a hypothesis that requires flow evidence.",
+      "counter": "Check quantities, costs, central-bank disclosures, ETF flows and the size relative to annual gold supply.",
+      "horizon": "Days to years, depending on physical capacity and demand persistence."
+    },
+    {
+      "id": "growth",
+      "name": "Growth / labour market",
+      "pattern": "\\b(gdp|recession|economic growth|economic slowdown|jobs|payroll|unemployment|labour market|labor market)\\b",
+      "chain": [
+        "A headline concerns growth or the labour market.",
+        "Compare the release with expectations, revisions and other activity measures.",
+        "Slower growth can weaken earnings and credit quality while changing expected interest rates.",
+        "Policy easing and risk aversion can compete, so one headline does not determine the asset direction."
+      ],
+      "gold": "Lower real yields or defensive demand may help; cash demand and a stronger dollar can offset them.",
+      "bitcoin": "Risk aversion can hurt; eventual easier liquidity could support a different outcome.",
+      "counter": "Check revisions, unemployment, credit spreads and actual monetary conditions.",
+      "horizon": "Days to quarters."
+    }
+  ],
+  "gold_case": {
+    "url": "https://home.cern/news/news/physics/alice-detects-conversion-lead-gold-lhc",
+    "checked_at": "2026-10-17T22:56:28Z",
+    "status": "Primary page retrieved",
+    "excerpt": "Near-miss collisions between high-energy lead nuclei at the LHC generate intense electromagnetic fields that can knock out protons and transform lead into fleeting quantities of gold nuclei In a paper published in Physical Review Journals, the ALICE collaboration reports measurements that quantify the transmutation of lead into gold in CERNâs Large Hadron Collider (LHC).",
+    "note": "CERN is a European laboratory on the French–Swiss border. This historical case is a possible match for the user-described story, not confirmation of a separate French announcement."
+  }
+}

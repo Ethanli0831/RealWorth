@@ -61,6 +61,8 @@ def main():
     assert cors == "*", "CDN must support the site's anonymous CORS/SRI request"
     with urlopen(base + "data/data.json", timeout=30) as response:
         data = json.load(response)
+    with urlopen(base + "data/research.json", timeout=30) as response:
+        research = json.load(response)
     options = {"headless": True, "args": ["--no-sandbox"]}
     if shutil.which("chromium"):
         options["executable_path"] = shutil.which("chromium")
@@ -197,6 +199,64 @@ def main():
             assert unknown.locator("#current-inflation").inner_text() == "No data"
             assert unknown.locator("#regime-badge").inner_text() == "Current regime: no data"
             assert "do not assign" in unknown.locator("#regime-summary").inner_text()
+            checks += 1
+
+            page.goto(base + '#weather', wait_until='networkidle')
+            assert page.locator('#research-content').is_visible()
+            assert page.locator('#weather-title').inner_text() == research['macro']['weather']
+            assert page.locator('#macro-body tr').count() == 10
+            page.locator('#source-directory-details').evaluate('e=>e.open=true')
+            page.locator('#source-category').select_option('Bank research')
+            assert page.locator('.source-card').count() == 8
+            assert 'J.P. Morgan' in page.locator('#research-source-list').inner_text()
+            page.locator('#source-category').select_option('Journalism')
+            assert page.locator('.source-card').count() == 3
+            assert 'The Economist' in page.locator('#research-source-list').inner_text()
+            checks += 1
+
+            assert research['news'], 'Real-data validation requires at least one matched publisher headline'
+            topic = research['news'][0]['topics'][0]
+            page.locator('#news-topic').select_option(topic)
+            assert page.locator('.news-card').count() > 0
+            page.locator('.news-card .chain-detail').first.evaluate('e=>e.open=true')
+            assert page.locator('.news-card .impact-chain').first.locator('li').count() >= 4
+            assert 'Bitcoin' in page.locator('.news-card .asset-effects').first.inner_text()
+            page.locator('#research-refresh').click()
+            page.wait_for_function("document.getElementById('research-refresh').disabled === false")
+            assert page.locator('.news-card .chain-detail').first.get_attribute('open') is not None
+            page.locator('#news-search').fill('NO_MATCH_739450')
+            assert page.locator('.news-card').count() == 0
+            assert 'No matching headlines' in page.locator('#news-list').inner_text()
+            page.locator('#news-search').fill('')
+            page.locator('#news-topic').select_option('')
+            page.locator('.gold-case').evaluate('e=>e.open=true')
+            assert 'economically competitive' in page.locator('#gold-case-evidence').inner_text()
+            page.set_viewport_size({'width':390,'height':844})
+            page.wait_for_function('document.documentElement.scrollWidth <= innerWidth')
+            if args.mobile_screenshot:
+                page.screenshot(path=str(args.mobile_screenshot), full_page=True)
+            checks += 1
+
+            no_research = context.new_page()
+            no_research.route('**/data/research.json', lambda route: route.fulfill(status=503, body='Unavailable'))
+            no_research.goto(base, wait_until='networkidle')
+            assert '503' in no_research.locator('#research-load-status').inner_text()
+            assert no_research.locator('#calculator-results').is_visible()
+            assert no_research.locator('#scorecard-body tr').count() == 5
+            checks += 1
+
+            hostile = json.loads(json.dumps(research))
+            hostile['news'][0]['title'] = '<img src=x onerror="window.injected=true"> Bitcoin gold'
+            hostile['macro']['stale'] = True
+            safe_page = context.new_page()
+            safe_page.route('**/data/research.json', lambda route: route.fulfill(status=200, content_type='application/json', body=json.dumps(hostile)))
+            safe_page.goto(base, wait_until='networkidle')
+            assert safe_page.locator('#weather-warning').is_visible()
+            assert 'stale' in safe_page.locator('#weather-warning').inner_text()
+            assert safe_page.locator('#news-list img').count() == 0
+            assert safe_page.evaluate('window.injected === undefined')
+            assert '<img' in safe_page.locator('.news-card h3').first.inner_text()
+            assert not errors, errors
             checks += 1
             browser.close()
     finally:

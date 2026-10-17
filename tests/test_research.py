@@ -48,6 +48,26 @@ class NewsEvidence(unittest.TestCase):
 
 
 class MacroEvidence(unittest.TestCase):
+    def test_growth_inflation_weather_and_credit_stress_are_distinct(self):
+        raw = {
+            'GDPC1': pd.Series([100, 101, 102, 103, 104, 108], index=pd.date_range('2025-01-01', periods=6, freq='QS')),
+            'CPIAUCSL': pd.Series([100 * 1.001 ** n * (1.008 ** max(0, n - 29)) for n in range(36)], index=pd.date_range('2023-10-01', periods=36, freq='MS')),
+            'FEDFUNDS': pd.Series([3, 3, 3.25, 3.5], index=pd.date_range('2026-06-01', periods=4, freq='MS')),
+            'UNRATE': pd.Series([4.] * 24, index=pd.date_range('2024-10-01', periods=24, freq='MS')),
+            'BAMLH0A0HYM2': pd.Series([3.], index=pd.to_datetime(['2026-10-15'])),
+        }
+        result = m.macro_signals(raw, NOW, [])
+        self.assertEqual(result['weather'], 'Growth improving · inflation rising')
+        self.assertEqual(result['short_cycle'], 'Improving growth with tighter policy')
+        raw['UNRATE'].loc['2025-10-01'] = float('nan')
+        partial = m.macro_signals(raw, NOW, [])
+        self.assertIn('labour baseline unavailable', partial['short_cycle'])
+        raw['BAMLH0A0HYM2'].iloc[-1] = 5
+        stressed = m.macro_signals(raw, NOW, [])
+        self.assertEqual(stressed['weather'], result['weather'])
+        self.assertEqual(stressed['short_cycle'], 'Debt-stress signals require investigation')
+        self.assertEqual(len(stressed['pressure_flags']), 1)
+
     def test_missing_current_prior_year_cpi_remains_unknown(self):
         cpi = pd.Series(range(100, 124), index=pd.date_range('2024-11-01', periods=24, freq='MS'), dtype=float)
         cpi.loc['2025-10-01'] = float('nan')

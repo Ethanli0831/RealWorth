@@ -220,3 +220,19 @@ GitHub Actions 预定在**每月 18 日 06:00 UTC**更新，即多伦多夏令�
 建议最后打开 **Methodology** 页末尾的五题测验：先写答案，再点 **Show explanation** 对照解释，然后点 **Next question**。测验是学习练习，不会自动认证你已经掌握。
 
 相关资料：[README](README.md)、[验收记录](VALIDATION.md)、[论文对照](PAPER_COMPARISON.md)、[学习指南](LEARNING.md)。
+
+## 12. 新功能：经济天气、研究目录与新闻影响链
+
+打开首页的 Research，或直接访问 [经济天气](https://ethanli0831.github.io/RealWorth/#weather) 和 [新闻影响链](https://ethanli0831.github.io/RealWorth/#news)。
+
+**Economic Weather** 以美国宏观数据判断增长与通胀方向。增长比较最新实际 GDP 同比与前一季度；通胀比较最新 CPI 同比与六个月前。四格图会标出当前信号；变化较小或数据缺失时显示混合或不完整，而不会强行归类。每项数据的观察期、比较基准和 FRED 来源都在表格中。
+
+**Short-cycle signal** 结合利率变化、信用利差及失业压力，提供短周期观察。长期债务周期还需要私人和政府资产负债表、币种、期限、外部融资等证据；网站不声称已经判断出完整长期阶段，也不代表 Ray Dalio 或 Bridgewater 的官方观点。
+
+展开 **Browse banks, fund research, journalism and primary institutions**，可查看 18 个来源并按类别筛选：Bridgewater、Dalio，J.P. Morgan、Goldman Sachs、Morgan Stanley、Bank of America Institute、Citi、UBS、Deutsche Bank、HSBC，以及 The Economist、FT、Reuters、IMF、BIS、美联储、纽约联储和 CBO。每张卡片写明适合研究的问题及访问限制。付费报告需你自行阅读，网站不会假装抓取其全文。
+
+**News & Impact Chains** 每小时定时扫描选定的 RSS，展示最近 14 天内最多 60 条相关标题。可按主题筛选、搜索标题或媒体名称；展开单条新闻的 impact chain，查看事件假设、传导路径、黄金和 Bitcoin 的不同可能影响、反向因素、验证证据及可能时间尺度。标题来自出版方，链条是透明规则匹配的条件分析，不等于事实核查、文章全文分析或价格预测。
+
+人工黄金案例单独标记为历史背景：CERN 的铅转金研究可能是你提到的消息，但不能据此认定法国已实现商业化黄金生产。要判断黄金供给风险，需核实成本、产率、可用产物和规模；要进一步推断 Bitcoin 受益，还需资金流与替代需求证据。
+
+查看 **Last scan** 和 **News source health & coverage**：新闻不是连续实时推送，打开页面时每五分钟检查已发布的新快照；来源失败或扫描过旧时有明确提醒，缓存标题保留原始发布时间。**Check latest snapshot** 重新读取已发布的数据，不会直接命令服务器立即扫描。管理员可在 GitHub Actions 手动运行 **Economic weather and news update**。原来的投资回报数据仍按月更新，两个文件的截止日期可能不同。

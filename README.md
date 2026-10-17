@@ -2,8 +2,9 @@
 
 An independent educational project comparing Bitcoin (`BTC-USD`), gold (`GLD`),
 the S&P 500 (`SPY`), Treasury bills (`BIL`), and long-term Treasury bonds (`TLT`).
-Three interactive tools show investment returns after inflation, a risk
-scorecard, and historical returns in inflation regimes. The website uses
+Three investment tools show returns after inflation, a risk
+scorecard, and historical returns in inflation regimes. Two additional research
+sections show US economic-weather signals and attributed news impact chains. The website uses
 plain HTML, CSS, vanilla JavaScript and Chart.js from a pinned CDN; there is no
 frontend build or API server. Educational research, not financial advice.
 
@@ -311,3 +312,39 @@ No formula is tuned to force a match.
 ## Licence
 
 Software is licensed under the [MIT License](LICENSE).
+
+## Economic weather and news research
+
+Open [Economic Weather](https://ethanli0831.github.io/RealWorth/#weather) or
+[News & Impact Chains](https://ethanli0831.github.io/RealWorth/#news). The weather
+panel separates growth/inflation direction from short-cycle credit and policy
+signals. It never assigns an unsupported full long-term debt-cycle phase.
+Each macro row links to FRED and shows its own period and change baseline.
+
+The reading directory has 18 sources: Dalio, Bridgewater, eight bank research
+outlets, three journalism outlets and five primary institutions. Access labels
+identify subscription/client restrictions. These reports are reading links,
+not a claim that a model has read proprietary research.
+
+`research/sources.json` configures reading sources and RSS feeds;
+`research/mechanisms.json` contains transparent hypothesis templates.
+`scripts/build_research.py` writes `docs/data/research.json` independently of
+the original monthly return pipeline. It uses the same pinned Python packages.
+Run it with `python scripts/build_research.py`.
+
+**Economic weather and news update** runs hourly at minute 17 UTC and supports
+manual dispatch. A visible browser page checks for published snapshots every
+five minutes. Real publisher and GitHub queue delays apply. It commits only
+research.json and requests a Pages rebuild. Headlines are dated, attributed,
+keyword-matched, deduplicated and limited to 14 days/60 items. Some sources may
+be unavailable; the panel reports coverage and cached items explicitly.
+A total source failure retains the previous file and fails the workflow.
+
+News impact chains are conditional mechanism templates, not AI reporting,
+full-article summaries, verified facts or price forecasts. The historical CERN
+lead-to-gold example is separate from current news; an independently described
+French announcement has not been verified. No automatic gold-to-Bitcoin
+substitution is asserted. See the methodology for thresholds and limitations.
+
+Research checks: `python -m unittest discover -s tests -p test_research.py -v`
+and `node --test tests/test_research.js`.

@@ -18,6 +18,7 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="assets/app.js"></script>
+    <script defer src="assets/research.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#calculator">Skip to the tools</a>
@@ -28,7 +29,7 @@
       >
       <nav aria-label="Main navigation">
         <a href="#calculator">Calculator</a><a href="#scorecard">Scorecard</a
-        ><a href="#regime">Inflation</a
+        ><a href="#regime">Inflation</a><a href="#weather">Research</a
         ><a href="methodology.html"
           >Methodology <span aria-hidden="true">↗</span></a
         >
@@ -409,6 +410,255 @@
               only. Missing CPI months are shown as gaps and excluded from
               regime averages.
             </p>
+          </div>
+        </div>
+      </section>
+      <section id="weather" class="tool" aria-labelledby="weather-heading">
+        <div class="section-heading">
+          <span class="section-number">04</span>
+          <div>
+            <p class="eyebrow">Growth, inflation &amp; the debt cycle</p>
+            <h2 id="weather-heading">Economic Weather</h2>
+            <p>
+              Observe the regime. Explore what could change next. A transparent
+              US signal panel inspired by Ray Dalio’s debt-cycle framework.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="research-toolbar">
+            <p class="tiny">
+              Current readings and conditional outlooks; not a calibrated
+              forecast or a Bridgewater cycle call.
+            </p>
+            <button class="text-button" id="research-refresh" type="button">
+              Check latest snapshot
+            </button>
+          </div>
+          <p class="notice" id="research-load-status" role="status">
+            Loading macro and news research…
+          </p>
+          <div id="research-content" hidden>
+            <p class="tiny" id="weather-updated"></p>
+            <p class="notice" id="weather-warning" hidden></p>
+            <h3 class="weather-title" id="weather-title"></h3>
+            <p>
+              Growth direction: latest real GDP YoY growth versus the previous
+              quarter. Inflation direction: latest CPI YoY versus six months
+              earlier. Both use a ±0.10 percentage-point deadband.
+            </p>
+            <div
+              class="weather-quadrants"
+              role="group"
+              aria-label="Four growth and inflation environments; current observed signals are labelled"
+            >
+              <div
+                data-weather-growth="Rising"
+                data-weather-inflation="Falling"
+              >
+                <strong>Growth improving · inflation easing</strong
+                ><small
+                  >Watch whether credit and employment stay resilient.</small
+                ><span class="weather-current"></span>
+              </div>
+              <div data-weather-growth="Rising" data-weather-inflation="Rising">
+                <strong>Growth improving · inflation rising</strong
+                ><small>Watch policy tightening and real yields.</small
+                ><span class="weather-current"></span>
+              </div>
+              <div
+                data-weather-growth="Falling"
+                data-weather-inflation="Falling"
+              >
+                <strong>Growth slowing · inflation easing</strong
+                ><small>Watch easing policy against worsening credit.</small
+                ><span class="weather-current"></span>
+              </div>
+              <div
+                data-weather-growth="Falling"
+                data-weather-inflation="Rising"
+              >
+                <strong>Growth slowing · inflation rising</strong
+                ><small
+                  >Watch the trade-off between inflation and activity.</small
+                ><span class="weather-current"></span>
+              </div>
+            </div>
+            <div class="cycle-grid">
+              <div>
+                <p class="eyebrow">Short-cycle signal</p>
+                <h3 id="weather-cycle"></h3>
+                <ul id="weather-flags"></ul>
+              </div>
+              <div>
+                <p class="eyebrow">Long debt cycle</p>
+                <p id="weather-long-cycle"></p>
+                <p class="tiny">
+                  Debt denomination, maturity, private versus public balance
+                  sheets, external funding and policy capacity need a deeper
+                  country study. Household debt service is not total-economy
+                  debt service.
+                </p>
+              </div>
+            </div>
+            <p class="notice" id="weather-outlook"></p>
+            <details class="rules">
+              <summary>How this model reads the debt cycle</summary>
+              <p>
+                Credit can raise spending faster than income until repayment and
+                funding constraints bind. A short-cycle slowdown is different
+                from long-term deleveraging. Dalio’s framework considers debt
+                restructuring, spending restraint, transfers and monetary
+                financing; this panel does not mechanically date those phases.
+              </p>
+              <p>
+                Short-cycle stress flags use a high-yield spread ≥5 percentage
+                points or a three-month unemployment average ≥0.5 points above
+                its trailing 12-month minimum. These are our educational
+                thresholds, not Dalio’s published stage rules or an official
+                recession determination. Rate moves of at least ±0.25 points
+                over three months distinguish easing and tightening.
+              </p>
+              <p>
+                Daily observations older than 10 days, monthly periods more than
+                75 days past period end and quarterly periods more than 200 days
+                past period end are excluded from current classification.
+                Sources have different release dates and revisions; this is not
+                a simultaneous live snapshot or a backtested predictive model.
+              </p>
+            </details>
+            <div
+              class="table-wrap macro-table"
+              role="region"
+              tabindex="0"
+              aria-label="Macro indicator evidence, scroll horizontally"
+            >
+              <table class="score-table">
+                <caption>
+                  Evidence behind the regime · source dates and change baselines
+                  matter
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Signal</th>
+                    <th scope="col">Latest value</th>
+                    <th scope="col">Observation period</th>
+                    <th scope="col">Change (pp)</th>
+                    <th scope="col">Source</th>
+                  </tr>
+                </thead>
+                <tbody id="macro-body"></tbody>
+              </table>
+            </div>
+            <div id="research-sources" class="source-directory">
+              <h3>Build your research reading list</h3>
+              <p>
+                Start with
+                <a href="https://www.bridgewater.com/research-and-insights"
+                  >Bridgewater</a
+                >, primary
+                <a href="https://www.bis.org/publ/quarterly.htm">BIS</a>/<a
+                  href="https://www.federalreserve.gov/publications/financial-stability-report.htm"
+                  >Fed</a
+                >
+                evidence, competing bank outlooks, and
+                <a href="https://www.economist.com/finance-and-economics"
+                  >The Economist</a
+                >
+                or <a href="https://www.ft.com/global-economy">FT</a> for
+                context. Compare assumptions, publication dates and geographic
+                coverage.
+              </p>
+              <p class="tiny">
+                Directory links are reading recommendations. Paywalled bank
+                research is not scraped, and the classifier does not claim to
+                have read these reports.
+              </p>
+              <details id="source-directory-details">
+                <summary>
+                  Browse banks, fund research, journalism and primary
+                  institutions
+                </summary>
+                <div class="research-filters">
+                  <label
+                    >Source category<select id="source-category">
+                      <option value="">All categories</option>
+                    </select></label
+                  >
+                  <p class="tiny" id="source-count"></p>
+                </div>
+                <div class="source-grid" id="research-source-list"></div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="news" class="tool" aria-labelledby="news-heading">
+        <div class="section-heading">
+          <span class="section-number">05</span>
+          <div>
+            <p class="eyebrow">Follow the mechanism, question the claim</p>
+            <h2 id="news-heading">News &amp; Impact Chains</h2>
+            <p>
+              Publisher headlines → possible transmission channels → gold and
+              Bitcoin → evidence that could change the conclusion.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <p class="notice">
+            Hourly scheduled scans; this page checks for published updates every
+            five minutes while visible. This is not continuous real-time
+            monitoring. Open the original source before treating a headline as
+            fact. Mechanism chains are rule-based hypotheses; they are not
+            full-article summaries, price predictions or verified causal
+            effects.
+          </p>
+          <div id="news-content" hidden>
+            <p class="tiny" id="news-updated"></p>
+            <p class="notice" id="news-health-warning" hidden></p>
+            <details class="rules">
+              <summary>News source health &amp; coverage</summary>
+              <ul id="feed-health-list"></ul>
+              <p>
+                Only dated, relevant headlines in the last 14 days are retained,
+                capped at 60. Matching uses headline keywords and can miss
+                context, negation or important stories. A fetched feed can have
+                zero relevant items. Articles are not ranked by expected
+                investment return.
+              </p>
+            </details>
+            <div class="research-filters">
+              <label
+                >Impact channel<select id="news-topic">
+                  <option value="">All channels</option>
+                </select></label
+              ><label
+                >Search headlines or publishers<input
+                  id="news-search"
+                  type="search"
+                  placeholder="Gold, Bitcoin, Fed…"
+              /></label>
+            </div>
+            <p class="tiny" id="news-result-count" role="status"></p>
+            <div id="news-list"></div>
+            <button class="text-button" id="news-more" type="button" hidden>
+              Show more headlines
+            </button>
+            <details class="gold-case">
+              <summary>
+                Worked example: “artificial gold” and the Bitcoin scarcity
+                narrative
+              </summary>
+              <p>
+                <strong>Background case, not a current alert.</strong> CERN’s
+                ALICE lead-to-gold observation is a possible reference for the
+                described French story. Creating gold nuclei is different from
+                demonstrating commercially competitive gold supply. A separate
+                French announcement has not been established here.
+              </p>
+              <div id="gold-case-evidence"></div>
+            </details>
           </div>
         </div>
       </section>

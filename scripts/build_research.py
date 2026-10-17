@@ -62,10 +62,14 @@ def safe_url(url):
 def download(url):
     for attempt in range(3):
         try:
-            r = requests.get(url, timeout=25, headers={'User-Agent': 'RealWorth educational research dashboard; public RSS reader', 'Accept': 'application/rss+xml, application/xml, text/csv, text/html;q=0.8'})
+            # Use the already-tested FRED request shape from build_data.py.
+            # Long CSV responses can exceed a 25-second read timeout on runners.
+            r = requests.get(url, timeout=(15, 60))
             r.raise_for_status()
             if len(r.content) > 5_000_000:
                 raise ValueError('Source response exceeds 5 MB')
+            if not r.encoding or r.encoding.lower() in ('iso-8859-1', 'ascii'):
+                r.encoding = 'utf-8'
             return r.text
         except (requests.RequestException, ValueError):
             if attempt == 2:
@@ -151,6 +155,8 @@ def macro_signals(raw, now, failures):
         cycle = 'Incomplete short-cycle evidence'
     elif pressure:
         cycle = 'Debt-stress signals require investigation'
+    elif labour is None:
+        cycle = 'Partial short-cycle signals · labour baseline unavailable'
     elif growth == 'Falling' and rate <= -0.25:
         cycle = 'Slower growth with policy easing'
     elif growth == 'Falling' and rate >= 0.25:
@@ -236,6 +242,11 @@ class Paragraphs(HTMLParser):
 
 
 def check_case(url, now, previous):
+    if previous.get('excerpt'):
+        try:
+            previous = {**previous, 'excerpt': previous['excerpt'].encode('latin1').decode('utf-8')}
+        except (UnicodeEncodeError, UnicodeDecodeError):
+            pass
     if previous.get('checked_at') and previous.get('status') == 'Primary page retrieved' and now - parse_date(previous['checked_at']) < timedelta(days=7):
         return previous
     try:
@@ -250,11 +261,12 @@ def check_case(url, now, previous):
         return {**previous, 'url': url, 'attempted_at': stamp(now), 'status': 'Primary page unavailable; verify the link manually', 'error': type(exc).__name__}
 
 
-def build(previous, now):
+def build(previous, now, macro_only=False):
     config = json.loads((ROOT / 'research/sources.json').read_text())
     mechanisms = json.loads((ROOT / 'research/mechanisms.json').read_text())
-    jobs = [('macro', key, f'https://fred.stlouisfed.org/graph/fredgraph.csv?id={key}&cosd=2000-01-01') for key in SERIES]
-    jobs += [('news', f['id'], f['url']) for f in config['feeds']]
+    jobs = [('macro', key, f'https://fred.stlouisfed.org/graph/fredgraph.csv?id={key}') for key in SERIES]
+    if not macro_only:
+        jobs += [('news', f['id'], f['url']) for f in config['feeds']]
     def fetch(job):
         kind, key, url = job
         try:
@@ -263,7 +275,7 @@ def build(previous, now):
             return kind, key, value, None
         except Exception as exc:
             return kind, key, None, type(exc).__name__
-    with ThreadPoolExecutor(max_workers=6) as pool:
+    with ThreadPoolExecutor(max_workers=3) as pool:
         results = list(pool.map(fetch, jobs))
     raw, failures, news, health = {}, [], [], []
     for kind, key, value, error in results:
@@ -287,8 +299,20 @@ def build(previous, now):
     if not raw and all(h['error'] for h in health):
         raise RuntimeError('All macro and news sources failed; retaining existing research.json')
     macro = macro_signals(raw, now, failures)
+    if macro_only:
+        previous_case = previous.get('gold_case', {})
+        if previous_case.get('excerpt'):
+            try:
+                previous = {**previous, 'gold_case': {**previous_case, 'excerpt': previous_case['excerpt'].encode('latin1').decode('utf-8')}}
+            except (UnicodeEncodeError, UnicodeDecodeError):
+                pass
     if ('GDPC1' not in raw or 'CPIAUCSL' not in raw) and previous.get('macro'):
         macro = {**previous['macro'], 'stale': True, 'attempted_at': stamp(now), 'failures': failures}
+    if macro_only:
+        if not previous:
+            raise ValueError('A macro-only refresh requires an existing research snapshot')
+        # Do not claim that headlines were rechecked when only FRED was read.
+        return {**previous, 'macro': macro}
     unique, titles = {}, set()
     for item in sorted(news, key=lambda x: (x['cached'], -parse_date(x['published_at']).timestamp())):
         normalized = re.sub(r'\W+', '', item['title'].lower())
@@ -318,10 +342,11 @@ def write_atomic(payload, output):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, default=OUTPUT)
+    parser.add_argument('--macro-only', action='store_true', help='Refresh only FRED in an existing snapshot; retain news scan dates')
     args = parser.parse_args()
     previous = json.loads(args.output.read_text()) if args.output.exists() else {}
     try:
-        payload = build(previous, datetime.now(timezone.utc))
+        payload = build(previous, datetime.now(timezone.utc), args.macro_only)
         write_atomic(payload, args.output)
     except Exception as exc:
         print(f'Research refresh failed; previous data retained: {exc}', file=sys.stderr)

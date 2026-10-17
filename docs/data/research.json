@@ -8,156 +8,115 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-10-17T22:56:28Z",
+    "checked_at": "2026-10-17T23:02:02Z",
     "stale": false,
-    "failures": [
-      {
-        "series": "GDPC1",
-        "error": "ReadTimeout"
-      },
-      {
-        "series": "CPIAUCSL",
-        "error": "ReadTimeout"
-      },
-      {
-        "series": "FEDFUNDS",
-        "error": "ReadTimeout"
-      },
-      {
-        "series": "UNRATE",
-        "error": "ReadTimeout"
-      },
-      {
-        "series": "TDSP",
-        "error": "ReadTimeout"
-      },
-      {
-        "series": "QUSPAM770A",
-        "error": "ReadTimeout"
-      },
-      {
-        "series": "GFDEGDQ188S",
-        "error": "ReadTimeout"
-      },
-      {
-        "series": "BAMLH0A0HYM2",
-        "error": "ReadTimeout"
-      },
-      {
-        "series": "DFII10",
-        "error": "ReadTimeout"
-      },
-      {
-        "series": "T10Y3M",
-        "error": "ReadTimeout"
-      }
-    ],
+    "failures": [],
     "indicators": [
       {
         "id": "GDPC1",
         "name": "Real GDP growth, year over year",
-        "value": null,
+        "value": 2.192,
         "unit": "%",
-        "period": null,
-        "stale": true,
-        "change": null,
+        "period": "2026Q2",
+        "stale": false,
+        "change": -0.448,
         "source": "https://fred.stlouisfed.org/series/GDPC1"
       },
       {
         "id": "CPIAUCSL",
         "name": "CPI inflation, year over year",
-        "value": null,
+        "value": 3.717,
         "unit": "%",
-        "period": null,
-        "stale": true,
-        "change": null,
+        "period": "2026-09",
+        "stale": false,
+        "change": 0.431,
         "source": "https://fred.stlouisfed.org/series/CPIAUCSL"
       },
       {
         "id": "FEDFUNDS",
         "name": "Federal funds rate",
-        "value": null,
+        "value": 3.75,
         "unit": "%",
-        "period": null,
-        "stale": true,
-        "change": null,
+        "period": "2026-09",
+        "stale": false,
+        "change": 0.12,
         "source": "https://fred.stlouisfed.org/series/FEDFUNDS"
       },
       {
         "id": "UNRATE",
         "name": "Unemployment rate",
-        "value": null,
+        "value": 4.2,
         "unit": "%",
-        "period": null,
-        "stale": true,
+        "period": "2026-09",
+        "stale": false,
         "change": null,
         "source": "https://fred.stlouisfed.org/series/UNRATE"
       },
       {
         "id": "TDSP",
         "name": "Household debt service / disposable income",
-        "value": null,
+        "value": 11.111,
         "unit": "%",
-        "period": null,
-        "stale": true,
-        "change": null,
+        "period": "2026Q2",
+        "stale": false,
+        "change": -0.013,
         "source": "https://fred.stlouisfed.org/series/TDSP"
       },
       {
         "id": "QUSPAM770A",
         "name": "Private non-financial credit / GDP",
-        "value": null,
+        "value": 140.3,
         "unit": "%",
-        "period": null,
+        "period": "2025Q4",
         "stale": true,
-        "change": null,
+        "change": -2.2,
         "source": "https://fred.stlouisfed.org/series/QUSPAM770A"
       },
       {
         "id": "GFDEGDQ188S",
         "name": "Federal debt / GDP",
-        "value": null,
+        "value": 122.594,
         "unit": "%",
-        "period": null,
-        "stale": true,
-        "change": null,
+        "period": "2026Q1",
+        "stale": false,
+        "change": 2.049,
         "source": "https://fred.stlouisfed.org/series/GFDEGDQ188S"
       },
       {
         "id": "BAMLH0A0HYM2",
         "name": "US high-yield credit spread",
-        "value": null,
+        "value": 3.23,
         "unit": "percentage points",
-        "period": null,
-        "stale": true,
-        "change": null,
+        "period": "2026-10-15",
+        "stale": false,
+        "change": 0.38,
         "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
       },
       {
         "id": "DFII10",
         "name": "10-year Treasury real yield",
-        "value": null,
+        "value": 2.78,
         "unit": "%",
-        "period": null,
-        "stale": true,
-        "change": null,
+        "period": "2026-10-15",
+        "stale": false,
+        "change": 0.88,
         "source": "https://fred.stlouisfed.org/series/DFII10"
       },
       {
         "id": "T10Y3M",
         "name": "10-year minus 3-month Treasury yield",
-        "value": null,
+        "value": 0.83,
         "unit": "percentage points",
-        "period": null,
-        "stale": true,
-        "change": null,
+        "period": "2026-10-16",
+        "stale": false,
+        "change": 0.21,
         "source": "https://fred.stlouisfed.org/series/T10Y3M"
       }
     ],
-    "weather": "Mixed or incomplete readings",
-    "growth_direction": "Unknown",
-    "inflation_direction": "Unknown",
-    "short_cycle": "Incomplete short-cycle evidence",
+    "weather": "Growth slowing · inflation rising",
+    "growth_direction": "Falling",
+    "inflation_direction": "Rising",
+    "short_cycle": "Partial short-cycle signals · labour baseline unavailable",
     "pressure_flags": [],
     "long_cycle": "Not identified: these US indicators do not establish a complete long-term debt-cycle phase.",
     "outlook": "If growth keeps slowing while inflation rises, watch for a policy trade-off. If inflation eases without worsening credit or employment, a softer adjustment is more plausible. These are conditional scenarios, not probability forecasts."
@@ -855,7 +814,7 @@
     "url": "https://home.cern/news/news/physics/alice-detects-conversion-lead-gold-lhc",
     "checked_at": "2026-10-17T22:56:28Z",
     "status": "Primary page retrieved",
-    "excerpt": "Near-miss collisions between high-energy lead nuclei at the LHC generate intense electromagnetic fields that can knock out protons and transform lead into fleeting quantities of gold nuclei In a paper published in Physical Review Journals, the ALICE collaboration reports measurements that quantify the transmutation of lead into gold in CERNâs Large Hadron Collider (LHC).",
+    "excerpt": "Near-miss collisions between high-energy lead nuclei at the LHC generate intense electromagnetic fields that can knock out protons and transform lead into fleeting quantities of gold nuclei In a paper published in Physical Review Journals, the ALICE collaboration reports measurements that quantify the transmutation of lead into gold in CERN’s Large Hadron Collider (LHC).",
     "note": "CERN is a European laboratory on the French–Swiss border. This historical case is a possible match for the user-described story, not confirmation of a separate French announcement."
   }
 }

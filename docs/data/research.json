@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-10-17T22:56:28Z",
+    "checked_at": "2026-10-17T23:04:45Z",
     "region": "United States",
     "refresh": "Hourly scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-10-17T23:02:02Z",
+    "checked_at": "2026-10-17T23:04:45Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -132,7 +132,7 @@
       "topics": [
         "fiscal"
       ],
-      "cached": false,
+      "cached": true,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
     },
     {
@@ -145,7 +145,7 @@
       "topics": [
         "policy"
       ],
-      "cached": false,
+      "cached": true,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
     },
     {
@@ -197,7 +197,7 @@
       "topics": [
         "policy"
       ],
-      "cached": false,
+      "cached": true,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
     },
     {
@@ -223,7 +223,7 @@
       "topics": [
         "energy"
       ],
-      "cached": false,
+      "cached": true,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
     },
     {
@@ -236,7 +236,7 @@
       "topics": [
         "inflation"
       ],
-      "cached": false,
+      "cached": true,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
     },
     {
@@ -315,7 +315,7 @@
         "policy",
         "inflation"
       ],
-      "cached": false,
+      "cached": true,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
     },
     {
@@ -328,7 +328,7 @@
       "topics": [
         "inflation"
       ],
-      "cached": false,
+      "cached": true,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
     },
     {
@@ -341,7 +341,7 @@
       "topics": [
         "growth"
       ],
-      "cached": false,
+      "cached": true,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
     },
     {
@@ -354,7 +354,7 @@
       "topics": [
         "inflation"
       ],
-      "cached": false,
+      "cached": true,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
     },
     {
@@ -367,7 +367,7 @@
       "topics": [
         "inflation"
       ],
-      "cached": false,
+      "cached": true,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
     },
     {
@@ -380,7 +380,7 @@
       "topics": [
         "growth"
       ],
-      "cached": false,
+      "cached": true,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
     },
     {
@@ -393,7 +393,7 @@
       "topics": [
         "policy"
       ],
-      "cached": false,
+      "cached": true,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
     },
     {
@@ -407,7 +407,7 @@
         "policy",
         "inflation"
       ],
-      "cached": false,
+      "cached": true,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
     },
     {
@@ -434,7 +434,7 @@
         "policy",
         "inflation"
       ],
-      "cached": false,
+      "cached": true,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
     },
     {
@@ -448,7 +448,7 @@
         "policy",
         "inflation"
       ],
-      "cached": false,
+      "cached": true,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
     },
     {
@@ -469,61 +469,61 @@
     {
       "id": "fed",
       "name": "Federal Reserve",
-      "url": "https://www.federalreserve.gov/feeds/press_all.xml",
-      "checked_at": "2026-10-17T22:56:28Z",
-      "status": "Unavailable; retained dated headlines",
-      "error": "ParseError",
-      "last_success": null,
+      "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
+      "checked_at": "2026-10-17T23:04:45Z",
+      "status": "Fetched",
+      "error": null,
+      "last_success": "2026-10-17T23:04:45Z",
       "matched": 0
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-10-17T22:56:28Z",
+      "checked_at": "2026-10-17T23:04:45Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-17T22:56:28Z",
+      "last_success": "2026-10-17T23:04:45Z",
       "matched": 1
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-10-17T22:56:28Z",
+      "checked_at": "2026-10-17T23:04:45Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-17T22:56:28Z",
+      "last_success": "2026-10-17T23:04:45Z",
       "matched": 7
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-10-17T22:56:28Z",
+      "checked_at": "2026-10-17T23:04:45Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-17T22:56:28Z",
+      "last_success": "2026-10-17T23:04:45Z",
       "matched": 3
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-10-17T22:56:28Z",
-      "status": "Fetched",
-      "error": null,
+      "checked_at": "2026-10-17T23:04:45Z",
+      "status": "Unavailable; retained dated headlines",
+      "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
       "matched": 15
     },
     {
-      "id": "cern",
-      "name": "CERN",
-      "url": "https://home.cern/api/news/news/feed.rss",
-      "checked_at": "2026-10-17T22:56:28Z",
-      "status": "Unavailable; retained dated headlines",
-      "error": "HTTPError",
-      "last_success": null,
+      "id": "science",
+      "name": "ScienceDaily Physics",
+      "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
+      "checked_at": "2026-10-17T23:04:45Z",
+      "status": "Fetched",
+      "error": null,
+      "last_success": "2026-10-17T23:04:45Z",
       "matched": 0
     }
   ],

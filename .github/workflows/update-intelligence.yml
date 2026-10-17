@@ -53,7 +53,7 @@ jobs:
         uses: actions/cache@v6.1.0
         with:
           path: ~/.cache/huggingface/hub
-          key: realworth-qwen25-05b-v1
+          key: realworth-qwen25-15b-v1
       - name: Read articles and run actual CPU model
         if: ${{ inputs.force_local || steps.hosted.outcome == 'failure' }}
         env:

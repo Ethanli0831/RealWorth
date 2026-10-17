@@ -3,8 +3,8 @@
     "checked_at": "2026-10-17T23:28:39Z",
     "provider_requested": "local",
     "article_reads": 10,
-    "ai_interpretations": 1,
-    "new_interpretations": 1,
+    "ai_interpretations": 0,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -37,32 +37,7 @@
       "read_at": "2026-10-17T23:28:39Z",
       "body_sha256": "40ae56dcc81387d4ce57c6d95d2bf702444b366d02539c7ca8b979e6eee2c4d7",
       "body_characters": 4702,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "The number of ships reported being attacked in and around the Strait of Hormuz has reached a record high, while oil exports have slowed, driven by Iran's aggressive tactics against shipping in the area.",
-        "evidence_ids": [
-          "E1"
-        ],
-        "chain": [
-          "event: Twelve vessels were attacked between 5 and 11 October; channel: reported event",
-          "event: Six of the vessels were struck last Sunday; channel: reported event",
-          "event: Twelve vessels were attacked between 5 and 11 October; channel: conditional channel",
-          "event: Six of the vessels were struck last Sunday; channel: conditional channel",
-          "event: Twelve vessels were attacked between 5 and 11 October; channel: possible asset effect"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "oil exports continue to slow"
-        },
-        "bitcoin": {
-          "direction": "up",
-          "condition": "oil exports continue to slow"
-        },
-        "uncertainty": "What could invalidate this analysis"
-      },
-      "evidence": {
-        "E1": "Martin Kelly, CEO of Orbital Risk Intelligence, said Iran has \"evolved its"
-      },
+      "status": "Previous AI output rejected by quality checks; queued for improved model",
       "analyzed_at": "2026-10-17T23:28:39Z",
       "model": "Qwen/Qwen2.5-0.5B-Instruct",
       "provider": "Local open-weight CPU inference",

@@ -1,0 +1,70 @@
+name: Article reading and AI analysis
+on:
+  schedule:
+    - cron: '29 * * * *'
+  workflow_dispatch:
+    inputs:
+      force_local:
+        description: 'Test open-weight CPU inference instead of GitHub Models'
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build_intelligence.py'
+      - 'requirements-intelligence.txt'
+      - 'requirements-local-ai.txt'
+      - '.github/workflows/update-intelligence.yml'
+permissions:
+  contents: write
+  pages: write
+  models: read
+concurrency:
+  group: monthly-data
+  cancel-in-progress: false
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: python -m pip install -r requirements-intelligence.txt
+      - name: Read public articles and try GitHub Models
+        id: hosted
+        if: ${{ !inputs.force_local }}
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/build_intelligence.py --provider github
+      - name: Install open-weight fallback dependencies
+        if: ${{ inputs.force_local || steps.hosted.outcome == 'failure' }}
+        run: |
+          python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install -r requirements-local-ai.txt
+      - name: Read articles and run actual CPU model
+        if: ${{ inputs.force_local || steps.hosted.outcome == 'failure' }}
+        env:
+          HF_HUB_DISABLE_XET: '1'
+          TOKENIZERS_PARALLELISM: 'false'
+        run: python scripts/build_intelligence.py --provider local --max-ai 2
+      - name: Publish AI evidence data only
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          git add -- docs/data/intelligence.json
+          if ! git diff --cached --quiet -- docs/data/intelligence.json; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Refresh article evidence and AI interpretations' -- docs/data/intelligence.json
+            git push origin HEAD:main
+          fi
+          gh api --method POST "repos/$REPOSITORY/pages/builds" --jq '.status'

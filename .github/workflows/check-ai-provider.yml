@@ -1,0 +1,43 @@
+name: Check hosted model connectivity
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/check-ai-provider.yml']
+permissions:
+  contents: read
+  models: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.11'
+      - run: python -m pip install requests==2.32.5
+      - name: Check public model protocol with a harmless test prompt
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json,os,requests
+          from urllib.parse import urlsplit
+          probes=[('https://models.github.ai/inference/chat/completions','openai/gpt-4.1-mini'),('https://models.github.ai/inference/chat/completions','openai/gpt-4.1'),('https://models.inference.ai.azure.com/chat/completions','gpt-4o-mini')]
+          for endpoint,model in probes:
+              info={'endpoint':endpoint,'model':model}
+              try:
+                  r=requests.post(endpoint,timeout=(10,45),headers={'Authorization':'Bearer '+os.environ['GITHUB_TOKEN'],'Content-Type':'application/json','Accept':'application/json'},json={'model':model,'messages':[{'role':'user','content':'Return only the JSON object {"ok":true}.'}],'stream':False,'temperature':0,'max_tokens':50})
+                  info.update(status=r.status_code,content_type=r.headers.get('Content-Type'),bytes=len(r.content),final_host=urlsplit(r.url).hostname)
+                  try:
+                      value=r.json()
+                      info['response_keys']=list(value)[:8] if isinstance(value,dict) else type(value).__name__
+                      if isinstance(value,dict) and isinstance(value.get('choices'),list) and value['choices']:
+                          content=value['choices'][0].get('message',{}).get('content','')
+                          info['test_reply']=str(content)[:100]
+                  except ValueError:
+                      info['json']=False
+              except Exception as exc:
+                  info['error']=type(exc).__name__
+              print('::notice::MODELS_PROTOCOL '+json.dumps(info))
+          PY

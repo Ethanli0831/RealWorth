@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-10-17T23:28:39Z",
+    "checked_at": "2026-10-17T23:48:07Z",
     "provider_requested": "local",
     "article_reads": 10,
-    "ai_interpretations": 0,
-    "new_interpretations": 0,
+    "ai_interpretations": 1,
+    "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -15,7 +15,7 @@
       "publisher": "CERN",
       "published_at": null,
       "historical": true,
-      "status": "Unavailable: Article URL outside publisher allowlist"
+      "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
       "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
@@ -23,10 +23,10 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T22:34:29Z",
       "historical": null,
-      "read_at": "2026-10-17T23:28:39Z",
+      "read_at": "2026-10-17T23:48:07Z",
       "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
       "body_characters": 3344,
-      "status": "Unavailable: AI asset effect lacks a condition"
+      "status": "Unavailable: AI chain contains no financial transmission mechanism"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
@@ -34,14 +34,39 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-16T05:00:17Z",
       "historical": null,
-      "read_at": "2026-10-17T23:28:39Z",
+      "read_at": "2026-10-17T23:48:07Z",
       "body_sha256": "40ae56dcc81387d4ce57c6d95d2bf702444b366d02539c7ca8b979e6eee2c4d7",
       "body_characters": 4702,
-      "status": "Previous AI output rejected by quality checks; queued for improved model",
-      "analyzed_at": "2026-10-17T23:28:39Z",
-      "model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The draft failed this check: AI chain contains no financial transmission mechanism. Revise with actual article-specific economic reasoning. Explain how the event could change real,",
+        "evidence_ids": [
+          "E1",
+          "E2"
+        ],
+        "chain": [
+          "Event: Ship attacks near Hormuz Strait reach record highs",
+          "Impact on Oil Prices: Increased attacks slow oil shipments, potentially raising prices",
+          "Impact on Real Yields: Higher oil prices may attract investors seeking higher returns, driving demand for assets like gold and causing real yields to rise"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "Higher oil prices attract investment into gold"
+        },
+        "bitcoin": {
+          "direction": "down",
+          "condition": "Lower oil prices reduce demand for bitcoin"
+        },
+        "uncertainty": "Concrete Countercase: If global oil supplies increase unexpectedly, it could offset the impact of rising oil prices on real yields, potentially reversing the trend"
+      },
+      "evidence": {
+        "E1": "Martin Kelly, CEO of Orbital Risk Intelligence, said Iran has \"evolved its",
+        "E2": "The number of ships that have reported being attacked in and around"
+      },
+      "analyzed_at": "2026-10-17T23:48:07Z",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
       "provider": "Local open-weight CPU inference",
-      "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+      "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"
     },
     {
       "url": "https://www.theguardian.com/business/2026/oct/15/what-is-your-personal-recession-indicator",
@@ -49,7 +74,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-15T16:55:41Z",
       "historical": null,
-      "read_at": "2026-10-17T23:28:39Z",
+      "read_at": "2026-10-17T23:48:07Z",
       "body_sha256": "01a1858aa6def8fe3bc8d8625bde63d10aa16fe90c88344befb95be84e52927c",
       "body_characters": 993,
       "status": "Public body read; queued for AI"
@@ -60,7 +85,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T16:27:31Z",
       "historical": null,
-      "read_at": "2026-10-17T23:28:39Z",
+      "read_at": "2026-10-17T23:48:07Z",
       "body_sha256": "706c206a7a2382b9889c271ce1c4c3dbba0c627714bbc63e7434e755b1825dd6",
       "body_characters": 5478,
       "status": "Public body read; queued for AI"
@@ -71,7 +96,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-15T17:19:49Z",
       "historical": null,
-      "read_at": "2026-10-17T23:28:39Z",
+      "read_at": "2026-10-17T23:48:07Z",
       "body_sha256": "aaef031974a4637d614b309cd93c6003b8522ae38886a8186e46fc0a510f3e1a",
       "body_characters": 9690,
       "status": "Public body read; queued for AI"
@@ -82,7 +107,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-15T14:33:12Z",
       "historical": null,
-      "read_at": "2026-10-17T23:28:39Z",
+      "read_at": "2026-10-17T23:48:07Z",
       "body_sha256": "faa7571df0a97ba67c14bb2bcf25fd449df9e3db82cbdd7f1ccccf52ebdd8375",
       "body_characters": 3378,
       "status": "Public body read; queued for AI"
@@ -93,7 +118,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-15T15:37:59Z",
       "historical": null,
-      "read_at": "2026-10-17T23:28:39Z",
+      "read_at": "2026-10-17T23:48:07Z",
       "body_sha256": "baeba6372188834ee43df0bd05d519e236f1a072776fc71ba40fd4d2391112af",
       "body_characters": 2505,
       "status": "Public body read; queued for AI"
@@ -104,7 +129,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-14T16:47:32Z",
       "historical": null,
-      "read_at": "2026-10-17T23:28:39Z",
+      "read_at": "2026-10-17T23:48:07Z",
       "body_sha256": "7f5149c3689e87fd45b389abc69b9a95bfd196a4e0a1fde5a4dc0d77cc28ce67",
       "body_characters": 2490,
       "status": "Public body read; queued for AI"
@@ -115,7 +140,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-14T14:29:42Z",
       "historical": null,
-      "read_at": "2026-10-17T23:28:39Z",
+      "read_at": "2026-10-17T23:48:07Z",
       "body_sha256": "0a9d8f0d82cde8fad287c091d4ad49599de862e8dd47498fdc1dbae9ddeb75dd",
       "body_characters": 4112,
       "status": "Public body read; queued for AI"
@@ -126,7 +151,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-15T06:35:31Z",
       "historical": null,
-      "read_at": "2026-10-17T23:28:39Z",
+      "read_at": "2026-10-17T23:48:07Z",
       "body_sha256": "7207da98d7cf10f3438ddc91b4422a80292e51ab2fe38f21b63018c76672348f",
       "body_characters": 6140,
       "status": "Public body read; queued for AI"

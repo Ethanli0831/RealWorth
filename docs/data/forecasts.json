@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "checked_at": "2026-10-17T23:21:39Z",
+    "model": "empirical-log-return-quantiles-v1",
+    "timezone": "America/Toronto",
+    "today": "2026-10-17",
+    "tomorrow": "2026-10-18",
+    "quote_refresh": "Scheduled about every 15 minutes; provider and GitHub queue delays apply.",
+    "disclosure": "Price-only empirical daily log-return scenarios, not AI price targets. Lower/central/upper bands are historical quantile ranges, not guaranteed probabilities. Bitcoin uses a frozen quote-to-24h target; ETFs use the last completed close to the next scheduled close. No forecasts are revised after issue.",
+    "failures": []
+  },
+  "assets": [
+    {
+      "ticker": "BTC-USD",
+      "asset": "Bitcoin / USD",
+      "quote": 81203.28,
+      "quote_at": "2026-10-17T23:21:44Z",
+      "quote_stale": false,
+      "market_status": "Continuous trading; quote may be delayed by provider",
+      "tomorrow_has_session": true,
+      "source": "https://finance.yahoo.com/quote/BTC-USD/",
+      "forecast": {
+        "id": "BTC-USD|2026-10-17",
+        "ticker": "BTC-USD",
+        "issued_at": "2026-10-17T23:21:39Z",
+        "target_at": "2026-10-18T23:25:00Z",
+        "anchor_at": "2026-10-17T23:21:44Z",
+        "anchor_price": 81203.28,
+        "levels": {
+          "q10": 79313.9004,
+          "q30": 80535.7429,
+          "q40": 80935.3245,
+          "q50": 81189.9754,
+          "q60": 81523.028,
+          "q70": 81872.2629,
+          "q90": 83162.1003
+        },
+        "model": "empirical-log-return-quantiles-v1",
+        "training_observations": 252,
+        "status": "Pending future observation",
+        "backtest": {
+          "observations": 90,
+          "coverage_percent": 87.78,
+          "mean_abs_price_error_percent": 1.297,
+          "random_walk_error_percent": 1.289,
+          "method": "Walk-forward: each daily-close prediction uses only the previous 252 log returns. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
+        },
+        "issued_digest": "83235af7ba6cc9281ad86df2100a7a569defe1678ad630819bff233b41fb3d99"
+      },
+      "error": null
+    },
+    {
+      "ticker": "GLD",
+      "asset": "Gold ETF (GLD)",
+      "quote": 382.01,
+      "quote_at": "2026-10-16T20:00:00Z",
+      "quote_stale": false,
+      "market_status": "Market closed · last reported quote",
+      "tomorrow_has_session": false,
+      "source": "https://finance.yahoo.com/quote/GLD/",
+      "forecast": {
+        "id": "GLD|2026-10-19T20:00:00Z",
+        "ticker": "GLD",
+        "issued_at": "2026-10-17T23:21:39Z",
+        "target_at": "2026-10-19T20:00:00Z",
+        "anchor_at": "2026-10-16T20:00:00Z",
+        "anchor_price": 382.01000977,
+        "levels": {
+          "q10": 374.3705,
+          "q30": 379.6707,
+          "q40": 381.3646,
+          "q50": 382.2724,
+          "q60": 383.8564,
+          "q70": 385.2883,
+          "q90": 389.5384
+        },
+        "model": "empirical-log-return-quantiles-v1",
+        "training_observations": 252,
+        "status": "Pending future observation",
+        "backtest": {
+          "observations": 90,
+          "coverage_percent": 82.22,
+          "mean_abs_price_error_percent": 1.229,
+          "random_walk_error_percent": 1.23,
+          "method": "Walk-forward: each daily-close prediction uses only the previous 252 log returns. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
+        },
+        "issued_digest": "97d07cc416a560420ccb83184be61d8add5b56672c33c01816cff2a96fdef86a"
+      },
+      "error": null
+    },
+    {
+      "ticker": "SPY",
+      "asset": "S&P 500 ETF (SPY)",
+      "quote": 763.25,
+      "quote_at": "2026-10-16T20:00:00Z",
+      "quote_stale": false,
+      "market_status": "Market closed · last reported quote",
+      "tomorrow_has_session": false,
+      "source": "https://finance.yahoo.com/quote/SPY/",
+      "forecast": {
+        "id": "SPY|2026-10-19T20:00:00Z",
+        "ticker": "SPY",
+        "issued_at": "2026-10-17T23:21:39Z",
+        "target_at": "2026-10-19T20:00:00Z",
+        "anchor_at": "2026-10-16T20:00:00Z",
+        "anchor_price": 763.25,
+        "levels": {
+          "q10": 755.4802,
+          "q30": 760.9698,
+          "q40": 762.3265,
+          "q50": 763.6456,
+          "q60": 765.1412,
+          "q70": 767.0101,
+          "q90": 770.8305
+        },
+        "model": "empirical-log-return-quantiles-v1",
+        "training_observations": 252,
+        "status": "Pending future observation",
+        "backtest": {
+          "observations": 90,
+          "coverage_percent": 81.11,
+          "mean_abs_price_error_percent": 0.615,
+          "random_walk_error_percent": 0.598,
+          "method": "Walk-forward: each daily-close prediction uses only the previous 252 log returns. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
+        },
+        "issued_digest": "e42c3ca5cb09f77ccbcf8bbc2ab653a7f9892c72c8a2231a618b54904e766d1d"
+      },
+      "error": null
+    },
+    {
+      "ticker": "BIL",
+      "asset": "T-Bill ETF (BIL)",
+      "quote": 91.57,
+      "quote_at": "2026-10-16T20:00:00Z",
+      "quote_stale": false,
+      "market_status": "Market closed · last reported quote",
+      "tomorrow_has_session": false,
+      "source": "https://finance.yahoo.com/quote/BIL/",
+      "forecast": {
+        "id": "BIL|2026-10-19T20:00:00Z",
+        "ticker": "BIL",
+        "issued_at": "2026-10-17T23:21:39Z",
+        "target_at": "2026-10-19T20:00:00Z",
+        "anchor_at": "2026-10-16T20:00:00Z",
+        "anchor_price": 91.56999969,
+        "levels": {
+          "q10": 91.57,
+          "q30": 91.58,
+          "q40": 91.58,
+          "q50": 91.58,
+          "q60": 91.58,
+          "q70": 91.59,
+          "q90": 91.6
+        },
+        "model": "empirical-log-return-quantiles-v1",
+        "training_observations": 252,
+        "status": "Pending future observation",
+        "backtest": {
+          "observations": 90,
+          "coverage_percent": 80.0,
+          "mean_abs_price_error_percent": 0.022,
+          "random_walk_error_percent": 0.027,
+          "method": "Walk-forward: each daily-close prediction uses only the previous 252 log returns. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
+        },
+        "issued_digest": "c5e769241c58126cf718db4e45b18b6edefb5b8fd3e68df117f2715e08809105"
+      },
+      "error": null
+    },
+    {
+      "ticker": "TLT",
+      "asset": "Long-bond ETF (TLT)",
+      "quote": 80.05,
+      "quote_at": "2026-10-16T20:00:00Z",
+      "quote_stale": false,
+      "market_status": "Market closed · last reported quote",
+      "tomorrow_has_session": false,
+      "source": "https://finance.yahoo.com/quote/TLT/",
+      "forecast": {
+        "id": "TLT|2026-10-19T20:00:00Z",
+        "ticker": "TLT",
+        "issued_at": "2026-10-17T23:21:39Z",
+        "target_at": "2026-10-19T20:00:00Z",
+        "anchor_at": "2026-10-16T20:00:00Z",
+        "anchor_price": 80.05000305,
+        "levels": {
+          "q10": 79.4302,
+          "q30": 79.788,
+          "q40": 79.8875,
+          "q50": 80.0317,
+          "q60": 80.1369,
+          "q70": 80.2424,
+          "q90": 80.547
+        },
+        "model": "empirical-log-return-quantiles-v1",
+        "training_observations": 252,
+        "status": "Pending future observation",
+        "backtest": {
+          "observations": 90,
+          "coverage_percent": 73.33,
+          "mean_abs_price_error_percent": 0.477,
+          "random_walk_error_percent": 0.479,
+          "method": "Walk-forward: each daily-close prediction uses only the previous 252 log returns. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
+        },
+        "issued_digest": "b6a90c0b86b0bbca4c7696f8f1cd66956ecf2b8871c969e463dbc90106809132"
+      },
+      "error": null
+    }
+  ],
+  "verification": {
+    "verified_forecasts": 0,
+    "outer_band_coverage_percent": null,
+    "mean_abs_median_error_percent": null,
+    "pending": 5,
+    "missed": 0
+  }
+}

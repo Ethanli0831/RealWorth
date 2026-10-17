@@ -119,7 +119,18 @@ def parse_model_output(text, evidence):
     start, end = text.find('{'), text.rfind('}')
     if start < 0 or end < start:
         raise ValueError('AI returned no JSON object')
-    return validate_analysis(json.loads(text[start:end+1]), evidence)
+    value=json.loads(text[start:end+1])
+    # Normalize formatting only; never substitute a template for model prose.
+    chain=value.get('chain')
+    if isinstance(chain,str):
+        value['chain']=[s.strip() for s in re.split(r'\s*(?:→|->|\n)\s*',chain) if s.strip()]
+    elif isinstance(chain,list) and chain and all(isinstance(s,dict) for s in chain):
+        value['chain']=[s.get('description') or s.get('text') or s.get('step') for s in chain]
+    try:
+        return validate_analysis(value, evidence)
+    except ValueError:
+        print(json.dumps({'invalid_model_shape':{'keys':list(value),'chain_type':type(chain).__name__,'chain_length':len(chain) if isinstance(chain,(list,str,dict)) else None,'chain_item_types':[type(s).__name__ for s in chain] if isinstance(chain,list) else None}}))
+        raise
 
 
 class HostedModel:

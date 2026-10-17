@@ -2,7 +2,7 @@ name: Economic weather and news update
 
 on:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -10,6 +10,8 @@ on:
       - "scripts/build_research.py"
       - "research/**"
       - "tests/test_research.py"
+      - "scripts/build_forecasts.py"
+      - "tests/test_forecasts.py"
       - ".github/workflows/update-research.yml"
 
 permissions:
@@ -35,22 +37,24 @@ jobs:
           python-version: "3.11"
           cache: pip
       - name: Install pinned dependencies
-        run: python -m pip install -r requirements.txt
+        run: python -m pip install -r requirements-intelligence.txt
       - name: Test evidence parsing and macro logic
-        run: python -m unittest discover -s tests -p test_research.py -v
+        run: python -m unittest discover -s tests -v
       - name: Fetch macro readings and publisher headlines
         run: python scripts/build_research.py
-      - name: Commit research data only
+      - name: Refresh quotes, frozen scenarios and prospective outcomes
+        run: python scripts/build_forecasts.py
+      - name: Commit research and forecast data only
         shell: bash
         run: |
           set -euo pipefail
-          git add -- docs/data/research.json
-          if git diff --cached --quiet -- docs/data/research.json; then
+          git add -- docs/data/research.json docs/data/forecasts.json docs/data/forecast-ledger.json
+          if git diff --cached --quiet -- docs/data/research.json docs/data/forecasts.json docs/data/forecast-ledger.json; then
             echo 'Research unchanged.'
           else
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git commit -m "Refresh economic weather and news $(date -u +'%Y-%m-%d %H:%M')" -- docs/data/research.json
+            git commit -m "Refresh economic weather and news $(date -u +'%Y-%m-%d %H:%M')" -- docs/data/research.json docs/data/forecasts.json docs/data/forecast-ledger.json
             git push origin HEAD:main
           fi
       - name: Rebuild the public website

@@ -243,6 +243,8 @@ class Paragraphs(HTMLParser):
 
 def check_case(url, now, previous):
     if previous.get('excerpt'):
+        previous = {**previous, 'excerpt': ' '.join(previous['excerpt'].split()[:45])}
+    if previous.get('excerpt'):
         try:
             previous = {**previous, 'excerpt': previous['excerpt'].encode('latin1').decode('utf-8')}
         except (UnicodeEncodeError, UnicodeDecodeError):
@@ -256,7 +258,7 @@ def check_case(url, now, previous):
         relevant = [p for p in parser.paragraphs if re.search(r'gold', p, re.I) and re.search(r'lead|transmut', p, re.I)]
         if not relevant:
             raise ValueError('Primary page did not contain expected subject')
-        return {'url': url, 'checked_at': stamp(now), 'status': 'Primary page retrieved', 'excerpt': ' '.join(' '.join(relevant[:2]).split()[:65]), 'note': 'CERN is a European laboratory on the French–Swiss border. This historical case is a possible match for the user-described story, not confirmation of a separate French announcement.'}
+        return {'url': url, 'checked_at': stamp(now), 'status': 'Primary page retrieved', 'excerpt': ' '.join(' '.join(relevant[:2]).split()[:45]), 'note': 'CERN is a European laboratory on the French–Swiss border. This historical case is a possible match for the user-described story, not confirmation of a separate French announcement.'}
     except Exception as exc:
         return {**previous, 'url': url, 'attempted_at': stamp(now), 'status': 'Primary page unavailable; verify the link manually', 'error': type(exc).__name__}
 
@@ -320,7 +322,7 @@ def build(previous, now, macro_only=False):
             unique[item['url']] = item
             titles.add(normalized)
     news = sorted(unique.values(), key=lambda x: x['published_at'], reverse=True)[:60]
-    return {'meta': {'checked_at': stamp(now), 'region': 'United States', 'refresh': 'Hourly scheduled scan; GitHub queue and publisher delays apply.', 'model': 'Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.', 'news_window_days': 14, 'analysis': 'Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects.'},
+    return {'meta': {'checked_at': stamp(now), 'region': 'United States', 'refresh': '15-minute scheduled scan; GitHub queue and publisher delays apply.', 'model': 'Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.', 'news_window_days': 14, 'analysis': 'Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects.'},
             'macro': macro, 'news': news, 'feed_health': health, 'sources': config['sources'], 'mechanisms': mechanisms,
             'gold_case': check_case(config['case_source'], now, previous.get('gold_case', {}))}
 

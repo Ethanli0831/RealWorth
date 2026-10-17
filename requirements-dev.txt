@@ -1,2 +1,2 @@
--r requirements.txt
+-r requirements-intelligence.txt
 playwright==1.62.0

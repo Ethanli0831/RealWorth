@@ -47,7 +47,7 @@ jobs:
         run: python scripts/build_data.py
 
       - name: Test dashboard calculations
-        run: node --test tests/test_dashboard.js tests/test_research.js
+        run: node --test tests/test_dashboard.js tests/test_research.js tests/test_intelligence.js
 
       - name: Commit only changed derived data
         id: commit
@@ -62,6 +62,7 @@ jobs:
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git commit -m "Monthly data update $(date -u +'%Y-%m')" -- docs/data/data.json
+            git pull --rebase origin main
             git push origin HEAD:main
             echo 'changed=true' >> "$GITHUB_OUTPUT"
           fi

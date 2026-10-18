@@ -63,6 +63,11 @@ def main():
         data = json.load(response)
     with urlopen(base + "data/research.json", timeout=30) as response:
         research = json.load(response)
+    with urlopen(base + "data/forecasts.json", timeout=30) as response:
+        forecast_data = json.load(response)
+    with urlopen(base + "data/intelligence.json", timeout=30) as response:
+        ai_data = json.load(response)
+    assert ai_data["meta"]["ai_interpretations"] > 0, "Real model output is required for end-to-end validation"
     options = {"headless": True, "args": ["--no-sandbox"]}
     if shutil.which("chromium"):
         options["executable_path"] = shutil.which("chromium")
@@ -258,6 +263,40 @@ def main():
             assert '<img' in safe_page.locator('.news-card h3').first.inner_text()
             assert not errors, errors
             checks += 1
+            page.goto(base + '#outlook', wait_until='networkidle')
+            assert page.locator('#forecast-content').is_visible()
+            assert page.locator('#forecast-body tr').count() == 5
+            for row_data in forecast_data['assets']:
+                row = page.locator('#forecast-body tr').filter(has=page.get_by_role('rowheader', name=row_data['asset'], exact=True))
+                assert row.count() == 1
+                expected = '${:,.2f}'.format(row_data['forecast']['levels']['q50'])
+                assert expected in row.inner_text()
+            assert page.locator('#forecast-backtest-body tr').count() == 5
+            page.locator('details').filter(has=page.locator('#forecast-ledger-body')).evaluate('e=>e.open=true')
+            assert 'Pending' in page.locator('#forecast-ledger-body').inner_text() or 'Verified' in page.locator('#forecast-ledger-body').inner_text()
+            checks += 1
+
+            page.locator('.gold-case').evaluate('e=>e.open=true')
+            page.wait_for_selector('.ai-analysis', state='attached')
+            detail = page.locator('.ai-analysis').first
+            detail.evaluate('e=>e.open=true')
+            assert 'source' in detail.inner_text().lower()
+            assert 'AI interpretation' in detail.inner_text()
+            assert detail.locator('blockquote').count() >= 1
+            assert any(record.get('model','NO_MODEL') in detail.inner_text() for record in ai_data['articles'] if record.get('analysis'))
+            page.set_viewport_size({'width':390,'height':844})
+            page.wait_for_function('document.documentElement.scrollWidth <= innerWidth')
+            checks += 1
+
+            ai_missing = context.new_page()
+            ai_missing.route('**/data/intelligence.json', lambda route: route.fulfill(status=503,body='Unavailable'))
+            ai_missing.goto(base,wait_until='networkidle')
+            assert ai_missing.locator('#forecast-body tr').count() == 5
+            assert ai_missing.locator('.ai-analysis').count() == 0
+            assert 'not available' in ai_missing.locator('#article-ai-status').inner_text()
+            assert ai_missing.locator('#calculator-results').is_visible()
+            checks += 1
+
             browser.close()
     finally:
         if server:

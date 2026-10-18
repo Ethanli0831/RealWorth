@@ -41,20 +41,41 @@ jobs:
       - name: Test evidence parsing and macro logic
         run: python -m unittest discover -s tests -v
       - name: Fetch macro readings and publisher headlines
+        id: news
+        continue-on-error: true
         run: python scripts/build_research.py
       - name: Refresh quotes, frozen scenarios and prospective outcomes
+        id: quotes
+        continue-on-error: true
         run: python scripts/build_forecasts.py
       - name: Commit research and forecast data only
         shell: bash
+        env:
+          NEWS_OUTCOME: ${{ steps.news.outcome }}
+          QUOTE_OUTCOME: ${{ steps.quotes.outcome }}
         run: |
           set -euo pipefail
-          git add -- docs/data/research.json docs/data/forecasts.json docs/data/forecast-ledger.json
+          if [ "$NEWS_OUTCOME" = 'failure' ] && [ "$QUOTE_OUTCOME" = 'failure' ]; then
+            echo '::error::Both refreshes failed; keeping the published snapshots.'
+            exit 1
+          fi
+          if [ "$NEWS_OUTCOME" = 'success' ]; then
+            git add -- docs/data/research.json
+          else
+            echo '::warning::News refresh failed; preserving its previous dated snapshot.'
+          fi
+          if [ "$QUOTE_OUTCOME" = 'success' ]; then
+            git add -- docs/data/forecasts.json docs/data/forecast-ledger.json
+          else
+            echo '::warning::Quote refresh failed; preserving previous dated prices and forecasts.'
+          fi
           if git diff --cached --quiet -- docs/data/research.json docs/data/forecasts.json docs/data/forecast-ledger.json; then
             echo 'Research unchanged.'
           else
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git commit -m "Refresh economic weather and news $(date -u +'%Y-%m-%d %H:%M')" -- docs/data/research.json docs/data/forecasts.json docs/data/forecast-ledger.json
+            git commit -m "Refresh economic weather and news $(date -u +'%Y-%m-%d %H:%M')"
+            git pull --rebase origin main
             git push origin HEAD:main
           fi
       - name: Rebuild the public website

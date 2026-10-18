@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-10-17T23:21:39Z",
+    "checked_at": "2026-10-17T23:42:36Z",
     "model": "empirical-log-return-quantiles-v1",
     "timezone": "America/Toronto",
     "today": "2026-10-17",
@@ -13,27 +13,27 @@
     {
       "ticker": "BTC-USD",
       "asset": "Bitcoin / USD",
-      "quote": 81203.28,
-      "quote_at": "2026-10-17T23:21:44Z",
+      "quote": 81258.86,
+      "quote_at": "2026-10-17T23:42:26Z",
       "quote_stale": false,
       "market_status": "Continuous trading; quote may be delayed by provider",
       "tomorrow_has_session": true,
       "source": "https://finance.yahoo.com/quote/BTC-USD/",
       "forecast": {
-        "id": "BTC-USD|2026-10-17",
+        "id": "BTC-USD|2026-10-17|revision-2",
         "ticker": "BTC-USD",
-        "issued_at": "2026-10-17T23:21:39Z",
-        "target_at": "2026-10-18T23:25:00Z",
-        "anchor_at": "2026-10-17T23:21:44Z",
-        "anchor_price": 81203.28,
+        "issued_at": "2026-10-17T23:42:29Z",
+        "target_at": "2026-10-18T23:45:00Z",
+        "anchor_at": "2026-10-17T23:42:26Z",
+        "anchor_price": 81258.86,
         "levels": {
-          "q10": 79313.9004,
-          "q30": 80535.7429,
-          "q40": 80935.3245,
-          "q50": 81189.9754,
-          "q60": 81523.028,
-          "q70": 81872.2629,
-          "q90": 83162.1003
+          "q10": 79368.1872,
+          "q30": 80590.866,
+          "q40": 80990.7211,
+          "q50": 81245.5463,
+          "q60": 81578.8268,
+          "q70": 81928.3008,
+          "q90": 83219.021
         },
         "model": "empirical-log-return-quantiles-v1",
         "training_observations": 252,
@@ -45,7 +45,7 @@
           "random_walk_error_percent": 1.289,
           "method": "Walk-forward: each daily-close prediction uses only the previous 252 log returns. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
         },
-        "issued_digest": "83235af7ba6cc9281ad86df2100a7a569defe1678ad630819bff233b41fb3d99"
+        "issued_digest": "0ee085f9a9aa4e49c4c2c675c9e79edba7eb053b3f1cee783e4ca53f3722de77"
       },
       "error": null
     },
@@ -207,6 +207,7 @@
     }
   ],
   "verification": {
+    "invalidated": 1,
     "verified_forecasts": 0,
     "outer_band_coverage_percent": null,
     "mean_abs_median_error_percent": null,

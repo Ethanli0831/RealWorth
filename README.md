@@ -132,9 +132,10 @@ workflow token.
 
 The workflow explicitly requests a Pages rebuild with `pages: write` after
 an automated data commit. A push using `GITHUB_TOKEN` alone does not trigger
-Pages reliably. Concurrency prevents two refresh jobs from modifying data
-simultaneously. A source failure stops the job and preserves the previous
-JSON; the Actions tab shows the failure.
+Pages reliably. The monthly and quote/news writers share a concurrency lock;
+the slower article-AI job runs separately. Each writer rebases its isolated
+data commit before pushing. A source failure preserves its previous dated
+JSON; the Actions tab reports failures and partial-refresh warnings.
 
 ## GitHub Pages setup and checks
 
@@ -332,19 +333,57 @@ not a claim that a model has read proprietary research.
 the original monthly return pipeline. It uses the same pinned Python packages.
 Run it with `python scripts/build_research.py`.
 
-**Economic weather and news update** runs hourly at minute 17 UTC and supports
+**Economic weather and news update** runs at minutes 7, 22, 37 and 52 UTC and supports
 manual dispatch. A visible browser page checks for published snapshots every
 five minutes. Real publisher and GitHub queue delays apply. It commits only
-research.json and requests a Pages rebuild. Headlines are dated, attributed,
+research.json, forecasts.json and forecast-ledger.json and requests a Pages rebuild. Headlines are dated, attributed,
 keyword-matched, deduplicated and limited to 14 days/60 items. Some sources may
 be unavailable; the panel reports coverage and cached items explicitly.
 A total source failure retains the previous file and fails the workflow.
 
-News impact chains are conditional mechanism templates, not AI reporting,
-full-article summaries, verified facts or price forecasts. The historical CERN
+Headline-matched impact chains remain labelled conditional rule templates.
+Separate **AI-assisted article reading** panels contain actual model output
+when public-body reading and content checks succeed. Neither is independent
+factual verification or a numerical price forecast. The historical CERN
 lead-to-gold example is separate from current news; an independently described
 French announcement has not been verified. No automatic gold-to-Bitcoin
 substitution is asserted. See the methodology for thresholds and limitations.
 
 Research checks: `python -m unittest discover -s tests -p test_research.py -v`
 and `node --test tests/test_research.js`.
+
+## Article AI, quotes and tomorrow's scenarios
+
+Open [Today → Tomorrow](https://ethanli0831.github.io/RealWorth/#outlook).
+Current reported quotes cover BTC-USD, GLD, SPY, BIL and TLT. Gold means a GLD
+share, not a physical ounce. Quotes refresh on an approximately 15-minute
+workflow schedule; the page checks price snapshots each minute. This is
+automated polling with provider/queue delays, not a licensed tick feed.
+
+`scripts/build_forecasts.py` freezes a numerical empirical-quantile forecast
+for each Bitcoin Eastern-calendar issue day or ETF target close, and writes
+forecasts.json plus forecast-ledger.json. Scenarios use 252 completed daily
+price log returns. ETFs target the next actual trading close; Bitcoin targets
+roughly 24h after its anchor. Prior issues are never revised. Historical
+walk-forward results and the random-walk baseline are separate from prospective
+verification. Actual future observations are needed before any prospective
+accuracy can be reported. No historical Yahoo close arrays are published.
+
+`scripts/build_intelligence.py` reads selected allowed public article bodies,
+respecting robots and paywalls. The hourly **Article reading and AI analysis**
+workflow uses GitHub Models with the job's `models: read` token permission,
+with real CPU Qwen open-weight inference as a fallback. No user API key is
+required. Selected articles may remain unread or queued; every AI label
+requires model provenance and actual source evidence. Output validation is not
+a factual guarantee, and numerical scenarios do not use AI price targets.
+
+Install `requirements-intelligence.txt` for article extraction and calendars.
+Local open-weight inference additionally needs CPU `torch==2.8.0` and
+`requirements-local-ai.txt`; the hosted workflow installs those only for the
+fallback. Model weights use their own licence and are not part of this MIT
+source release. Full publisher bodies are processed transiently, not published.
+
+Run `python scripts/build_forecasts.py`, or, with model dependencies installed,
+`python scripts/build_intelligence.py --provider local`. A genuine model must
+successfully generate supported output; failed inference is not a rule-based
+substitute.

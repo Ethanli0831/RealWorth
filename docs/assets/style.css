@@ -1182,3 +1182,54 @@ details[open] > summary::before {
     min-height: 44px;
   }
 }
+
+.ai-analysis {
+  padding: 16px;
+  margin-top: 16px;
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  background: #f0f4ec;
+}
+.ai-analysis summary {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 650;
+  min-height: 30px;
+}
+.ai-analysis blockquote {
+  margin: 12px 0;
+  border-left: 3px solid var(--accent);
+  padding-left: 14px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.forecast-table {
+  min-width: 1240px;
+}
+.forecast-table td {
+  white-space: normal;
+  min-width: 145px;
+  max-width: 230px;
+}
+.forecast-table td:nth-child(2),
+.forecast-table td:nth-child(3) {
+  min-width: 200px;
+}
+.forecast-table .forecast-ai-context {
+  min-width: 220px;
+  font-size: 12px;
+  line-height: 1.55;
+}
+.verification-title {
+  margin-top: 30px;
+}
+@media (max-width: 699px) {
+  nav {
+    flex-wrap: wrap;
+    column-gap: 14px;
+    justify-content: flex-start;
+  }
+  .ai-analysis {
+    padding: 12px;
+  }
+}

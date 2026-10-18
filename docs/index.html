@@ -19,6 +19,7 @@
     ></script>
     <script defer src="assets/app.js"></script>
     <script defer src="assets/research.js"></script>
+    <script defer src="assets/intelligence.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#calculator">Skip to the tools</a>
@@ -607,13 +608,18 @@
         </div>
         <div class="panel">
           <p class="notice">
-            Hourly scheduled scans; this page checks for published updates every
-            five minutes while visible. This is not continuous real-time
-            monitoring. Open the original source before treating a headline as
-            fact. Mechanism chains are rule-based hypotheses; they are not
-            full-article summaries, price predictions or verified causal
-            effects.
+            News and quotes are scanned on an approximately 15-minute schedule;
+            this page checks research updates every five minutes while visible.
+            This is not continuous real-time monitoring. Open the original
+            source before treating a headline as fact. Rule templates and actual
+            AI-assisted article readings are labelled separately. The hourly AI
+            reader checks selected public bodies and shows source evidence;
+            neither type establishes a verified causal effect.
           </p>
+          <p id="article-ai-status" class="notice" role="status">
+            Loading actual article-model coverage…
+          </p>
+          <p id="article-ai-warning" class="notice" hidden></p>
           <div id="news-content" hidden>
             <p class="tiny" id="news-updated"></p>
             <p class="notice" id="news-health-warning" hidden></p>
@@ -658,6 +664,158 @@
                 French announcement has not been established here.
               </p>
               <div id="gold-case-evidence"></div>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section id="outlook" class="tool" aria-labelledby="outlook-heading">
+        <div class="section-heading">
+          <span class="section-number">06</span>
+          <div>
+            <p class="eyebrow">Observed prices, testable scenarios</p>
+            <h2 id="outlook-heading">Today → Tomorrow</h2>
+            <p>
+              Latest reported quotes, frozen next-period price scenarios, and a
+              public record of what happened afterward.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="research-toolbar">
+            <p class="tiny">
+              All prices in USD. Gold is GLD per ETF share, not spot gold per
+              ounce. Times below use Eastern Time.
+            </p>
+            <button id="forecast-refresh" type="button" class="text-button">
+              Check latest quotes &amp; AI
+            </button>
+          </div>
+          <p id="forecast-load-status" class="notice" role="status">
+            Loading observed quotes and frozen scenarios…
+          </p>
+          <p id="forecast-warning" class="notice" hidden></p>
+          <div id="forecast-content" hidden>
+            <p id="forecast-updated" class="tiny"></p>
+            <p class="notice">
+              These are historical price scenarios, not guaranteed future
+              probabilities. AI news context is shown separately from the
+              numerical model. Issued forecasts stay frozen while observed
+              quotes keep updating.
+            </p>
+            <div
+              class="table-wrap"
+              role="region"
+              tabindex="0"
+              aria-label="Next-period price scenarios; scroll horizontally"
+            >
+              <table class="score-table forecast-table">
+                <caption>
+                  Quotes update on a scheduled approximately 15-minute cycle;
+                  the visible page checks snapshots each minute. Source/exchange
+                  and GitHub delays apply.
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Asset</th>
+                    <th scope="col">Latest observed quote</th>
+                    <th scope="col">Forecast target &amp; issue time</th>
+                    <th scope="col">Lower scenario<br />Q10–Q30</th>
+                    <th scope="col">Central median<br />Q40–Q60 band</th>
+                    <th scope="col">Upper scenario<br />Q70–Q90</th>
+                    <th scope="col">Related AI news context</th>
+                  </tr>
+                </thead>
+                <tbody id="forecast-body"></tbody>
+              </table>
+            </div>
+            <details class="rules">
+              <summary>
+                How prices, market closures and forecasts are handled
+              </summary>
+              <p>
+                Bitcoin trades continuously: each day’s first forecast uses a
+                reported quote and targets roughly 24 hours later, rounded up to
+                the next five-minute boundary. ETF scenarios use the last
+                completed daily close and the next NYSE-calendar close,
+                including holidays and early closes. If tomorrow has no ETF
+                session, the target explicitly moves to the next trading close;
+                no Sunday price is fabricated.
+              </p>
+              <p>
+                Forecasts are issued once per Bitcoin Eastern-calendar day or
+                ETF target session, and remain unchanged. A forecast issued
+                earlier is not an up-to-the-minute conditional model. The latest
+                quote is shown separately with its original source time.
+                Training uses completed daily closes and price-only returns,
+                excluding cash distributions. No forecasting advantage over a
+                random walk is established.
+              </p>
+              <p>
+                Public Yahoo histories are processed transiently; complete raw
+                price arrays are not published. Requested current quote points
+                and derived scenario prices are published. After verification,
+                the archive retains derived realized returns and errors instead
+                of raw closing-price histories.
+              </p>
+            </details>
+            <details class="rules">
+              <summary>
+                Historical walk-forward diagnostic · distinct from future
+                verification
+              </summary>
+              <p>
+                Each of the last 90 daily-close test predictions uses only its
+                preceding 252 returns. The Q10–Q90 coverage target is nominally
+                80%; the measured historical result below is not a promise for
+                tomorrow. Bitcoin’s daily-close diagnostic is a proxy, not a
+                test of the exact intraday 24-hour forecast anchors. Lower price
+                error is better; compare the model with a no-change random walk.
+              </p>
+              <div class="table-wrap">
+                <table class="score-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Asset</th>
+                      <th scope="col">Test observations</th>
+                      <th scope="col">Historical outer-band coverage</th>
+                      <th scope="col">Model mean absolute error</th>
+                      <th scope="col">No-change baseline error</th>
+                    </tr>
+                  </thead>
+                  <tbody id="forecast-backtest-body"></tbody>
+                </table>
+              </div>
+            </details>
+            <h3 class="verification-title">What happened after issue?</h3>
+            <p id="forecast-verification" class="notice"></p>
+            <details class="rules">
+              <summary>
+                Frozen forecast and outcome ledger · latest 30 records
+              </summary>
+              <p>
+                Verification waits for a later source observation. Bitcoin uses
+                the first completed five-minute bar at or after its target, at
+                most five minutes late. ETFs use their scheduled close. Missing
+                data is labelled unverified. No realized outcome exists until
+                the target has passed; the first release will show pending
+                records.
+              </p>
+              <div class="table-wrap">
+                <table class="score-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Asset</th>
+                      <th scope="col">Issued</th>
+                      <th scope="col">Target</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Realized return</th>
+                      <th scope="col">Median price error</th>
+                      <th scope="col">Outer band</th>
+                    </tr>
+                  </thead>
+                  <tbody id="forecast-ledger-body"></tbody>
+                </table>
+              </div>
             </details>
           </div>
         </div>

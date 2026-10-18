@@ -1,17 +1,44 @@
 {
   "meta": {
-    "updated_at": "2026-10-17T23:21:39Z",
+    "updated_at": "2026-10-17T23:42:36Z",
     "retention_days": 120,
     "verification": "Bitcoin: first completed 5-minute bar at/after target, at most 5 minutes late. ETFs: scheduled session close. Missing target data never becomes a fabricated outcome."
   },
   "records": [
+    {
+      "id": "BTC-USD|2026-10-17|revision-2",
+      "ticker": "BTC-USD",
+      "issued_at": "2026-10-17T23:42:29Z",
+      "target_at": "2026-10-18T23:45:00Z",
+      "anchor_at": "2026-10-17T23:42:26Z",
+      "anchor_price": 81258.86,
+      "levels": {
+        "q10": 79368.1872,
+        "q30": 80590.866,
+        "q40": 80990.7211,
+        "q50": 81245.5463,
+        "q60": 81578.8268,
+        "q70": 81928.3008,
+        "q90": 83219.021
+      },
+      "model": "empirical-log-return-quantiles-v1",
+      "training_observations": 252,
+      "status": "Pending future observation",
+      "backtest": {
+        "observations": 90,
+        "coverage_percent": 87.78,
+        "mean_abs_price_error_percent": 1.297,
+        "random_walk_error_percent": 1.289,
+        "method": "Walk-forward: each daily-close prediction uses only the previous 252 log returns. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
+      },
+      "issued_digest": "0ee085f9a9aa4e49c4c2c675c9e79edba7eb053b3f1cee783e4ca53f3722de77"
+    },
     {
       "id": "BTC-USD|2026-10-17",
       "ticker": "BTC-USD",
       "issued_at": "2026-10-17T23:21:39Z",
       "target_at": "2026-10-18T23:25:00Z",
       "anchor_at": "2026-10-17T23:21:44Z",
-      "anchor_price": 81203.28,
       "levels": {
         "q10": 79313.9004,
         "q30": 80535.7429,
@@ -23,7 +50,7 @@
       },
       "model": "empirical-log-return-quantiles-v1",
       "training_observations": 252,
-      "status": "Pending future observation",
+      "status": "Invalidated: anchor timestamp postdated recorded issue; excluded from scoring",
       "backtest": {
         "observations": 90,
         "coverage_percent": 87.78,

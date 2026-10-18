@@ -239,6 +239,7 @@
     const shown = items.slice(0, visible);
     const cards = shown.map((n) => {
       const card = el("article", undefined, "news-card");
+      card.dataset.sourceUrl = n.url;
       card.append(
         el(
           "p",
@@ -253,7 +254,7 @@
       card.append(
         el(
           "p",
-          "Analysis status: conditional mechanism · headline match · causal effect unverified",
+          "Rule-template status: conditional mechanism · headline match · causal effect unverified",
           "analysis-label",
         ),
       );
@@ -297,6 +298,7 @@
         ),
       );
     document.getElementById("news-list").replaceChildren(...cards);
+    document.dispatchEvent(new Event("realworth:news-rendered"));
     set(
       "news-result-count",
       `${items.length} matched headlines · showing ${shown.length}`,
@@ -350,7 +352,7 @@
     const old = Date.now() - Date.parse(data.meta.checked_at) > 3 * 3600 * 1000;
     set(
       "news-updated",
-      `Last scan ${date(data.meta.checked_at)} · ${fetched}/${data.feed_health.length} feeds fetched · hourly schedule, not a live wire`,
+      `Last scan ${date(data.meta.checked_at)} · ${fetched}/${data.feed_health.length} feeds fetched · 15-minute schedule, not a live wire`,
     );
     const warning = document.getElementById("news-health-warning");
     warning.hidden = !old && fetched === data.feed_health.length;

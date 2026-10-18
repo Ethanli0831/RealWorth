@@ -102,6 +102,15 @@ class ArticleEvidence(unittest.TestCase):
         }
         with self.assertRaises(ValueError):
             m.validate_analysis(value, evidence)
+        value["uncertainty"] = (
+            "Revisions or prior market pricing could weaken the effect."
+        )
+        value["chain"] = [
+            "event: Higher inflation; channel: reported event",
+            "event: Higher inflation; channel: conditional channel",
+        ]
+        with self.assertRaises(ValueError):
+            m.validate_analysis(value, evidence)
 
     def test_named_risk_company_is_not_a_financial_transmission_channel(self):
         value = {
@@ -118,15 +127,6 @@ class ArticleEvidence(unittest.TestCase):
         }
         with self.assertRaisesRegex(ValueError, "financial transmission"):
             m.validate_analysis(value, {"E1": "The article reports increased attacks."})
-        value["uncertainty"] = (
-            "Revisions or prior market pricing could weaken the effect."
-        )
-        value["chain"] = [
-            "event: Higher inflation; channel: reported event",
-            "event: Higher inflation; channel: conditional channel",
-        ]
-        with self.assertRaises(ValueError):
-            m.validate_analysis(value, evidence)
 
 
 if __name__ == "__main__":

@@ -51,3 +51,16 @@ decision documented in the paper-comparison report, not a fabricated data fix.
   secretly shortened holding period.
 - On a phone: the disclaimer appears near the top, inputs are large enough
   to tap, and the scorecard scrolls inside its own container.
+
+## Additional checks from the article-AI and next-period extension
+
+- A real small language model initially repeated article events and copied an
+  uncertainty placeholder instead of explaining transmission. Those outputs
+  were rejected and removed. The reader now uses a larger open-weight model,
+  constrained JSON syntax and separate content-quality checks. A valid JSON
+  object alone is not evidence of valid economic reasoning.
+- The first draft Bitcoin issue used the scan-start timestamp, while the
+  returned quote was five seconds newer. That draft was retained as explicitly
+  invalidated and excluded from scoring. A new issue uses the actual time after
+  quote acquisition; an anchor cannot postdate its issue. This correction does
+  not rewrite the old forecast's levels or pretend it was a successful result.

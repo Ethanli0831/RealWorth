@@ -226,13 +226,15 @@
       </p>
       <h2>5. News impact chains</h2>
       <p>
-        A separate hourly GitHub workflow reads selected public publisher and
-        institutional RSS feeds. It retains up to 60 dated, keyword-matched
-        headlines from the last 14 days, with publisher, link, date and
-        source-health status. It does not read or reproduce full articles.
-        Missing feeds retain explicitly cached headlines with their original
-        dates; an entirely failed refresh preserves the previous file. Source
-        failures and stale snapshots remain visible.
+        A separate approximately 15-minute GitHub workflow reads selected public
+        publisher and institutional RSS feeds. It retains up to 60 dated,
+        keyword-matched headlines from the last 14 days, with publisher, link,
+        date and source-health status. A separate hourly AI task reads selected
+        public article bodies, respecting publisher robots rules and paywalls.
+        Full bodies are not published. Missing feeds retain explicitly cached
+        headlines with their original dates; an entirely failed refresh
+        preserves the previous file. Source failures and stale snapshots remain
+        visible.
       </p>
       <p>
         Headline keywords select prewritten conditional mechanism chains. These
@@ -250,6 +252,51 @@
         substitution needs separate demand and flow evidence. The case is
         labelled historical and excluded from the recent-headline feed unless a
         genuinely recent publisher item matches.
+      </p>
+      <h2>6. AI-assisted article reading and next-period price scenarios</h2>
+      <p>
+        Actual model inference is separate from headline-rule templates.
+        Selected readable public articles are extracted, hashed and presented as
+        untrusted input to a model. GitHub Models is attempted with the scoped
+        workflow token; public Qwen CPU inference is the no-user-key fallback.
+        Each accepted output must cite actual short source fragments, include
+        conditional channels and disclose uncertainty. The model name, provider,
+        revision and read/analysis timestamps identify its provenance.
+        Structural validation does not certify factual correctness, and model
+        errors remain possible. No tools execute article instructions, no
+        paywall is bypassed and no complete publisher bodies are published.
+      </p>
+      <p>
+        Numerical scenarios use the last 252 completed daily price log returns.
+        Lower, central and upper bands correspond to Q10–Q30, Q40–Q60 and
+        Q70–Q90, with Q50 as the central point. They are historical quantile
+        scenarios, not guaranteed probabilities or AI-invented price targets.
+        Related AI news context does not mechanically change the bands. Gold is
+        GLD per ETF share, not spot gold per ounce.
+      </p>
+      <p>
+        Bitcoin targets roughly 24 hours after a frozen observed quote, rounded
+        up to a five-minute boundary. ETFs use the last completed close and next
+        NYSE-calendar session close, including weekends, holidays and early
+        closes. Already issued forecasts remain frozen. Quote snapshots update
+        independently on a roughly 15-minute schedule; publisher, exchange and
+        GitHub delays apply.
+      </p>
+      <p>
+        The 90-observation walk-forward diagnostic uses only the preceding 252
+        returns for each historical daily-close prediction, and compares
+        median-price error with a no-change random walk. This is not future
+        performance; for Bitcoin it is a daily-close proxy rather than
+        calibration of the exact intraday 24-hour horizon.
+      </p>
+      <p>
+        Prospective verification waits for the target: an ETF session close or
+        the first completed Bitcoin five-minute bar no more than five minutes
+        after target. A missing target is marked unverified, never filled with
+        another day's result. Archived outcomes contain realized returns and
+        price errors; original forecast records remain auditable in Git history.
+        The first release has pending outcomes, so no measured prospective
+        accuracy exists yet.
       </p>
       <h2>What this research cannot tell you</h2>
       <ul>

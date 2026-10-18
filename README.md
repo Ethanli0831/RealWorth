@@ -381,12 +381,20 @@ requires model provenance and actual source evidence. Output validation is not
 a factual guarantee, and numerical scenarios do not use AI price targets.
 
 Install `requirements-intelligence.txt` for article extraction and calendars.
-Local open-weight inference additionally needs CPU `torch==2.8.0` and
-`requirements-local-ai.txt`; the hosted workflow installs those only for the
-fallback. Model weights use their own licence and are not part of this MIT
+Local open-weight inference additionally needs `requirements-local-ai.txt`
+(llama.cpp and public Qwen2.5-7B GGUF weights); the hosted workflow installs
+those only for the fallback. A compatible CPU wheel is used when available;
+otherwise installation needs a C++ build toolchain. Model weights use their
+own licence and are not part of this MIT
 source release. Full publisher bodies are processed transiently, not published.
 
 Run `python scripts/build_forecasts.py`, or, with model dependencies installed,
 `python scripts/build_intelligence.py --provider local`. A genuine model must
 successfully generate supported output; failed inference is not a rule-based
 substitute.
+
+Each hourly run attempts at most two new article interpretations. Explicit
+conditional sentences are required. For public bodies without Bitcoin
+mentions, its direction is restricted to Mixed/Unclear while the model
+explains competing risk/liquidity and alternative-hedge hypotheses. This is a
+scope guard, not evidence that either transmission channel has occurred.

@@ -1,20 +1,20 @@
 {
   "meta": {
-    "checked_at": "2026-10-18T00:40:34Z",
+    "checked_at": "2026-10-18T00:42:15Z",
     "model": "empirical-log-return-quantiles-v2",
     "timezone": "America/Toronto",
     "today": "2026-10-17",
     "tomorrow": "2026-10-18",
     "quote_refresh": "Scheduled about every 15 minutes; provider and GitHub queue delays apply.",
-    "disclosure": "Price-only empirical daily log-return scenarios, not AI price targets. Lower/central/upper bands are historical quantile ranges, not guaranteed probabilities. Bitcoin uses a frozen quote-to-24h target; ETFs use the last completed close to the first session close on/after tomorrow, with matching one/two-session returns. No forecasts are revised after issue.",
+    "disclosure": "Price-only empirical matching-horizon log-return scenarios, not AI price targets. Lower/central/upper bands are historical quantile ranges, not guaranteed probabilities. Bitcoin uses a frozen quote-to-24h target; ETFs use the last completed close to the first session close on/after tomorrow, with matching one/two-session returns. No forecasts are revised after issue.",
     "failures": []
   },
   "assets": [
     {
       "ticker": "BTC-USD",
       "asset": "Bitcoin / USD",
-      "quote": 81389.7,
-      "quote_at": "2026-10-18T00:40:20Z",
+      "quote": 81357.41,
+      "quote_at": "2026-10-18T00:42:10Z",
       "quote_stale": false,
       "market_status": "Continuous trading; quote may be delayed by provider",
       "tomorrow_has_session": true,

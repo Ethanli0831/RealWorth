@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-10-18T01:28:43Z",
-    "scan_started_at": "2026-10-18T01:18:30Z",
+    "checked_at": "2026-10-18T01:38:37Z",
+    "scan_started_at": "2026-10-18T01:29:41Z",
     "provider_requested": "local",
     "article_reads": 10,
-    "ai_interpretations": 2,
+    "ai_interpretations": 3,
     "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -24,7 +24,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-15T17:19:49Z",
       "historical": null,
-      "read_at": "2026-10-18T01:18:31Z",
+      "read_at": "2026-10-18T01:29:42Z",
       "body_sha256": "aaef031974a4637d614b309cd93c6003b8522ae38886a8186e46fc0a510f3e1a",
       "body_characters": 9690,
       "model_context_characters": 4500,
@@ -77,11 +77,40 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-15T15:37:59Z",
       "historical": null,
-      "read_at": "2026-10-18T01:28:41Z",
+      "read_at": "2026-10-18T01:34:46Z",
       "body_sha256": "baeba6372188834ee43df0bd05d519e236f1a072776fc71ba40fd4d2391112af",
       "body_characters": 2505,
       "model_context_characters": 2505,
-      "status": "Public body read; queued for AI"
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Wall Street expects a rise in the Federal Reserve's preferred inflation indicator, with core PCE inflation forecasted to increase 0.32%. Hot PPI shows Fed's work is not done.",
+        "evidence_ids": [
+          "E1",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: Hot PPI reported",
+          "financial_channel: If inflation expectations rise, real yields may increase",
+          "asset_hypothesis: If real yields increase, gold may be seen as a safer haven"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations rise, gold may be seen as a safer haven"
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If inflation expectations rise, Bitcoin may face competition from gold as a hedge, but liquidity concerns could also drive demand"
+        },
+        "uncertainty": "If the economy shows signs of resilience, the Fed may not need to hike rates, reducing demand for gold and Bitcoin."
+      },
+      "evidence": {
+        "E1": "Wall Street estimates for the Federal Reserve's preferred inflation indicator now expect",
+        "E3": "A 0.32% increase in PCE would boost the year-over-year core inflation rate"
+      },
+      "analyzed_at": "2026-10-18T01:38:34Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/c6zxj0gzk4x4o?at_medium=RSS&at_campaign=rss",
@@ -89,7 +118,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-14T16:47:32Z",
       "historical": null,
-      "read_at": "2026-10-18T01:28:41Z",
+      "read_at": "2026-10-18T01:38:35Z",
       "body_sha256": "7f5149c3689e87fd45b389abc69b9a95bfd196a4e0a1fde5a4dc0d77cc28ce67",
       "body_characters": 2490,
       "model_context_characters": 2490,
@@ -101,7 +130,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-14T14:29:42Z",
       "historical": null,
-      "read_at": "2026-10-18T01:28:41Z",
+      "read_at": "2026-10-18T01:38:35Z",
       "body_sha256": "0a9d8f0d82cde8fad287c091d4ad49599de862e8dd47498fdc1dbae9ddeb75dd",
       "body_characters": 4112,
       "model_context_characters": 4112,
@@ -113,7 +142,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-15T06:35:31Z",
       "historical": null,
-      "read_at": "2026-10-18T01:28:42Z",
+      "read_at": "2026-10-18T01:38:36Z",
       "body_sha256": "7207da98d7cf10f3438ddc91b4422a80292e51ab2fe38f21b63018c76672348f",
       "body_characters": 6140,
       "model_context_characters": 4500,
@@ -125,7 +154,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T22:34:29Z",
       "historical": null,
-      "read_at": "2026-10-18T01:28:42Z",
+      "read_at": "2026-10-18T01:38:36Z",
       "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
       "body_characters": 3344,
       "model_context_characters": 3344,
@@ -178,7 +207,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-15T16:55:41Z",
       "historical": null,
-      "read_at": "2026-10-18T01:28:42Z",
+      "read_at": "2026-10-18T01:38:37Z",
       "body_sha256": "01a1858aa6def8fe3bc8d8625bde63d10aa16fe90c88344befb95be84e52927c",
       "body_characters": 993,
       "model_context_characters": 993,
@@ -190,7 +219,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T16:27:31Z",
       "historical": null,
-      "read_at": "2026-10-18T01:28:43Z",
+      "read_at": "2026-10-18T01:38:37Z",
       "body_sha256": "706c206a7a2382b9889c271ce1c4c3dbba0c627714bbc63e7434e755b1825dd6",
       "body_characters": 5478,
       "model_context_characters": 4500,

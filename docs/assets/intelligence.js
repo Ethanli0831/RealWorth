@@ -55,6 +55,7 @@
         !validDate(a.analyzed_at) ||
         !a.body_characters ||
         !Array.isArray(a.analysis.chain) ||
+        a.analysis.chain.some((step) => typeof step !== "string") ||
         !Array.isArray(a.analysis.evidence_ids) ||
         !a.analysis.evidence_ids.length ||
         a.analysis.evidence_ids.some(
@@ -140,7 +141,16 @@
     );
     d.append(make("p", record.analysis.summary));
     const chain = make("ol", undefined, "impact-chain");
-    for (const step of record.analysis.chain) chain.append(make("li", step));
+    for (const step of record.analysis.chain)
+      chain.append(
+        make(
+          "li",
+          step.replace(
+            /^(reported_event|financial_channel|asset_hypothesis):\s*/,
+            "",
+          ),
+        ),
+      );
     d.append(chain);
     for (const asset of ["gold", "bitcoin"]) {
       const effect = record.analysis[asset];

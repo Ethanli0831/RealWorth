@@ -279,7 +279,7 @@
             ? "No scheduled ETF session tomorrow; these levels refer to the next trading close."
             : row.ticker === "BTC-USD"
               ? "24h after the frozen quote anchor (rounded to a 5-minute target)."
-              : "Next scheduled trading-session close.",
+              : `First trading close on/after tomorrow; ${f.horizon_sessions || 1}-session return horizon from the frozen anchor.`,
           "metric-baseline",
         ),
       );

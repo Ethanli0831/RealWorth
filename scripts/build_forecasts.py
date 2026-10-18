@@ -32,7 +32,7 @@ ASSETS = {
     "TLT": "Long-bond ETF (TLT)",
 }
 TZ = ZoneInfo("America/Toronto")
-VERSION = "empirical-log-return-quantiles-v1"
+VERSION = "empirical-log-return-quantiles-v2"
 QUANTILES = [0.1, 0.3, 0.4, 0.5, 0.6, 0.7, 0.9]
 
 
@@ -47,6 +47,7 @@ def digest(record):
         "levels",
         "model",
         "training_observations",
+        "horizon_sessions",
     )
     frozen = {k: record[k] for k in keys if k in record}
     return hashlib.sha256(
@@ -54,17 +55,28 @@ def digest(record):
     ).hexdigest()
 
 
-def distribution(closes):
+def distribution(closes, horizon_sessions=1):
     values = np.asarray(closes, dtype=float)
-    if len(values) < 344 or not np.isfinite(values).all() or (values <= 0).any():
-        raise ValueError("At least 344 valid daily closes are required")
+    if horizon_sessions not in (1, 2):
+        raise ValueError("Forecast horizon must span one or two sessions")
+    if (
+        len(values) < 343 + horizon_sessions
+        or not np.isfinite(values).all()
+        or (values <= 0).any()
+    ):
+        raise ValueError(
+            f"At least {343 + horizon_sessions} valid daily closes are required"
+        )
     returns = np.diff(np.log(values))
     if (np.abs(returns) > 0.5).any():
         raise ValueError("Extreme return or split requires manual data validation")
+    returns = np.log(values[horizon_sessions:] / values[:-horizon_sessions])
     quantiles = np.quantile(returns[-252:], QUANTILES)
     errors, naive_errors, covered = [], [], []
-    for index in range(max(252, len(returns) - 90), len(returns)):
-        q = np.quantile(returns[index - 252 : index], [0.1, 0.5, 0.9])
+    for index in range(max(251 + horizon_sessions, len(returns) - 90), len(returns)):
+        # Only training outcomes completed by the forecast origin are known.
+        cutoff = index - horizon_sessions + 1
+        q = np.quantile(returns[cutoff - 252 : cutoff], [0.1, 0.5, 0.9])
         actual = returns[index]
         errors.append(abs(math.expm1(q[1] - actual)) * 100)
         naive_errors.append(abs(math.expm1(-actual)) * 100)
@@ -74,12 +86,20 @@ def distribution(closes):
         "coverage_percent": round(100 * np.mean(covered), 2),
         "mean_abs_price_error_percent": round(float(np.mean(errors)), 3),
         "random_walk_error_percent": round(float(np.mean(naive_errors)), 3),
-        "method": "Walk-forward: each daily-close prediction uses only the previous 252 log returns. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy.",
+        "horizon_sessions": horizon_sessions,
+        "method": f"Walk-forward: each {horizon_sessions}-session prediction uses 252 prior completed matching-horizon log returns. Overlapping training outcomes are not independent. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy.",
     }
 
 
 def create_forecast(
-    ticker, anchor_price, anchor_at, target_at, issued_at, closes, identifier
+    ticker,
+    anchor_price,
+    anchor_at,
+    target_at,
+    issued_at,
+    closes,
+    identifier,
+    horizon_sessions=1,
 ):
     if (
         not math.isfinite(anchor_price)
@@ -88,7 +108,7 @@ def create_forecast(
         or anchor_at > issued_at
     ):
         raise ValueError("Forecast needs a positive anchor and a future target")
-    q, backtest = distribution(closes)
+    q, backtest = distribution(closes, horizon_sessions)
     levels = {
         f"q{int(p*100)}": round(anchor_price * math.exp(float(v)), 4)
         for p, v in zip(QUANTILES, q)
@@ -103,6 +123,7 @@ def create_forecast(
         "levels": levels,
         "model": VERSION,
         "training_observations": 252,
+        "horizon_sessions": horizon_sessions,
         "status": "Pending future observation",
         "backtest": backtest,
     }
@@ -187,23 +208,30 @@ def fetch_asset(ticker, now, needs_intraday):
         target = ceiling + timedelta(days=1)
         anchor, anchor_at = quote, quote_at
         identifier = f"{ticker}|{now.astimezone(TZ).date().isoformat()}"
+        horizon_sessions = 1
         tomorrow_open = True
         phase = "Continuous trading; quote may be delayed by provider"
     else:
         anchor_at, anchor = observations[-1]
         last_session = pd.Timestamp(anchor_at.astimezone(TZ).date())
         next_session = calendar.next_session(last_session)
-        target = calendar.session_close(next_session).to_pydatetime()
-        if target <= now:
+        if calendar.session_close(next_session).to_pydatetime() <= now:
             raise ValueError("Latest completed session has not arrived from source")
         tomorrow = now.astimezone(TZ).date() + timedelta(days=1)
+        target_session = calendar.date_to_session(
+            pd.Timestamp(tomorrow), direction="next"
+        )
+        target = calendar.session_close(target_session).to_pydatetime()
+        horizon_sessions = (
+            len(calendar.sessions_in_range(last_session, target_session)) - 1
+        )
         tomorrow_open = bool(calendar.is_session(pd.Timestamp(tomorrow)))
         phase = (
             "Market open · delayed quote"
             if calendar.is_open_on_minute(pd.Timestamp(now).floor("min"))
             else "Market closed · last reported quote"
         )
-        identifier = f"{ticker}|{stamp(target)}"
+        identifier = f"{ticker}|{stamp(target)}|{stamp(anchor_at)}"
     verification = observations
     if ticker == "BTC-USD" and needs_intraday:
         short = inst.history(
@@ -239,6 +267,7 @@ def fetch_asset(ticker, now, needs_intraday):
         "anchor_at": anchor_at,
         "target": target,
         "identifier": identifier,
+        "horizon_sessions": horizon_sessions,
         "closes": [p for _, p in observations],
         "verification": verification,
     }
@@ -274,6 +303,22 @@ def build(previous, ledger, now, clock=None):
                 if record["ticker"] == ticker:
                     all_records[key] = settle_record(record, value["verification"], now)
             identifier = value["identifier"]
+            if identifier not in all_records and ticker != "BTC-USD":
+                legacy = next(
+                    (
+                        r
+                        for r in all_records.values()
+                        if r["ticker"] == ticker
+                        and r["status"] == "Pending future observation"
+                        and r["target_at"] == stamp(value["target"])
+                        and r["anchor_at"] == stamp(value["anchor_at"])
+                        and r.get("horizon_sessions", 1)
+                        == value.get("horizon_sessions", 1)
+                    ),
+                    None,
+                )
+                if legacy:
+                    identifier = legacy["id"]
             revision = 1
             while identifier in all_records and all_records[identifier][
                 "status"
@@ -289,6 +334,7 @@ def build(previous, ledger, now, clock=None):
                     issue_time,
                     value["closes"],
                     identifier,
+                    value.get("horizon_sessions", 1),
                 )
             row = {
                 k: value[k]
@@ -372,7 +418,7 @@ def build(previous, ledger, now, clock=None):
         "today": now.astimezone(TZ).date().isoformat(),
         "tomorrow": (now.astimezone(TZ).date() + timedelta(days=1)).isoformat(),
         "quote_refresh": "Scheduled about every 15 minutes; provider and GitHub queue delays apply.",
-        "disclosure": "Price-only empirical daily log-return scenarios, not AI price targets. Lower/central/upper bands are historical quantile ranges, not guaranteed probabilities. Bitcoin uses a frozen quote-to-24h target; ETFs use the last completed close to the next scheduled close. No forecasts are revised after issue.",
+        "disclosure": "Price-only empirical matching-horizon log-return scenarios, not AI price targets. Lower/central/upper bands are historical quantile ranges, not guaranteed probabilities. Bitcoin uses a frozen quote-to-24h target; ETFs use the last completed close to the first session close on/after tomorrow, with matching one/two-session returns. No forecasts are revised after issue.",
         "failures": failures,
     }
     return {"meta": meta, "assets": rows, "verification": report}, {

@@ -261,36 +261,41 @@
         workflow token; public Qwen CPU inference is the no-user-key fallback.
         Each accepted output must cite actual short source fragments, include
         conditional channels and disclose uncertainty. The model name, provider,
-        revision and read/analysis timestamps identify its provenance.
-        Model context contains at most the first 4,500 extracted characters
-        plus short source fragments; extracted and supplied lengths are shown
-        separately. Truncation can omit important context.
-        Structural validation does not certify factual correctness, and model
-        errors remain possible. No tools execute article instructions, no
-        paywall is bypassed and no complete publisher bodies are published.
+        revision and read/analysis timestamps identify its provenance. Model
+        context contains at most the first 4,500 extracted characters plus short
+        source fragments; extracted and supplied lengths are shown separately.
+        Truncation can omit important context. Structural validation does not
+        certify factual correctness, and model errors remain possible. No tools
+        execute article instructions, no paywall is bypassed and no complete
+        publisher bodies are published.
       </p>
       <p>
-        Numerical scenarios use the last 252 completed daily price log returns.
-        Lower, central and upper bands correspond to Q10–Q30, Q40–Q60 and
-        Q70–Q90, with Q50 as the central point. They are historical quantile
-        scenarios, not guaranteed probabilities or AI-invented price targets.
-        Related AI news context does not mechanically change the bands. Gold is
-        GLD per ETF share, not spot gold per ounce.
+        Numerical scenarios use 252 completed price log returns matched to the
+        anchor-to-target span (one or two trading sessions). Lower, central and
+        upper bands correspond to Q10–Q30, Q40–Q60 and Q70–Q90, with Q50 as the
+        central point. They are historical quantile scenarios, not guaranteed
+        probabilities or AI-invented price targets. Related AI news context does
+        not mechanically change the bands. Gold is GLD per ETF share, not spot
+        gold per ounce.
       </p>
       <p>
         Bitcoin targets roughly 24 hours after a frozen observed quote, rounded
         up to a five-minute boundary. ETFs use the last completed close and next
-        NYSE-calendar session close, including weekends, holidays and early
-        closes. Already issued forecasts remain frozen. Quote snapshots update
+        NYSE-calendar session close on or after tomorrow, including holidays and
+        early closes. During a trading session this spans two closes from the
+        last completed anchor, so two-session historical returns are used.
+        Already issued forecasts remain frozen. Quote snapshots update
         independently on a roughly 15-minute schedule; publisher, exchange and
         GitHub delays apply.
       </p>
       <p>
-        The 90-observation walk-forward diagnostic uses only the preceding 252
-        returns for each historical daily-close prediction, and compares
-        median-price error with a no-change random walk. This is not future
-        performance; for Bitcoin it is a daily-close proxy rather than
-        calibration of the exact intraday 24-hour horizon.
+        The 90-observation walk-forward diagnostic uses 252 matching-horizon
+        returns whose endpoints were available at each historical origin, and
+        compares median-price error with a no-change random walk. This is not
+        future performance; for Bitcoin it is a daily-close proxy rather than
+        calibration of the exact intraday 24-hour horizon. Overlapping horizons
+        and multiple issues for the same asset/target are correlated; aggregate
+        results are descriptive.
       </p>
       <p>
         Prospective verification waits for the target: an ETF session close or

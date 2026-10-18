@@ -362,9 +362,9 @@ workflow schedule; the page checks price snapshots each minute. This is
 automated polling with provider/queue delays, not a licensed tick feed.
 
 `scripts/build_forecasts.py` freezes a numerical empirical-quantile forecast
-for each Bitcoin Eastern-calendar issue day or ETF target close, and writes
-forecasts.json plus forecast-ledger.json. Scenarios use 252 completed daily
-price log returns. ETFs target the next actual trading close; Bitcoin targets
+for each Bitcoin Eastern-calendar issue day or ETF target/anchor combination, and writes
+forecasts.json plus forecast-ledger.json. Scenarios use 252 completed matching-horizon
+price log returns. ETFs target the first actual close on/after tomorrow; intraday issues use two-session returns from the previous completed close, and after-close issues use one session. Bitcoin targets
 roughly 24h after its anchor. Prior issues are never revised. Historical
 walk-forward results and the random-walk baseline are separate from prospective
 verification. Actual future observations are needed before any prospective

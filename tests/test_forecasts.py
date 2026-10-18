@@ -145,6 +145,23 @@ class ForecastIntegrity(unittest.TestCase):
         self.assertEqual(
             value["target"], datetime(2026, 10, 19, 20, tzinfo=timezone.utc)
         )
+        with patch.object(m.yf, "Ticker", return_value=instance):
+            intraday = m.fetch_asset(
+                "GLD", datetime(2026, 10, 19, 14, tzinfo=timezone.utc), False
+            )
+        self.assertEqual(
+            intraday["target"], datetime(2026, 10, 20, 20, tzinfo=timezone.utc)
+        )
+        self.assertEqual(intraday["horizon_sessions"], 2)
+
+    def test_two_session_scenarios_use_two_session_returns(self):
+        prices = 100 * np.exp(np.arange(400) * 0.001)
+        daily, _ = m.distribution(prices, 1)
+        two_days, backtest = m.distribution(prices, 2)
+        np.testing.assert_allclose(daily, 0.001, atol=1e-12)
+        np.testing.assert_allclose(two_days, 0.002, atol=1e-12)
+        self.assertEqual(backtest["horizon_sessions"], 2)
+        self.assertEqual(backtest["observations"], 90)
 
 
 if __name__ == "__main__":

@@ -736,19 +736,21 @@
                 Bitcoin trades continuously: each day’s first forecast uses a
                 reported quote and targets roughly 24 hours later, rounded up to
                 the next five-minute boundary. ETF scenarios use the last
-                completed daily close and the next NYSE-calendar close,
-                including holidays and early closes. If tomorrow has no ETF
-                session, the target explicitly moves to the next trading close;
-                no Sunday price is fabricated.
+                completed daily close and the first NYSE-calendar close on or
+                after tomorrow, including holidays and early closes. If tomorrow
+                has no ETF session, the target explicitly moves to the next
+                trading close; no Sunday price is fabricated.
               </p>
               <p>
                 Forecasts are issued once per Bitcoin Eastern-calendar day or
-                ETF target session, and remain unchanged. A forecast issued
-                earlier is not an up-to-the-minute conditional model. The latest
-                quote is shown separately with its original source time.
-                Training uses completed daily closes and price-only returns,
-                excluding cash distributions. No forecasting advantage over a
-                random walk is established.
+                ETF target and completed anchor combination, and remain
+                unchanged. A new completed close can create a separate issue for
+                the same target. A forecast issued earlier is not an
+                up-to-the-minute conditional model. The latest quote is shown
+                separately with its original source time. Training uses 252
+                completed one- or two-session price-only returns matched to the
+                actual anchor-to-target span, excluding cash distributions. No
+                forecasting advantage over a random walk is established.
               </p>
               <p>
                 Public Yahoo histories are processed transiently; complete raw
@@ -764,12 +766,14 @@
                 verification
               </summary>
               <p>
-                Each of the last 90 daily-close test predictions uses only its
-                preceding 252 returns. The Q10–Q90 coverage target is nominally
-                80%; the measured historical result below is not a promise for
-                tomorrow. Bitcoin’s daily-close diagnostic is a proxy, not a
-                test of the exact intraday 24-hour forecast anchors. Lower price
-                error is better; compare the model with a no-change random walk.
+                Each of the last 90 test predictions uses 252 matching-horizon
+                returns whose endpoints were known by its historical origin.
+                Overlapping two-session returns are not independent. The Q10–Q90
+                coverage target is nominally 80%; the measured historical result
+                below is not a promise for tomorrow. Bitcoin’s daily-close
+                diagnostic is a proxy, not a test of the exact intraday 24-hour
+                forecast anchors. Lower price error is better; compare the model
+                with a no-change random walk.
               </p>
               <div class="table-wrap">
                 <table class="score-table">

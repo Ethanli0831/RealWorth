@@ -1,0 +1,31 @@
+name: Review derived AI evidence
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "CPU evaluation run containing derived evidence"
+        required: true
+        type: string
+permissions:
+  contents: read
+  actions: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Read the derived evaluation artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          REVIEW_RUN: ${{ inputs.run_id }}
+        run: |
+          set -euo pipefail
+          [[ "$REVIEW_RUN" =~ ^[0-9]+$ ]]
+          gh run download "$REVIEW_RUN" --name alternate-model-derived-evidence --dir /tmp/realworth-model-review
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path('/tmp/realworth-model-review/intelligence.json').read_text())
+          print('REVIEW_PAYLOAD '+json.dumps(data,ensure_ascii=True))
+          PY

@@ -1,5 +1,101 @@
 # Validation record
 
+## Article AI and next-period scenarios — 2026-10-18 UTC
+
+This section supersedes the earlier headline-only scope, refresh cadence and
+test counts below. Historical paper-comparison and student checks still apply.
+
+- **45 Python tests**, **18 JavaScript tests**, and **18 real Chromium
+  scenarios locally plus 18 against the public HTTPS site** passed. Browser
+  coverage includes actual model output and short evidence quotes, five-asset
+  scenario values, diagnostics and pending-ledger display, missing-AI recovery,
+  the original tools and charts, news filters, quiz and 390px mobile layout.
+  The public check uses actual remote responses through verified system TLS;
+  Chart.js passes the pinned SHA-384 check. No certificate checks were disabled.
+- [Today → Tomorrow](https://ethanli0831.github.io/RealWorth/#outlook) and
+  [News & Impact Chains](https://ethanli0831.github.io/RealWorth/#news) are live.
+  The [Chinese website guide](USER_GUIDE.zh-CN.md), README and methodology
+  explain the distinction between headline templates, actual model hypotheses
+  and statistical price bands. Neither evidence links nor passing software
+  tests certify an economic interpretation as correct.
+- The real inference backend is **Qwen2.5-7B-Instruct-GGUF**, Q4_K_M through
+  llama.cpp, model revision `bb5d59e06d9551d752d08b292a50eb208b07ab1f`.
+  GitHub Models did not return usable model JSON in this environment; the
+  open-weight CPU fallback actually ran. The initial
+  [production inference run](https://github.com/Ethanli0831/RealWorth/actions/runs/39084836867)
+  succeeded, and later
+  [scheduled inference](https://github.com/Ethanli0831/RealWorth/actions/runs/39123969397)
+  also succeeded. No user API key is required.
+- At **11:48:03 UTC**, the public AI snapshot contained **10 article reads and
+  5 retained interpretations**, including cached interpretations awaiting a
+  re-read. Other articles were queued or explicitly rejected. The reader
+  respects source allowlists and robots/paywall constraints; the historical
+  CERN page was unavailable to this reader and was not represented as a
+  current AI finding. Selected public articles do not cover every headline,
+  paid bank report or the whole Internet.
+- Model records expose source URLs, publication/read/analysis times, body
+  hashes, model revision, short actual source fragments and context length.
+  At most 4,500 article characters are supplied to each model call; full
+  publisher bodies are not published. Schema and semantic checks reject
+  placeholders, unrelated summaries, unsupported numeric claims and missing
+  financial channels. Conditional gold/Bitcoin hypotheses remain fallible;
+  the model is not an independent fact checker. Earlier small-model outputs
+  that copied examples or invented automatic safe-haven effects were withdrawn.
+  Inference slots rotate to avoid repeated rejections starving other articles;
+  an existing unit test checks that queue property.
+- **All three update workflows have actually run on their schedules**:
+  [monthly research](https://github.com/Ethanli0831/RealWorth/actions/runs/39118886945),
+  [news and observed quotes](https://github.com/Ethanli0831/RealWorth/actions/runs/39137986529),
+  and the scheduled article inference linked above. Configured cadence is
+  monthly on the 18th at 06:00 UTC, quote/news scans at minutes 7/22/37/52,
+  and article AI at minute 29. **These are scheduling requests, not real-time
+  guarantees:** observed GitHub delays on this date included several hours
+  between runs. Visible pages poll published quote/AI snapshots every minute
+  and research snapshots every five minutes; polling cannot create fresh data
+  before a scheduled job finishes. Source errors preserve dated old data.
+- Five assets have lower/central/upper **empirical price-only scenarios** from
+  252 matching-horizon historical log returns. These are not AI price targets
+  or guaranteed probabilities. GLD is an ETF share price, not spot gold per
+  ounce. Bitcoin uses a frozen quote-to-24-hour target; ETF horizons use the
+  first actual exchange close on or after tomorrow, including weekends,
+  holidays and one/two-session matching. Walk-forward diagnostics use only
+  outcomes available at each historical origin and compare against a no-change
+  baseline. Overlapping outcomes are correlated and do not prove an edge.
+- Issued levels/digests were compared across quote refreshes and stayed frozen.
+  At **14:53:30 UTC**, the ledger retained **6 pending forecasts and 1 explicitly
+  invalidated initial draft**, with **0 prospectively verified outcomes**.
+  The invalid draft used an issue timestamp preceding its returned quote by
+  five seconds; it was retained as invalid and excluded from scoring.
+  The earliest valid Bitcoin target is October 18 at 23:45 UTC; another issue
+  targets October 19 at 06:35 UTC. The four ETF records target October 19 at
+  20:00 UTC. Later observations, not backfilled guesses, will determine errors.
+- The monthly dataset is through **September 2026**. Original approximate
+  paper replication still has **0/11** within-tolerance results under the
+  author's approved independent exact method; no claim of replication is made.
+  The student's physical-phone check and personal quiz answers remain human
+  tasks; responsive Chromium checks and the interactive quiz are provided.
+
+### Cloud environment refresh
+
+The restored environment initially lacked `beautifulsoup4` and
+`exchange-calendars`. Installing the existing pinned `requirements-dev.txt`
+resolved that setup defect. The complete installation script then passed all
+45 Python, 18 JavaScript and 18 local browser checks. The virtualenv HTTP
+startup command was started/stopped twice and served the actual dashboard and
+all five JSON endpoints successfully. No application source was changed for
+onboarding. Python 3.12, Node 24 and system Chromium were used locally; the
+successful GitHub runner uses Python 3.11.
+
+Updated complete `install_script` and `start_skill` fields were saved to the
+cloud configuration draft, preserving network and credential settings. The
+startup instructions cover the new datasets, all tests and separate optional
+model-runtime requirements. Heavy model weights were not installed locally;
+inference was verified on GitHub's runner. **Saving this draft does not publish
+the environment.** Review/save the cloud environment settings and publish the
+environment to activate the reusable configuration; fresh-task restoration of
+this revision has not been independently verified. This is separate from the
+already deployed public website.
+
 ## Economic-weather and news extension — 2026-10-17
 
 - **29 Python tests**, **15 JavaScript tests** and **15 Chromium functional

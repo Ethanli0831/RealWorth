@@ -3,8 +3,8 @@
     "checked_at": "2026-10-17T23:48:07Z",
     "provider_requested": "local",
     "article_reads": 10,
-    "ai_interpretations": 1,
-    "new_interpretations": 1,
+    "ai_interpretations": 0,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -37,32 +37,7 @@
       "read_at": "2026-10-17T23:48:07Z",
       "body_sha256": "40ae56dcc81387d4ce57c6d95d2bf702444b366d02539c7ca8b979e6eee2c4d7",
       "body_characters": 4702,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "The draft failed this check: AI chain contains no financial transmission mechanism. Revise with actual article-specific economic reasoning. Explain how the event could change real,",
-        "evidence_ids": [
-          "E1",
-          "E2"
-        ],
-        "chain": [
-          "Event: Ship attacks near Hormuz Strait reach record highs",
-          "Impact on Oil Prices: Increased attacks slow oil shipments, potentially raising prices",
-          "Impact on Real Yields: Higher oil prices may attract investors seeking higher returns, driving demand for assets like gold and causing real yields to rise"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "Higher oil prices attract investment into gold"
-        },
-        "bitcoin": {
-          "direction": "down",
-          "condition": "Lower oil prices reduce demand for bitcoin"
-        },
-        "uncertainty": "Concrete Countercase: If global oil supplies increase unexpectedly, it could offset the impact of rising oil prices on real yields, potentially reversing the trend"
-      },
-      "evidence": {
-        "E1": "Martin Kelly, CEO of Orbital Risk Intelligence, said Iran has \"evolved its",
-        "E2": "The number of ships that have reported being attacked in and around"
-      },
+      "status": "Rejected output echoed instructions; awaiting corrected model reading",
       "analyzed_at": "2026-10-17T23:48:07Z",
       "model": "Qwen/Qwen2.5-1.5B-Instruct",
       "provider": "Local open-weight CPU inference",

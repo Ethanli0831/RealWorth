@@ -12,10 +12,31 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          ref: main
       - uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.11'
-      - run: python -m pip install requests==2.32.5
+      - run: python -m pip install -r requirements-intelligence.txt
+      - name: Check selected public article topic and extraction
+        run: |
+          python - <<'PY'
+          import sys,json,hashlib,re
+          sys.path.insert(0,'scripts')
+          from build_intelligence import get_public,extract_article
+          research=json.load(open('docs/data/research.json'))
+          for publisher in ['CNBC Economy','BBC Business']:
+              item=next(n for n in research['news'] if n['publisher']==publisher)
+              try:
+                  body=extract_article(get_public(item['url']))
+                  terms={w.lower().rstrip('s') for w in re.findall(r'[a-zA-Z]{5,}',item['title'])}
+                  present=sorted(w for w in terms if w in body.lower())
+                  result={'publisher':publisher,'title':item['title'],'body_characters':len(body),'body_sha256':hashlib.sha256(body.encode()).hexdigest(),'title_terms_in_body':present,'opening_fragment':' '.join(body.split()[:12])}
+              except Exception as exc:
+                  result={'publisher':publisher,'error':type(exc).__name__}
+              print('::notice::ARTICLE_EXTRACTION '+json.dumps(result))
+          PY
       - name: Check public model protocol with a harmless test prompt
         env:
           GITHUB_TOKEN: ${{ github.token }}

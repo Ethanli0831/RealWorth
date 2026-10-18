@@ -371,7 +371,9 @@ verification. Actual future observations are needed before any prospective
 accuracy can be reported. No historical Yahoo close arrays are published.
 
 `scripts/build_intelligence.py` reads selected allowed public article bodies,
-respecting robots and paywalls. The hourly **Article reading and AI analysis**
+respecting robots and paywalls. It supplies at most the first 4,500 extracted
+characters plus short source fragments to the model; context truncation is
+reported. The hourly **Article reading and AI analysis**
 workflow uses GitHub Models with the job's `models: read` token permission,
 with real CPU Qwen open-weight inference as a fallback. No user API key is
 required. Selected articles may remain unread or queued; every AI label

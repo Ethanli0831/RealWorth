@@ -59,6 +59,11 @@ decision documented in the paper-comparison report, not a fabricated data fix.
   were rejected and removed. The reader now uses a larger open-weight model,
   constrained JSON syntax and separate content-quality checks. A valid JSON
   object alone is not evidence of valid economic reasoning.
+- A later model copied a fictional policy example into shipping news. That
+  output was also withdrawn. Factual examples were removed from the prompt;
+  the output contract is now explicit without sample events. A topic-overlap
+  check rejects summaries whose reported event is unrelated to the headline.
+  This is a conservative filter, not independent factual verification.
 - The first draft Bitcoin issue used the scan-start timestamp, while the
   returned quote was five seconds newer. That draft was retained as explicitly
   invalidated and excluded from scoring. A new issue uses the actual time after

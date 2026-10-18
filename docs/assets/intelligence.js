@@ -127,7 +127,7 @@
     d.append(
       make(
         "p",
-        `${record.provider} · analyzed ${date(record.analyzed_at)} · ${record.body_characters.toLocaleString()} source characters read`,
+        `${record.provider} · analyzed ${date(record.analyzed_at)} · ${record.body_characters.toLocaleString()} source characters extracted; ${(record.model_context_characters || record.body_characters).toLocaleString()} body characters supplied to the model, plus short evidence fragments`,
         "tiny",
       ),
     );

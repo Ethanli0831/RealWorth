@@ -4,8 +4,8 @@
     "scan_started_at": "2026-10-18T00:33:42Z",
     "provider_requested": "local",
     "article_reads": 10,
-    "ai_interpretations": 1,
-    "new_interpretations": 1,
+    "ai_interpretations": 0,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -40,32 +40,7 @@
       "body_sha256": "40ae56dcc81387d4ce57c6d95d2bf702444b366d02539c7ca8b979e6eee2c4d7",
       "body_characters": 4702,
       "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "The article reports on a series of ship attacks in the Strait of Hormuz, with a focus on increased maritime incidents and rising tensions in the region. It highlights the use of data from UK maritime operations and reports from the UKMTO, emphasizing a significant rise in attacks and the impact on a",
-        "evidence_ids": [
-          "E1",
-          "E2"
-        ],
-        "chain": [
-          "reported event: ship attacks in the Strait of Hormuz",
-          "conditional financial transmission: rising attacks and supply-demand shifts",
-          "conditional asset effect: increased risk and volatility in oil shipping"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "mixed, unclear, and high risk"
-        },
-        "bitcoin": {
-          "direction": "down",
-          "condition": "unclear, high volatility"
-        },
-        "uncertainty": "One concrete countercase: the number of attacks has increased significantly, with a rise in reported incidents and a shift in shipping patterns, suggesting a potential disruption in oil supply chains."
-      },
-      "evidence": {
-        "E1": "Martin Kelly, CEO of Orbital Risk Intelligence, said Iran has \"evolved its",
-        "E2": "The number of ships that have reported being attacked in and around"
-      },
+      "status": "Unavailable: output lacked meaningful conditional asset effects; awaiting stronger model",
       "analyzed_at": "2026-10-18T00:51:04Z",
       "model": "Qwen/Qwen3-4B-Instruct-2507",
       "provider": "Local open-weight CPU inference · dynamic int8 weights",

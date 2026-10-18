@@ -3,8 +3,9 @@
 An independent educational project comparing Bitcoin (`BTC-USD`), gold (`GLD`),
 the S&P 500 (`SPY`), Treasury bills (`BIL`), and long-term Treasury bonds (`TLT`).
 Three investment tools show returns after inflation, a risk
-scorecard, and historical returns in inflation regimes. Two additional research
-sections show US economic-weather signals and attributed news impact chains. The website uses
+scorecard, and historical returns in inflation regimes. Research sections add
+US economic-weather signals, attributed news impact chains, evidence-linked
+article AI and frozen next-period price scenarios. The website uses
 plain HTML, CSS, vanilla JavaScript and Chart.js from a pinned CDN; there is no
 frontend build or API server. Educational research, not financial advice.
 

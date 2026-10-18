@@ -1,11 +1,14 @@
 # RealWorth 网站说明书
 
-版本日期：2026-10-11。网站界面为英文，本说明书提供中文操作与解读。
+版本日期：2026-10-17（多伦多）。网站界面为英文，本说明书提供中文操作与解读。
 
 - 网站：https://ethanli0831.github.io/RealWorth/
 - 计算器：https://ethanli0831.github.io/RealWorth/#calculator
 - 评分表：https://ethanli0831.github.io/RealWorth/#scorecard
 - 通胀工具：https://ethanli0831.github.io/RealWorth/#regime
+- 经济天气与研究来源：https://ethanli0831.github.io/RealWorth/#weather
+- 新闻与 AI 阅读：https://ethanli0831.github.io/RealWorth/#news
+- 今天到明天的价格情景：https://ethanli0831.github.io/RealWorth/#outlook
 - 方法说明与测验：https://ethanli0831.github.io/RealWorth/methodology.html
 - 源代码：https://github.com/Ethanli0831/RealWorth
 
@@ -33,7 +36,7 @@ RealWorth 比较五类资产的历史购买力、风险和不同通胀环境下�
 - **Refreshed**：数据文件最近更新的日期。
 - **Monthly observations**：网站使用月度观察值。
 
-截至本说明书编写时，公开网站的数据截至 **2026 年 8 月**，文件更新于 **2026-10-10**。以后应以网页实际显示为准。
+本次更新后的月度研究数据截至 **2026 年 9 月**，文件更新日期为 **2026-10-18 UTC**。以后应以网页实际显示为准。新闻、行情和 AI 阅读另有各自的更新时间，不受这个月度截止月份限制。
 
 更新日期和数据截止月份可能不同：脚本需要同时获得资产价格和已公布的 CPI，才会纳入完整月份。因此，“截至最新数据”并不是今天的实时价格。
 
@@ -244,6 +247,8 @@ GitHub Actions 预定在**每月 18 日 06:00 UTC**更新，即多伦多夏令�
 新闻中标记 **AI-assisted article reading** 的部分由真正模型读取选定公开正文后生成；它与原有规则模板明确分开。可展开查看模型名称、来源证据片段、阅读及分析时间、条件传导链、反向因素和不确定性。未读取、受限或尚在队列中的新闻不会被标为已完成 AI 分析。正文阅读尊重 robots 与付费限制，模型输出仍可能出错。
 
 数字价格表来自最近 252 个完整日价格回报的经验分位数，而不是让 AI 猜数字。较低区间是 Q10–Q30，中间为 Q40–Q60 并列出中位数，较高为 Q70–Q90。这些历史分位数不保证未来概率。AI 新闻观点只作背景，不会未经验证地改变区间。
+
+短期表针对交易报价变化，不包含现金分红；月度研究工具使用调整后价格，口径不同，不能把两个表的回报直接比较。
 
 Bitcoin 按冻结报价之后约 24 小时生成目标；ETF 按下一个实际交易日收盘。遇到周末或假日，会写明明天休市、区间对应下个交易日，不会编造周日的 ETF 成交价。每次已发布预测都冻结保留；最新报价可继续变化，阅读时要同时看 **Issued** 和 **Target**。
 

@@ -20,7 +20,7 @@ permissions:
   models: read
 concurrency:
   group: article-reading-ai
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.event_name == 'push' }}
 jobs:
   analyze:
     runs-on: ubuntu-latest

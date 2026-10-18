@@ -472,6 +472,14 @@ class LocalModel:
                 ]
 
 
+def rotate_candidate_queue(candidates, now, budget):
+    """Rotate scarce model slots so repeated rejections cannot starve the queue."""
+    if not candidates:
+        return []
+    offset = (int(now.timestamp() // 3600) * budget) % len(candidates)
+    return candidates[offset:] + candidates[:offset]
+
+
 def build(research, previous, provider, max_ai, now):
     robots = {}
     candidates = []
@@ -484,7 +492,7 @@ def build(research, previous, provider, max_ai, now):
         for group in groups.values():
             if index < len(group):
                 candidates.append(group[index])
-    candidates = candidates[:10]
+    candidates = rotate_candidate_queue(candidates[:10], now, max_ai)
     candidates.insert(
         0,
         {

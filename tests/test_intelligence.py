@@ -208,6 +208,19 @@ class ArticleEvidence(unittest.TestCase):
         with self.assertRaises(ValueError):
             m.validate_analysis(value, evidence, title)
 
+    def test_rejected_articles_cannot_starve_later_model_slots(self):
+        from datetime import datetime, timedelta, timezone
+
+        start = datetime(2026, 10, 18, tzinfo=timezone.utc)
+        items = list(range(10))
+        attempted = set()
+        for hour in range(5):
+            queue = m.rotate_candidate_queue(items, start + timedelta(hours=hour), 2)
+            self.assertEqual(set(queue), set(items))
+            attempted.update(queue[:2])
+        self.assertEqual(attempted, set(items))
+        self.assertEqual(m.rotate_candidate_queue([], start, 2), [])
+
 
 if __name__ == "__main__":
     unittest.main()

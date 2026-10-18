@@ -393,7 +393,8 @@ Run `python scripts/build_forecasts.py`, or, with model dependencies installed,
 successfully generate supported output; failed inference is not a rule-based
 substitute.
 
-Each hourly run attempts at most two new article interpretations. Explicit
+Each hourly run attempts at most two article interpretations. Selection rotates
+among recent candidates so repeated rejections do not starve later news. Explicit
 conditional sentences are required. For public bodies without Bitcoin
 mentions, its direction is restricted to Mixed/Unclear while the model
 explains competing risk/liquidity and alternative-hedge hypotheses. This is a

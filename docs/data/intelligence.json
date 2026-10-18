@@ -4,8 +4,8 @@
     "scan_started_at": "2026-10-18T00:15:16Z",
     "provider_requested": "local",
     "article_reads": 10,
-    "ai_interpretations": 2,
-    "new_interpretations": 2,
+    "ai_interpretations": 0,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -28,30 +28,7 @@
       "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
       "body_characters": 3344,
       "model_context_characters": 3344,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "The central bank signaled possible tightening, rather than an enacted policy change. If tightening raises real yields, non-yielding assets face higher opportunity costs. Gold may face yield pressure; Bitcoin may face weaker speculative demand if liquidity tightens. Traders already pricing in policy,",
-        "evidence_ids": [
-          "E1"
-        ],
-        "chain": [
-          "The bank signalled possible tightening, rather than an enacted policy change.",
-          "If tightening raises real yields, non-yielding assets face higher opportunity costs.",
-          "Gold may face yield pressure; Bitcoin may face weaker speculative demand if liquidity tightens."
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If real yields rise, gold may weaken; stronger hedge demand could offset this."
-        },
-        "bitcoin": {
-          "direction": "down",
-          "condition": "If liquidity tightens, Bitcoin may face weaker speculative demand."
-        },
-        "uncertainty": "If traders already priced in policy signals, incremental price reactions could be small."
-      },
-      "evidence": {
-        "E1": "\"Our message to our allies, our trading partners, is that global growth"
-      },
+      "status": "Unavailable: prior output copied an unrelated example; awaiting grounded regeneration",
       "analyzed_at": "2026-10-18T00:18:14Z",
       "model": "Qwen/Qwen3-4B-Instruct-2507",
       "provider": "Local open-weight CPU inference · dynamic int8 weights",
@@ -67,32 +44,7 @@
       "body_sha256": "40ae56dcc81387d4ce57c6d95d2bf702444b366d02539c7ca8b979e6eee2c4d7",
       "body_characters": 4702,
       "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "The central bank signaled a possible interest rate increase, which has led to a rise in financial market volatility. This is particularly evident in the performance of gold and Bitcoin, which have seen a significant shift in their value. The increase in interest rates has made fixed-income assets, a",
-        "evidence_ids": [
-          "E1",
-          "E2"
-        ],
-        "chain": [
-          "The bank signalled possible interest rate increase",
-          "If real yields rise, gold may weaken; Bitcoin may face weaker speculative demand if liquidity tightens",
-          "Gold could face yield pressure; Bitcoin could face weaker speculative demand if liquidity tightens"
-        ],
-        "gold": {
-          "direction": "mixed",
-          "condition": "If real yields rise, gold may weaken; stronger hedge demand could offset this"
-        },
-        "bitcoin": {
-          "direction": "down",
-          "condition": "If liquidity tightens, Bitcoin may face weaker speculative demand"
-        },
-        "uncertainty": "If traders already priced in the policy signal, the incremental price reaction could be small."
-      },
-      "evidence": {
-        "E1": "Martin Kelly, CEO of Orbital Risk Intelligence, said Iran has \"evolved its",
-        "E2": "The number of ships that have reported being attacked in and around"
-      },
+      "status": "Unavailable: prior output copied an unrelated example; awaiting grounded regeneration",
       "analyzed_at": "2026-10-18T00:30:03Z",
       "model": "Qwen/Qwen3-4B-Instruct-2507",
       "provider": "Local open-weight CPU inference · dynamic int8 weights",

@@ -128,6 +128,29 @@ class ArticleEvidence(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "financial transmission"):
             m.validate_analysis(value, {"E1": "The article reports increased attacks."})
 
+    def test_an_unrelated_policy_example_cannot_become_a_shipping_news_summary(self):
+        copied = {
+            "summary": "The central bank signalled possible tightening.",
+            "evidence_ids": ["E1"],
+            "chain": [
+                "The bank signalled tighter policy.",
+                "If real yields rise, non-yielding assets face higher costs.",
+                "Gold may weaken if yields rise.",
+            ],
+            "gold": {
+                "direction": "mixed",
+                "condition": "Depends on real yields and demand.",
+            },
+            "bitcoin": {"direction": "down", "condition": "If liquidity tightens."},
+            "uncertainty": "Prior market pricing could limit the reaction.",
+        }
+        with self.assertRaisesRegex(ValueError, "article topic"):
+            m.validate_analysis(
+                copied,
+                {"E1": "Ship attacks near Hormuz have increased."},
+                "Ship attack reports near Hormuz reach record high as oil exports slow",
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

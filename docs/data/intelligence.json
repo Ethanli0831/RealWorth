@@ -4,8 +4,8 @@
     "scan_started_at": "2026-10-18T00:01:29Z",
     "provider_requested": "local",
     "article_reads": 10,
-    "ai_interpretations": 1,
-    "new_interpretations": 1,
+    "ai_interpretations": 0,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -40,32 +40,7 @@
       "body_sha256": "40ae56dcc81387d4ce57c6d95d2bf702444b366d02539c7ca8b979e6eee2c4d7",
       "body_characters": 4702,
       "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "The article reports a rise in attacks on ships in the Strait of Hormuz, with twelve vessels attacked between 6 and 11 October. The attacks have increased, with the number of ships,",
-        "evidence_ids": [
-          "E1",
-          "E2"
-        ],
-        "chain": [
-          "E1: Martin Kelly, CEO of Orbital Risk Intelligence, said Iran has evolved its strategy",
-          "E2: The number of ships that have reported attacks in and around the Strait of Hormuz has reached a record high",
-          "E3: Twelve vessels were attacked between 6 and 11 October, the largest number in a week since the US-Israeli war began"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "rising attacks on ships in the Strait of Hormuz"
-        },
-        "bitcoin": {
-          "direction": "down",
-          "condition": "increased attacks on ships in the Strait of Hormuz"
-        },
-        "uncertainty": "The exact number of vessels attacked and the full extent of the attacks remain uncertain due to incomplete reporting and conflicting data from different sources."
-      },
-      "evidence": {
-        "E1": "Martin Kelly, CEO of Orbital Risk Intelligence, said Iran has \"evolved its",
-        "E2": "The number of ships that have reported being attacked in and around"
-      },
+      "status": "Unavailable: prior output repeated article facts without a financial channel; awaiting regeneration",
       "analyzed_at": "2026-10-18T00:10:20Z",
       "model": "Qwen/Qwen3-4B-Instruct-2507",
       "provider": "Local open-weight CPU inference · dynamic int8 weights",

@@ -14,14 +14,13 @@ on:
       - "scripts/build_intelligence.py"
       - "requirements-intelligence.txt"
       - "requirements-local-ai.txt"
-      - ".github/workflows/update-intelligence.yml"
 permissions:
   contents: write
   pages: write
   models: read
 concurrency:
-  group: monthly-data
-  cancel-in-progress: false
+  group: article-reading-ai
+  cancel-in-progress: true
 jobs:
   analyze:
     runs-on: ubuntu-latest
@@ -62,6 +61,7 @@ jobs:
           TOKENIZERS_PARALLELISM: "false"
         run: python scripts/build_intelligence.py --provider local --max-ai 2
       - name: Preserve public model cache even when output validation fails
+        continue-on-error: true
         if: ${{ always() && (inputs.force_local || steps.hosted.outcome == 'failure') && steps.weights.outputs.cache-hit != 'true' }}
         uses: actions/cache/save@v6.1.0
         with:
@@ -78,6 +78,7 @@ jobs:
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git commit -m 'Refresh article evidence and AI interpretations' -- docs/data/intelligence.json
+            git pull --rebase origin main
             git push origin HEAD:main
           fi
           gh api --method POST "repos/$REPOSITORY/pages/builds" --jq '.status'

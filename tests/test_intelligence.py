@@ -151,6 +151,63 @@ class ArticleEvidence(unittest.TestCase):
                 "Ship attack reports near Hormuz reach record high as oil exports slow",
             )
 
+    def test_direction_labels_need_conditions_and_uncertainty_cannot_repeat_events(
+        self,
+    ):
+        value = {
+            "summary": "The article reports ship attacks near Hormuz.",
+            "evidence_ids": ["E1"],
+            "chain": [
+                "Ship attacks increased.",
+                "Oil supply disruption could raise transport costs.",
+                "Risk aversion could increase safe-haven gold demand.",
+            ],
+            "gold": {"direction": "up", "condition": "mixed, unclear, and high risk"},
+            "bitcoin": {"direction": "down", "condition": "unclear, high volatility"},
+            "uncertainty": "The number of attacks has increased significantly.",
+        }
+        evidence = {"E1": "Ship attacks increased near Hormuz."}
+        with self.assertRaisesRegex(ValueError, "conditional"):
+            m.validate_analysis(value, evidence)
+        for asset in ("gold", "bitcoin"):
+            value[asset][
+                "condition"
+            ] = "If risk appetite weakens, asset demand could change."
+        with self.assertRaisesRegex(ValueError, "countercase"):
+            m.validate_analysis(value, evidence)
+        value["uncertainty"] = "If shipping stabilizes, the risk premium could fade."
+        value["summary"] = "The article reports ship attacks near Hormuz. " + "a" * 255
+        with self.assertRaisesRegex(ValueError, "truncated"):
+            m.validate_analysis(value, evidence)
+
+    def test_reported_headline_numbers_are_evidence_but_not_price_targets(self):
+        value = {
+            "summary": "The U.S. budget deficit increased 12%.",
+            "evidence_ids": ["E1"],
+            "chain": [
+                "The budget deficit increased.",
+                "Higher borrowing could raise bond supply and yields.",
+                "Gold could face yield pressure if real yields rise.",
+            ],
+            "gold": {
+                "direction": "mixed",
+                "condition": "If real yields rise, demand could weaken.",
+            },
+            "bitcoin": {
+                "direction": "unclear",
+                "condition": "If funding tightens, speculative demand could weaken.",
+            },
+            "uncertainty": "If buyers absorb the issuance, yields may not rise.",
+        }
+        title = "U.S. budget deficit increases 12%"
+        evidence = {"E1": "The U.S. finished the fiscal year with a budget deficit."}
+        self.assertEqual(
+            m.validate_analysis(value, evidence, title)["summary"], value["summary"]
+        )
+        value["gold"]["condition"] = "If funding improves gold could rise 12%."
+        with self.assertRaises(ValueError):
+            m.validate_analysis(value, evidence, title)
+
 
 if __name__ == "__main__":
     unittest.main()

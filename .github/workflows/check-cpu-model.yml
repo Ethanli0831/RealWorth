@@ -1,0 +1,80 @@
+name: Check alternate public CPU model
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/check-cpu-model.yml"]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          ref: main
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install pinned CPU inference runtime
+        env:
+          CMAKE_BUILD_PARALLEL_LEVEL: "4"
+        run: |
+          python -m pip install -r requirements-intelligence.txt
+          python -m pip install huggingface-hub==0.35.3 llama-cpp-python==0.3.16 --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+      - uses: actions/cache/restore@v6.1.0
+        id: weights
+        with:
+          path: ~/.cache/huggingface/hub
+          key: realworth-qwen25-7b-gguf-q4km-v1
+      - name: Test actual public articles with an alternate model
+        env:
+          HF_HUB_DISABLE_XET: "1"
+        run: |
+          python -u - <<'PY'
+          import sys,json,os
+          from pathlib import Path
+          from datetime import datetime,timezone
+          sys.path.insert(0,'scripts')
+          import build_intelligence as m
+          from huggingface_hub import list_repo_files,hf_hub_download
+          from llama_cpp import Llama
+          class PublicCPU:
+              name='Qwen/Qwen2.5-7B-Instruct-GGUF'
+              provider='Local open-weight CPU inference · llama.cpp GGUF Q4_K_M'
+              def __init__(self):
+                  files=sorted(f for f in list_repo_files(self.name) if 'q4_k_m' in f.lower() and f.endswith('.gguf'))
+                  if not files:
+                      raise RuntimeError('Expected public GGUF weights unavailable')
+                  paths=[hf_hub_download(self.name,filename=f) for f in files]
+                  self.revision=Path(paths[0]).parent.name
+                  print('MODEL_WEIGHTS',json.dumps(files),flush=True)
+                  self.model=Llama(model_path=paths[0],n_ctx=4096,n_threads=4,n_batch=256,chat_format='chatml',verbose=False)
+              def __call__(self,messages,evidence,title=None):
+                  for attempt in range(2):
+                      answer=self.model.create_chat_completion(messages=messages,max_tokens=650,temperature=0,**({'response_format':{'type':'json_object'}} if attempt else {}))['choices'][0]['message']['content']
+                      try:
+                          return m.parse_model_output(answer,evidence,title)
+                      except ValueError:
+                          if attempt: raise
+                          messages=[{'role':'system','content':messages[0]['content']+' Use the actual article topic. Include an intermediate financial channel and concrete conditional effects.'},messages[1]]
+          m.LocalModel=PublicCPU
+          payload,_=m.build(json.load(open('docs/data/research.json')),{},'local',2,datetime.now(timezone.utc))
+          m.write_atomic(payload,m.OUTPUT)
+          print('ACTUAL_MODEL_RESULT',json.dumps(payload['meta']),flush=True)
+          raise SystemExit(0 if payload['meta']['ai_interpretations'] else 1)
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: alternate-model-derived-evidence
+          path: docs/data/intelligence.json
+          retention-days: 1
+      - uses: actions/cache/save@v6.1.0
+        continue-on-error: true
+        if: ${{ always() && steps.weights.outputs.cache-hit != 'true' }}
+        with:
+          path: ~/.cache/huggingface/hub
+          key: realworth-qwen25-7b-gguf-q4km-v1

@@ -1,14 +1,14 @@
 {
   "meta": {
-    "checked_at": "2026-10-17T23:04:45Z",
+    "checked_at": "2026-10-18T00:15:05Z",
     "region": "United States",
-    "refresh": "Hourly scheduled scan; GitHub queue and publisher delays apply.",
+    "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
     "news_window_days": 14,
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-10-17T23:04:45Z",
+    "checked_at": "2026-10-18T00:15:05Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -78,7 +78,7 @@
         "value": 122.594,
         "unit": "%",
         "period": "2026Q1",
-        "stale": false,
+        "stale": true,
         "change": 2.049,
         "source": "https://fred.stlouisfed.org/series/GFDEGDQ188S"
       },
@@ -470,47 +470,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-10-17T23:04:45Z",
+      "checked_at": "2026-10-18T00:15:05Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-17T23:04:45Z",
+      "last_success": "2026-10-18T00:15:05Z",
       "matched": 0
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-10-17T23:04:45Z",
+      "checked_at": "2026-10-18T00:15:05Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-17T23:04:45Z",
+      "last_success": "2026-10-18T00:15:05Z",
       "matched": 1
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-10-17T23:04:45Z",
+      "checked_at": "2026-10-18T00:15:05Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-17T23:04:45Z",
+      "last_success": "2026-10-18T00:15:05Z",
       "matched": 7
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-10-17T23:04:45Z",
+      "checked_at": "2026-10-18T00:15:05Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-17T23:04:45Z",
+      "last_success": "2026-10-18T00:15:05Z",
       "matched": 3
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-10-17T23:04:45Z",
+      "checked_at": "2026-10-18T00:15:05Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -520,10 +520,10 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-10-17T23:04:45Z",
+      "checked_at": "2026-10-18T00:15:05Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-17T23:04:45Z",
+      "last_success": "2026-10-18T00:15:05Z",
       "matched": 0
     }
   ],
@@ -814,7 +814,7 @@
     "url": "https://home.cern/news/news/physics/alice-detects-conversion-lead-gold-lhc",
     "checked_at": "2026-10-17T22:56:28Z",
     "status": "Primary page retrieved",
-    "excerpt": "Near-miss collisions between high-energy lead nuclei at the LHC generate intense electromagnetic fields that can knock out protons and transform lead into fleeting quantities of gold nuclei In a paper published in Physical Review Journals, the ALICE collaboration reports measurements that quantify the transmutation of lead into gold in CERN’s Large Hadron Collider (LHC).",
+    "excerpt": "Near-miss collisions between high-energy lead nuclei at the LHC generate intense electromagnetic fields that can knock out protons and transform lead into fleeting quantities of gold nuclei In a paper published in Physical Review Journals, the ALICE collaboration reports measurements that quantify the transmutation of",
     "note": "CERN is a European laboratory on the French–Swiss border. This historical case is a possible match for the user-described story, not confirmation of a separate French announcement."
   }
 }

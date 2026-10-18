@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-18T00:10:22Z",
-    "scan_started_at": "2026-10-18T00:01:29Z",
+    "checked_at": "2026-10-18T00:30:06Z",
+    "scan_started_at": "2026-10-18T00:15:16Z",
     "provider_requested": "local",
     "article_reads": 10,
-    "ai_interpretations": 0,
-    "new_interpretations": 0,
+    "ai_interpretations": 2,
+    "new_interpretations": 2,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -24,11 +24,38 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T22:34:29Z",
       "historical": null,
-      "read_at": "2026-10-18T00:01:30Z",
+      "read_at": "2026-10-18T00:15:17Z",
       "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
       "body_characters": 3344,
       "model_context_characters": 3344,
-      "status": "Unavailable: AI numerical statements require exact cited source support"
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The central bank signaled possible tightening, rather than an enacted policy change. If tightening raises real yields, non-yielding assets face higher opportunity costs. Gold may face yield pressure; Bitcoin may face weaker speculative demand if liquidity tightens. Traders already pricing in policy,",
+        "evidence_ids": [
+          "E1"
+        ],
+        "chain": [
+          "The bank signalled possible tightening, rather than an enacted policy change.",
+          "If tightening raises real yields, non-yielding assets face higher opportunity costs.",
+          "Gold may face yield pressure; Bitcoin may face weaker speculative demand if liquidity tightens."
+        ],
+        "gold": {
+          "direction": "down",
+          "condition": "If real yields rise, gold may weaken; stronger hedge demand could offset this."
+        },
+        "bitcoin": {
+          "direction": "down",
+          "condition": "If liquidity tightens, Bitcoin may face weaker speculative demand."
+        },
+        "uncertainty": "If traders already priced in policy signals, incremental price reactions could be small."
+      },
+      "evidence": {
+        "E1": "\"Our message to our allies, our trading partners, is that global growth"
+      },
+      "analyzed_at": "2026-10-18T00:18:14Z",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "provider": "Local open-weight CPU inference · dynamic int8 weights",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
@@ -36,12 +63,37 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-16T05:00:17Z",
       "historical": null,
-      "read_at": "2026-10-18T00:08:02Z",
+      "read_at": "2026-10-18T00:18:15Z",
       "body_sha256": "40ae56dcc81387d4ce57c6d95d2bf702444b366d02539c7ca8b979e6eee2c4d7",
       "body_characters": 4702,
       "model_context_characters": 4500,
-      "status": "Unavailable: prior output repeated article facts without a financial channel; awaiting regeneration",
-      "analyzed_at": "2026-10-18T00:10:20Z",
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The central bank signaled a possible interest rate increase, which has led to a rise in financial market volatility. This is particularly evident in the performance of gold and Bitcoin, which have seen a significant shift in their value. The increase in interest rates has made fixed-income assets, a",
+        "evidence_ids": [
+          "E1",
+          "E2"
+        ],
+        "chain": [
+          "The bank signalled possible interest rate increase",
+          "If real yields rise, gold may weaken; Bitcoin may face weaker speculative demand if liquidity tightens",
+          "Gold could face yield pressure; Bitcoin could face weaker speculative demand if liquidity tightens"
+        ],
+        "gold": {
+          "direction": "mixed",
+          "condition": "If real yields rise, gold may weaken; stronger hedge demand could offset this"
+        },
+        "bitcoin": {
+          "direction": "down",
+          "condition": "If liquidity tightens, Bitcoin may face weaker speculative demand"
+        },
+        "uncertainty": "If traders already priced in the policy signal, the incremental price reaction could be small."
+      },
+      "evidence": {
+        "E1": "Martin Kelly, CEO of Orbital Risk Intelligence, said Iran has \"evolved its",
+        "E2": "The number of ships that have reported being attacked in and around"
+      },
+      "analyzed_at": "2026-10-18T00:30:03Z",
       "model": "Qwen/Qwen3-4B-Instruct-2507",
       "provider": "Local open-weight CPU inference · dynamic int8 weights",
       "revision": "cdbee75f17c01a7cc42f958dc650907174af0554"
@@ -52,7 +104,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-15T16:55:41Z",
       "historical": null,
-      "read_at": "2026-10-18T00:10:20Z",
+      "read_at": "2026-10-18T00:30:04Z",
       "body_sha256": "01a1858aa6def8fe3bc8d8625bde63d10aa16fe90c88344befb95be84e52927c",
       "body_characters": 993,
       "model_context_characters": 993,
@@ -64,7 +116,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T16:27:31Z",
       "historical": null,
-      "read_at": "2026-10-18T00:10:21Z",
+      "read_at": "2026-10-18T00:30:04Z",
       "body_sha256": "706c206a7a2382b9889c271ce1c4c3dbba0c627714bbc63e7434e755b1825dd6",
       "body_characters": 5478,
       "model_context_characters": 4500,
@@ -76,7 +128,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-15T17:19:49Z",
       "historical": null,
-      "read_at": "2026-10-18T00:10:21Z",
+      "read_at": "2026-10-18T00:30:04Z",
       "body_sha256": "aaef031974a4637d614b309cd93c6003b8522ae38886a8186e46fc0a510f3e1a",
       "body_characters": 9690,
       "model_context_characters": 4500,
@@ -88,7 +140,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-15T14:33:12Z",
       "historical": null,
-      "read_at": "2026-10-18T00:10:21Z",
+      "read_at": "2026-10-18T00:30:04Z",
       "body_sha256": "faa7571df0a97ba67c14bb2bcf25fd449df9e3db82cbdd7f1ccccf52ebdd8375",
       "body_characters": 3378,
       "model_context_characters": 3378,
@@ -100,7 +152,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-15T15:37:59Z",
       "historical": null,
-      "read_at": "2026-10-18T00:10:22Z",
+      "read_at": "2026-10-18T00:30:05Z",
       "body_sha256": "baeba6372188834ee43df0bd05d519e236f1a072776fc71ba40fd4d2391112af",
       "body_characters": 2505,
       "model_context_characters": 2505,
@@ -112,7 +164,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-14T16:47:32Z",
       "historical": null,
-      "read_at": "2026-10-18T00:10:22Z",
+      "read_at": "2026-10-18T00:30:05Z",
       "body_sha256": "7f5149c3689e87fd45b389abc69b9a95bfd196a4e0a1fde5a4dc0d77cc28ce67",
       "body_characters": 2490,
       "model_context_characters": 2490,
@@ -124,7 +176,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-14T14:29:42Z",
       "historical": null,
-      "read_at": "2026-10-18T00:10:22Z",
+      "read_at": "2026-10-18T00:30:05Z",
       "body_sha256": "0a9d8f0d82cde8fad287c091d4ad49599de862e8dd47498fdc1dbae9ddeb75dd",
       "body_characters": 4112,
       "model_context_characters": 4112,
@@ -136,7 +188,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-15T06:35:31Z",
       "historical": null,
-      "read_at": "2026-10-18T00:10:22Z",
+      "read_at": "2026-10-18T00:30:06Z",
       "body_sha256": "7207da98d7cf10f3438ddc91b4422a80292e51ab2fe38f21b63018c76672348f",
       "body_characters": 6140,
       "model_context_characters": 4500,

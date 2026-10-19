@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-19T17:48:17Z",
-    "scan_started_at": "2026-10-19T17:41:20Z",
+    "checked_at": "2026-10-19T22:41:10Z",
+    "scan_started_at": "2026-10-19T22:35:40Z",
     "provider_requested": "local",
     "article_reads": 10,
     "ai_interpretations": 7,
-    "new_interpretations": 2,
+    "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -24,7 +24,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T16:27:31Z",
       "historical": null,
-      "read_at": "2026-10-19T17:40:13Z",
+      "read_at": "2026-10-19T22:34:33Z",
       "body_sha256": "706c206a7a2382b9889c271ce1c4c3dbba0c627714bbc63e7434e755b1825dd6",
       "body_characters": 5478,
       "model_context_characters": 4500,
@@ -60,53 +60,12 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.theguardian.com/business/2026/oct/15/tech-market-sell-off-deepens-amid-fears-over-us-inflation-and-ai-debt",
-      "title": "Tech market sell-off deepens amid fears over US inflation and AI debt",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-15T14:33:12Z",
-      "historical": null,
-      "read_at": "2026-10-19T17:40:13Z",
-      "body_sha256": "faa7571df0a97ba67c14bb2bcf25fd449df9e3db82cbdd7f1ccccf52ebdd8375",
-      "body_characters": 3378,
-      "model_context_characters": 3378,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Tech and chip stocks fell sharply amid fears of US inflation and interest rate hikes, with the Nasdaq and Kospi 200 indexes dropping significantly.",
-        "evidence_ids": [
-          "E1",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: Tech and chip stocks fell sharply",
-          "financial_channel: If inflation fears rise, risk appetite falls",
-          "asset_hypothesis: If tech stocks are seen as risky, they will fall"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation expectations rise, gold is seen as a hedge against currency debasement."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If tech stocks fall, risk appetite may shift to Bitcoin, but liquidity concerns could limit its gains."
-        },
-        "uncertainty": "If the US economy remains strong, tech stocks may recover, reducing the sell-off."
-      },
-      "evidence": {
-        "E1": "An accelerating sell-off of AI-linked shares has hit global markets, as fears",
-        "E3": "Chip makers and tech investors such as Samsung and SoftBank plunge as"
-      },
-      "analyzed_at": "2026-10-18T01:28:40Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
       "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
       "title": "Economists: Hot PPI shows Fed's work is not done",
       "publisher": "CNBC Economy",
       "published_at": "2026-10-15T15:37:59Z",
       "historical": null,
-      "read_at": "2026-10-19T17:40:13Z",
+      "read_at": "2026-10-19T22:34:33Z",
       "body_sha256": "baeba6372188834ee43df0bd05d519e236f1a072776fc71ba40fd4d2391112af",
       "body_characters": 2505,
       "model_context_characters": 2505,
@@ -147,7 +106,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-15T06:35:31Z",
       "historical": null,
-      "read_at": "2026-10-19T17:41:21Z",
+      "read_at": "2026-10-19T22:34:34Z",
       "body_sha256": "7207da98d7cf10f3438ddc91b4422a80292e51ab2fe38f21b63018c76672348f",
       "body_characters": 6140,
       "model_context_characters": 4500,
@@ -188,7 +147,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-14T17:20:23Z",
       "historical": null,
-      "read_at": "2026-10-19T17:43:57Z",
+      "read_at": "2026-10-19T22:34:34Z",
       "body_sha256": "91b4b4d4838b081e8d66ae1d761f3045031a259c2f1e4994081b76a30554efd8",
       "body_characters": 6506,
       "model_context_characters": 4500,
@@ -229,11 +188,52 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-14T04:24:28Z",
       "historical": null,
-      "read_at": "2026-10-19T17:48:16Z",
+      "read_at": "2026-10-19T22:35:43Z",
       "body_sha256": "f2e9201e555a477590d4530b2e47ba42cb941d628d3cd260419cf105dfa0aa86",
       "body_characters": 1815,
       "model_context_characters": 1815,
-      "status": "Public body read; queued for AI"
+      "status": "Unavailable: AI chain contains no financial transmission mechanism"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/10/13/september-consumer-price-index-inflation.html",
+      "title": "The latest inflation data is expected to show price increases are accelerating",
+      "publisher": "CNBC Economy",
+      "published_at": "2026-10-13T18:05:57Z",
+      "historical": null,
+      "read_at": "2026-10-19T22:39:21Z",
+      "body_sha256": "ce3f504beef92183da338f277206c11a3454f44f9d0bbc6d00009d6ee4cb132f",
+      "body_characters": 3031,
+      "model_context_characters": 3031,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The September consumer price index is expected to show accelerating inflation, with energy costs being a major driver.",
+        "evidence_ids": [
+          "E1",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: The September consumer price index is expected to show accelerating inflation",
+          "financial_channel: If energy costs continue to rise, it could lead to higher inflation expectations",
+          "asset_hypothesis: If inflation expectations rise, gold may see increased demand as a hedge"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations rise, investors may seek gold as a hedge against rising prices"
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If inflation expectations rise, risk appetite may shift towards traditional assets, but liquidity concerns could also drive demand for Bitcoin"
+        },
+        "uncertainty": "If energy prices stabilize, the inflationary pressures may not be as significant, reducing the demand for both gold and Bitcoin."
+      },
+      "evidence": {
+        "E1": "Wednesday's closely watched reading on consumer prices could show intensifying inflationary pressures",
+        "E3": "Energy costs have been among the biggest drivers of inflation since the"
+      },
+      "analyzed_at": "2026-10-19T22:41:09Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/cq1j3x66e1rno?at_medium=RSS&at_campaign=rss",
@@ -282,7 +282,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T22:34:29Z",
       "historical": null,
-      "read_at": "2026-10-19T17:48:17Z",
+      "read_at": "2026-10-19T22:41:10Z",
       "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
       "body_characters": 3344,
       "model_context_characters": 3344,
@@ -294,7 +294,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-15T16:55:41Z",
       "historical": null,
-      "read_at": "2026-10-19T17:48:17Z",
+      "read_at": "2026-10-19T22:41:10Z",
       "body_sha256": "01a1858aa6def8fe3bc8d8625bde63d10aa16fe90c88344befb95be84e52927c",
       "body_characters": 993,
       "model_context_characters": 993,

@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-19T11:13:31Z",
-    "scan_started_at": "2026-10-19T11:06:37Z",
+    "checked_at": "2026-10-19T17:48:17Z",
+    "scan_started_at": "2026-10-19T17:41:20Z",
     "provider_requested": "local",
     "article_reads": 10,
-    "ai_interpretations": 6,
-    "new_interpretations": 1,
+    "ai_interpretations": 7,
+    "new_interpretations": 2,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,65 +19,12 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.theguardian.com/business/2026/oct/15/what-is-your-personal-recession-indicator",
-      "title": "People in the US: what is your personal ‘recession indicator’?",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-15T16:55:41Z",
-      "historical": null,
-      "read_at": "2026-10-19T11:06:39Z",
-      "body_sha256": "01a1858aa6def8fe3bc8d8625bde63d10aa16fe90c88344befb95be84e52927c",
-      "body_characters": 993,
-      "model_context_characters": 993,
-      "status": "Unavailable: AI reported event does not match the article topic"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
-      "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-16T05:00:17Z",
-      "historical": null,
-      "read_at": "2026-10-19T11:11:16Z",
-      "body_sha256": "de47ea45d0dde8365980f62ed1836ca4541b080f7743a615f2f38b5bf13fb744",
-      "body_characters": 4708,
-      "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "Ship attacks near Hormuz reach record high, slowing oil exports.",
-        "evidence_ids": [
-          "E2",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: Ship attacks near Hormuz reach record high",
-          "financial_channel: If supply chain disruptions increase, oil prices may rise",
-          "asset_hypothesis: If oil prices rise, gold may be seen as a hedge"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If supply chain disruptions increase, oil prices may rise, making gold a more attractive hedge."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite remains low but liquidity is affected, Bitcoin may see mixed reactions."
-        },
-        "uncertainty": "If Iran's attacks shift to other regions, the impact on oil shipments may be mitigated."
-      },
-      "evidence": {
-        "E2": "The number of ships that have reported being attacked in and around",
-        "E3": "Twelve vessels were attacked between 5 and 11 October - the largest"
-      },
-      "analyzed_at": "2026-10-19T11:13:28Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
       "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
       "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T16:27:31Z",
       "historical": null,
-      "read_at": "2026-10-18T21:42:37Z",
+      "read_at": "2026-10-19T17:40:13Z",
       "body_sha256": "706c206a7a2382b9889c271ce1c4c3dbba0c627714bbc63e7434e755b1825dd6",
       "body_characters": 5478,
       "model_context_characters": 4500,
@@ -118,7 +65,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-15T14:33:12Z",
       "historical": null,
-      "read_at": "2026-10-18T21:42:38Z",
+      "read_at": "2026-10-19T17:40:13Z",
       "body_sha256": "faa7571df0a97ba67c14bb2bcf25fd449df9e3db82cbdd7f1ccccf52ebdd8375",
       "body_characters": 3378,
       "model_context_characters": 3378,
@@ -159,7 +106,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-15T15:37:59Z",
       "historical": null,
-      "read_at": "2026-10-18T21:42:39Z",
+      "read_at": "2026-10-19T17:40:13Z",
       "body_sha256": "baeba6372188834ee43df0bd05d519e236f1a072776fc71ba40fd4d2391112af",
       "body_characters": 2505,
       "model_context_characters": 2505,
@@ -195,57 +142,45 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.theguardian.com/business/2026/oct/14/inflation-numbers-september",
-      "title": "US inflation rose to 3.7% in September in blow to Republicans before midterms",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-14T14:29:42Z",
-      "historical": null,
-      "read_at": "2026-10-18T21:42:39Z",
-      "body_sha256": "0a9d8f0d82cde8fad287c091d4ad49599de862e8dd47498fdc1dbae9ddeb75dd",
-      "body_characters": 4112,
-      "model_context_characters": 4112,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "US inflation rose to 3.7% in September, impacting the upcoming midterm elections.",
-        "evidence_ids": [
-          "E4",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: US inflation rose to 3.7% in September",
-          "financial_channel: If inflation rises, it increases the cost of borrowing",
-          "asset_hypothesis: If inflation rises, it may reduce gold demand as a hedge"
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If inflation rises, it may reduce gold demand as a hedge"
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If inflation rises, risk appetite may shift, but Bitcoin's role as a hedge is unclear"
-        },
-        "uncertainty": "If the Federal Reserve does not respond to inflation, the impact on gold and Bitcoin could be limited."
-      },
-      "evidence": {
-        "E4": "Republicans are entering the midterm elections with the highest rate of inflation",
-        "E7": "September’s inflation rate is the highest it has been before a midterm"
-      },
-      "analyzed_at": "2026-10-18T16:11:31Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
       "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
       "title": "IMF sees milder global slowdown as AI boom offsets war hit — warns resilience is nearing limits",
       "publisher": "CNBC Economy",
       "published_at": "2026-10-15T06:35:31Z",
       "historical": null,
-      "read_at": "2026-10-19T11:13:29Z",
+      "read_at": "2026-10-19T17:41:21Z",
       "body_sha256": "7207da98d7cf10f3438ddc91b4422a80292e51ab2fe38f21b63018c76672348f",
       "body_characters": 6140,
       "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The IMF raised its global growth forecast for 2026 and 2027, citing AI investment and supply resilience, but warned of limits to economic resilience.",
+        "evidence_ids": [
+          "E2",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: IMF raised growth forecast",
+          "financial_channel: If AI investment and supply resilience continue, growth may remain steady",
+          "asset_hypothesis: If global supply chains remain resilient, asset prices may stabilize"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation remains high and central banks maintain restrictive monetary policies, gold may benefit as a hedge."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite remains high due to AI investment, Bitcoin may see demand; otherwise, it may face selling pressure."
+        },
+        "uncertainty": "If the Strait of Hormuz does not reopen as expected, global oil prices could spike, affecting economic resilience."
+      },
+      "evidence": {
+        "E2": "BANGKOK — The International Monetary Fund has raised its forecast for global",
+        "E6": "The IMF expects the global economy to grow at 3.1% in 2026,"
+      },
+      "analyzed_at": "2026-10-19T17:43:56Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.cnbc.com/2026/10/14/high-inflation-fed-expectations.html",
@@ -253,10 +188,51 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-14T17:20:23Z",
       "historical": null,
-      "read_at": "2026-10-19T11:13:30Z",
+      "read_at": "2026-10-19T17:43:57Z",
       "body_sha256": "91b4b4d4838b081e8d66ae1d761f3045031a259c2f1e4994081b76a30554efd8",
       "body_characters": 6506,
       "model_context_characters": 4500,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The U.S. is experiencing prolonged high inflation, with consumers starting to accept it as a new normal, raising concerns at the Fed.",
+        "evidence_ids": [
+          "E4",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: Prolonged high inflation",
+          "financial_channel: If inflation expectations become entrenched, it can make monetary policy less effective",
+          "asset_hypothesis: If inflation becomes a self-fulfilling prophecy, asset prices may be affected"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations persist, gold may be seen as a hedge against currency depreciation"
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If Bitcoin is seen as a hedge, its price may rise; otherwise, it may remain unclear due to lack of established demand"
+        },
+        "uncertainty": "If inflation expectations stabilize, the Fed may be more effective in controlling inflation, reducing gold and Bitcoin price pressures."
+      },
+      "evidence": {
+        "E4": "At the Fed, leaders are left questioning whether consumers' inflationary expectations are",
+        "E5": "\"Inflation expectations have to be anchored for monetary policy to affect the"
+      },
+      "analyzed_at": "2026-10-19T17:48:15Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/10/14/godzilla-el-nino-asia-inflation-philippines.html",
+      "title": "'Godzilla El Niño' is wreaking havoc with Philippine central bank's inflation forecasts",
+      "publisher": "CNBC Economy",
+      "published_at": "2026-10-14T04:24:28Z",
+      "historical": null,
+      "read_at": "2026-10-19T17:48:16Z",
+      "body_sha256": "f2e9201e555a477590d4530b2e47ba42cb941d628d3cd260419cf105dfa0aa86",
+      "body_characters": 1815,
+      "model_context_characters": 1815,
       "status": "Public body read; queued for AI"
     },
     {
@@ -306,11 +282,64 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T22:34:29Z",
       "historical": null,
-      "read_at": "2026-10-19T11:13:31Z",
+      "read_at": "2026-10-19T17:48:17Z",
       "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
       "body_characters": 3344,
       "model_context_characters": 3344,
       "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/oct/15/what-is-your-personal-recession-indicator",
+      "title": "People in the US: what is your personal ‘recession indicator’?",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-15T16:55:41Z",
+      "historical": null,
+      "read_at": "2026-10-19T17:48:17Z",
+      "body_sha256": "01a1858aa6def8fe3bc8d8625bde63d10aa16fe90c88344befb95be84e52927c",
+      "body_characters": 993,
+      "model_context_characters": 993,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
+      "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-16T05:00:17Z",
+      "historical": null,
+      "read_at": "2026-10-19T11:11:16Z",
+      "body_sha256": "de47ea45d0dde8365980f62ed1836ca4541b080f7743a615f2f38b5bf13fb744",
+      "body_characters": 4708,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Ship attacks near Hormuz reach record high, slowing oil exports.",
+        "evidence_ids": [
+          "E2",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: Ship attacks near Hormuz reach record high",
+          "financial_channel: If supply chain disruptions increase, oil prices may rise",
+          "asset_hypothesis: If oil prices rise, gold may be seen as a hedge"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If supply chain disruptions increase, oil prices may rise, making gold a more attractive hedge."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite remains low but liquidity is affected, Bitcoin may see mixed reactions."
+        },
+        "uncertainty": "If Iran's attacks shift to other regions, the impact on oil shipments may be mitigated."
+      },
+      "evidence": {
+        "E2": "The number of ships that have reported being attacked in and around",
+        "E3": "Twelve vessels were attacked between 5 and 11 October - the largest"
+      },
+      "analyzed_at": "2026-10-19T11:13:28Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     }
   ]
 }

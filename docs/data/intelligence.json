@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-19T05:15:30Z",
-    "scan_started_at": "2026-10-19T05:07:25Z",
+    "checked_at": "2026-10-19T11:13:31Z",
+    "scan_started_at": "2026-10-19T11:06:37Z",
     "provider_requested": "local",
     "article_reads": 10,
     "ai_interpretations": 6,
-    "new_interpretations": 0,
+    "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,65 +19,12 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cq1j3x66e1rno?at_medium=RSS&at_campaign=rss",
-      "title": "Heating oil customers face tough winter",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-18T06:07:40Z",
-      "historical": null,
-      "read_at": "2026-10-19T05:06:28Z",
-      "body_sha256": "50821bca7f4111cd81217817028fa3140449555a190eec20f69164bf42418ec2",
-      "body_characters": 2964,
-      "model_context_characters": 2964,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "Heating oil prices have risen sharply, making it difficult for customers to heat their homes.",
-        "evidence_ids": [
-          "E2",
-          "E8"
-        ],
-        "chain": [
-          "reported_event: Heating oil prices have risen sharply",
-          "financial_channel: If demand for heating oil increases, prices will rise",
-          "asset_hypothesis: If winter heating needs increase, oil prices will remain high"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If global economic recovery continues, demand for gold as a safe-haven will increase"
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If risk appetite remains low, Bitcoin may not act as a safe-haven alternative"
-        },
-        "uncertainty": "If the government's new measures effectively regulate the market, heating oil prices could stabilize."
-      },
-      "evidence": {
-        "E2": "Heating fuel costs have risen by up to 82% since the start",
-        "E8": "Residents in the South West told the BBC they have held off"
-      },
-      "analyzed_at": "2026-10-18T18:51:30Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
-      "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
-      "publisher": "CNBC Economy",
-      "published_at": "2026-10-16T22:34:29Z",
-      "historical": null,
-      "read_at": "2026-10-19T05:07:27Z",
-      "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
-      "body_characters": 3344,
-      "model_context_characters": 3344,
-      "status": "Unavailable: AI chain contains no financial transmission mechanism"
-    },
-    {
       "url": "https://www.theguardian.com/business/2026/oct/15/what-is-your-personal-recession-indicator",
       "title": "People in the US: what is your personal ‘recession indicator’?",
       "publisher": "The Guardian Business",
       "published_at": "2026-10-15T16:55:41Z",
       "historical": null,
-      "read_at": "2026-10-19T05:12:27Z",
+      "read_at": "2026-10-19T11:06:39Z",
       "body_sha256": "01a1858aa6def8fe3bc8d8625bde63d10aa16fe90c88344befb95be84e52927c",
       "body_characters": 993,
       "model_context_characters": 993,
@@ -89,11 +36,11 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-16T05:00:17Z",
       "historical": null,
-      "read_at": "2026-10-18T01:07:28Z",
-      "body_sha256": "40ae56dcc81387d4ce57c6d95d2bf702444b366d02539c7ca8b979e6eee2c4d7",
-      "body_characters": 4702,
+      "read_at": "2026-10-19T11:11:16Z",
+      "body_sha256": "de47ea45d0dde8365980f62ed1836ca4541b080f7743a615f2f38b5bf13fb744",
+      "body_characters": 4708,
       "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
+      "status": "AI interpretation generated · not independently verified",
       "analysis": {
         "summary": "Ship attacks near Hormuz reach record high, slowing oil exports.",
         "evidence_ids": [
@@ -119,7 +66,7 @@
         "E2": "The number of ships that have reported being attacked in and around",
         "E3": "Twelve vessels were attacked between 5 and 11 October - the largest"
       },
-      "analyzed_at": "2026-10-18T01:09:56Z",
+      "analyzed_at": "2026-10-19T11:13:28Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
@@ -294,7 +241,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-15T06:35:31Z",
       "historical": null,
-      "read_at": "2026-10-19T05:15:30Z",
+      "read_at": "2026-10-19T11:13:29Z",
       "body_sha256": "7207da98d7cf10f3438ddc91b4422a80292e51ab2fe38f21b63018c76672348f",
       "body_characters": 6140,
       "model_context_characters": 4500,
@@ -306,10 +253,63 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-14T17:20:23Z",
       "historical": null,
-      "read_at": "2026-10-19T05:15:30Z",
+      "read_at": "2026-10-19T11:13:30Z",
       "body_sha256": "91b4b4d4838b081e8d66ae1d761f3045031a259c2f1e4994081b76a30554efd8",
       "body_characters": 6506,
       "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cq1j3x66e1rno?at_medium=RSS&at_campaign=rss",
+      "title": "Heating oil customers face tough winter",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-18T06:07:40Z",
+      "historical": null,
+      "read_at": "2026-10-19T05:06:28Z",
+      "body_sha256": "50821bca7f4111cd81217817028fa3140449555a190eec20f69164bf42418ec2",
+      "body_characters": 2964,
+      "model_context_characters": 2964,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Heating oil prices have risen sharply, making it difficult for customers to heat their homes.",
+        "evidence_ids": [
+          "E2",
+          "E8"
+        ],
+        "chain": [
+          "reported_event: Heating oil prices have risen sharply",
+          "financial_channel: If demand for heating oil increases, prices will rise",
+          "asset_hypothesis: If winter heating needs increase, oil prices will remain high"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If global economic recovery continues, demand for gold as a safe-haven will increase"
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If risk appetite remains low, Bitcoin may not act as a safe-haven alternative"
+        },
+        "uncertainty": "If the government's new measures effectively regulate the market, heating oil prices could stabilize."
+      },
+      "evidence": {
+        "E2": "Heating fuel costs have risen by up to 82% since the start",
+        "E8": "Residents in the South West told the BBC they have held off"
+      },
+      "analyzed_at": "2026-10-18T18:51:30Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
+      "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
+      "publisher": "CNBC Economy",
+      "published_at": "2026-10-16T22:34:29Z",
+      "historical": null,
+      "read_at": "2026-10-19T11:13:31Z",
+      "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
+      "body_characters": 3344,
+      "model_context_characters": 3344,
       "status": "Public body read; queued for AI"
     }
   ]

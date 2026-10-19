@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-10-19T00:31:04Z",
-    "scan_started_at": "2026-10-19T00:23:17Z",
+    "checked_at": "2026-10-19T05:15:30Z",
+    "scan_started_at": "2026-10-19T05:07:25Z",
     "provider_requested": "local",
     "article_reads": 10,
-    "ai_interpretations": 7,
+    "ai_interpretations": 6,
     "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -24,7 +24,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-18T06:07:40Z",
       "historical": null,
-      "read_at": "2026-10-19T00:22:45Z",
+      "read_at": "2026-10-19T05:06:28Z",
       "body_sha256": "50821bca7f4111cd81217817028fa3140449555a190eec20f69164bf42418ec2",
       "body_characters": 2964,
       "model_context_characters": 2964,
@@ -65,7 +65,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T22:34:29Z",
       "historical": null,
-      "read_at": "2026-10-19T00:23:17Z",
+      "read_at": "2026-10-19T05:07:27Z",
       "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
       "body_characters": 3344,
       "model_context_characters": 3344,
@@ -77,7 +77,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-15T16:55:41Z",
       "historical": null,
-      "read_at": "2026-10-19T00:28:13Z",
+      "read_at": "2026-10-19T05:12:27Z",
       "body_sha256": "01a1858aa6def8fe3bc8d8625bde63d10aa16fe90c88344befb95be84e52927c",
       "body_characters": 993,
       "model_context_characters": 993,
@@ -207,18 +207,6 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/c9j3dvezpdz0o?at_medium=RSS&at_campaign=rss",
-      "title": "'I paid thousands to a company for jobs that never came'",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-15T17:19:49Z",
-      "historical": null,
-      "read_at": "2026-10-19T00:31:04Z",
-      "body_sha256": "aaef031974a4637d614b309cd93c6003b8522ae38886a8186e46fc0a510f3e1a",
-      "body_characters": 9690,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
       "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
       "title": "Economists: Hot PPI shows Fed's work is not done",
       "publisher": "CNBC Economy",
@@ -301,45 +289,28 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/c6zxj0gzk4x4o?at_medium=RSS&at_campaign=rss",
-      "title": "Netflix to shed 1,000 jobs in steepest cuts since 2022",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-14T16:47:32Z",
+      "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
+      "title": "IMF sees milder global slowdown as AI boom offsets war hit — warns resilience is nearing limits",
+      "publisher": "CNBC Economy",
+      "published_at": "2026-10-15T06:35:31Z",
       "historical": null,
-      "read_at": "2026-10-18T21:42:39Z",
-      "body_sha256": "7f5149c3689e87fd45b389abc69b9a95bfd196a4e0a1fde5a4dc0d77cc28ce67",
-      "body_characters": 2490,
-      "model_context_characters": 2490,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Netflix will cut 1,000 jobs globally amid competition from rivals.",
-        "evidence_ids": [
-          "E2",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: Netflix job cuts",
-          "financial_channel: If risk appetite decreases, companies cut costs",
-          "asset_hypothesis: If liquidity tightens, firms reduce expenses"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If economic uncertainty increases, investors seek physical gold as a hedge."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If liquidity tightens, investors may seek alternative safe-havens; however, if risk appetite remains high, Bitcoin could see mixed performance."
-        },
-        "uncertainty": "If Netflix's financial forecasts are not met, job cuts could be more severe."
-      },
-      "evidence": {
-        "E2": "Netflix has said it will cut 1,000 jobs globally as the streaming",
-        "E3": "The cuts - the steepest since 2022 - will mainly affect its"
-      },
-      "analyzed_at": "2026-10-18T06:32:30Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+      "read_at": "2026-10-19T05:15:30Z",
+      "body_sha256": "7207da98d7cf10f3438ddc91b4422a80292e51ab2fe38f21b63018c76672348f",
+      "body_characters": 6140,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/10/14/high-inflation-fed-expectations.html",
+      "title": "How high inflation became a 'fact of life' in the U.S.",
+      "publisher": "CNBC Economy",
+      "published_at": "2026-10-14T17:20:23Z",
+      "historical": null,
+      "read_at": "2026-10-19T05:15:30Z",
+      "body_sha256": "91b4b4d4838b081e8d66ae1d761f3045031a259c2f1e4994081b76a30554efd8",
+      "body_characters": 6506,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
     }
   ]
 }

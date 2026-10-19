@@ -1,7 +1,7 @@
 {
   "meta": {
-    "checked_at": "2026-10-18T21:53:08Z",
-    "scan_started_at": "2026-10-18T21:43:31Z",
+    "checked_at": "2026-10-19T00:31:04Z",
+    "scan_started_at": "2026-10-19T00:23:17Z",
     "provider_requested": "local",
     "article_reads": 10,
     "ai_interpretations": 7,
@@ -17,6 +17,112 @@
       "published_at": null,
       "historical": true,
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cq1j3x66e1rno?at_medium=RSS&at_campaign=rss",
+      "title": "Heating oil customers face tough winter",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-18T06:07:40Z",
+      "historical": null,
+      "read_at": "2026-10-19T00:22:45Z",
+      "body_sha256": "50821bca7f4111cd81217817028fa3140449555a190eec20f69164bf42418ec2",
+      "body_characters": 2964,
+      "model_context_characters": 2964,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Heating oil prices have risen sharply, making it difficult for customers to heat their homes.",
+        "evidence_ids": [
+          "E2",
+          "E8"
+        ],
+        "chain": [
+          "reported_event: Heating oil prices have risen sharply",
+          "financial_channel: If demand for heating oil increases, prices will rise",
+          "asset_hypothesis: If winter heating needs increase, oil prices will remain high"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If global economic recovery continues, demand for gold as a safe-haven will increase"
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If risk appetite remains low, Bitcoin may not act as a safe-haven alternative"
+        },
+        "uncertainty": "If the government's new measures effectively regulate the market, heating oil prices could stabilize."
+      },
+      "evidence": {
+        "E2": "Heating fuel costs have risen by up to 82% since the start",
+        "E8": "Residents in the South West told the BBC they have held off"
+      },
+      "analyzed_at": "2026-10-18T18:51:30Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
+      "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
+      "publisher": "CNBC Economy",
+      "published_at": "2026-10-16T22:34:29Z",
+      "historical": null,
+      "read_at": "2026-10-19T00:23:17Z",
+      "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
+      "body_characters": 3344,
+      "model_context_characters": 3344,
+      "status": "Unavailable: AI chain contains no financial transmission mechanism"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/oct/15/what-is-your-personal-recession-indicator",
+      "title": "People in the US: what is your personal ‘recession indicator’?",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-15T16:55:41Z",
+      "historical": null,
+      "read_at": "2026-10-19T00:28:13Z",
+      "body_sha256": "01a1858aa6def8fe3bc8d8625bde63d10aa16fe90c88344befb95be84e52927c",
+      "body_characters": 993,
+      "model_context_characters": 993,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
+      "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-16T05:00:17Z",
+      "historical": null,
+      "read_at": "2026-10-18T01:07:28Z",
+      "body_sha256": "40ae56dcc81387d4ce57c6d95d2bf702444b366d02539c7ca8b979e6eee2c4d7",
+      "body_characters": 4702,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Ship attacks near Hormuz reach record high, slowing oil exports.",
+        "evidence_ids": [
+          "E2",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: Ship attacks near Hormuz reach record high",
+          "financial_channel: If supply chain disruptions increase, oil prices may rise",
+          "asset_hypothesis: If oil prices rise, gold may be seen as a hedge"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If supply chain disruptions increase, oil prices may rise, making gold a more attractive hedge."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite remains low but liquidity is affected, Bitcoin may see mixed reactions."
+        },
+        "uncertainty": "If Iran's attacks shift to other regions, the impact on oil shipments may be mitigated."
+      },
+      "evidence": {
+        "E2": "The number of ships that have reported being attacked in and around",
+        "E3": "Twelve vessels were attacked between 5 and 11 October - the largest"
+      },
+      "analyzed_at": "2026-10-18T01:09:56Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
@@ -106,11 +212,11 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-15T17:19:49Z",
       "historical": null,
-      "read_at": "2026-10-18T21:43:32Z",
+      "read_at": "2026-10-19T00:31:04Z",
       "body_sha256": "aaef031974a4637d614b309cd93c6003b8522ae38886a8186e46fc0a510f3e1a",
       "body_characters": 9690,
       "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
@@ -163,7 +269,7 @@
       "body_sha256": "0a9d8f0d82cde8fad287c091d4ad49599de862e8dd47498fdc1dbae9ddeb75dd",
       "body_characters": 4112,
       "model_context_characters": 4112,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "US inflation rose to 3.7% in September, impacting the upcoming midterm elections.",
         "evidence_ids": [
@@ -231,112 +337,6 @@
         "E3": "The cuts - the steepest since 2022 - will mainly affect its"
       },
       "analyzed_at": "2026-10-18T06:32:30Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cq1j3x66e1rno?at_medium=RSS&at_campaign=rss",
-      "title": "Heating oil customers face tough winter",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-18T06:07:40Z",
-      "historical": null,
-      "read_at": "2026-10-18T21:42:39Z",
-      "body_sha256": "50821bca7f4111cd81217817028fa3140449555a190eec20f69164bf42418ec2",
-      "body_characters": 2964,
-      "model_context_characters": 2964,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "Heating oil prices have risen sharply, making it difficult for customers to heat their homes.",
-        "evidence_ids": [
-          "E2",
-          "E8"
-        ],
-        "chain": [
-          "reported_event: Heating oil prices have risen sharply",
-          "financial_channel: If demand for heating oil increases, prices will rise",
-          "asset_hypothesis: If winter heating needs increase, oil prices will remain high"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If global economic recovery continues, demand for gold as a safe-haven will increase"
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If risk appetite remains low, Bitcoin may not act as a safe-haven alternative"
-        },
-        "uncertainty": "If the government's new measures effectively regulate the market, heating oil prices could stabilize."
-      },
-      "evidence": {
-        "E2": "Heating fuel costs have risen by up to 82% since the start",
-        "E8": "Residents in the South West told the BBC they have held off"
-      },
-      "analyzed_at": "2026-10-18T18:51:30Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
-      "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
-      "publisher": "CNBC Economy",
-      "published_at": "2026-10-16T22:34:29Z",
-      "historical": null,
-      "read_at": "2026-10-18T21:48:38Z",
-      "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
-      "body_characters": 3344,
-      "model_context_characters": 3344,
-      "status": "Unavailable: AI chain contains no financial transmission mechanism"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/oct/15/what-is-your-personal-recession-indicator",
-      "title": "People in the US: what is your personal ‘recession indicator’?",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-15T16:55:41Z",
-      "historical": null,
-      "read_at": "2026-10-18T21:53:08Z",
-      "body_sha256": "01a1858aa6def8fe3bc8d8625bde63d10aa16fe90c88344befb95be84e52927c",
-      "body_characters": 993,
-      "model_context_characters": 993,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
-      "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-16T05:00:17Z",
-      "historical": null,
-      "read_at": "2026-10-18T01:07:28Z",
-      "body_sha256": "40ae56dcc81387d4ce57c6d95d2bf702444b366d02539c7ca8b979e6eee2c4d7",
-      "body_characters": 4702,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Ship attacks near Hormuz reach record high, slowing oil exports.",
-        "evidence_ids": [
-          "E2",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: Ship attacks near Hormuz reach record high",
-          "financial_channel: If supply chain disruptions increase, oil prices may rise",
-          "asset_hypothesis: If oil prices rise, gold may be seen as a hedge"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If supply chain disruptions increase, oil prices may rise, making gold a more attractive hedge."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite remains low but liquidity is affected, Bitcoin may see mixed reactions."
-        },
-        "uncertainty": "If Iran's attacks shift to other regions, the impact on oil shipments may be mitigated."
-      },
-      "evidence": {
-        "E2": "The number of ships that have reported being attacked in and around",
-        "E3": "Twelve vessels were attacked between 5 and 11 October - the largest"
-      },
-      "analyzed_at": "2026-10-18T01:09:56Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"

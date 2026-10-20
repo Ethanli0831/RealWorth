@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-19T22:41:10Z",
-    "scan_started_at": "2026-10-19T22:35:40Z",
+    "checked_at": "2026-10-20T02:10:02Z",
+    "scan_started_at": "2026-10-20T02:01:33Z",
     "provider_requested": "local",
     "article_reads": 10,
-    "ai_interpretations": 7,
-    "new_interpretations": 1,
+    "ai_interpretations": 6,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,12 +19,65 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.theguardian.com/business/2026/oct/15/what-is-your-personal-recession-indicator",
+      "title": "People in the US: what is your personal ‘recession indicator’?",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-15T16:55:41Z",
+      "historical": null,
+      "read_at": "2026-10-20T02:01:34Z",
+      "body_sha256": "01a1858aa6def8fe3bc8d8625bde63d10aa16fe90c88344befb95be84e52927c",
+      "body_characters": 993,
+      "model_context_characters": 993,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
+      "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-16T05:00:17Z",
+      "historical": null,
+      "read_at": "2026-10-20T02:00:40Z",
+      "body_sha256": "de47ea45d0dde8365980f62ed1836ca4541b080f7743a615f2f38b5bf13fb744",
+      "body_characters": 4708,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Ship attacks near Hormuz reach record high, slowing oil exports.",
+        "evidence_ids": [
+          "E2",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: Ship attacks near Hormuz reach record high",
+          "financial_channel: If supply chain disruptions increase, oil prices may rise",
+          "asset_hypothesis: If oil prices rise, gold may be seen as a hedge"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If supply chain disruptions increase, oil prices may rise, making gold a more attractive hedge."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite remains low but liquidity is affected, Bitcoin may see mixed reactions."
+        },
+        "uncertainty": "If Iran's attacks shift to other regions, the impact on oil shipments may be mitigated."
+      },
+      "evidence": {
+        "E2": "The number of ships that have reported being attacked in and around",
+        "E3": "Twelve vessels were attacked between 5 and 11 October - the largest"
+      },
+      "analyzed_at": "2026-10-19T11:13:28Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
       "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
       "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T16:27:31Z",
       "historical": null,
-      "read_at": "2026-10-19T22:34:33Z",
+      "read_at": "2026-10-20T02:00:40Z",
       "body_sha256": "706c206a7a2382b9889c271ce1c4c3dbba0c627714bbc63e7434e755b1825dd6",
       "body_characters": 5478,
       "model_context_characters": 4500,
@@ -65,7 +118,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-15T15:37:59Z",
       "historical": null,
-      "read_at": "2026-10-19T22:34:33Z",
+      "read_at": "2026-10-20T02:00:40Z",
       "body_sha256": "baeba6372188834ee43df0bd05d519e236f1a072776fc71ba40fd4d2391112af",
       "body_characters": 2505,
       "model_context_characters": 2505,
@@ -106,7 +159,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-15T06:35:31Z",
       "historical": null,
-      "read_at": "2026-10-19T22:34:34Z",
+      "read_at": "2026-10-20T02:00:40Z",
       "body_sha256": "7207da98d7cf10f3438ddc91b4422a80292e51ab2fe38f21b63018c76672348f",
       "body_characters": 6140,
       "model_context_characters": 4500,
@@ -147,7 +200,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-14T17:20:23Z",
       "historical": null,
-      "read_at": "2026-10-19T22:34:34Z",
+      "read_at": "2026-10-20T02:00:41Z",
       "body_sha256": "91b4b4d4838b081e8d66ae1d761f3045031a259c2f1e4994081b76a30554efd8",
       "body_characters": 6506,
       "model_context_characters": 4500,
@@ -188,7 +241,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-14T04:24:28Z",
       "historical": null,
-      "read_at": "2026-10-19T22:35:43Z",
+      "read_at": "2026-10-20T02:06:27Z",
       "body_sha256": "f2e9201e555a477590d4530b2e47ba42cb941d628d3cd260419cf105dfa0aa86",
       "body_characters": 1815,
       "model_context_characters": 1815,
@@ -204,7 +257,7 @@
       "body_sha256": "ce3f504beef92183da338f277206c11a3454f44f9d0bbc6d00009d6ee4cb132f",
       "body_characters": 3031,
       "model_context_characters": 3031,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "The September consumer price index is expected to show accelerating inflation, with energy costs being a major driver.",
         "evidence_ids": [
@@ -236,45 +289,16 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cq1j3x66e1rno?at_medium=RSS&at_campaign=rss",
-      "title": "Heating oil customers face tough winter",
+      "url": "https://www.bbc.co.uk/news/articles/cj62y9dnd6pwo?at_medium=RSS&at_campaign=rss",
+      "title": "'I'm fed up of swiping': Why singles now want to meet IRL",
       "publisher": "BBC Business",
-      "published_at": "2026-10-18T06:07:40Z",
+      "published_at": "2026-10-19T23:00:21Z",
       "historical": null,
-      "read_at": "2026-10-19T05:06:28Z",
-      "body_sha256": "50821bca7f4111cd81217817028fa3140449555a190eec20f69164bf42418ec2",
-      "body_characters": 2964,
-      "model_context_characters": 2964,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Heating oil prices have risen sharply, making it difficult for customers to heat their homes.",
-        "evidence_ids": [
-          "E2",
-          "E8"
-        ],
-        "chain": [
-          "reported_event: Heating oil prices have risen sharply",
-          "financial_channel: If demand for heating oil increases, prices will rise",
-          "asset_hypothesis: If winter heating needs increase, oil prices will remain high"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If global economic recovery continues, demand for gold as a safe-haven will increase"
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If risk appetite remains low, Bitcoin may not act as a safe-haven alternative"
-        },
-        "uncertainty": "If the government's new measures effectively regulate the market, heating oil prices could stabilize."
-      },
-      "evidence": {
-        "E2": "Heating fuel costs have risen by up to 82% since the start",
-        "E8": "Residents in the South West told the BBC they have held off"
-      },
-      "analyzed_at": "2026-10-18T18:51:30Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+      "read_at": "2026-10-20T02:10:02Z",
+      "body_sha256": "f574c165f0830862755fc265f3943f07cdc57b15c4b99c994b4f2fad4b4bfd8f",
+      "body_characters": 5364,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
@@ -282,64 +306,11 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T22:34:29Z",
       "historical": null,
-      "read_at": "2026-10-19T22:41:10Z",
+      "read_at": "2026-10-20T02:10:02Z",
       "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
       "body_characters": 3344,
       "model_context_characters": 3344,
       "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/oct/15/what-is-your-personal-recession-indicator",
-      "title": "People in the US: what is your personal ‘recession indicator’?",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-15T16:55:41Z",
-      "historical": null,
-      "read_at": "2026-10-19T22:41:10Z",
-      "body_sha256": "01a1858aa6def8fe3bc8d8625bde63d10aa16fe90c88344befb95be84e52927c",
-      "body_characters": 993,
-      "model_context_characters": 993,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
-      "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-16T05:00:17Z",
-      "historical": null,
-      "read_at": "2026-10-19T11:11:16Z",
-      "body_sha256": "de47ea45d0dde8365980f62ed1836ca4541b080f7743a615f2f38b5bf13fb744",
-      "body_characters": 4708,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Ship attacks near Hormuz reach record high, slowing oil exports.",
-        "evidence_ids": [
-          "E2",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: Ship attacks near Hormuz reach record high",
-          "financial_channel: If supply chain disruptions increase, oil prices may rise",
-          "asset_hypothesis: If oil prices rise, gold may be seen as a hedge"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If supply chain disruptions increase, oil prices may rise, making gold a more attractive hedge."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite remains low but liquidity is affected, Bitcoin may see mixed reactions."
-        },
-        "uncertainty": "If Iran's attacks shift to other regions, the impact on oil shipments may be mitigated."
-      },
-      "evidence": {
-        "E2": "The number of ships that have reported being attacked in and around",
-        "E3": "Twelve vessels were attacked between 5 and 11 October - the largest"
-      },
-      "analyzed_at": "2026-10-19T11:13:28Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     }
   ]
 }

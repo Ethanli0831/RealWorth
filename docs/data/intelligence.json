@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-20T22:41:54Z",
-    "scan_started_at": "2026-10-20T22:33:17Z",
+    "checked_at": "2026-10-21T01:58:05Z",
+    "scan_started_at": "2026-10-21T01:53:07Z",
     "provider_requested": "local",
-    "article_reads": 8,
-    "ai_interpretations": 5,
-    "new_interpretations": 0,
+    "article_reads": 10,
+    "ai_interpretations": 6,
+    "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,53 +19,12 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
-      "title": "Economists: Hot PPI shows Fed's work is not done",
-      "publisher": "CNBC Economy",
-      "published_at": "2026-10-15T15:37:59Z",
-      "historical": null,
-      "read_at": "2026-10-20T22:32:03Z",
-      "body_sha256": "baeba6372188834ee43df0bd05d519e236f1a072776fc71ba40fd4d2391112af",
-      "body_characters": 2505,
-      "model_context_characters": 2505,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Wall Street expects a rise in the Federal Reserve's preferred inflation indicator, with core PCE inflation forecasted to increase 0.32%. Hot PPI shows Fed's work is not done.",
-        "evidence_ids": [
-          "E1",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: Hot PPI reported",
-          "financial_channel: If inflation expectations rise, real yields may increase",
-          "asset_hypothesis: If real yields increase, gold may be seen as a safer haven"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation expectations rise, gold may be seen as a safer haven"
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If inflation expectations rise, Bitcoin may face competition from gold as a hedge, but liquidity concerns could also drive demand"
-        },
-        "uncertainty": "If the economy shows signs of resilience, the Fed may not need to hike rates, reducing demand for gold and Bitcoin."
-      },
-      "evidence": {
-        "E1": "Wall Street estimates for the Federal Reserve's preferred inflation indicator now expect",
-        "E3": "A 0.32% increase in PCE would boost the year-over-year core inflation rate"
-      },
-      "analyzed_at": "2026-10-18T01:38:34Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
       "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
       "title": "IMF sees milder global slowdown as AI boom offsets war hit — warns resilience is nearing limits",
       "publisher": "CNBC Economy",
       "published_at": "2026-10-15T06:35:31Z",
       "historical": null,
-      "read_at": "2026-10-20T22:32:04Z",
+      "read_at": "2026-10-21T01:52:07Z",
       "body_sha256": "7207da98d7cf10f3438ddc91b4422a80292e51ab2fe38f21b63018c76672348f",
       "body_characters": 6140,
       "model_context_characters": 4500,
@@ -106,7 +65,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-14T17:20:23Z",
       "historical": null,
-      "read_at": "2026-10-20T22:32:04Z",
+      "read_at": "2026-10-21T01:52:08Z",
       "body_sha256": "91b4b4d4838b081e8d66ae1d761f3045031a259c2f1e4994081b76a30554efd8",
       "body_characters": 6506,
       "model_context_characters": 4500,
@@ -142,24 +101,12 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.cnbc.com/2026/10/14/godzilla-el-nino-asia-inflation-philippines.html",
-      "title": "'Godzilla El Niño' is wreaking havoc with Philippine central bank's inflation forecasts",
-      "publisher": "CNBC Economy",
-      "published_at": "2026-10-14T04:24:28Z",
-      "historical": null,
-      "read_at": "2026-10-20T22:33:18Z",
-      "body_sha256": "f2e9201e555a477590d4530b2e47ba42cb941d628d3cd260419cf105dfa0aa86",
-      "body_characters": 1815,
-      "model_context_characters": 1815,
-      "status": "Unavailable: AI chain contains no financial transmission mechanism"
-    },
-    {
       "url": "https://www.bbc.co.uk/news/articles/cqzrdpkm3g84o?at_medium=RSS&at_campaign=rss",
       "title": "Paddy Power cuts 1,400 jobs and blames betting tax rises",
       "publisher": "BBC Business",
       "published_at": "2026-10-20T14:53:02Z",
       "historical": null,
-      "read_at": "2026-10-20T22:32:05Z",
+      "read_at": "2026-10-21T01:52:08Z",
       "body_sha256": "c843ad2fa66810b307dcd905db784960bbb63e9dd6d413080a196c744c58687e",
       "body_characters": 3091,
       "model_context_characters": 3091,
@@ -195,12 +142,53 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
+      "url": "https://www.theguardian.com/society/2026/oct/20/paddy-power-owner-flutter-tax-rises-jobs-cuts-gambling",
+      "title": "Paddy Power owner blames tax rises for plan to shed up to 1,400 jobs",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-20T14:24:36Z",
+      "historical": null,
+      "read_at": "2026-10-21T01:53:08Z",
+      "body_sha256": "9aa22f159ce59a49402d9ad21e9ac776c285b0a1e1a01e4646047572e1b351c8",
+      "body_characters": 3961,
+      "model_context_characters": 3961,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Flutter plans to cut up to 1,400 jobs in the UK and Ireland due to increased betting and gaming duties.",
+        "evidence_ids": [
+          "E5",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: job cuts announced",
+          "financial_channel: If job cuts reduce company costs, it may improve profitability.",
+          "asset_hypothesis: If Flutter reduces costs, it may retain more capital."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If job cuts reduce company costs, investors may view Flutter as more financially stable, boosting gold as a safe-haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If job cuts reduce company costs, investors may view Flutter as more financially stable, but Bitcoin's reaction is unclear due to competing risk-appetite/liquidity channels."
+        },
+        "uncertainty": "If the job cuts are due to strategic cost-cutting rather than tax rises, the impact on Flutter's stock and gold/Bitcoin may differ."
+      },
+      "evidence": {
+        "E5": "Flutter says one in 10 UK and Ireland workers at risk of",
+        "E6": "The gambling company behind Paddy Power and Sky Bet has announced up"
+      },
+      "analyzed_at": "2026-10-21T01:55:02Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
       "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
       "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T22:34:29Z",
       "historical": null,
-      "read_at": "2026-10-20T22:37:22Z",
+      "read_at": "2026-10-21T01:55:03Z",
       "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
       "body_characters": 3344,
       "model_context_characters": 3344,
@@ -212,10 +200,22 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-20T10:28:36Z",
       "historical": null,
-      "read_at": "2026-10-20T22:41:54Z",
+      "read_at": "2026-10-21T01:58:04Z",
       "body_sha256": "9d5d223de69977c097ce64470cb02ca0557a343ba222434ebf3325be611c770d",
       "body_characters": 5365,
       "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/oct/20/uk-unemployment-rate-surprise-drop",
+      "title": "Surprise drop in UK unemployment to 4.7% as John Healey’s first budget looms",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-20T08:39:27Z",
+      "historical": null,
+      "read_at": "2026-10-21T01:58:05Z",
+      "body_sha256": "0f626fc0c929c2e631c20d23f88417bfbb6725e3a505c9623a43ad622d5c986e",
+      "body_characters": 4416,
+      "model_context_characters": 4416,
       "status": "Public body read; queued for AI"
     },
     {
@@ -255,6 +255,59 @@
         "E3": "His remarks nonetheless reinforced a judgment in the markets that the Fed"
       },
       "analyzed_at": "2026-10-18T11:43:22Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/oct/19/profit-warnings-from-uk-listed-firms-at-highest-level-in-two-years-as-iran-war-drives-up-costs",
+      "title": "Profit warnings from UK-listed firms at highest level in two years as Iran war drives up costs",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-19T05:00:19Z",
+      "historical": null,
+      "read_at": "2026-10-21T01:58:05Z",
+      "body_sha256": "f7243b87063da2cd00d2b52566f92d5684e4f82cb652e0415e24eb7603a334dc",
+      "body_characters": 4369,
+      "model_context_characters": 4369,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
+      "title": "Economists: Hot PPI shows Fed's work is not done",
+      "publisher": "CNBC Economy",
+      "published_at": "2026-10-15T15:37:59Z",
+      "historical": null,
+      "read_at": "2026-10-20T22:32:03Z",
+      "body_sha256": "baeba6372188834ee43df0bd05d519e236f1a072776fc71ba40fd4d2391112af",
+      "body_characters": 2505,
+      "model_context_characters": 2505,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Wall Street expects a rise in the Federal Reserve's preferred inflation indicator, with core PCE inflation forecasted to increase 0.32%. Hot PPI shows Fed's work is not done.",
+        "evidence_ids": [
+          "E1",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: Hot PPI reported",
+          "financial_channel: If inflation expectations rise, real yields may increase",
+          "asset_hypothesis: If real yields increase, gold may be seen as a safer haven"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations rise, gold may be seen as a safer haven"
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If inflation expectations rise, Bitcoin may face competition from gold as a hedge, but liquidity concerns could also drive demand"
+        },
+        "uncertainty": "If the economy shows signs of resilience, the Fed may not need to hike rates, reducing demand for gold and Bitcoin."
+      },
+      "evidence": {
+        "E1": "Wall Street estimates for the Federal Reserve's preferred inflation indicator now expect",
+        "E3": "A 0.32% increase in PCE would boost the year-over-year core inflation rate"
+      },
+      "analyzed_at": "2026-10-18T01:38:34Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"

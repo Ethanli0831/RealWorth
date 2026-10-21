@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-10-21T20:14:19Z",
+    "checked_at": "2026-10-21T23:26:30Z",
     "model": "empirical-log-return-quantiles-v2",
     "timezone": "America/Toronto",
     "today": "2026-10-21",
@@ -13,8 +13,8 @@
     {
       "ticker": "BTC-USD",
       "asset": "Bitcoin / USD",
-      "quote": 84477.42,
-      "quote_at": "2026-10-21T20:14:14Z",
+      "quote": 84320.18,
+      "quote_at": "2026-10-21T23:26:27Z",
       "quote_stale": false,
       "market_status": "Continuous trading; quote may be delayed by provider",
       "tomorrow_has_session": true,
@@ -54,7 +54,7 @@
     {
       "ticker": "GLD",
       "asset": "Gold ETF (GLD)",
-      "quote": 378.94,
+      "quote": 378.95,
       "quote_at": "2026-10-21T20:00:00Z",
       "quote_stale": false,
       "market_status": "Market closed · last reported quote",
@@ -95,7 +95,7 @@
     {
       "ticker": "SPY",
       "asset": "S&P 500 ETF (SPY)",
-      "quote": 773.17,
+      "quote": 773.09,
       "quote_at": "2026-10-21T20:00:00Z",
       "quote_stale": false,
       "market_status": "Market closed · last reported quote",
@@ -136,8 +136,8 @@
     {
       "ticker": "BIL",
       "asset": "T-Bill ETF (BIL)",
-      "quote": 91.595,
-      "quote_at": "2026-10-21T19:59:52Z",
+      "quote": 91.6,
+      "quote_at": "2026-10-21T20:00:00Z",
       "quote_stale": false,
       "market_status": "Market closed · last reported quote",
       "tomorrow_has_session": true,

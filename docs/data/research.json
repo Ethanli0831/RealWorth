@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-10-21T11:39:02Z",
+    "checked_at": "2026-10-21T16:08:43Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -9,8 +9,49 @@
   },
   "macro": {
     "checked_at": "2026-10-21T11:39:02Z",
-    "stale": false,
-    "failures": [],
+    "stale": true,
+    "failures": [
+      {
+        "series": "GDPC1",
+        "error": "ParserError"
+      },
+      {
+        "series": "CPIAUCSL",
+        "error": "ParserError"
+      },
+      {
+        "series": "FEDFUNDS",
+        "error": "ParserError"
+      },
+      {
+        "series": "UNRATE",
+        "error": "ParserError"
+      },
+      {
+        "series": "TDSP",
+        "error": "ParserError"
+      },
+      {
+        "series": "QUSPAM770A",
+        "error": "ParserError"
+      },
+      {
+        "series": "GFDEGDQ188S",
+        "error": "ParserError"
+      },
+      {
+        "series": "BAMLH0A0HYM2",
+        "error": "ParserError"
+      },
+      {
+        "series": "DFII10",
+        "error": "ParserError"
+      },
+      {
+        "series": "T10Y3M",
+        "error": "ParserError"
+      }
+    ],
     "indicators": [
       {
         "id": "GDPC1",
@@ -119,9 +160,23 @@
     "short_cycle": "Partial short-cycle signals · labour baseline unavailable",
     "pressure_flags": [],
     "long_cycle": "Not identified: these US indicators do not establish a complete long-term debt-cycle phase.",
-    "outlook": "If growth keeps slowing while inflation rises, watch for a policy trade-off. If inflation eases without worsening credit or employment, a softer adjustment is more plausible. These are conditional scenarios, not probability forecasts."
+    "outlook": "If growth keeps slowing while inflation rises, watch for a policy trade-off. If inflation eases without worsening credit or employment, a softer adjustment is more plausible. These are conditional scenarios, not probability forecasts.",
+    "attempted_at": "2026-10-21T16:08:43Z"
   },
   "news": [
+    {
+      "title": "Civil servant admits he 'made mistakes' juggling five government jobs",
+      "url": "https://www.bbc.co.uk/news/articles/cmze4w63ly42o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-21T15:58:05Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "growth"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
     {
       "title": "Faisal Islam: Inflation and borrowing figures illustrate chancellor's Budget challenge",
       "url": "https://www.bbc.co.uk/news/articles/cm3wv9pn22e5o?at_medium=RSS&at_campaign=rss",
@@ -144,6 +199,19 @@
       "source_kind": "Publisher headline",
       "topics": [
         "inflation"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
+    {
+      "title": "‘Hunted like animals’: inside Trump’s war on the people who build America",
+      "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/21/trump-ice-construction-worker-deportation",
+      "published_at": "2026-10-21T10:00:02Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "energy"
       ],
       "cached": false,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
@@ -371,20 +439,6 @@
       ],
       "cached": true,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
-    },
-    {
-      "title": "India’s central bank hikes rates for the first time since 2023 as inflation risks build",
-      "url": "https://www.cnbc.com/2026/10/07/india-rbi-interest-rates-inflation.html",
-      "published_at": "2026-10-07T11:55:36Z",
-      "source_id": "cnbc",
-      "publisher": "CNBC Economy",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "policy",
-        "inflation"
-      ],
-      "cached": true,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
     }
   ],
   "feed_health": [
@@ -392,60 +446,60 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-10-21T11:39:02Z",
+      "checked_at": "2026-10-21T16:08:43Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-21T11:39:02Z",
+      "last_success": "2026-10-21T16:08:43Z",
       "matched": 0
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-10-21T11:39:02Z",
+      "checked_at": "2026-10-21T16:08:43Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-21T11:39:02Z",
+      "last_success": "2026-10-21T16:08:43Z",
       "matched": 0
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-10-21T11:39:02Z",
+      "checked_at": "2026-10-21T16:08:43Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-21T11:39:02Z",
-      "matched": 7
+      "last_success": "2026-10-21T16:08:43Z",
+      "matched": 8
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-10-21T11:39:02Z",
+      "checked_at": "2026-10-21T16:08:43Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-21T11:39:02Z",
-      "matched": 0
+      "last_success": "2026-10-21T16:08:43Z",
+      "matched": 1
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-10-21T11:39:02Z",
+      "checked_at": "2026-10-21T16:08:43Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
-      "matched": 15
+      "matched": 14
     },
     {
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-10-21T11:39:02Z",
+      "checked_at": "2026-10-21T16:08:43Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-21T11:39:02Z",
+      "last_success": "2026-10-21T16:08:43Z",
       "matched": 0
     }
   ],

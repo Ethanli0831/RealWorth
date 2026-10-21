@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-10-21T18:58:28Z",
-    "scan_started_at": "2026-10-21T18:51:08Z",
+    "checked_at": "2026-10-21T22:45:17Z",
+    "scan_started_at": "2026-10-21T22:37:21Z",
     "provider_requested": "local",
     "article_reads": 10,
-    "ai_interpretations": 7,
+    "ai_interpretations": 8,
     "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -19,16 +19,69 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.bbc.co.uk/news/articles/cmze4w63ly42o?at_medium=RSS&at_campaign=rss",
+      "title": "Civil servant admits he 'made mistakes' juggling five government jobs",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-21T15:58:05Z",
+      "historical": null,
+      "read_at": "2026-10-21T22:37:21Z",
+      "body_sha256": "3b113a4de8c8bb4ed20df6d6e5506bb2b188fe4303336f0d76553f135a6a88da",
+      "body_characters": 4194,
+      "model_context_characters": 4194,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Civil servant Kashim Chowdhury is accused of fraudulently earning over £284,000 by juggling five full-time public sector jobs.",
+        "evidence_ids": [
+          "E2",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: civil servant accused of fraud",
+          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
+          "asset_hypothesis: If liquidity improves, gold and Bitcoin may see increased trading."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If risk appetite decreases, investors may seek safer assets like gold."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If liquidity improves, gold and Bitcoin may see increased trading, but Bitcoin is not a clear safe-haven."
+        },
+        "uncertainty": "If the civil servant is found not guilty, risk appetite may increase, reducing demand for gold and Bitcoin."
+      },
+      "evidence": {
+        "E2": "Civil servant Kashim Chowdhury is accused of fraudulently earning more than £284,000",
+        "E3": "The civil servant accused of fraudulently earning more than £284,000 by juggling"
+      },
+      "analyzed_at": "2026-10-21T22:40:16Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/21/trump-ice-construction-worker-deportation",
+      "title": "‘Hunted like animals’: inside Trump’s war on the people who build America",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-21T10:00:02Z",
+      "historical": null,
+      "read_at": "2026-10-21T22:40:16Z",
+      "body_sha256": "27ce87978b0015659a52334570758e52fc73fb83f31a31e261ac8fed4af72b9d",
+      "body_characters": 18000,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
       "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
       "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T22:34:29Z",
       "historical": null,
-      "read_at": "2026-10-21T18:51:11Z",
+      "read_at": "2026-10-21T22:45:17Z",
       "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
       "body_characters": 3344,
       "model_context_characters": 3344,
-      "status": "Unavailable: AI chain contains no financial transmission mechanism"
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/cm3wv9pn22e5o?at_medium=RSS&at_campaign=rss",
@@ -40,7 +93,7 @@
       "body_sha256": "498b10f1706929fbf1914e9ed5e4bc4c49ca6ec7ebd9f0e58e2c2d9e9e078550",
       "body_characters": 3063,
       "model_context_characters": 3063,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "The UK's inflation rate has reached 3.5%, and the National Debt has surpassed £3 trillion for the first time, posing challenges for the chancellor's upcoming Budget.",
         "evidence_ids": [
@@ -122,7 +175,7 @@
       "body_sha256": "edb782ea16c9608d5d5e65dd260b104879b39c96de42f3bfd59995833a505a3c",
       "body_characters": 4639,
       "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "UK inflation and government borrowing reached their highest in a year, with petrol and diesel prices soaring.",
         "evidence_ids": [
@@ -316,30 +369,6 @@
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmze4w63ly42o?at_medium=RSS&at_campaign=rss",
-      "title": "Civil servant admits he 'made mistakes' juggling five government jobs",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-21T15:58:05Z",
-      "historical": null,
-      "read_at": "2026-10-21T18:58:28Z",
-      "body_sha256": "3b113a4de8c8bb4ed20df6d6e5506bb2b188fe4303336f0d76553f135a6a88da",
-      "body_characters": 4194,
-      "model_context_characters": 4194,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/21/trump-ice-construction-worker-deportation",
-      "title": "‘Hunted like animals’: inside Trump’s war on the people who build America",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-21T10:00:02Z",
-      "historical": null,
-      "read_at": "2026-10-21T18:58:28Z",
-      "body_sha256": "27ce87978b0015659a52334570758e52fc73fb83f31a31e261ac8fed4af72b9d",
-      "body_characters": 18000,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
     }
   ]
 }

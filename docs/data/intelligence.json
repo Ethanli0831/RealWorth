@@ -1,9 +1,9 @@
 {
   "meta": {
-    "checked_at": "2026-10-21T01:58:05Z",
-    "scan_started_at": "2026-10-21T01:53:07Z",
+    "checked_at": "2026-10-21T08:03:45Z",
+    "scan_started_at": "2026-10-21T07:56:16Z",
     "provider_requested": "local",
-    "article_reads": 10,
+    "article_reads": 7,
     "ai_interpretations": 6,
     "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
@@ -19,176 +19,12 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
-      "title": "IMF sees milder global slowdown as AI boom offsets war hit — warns resilience is nearing limits",
-      "publisher": "CNBC Economy",
-      "published_at": "2026-10-15T06:35:31Z",
-      "historical": null,
-      "read_at": "2026-10-21T01:52:07Z",
-      "body_sha256": "7207da98d7cf10f3438ddc91b4422a80292e51ab2fe38f21b63018c76672348f",
-      "body_characters": 6140,
-      "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "The IMF raised its global growth forecast for 2026 and 2027, citing AI investment and supply resilience, but warned of limits to economic resilience.",
-        "evidence_ids": [
-          "E2",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: IMF raised growth forecast",
-          "financial_channel: If AI investment and supply resilience continue, growth may remain steady",
-          "asset_hypothesis: If global supply chains remain resilient, asset prices may stabilize"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation remains high and central banks maintain restrictive monetary policies, gold may benefit as a hedge."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite remains high due to AI investment, Bitcoin may see demand; otherwise, it may face selling pressure."
-        },
-        "uncertainty": "If the Strait of Hormuz does not reopen as expected, global oil prices could spike, affecting economic resilience."
-      },
-      "evidence": {
-        "E2": "BANGKOK — The International Monetary Fund has raised its forecast for global",
-        "E6": "The IMF expects the global economy to grow at 3.1% in 2026,"
-      },
-      "analyzed_at": "2026-10-19T17:43:56Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.cnbc.com/2026/10/14/high-inflation-fed-expectations.html",
-      "title": "How high inflation became a 'fact of life' in the U.S.",
-      "publisher": "CNBC Economy",
-      "published_at": "2026-10-14T17:20:23Z",
-      "historical": null,
-      "read_at": "2026-10-21T01:52:08Z",
-      "body_sha256": "91b4b4d4838b081e8d66ae1d761f3045031a259c2f1e4994081b76a30554efd8",
-      "body_characters": 6506,
-      "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "The U.S. is experiencing prolonged high inflation, with consumers starting to accept it as a new normal, raising concerns at the Fed.",
-        "evidence_ids": [
-          "E4",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: Prolonged high inflation",
-          "financial_channel: If inflation expectations become entrenched, it can make monetary policy less effective",
-          "asset_hypothesis: If inflation becomes a self-fulfilling prophecy, asset prices may be affected"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation expectations persist, gold may be seen as a hedge against currency depreciation"
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If Bitcoin is seen as a hedge, its price may rise; otherwise, it may remain unclear due to lack of established demand"
-        },
-        "uncertainty": "If inflation expectations stabilize, the Fed may be more effective in controlling inflation, reducing gold and Bitcoin price pressures."
-      },
-      "evidence": {
-        "E4": "At the Fed, leaders are left questioning whether consumers' inflationary expectations are",
-        "E5": "\"Inflation expectations have to be anchored for monetary policy to affect the"
-      },
-      "analyzed_at": "2026-10-19T17:48:15Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cqzrdpkm3g84o?at_medium=RSS&at_campaign=rss",
-      "title": "Paddy Power cuts 1,400 jobs and blames betting tax rises",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-20T14:53:02Z",
-      "historical": null,
-      "read_at": "2026-10-21T01:52:08Z",
-      "body_sha256": "c843ad2fa66810b307dcd905db784960bbb63e9dd6d413080a196c744c58687e",
-      "body_characters": 3091,
-      "model_context_characters": 3091,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "Flutter, owner of Paddy Power, plans to cut up to 1,400 jobs due to increased gambling taxes in the UK and Ireland.",
-        "evidence_ids": [
-          "E5",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: job cuts announced",
-          "financial_channel: If job cuts reduce fixed costs, it may improve profitability.",
-          "asset_hypothesis: If Flutter reduces costs, it may retain more profit."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If economic uncertainty rises, investors may seek physical gold as a hedge."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite decreases, Bitcoin may underperform as a risk asset; if liquidity tightens, it may outperform as a store of value."
-        },
-        "uncertainty": "If the government relaxes the tax increases, job cuts may be avoided."
-      },
-      "evidence": {
-        "E5": "Paddy Power-owner Flutter has announced plans to cut up to 1,400 jobs",
-        "E7": "The government announced taxes rises on online casino and sports betting, with"
-      },
-      "analyzed_at": "2026-10-20T18:44:31Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/society/2026/oct/20/paddy-power-owner-flutter-tax-rises-jobs-cuts-gambling",
-      "title": "Paddy Power owner blames tax rises for plan to shed up to 1,400 jobs",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-20T14:24:36Z",
-      "historical": null,
-      "read_at": "2026-10-21T01:53:08Z",
-      "body_sha256": "9aa22f159ce59a49402d9ad21e9ac776c285b0a1e1a01e4646047572e1b351c8",
-      "body_characters": 3961,
-      "model_context_characters": 3961,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "Flutter plans to cut up to 1,400 jobs in the UK and Ireland due to increased betting and gaming duties.",
-        "evidence_ids": [
-          "E5",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: job cuts announced",
-          "financial_channel: If job cuts reduce company costs, it may improve profitability.",
-          "asset_hypothesis: If Flutter reduces costs, it may retain more capital."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If job cuts reduce company costs, investors may view Flutter as more financially stable, boosting gold as a safe-haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If job cuts reduce company costs, investors may view Flutter as more financially stable, but Bitcoin's reaction is unclear due to competing risk-appetite/liquidity channels."
-        },
-        "uncertainty": "If the job cuts are due to strategic cost-cutting rather than tax rises, the impact on Flutter's stock and gold/Bitcoin may differ."
-      },
-      "evidence": {
-        "E5": "Flutter says one in 10 UK and Ireland workers at risk of",
-        "E6": "The gambling company behind Paddy Power and Sky Bet has announced up"
-      },
-      "analyzed_at": "2026-10-21T01:55:02Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
       "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
       "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T22:34:29Z",
       "historical": null,
-      "read_at": "2026-10-21T01:55:03Z",
+      "read_at": "2026-10-21T07:56:17Z",
       "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
       "body_characters": 3344,
       "model_context_characters": 3344,
@@ -200,23 +36,40 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-20T10:28:36Z",
       "historical": null,
-      "read_at": "2026-10-21T01:58:04Z",
+      "read_at": "2026-10-21T08:01:12Z",
       "body_sha256": "9d5d223de69977c097ce64470cb02ca0557a343ba222434ebf3325be611c770d",
       "body_characters": 5365,
       "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/oct/20/uk-unemployment-rate-surprise-drop",
-      "title": "Surprise drop in UK unemployment to 4.7% as John Healey’s first budget looms",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-20T08:39:27Z",
-      "historical": null,
-      "read_at": "2026-10-21T01:58:05Z",
-      "body_sha256": "0f626fc0c929c2e631c20d23f88417bfbb6725e3a505c9623a43ad622d5c986e",
-      "body_characters": 4416,
-      "model_context_characters": 4416,
-      "status": "Public body read; queued for AI"
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The article discusses singles preferring dating events over apps due to app fatigue and better value for money.",
+        "evidence_ids": [
+          "E7",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: singles preferring dating events",
+          "financial_channel: If dating events offer better ROI, risk appetite may shift",
+          "asset_hypothesis: If more singles attend events, demand for gold may increase"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If more singles attend events, demand for gold may increase due to higher risk appetite."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If more singles attend events, Bitcoin's direction remains unclear as it competes with gold as a hedge."
+        },
+        "uncertainty": "If the event is a one-time trend, it may not significantly impact gold or Bitcoin markets."
+      },
+      "evidence": {
+        "E7": "Olivia says she chose to attend this dating event because she has",
+        "E3": "Many people at the event in Guildford agreed dating events were better"
+      },
+      "analyzed_at": "2026-10-21T08:03:45Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
@@ -260,18 +113,6 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.theguardian.com/business/2026/oct/19/profit-warnings-from-uk-listed-firms-at-highest-level-in-two-years-as-iran-war-drives-up-costs",
-      "title": "Profit warnings from UK-listed firms at highest level in two years as Iran war drives up costs",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-19T05:00:19Z",
-      "historical": null,
-      "read_at": "2026-10-21T01:58:05Z",
-      "body_sha256": "f7243b87063da2cd00d2b52566f92d5684e4f82cb652e0415e24eb7603a334dc",
-      "body_characters": 4369,
-      "model_context_characters": 4369,
-      "status": "Public body read; queued for AI"
-    },
-    {
       "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
       "title": "Economists: Hot PPI shows Fed's work is not done",
       "publisher": "CNBC Economy",
@@ -308,6 +149,129 @@
         "E3": "A 0.32% increase in PCE would boost the year-over-year core inflation rate"
       },
       "analyzed_at": "2026-10-18T01:38:34Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
+      "title": "IMF sees milder global slowdown as AI boom offsets war hit — warns resilience is nearing limits",
+      "publisher": "CNBC Economy",
+      "published_at": "2026-10-15T06:35:31Z",
+      "historical": null,
+      "read_at": "2026-10-21T01:52:07Z",
+      "body_sha256": "7207da98d7cf10f3438ddc91b4422a80292e51ab2fe38f21b63018c76672348f",
+      "body_characters": 6140,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "The IMF raised its global growth forecast for 2026 and 2027, citing AI investment and supply resilience, but warned of limits to economic resilience.",
+        "evidence_ids": [
+          "E2",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: IMF raised growth forecast",
+          "financial_channel: If AI investment and supply resilience continue, growth may remain steady",
+          "asset_hypothesis: If global supply chains remain resilient, asset prices may stabilize"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation remains high and central banks maintain restrictive monetary policies, gold may benefit as a hedge."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite remains high due to AI investment, Bitcoin may see demand; otherwise, it may face selling pressure."
+        },
+        "uncertainty": "If the Strait of Hormuz does not reopen as expected, global oil prices could spike, affecting economic resilience."
+      },
+      "evidence": {
+        "E2": "BANGKOK — The International Monetary Fund has raised its forecast for global",
+        "E6": "The IMF expects the global economy to grow at 3.1% in 2026,"
+      },
+      "analyzed_at": "2026-10-19T17:43:56Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/10/14/high-inflation-fed-expectations.html",
+      "title": "How high inflation became a 'fact of life' in the U.S.",
+      "publisher": "CNBC Economy",
+      "published_at": "2026-10-14T17:20:23Z",
+      "historical": null,
+      "read_at": "2026-10-21T01:52:08Z",
+      "body_sha256": "91b4b4d4838b081e8d66ae1d761f3045031a259c2f1e4994081b76a30554efd8",
+      "body_characters": 6506,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "The U.S. is experiencing prolonged high inflation, with consumers starting to accept it as a new normal, raising concerns at the Fed.",
+        "evidence_ids": [
+          "E4",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: Prolonged high inflation",
+          "financial_channel: If inflation expectations become entrenched, it can make monetary policy less effective",
+          "asset_hypothesis: If inflation becomes a self-fulfilling prophecy, asset prices may be affected"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations persist, gold may be seen as a hedge against currency depreciation"
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If Bitcoin is seen as a hedge, its price may rise; otherwise, it may remain unclear due to lack of established demand"
+        },
+        "uncertainty": "If inflation expectations stabilize, the Fed may be more effective in controlling inflation, reducing gold and Bitcoin price pressures."
+      },
+      "evidence": {
+        "E4": "At the Fed, leaders are left questioning whether consumers' inflationary expectations are",
+        "E5": "\"Inflation expectations have to be anchored for monetary policy to affect the"
+      },
+      "analyzed_at": "2026-10-19T17:48:15Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cqzrdpkm3g84o?at_medium=RSS&at_campaign=rss",
+      "title": "Paddy Power cuts 1,400 jobs and blames betting tax rises",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-20T14:53:02Z",
+      "historical": null,
+      "read_at": "2026-10-21T01:52:08Z",
+      "body_sha256": "c843ad2fa66810b307dcd905db784960bbb63e9dd6d413080a196c744c58687e",
+      "body_characters": 3091,
+      "model_context_characters": 3091,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Flutter, owner of Paddy Power, plans to cut up to 1,400 jobs due to increased gambling taxes in the UK and Ireland.",
+        "evidence_ids": [
+          "E5",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: job cuts announced",
+          "financial_channel: If job cuts reduce fixed costs, it may improve profitability.",
+          "asset_hypothesis: If Flutter reduces costs, it may retain more profit."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If economic uncertainty rises, investors may seek physical gold as a hedge."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite decreases, Bitcoin may underperform as a risk asset; if liquidity tightens, it may outperform as a store of value."
+        },
+        "uncertainty": "If the government relaxes the tax increases, job cuts may be avoided."
+      },
+      "evidence": {
+        "E5": "Paddy Power-owner Flutter has announced plans to cut up to 1,400 jobs",
+        "E7": "The government announced taxes rises on online casino and sports betting, with"
+      },
+      "analyzed_at": "2026-10-20T18:44:31Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"

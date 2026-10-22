@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-22T01:53:53Z",
-    "scan_started_at": "2026-10-22T01:43:42Z",
+    "checked_at": "2026-10-22T07:57:41Z",
+    "scan_started_at": "2026-10-22T07:53:29Z",
     "provider_requested": "local",
     "article_reads": 10,
-    "ai_interpretations": 8,
-    "new_interpretations": 0,
+    "ai_interpretations": 7,
+    "new_interpretations": 2,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,42 +19,42 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
-      "title": "Economists: Hot PPI shows Fed's work is not done",
-      "publisher": "CNBC Economy",
-      "published_at": "2026-10-15T15:37:59Z",
+      "url": "https://www.bbc.co.uk/news/articles/c6gel2xv4493o?at_medium=RSS&at_campaign=rss",
+      "title": "Inflation and government borrowing highest for a year ahead of next week's Budget",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-21T10:16:17Z",
       "historical": null,
-      "read_at": "2026-10-22T01:42:48Z",
-      "body_sha256": "baeba6372188834ee43df0bd05d519e236f1a072776fc71ba40fd4d2391112af",
-      "body_characters": 2505,
-      "model_context_characters": 2505,
-      "status": "Cached AI interpretation; awaiting re-read",
+      "read_at": "2026-10-22T07:53:31Z",
+      "body_sha256": "5b5fd6eb5f527e8bf6fb314be7c881aef5a1cc5a567eb9a3960d517011c9e02f",
+      "body_characters": 4708,
+      "model_context_characters": 4500,
+      "status": "AI interpretation generated · not independently verified",
       "analysis": {
-        "summary": "Wall Street expects a rise in the Federal Reserve's preferred inflation indicator, with core PCE inflation forecasted to increase 0.32%. Hot PPI shows Fed's work is not done.",
+        "summary": "UK inflation and government borrowing reached their highest levels in a year, adding pressure to Chancellor John Healey before his Budget.",
         "evidence_ids": [
-          "E1",
-          "E3"
+          "E7",
+          "E1"
         ],
         "chain": [
-          "reported_event: Hot PPI reported",
-          "financial_channel: If inflation expectations rise, real yields may increase",
-          "asset_hypothesis: If real yields increase, gold may be seen as a safer haven"
+          "reported_event: Inflation and borrowing highest in a year",
+          "financial_channel: If inflation rises, gold demand may increase as a hedge.",
+          "asset_hypothesis: If government borrowing increases, it may crowd out private investment."
         ],
         "gold": {
           "direction": "up",
-          "condition": "If inflation expectations rise, gold may be seen as a safer haven"
+          "condition": "If inflation rises, gold may be seen as a hedge against currency depreciation."
         },
         "bitcoin": {
           "direction": "mixed",
-          "condition": "If inflation expectations rise, Bitcoin may face competition from gold as a hedge, but liquidity concerns could also drive demand"
+          "condition": "If risk appetite remains high, Bitcoin may not see a significant shift; if risk appetite decreases, it could act as a hedge."
         },
-        "uncertainty": "If the economy shows signs of resilience, the Fed may not need to hike rates, reducing demand for gold and Bitcoin."
+        "uncertainty": "If oil supplies improve, inflation could decrease, reducing gold's appeal as a hedge."
       },
       "evidence": {
-        "E1": "Wall Street estimates for the Federal Reserve's preferred inflation indicator now expect",
-        "E3": "A 0.32% increase in PCE would boost the year-over-year core inflation rate"
+        "E7": "UK inflation and government borrowing both hit their highest in a year",
+        "E1": "But the inflation figure came as the ONS said the government borrowed"
       },
-      "analyzed_at": "2026-10-18T01:38:34Z",
+      "analyzed_at": "2026-10-22T07:55:57Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
@@ -65,7 +65,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-20T14:53:02Z",
       "historical": null,
-      "read_at": "2026-10-22T01:42:49Z",
+      "read_at": "2026-10-22T07:52:13Z",
       "body_sha256": "c843ad2fa66810b307dcd905db784960bbb63e9dd6d413080a196c744c58687e",
       "body_characters": 3091,
       "model_context_characters": 3091,
@@ -101,124 +101,42 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
-      "title": "IMF sees milder global slowdown as AI boom offsets war hit — warns resilience is nearing limits",
-      "publisher": "CNBC Economy",
-      "published_at": "2026-10-15T06:35:31Z",
-      "historical": null,
-      "read_at": "2026-10-22T01:42:49Z",
-      "body_sha256": "7207da98d7cf10f3438ddc91b4422a80292e51ab2fe38f21b63018c76672348f",
-      "body_characters": 6140,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The IMF raised its global growth forecast for 2026 and 2027, citing AI investment and supply resilience, but warned of limits to economic resilience.",
-        "evidence_ids": [
-          "E2",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: IMF raised growth forecast",
-          "financial_channel: If AI investment and supply resilience continue, growth may remain steady",
-          "asset_hypothesis: If global supply chains remain resilient, asset prices may stabilize"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation remains high and central banks maintain restrictive monetary policies, gold may benefit as a hedge."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite remains high due to AI investment, Bitcoin may see demand; otherwise, it may face selling pressure."
-        },
-        "uncertainty": "If the Strait of Hormuz does not reopen as expected, global oil prices could spike, affecting economic resilience."
-      },
-      "evidence": {
-        "E2": "BANGKOK — The International Monetary Fund has raised its forecast for global",
-        "E6": "The IMF expects the global economy to grow at 3.1% in 2026,"
-      },
-      "analyzed_at": "2026-10-19T17:43:56Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cj62y9dnd6pwo?at_medium=RSS&at_campaign=rss",
-      "title": "'I'm fed up of swiping': The singles choosing dating events over apps",
+      "url": "https://www.bbc.co.uk/news/articles/cmgel220j7nvo?at_medium=RSS&at_campaign=rss",
+      "title": "Woman 'scared to turn heating on' due to oil cost",
       "publisher": "BBC Business",
-      "published_at": "2026-10-20T10:28:36Z",
+      "published_at": "2026-10-22T05:29:22Z",
       "historical": null,
-      "read_at": "2026-10-22T01:42:50Z",
-      "body_sha256": "9d5d223de69977c097ce64470cb02ca0557a343ba222434ebf3325be611c770d",
-      "body_characters": 5365,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The article discusses singles preferring dating events over apps due to app fatigue and better value for money.",
-        "evidence_ids": [
-          "E7",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: singles preferring dating events",
-          "financial_channel: If dating events offer better ROI, risk appetite may shift",
-          "asset_hypothesis: If more singles attend events, demand for gold may increase"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If more singles attend events, demand for gold may increase due to higher risk appetite."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If more singles attend events, Bitcoin's direction remains unclear as it competes with gold as a hedge."
-        },
-        "uncertainty": "If the event is a one-time trend, it may not significantly impact gold or Bitcoin markets."
-      },
-      "evidence": {
-        "E7": "Olivia says she chose to attend this dating event because she has",
-        "E3": "Many people at the event in Guildford agreed dating events were better"
-      },
-      "analyzed_at": "2026-10-21T08:03:45Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmze4w63ly42o?at_medium=RSS&at_campaign=rss",
-      "title": "Civil servant admits he 'made mistakes' juggling five government jobs",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-21T15:58:05Z",
-      "historical": null,
-      "read_at": "2026-10-22T01:42:50Z",
-      "body_sha256": "3b113a4de8c8bb4ed20df6d6e5506bb2b188fe4303336f0d76553f135a6a88da",
-      "body_characters": 4194,
-      "model_context_characters": 4194,
+      "read_at": "2026-10-22T07:55:58Z",
+      "body_sha256": "f60bfa36077daafb25b8ae007a4cc32d7b142ba19192d0a6c430e3a7c947c618",
+      "body_characters": 2918,
+      "model_context_characters": 2918,
       "status": "AI interpretation generated · not independently verified",
       "analysis": {
-        "summary": "Civil servant Kashim Chowdhury is accused of fraudulently earning over £284,000 by juggling five full-time public sector jobs.",
+        "summary": "A 76-year-old woman is terrified to use heating oil due to its nearly doubled cost in the UK.",
         "evidence_ids": [
-          "E2",
+          "E1",
           "E3"
         ],
         "chain": [
-          "reported_event: civil servant accused of fraud",
-          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
-          "asset_hypothesis: If liquidity improves, gold and Bitcoin may see increased trading."
+          "reported_event: Domestic oil cost nearly doubled",
+          "financial_channel: If supply constraints increase, oil prices may rise further",
+          "asset_hypothesis: If winter approaches, demand for heating oil will increase"
         ],
         "gold": {
           "direction": "up",
-          "condition": "If risk appetite decreases, investors may seek safer assets like gold."
+          "condition": "If global economic recovery continues, demand for gold as a safe-haven will increase"
         },
         "bitcoin": {
           "direction": "mixed",
-          "condition": "If liquidity improves, gold and Bitcoin may see increased trading, but Bitcoin is not a clear safe-haven."
+          "condition": "If risk appetite remains low, Bitcoin may act as an alternative hedge; if liquidity tightens, Bitcoin may underperform"
         },
-        "uncertainty": "If the civil servant is found not guilty, risk appetite may increase, reducing demand for gold and Bitcoin."
+        "uncertainty": "If the government's measures to regulate the heating oil sector are effective, the price increase may be temporary."
       },
       "evidence": {
-        "E2": "Civil servant Kashim Chowdhury is accused of fraudulently earning more than £284,000",
-        "E3": "The civil servant accused of fraudulently earning more than £284,000 by juggling"
+        "E1": "A woman has said she is frightened to put her heating on",
+        "E3": "The cost of filling her heating oil tank has nearly doubled"
       },
-      "analyzed_at": "2026-10-21T22:40:16Z",
+      "analyzed_at": "2026-10-22T07:57:40Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
@@ -229,11 +147,11 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-21T10:00:02Z",
       "historical": null,
-      "read_at": "2026-10-22T01:43:43Z",
+      "read_at": "2026-10-22T07:57:41Z",
       "body_sha256": "27ce87978b0015659a52334570758e52fc73fb83f31a31e261ac8fed4af72b9d",
       "body_characters": 18000,
       "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
@@ -241,52 +159,23 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T22:34:29Z",
       "historical": null,
-      "read_at": "2026-10-22T01:49:17Z",
+      "read_at": "2026-10-22T07:57:41Z",
       "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
       "body_characters": 3344,
       "model_context_characters": 3344,
-      "status": "Unavailable: AI chain contains no financial transmission mechanism"
+      "status": "Public body read; queued for AI"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cm3wv9pn22e5o?at_medium=RSS&at_campaign=rss",
-      "title": "Faisal Islam: Inflation and borrowing figures illustrate chancellor's Budget challenge",
+      "url": "https://www.bbc.co.uk/news/articles/cm4g1zrl2nrqo?at_medium=RSS&at_campaign=rss",
+      "title": "The 'trillion pound' oil fund the government believes Britain could have built",
       "publisher": "BBC Business",
-      "published_at": "2026-10-21T10:20:15Z",
+      "published_at": "2026-10-21T23:27:05Z",
       "historical": null,
-      "read_at": "2026-10-21T18:50:00Z",
-      "body_sha256": "498b10f1706929fbf1914e9ed5e4bc4c49ca6ec7ebd9f0e58e2c2d9e9e078550",
-      "body_characters": 3063,
-      "model_context_characters": 3063,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The UK's inflation rate has reached 3.5%, and the National Debt has surpassed £3 trillion for the first time, posing challenges for the chancellor's upcoming Budget.",
-        "evidence_ids": [
-          "E2",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: Inflation and National Debt figures released",
-          "financial_channel: If inflation rises, it may lead to higher interest rates",
-          "asset_hypothesis: If the National Debt increases, it could affect the cost of borrowing"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation rises, it may lead to higher real yields, making gold more attractive as a hedge."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If the cost of borrowing increases, it may reduce risk appetite, but higher inflation could also increase demand for alternative stores of value."
-        },
-        "uncertainty": "If the economy shows signs of resilience, the need for additional fiscal stimulus may be reduced, easing pressure on the National Debt."
-      },
-      "evidence": {
-        "E2": "The headline rate of inflation has hit 3.5% and is surely heading",
-        "E7": "The National Debt has topped £3 trillion for the first time in"
-      },
-      "analyzed_at": "2026-10-21T14:05:22Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+      "read_at": "2026-10-22T07:57:41Z",
+      "body_sha256": "dbee748f1f99f40abd9675d7d12b57c5caf0b2fddbeb3675ec5b0cf6ee8fa59d",
+      "body_characters": 3950,
+      "model_context_characters": 3950,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
@@ -330,42 +219,124 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/c6gel2xv4493o?at_medium=RSS&at_campaign=rss",
-      "title": "Inflation and government borrowing highest for a year ahead of next week's Budget",
+      "url": "https://www.bbc.co.uk/news/articles/cmze4w63ly42o?at_medium=RSS&at_campaign=rss",
+      "title": "Civil servant admits he 'made mistakes' juggling five government jobs",
       "publisher": "BBC Business",
-      "published_at": "2026-10-21T10:16:17Z",
+      "published_at": "2026-10-21T15:58:05Z",
       "historical": null,
-      "read_at": "2026-10-21T18:56:02Z",
-      "body_sha256": "edb782ea16c9608d5d5e65dd260b104879b39c96de42f3bfd59995833a505a3c",
-      "body_characters": 4639,
-      "model_context_characters": 4500,
+      "read_at": "2026-10-22T01:42:50Z",
+      "body_sha256": "3b113a4de8c8bb4ed20df6d6e5506bb2b188fe4303336f0d76553f135a6a88da",
+      "body_characters": 4194,
+      "model_context_characters": 4194,
       "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
-        "summary": "UK inflation and government borrowing reached their highest in a year, with petrol and diesel prices soaring.",
+        "summary": "Civil servant Kashim Chowdhury is accused of fraudulently earning over £284,000 by juggling five full-time public sector jobs.",
         "evidence_ids": [
-          "E7",
-          "E8"
+          "E2",
+          "E3"
         ],
         "chain": [
-          "reported_event: Inflation and borrowing highest in a year",
-          "financial_channel: If supply disruptions continue, real yields may rise.",
-          "asset_hypothesis: If risk appetite remains low, gold may see some buying."
+          "reported_event: civil servant accused of fraud",
+          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
+          "asset_hypothesis: If liquidity improves, gold and Bitcoin may see increased trading."
         ],
         "gold": {
           "direction": "up",
-          "condition": "If supply disruptions continue, real yields may rise, making gold a more attractive store of value."
+          "condition": "If risk appetite decreases, investors may seek safer assets like gold."
         },
         "bitcoin": {
           "direction": "mixed",
-          "condition": "If risk appetite remains low, gold may see some buying, but liquidity concerns may limit Bitcoin's reaction."
+          "condition": "If liquidity improves, gold and Bitcoin may see increased trading, but Bitcoin is not a clear safe-haven."
         },
-        "uncertainty": "If global oil supplies stabilize, petrol and diesel prices may fall, reducing inflationary pressures."
+        "uncertainty": "If the civil servant is found not guilty, risk appetite may increase, reducing demand for gold and Bitcoin."
       },
       "evidence": {
-        "E7": "UK inflation and government borrowing both hit their highest in a year",
-        "E8": "The pace of UK price rises accelerated to 3.5% in the year"
+        "E2": "Civil servant Kashim Chowdhury is accused of fraudulently earning more than £284,000",
+        "E3": "The civil servant accused of fraudulently earning more than £284,000 by juggling"
       },
-      "analyzed_at": "2026-10-21T18:58:27Z",
+      "analyzed_at": "2026-10-21T22:40:16Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
+      "title": "Economists: Hot PPI shows Fed's work is not done",
+      "publisher": "CNBC Economy",
+      "published_at": "2026-10-15T15:37:59Z",
+      "historical": null,
+      "read_at": "2026-10-22T01:42:48Z",
+      "body_sha256": "baeba6372188834ee43df0bd05d519e236f1a072776fc71ba40fd4d2391112af",
+      "body_characters": 2505,
+      "model_context_characters": 2505,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Wall Street expects a rise in the Federal Reserve's preferred inflation indicator, with core PCE inflation forecasted to increase 0.32%. Hot PPI shows Fed's work is not done.",
+        "evidence_ids": [
+          "E1",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: Hot PPI reported",
+          "financial_channel: If inflation expectations rise, real yields may increase",
+          "asset_hypothesis: If real yields increase, gold may be seen as a safer haven"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations rise, gold may be seen as a safer haven"
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If inflation expectations rise, Bitcoin may face competition from gold as a hedge, but liquidity concerns could also drive demand"
+        },
+        "uncertainty": "If the economy shows signs of resilience, the Fed may not need to hike rates, reducing demand for gold and Bitcoin."
+      },
+      "evidence": {
+        "E1": "Wall Street estimates for the Federal Reserve's preferred inflation indicator now expect",
+        "E3": "A 0.32% increase in PCE would boost the year-over-year core inflation rate"
+      },
+      "analyzed_at": "2026-10-18T01:38:34Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cm3wv9pn22e5o?at_medium=RSS&at_campaign=rss",
+      "title": "Faisal Islam: Inflation and borrowing figures illustrate chancellor's Budget challenge",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-21T10:20:15Z",
+      "historical": null,
+      "read_at": "2026-10-21T18:50:00Z",
+      "body_sha256": "498b10f1706929fbf1914e9ed5e4bc4c49ca6ec7ebd9f0e58e2c2d9e9e078550",
+      "body_characters": 3063,
+      "model_context_characters": 3063,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "The UK's inflation rate has reached 3.5%, and the National Debt has surpassed £3 trillion for the first time, posing challenges for the chancellor's upcoming Budget.",
+        "evidence_ids": [
+          "E2",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: Inflation and National Debt figures released",
+          "financial_channel: If inflation rises, it may lead to higher interest rates",
+          "asset_hypothesis: If the National Debt increases, it could affect the cost of borrowing"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation rises, it may lead to higher real yields, making gold more attractive as a hedge."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If the cost of borrowing increases, it may reduce risk appetite, but higher inflation could also increase demand for alternative stores of value."
+        },
+        "uncertainty": "If the economy shows signs of resilience, the need for additional fiscal stimulus may be reduced, easing pressure on the National Debt."
+      },
+      "evidence": {
+        "E2": "The headline rate of inflation has hit 3.5% and is surely heading",
+        "E7": "The National Debt has topped £3 trillion for the first time in"
+      },
+      "analyzed_at": "2026-10-21T14:05:22Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"

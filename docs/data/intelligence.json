@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-22T18:49:46Z",
-    "scan_started_at": "2026-10-22T18:44:30Z",
+    "checked_at": "2026-10-22T22:49:05Z",
+    "scan_started_at": "2026-10-22T22:39:05Z",
     "provider_requested": "local",
     "article_reads": 9,
     "ai_interpretations": 3,
-    "new_interpretations": 2,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,6 +19,30 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.bbc.co.uk/news/articles/cm9qzgg5z89no?at_medium=RSS&at_campaign=rss",
+      "title": "Is an 'AI war' complicating your job search?",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-22T05:01:31Z",
+      "historical": null,
+      "read_at": "2026-10-22T22:39:07Z",
+      "body_sha256": "9770bee2e9f1e0513220ea18d5797692c990aff39b7139833976bfe46c0ba186",
+      "body_characters": 8939,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cm4g1zrl2nrqo?at_medium=RSS&at_campaign=rss",
+      "title": "The 'trillion pound' oil fund the government believes Britain could have built",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-21T23:27:05Z",
+      "historical": null,
+      "read_at": "2026-10-22T22:44:25Z",
+      "body_sha256": "68895ef9ae1942e8c0e1d90cc2a82ef0dc90622e2f7bf2ef9c81a3d50360afa3",
+      "body_characters": 3950,
+      "model_context_characters": 3950,
+      "status": "Unavailable: AI chain contains no financial transmission mechanism"
+    },
+    {
       "url": "https://www.bbc.co.uk/news/articles/cmx23dwp3qzro?at_medium=RSS&at_campaign=rss",
       "title": "'I wasn't thinking straight' says five jobs civil servant",
       "publisher": "BBC Business",
@@ -28,7 +52,7 @@
       "body_sha256": "31f46a92d8e7b21706ad180f684a42c012bae2a7384cb04b8f375617abae68a0",
       "body_characters": 2912,
       "model_context_characters": 2912,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "A civil servant admitted to fraudulently juggling five government jobs, citing panic and fear of losing his Defra position.",
         "evidence_ids": [
@@ -69,7 +93,7 @@
       "body_sha256": "070415832d1ad51ee6b5f9f765713703571c7c6f38d99abf9d5e9127d477d753",
       "body_characters": 4355,
       "model_context_characters": 4355,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "Barclays is cutting 5,000 jobs and reporting strong profits, equating to 5% of its global staff.",
         "evidence_ids": [
@@ -106,7 +130,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T22:34:29Z",
       "historical": null,
-      "read_at": "2026-10-22T18:49:45Z",
+      "read_at": "2026-10-22T22:49:04Z",
       "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
       "body_characters": 3344,
       "model_context_characters": 3344,
@@ -118,7 +142,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-22T14:28:59Z",
       "historical": null,
-      "read_at": "2026-10-22T18:49:45Z",
+      "read_at": "2026-10-22T22:49:05Z",
       "body_sha256": "9a1929811e8713af9a2626f36db90393fc89694bfb7074f059d4473e6d399da4",
       "body_characters": 3540,
       "model_context_characters": 3540,
@@ -130,7 +154,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-22T12:00:44Z",
       "historical": null,
-      "read_at": "2026-10-22T18:49:46Z",
+      "read_at": "2026-10-22T22:49:05Z",
       "body_sha256": "34170ef3806493e53b9be25912133e8db78e559a1ca9f35c008179743537fbbe",
       "body_characters": 5478,
       "model_context_characters": 4500,
@@ -191,34 +215,10 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-21T10:00:02Z",
       "historical": null,
-      "read_at": "2026-10-22T18:49:46Z",
+      "read_at": "2026-10-22T22:49:05Z",
       "body_sha256": "27ce87978b0015659a52334570758e52fc73fb83f31a31e261ac8fed4af72b9d",
       "body_characters": 18000,
       "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cm9qzgg5z89no?at_medium=RSS&at_campaign=rss",
-      "title": "Is an 'AI war' complicating your job search?",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-22T05:01:31Z",
-      "historical": null,
-      "read_at": "2026-10-22T18:49:46Z",
-      "body_sha256": "9770bee2e9f1e0513220ea18d5797692c990aff39b7139833976bfe46c0ba186",
-      "body_characters": 8939,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cm4g1zrl2nrqo?at_medium=RSS&at_campaign=rss",
-      "title": "The 'trillion pound' oil fund the government believes Britain could have built",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-21T23:27:05Z",
-      "historical": null,
-      "read_at": "2026-10-22T18:49:46Z",
-      "body_sha256": "68895ef9ae1942e8c0e1d90cc2a82ef0dc90622e2f7bf2ef9c81a3d50360afa3",
-      "body_characters": 3950,
-      "model_context_characters": 3950,
       "status": "Public body read; queued for AI"
     }
   ]

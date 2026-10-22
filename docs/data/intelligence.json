@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-21T22:45:17Z",
-    "scan_started_at": "2026-10-21T22:37:21Z",
+    "checked_at": "2026-10-22T01:53:53Z",
+    "scan_started_at": "2026-10-22T01:43:42Z",
     "provider_requested": "local",
     "article_reads": 10,
     "ai_interpretations": 8,
-    "new_interpretations": 1,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,12 +19,176 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
+      "title": "Economists: Hot PPI shows Fed's work is not done",
+      "publisher": "CNBC Economy",
+      "published_at": "2026-10-15T15:37:59Z",
+      "historical": null,
+      "read_at": "2026-10-22T01:42:48Z",
+      "body_sha256": "baeba6372188834ee43df0bd05d519e236f1a072776fc71ba40fd4d2391112af",
+      "body_characters": 2505,
+      "model_context_characters": 2505,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Wall Street expects a rise in the Federal Reserve's preferred inflation indicator, with core PCE inflation forecasted to increase 0.32%. Hot PPI shows Fed's work is not done.",
+        "evidence_ids": [
+          "E1",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: Hot PPI reported",
+          "financial_channel: If inflation expectations rise, real yields may increase",
+          "asset_hypothesis: If real yields increase, gold may be seen as a safer haven"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations rise, gold may be seen as a safer haven"
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If inflation expectations rise, Bitcoin may face competition from gold as a hedge, but liquidity concerns could also drive demand"
+        },
+        "uncertainty": "If the economy shows signs of resilience, the Fed may not need to hike rates, reducing demand for gold and Bitcoin."
+      },
+      "evidence": {
+        "E1": "Wall Street estimates for the Federal Reserve's preferred inflation indicator now expect",
+        "E3": "A 0.32% increase in PCE would boost the year-over-year core inflation rate"
+      },
+      "analyzed_at": "2026-10-18T01:38:34Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cqzrdpkm3g84o?at_medium=RSS&at_campaign=rss",
+      "title": "Paddy Power cuts 1,400 jobs and blames betting tax rises",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-20T14:53:02Z",
+      "historical": null,
+      "read_at": "2026-10-22T01:42:49Z",
+      "body_sha256": "c843ad2fa66810b307dcd905db784960bbb63e9dd6d413080a196c744c58687e",
+      "body_characters": 3091,
+      "model_context_characters": 3091,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Flutter, owner of Paddy Power, plans to cut up to 1,400 jobs due to increased gambling taxes in the UK and Ireland.",
+        "evidence_ids": [
+          "E5",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: job cuts announced",
+          "financial_channel: If job cuts reduce fixed costs, it may improve profitability.",
+          "asset_hypothesis: If Flutter reduces costs, it may retain more profit."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If economic uncertainty rises, investors may seek physical gold as a hedge."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite decreases, Bitcoin may underperform as a risk asset; if liquidity tightens, it may outperform as a store of value."
+        },
+        "uncertainty": "If the government relaxes the tax increases, job cuts may be avoided."
+      },
+      "evidence": {
+        "E5": "Paddy Power-owner Flutter has announced plans to cut up to 1,400 jobs",
+        "E7": "The government announced taxes rises on online casino and sports betting, with"
+      },
+      "analyzed_at": "2026-10-20T18:44:31Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
+      "title": "IMF sees milder global slowdown as AI boom offsets war hit — warns resilience is nearing limits",
+      "publisher": "CNBC Economy",
+      "published_at": "2026-10-15T06:35:31Z",
+      "historical": null,
+      "read_at": "2026-10-22T01:42:49Z",
+      "body_sha256": "7207da98d7cf10f3438ddc91b4422a80292e51ab2fe38f21b63018c76672348f",
+      "body_characters": 6140,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "The IMF raised its global growth forecast for 2026 and 2027, citing AI investment and supply resilience, but warned of limits to economic resilience.",
+        "evidence_ids": [
+          "E2",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: IMF raised growth forecast",
+          "financial_channel: If AI investment and supply resilience continue, growth may remain steady",
+          "asset_hypothesis: If global supply chains remain resilient, asset prices may stabilize"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation remains high and central banks maintain restrictive monetary policies, gold may benefit as a hedge."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite remains high due to AI investment, Bitcoin may see demand; otherwise, it may face selling pressure."
+        },
+        "uncertainty": "If the Strait of Hormuz does not reopen as expected, global oil prices could spike, affecting economic resilience."
+      },
+      "evidence": {
+        "E2": "BANGKOK — The International Monetary Fund has raised its forecast for global",
+        "E6": "The IMF expects the global economy to grow at 3.1% in 2026,"
+      },
+      "analyzed_at": "2026-10-19T17:43:56Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cj62y9dnd6pwo?at_medium=RSS&at_campaign=rss",
+      "title": "'I'm fed up of swiping': The singles choosing dating events over apps",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-20T10:28:36Z",
+      "historical": null,
+      "read_at": "2026-10-22T01:42:50Z",
+      "body_sha256": "9d5d223de69977c097ce64470cb02ca0557a343ba222434ebf3325be611c770d",
+      "body_characters": 5365,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "The article discusses singles preferring dating events over apps due to app fatigue and better value for money.",
+        "evidence_ids": [
+          "E7",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: singles preferring dating events",
+          "financial_channel: If dating events offer better ROI, risk appetite may shift",
+          "asset_hypothesis: If more singles attend events, demand for gold may increase"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If more singles attend events, demand for gold may increase due to higher risk appetite."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If more singles attend events, Bitcoin's direction remains unclear as it competes with gold as a hedge."
+        },
+        "uncertainty": "If the event is a one-time trend, it may not significantly impact gold or Bitcoin markets."
+      },
+      "evidence": {
+        "E7": "Olivia says she chose to attend this dating event because she has",
+        "E3": "Many people at the event in Guildford agreed dating events were better"
+      },
+      "analyzed_at": "2026-10-21T08:03:45Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
       "url": "https://www.bbc.co.uk/news/articles/cmze4w63ly42o?at_medium=RSS&at_campaign=rss",
       "title": "Civil servant admits he 'made mistakes' juggling five government jobs",
       "publisher": "BBC Business",
       "published_at": "2026-10-21T15:58:05Z",
       "historical": null,
-      "read_at": "2026-10-21T22:37:21Z",
+      "read_at": "2026-10-22T01:42:50Z",
       "body_sha256": "3b113a4de8c8bb4ed20df6d6e5506bb2b188fe4303336f0d76553f135a6a88da",
       "body_characters": 4194,
       "model_context_characters": 4194,
@@ -65,7 +229,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-21T10:00:02Z",
       "historical": null,
-      "read_at": "2026-10-21T22:40:16Z",
+      "read_at": "2026-10-22T01:43:43Z",
       "body_sha256": "27ce87978b0015659a52334570758e52fc73fb83f31a31e261ac8fed4af72b9d",
       "body_characters": 18000,
       "model_context_characters": 4500,
@@ -77,11 +241,11 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T22:34:29Z",
       "historical": null,
-      "read_at": "2026-10-21T22:45:17Z",
+      "read_at": "2026-10-22T01:49:17Z",
       "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
       "body_characters": 3344,
       "model_context_characters": 3344,
-      "status": "Public body read; queued for AI"
+      "status": "Unavailable: AI chain contains no financial transmission mechanism"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/cm3wv9pn22e5o?at_medium=RSS&at_campaign=rss",
@@ -202,170 +366,6 @@
         "E8": "The pace of UK price rises accelerated to 3.5% in the year"
       },
       "analyzed_at": "2026-10-21T18:58:27Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
-      "title": "Economists: Hot PPI shows Fed's work is not done",
-      "publisher": "CNBC Economy",
-      "published_at": "2026-10-15T15:37:59Z",
-      "historical": null,
-      "read_at": "2026-10-20T22:32:03Z",
-      "body_sha256": "baeba6372188834ee43df0bd05d519e236f1a072776fc71ba40fd4d2391112af",
-      "body_characters": 2505,
-      "model_context_characters": 2505,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Wall Street expects a rise in the Federal Reserve's preferred inflation indicator, with core PCE inflation forecasted to increase 0.32%. Hot PPI shows Fed's work is not done.",
-        "evidence_ids": [
-          "E1",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: Hot PPI reported",
-          "financial_channel: If inflation expectations rise, real yields may increase",
-          "asset_hypothesis: If real yields increase, gold may be seen as a safer haven"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation expectations rise, gold may be seen as a safer haven"
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If inflation expectations rise, Bitcoin may face competition from gold as a hedge, but liquidity concerns could also drive demand"
-        },
-        "uncertainty": "If the economy shows signs of resilience, the Fed may not need to hike rates, reducing demand for gold and Bitcoin."
-      },
-      "evidence": {
-        "E1": "Wall Street estimates for the Federal Reserve's preferred inflation indicator now expect",
-        "E3": "A 0.32% increase in PCE would boost the year-over-year core inflation rate"
-      },
-      "analyzed_at": "2026-10-18T01:38:34Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cqzrdpkm3g84o?at_medium=RSS&at_campaign=rss",
-      "title": "Paddy Power cuts 1,400 jobs and blames betting tax rises",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-20T14:53:02Z",
-      "historical": null,
-      "read_at": "2026-10-21T01:52:08Z",
-      "body_sha256": "c843ad2fa66810b307dcd905db784960bbb63e9dd6d413080a196c744c58687e",
-      "body_characters": 3091,
-      "model_context_characters": 3091,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Flutter, owner of Paddy Power, plans to cut up to 1,400 jobs due to increased gambling taxes in the UK and Ireland.",
-        "evidence_ids": [
-          "E5",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: job cuts announced",
-          "financial_channel: If job cuts reduce fixed costs, it may improve profitability.",
-          "asset_hypothesis: If Flutter reduces costs, it may retain more profit."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If economic uncertainty rises, investors may seek physical gold as a hedge."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite decreases, Bitcoin may underperform as a risk asset; if liquidity tightens, it may outperform as a store of value."
-        },
-        "uncertainty": "If the government relaxes the tax increases, job cuts may be avoided."
-      },
-      "evidence": {
-        "E5": "Paddy Power-owner Flutter has announced plans to cut up to 1,400 jobs",
-        "E7": "The government announced taxes rises on online casino and sports betting, with"
-      },
-      "analyzed_at": "2026-10-20T18:44:31Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
-      "title": "IMF sees milder global slowdown as AI boom offsets war hit — warns resilience is nearing limits",
-      "publisher": "CNBC Economy",
-      "published_at": "2026-10-15T06:35:31Z",
-      "historical": null,
-      "read_at": "2026-10-21T14:02:27Z",
-      "body_sha256": "7207da98d7cf10f3438ddc91b4422a80292e51ab2fe38f21b63018c76672348f",
-      "body_characters": 6140,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The IMF raised its global growth forecast for 2026 and 2027, citing AI investment and supply resilience, but warned of limits to economic resilience.",
-        "evidence_ids": [
-          "E2",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: IMF raised growth forecast",
-          "financial_channel: If AI investment and supply resilience continue, growth may remain steady",
-          "asset_hypothesis: If global supply chains remain resilient, asset prices may stabilize"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation remains high and central banks maintain restrictive monetary policies, gold may benefit as a hedge."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite remains high due to AI investment, Bitcoin may see demand; otherwise, it may face selling pressure."
-        },
-        "uncertainty": "If the Strait of Hormuz does not reopen as expected, global oil prices could spike, affecting economic resilience."
-      },
-      "evidence": {
-        "E2": "BANGKOK — The International Monetary Fund has raised its forecast for global",
-        "E6": "The IMF expects the global economy to grow at 3.1% in 2026,"
-      },
-      "analyzed_at": "2026-10-19T17:43:56Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cj62y9dnd6pwo?at_medium=RSS&at_campaign=rss",
-      "title": "'I'm fed up of swiping': The singles choosing dating events over apps",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-20T10:28:36Z",
-      "historical": null,
-      "read_at": "2026-10-21T08:01:12Z",
-      "body_sha256": "9d5d223de69977c097ce64470cb02ca0557a343ba222434ebf3325be611c770d",
-      "body_characters": 5365,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The article discusses singles preferring dating events over apps due to app fatigue and better value for money.",
-        "evidence_ids": [
-          "E7",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: singles preferring dating events",
-          "financial_channel: If dating events offer better ROI, risk appetite may shift",
-          "asset_hypothesis: If more singles attend events, demand for gold may increase"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If more singles attend events, demand for gold may increase due to higher risk appetite."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If more singles attend events, Bitcoin's direction remains unclear as it competes with gold as a hedge."
-        },
-        "uncertainty": "If the event is a one-time trend, it may not significantly impact gold or Bitcoin markets."
-      },
-      "evidence": {
-        "E7": "Olivia says she chose to attend this dating event because she has",
-        "E3": "Many people at the event in Guildford agreed dating events were better"
-      },
-      "analyzed_at": "2026-10-21T08:03:45Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"

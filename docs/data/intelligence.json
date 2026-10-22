@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-22T07:57:41Z",
-    "scan_started_at": "2026-10-22T07:53:29Z",
+    "checked_at": "2026-10-22T14:11:09Z",
+    "scan_started_at": "2026-10-22T14:01:29Z",
     "provider_requested": "local",
-    "article_reads": 10,
-    "ai_interpretations": 7,
-    "new_interpretations": 2,
+    "article_reads": 9,
+    "ai_interpretations": 3,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,127 +19,16 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/c6gel2xv4493o?at_medium=RSS&at_campaign=rss",
-      "title": "Inflation and government borrowing highest for a year ahead of next week's Budget",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-21T10:16:17Z",
+      "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
+      "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
+      "publisher": "CNBC Economy",
+      "published_at": "2026-10-16T22:34:29Z",
       "historical": null,
-      "read_at": "2026-10-22T07:53:31Z",
-      "body_sha256": "5b5fd6eb5f527e8bf6fb314be7c881aef5a1cc5a567eb9a3960d517011c9e02f",
-      "body_characters": 4708,
-      "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "UK inflation and government borrowing reached their highest levels in a year, adding pressure to Chancellor John Healey before his Budget.",
-        "evidence_ids": [
-          "E7",
-          "E1"
-        ],
-        "chain": [
-          "reported_event: Inflation and borrowing highest in a year",
-          "financial_channel: If inflation rises, gold demand may increase as a hedge.",
-          "asset_hypothesis: If government borrowing increases, it may crowd out private investment."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation rises, gold may be seen as a hedge against currency depreciation."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite remains high, Bitcoin may not see a significant shift; if risk appetite decreases, it could act as a hedge."
-        },
-        "uncertainty": "If oil supplies improve, inflation could decrease, reducing gold's appeal as a hedge."
-      },
-      "evidence": {
-        "E7": "UK inflation and government borrowing both hit their highest in a year",
-        "E1": "But the inflation figure came as the ONS said the government borrowed"
-      },
-      "analyzed_at": "2026-10-22T07:55:57Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cqzrdpkm3g84o?at_medium=RSS&at_campaign=rss",
-      "title": "Paddy Power cuts 1,400 jobs and blames betting tax rises",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-20T14:53:02Z",
-      "historical": null,
-      "read_at": "2026-10-22T07:52:13Z",
-      "body_sha256": "c843ad2fa66810b307dcd905db784960bbb63e9dd6d413080a196c744c58687e",
-      "body_characters": 3091,
-      "model_context_characters": 3091,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Flutter, owner of Paddy Power, plans to cut up to 1,400 jobs due to increased gambling taxes in the UK and Ireland.",
-        "evidence_ids": [
-          "E5",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: job cuts announced",
-          "financial_channel: If job cuts reduce fixed costs, it may improve profitability.",
-          "asset_hypothesis: If Flutter reduces costs, it may retain more profit."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If economic uncertainty rises, investors may seek physical gold as a hedge."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite decreases, Bitcoin may underperform as a risk asset; if liquidity tightens, it may outperform as a store of value."
-        },
-        "uncertainty": "If the government relaxes the tax increases, job cuts may be avoided."
-      },
-      "evidence": {
-        "E5": "Paddy Power-owner Flutter has announced plans to cut up to 1,400 jobs",
-        "E7": "The government announced taxes rises on online casino and sports betting, with"
-      },
-      "analyzed_at": "2026-10-20T18:44:31Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmgel220j7nvo?at_medium=RSS&at_campaign=rss",
-      "title": "Woman 'scared to turn heating on' due to oil cost",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-22T05:29:22Z",
-      "historical": null,
-      "read_at": "2026-10-22T07:55:58Z",
-      "body_sha256": "f60bfa36077daafb25b8ae007a4cc32d7b142ba19192d0a6c430e3a7c947c618",
-      "body_characters": 2918,
-      "model_context_characters": 2918,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "A 76-year-old woman is terrified to use heating oil due to its nearly doubled cost in the UK.",
-        "evidence_ids": [
-          "E1",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: Domestic oil cost nearly doubled",
-          "financial_channel: If supply constraints increase, oil prices may rise further",
-          "asset_hypothesis: If winter approaches, demand for heating oil will increase"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If global economic recovery continues, demand for gold as a safe-haven will increase"
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite remains low, Bitcoin may act as an alternative hedge; if liquidity tightens, Bitcoin may underperform"
-        },
-        "uncertainty": "If the government's measures to regulate the heating oil sector are effective, the price increase may be temporary."
-      },
-      "evidence": {
-        "E1": "A woman has said she is frightened to put her heating on",
-        "E3": "The cost of filling her heating oil tank has nearly doubled"
-      },
-      "analyzed_at": "2026-10-22T07:57:40Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+      "read_at": "2026-10-22T14:01:31Z",
+      "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
+      "body_characters": 3344,
+      "model_context_characters": 3344,
+      "status": "Unavailable: AI chain contains no financial transmission mechanism"
     },
     {
       "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/21/trump-ice-construction-worker-deportation",
@@ -147,34 +36,22 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-21T10:00:02Z",
       "historical": null,
-      "read_at": "2026-10-22T07:57:41Z",
+      "read_at": "2026-10-22T14:06:15Z",
       "body_sha256": "27ce87978b0015659a52334570758e52fc73fb83f31a31e261ac8fed4af72b9d",
       "body_characters": 18000,
       "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
+      "status": "Unavailable: AI reported event does not match the article topic"
     },
     {
-      "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
-      "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
-      "publisher": "CNBC Economy",
-      "published_at": "2026-10-16T22:34:29Z",
-      "historical": null,
-      "read_at": "2026-10-22T07:57:41Z",
-      "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
-      "body_characters": 3344,
-      "model_context_characters": 3344,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cm4g1zrl2nrqo?at_medium=RSS&at_campaign=rss",
-      "title": "The 'trillion pound' oil fund the government believes Britain could have built",
+      "url": "https://www.bbc.co.uk/news/articles/cm4g1p347qgxo?at_medium=RSS&at_campaign=rss",
+      "title": "Barclays cutting 5,000 jobs as it increases reliance on AI",
       "publisher": "BBC Business",
-      "published_at": "2026-10-21T23:27:05Z",
+      "published_at": "2026-10-22T09:37:58Z",
       "historical": null,
-      "read_at": "2026-10-22T07:57:41Z",
-      "body_sha256": "dbee748f1f99f40abd9675d7d12b57c5caf0b2fddbeb3675ec5b0cf6ee8fa59d",
-      "body_characters": 3950,
-      "model_context_characters": 3950,
+      "read_at": "2026-10-22T14:11:08Z",
+      "body_sha256": "2aad306fadb86076bdc79a90224765dfca9ef31aad30afcde93641ca41229821",
+      "body_characters": 3250,
+      "model_context_characters": 3250,
       "status": "Public body read; queued for AI"
     },
     {
@@ -219,45 +96,16 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cmze4w63ly42o?at_medium=RSS&at_campaign=rss",
-      "title": "Civil servant admits he 'made mistakes' juggling five government jobs",
+      "url": "https://www.bbc.co.uk/news/articles/cm9qzgg5z89no?at_medium=RSS&at_campaign=rss",
+      "title": "Is an 'AI war' complicating your job search?",
       "publisher": "BBC Business",
-      "published_at": "2026-10-21T15:58:05Z",
+      "published_at": "2026-10-22T05:01:31Z",
       "historical": null,
-      "read_at": "2026-10-22T01:42:50Z",
-      "body_sha256": "3b113a4de8c8bb4ed20df6d6e5506bb2b188fe4303336f0d76553f135a6a88da",
-      "body_characters": 4194,
-      "model_context_characters": 4194,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Civil servant Kashim Chowdhury is accused of fraudulently earning over £284,000 by juggling five full-time public sector jobs.",
-        "evidence_ids": [
-          "E2",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: civil servant accused of fraud",
-          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
-          "asset_hypothesis: If liquidity improves, gold and Bitcoin may see increased trading."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If risk appetite decreases, investors may seek safer assets like gold."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If liquidity improves, gold and Bitcoin may see increased trading, but Bitcoin is not a clear safe-haven."
-        },
-        "uncertainty": "If the civil servant is found not guilty, risk appetite may increase, reducing demand for gold and Bitcoin."
-      },
-      "evidence": {
-        "E2": "Civil servant Kashim Chowdhury is accused of fraudulently earning more than £284,000",
-        "E3": "The civil servant accused of fraudulently earning more than £284,000 by juggling"
-      },
-      "analyzed_at": "2026-10-21T22:40:16Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+      "read_at": "2026-10-22T14:11:08Z",
+      "body_sha256": "9770bee2e9f1e0513220ea18d5797692c990aff39b7139833976bfe46c0ba186",
+      "body_characters": 8939,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
@@ -301,45 +149,77 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cm3wv9pn22e5o?at_medium=RSS&at_campaign=rss",
-      "title": "Faisal Islam: Inflation and borrowing figures illustrate chancellor's Budget challenge",
+      "url": "https://www.bbc.co.uk/news/articles/cm4g1zrl2nrqo?at_medium=RSS&at_campaign=rss",
+      "title": "The 'trillion pound' oil fund the government believes Britain could have built",
       "publisher": "BBC Business",
-      "published_at": "2026-10-21T10:20:15Z",
+      "published_at": "2026-10-21T23:27:05Z",
       "historical": null,
-      "read_at": "2026-10-21T18:50:00Z",
-      "body_sha256": "498b10f1706929fbf1914e9ed5e4bc4c49ca6ec7ebd9f0e58e2c2d9e9e078550",
-      "body_characters": 3063,
-      "model_context_characters": 3063,
+      "read_at": "2026-10-22T14:11:09Z",
+      "body_sha256": "68895ef9ae1942e8c0e1d90cc2a82ef0dc90622e2f7bf2ef9c81a3d50360afa3",
+      "body_characters": 3950,
+      "model_context_characters": 3950,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmze4w63ly42o?at_medium=RSS&at_campaign=rss",
+      "title": "Civil servant admits he 'made mistakes' juggling five government jobs",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-21T15:58:05Z",
+      "historical": null,
+      "read_at": "2026-10-22T01:42:50Z",
+      "body_sha256": "3b113a4de8c8bb4ed20df6d6e5506bb2b188fe4303336f0d76553f135a6a88da",
+      "body_characters": 4194,
+      "model_context_characters": 4194,
       "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
-        "summary": "The UK's inflation rate has reached 3.5%, and the National Debt has surpassed £3 trillion for the first time, posing challenges for the chancellor's upcoming Budget.",
+        "summary": "Civil servant Kashim Chowdhury is accused of fraudulently earning over £284,000 by juggling five full-time public sector jobs.",
         "evidence_ids": [
           "E2",
-          "E7"
+          "E3"
         ],
         "chain": [
-          "reported_event: Inflation and National Debt figures released",
-          "financial_channel: If inflation rises, it may lead to higher interest rates",
-          "asset_hypothesis: If the National Debt increases, it could affect the cost of borrowing"
+          "reported_event: civil servant accused of fraud",
+          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
+          "asset_hypothesis: If liquidity improves, gold and Bitcoin may see increased trading."
         ],
         "gold": {
           "direction": "up",
-          "condition": "If inflation rises, it may lead to higher real yields, making gold more attractive as a hedge."
+          "condition": "If risk appetite decreases, investors may seek safer assets like gold."
         },
         "bitcoin": {
           "direction": "mixed",
-          "condition": "If the cost of borrowing increases, it may reduce risk appetite, but higher inflation could also increase demand for alternative stores of value."
+          "condition": "If liquidity improves, gold and Bitcoin may see increased trading, but Bitcoin is not a clear safe-haven."
         },
-        "uncertainty": "If the economy shows signs of resilience, the need for additional fiscal stimulus may be reduced, easing pressure on the National Debt."
+        "uncertainty": "If the civil servant is found not guilty, risk appetite may increase, reducing demand for gold and Bitcoin."
       },
       "evidence": {
-        "E2": "The headline rate of inflation has hit 3.5% and is surely heading",
-        "E7": "The National Debt has topped £3 trillion for the first time in"
+        "E2": "Civil servant Kashim Chowdhury is accused of fraudulently earning more than £284,000",
+        "E3": "The civil servant accused of fraudulently earning more than £284,000 by juggling"
       },
-      "analyzed_at": "2026-10-21T14:05:22Z",
+      "analyzed_at": "2026-10-21T22:40:16Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/environment/2026/oct/22/deepwater-horizon-oil-spill-gulf-marine-life",
+      "title": "Marine life in Gulf of Mexico has still not fully recovered from 2010 BP oil spill",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-22T12:00:44Z",
+      "historical": null,
+      "read_at": "2026-10-22T14:11:09Z",
+      "body_sha256": "34170ef3806493e53b9be25912133e8db78e559a1ca9f35c008179743537fbbe",
+      "body_characters": 5478,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/videos/cmd7qr0ezrq7o?at_medium=RSS&at_campaign=rss",
+      "title": "Woman 'scared to turn heating on' due to oil cost",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-22T09:55:16Z",
+      "historical": null,
+      "status": "Unavailable: Insufficient public article text"
     }
   ]
 }

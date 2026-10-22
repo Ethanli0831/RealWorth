@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-10-22T01:46:18Z",
+    "checked_at": "2026-10-22T06:39:15Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,50 +8,9 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-10-21T11:39:02Z",
-    "stale": true,
-    "failures": [
-      {
-        "series": "GDPC1",
-        "error": "ParserError"
-      },
-      {
-        "series": "CPIAUCSL",
-        "error": "ParserError"
-      },
-      {
-        "series": "FEDFUNDS",
-        "error": "ParserError"
-      },
-      {
-        "series": "UNRATE",
-        "error": "ParserError"
-      },
-      {
-        "series": "TDSP",
-        "error": "ParserError"
-      },
-      {
-        "series": "QUSPAM770A",
-        "error": "ParserError"
-      },
-      {
-        "series": "GFDEGDQ188S",
-        "error": "ParserError"
-      },
-      {
-        "series": "BAMLH0A0HYM2",
-        "error": "ParserError"
-      },
-      {
-        "series": "DFII10",
-        "error": "ParserError"
-      },
-      {
-        "series": "T10Y3M",
-        "error": "ParserError"
-      }
-    ],
+    "checked_at": "2026-10-22T06:39:15Z",
+    "stale": false,
+    "failures": [],
     "indicators": [
       {
         "id": "GDPC1",
@@ -126,9 +85,9 @@
       {
         "id": "BAMLH0A0HYM2",
         "name": "US high-yield credit spread",
-        "value": 3.29,
+        "value": 3.33,
         "unit": "percentage points",
-        "period": "2026-10-19",
+        "period": "2026-10-20",
         "stale": false,
         "change": 0.46,
         "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
@@ -136,21 +95,21 @@
       {
         "id": "DFII10",
         "name": "10-year Treasury real yield",
-        "value": 2.8,
+        "value": 2.77,
         "unit": "%",
-        "period": "2026-10-19",
+        "period": "2026-10-20",
         "stale": false,
-        "change": 0.9,
+        "change": 0.86,
         "source": "https://fred.stlouisfed.org/series/DFII10"
       },
       {
         "id": "T10Y3M",
         "name": "10-year minus 3-month Treasury yield",
-        "value": 0.86,
+        "value": 0.88,
         "unit": "percentage points",
-        "period": "2026-10-20",
+        "period": "2026-10-21",
         "stale": false,
-        "change": 0.31,
+        "change": 0.27,
         "source": "https://fred.stlouisfed.org/series/T10Y3M"
       }
     ],
@@ -160,10 +119,22 @@
     "short_cycle": "Partial short-cycle signals · labour baseline unavailable",
     "pressure_flags": [],
     "long_cycle": "Not identified: these US indicators do not establish a complete long-term debt-cycle phase.",
-    "outlook": "If growth keeps slowing while inflation rises, watch for a policy trade-off. If inflation eases without worsening credit or employment, a softer adjustment is more plausible. These are conditional scenarios, not probability forecasts.",
-    "attempted_at": "2026-10-22T01:46:18Z"
+    "outlook": "If growth keeps slowing while inflation rises, watch for a policy trade-off. If inflation eases without worsening credit or employment, a softer adjustment is more plausible. These are conditional scenarios, not probability forecasts."
   },
   "news": [
+    {
+      "title": "Woman 'scared to turn heating on' due to oil cost",
+      "url": "https://www.bbc.co.uk/news/articles/cmgel220j7nvo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-22T05:29:22Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "energy"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+    },
     {
       "title": "The 'trillion pound' oil fund the government believes Britain could have built",
       "url": "https://www.bbc.co.uk/news/articles/cm4g1zrl2nrqo?at_medium=RSS&at_campaign=rss",
@@ -432,47 +403,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-10-22T01:46:18Z",
+      "checked_at": "2026-10-22T06:39:15Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-22T01:46:18Z",
+      "last_success": "2026-10-22T06:39:15Z",
       "matched": 0
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-10-22T01:46:18Z",
+      "checked_at": "2026-10-22T06:39:15Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-22T01:46:18Z",
+      "last_success": "2026-10-22T06:39:15Z",
       "matched": 0
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-10-22T01:46:18Z",
+      "checked_at": "2026-10-22T06:39:15Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-22T01:46:18Z",
-      "matched": 8
+      "last_success": "2026-10-22T06:39:15Z",
+      "matched": 7
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-10-22T01:46:18Z",
+      "checked_at": "2026-10-22T06:39:15Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-22T01:46:18Z",
+      "last_success": "2026-10-22T06:39:15Z",
       "matched": 1
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-10-22T01:46:18Z",
+      "checked_at": "2026-10-22T06:39:15Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -482,10 +453,10 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-10-22T01:46:18Z",
+      "checked_at": "2026-10-22T06:39:15Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-22T01:46:18Z",
+      "last_success": "2026-10-22T06:39:15Z",
       "matched": 0
     }
   ],

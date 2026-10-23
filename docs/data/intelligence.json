@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-23T08:00:31Z",
-    "scan_started_at": "2026-10-23T07:53:29Z",
+    "checked_at": "2026-10-23T13:51:09Z",
+    "scan_started_at": "2026-10-23T13:46:43Z",
     "provider_requested": "local",
     "article_reads": 9,
-    "ai_interpretations": 4,
-    "new_interpretations": 0,
+    "ai_interpretations": 6,
+    "new_interpretations": 2,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,6 +19,47 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.theguardian.com/environment/2026/oct/22/deepwater-horizon-oil-spill-gulf-marine-life",
+      "title": "Marine life in Gulf of Mexico has still not fully recovered from 2010 BP oil spill",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-22T12:00:44Z",
+      "historical": null,
+      "read_at": "2026-10-23T13:43:34Z",
+      "body_sha256": "34170ef3806493e53b9be25912133e8db78e559a1ca9f35c008179743537fbbe",
+      "body_characters": 5478,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "A new study shows dramatic population drops in fish, cephalopods, and other marine life in the Gulf of Mexico after the 2010 BP oil spill.",
+        "evidence_ids": [
+          "E5",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: Marine life population drops",
+          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
+          "asset_hypothesis: If liquidity improves, investors may shift funds out of gold."
+        ],
+        "gold": {
+          "direction": "down",
+          "condition": "If risk appetite decreases, investors may seek safer assets."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If liquidity improves, investors may shift funds out of gold, but Bitcoin is not a clear safe-haven."
+        },
+        "uncertainty": "The study does not provide specific evidence of Bitcoin market reaction."
+      },
+      "evidence": {
+        "E5": "New study reveals dramatic population drops in fish, cephalopods and more after",
+        "E6": "Marine life in the Gulf of Mexico plummeted by about 60% after"
+      },
+      "analyzed_at": "2026-10-23T01:49:11Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
       "url": "https://www.bbc.co.uk/news/videos/cmd7qr0ezrq7o?at_medium=RSS&at_campaign=rss",
       "title": "Woman 'scared to turn heating on' due to oil cost",
       "publisher": "BBC Business",
@@ -27,39 +68,109 @@
       "status": "Unavailable: Insufficient public article text"
     },
     {
-      "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/21/trump-ice-construction-worker-deportation",
-      "title": "‘Hunted like animals’: inside Trump’s war on the people who build America",
+      "url": "https://www.bbc.co.uk/news/articles/cmz6581p1ee8o?at_medium=RSS&at_campaign=rss",
+      "title": "Island inflation rate rises to 3%, figures show",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-23T11:58:19Z",
+      "historical": null,
+      "read_at": "2026-10-23T13:46:44Z",
+      "body_sha256": "b0d59650dd1fafa8920bb1ca41d652bc03857fbe5eacd919a311e2f771340554",
+      "body_characters": 1311,
+      "model_context_characters": 1311,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Jersey's inflation rate rose to 3% in September, with increases in food and housing costs.",
+        "evidence_ids": [
+          "E5",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: inflation rate rose",
+          "financial_channel: If real yields increase, gold may benefit.",
+          "asset_hypothesis: If risk appetite remains stable, gold may remain mixed."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If real yields increase due to higher inflation expectations."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite remains stable, liquidity and alternative-hedge channels may influence Bitcoin."
+        },
+        "uncertainty": "If global energy markets stabilize, the impact on inflation may decrease, reducing gold's appeal."
+      },
+      "evidence": {
+        "E5": "The annual rate of inflation in Jersey rose to 3% in September,",
+        "E6": "It said food prices increased by 3.5% and housing costs by 0.2%."
+      },
+      "analyzed_at": "2026-10-23T13:48:35Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/business/live/2026/oct/23/global-stocks-fall-ai-fears-grow-british-retail-sales-fall-business-live-latest-news",
+      "title": "Oil hits five-month high as global stocks wobble on AI fears; retail sales in Great Britain fall as shoppers cut back - business live",
       "publisher": "The Guardian Business",
-      "published_at": "2026-10-21T10:00:02Z",
+      "published_at": "2026-10-23T11:55:06Z",
       "historical": null,
-      "read_at": "2026-10-23T07:53:30Z",
-      "body_sha256": "27ce87978b0015659a52334570758e52fc73fb83f31a31e261ac8fed4af72b9d",
-      "body_characters": 18000,
-      "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
+      "read_at": "2026-10-23T13:48:35Z",
+      "body_sha256": "f1f91d6ebc3eac54fc5f82f2791688f9d2f9a7d40e79ed2241307f1171193b75",
+      "body_characters": 4439,
+      "model_context_characters": 4439,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "AI stocks fell, driving broader market concerns and a flight to US Treasuries, with oil prices hitting a five-month high.",
+        "evidence_ids": [
+          "E1",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: AI stocks fell",
+          "financial_channel: If risk appetite declines, investors move to safer assets",
+          "asset_hypothesis: If AI investment sustainability wanes, tech stocks will fall further"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflationary pressures persist, gold will benefit as a hedge."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If Bitcoin is seen as a risk asset, it will fall; if seen as a store of value, it will hold."
+        },
+        "uncertainty": "If AI investment continues to grow, the market concerns will subside, and AI stocks will recover."
+      },
+      "evidence": {
+        "E1": "Indeed, the slump in consumer confidence in October suggests that higher inflation",
+        "E6": "A fresh wave of selling hit AI stocks around the world overnight,"
+      },
+      "analyzed_at": "2026-10-23T13:51:05Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cm9qzgg5z89no?at_medium=RSS&at_campaign=rss",
-      "title": "Is an 'AI war' complicating your job search?",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-22T05:01:31Z",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
+      "title": "ECB Consumer Expectations Survey results – September 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-23T08:00:00Z",
       "historical": null,
-      "read_at": "2026-10-23T07:57:09Z",
-      "body_sha256": "9770bee2e9f1e0513220ea18d5797692c990aff39b7139833976bfe46c0ba186",
-      "body_characters": 8939,
-      "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
+      "read_at": "2026-10-23T13:51:09Z",
+      "body_sha256": "168e137e7ef9bbf0b708cdd0d22ac771eb240a3d19c5155bb9e205bf7646d8b2",
+      "body_characters": 3289,
+      "model_context_characters": 3289,
+      "status": "Public body read; queued for AI"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cm4g1zrl2nrqo?at_medium=RSS&at_campaign=rss",
-      "title": "The 'trillion pound' oil fund the government believes Britain could have built",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-21T23:27:05Z",
+      "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
+      "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
+      "publisher": "CNBC Economy",
+      "published_at": "2026-10-16T22:34:29Z",
       "historical": null,
-      "read_at": "2026-10-23T08:00:30Z",
-      "body_sha256": "68895ef9ae1942e8c0e1d90cc2a82ef0dc90622e2f7bf2ef9c81a3d50360afa3",
-      "body_characters": 3950,
-      "model_context_characters": 3950,
+      "read_at": "2026-10-23T13:51:09Z",
+      "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
+      "body_characters": 3344,
+      "model_context_characters": 3344,
       "status": "Public body read; queued for AI"
     },
     {
@@ -145,71 +256,6 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
-      "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
-      "publisher": "CNBC Economy",
-      "published_at": "2026-10-16T22:34:29Z",
-      "historical": null,
-      "read_at": "2026-10-23T08:00:30Z",
-      "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
-      "body_characters": 3344,
-      "model_context_characters": 3344,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cm4g1p347qgxo?at_medium=RSS&at_campaign=rss",
-      "title": "Barclays cutting 5,000 jobs as it increases reliance on AI",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-22T14:28:59Z",
-      "historical": null,
-      "read_at": "2026-10-23T08:00:31Z",
-      "body_sha256": "9a1929811e8713af9a2626f36db90393fc89694bfb7074f059d4473e6d399da4",
-      "body_characters": 3540,
-      "model_context_characters": 3540,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/environment/2026/oct/22/deepwater-horizon-oil-spill-gulf-marine-life",
-      "title": "Marine life in Gulf of Mexico has still not fully recovered from 2010 BP oil spill",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-22T12:00:44Z",
-      "historical": null,
-      "read_at": "2026-10-23T01:47:21Z",
-      "body_sha256": "34170ef3806493e53b9be25912133e8db78e559a1ca9f35c008179743537fbbe",
-      "body_characters": 5478,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "A new study shows dramatic population drops in fish, cephalopods, and other marine life in the Gulf of Mexico after the 2010 BP oil spill.",
-        "evidence_ids": [
-          "E5",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: Marine life population drops",
-          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
-          "asset_hypothesis: If liquidity improves, investors may shift funds out of gold."
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If risk appetite decreases, investors may seek safer assets."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If liquidity improves, investors may shift funds out of gold, but Bitcoin is not a clear safe-haven."
-        },
-        "uncertainty": "The study does not provide specific evidence of Bitcoin market reaction."
-      },
-      "evidence": {
-        "E5": "New study reveals dramatic population drops in fish, cephalopods and more after",
-        "E6": "Marine life in the Gulf of Mexico plummeted by about 60% after"
-      },
-      "analyzed_at": "2026-10-23T01:49:11Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
       "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
       "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
       "publisher": "CNBC Economy",
@@ -249,6 +295,18 @@
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cm4g1p347qgxo?at_medium=RSS&at_campaign=rss",
+      "title": "Barclays cutting 5,000 jobs as it increases reliance on AI",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-22T14:28:59Z",
+      "historical": null,
+      "read_at": "2026-10-23T13:51:09Z",
+      "body_sha256": "9a1929811e8713af9a2626f36db90393fc89694bfb7074f059d4473e6d399da4",
+      "body_characters": 3540,
+      "model_context_characters": 3540,
+      "status": "Public body read; queued for AI"
     }
   ]
 }

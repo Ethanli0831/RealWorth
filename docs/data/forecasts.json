@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-10-23T12:42:54Z",
+    "checked_at": "2026-10-23T17:30:35Z",
     "model": "empirical-log-return-quantiles-v2",
     "timezone": "America/Toronto",
     "today": "2026-10-23",
@@ -13,8 +13,8 @@
     {
       "ticker": "BTC-USD",
       "asset": "Bitcoin / USD",
-      "quote": 81707.87,
-      "quote_at": "2026-10-23T12:42:45Z",
+      "quote": 81519.51,
+      "quote_at": "2026-10-23T17:30:27Z",
       "quote_stale": false,
       "market_status": "Continuous trading; quote may be delayed by provider",
       "tomorrow_has_session": true,
@@ -54,10 +54,10 @@
     {
       "ticker": "GLD",
       "asset": "Gold ETF (GLD)",
-      "quote": 369.0,
-      "quote_at": "2026-10-22T20:00:00Z",
+      "quote": 366.11,
+      "quote_at": "2026-10-23T17:30:32Z",
       "quote_stale": false,
-      "market_status": "Market closed · last reported quote",
+      "market_status": "Market open · delayed quote",
       "tomorrow_has_session": false,
       "source": "https://finance.yahoo.com/quote/GLD/",
       "forecast": {
@@ -95,10 +95,10 @@
     {
       "ticker": "SPY",
       "asset": "S&P 500 ETF (SPY)",
-      "quote": 763.96,
-      "quote_at": "2026-10-22T20:00:00Z",
+      "quote": 760.345,
+      "quote_at": "2026-10-23T17:30:29Z",
       "quote_stale": false,
-      "market_status": "Market closed · last reported quote",
+      "market_status": "Market open · delayed quote",
       "tomorrow_has_session": false,
       "source": "https://finance.yahoo.com/quote/SPY/",
       "forecast": {
@@ -136,10 +136,10 @@
     {
       "ticker": "BIL",
       "asset": "T-Bill ETF (BIL)",
-      "quote": 91.6,
-      "quote_at": "2026-10-22T20:00:00Z",
+      "quote": 91.635,
+      "quote_at": "2026-10-23T17:30:12Z",
       "quote_stale": false,
-      "market_status": "Market closed · last reported quote",
+      "market_status": "Market open · delayed quote",
       "tomorrow_has_session": false,
       "source": "https://finance.yahoo.com/quote/BIL/",
       "forecast": {
@@ -177,10 +177,10 @@
     {
       "ticker": "TLT",
       "asset": "Long-bond ETF (TLT)",
-      "quote": 81.74,
-      "quote_at": "2026-10-22T20:00:01Z",
+      "quote": 81.455,
+      "quote_at": "2026-10-23T17:30:29Z",
       "quote_stale": false,
-      "market_status": "Market closed · last reported quote",
+      "market_status": "Market open · delayed quote",
       "tomorrow_has_session": false,
       "source": "https://finance.yahoo.com/quote/TLT/",
       "forecast": {

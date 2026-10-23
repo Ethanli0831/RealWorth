@@ -1,7 +1,7 @@
 {
   "meta": {
-    "checked_at": "2026-10-23T18:46:12Z",
-    "scan_started_at": "2026-10-23T18:38:33Z",
+    "checked_at": "2026-10-23T22:42:06Z",
+    "scan_started_at": "2026-10-23T22:33:47Z",
     "provider_requested": "local",
     "article_reads": 10,
     "ai_interpretations": 5,
@@ -19,12 +19,94 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.theguardian.com/environment/2026/oct/22/deepwater-horizon-oil-spill-gulf-marine-life",
+      "title": "Marine life in Gulf of Mexico has still not fully recovered from 2010 BP oil spill",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-22T12:00:44Z",
+      "historical": null,
+      "read_at": "2026-10-23T22:33:49Z",
+      "body_sha256": "f46424c07337d26224702b3f35e534cf97af54b5ec120f4e8569319cb1086d1e",
+      "body_characters": 5488,
+      "model_context_characters": 4500,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "A new study shows dramatic population drops in fish, cephalopods, and other marine life in the Gulf of Mexico after the 2010 BP oil spill.",
+        "evidence_ids": [
+          "E5",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: Marine life population drops",
+          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
+          "asset_hypothesis: If liquidity improves, investors may shift funds out of gold and into other assets."
+        ],
+        "gold": {
+          "direction": "down",
+          "condition": "If risk appetite decreases, investors may seek safer assets, reducing demand for gold."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If liquidity improves, investors may shift funds out of gold and into other assets, including Bitcoin, but risk appetite is uncertain."
+        },
+        "uncertainty": "The study does not provide specific evidence of Bitcoin market reaction, only general financial market conditions."
+      },
+      "evidence": {
+        "E5": "New study reveals dramatic population drops in fish, cephalopods and more after",
+        "E6": "Marine life in the Gulf of Mexico plummeted by about 60% after"
+      },
+      "analyzed_at": "2026-10-23T22:36:54Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmx23dwp3qzro?at_medium=RSS&at_campaign=rss",
+      "title": "'I wasn't thinking straight' says five jobs civil servant",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-22T15:05:47Z",
+      "historical": null,
+      "read_at": "2026-10-23T22:31:38Z",
+      "body_sha256": "31f46a92d8e7b21706ad180f684a42c012bae2a7384cb04b8f375617abae68a0",
+      "body_characters": 2912,
+      "model_context_characters": 2912,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "A civil servant admitted to fraudulently juggling five government jobs, citing panic and fear of losing his Defra position.",
+        "evidence_ids": [
+          "E3",
+          "E4"
+        ],
+        "chain": [
+          "reported_event: A civil servant admitted to fraudulently juggling five government jobs.",
+          "financial_channel: If risk appetite decreases, civil servants may be more cautious about multiple roles.",
+          "asset_hypothesis: If liquidity improves, civil servants may have more options to manage their employment."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If economic uncertainty increases, gold may be seen as a safer haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite decreases, Bitcoin may underperform as a speculative asset; if liquidity improves, it may see increased trading activity."
+        },
+        "uncertainty": "The civil servant's mother's health did not deteriorate to the point of requiring full-time care, which could have been a more compelling reason for his actions."
+      },
+      "evidence": {
+        "E3": "A civil servant accused of fraudulently juggling multiple public sector jobs has",
+        "E4": "Kashim Chowdhury said he was \"in a panic\" when he applied for"
+      },
+      "analyzed_at": "2026-10-22T18:47:05Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
       "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/21/trump-ice-construction-worker-deportation",
       "title": "‘Hunted like animals’: inside Trump’s war on the people who build America",
       "publisher": "The Guardian Business",
       "published_at": "2026-10-21T10:00:02Z",
       "historical": null,
-      "read_at": "2026-10-23T18:38:33Z",
+      "read_at": "2026-10-23T22:36:54Z",
       "body_sha256": "27ce87978b0015659a52334570758e52fc73fb83f31a31e261ac8fed4af72b9d",
       "body_characters": 18000,
       "model_context_characters": 4500,
@@ -40,7 +122,7 @@
       "body_sha256": "9a1929811e8713af9a2626f36db90393fc89694bfb7074f059d4473e6d399da4",
       "body_characters": 3540,
       "model_context_characters": 3540,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "Barclays is cutting 5,000 jobs, focusing on its UK retail bank, to increase reliance on AI.",
         "evidence_ids": [
@@ -77,7 +159,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-23T16:48:28Z",
       "historical": null,
-      "read_at": "2026-10-23T18:46:10Z",
+      "read_at": "2026-10-23T22:42:03Z",
       "body_sha256": "13106a71c5ebb387feee7612d6c7aa09d24fbb92344bac728ac171ba8aff78e1",
       "body_characters": 2068,
       "model_context_characters": 2068,
@@ -89,7 +171,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-23T15:15:13Z",
       "historical": null,
-      "read_at": "2026-10-23T18:46:10Z",
+      "read_at": "2026-10-23T22:42:03Z",
       "body_sha256": "707a109299b72016eb864c6c227493b9d9597380ef314d3ac8ece7c502f0ad07",
       "body_characters": 3494,
       "model_context_characters": 3494,
@@ -101,7 +183,7 @@
       "publisher": "European Central Bank",
       "published_at": "2026-10-23T08:00:00Z",
       "historical": null,
-      "read_at": "2026-10-23T18:46:11Z",
+      "read_at": "2026-10-23T22:42:05Z",
       "body_sha256": "168e137e7ef9bbf0b708cdd0d22ac771eb240a3d19c5155bb9e205bf7646d8b2",
       "body_characters": 3289,
       "model_context_characters": 3289,
@@ -113,7 +195,7 @@
       "publisher": "CNBC Economy",
       "published_at": "2026-10-16T22:34:29Z",
       "historical": null,
-      "read_at": "2026-10-23T18:46:12Z",
+      "read_at": "2026-10-23T22:42:06Z",
       "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
       "body_characters": 3344,
       "model_context_characters": 3344,
@@ -197,88 +279,6 @@
         "E6": "It said food prices increased by 3.5% and housing costs by 0.2%."
       },
       "analyzed_at": "2026-10-23T13:48:35Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/environment/2026/oct/22/deepwater-horizon-oil-spill-gulf-marine-life",
-      "title": "Marine life in Gulf of Mexico has still not fully recovered from 2010 BP oil spill",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-22T12:00:44Z",
-      "historical": null,
-      "read_at": "2026-10-23T13:43:34Z",
-      "body_sha256": "34170ef3806493e53b9be25912133e8db78e559a1ca9f35c008179743537fbbe",
-      "body_characters": 5478,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "A new study shows dramatic population drops in fish, cephalopods, and other marine life in the Gulf of Mexico after the 2010 BP oil spill.",
-        "evidence_ids": [
-          "E5",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: Marine life population drops",
-          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
-          "asset_hypothesis: If liquidity improves, investors may shift funds out of gold."
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If risk appetite decreases, investors may seek safer assets."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If liquidity improves, investors may shift funds out of gold, but Bitcoin is not a clear safe-haven."
-        },
-        "uncertainty": "The study does not provide specific evidence of Bitcoin market reaction."
-      },
-      "evidence": {
-        "E5": "New study reveals dramatic population drops in fish, cephalopods and more after",
-        "E6": "Marine life in the Gulf of Mexico plummeted by about 60% after"
-      },
-      "analyzed_at": "2026-10-23T01:49:11Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmx23dwp3qzro?at_medium=RSS&at_campaign=rss",
-      "title": "'I wasn't thinking straight' says five jobs civil servant",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-22T15:05:47Z",
-      "historical": null,
-      "read_at": "2026-10-22T18:44:31Z",
-      "body_sha256": "31f46a92d8e7b21706ad180f684a42c012bae2a7384cb04b8f375617abae68a0",
-      "body_characters": 2912,
-      "model_context_characters": 2912,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "A civil servant admitted to fraudulently juggling five government jobs, citing panic and fear of losing his Defra position.",
-        "evidence_ids": [
-          "E3",
-          "E4"
-        ],
-        "chain": [
-          "reported_event: A civil servant admitted to fraudulently juggling five government jobs.",
-          "financial_channel: If risk appetite decreases, civil servants may be more cautious about multiple roles.",
-          "asset_hypothesis: If liquidity improves, civil servants may have more options to manage their employment."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If economic uncertainty increases, gold may be seen as a safer haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite decreases, Bitcoin may underperform as a speculative asset; if liquidity improves, it may see increased trading activity."
-        },
-        "uncertainty": "The civil servant's mother's health did not deteriorate to the point of requiring full-time care, which could have been a more compelling reason for his actions."
-      },
-      "evidence": {
-        "E3": "A civil servant accused of fraudulently juggling multiple public sector jobs has",
-        "E4": "Kashim Chowdhury said he was \"in a panic\" when he applied for"
-      },
-      "analyzed_at": "2026-10-22T18:47:05Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"

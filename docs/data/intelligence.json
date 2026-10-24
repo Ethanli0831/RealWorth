@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-24T17:02:26Z",
-    "scan_started_at": "2026-10-24T16:53:26Z",
+    "checked_at": "2026-10-24T19:48:58Z",
+    "scan_started_at": "2026-10-24T19:41:57Z",
     "provider_requested": "local",
     "article_reads": 10,
-    "ai_interpretations": 6,
-    "new_interpretations": 0,
+    "ai_interpretations": 7,
+    "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -17,6 +17,112 @@
       "published_at": null,
       "historical": true,
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cm4g1p347qgxo?at_medium=RSS&at_campaign=rss",
+      "title": "Barclays cutting 5,000 jobs as it increases reliance on AI",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-22T14:28:59Z",
+      "historical": null,
+      "read_at": "2026-10-24T19:40:58Z",
+      "body_sha256": "9a1929811e8713af9a2626f36db90393fc89694bfb7074f059d4473e6d399da4",
+      "body_characters": 3540,
+      "model_context_characters": 3540,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Barclays is cutting 5,000 jobs, focusing on its UK retail bank, to increase reliance on AI.",
+        "evidence_ids": [
+          "E6",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: Barclays cutting jobs",
+          "financial_channel: If job cuts reduce staff, it may increase AI reliance and reduce human labor costs.",
+          "asset_hypothesis: If AI reduces labor costs, it may shift asset allocation towards tech and away from traditional banking."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If job cuts reduce staff, it may increase automation and reduce demand for labor, potentially boosting gold as a safe-haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If job cuts reduce staff, it may increase AI reliance and reduce risk appetite, but also increase liquidity, making Bitcoin's direction uncertain."
+        },
+        "uncertainty": "If AI adoption is slow, job cuts may not significantly impact labor costs or asset allocation."
+      },
+      "evidence": {
+        "E6": "Barclays is cutting around 5,000 staff as it introduces more artificial intelligence",
+        "E7": "The banking group said 1,000 posts had already been closed and it"
+      },
+      "analyzed_at": "2026-10-23T18:46:10Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cm9qzgg5z89no?at_medium=RSS&at_campaign=rss",
+      "title": "Is an 'AI war' complicating your job search?",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-22T05:01:31Z",
+      "historical": null,
+      "read_at": "2026-10-24T19:41:58Z",
+      "body_sha256": "9770bee2e9f1e0513220ea18d5797692c990aff39b7139833976bfe46c0ba186",
+      "body_characters": 8939,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/oct/23/oil-five-month-high-fears-us-renews-strikes-iran",
+      "title": "Oil price rises above $117 a barrel amid fears US will renew strikes on Iran",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-23T16:48:28Z",
+      "historical": null,
+      "read_at": "2026-10-24T19:47:18Z",
+      "body_sha256": "13106a71c5ebb387feee7612d6c7aa09d24fbb92344bac728ac171ba8aff78e1",
+      "body_characters": 2068,
+      "model_context_characters": 2068,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Oil prices rose above $117 due to threats of US military strikes on Iran and attacks on Gulf facilities.",
+        "evidence_ids": [
+          "E2",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: threats of US military strikes on Iran",
+          "financial_channel: If geopolitical tensions increase, oil supply risks rise",
+          "asset_hypothesis: If supply risks increase, oil prices will rise"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If geopolitical tensions increase, gold may be seen as a safer haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If oil prices rise, risk appetite may shift away from Bitcoin, but liquidity concerns could also support it."
+        },
+        "uncertainty": "If the US decides against military strikes, oil prices could fall."
+      },
+      "evidence": {
+        "E2": "Brent crude increase follows Tehran threatening retaliatory attacks on Gulf refineries and",
+        "E5": "The jump came after Tehran said it would attack oil facilities, undersea"
+      },
+      "analyzed_at": "2026-10-24T19:48:58Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c6lykzwjkj1eo?at_medium=RSS&at_campaign=rss",
+      "title": "Civil servant who juggled five jobs says he was 'surprised' to be charged with fraud",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-23T15:15:13Z",
+      "historical": null,
+      "read_at": "2026-10-24T19:48:58Z",
+      "body_sha256": "707a109299b72016eb864c6c227493b9d9597380ef314d3ac8ece7c502f0ad07",
+      "body_characters": 3494,
+      "model_context_characters": 3494,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
@@ -151,7 +257,7 @@
       "body_sha256": "f46424c07337d26224702b3f35e534cf97af54b5ec120f4e8569319cb1086d1e",
       "body_characters": 5488,
       "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "A new study shows dramatic population drops in fish, cephalopods, and other marine life in the Gulf of Mexico after the 2010 BP oil spill.",
         "evidence_ids": [
@@ -229,87 +335,10 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-21T10:00:02Z",
       "historical": null,
-      "read_at": "2026-10-24T16:53:28Z",
+      "read_at": "2026-10-24T19:48:58Z",
       "body_sha256": "27ce87978b0015659a52334570758e52fc73fb83f31a31e261ac8fed4af72b9d",
       "body_characters": 18000,
       "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cm4g1p347qgxo?at_medium=RSS&at_campaign=rss",
-      "title": "Barclays cutting 5,000 jobs as it increases reliance on AI",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-22T14:28:59Z",
-      "historical": null,
-      "read_at": "2026-10-24T16:50:28Z",
-      "body_sha256": "9a1929811e8713af9a2626f36db90393fc89694bfb7074f059d4473e6d399da4",
-      "body_characters": 3540,
-      "model_context_characters": 3540,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Barclays is cutting 5,000 jobs, focusing on its UK retail bank, to increase reliance on AI.",
-        "evidence_ids": [
-          "E6",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: Barclays cutting jobs",
-          "financial_channel: If job cuts reduce staff, it may increase AI reliance and reduce human labor costs.",
-          "asset_hypothesis: If AI reduces labor costs, it may shift asset allocation towards tech and away from traditional banking."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If job cuts reduce staff, it may increase automation and reduce demand for labor, potentially boosting gold as a safe-haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If job cuts reduce staff, it may increase AI reliance and reduce risk appetite, but also increase liquidity, making Bitcoin's direction uncertain."
-        },
-        "uncertainty": "If AI adoption is slow, job cuts may not significantly impact labor costs or asset allocation."
-      },
-      "evidence": {
-        "E6": "Barclays is cutting around 5,000 staff as it introduces more artificial intelligence",
-        "E7": "The banking group said 1,000 posts had already been closed and it"
-      },
-      "analyzed_at": "2026-10-23T18:46:10Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cm9qzgg5z89no?at_medium=RSS&at_campaign=rss",
-      "title": "Is an 'AI war' complicating your job search?",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-22T05:01:31Z",
-      "historical": null,
-      "read_at": "2026-10-24T16:58:08Z",
-      "body_sha256": "9770bee2e9f1e0513220ea18d5797692c990aff39b7139833976bfe46c0ba186",
-      "body_characters": 8939,
-      "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/oct/23/oil-five-month-high-fears-us-renews-strikes-iran",
-      "title": "Oil price rises above $117 a barrel amid fears US will renew strikes on Iran",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-23T16:48:28Z",
-      "historical": null,
-      "read_at": "2026-10-24T17:02:26Z",
-      "body_sha256": "13106a71c5ebb387feee7612d6c7aa09d24fbb92344bac728ac171ba8aff78e1",
-      "body_characters": 2068,
-      "model_context_characters": 2068,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c6lykzwjkj1eo?at_medium=RSS&at_campaign=rss",
-      "title": "Civil servant who juggled five jobs says he was 'surprised' to be charged with fraud",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-23T15:15:13Z",
-      "historical": null,
-      "read_at": "2026-10-24T17:02:26Z",
-      "body_sha256": "707a109299b72016eb864c6c227493b9d9597380ef314d3ac8ece7c502f0ad07",
-      "body_characters": 3494,
-      "model_context_characters": 3494,
       "status": "Public body read; queued for AI"
     }
   ]

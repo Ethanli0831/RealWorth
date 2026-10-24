@@ -1,7 +1,7 @@
 {
   "meta": {
-    "checked_at": "2026-10-24T13:00:10Z",
-    "scan_started_at": "2026-10-24T12:53:06Z",
+    "checked_at": "2026-10-24T17:02:26Z",
+    "scan_started_at": "2026-10-24T16:53:26Z",
     "provider_requested": "local",
     "article_reads": 10,
     "ai_interpretations": 6,
@@ -19,224 +19,12 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cmz6581p1ee8o?at_medium=RSS&at_campaign=rss",
-      "title": "Island inflation rate rises to 3%, figures show",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-23T11:58:19Z",
-      "historical": null,
-      "read_at": "2026-10-24T12:52:14Z",
-      "body_sha256": "b0d59650dd1fafa8920bb1ca41d652bc03857fbe5eacd919a311e2f771340554",
-      "body_characters": 1311,
-      "model_context_characters": 1311,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Jersey's inflation rate rose to 3% in September, with increases in food and housing costs.",
-        "evidence_ids": [
-          "E5",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: inflation rate rose",
-          "financial_channel: If real yields increase, gold may benefit.",
-          "asset_hypothesis: If risk appetite remains stable, gold may remain mixed."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If real yields increase due to higher inflation expectations."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite remains stable, liquidity and alternative-hedge channels may influence Bitcoin."
-        },
-        "uncertainty": "If global energy markets stabilize, the impact on inflation may decrease, reducing gold's appeal."
-      },
-      "evidence": {
-        "E5": "The annual rate of inflation in Jersey rose to 3% in September,",
-        "E6": "It said food prices increased by 3.5% and housing costs by 0.2%."
-      },
-      "analyzed_at": "2026-10-23T13:48:35Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/environment/2026/oct/22/deepwater-horizon-oil-spill-gulf-marine-life",
-      "title": "Marine life in Gulf of Mexico has still not fully recovered from 2010 BP oil spill",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-22T12:00:44Z",
-      "historical": null,
-      "read_at": "2026-10-24T12:52:14Z",
-      "body_sha256": "f46424c07337d26224702b3f35e534cf97af54b5ec120f4e8569319cb1086d1e",
-      "body_characters": 5488,
-      "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "A new study shows dramatic population drops in fish, cephalopods, and other marine life in the Gulf of Mexico after the 2010 BP oil spill.",
-        "evidence_ids": [
-          "E5",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: Marine life population drops",
-          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
-          "asset_hypothesis: If liquidity improves, investors may shift funds out of gold and into other assets."
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If risk appetite decreases, investors may seek safer assets, reducing demand for gold."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If liquidity improves, investors may shift funds out of gold and into other assets, including Bitcoin, but risk appetite is uncertain."
-        },
-        "uncertainty": "The study does not provide specific evidence of Bitcoin market reaction, only general financial market conditions."
-      },
-      "evidence": {
-        "E5": "New study reveals dramatic population drops in fish, cephalopods and more after",
-        "E6": "Marine life in the Gulf of Mexico plummeted by about 60% after"
-      },
-      "analyzed_at": "2026-10-23T22:36:54Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmx23dwp3qzro?at_medium=RSS&at_campaign=rss",
-      "title": "'I wasn't thinking straight' says five jobs civil servant",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-22T15:05:47Z",
-      "historical": null,
-      "read_at": "2026-10-24T12:52:14Z",
-      "body_sha256": "31f46a92d8e7b21706ad180f684a42c012bae2a7384cb04b8f375617abae68a0",
-      "body_characters": 2912,
-      "model_context_characters": 2912,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "A civil servant admitted to fraudulently juggling five government jobs, citing panic and fear of losing his Defra position.",
-        "evidence_ids": [
-          "E3",
-          "E4"
-        ],
-        "chain": [
-          "reported_event: A civil servant admitted to fraudulently juggling five government jobs.",
-          "financial_channel: If risk appetite decreases, civil servants may be more cautious about multiple roles.",
-          "asset_hypothesis: If liquidity improves, civil servants may have more options to manage their employment."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If economic uncertainty increases, gold may be seen as a safer haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite decreases, Bitcoin may underperform as a speculative asset; if liquidity improves, it may see increased trading activity."
-        },
-        "uncertainty": "The civil servant's mother's health did not deteriorate to the point of requiring full-time care, which could have been a more compelling reason for his actions."
-      },
-      "evidence": {
-        "E3": "A civil servant accused of fraudulently juggling multiple public sector jobs has",
-        "E4": "Kashim Chowdhury said he was \"in a panic\" when he applied for"
-      },
-      "analyzed_at": "2026-10-22T18:47:05Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/21/trump-ice-construction-worker-deportation",
-      "title": "‘Hunted like animals’: inside Trump’s war on the people who build America",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-21T10:00:02Z",
-      "historical": null,
-      "read_at": "2026-10-24T12:53:07Z",
-      "body_sha256": "27ce87978b0015659a52334570758e52fc73fb83f31a31e261ac8fed4af72b9d",
-      "body_characters": 18000,
-      "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cm4g1p347qgxo?at_medium=RSS&at_campaign=rss",
-      "title": "Barclays cutting 5,000 jobs as it increases reliance on AI",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-22T14:28:59Z",
-      "historical": null,
-      "read_at": "2026-10-24T12:52:15Z",
-      "body_sha256": "9a1929811e8713af9a2626f36db90393fc89694bfb7074f059d4473e6d399da4",
-      "body_characters": 3540,
-      "model_context_characters": 3540,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Barclays is cutting 5,000 jobs, focusing on its UK retail bank, to increase reliance on AI.",
-        "evidence_ids": [
-          "E6",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: Barclays cutting jobs",
-          "financial_channel: If job cuts reduce staff, it may increase AI reliance and reduce human labor costs.",
-          "asset_hypothesis: If AI reduces labor costs, it may shift asset allocation towards tech and away from traditional banking."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If job cuts reduce staff, it may increase automation and reduce demand for labor, potentially boosting gold as a safe-haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If job cuts reduce staff, it may increase AI reliance and reduce risk appetite, but also increase liquidity, making Bitcoin's direction uncertain."
-        },
-        "uncertainty": "If AI adoption is slow, job cuts may not significantly impact labor costs or asset allocation."
-      },
-      "evidence": {
-        "E6": "Barclays is cutting around 5,000 staff as it introduces more artificial intelligence",
-        "E7": "The banking group said 1,000 posts had already been closed and it"
-      },
-      "analyzed_at": "2026-10-23T18:46:10Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cm9qzgg5z89no?at_medium=RSS&at_campaign=rss",
-      "title": "Is an 'AI war' complicating your job search?",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-22T05:01:31Z",
-      "historical": null,
-      "read_at": "2026-10-24T12:56:49Z",
-      "body_sha256": "9770bee2e9f1e0513220ea18d5797692c990aff39b7139833976bfe46c0ba186",
-      "body_characters": 8939,
-      "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/oct/23/oil-five-month-high-fears-us-renews-strikes-iran",
-      "title": "Oil price rises above $117 a barrel amid fears US will renew strikes on Iran",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-23T16:48:28Z",
-      "historical": null,
-      "read_at": "2026-10-24T13:00:10Z",
-      "body_sha256": "13106a71c5ebb387feee7612d6c7aa09d24fbb92344bac728ac171ba8aff78e1",
-      "body_characters": 2068,
-      "model_context_characters": 2068,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c6lykzwjkj1eo?at_medium=RSS&at_campaign=rss",
-      "title": "Civil servant who juggled five jobs says he was 'surprised' to be charged with fraud",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-23T15:15:13Z",
-      "historical": null,
-      "read_at": "2026-10-24T13:00:10Z",
-      "body_sha256": "707a109299b72016eb864c6c227493b9d9597380ef314d3ac8ece7c502f0ad07",
-      "body_characters": 3494,
-      "model_context_characters": 3494,
-      "status": "Public body read; queued for AI"
-    },
-    {
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
       "title": "ECB Consumer Expectations Survey results – September 2026",
       "publisher": "European Central Bank",
       "published_at": "2026-10-23T08:00:00Z",
       "historical": null,
-      "read_at": "2026-10-24T01:51:56Z",
+      "read_at": "2026-10-24T16:50:25Z",
       "body_sha256": "168e137e7ef9bbf0b708cdd0d22ac771eb240a3d19c5155bb9e205bf7646d8b2",
       "body_characters": 3289,
       "model_context_characters": 3289,
@@ -277,7 +65,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-22T14:39:29Z",
       "historical": null,
-      "read_at": "2026-10-24T01:51:18Z",
+      "read_at": "2026-10-24T16:50:26Z",
       "body_sha256": "070415832d1ad51ee6b5f9f765713703571c7c6f38d99abf9d5e9127d477d753",
       "body_characters": 4355,
       "model_context_characters": 4355,
@@ -311,6 +99,218 @@
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmz6581p1ee8o?at_medium=RSS&at_campaign=rss",
+      "title": "Island inflation rate rises to 3%, figures show",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-23T11:58:19Z",
+      "historical": null,
+      "read_at": "2026-10-24T16:50:26Z",
+      "body_sha256": "b0d59650dd1fafa8920bb1ca41d652bc03857fbe5eacd919a311e2f771340554",
+      "body_characters": 1311,
+      "model_context_characters": 1311,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Jersey's inflation rate rose to 3% in September, with increases in food and housing costs.",
+        "evidence_ids": [
+          "E5",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: inflation rate rose",
+          "financial_channel: If real yields increase, gold may benefit.",
+          "asset_hypothesis: If risk appetite remains stable, gold may remain mixed."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If real yields increase due to higher inflation expectations."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite remains stable, liquidity and alternative-hedge channels may influence Bitcoin."
+        },
+        "uncertainty": "If global energy markets stabilize, the impact on inflation may decrease, reducing gold's appeal."
+      },
+      "evidence": {
+        "E5": "The annual rate of inflation in Jersey rose to 3% in September,",
+        "E6": "It said food prices increased by 3.5% and housing costs by 0.2%."
+      },
+      "analyzed_at": "2026-10-23T13:48:35Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/environment/2026/oct/22/deepwater-horizon-oil-spill-gulf-marine-life",
+      "title": "Marine life in Gulf of Mexico has still not fully recovered from 2010 BP oil spill",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-22T12:00:44Z",
+      "historical": null,
+      "read_at": "2026-10-24T16:50:26Z",
+      "body_sha256": "f46424c07337d26224702b3f35e534cf97af54b5ec120f4e8569319cb1086d1e",
+      "body_characters": 5488,
+      "model_context_characters": 4500,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "A new study shows dramatic population drops in fish, cephalopods, and other marine life in the Gulf of Mexico after the 2010 BP oil spill.",
+        "evidence_ids": [
+          "E5",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: Marine life population drops",
+          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
+          "asset_hypothesis: If liquidity improves, investors may shift funds out of gold and into other assets."
+        ],
+        "gold": {
+          "direction": "down",
+          "condition": "If risk appetite decreases, investors may seek safer assets, reducing demand for gold."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If liquidity improves, investors may shift funds out of gold and into other assets, including Bitcoin, but risk appetite is uncertain."
+        },
+        "uncertainty": "The study does not provide specific evidence of Bitcoin market reaction, only general financial market conditions."
+      },
+      "evidence": {
+        "E5": "New study reveals dramatic population drops in fish, cephalopods and more after",
+        "E6": "Marine life in the Gulf of Mexico plummeted by about 60% after"
+      },
+      "analyzed_at": "2026-10-23T22:36:54Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmx23dwp3qzro?at_medium=RSS&at_campaign=rss",
+      "title": "'I wasn't thinking straight' says five jobs civil servant",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-22T15:05:47Z",
+      "historical": null,
+      "read_at": "2026-10-24T16:50:27Z",
+      "body_sha256": "31f46a92d8e7b21706ad180f684a42c012bae2a7384cb04b8f375617abae68a0",
+      "body_characters": 2912,
+      "model_context_characters": 2912,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "A civil servant admitted to fraudulently juggling five government jobs, citing panic and fear of losing his Defra position.",
+        "evidence_ids": [
+          "E3",
+          "E4"
+        ],
+        "chain": [
+          "reported_event: A civil servant admitted to fraudulently juggling five government jobs.",
+          "financial_channel: If risk appetite decreases, civil servants may be more cautious about multiple roles.",
+          "asset_hypothesis: If liquidity improves, civil servants may have more options to manage their employment."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If economic uncertainty increases, gold may be seen as a safer haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite decreases, Bitcoin may underperform as a speculative asset; if liquidity improves, it may see increased trading activity."
+        },
+        "uncertainty": "The civil servant's mother's health did not deteriorate to the point of requiring full-time care, which could have been a more compelling reason for his actions."
+      },
+      "evidence": {
+        "E3": "A civil servant accused of fraudulently juggling multiple public sector jobs has",
+        "E4": "Kashim Chowdhury said he was \"in a panic\" when he applied for"
+      },
+      "analyzed_at": "2026-10-22T18:47:05Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/21/trump-ice-construction-worker-deportation",
+      "title": "‘Hunted like animals’: inside Trump’s war on the people who build America",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-21T10:00:02Z",
+      "historical": null,
+      "read_at": "2026-10-24T16:53:28Z",
+      "body_sha256": "27ce87978b0015659a52334570758e52fc73fb83f31a31e261ac8fed4af72b9d",
+      "body_characters": 18000,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cm4g1p347qgxo?at_medium=RSS&at_campaign=rss",
+      "title": "Barclays cutting 5,000 jobs as it increases reliance on AI",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-22T14:28:59Z",
+      "historical": null,
+      "read_at": "2026-10-24T16:50:28Z",
+      "body_sha256": "9a1929811e8713af9a2626f36db90393fc89694bfb7074f059d4473e6d399da4",
+      "body_characters": 3540,
+      "model_context_characters": 3540,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Barclays is cutting 5,000 jobs, focusing on its UK retail bank, to increase reliance on AI.",
+        "evidence_ids": [
+          "E6",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: Barclays cutting jobs",
+          "financial_channel: If job cuts reduce staff, it may increase AI reliance and reduce human labor costs.",
+          "asset_hypothesis: If AI reduces labor costs, it may shift asset allocation towards tech and away from traditional banking."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If job cuts reduce staff, it may increase automation and reduce demand for labor, potentially boosting gold as a safe-haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If job cuts reduce staff, it may increase AI reliance and reduce risk appetite, but also increase liquidity, making Bitcoin's direction uncertain."
+        },
+        "uncertainty": "If AI adoption is slow, job cuts may not significantly impact labor costs or asset allocation."
+      },
+      "evidence": {
+        "E6": "Barclays is cutting around 5,000 staff as it introduces more artificial intelligence",
+        "E7": "The banking group said 1,000 posts had already been closed and it"
+      },
+      "analyzed_at": "2026-10-23T18:46:10Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cm9qzgg5z89no?at_medium=RSS&at_campaign=rss",
+      "title": "Is an 'AI war' complicating your job search?",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-22T05:01:31Z",
+      "historical": null,
+      "read_at": "2026-10-24T16:58:08Z",
+      "body_sha256": "9770bee2e9f1e0513220ea18d5797692c990aff39b7139833976bfe46c0ba186",
+      "body_characters": 8939,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/oct/23/oil-five-month-high-fears-us-renews-strikes-iran",
+      "title": "Oil price rises above $117 a barrel amid fears US will renew strikes on Iran",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-23T16:48:28Z",
+      "historical": null,
+      "read_at": "2026-10-24T17:02:26Z",
+      "body_sha256": "13106a71c5ebb387feee7612d6c7aa09d24fbb92344bac728ac171ba8aff78e1",
+      "body_characters": 2068,
+      "model_context_characters": 2068,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c6lykzwjkj1eo?at_medium=RSS&at_campaign=rss",
+      "title": "Civil servant who juggled five jobs says he was 'surprised' to be charged with fraud",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-23T15:15:13Z",
+      "historical": null,
+      "read_at": "2026-10-24T17:02:26Z",
+      "body_sha256": "707a109299b72016eb864c6c227493b9d9597380ef314d3ac8ece7c502f0ad07",
+      "body_characters": 3494,
+      "model_context_characters": 3494,
+      "status": "Public body read; queued for AI"
     }
   ]
 }

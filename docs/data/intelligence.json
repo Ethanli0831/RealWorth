@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-10-23T22:42:06Z",
-    "scan_started_at": "2026-10-23T22:33:47Z",
+    "checked_at": "2026-10-24T02:01:43Z",
+    "scan_started_at": "2026-10-24T01:51:55Z",
     "provider_requested": "local",
-    "article_reads": 10,
-    "ai_interpretations": 5,
+    "article_reads": 9,
+    "ai_interpretations": 6,
     "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -19,12 +19,135 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
+      "title": "ECB Consumer Expectations Survey results – September 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-23T08:00:00Z",
+      "historical": null,
+      "read_at": "2026-10-24T01:51:56Z",
+      "body_sha256": "168e137e7ef9bbf0b708cdd0d22ac771eb240a3d19c5155bb9e205bf7646d8b2",
+      "body_characters": 3289,
+      "model_context_characters": 3289,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "ECB Consumer Expectations Survey shows inflation and spending growth expectations increased in September 2026.",
+        "evidence_ids": [
+          "E1",
+          "E8"
+        ],
+        "chain": [
+          "reported_event: Inflation and spending growth expectations increased",
+          "financial_channel: If inflation expectations rise, gold demand may increase",
+          "asset_hypothesis: If spending growth expectations rise, Bitcoin demand may increase"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations rise, gold may be seen as a hedge against inflation."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If spending growth expectations rise, Bitcoin may be seen as a store of value, but higher inflation expectations may reduce its appeal as a hedge."
+        },
+        "uncertainty": "If the economy improves, consumers may reduce their inflation and spending growth expectations."
+      },
+      "evidence": {
+        "E1": "In September the median rate of perceived inflation over the previous 12",
+        "E8": "Median expectations for inflation over the next 12 months also increased, to"
+      },
+      "analyzed_at": "2026-10-24T01:56:43Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/oct/22/barclays-profits-up-as-uk-banks-brace-for-tax-increase-in-budget",
+      "title": "Barclays to cut 5,000 jobs as bank’s bosses hail AI productivity advances",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-22T14:39:29Z",
+      "historical": null,
+      "read_at": "2026-10-24T01:51:18Z",
+      "body_sha256": "070415832d1ad51ee6b5f9f765713703571c7c6f38d99abf9d5e9127d477d753",
+      "body_characters": 4355,
+      "model_context_characters": 4355,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Barclays is cutting 5,000 jobs and reporting strong profits, equating to 5% of its global staff.",
+        "evidence_ids": [
+          "E2",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: Barclays cutting jobs and reporting profits",
+          "financial_channel: If job cuts reduce labor costs, it may improve profitability.",
+          "asset_hypothesis: If banks reduce costs, they may have more capital for lending."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If the job cuts lead to reduced labor costs, it may improve bank profitability, potentially boosting gold as a hedge against inflation."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If the job cuts reduce risk appetite, it may favor traditional assets like gold over Bitcoin; however, if the strong profits boost market confidence, it could be positive for Bitcoin."
+        },
+        "uncertainty": "If the job cuts are not offset by increased efficiency, the strong profits may be short-lived, reducing the positive impact on gold and Bitcoin."
+      },
+      "evidence": {
+        "E2": "Barclays is cutting 5,000 jobs as part of wider cost-saving plans that",
+        "E6": "Equating to the loss of 5% of its 93,000 global staff, job"
+      },
+      "analyzed_at": "2026-10-22T18:49:45Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmz6581p1ee8o?at_medium=RSS&at_campaign=rss",
+      "title": "Island inflation rate rises to 3%, figures show",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-23T11:58:19Z",
+      "historical": null,
+      "read_at": "2026-10-24T01:51:19Z",
+      "body_sha256": "b0d59650dd1fafa8920bb1ca41d652bc03857fbe5eacd919a311e2f771340554",
+      "body_characters": 1311,
+      "model_context_characters": 1311,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Jersey's inflation rate rose to 3% in September, with increases in food and housing costs.",
+        "evidence_ids": [
+          "E5",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: inflation rate rose",
+          "financial_channel: If real yields increase, gold may benefit.",
+          "asset_hypothesis: If risk appetite remains stable, gold may remain mixed."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If real yields increase due to higher inflation expectations."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite remains stable, liquidity and alternative-hedge channels may influence Bitcoin."
+        },
+        "uncertainty": "If global energy markets stabilize, the impact on inflation may decrease, reducing gold's appeal."
+      },
+      "evidence": {
+        "E5": "The annual rate of inflation in Jersey rose to 3% in September,",
+        "E6": "It said food prices increased by 3.5% and housing costs by 0.2%."
+      },
+      "analyzed_at": "2026-10-23T13:48:35Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
       "url": "https://www.theguardian.com/environment/2026/oct/22/deepwater-horizon-oil-spill-gulf-marine-life",
       "title": "Marine life in Gulf of Mexico has still not fully recovered from 2010 BP oil spill",
       "publisher": "The Guardian Business",
       "published_at": "2026-10-22T12:00:44Z",
       "historical": null,
-      "read_at": "2026-10-23T22:33:49Z",
+      "read_at": "2026-10-24T01:51:19Z",
       "body_sha256": "f46424c07337d26224702b3f35e534cf97af54b5ec120f4e8569319cb1086d1e",
       "body_characters": 5488,
       "model_context_characters": 4500,
@@ -65,7 +188,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-22T15:05:47Z",
       "historical": null,
-      "read_at": "2026-10-23T22:31:38Z",
+      "read_at": "2026-10-24T01:51:19Z",
       "body_sha256": "31f46a92d8e7b21706ad180f684a42c012bae2a7384cb04b8f375617abae68a0",
       "body_characters": 2912,
       "model_context_characters": 2912,
@@ -106,7 +229,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-21T10:00:02Z",
       "historical": null,
-      "read_at": "2026-10-23T22:36:54Z",
+      "read_at": "2026-10-24T01:56:43Z",
       "body_sha256": "27ce87978b0015659a52334570758e52fc73fb83f31a31e261ac8fed4af72b9d",
       "body_characters": 18000,
       "model_context_characters": 4500,
@@ -154,12 +277,20 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
+      "url": "https://www.bbc.co.uk/news/videos/cmd7qr0ezrq7o?at_medium=RSS&at_campaign=rss",
+      "title": "Woman 'scared to turn heating on' due to oil cost",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-22T09:55:16Z",
+      "historical": null,
+      "status": "Unavailable: Insufficient public article text"
+    },
+    {
       "url": "https://www.theguardian.com/business/2026/oct/23/oil-five-month-high-fears-us-renews-strikes-iran",
       "title": "Oil price rises above $117 a barrel amid fears US will renew strikes on Iran",
       "publisher": "The Guardian Business",
       "published_at": "2026-10-23T16:48:28Z",
       "historical": null,
-      "read_at": "2026-10-23T22:42:03Z",
+      "read_at": "2026-10-24T02:01:43Z",
       "body_sha256": "13106a71c5ebb387feee7612d6c7aa09d24fbb92344bac728ac171ba8aff78e1",
       "body_characters": 2068,
       "model_context_characters": 2068,
@@ -171,117 +302,11 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-23T15:15:13Z",
       "historical": null,
-      "read_at": "2026-10-23T22:42:03Z",
+      "read_at": "2026-10-24T02:01:43Z",
       "body_sha256": "707a109299b72016eb864c6c227493b9d9597380ef314d3ac8ece7c502f0ad07",
       "body_characters": 3494,
       "model_context_characters": 3494,
       "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
-      "title": "ECB Consumer Expectations Survey results – September 2026",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-23T08:00:00Z",
-      "historical": null,
-      "read_at": "2026-10-23T22:42:05Z",
-      "body_sha256": "168e137e7ef9bbf0b708cdd0d22ac771eb240a3d19c5155bb9e205bf7646d8b2",
-      "body_characters": 3289,
-      "model_context_characters": 3289,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
-      "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
-      "publisher": "CNBC Economy",
-      "published_at": "2026-10-16T22:34:29Z",
-      "historical": null,
-      "read_at": "2026-10-23T22:42:06Z",
-      "body_sha256": "1a8a2e148fce30319cce7b2fa6189f95d1433b0d18de4bc04156f2df6a1a9472",
-      "body_characters": 3344,
-      "model_context_characters": 3344,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/oct/22/barclays-profits-up-as-uk-banks-brace-for-tax-increase-in-budget",
-      "title": "Barclays to cut 5,000 jobs as bank’s bosses hail AI productivity advances",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-22T14:39:29Z",
-      "historical": null,
-      "read_at": "2026-10-22T18:47:05Z",
-      "body_sha256": "070415832d1ad51ee6b5f9f765713703571c7c6f38d99abf9d5e9127d477d753",
-      "body_characters": 4355,
-      "model_context_characters": 4355,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Barclays is cutting 5,000 jobs and reporting strong profits, equating to 5% of its global staff.",
-        "evidence_ids": [
-          "E2",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: Barclays cutting jobs and reporting profits",
-          "financial_channel: If job cuts reduce labor costs, it may improve profitability.",
-          "asset_hypothesis: If banks reduce costs, they may have more capital for lending."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If the job cuts lead to reduced labor costs, it may improve bank profitability, potentially boosting gold as a hedge against inflation."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If the job cuts reduce risk appetite, it may favor traditional assets like gold over Bitcoin; however, if the strong profits boost market confidence, it could be positive for Bitcoin."
-        },
-        "uncertainty": "If the job cuts are not offset by increased efficiency, the strong profits may be short-lived, reducing the positive impact on gold and Bitcoin."
-      },
-      "evidence": {
-        "E2": "Barclays is cutting 5,000 jobs as part of wider cost-saving plans that",
-        "E6": "Equating to the loss of 5% of its 93,000 global staff, job"
-      },
-      "analyzed_at": "2026-10-22T18:49:45Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmz6581p1ee8o?at_medium=RSS&at_campaign=rss",
-      "title": "Island inflation rate rises to 3%, figures show",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-23T11:58:19Z",
-      "historical": null,
-      "read_at": "2026-10-23T13:46:44Z",
-      "body_sha256": "b0d59650dd1fafa8920bb1ca41d652bc03857fbe5eacd919a311e2f771340554",
-      "body_characters": 1311,
-      "model_context_characters": 1311,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Jersey's inflation rate rose to 3% in September, with increases in food and housing costs.",
-        "evidence_ids": [
-          "E5",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: inflation rate rose",
-          "financial_channel: If real yields increase, gold may benefit.",
-          "asset_hypothesis: If risk appetite remains stable, gold may remain mixed."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If real yields increase due to higher inflation expectations."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite remains stable, liquidity and alternative-hedge channels may influence Bitcoin."
-        },
-        "uncertainty": "If global energy markets stabilize, the impact on inflation may decrease, reducing gold's appeal."
-      },
-      "evidence": {
-        "E5": "The annual rate of inflation in Jersey rose to 3% in September,",
-        "E6": "It said food prices increased by 3.5% and housing costs by 0.2%."
-      },
-      "analyzed_at": "2026-10-23T13:48:35Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     }
   ]
 }

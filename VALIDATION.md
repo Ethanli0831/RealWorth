@@ -3,9 +3,9 @@
 ## Reading paths and evidence quality — 2026-10-25 (Toronto)
 
 - **54 Python tests, 24 JavaScript tests and 18 real Chromium scenarios passed
-  locally.** The multi-page browser suite also passed 18 scenarios against the
-  public HTTPS site before the final mobile-menu adjustment; the final public
-  check is recorded below. Tests use actual derived datasets, actual retained
+  locally and 18 against the final public HTTPS site.** All 11 served HTML/JS/CSS
+  application files exactly matched the checkout. The saved HTTP startup command
+  also served all five pages and six actual JSON endpoints successfully. Tests use actual derived datasets, actual retained
   model records, verified system TLS and the pinned Chart.js SHA-384 checksum.
   They do not replace live data with fabricated finance or AI responses.
 - The homepage is now a three-path overview. Purchasing Power, Research and
@@ -66,6 +66,11 @@
   AUM/holdings are not labelled as net dollar inflows, addresses are not people,
   and derivatives do not mechanically predict asset direction. The original
   paper-replication and student physical-phone/quiz limitations below remain.
+- [The latest verified Pages deployment](https://github.com/Ethanli0831/RealWorth/actions/runs/40202409823)
+  passed its build, status-report and deploy jobs. Overlapping Pages requests
+  produced cancelled sibling runs and inconsistent legacy build API statuses;
+  the public-byte comparison and real-browser results above verify actual
+  publication rather than treating that API field as sufficient evidence.
 - The existing monthly pipeline also passed with expanded tests:
   [monthly run](https://github.com/Ethanli0831/RealWorth/actions/runs/40202046063).
   The new structure writer has its own concurrency group and bounded rebase/push

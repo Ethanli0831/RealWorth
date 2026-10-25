@@ -234,8 +234,9 @@ def group_events(items):
                 break
         report = {k: item[k] for k in ('title', 'url', 'publisher', 'published_at')}
         if match:
-            if report['url'] not in {r['url'] for r in match['related_reports']}:
-                match['related_reports'].append(report)
+            for report in item.get('related_reports', [report]):
+                if report['url'] not in {r['url'] for r in match['related_reports']}:
+                    match['related_reports'].append(report)
         else:
             item.update(_event_key=key, _words=words, related_reports=original.get('related_reports', [report]))
             groups.append(item)

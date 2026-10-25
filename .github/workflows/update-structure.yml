@@ -1,0 +1,51 @@
+name: Market structure update
+on:
+  schedule:
+    - cron: "47 */4 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/build_structure.py
+      - tests/test_structure.py
+      - .github/workflows/update-structure.yml
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: monthly-data
+  cancel-in-progress: false
+jobs:
+  structure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: python -m pip install -r requirements-intelligence.txt
+      - run: python -m unittest discover -s tests -v
+      - name: Read public source observations
+        run: python scripts/build_structure.py
+      - name: Commit selected derived observations only
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add docs/data/structure.json
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Refresh public market-structure observations'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Rebuild Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: gh api --method POST "repos/$REPOSITORY/pages/builds" --jq '.status'

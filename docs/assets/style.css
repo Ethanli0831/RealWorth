@@ -1502,3 +1502,17 @@ summary {
     transform: none;
   }
 }
+.page-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 14px 0;
+  margin: 0 0 30px;
+}
+.page-links a {
+  font-size: 0.85rem;
+  padding: 8px 0;
+  color: var(--accent);
+}

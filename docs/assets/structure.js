@@ -47,6 +47,7 @@
         ),
       );
       card.append(make("p", r.note, "tiny"));
+      if (r.error) card.append(make("p", `Source issue: ${r.error}`, "tiny"));
       const history = (r.history || []).filter((p) => Number.isFinite(p.value));
       if (history.length > 1) {
         const svg = document.createElementNS(

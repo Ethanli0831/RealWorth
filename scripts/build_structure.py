@@ -136,6 +136,8 @@ def point(date, value):
 
 
 def parse_holdings(text, symbol):
+    if "<html" in text[:1000].lower():
+        raise ValueError("Issuer returned a webpage instead of dated holdings CSV")
     lines = text.lstrip("\ufeff").splitlines()
     header = next(
         i for i, line in enumerate(lines) if "Ticker" in line and "Quantity" in line
@@ -166,6 +168,10 @@ def parse_holdings(text, symbol):
 
 
 def parse_gld(text):
+    if text.startswith("%PDF"):
+        raise ValueError(
+            "Issuer returned a custodian bar-list PDF, not comparable full-fund holdings CSV"
+        )
     lines = text.lstrip("\ufeff").splitlines()
     rows = list(csv.reader(lines))
     start = next(
@@ -229,7 +235,7 @@ def tasks(now):
                 [
                     parse_holdings(
                         get(
-                            "https://www.ishares.com/us/products/333011/ishares-bitcoin-trust-etf/1467271812596.ajax?fileType=csv&fileName=IBIT_holdings&dataType=fund"
+                            "https://www.ishares.com/us/products/333011/ishares-bitcoin-trust-etf/latest-holdings.csv"
                         ).text,
                         "BTC",
                     )

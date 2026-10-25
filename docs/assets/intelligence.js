@@ -408,8 +408,8 @@
     );
     const better = evidence.filter(
       (r) =>
-        r.forecast.backtest.mean_abs_price_error_percent <
-        r.forecast.backtest.random_walk_error_percent - 0.005,
+        Number(r.forecast.backtest.mean_abs_price_error_percent.toFixed(2)) <
+        Number(r.forecast.backtest.random_walk_error_percent.toFixed(2)),
     );
     set(
       "baseline-finding",

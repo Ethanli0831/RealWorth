@@ -55,9 +55,10 @@ def point(date,value):return {'date':str(date)[:10],'value':round(num(value),6)}
 def parse_holdings(text,symbol):
  lines=text.lstrip('\ufeff').splitlines()
  header=next(i for i,line in enumerate(lines) if 'Ticker' in line and 'Quantity' in line)
- frame=pd.read_csv(StringIO('\n'.join(lines[header:])))
- frame.columns=frame.columns.str.strip()
- row=frame.loc[frame['Ticker'].astype(str).str.upper().eq(symbol)].iloc[0]
+ rows=list(csv.reader(lines[header:]))
+ columns=[c.strip() for c in rows[0]]
+ frame=pd.DataFrame([r for r in rows[1:] if len(r)==len(columns)],columns=columns)
+ row=frame.loc[frame['Ticker'].astype(str).str.upper().isin([symbol,'XBT'] if symbol=='BTC' else [symbol])].iloc[0]
  quantity=num(row['Quantity'])
  if quantity<=0:raise ValueError('Invalid fund holdings')
  # An actual holdings date is mandatory; never label the request date as the data date.
@@ -69,8 +70,11 @@ def parse_holdings(text,symbol):
 
 def parse_gld(text):
  lines=text.lstrip('\ufeff').splitlines()
- start=next(i for i,line in enumerate(lines) if line.lower().startswith('date,') and 'tonne' in line.lower())
- df=pd.read_csv(StringIO('\n'.join(lines[start:])))
+ rows=list(csv.reader(lines))
+ start=next((i for i,row in enumerate(rows) if row and row[0].strip().lower()=='date' and any('tonne' in c.lower() for c in row)),None)
+ if start is None:raise ValueError('GLD header missing: '+repr(rows[:2])[:300])
+ columns=[c.strip() for c in rows[start]]
+ df=pd.DataFrame([r for r in rows[start+1:] if len(r)==len(columns)],columns=columns)
  key=next(c for c in df.columns if 'tonne' in c.lower())
  price=next((c for c in df.columns if 'gld' in c.lower() and 'close' in c.lower()),None)
  out=[]
@@ -85,6 +89,18 @@ def parse_gld(text):
     out.append(p)
   except (ValueError,TypeError):continue
  return sorted(out,key=lambda p:p['date'])
+
+def parse_cot(text):
+ # CFTC's current disaggregated futures-only text file is headerless.
+ # Published column order: market, YYMMDD, ISO date, codes, OI,
+ # producer L/S, swap L/S/spread, managed-money L/S/spread, ...
+ rows=list(csv.reader(StringIO(text)))
+ r=next(r for r in rows if r and r[0].strip()=='GOLD - COMMODITY EXCHANGE INC.')
+ if len(r)<50 or not re.fullmatch(r"\d{4}-\d{2}-\d{2}",r[2]):raise ValueError('CFTC schema changed')
+ oi,long,short=num(r[7]),num(r[13]),num(r[14])
+ if not (oi>0 and 0<=long<=oi and 0<=short<=oi):raise ValueError('CFTC position bounds failed')
+ return point(r[2],long-short)
+
 
 def tasks(now):
  start=(now-timedelta(days=380)).date().isoformat()
@@ -109,14 +125,7 @@ def tasks(now):
   else:values=values.dropna().pct_change(20,fill_method=None)*100
   return {key:([point(d.date(),v) for d,v in values.dropna().items()],unit)}
  def cot():
-  df=pd.read_csv(StringIO(get('https://www.cftc.gov/dea/newcot/f_disagg.txt').text))
-  df.columns=df.columns.str.strip()
-  r=df.loc[df.iloc[:,0].str.strip().eq('GOLD - COMMODITY EXCHANGE INC.')].iloc[0]
-  def field(name):
-   col=next((c for c in df.columns if re.sub('[^a-z0-9]','',c.lower())==re.sub('[^a-z0-9]','',name.lower())),None)
-   if col is None:raise ValueError('CFTC missing '+name+'; fields '+str(list(df.columns)[:30]))
-   return r[col]
-  return {'cot':([point(field('Report_Date_as_YYYY-MM-DD'),num(field('M_Money_Positions_Long_All'))-num(field('M_Money_Positions_Short_All')))],'contracts net long')}
+  return {'cot':([parse_cot(get('https://www.cftc.gov/dea/newcot/f_disagg.txt').text)],'contracts net long')}
  return [(('ibit',),ibit),(('gld',),gold),(('funding','oi'),derivatives),(('dvol',),vol),(('addresses','transactions','fees','hashrate'),chain),(('m2',),lambda:fred('M2SL','m2','% YoY')),(('dollar',),lambda:fred('DTWEXBGS','dollar','% / 20 observations')),(('cot',),cot)]
 
 def empirical_rank(points):

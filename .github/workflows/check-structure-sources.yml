@@ -1,0 +1,42 @@
+name: Inspect public fund source formats
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.11'
+      - run: pip install requests==2.32.5 beautifulsoup4==4.13.5 pypdf==6.1.3
+      - name: Read source schema metadata
+        run: |
+          python - <<'PY'
+          import requests,re,io
+          from bs4 import BeautifulSoup
+          from pypdf import PdfReader
+          urls=[
+          'https://www.ishares.com/us/products/333011/ishares-bitcoin-trust-etf/1467271812596.ajax?fileType=csv&fileName=IBIT_holdings&dataType=fund',
+          'https://www.ishares.com/us/products/333011/ishares-bitcoin-trust-etf/1521107976943.ajax?fileType=csv&fileName=IBIT_holdings&dataType=fund',
+          'https://www.spdrgoldshares.com/assets/dynamic/GLD/GLD_US_archive_EN.csv',
+          'https://www.spdrgoldshares.com/usa/key-information/',
+          ]
+          for url in urls:
+            try:
+              r=requests.get(url,timeout=35);r.raise_for_status()
+              print('SOURCE',url,'TYPE',r.headers.get('Content-Type'),'BYTES',len(r.content))
+              if r.content.startswith(b'%PDF'):
+                text='\n'.join(p.extract_text() or '' for p in PdfReader(io.BytesIO(r.content)).pages[:3])
+                lines=text.splitlines()
+              else:
+                soup=BeautifulSoup(r.text,'html.parser')
+                print('TITLE',soup.title.get_text()[:120] if soup.title else 'CSV/no HTML title')
+                for bad in soup(['script','style']):bad.decompose()
+                lines=soup.get_text('\n',strip=True).splitlines() if soup.title else r.text.splitlines()
+              matches=[i for i,line in enumerate(lines) if re.search(r'tonnes|gold in trust|bitcoin held|holdings as of|shares outstanding|ticker,|quantity|as of|as at',line,re.I)]
+              for i in matches[:12]:print('SCHEMA',' | '.join(lines[max(0,i-1):i+4])[:420])
+            except Exception as e:print(type(e).__name__,str(e)[:200])
+          PY

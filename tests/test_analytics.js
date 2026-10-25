@@ -54,3 +54,16 @@ test("regime distributions use real observed samples, not nominal substitutes ac
   assert.equal(r.median, 0);
   assert.equal(A.regimeStats(d, "median", "nominal")[0].assets.A.n, 3);
 });
+
+test('scorecard annualises calendar-time growth and keeps genuine one-month excess returns', () => {
+  const d={growth:{real:{A:[1,2,1,2], 'T-Bills':[1,1,1,1]}}};
+  const r=A.score(d,'A',0,3);
+  assert.equal(r.ann_real_return,1500);
+  assert.equal(r.max_drawdown,-50);
+  assert.equal(r.current_drawdown,0);
+  assert.ok(Math.abs(r.sharpe-2)<1e-10);
+  const gap={growth:{real:{A:[1,2,null,2], 'T-Bills':[1,1,null,1]}}};
+  const g=A.score(gap,'A',0,3);
+  assert.equal(g.ann_real_return,1500);
+  assert.equal(g.ann_volatility,null);
+});

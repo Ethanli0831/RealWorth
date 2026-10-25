@@ -9,6 +9,8 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from io import StringIO
 import json
+import csv
+import re
 import math
 import os
 from pathlib import Path
@@ -110,7 +112,11 @@ def tasks(now):
   df=pd.read_csv(StringIO(get('https://www.cftc.gov/dea/newcot/f_disagg.txt').text))
   df.columns=df.columns.str.strip()
   r=df.loc[df.iloc[:,0].str.strip().eq('GOLD - COMMODITY EXCHANGE INC.')].iloc[0]
-  return {'cot':([point(r['Report_Date_as_YYYY-MM-DD'],num(r['M_Money_Positions_Long_All'])-num(r['M_Money_Positions_Short_All']))],'contracts net long')}
+  def field(name):
+   col=next((c for c in df.columns if re.sub('[^a-z0-9]','',c.lower())==re.sub('[^a-z0-9]','',name.lower())),None)
+   if col is None:raise ValueError('CFTC missing '+name+'; fields '+str(list(df.columns)[:30]))
+   return r[col]
+  return {'cot':([point(field('Report_Date_as_YYYY-MM-DD'),num(field('M_Money_Positions_Long_All'))-num(field('M_Money_Positions_Short_All')))],'contracts net long')}
  return [(('ibit',),ibit),(('gld',),gold),(('funding','oi'),derivatives),(('dvol',),vol),(('addresses','transactions','fees','hashrate'),chain),(('m2',),lambda:fred('M2SL','m2','% YoY')),(('dollar',),lambda:fred('DTWEXBGS','dollar','% / 20 observations')),(('cot',),cot)]
 
 def empirical_rank(points):
@@ -122,7 +128,7 @@ def build(previous,now):
  def fetch(job):
   ids,fn=job
   try:return ids,fn(),None
-  except Exception as e:return ids,{},type(e).__name__
+  except Exception as e:return ids,{},type(e).__name__+': '+str(e)[:400]
  with ThreadPoolExecutor(max_workers=4) as pool:
   for ids,readings,error in pool.map(fetch,tasks(now)):
    for key in ids:results[key]=(readings.get(key),error)
@@ -135,7 +141,12 @@ def build(previous,now):
    for p in values:
     if cut<=p['date']<=now.date().isoformat():series[p['date']]=p
   else:unit=last.get('unit','')
-  history=sorted(series.values(),key=lambda p:p['date']);latest=history[-1] if history else None
+  history=sorted(series.values(),key=lambda p:p['date'])
+  priced=[p for p in history if 'price' in p]
+  if priced:
+   base=priced[0]['price']
+   for p in priced:p['price_index']=round(p.pop('price')/base*100,6)
+  latest=history[-1] if history else None
   limit=65 if key=='m2' else 14 if key=='cot' else 7 if key in ('gld','ibit') else 3
   stale=not latest or (now.date()-pd.Timestamp(latest['date']).date()).days>limit
   # Retain history for ranks and charts, but never imply it was downloaded afresh.
@@ -152,5 +163,5 @@ def main():
  try:os.replace(name,OUTPUT)
  finally:Path(name).unlink(missing_ok=True)
  print('Market structure:',sum(r['status']=='Fetched' for r in payload['indicators']),'/',len(payload['indicators']),'readings fetched')
- for r in payload['indicators']:print(r['id'],r['status'],r['period'],r['value'],r['unit'])
+ for r in payload['indicators']:print(r['id'],r['status'],r['period'],r['value'],r['unit'],r['error'])
 if __name__=='__main__':main()

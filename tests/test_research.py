@@ -46,6 +46,23 @@ class NewsEvidence(unittest.TestCase):
         with self.assertRaises(ValueError):
             m.parse_feed('<html>not a feed</html>', FEED, MECHANISMS, NOW)
 
+    def test_ambiguous_jobs_and_war_can_abstain(self):
+        for title in ["Civil servant worked five jobs and is charged with fraud", "Is an 'AI war' complicating your job search?", "A football star wins a gold medal"]:
+            self.assertEqual(m.classify(title, MECHANISMS), [])
+        self.assertIn('growth',m.classify('US payrolls fall as unemployment climbs',MECHANISMS))
+        self.assertIn('energy',m.classify('Oil supplies disrupted by attacks in Hormuz',MECHANISMS))
+        self.assertEqual(m.relevance('Barclays cuts 200 jobs',[])['status'],'No clear macro impact')
+
+    def test_same_employer_layoff_reports_merge_without_merging_other_banks(self):
+        def item(title,url):
+            return {'title':title,'url':url,'published_at':'2026-10-17T10:00:00Z','publisher':'Outlet','topics':['growth']}
+        result=m.group_events([item('Barclays to cut 200 jobs','https://a.org/1'),item('Barclays cuts investment banking jobs','https://b.org/2'),item('HSBC cuts jobs','https://c.org/3')])
+        self.assertEqual(len(result),2)
+        self.assertEqual(len(result[0]['related_reports']),2)
+        self.assertEqual(result[0]['topics'],[])
+        # Cached clusters retain all attribution links when processed again.
+        self.assertEqual(len(m.group_events(result)[0]['related_reports']),2)
+
 
 class MacroEvidence(unittest.TestCase):
     def test_growth_inflation_weather_and_credit_stress_are_distinct(self):

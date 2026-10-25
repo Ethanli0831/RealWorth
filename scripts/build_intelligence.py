@@ -485,6 +485,8 @@ def build(research, previous, provider, max_ai, now):
     candidates = []
     groups = {}
     for item in research["news"]:
+        if not item.get("topics") or item.get("relevance", {}).get("status") == "No clear macro impact":
+            continue
         if parse_date(item["published_at"]) >= now - timedelta(days=7):
             groups.setdefault(item["publisher"], []).append(item)
     # Rotate publishers so an unavailable outlet does not consume every read.

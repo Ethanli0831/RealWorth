@@ -1,30 +1,47 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta
-      name="description"
       content="Understand RealWorth's exact purchasing-power calculations, risk ratios, inflation regimes and data limitations."
+      name="description"
     />
-    <meta name="theme-color" content="#142b2b" />
+    <meta content="#142b2b" name="theme-color" />
     <title>Methodology — RealWorth</title>
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/style.css" />
-    <script defer src="assets/app.js"></script>
+    <link href="assets/favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="assets/style.css" rel="stylesheet" />
+    <script defer="" src="assets/app.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#methodology">Skip to methodology</a>
     <header class="site-header wrap">
-      <a class="brand" href="./"
-        ><span class="brand-mark" aria-hidden="true">R<span>W</span></span
+      <a aria-label="RealWorth home" class="brand" href="./"
+        ><span aria-hidden="true" class="brand-mark">R<span>W</span></span
         >RealWorth<span class="brand-note">A research project</span></a
       >
       <nav aria-label="Main navigation">
-        <a href="index.html#calculator">Calculator</a
-        ><a href="index.html#scorecard">Scorecard</a
-        ><a href="index.html#regime">Inflation</a
-        ><a href="#methodology" aria-current="page">Methodology</a>
+        <a href="purchasing-power.html">Purchasing Power</a
+        ><a href="research.html">Research</a
+        ><a href="monitor.html">Market Monitor</a>
+        <details class="site-directory">
+          <summary>Explore <span aria-hidden="true">▾</span></summary>
+          <div class="directory-links">
+            <a href="./">Home</a
+            ><a href="purchasing-power.html#calculator"
+              >Real-return calculator</a
+            ><a href="research.html#scorecard">Common-period scorecard</a
+            ><a href="research.html#rolling">Rolling holding periods</a
+            ><a href="research.html#regime">Inflation evidence</a
+            ><a href="research.html#weather">Economic Weather &amp; sources</a
+            ><a href="monitor.html#outlook">Today → Tomorrow</a
+            ><a href="monitor.html#news">News &amp; analysis</a
+            ><a href="monitor.html#market-structure"
+              >Flows, leverage &amp; network</a
+            ><a href="methodology.html">Methodology &amp; quiz</a>
+          </div>
+        </details>
       </nav>
     </header>
     <main class="wrap prose" id="methodology">
@@ -199,8 +216,8 @@
       <h2>4. Economic weather and debt-cycle signals</h2>
       <p>
         The supplementary
-        <a href="index.html#weather">US economic-weather panel</a> uses real GDP
-        YoY growth versus the previous quarter and CPI YoY versus six months
+        <a href="research.html#weather">US economic-weather panel</a> uses real
+        GDP YoY growth versus the previous quarter and CPI YoY versus six months
         earlier, with a ±0.10 percentage-point deadband. These asynchronous
         observations describe direction; they do not measure surprises against
         consensus or forecast returns. Flat or unknown inputs produce a
@@ -371,7 +388,7 @@
           >numerical comparison</a
         >.
       </p>
-      <section class="panel quiz-card" aria-labelledby="quiz-title">
+      <section aria-labelledby="quiz-title" class="panel quiz-card">
         <p class="eyebrow">Explain it in your own words</p>
         <h2 id="quiz-title" style="margin-top: 0">
           A five-question self-check
@@ -381,22 +398,121 @@
           your answer, then compare it with the explanation. One question at a
           time.
         </p>
-        <p id="quiz-progress" class="tiny"></p>
+        <p class="tiny" id="quiz-progress"></p>
         <h3 id="quiz-question"></h3>
-        <label for="quiz-response" class="sr-only">Your answer</label
+        <label class="sr-only" for="quiz-response">Your answer</label
         ><textarea
-          id="quiz-response"
           class="quiz-input"
+          id="quiz-response"
           placeholder="Explain your reasoning…"
         ></textarea>
-        <p class="notice" id="quiz-answer" hidden aria-live="polite"></p>
+        <p aria-live="polite" class="notice" hidden="" id="quiz-answer"></p>
         <div class="quiz-actions">
           <button class="button" id="quiz-show" type="button">
             Show explanation</button
-          ><button class="text-button" id="quiz-next" type="button" hidden>
+          ><button class="text-button" hidden="" id="quiz-next" type="button">
             Next question
           </button>
         </div>
+      </section>
+      <section id="comparison-methods">
+        <h2>Comparable histories and rolling holding periods</h2>
+        <p>
+          The scorecard defaults to the first and last month where all five
+          assets have nominal and real index levels. Each real path is rebased
+          at that common starting month. Annual growth uses elapsed calendar
+          months; volatility uses the sample standard deviation of genuine
+          consecutive real monthly returns, multiplied by √12. Sharpe uses real
+          returns in excess of contemporaneous BIL, divided by the sample
+          standard deviation of that excess. Switching to full history
+          deliberately restores unequal asset start dates.
+        </p>
+        <p>
+          For holding length h, every eligible month t contributes a cumulative
+          real return G(real,t+h) / G(real,t) − 1. The historical beat-inflation
+          share counts returns strictly above zero. We report the number of
+          windows, omitted missing endpoints, worst return, median and P10/P90
+          interpolated empirical quantiles. The windows overlap and are not
+          independent; the fraction is not a forecast probability. Interior CPI
+          gaps do not prevent a known-endpoint return but can hide path risk.
+        </p>
+        <h2>Five-asset comparison and purchasing-power recovery</h2>
+        <p>
+          All paths use the same amount, buy month and holding end, expressed in
+          buy-month dollars. Recovery means the first observed month back at or
+          above purchase purchasing power after a prior observed loss, measured
+          in months from purchase. It is distinct from never falling below
+          purchase, not recovering within the chosen period, or missing starting
+          CPI. A later relapse is possible. No missing-month crossing is
+          invented. Invalid holding periods are disabled before submission.
+        </p>
+        <h2>Inflation distributions: level and direction are distinct</h2>
+        <p>
+          High/Low and quartiles use the original unrounded CPI YoY observations
+          and shared nominal-return months. The real-return view additionally
+          requires actual consecutive CPI endpoints; a missing CPI month and its
+          successor have no one-month real return. Each group shows asset-level
+          sample size, mean, median, P10/P90 and minimum/maximum. The default is
+          real return; nominal returns remain available. The direction test
+          compares this month's CPI YoY with the preceding calendar month's YoY:
+          Rising is strictly greater; Falling / flat includes ties. A missing
+          prior observation is excluded. It is a separate descriptive test, not
+          a forecast or proof of an inflation hedge.
+        </p>
+        <h2>News relevance and event grouping</h2>
+        <p>
+          Headline routing applies conservative context checks before assigning
+          a mechanism. Standalone words such as jobs and war are insufficient.
+          Career advice, individual fraud and similar stories can display No
+          clear macro impact, without a template or AI interpretation. Company
+          layoffs do not by themselves establish economy-wide weakness. Known
+          employer/action matches and near-identical titles within three days
+          can group reports, retaining individual source links and dates. This
+          conservative grouping can miss duplicates or combine successive
+          closely related updates; it is not verified event identification.
+          Selected readable relevant articles may proceed to actual AI, whose
+          hypotheses still require source review.
+        </p>
+        <h2>Price evidence, baseline and repeated issues</h2>
+        <p>
+          Historical model median error is shown beside unchanged-price error
+          before the scenario cards. Smaller mean absolute percentage error is
+          better. Equal or worse errors provide no demonstrated advantage over
+          that baseline. An outer interval covering an outcome does not mean the
+          model predicted its direction correctly. Prospective scores are
+          separated by asset and use the earliest issue for each target date in
+          America/Toronto; total verified issues and distinct target dates are
+          shown separately. This prevents repeated same-date issues receiving
+          extra weight, but dates remain statistically dependent and horizons
+          can differ. Archived actual returns reconstruct baseline error as |r /
+          (1+r)| × 100, where r is the realised fractional return. Frozen
+          original issues and all later outcomes stay in the ledger.
+        </p>
+        <h2>Market-structure sources and coverage</h2>
+        <p>
+          The Market Monitor reads selected public fund and market datasets
+          separately from Yahoo monthly prices: IBIT official bitcoin holdings;
+          GLD official tonnes; Deribit BTC perpetual funding, USD open interest
+          and DVOL; Coin Metrics community active addresses, transaction counts,
+          BTC fees and estimated hash rate; FRED M2SL and DTWEXBGS; and CFTC
+          futures-only gold managed-money net positions. Each reading reports
+          its own observation date, source, fetch status and limitations. Failed
+          sources retain dated old observations or explicit No data. No secret
+          keys are required.
+        </p>
+        <p>
+          Funding and open-interest history is collected prospectively one
+          observation per date, not fabricated retroactively. A trailing-year
+          rank requires at least 250 observations spanning at least 330 days;
+          shorter histories show no percentile. It is an empirical rank, not a
+          calibrated tail probability. Fund holdings and AUM are not dollar net
+          flows. The GLD comparison rebases official price and holdings to a
+          common starting date; it does not infer causation. World Gold Council
+          physical-demand breakdowns, comparable option skew and CAD purchasing
+          power are listed as research sources or not connected; they are not
+          implied by the connected indicators. US CPI remains the inflation
+          basis of the return tools.
+        </p>
       </section>
     </main>
     <footer class="site-footer wrap">

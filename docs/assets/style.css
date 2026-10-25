@@ -1233,3 +1233,272 @@ details[open] > summary::before {
     padding: 12px;
   }
 }
+/* Reading paths share the original paper, forest green and serif vocabulary. */
+.page-intro {
+  padding: 64px 0 28px;
+  max-width: 780px;
+}
+.page-intro h1 {
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
+  line-height: 1.05;
+  margin: 22px 0;
+}
+.page-intro > p:last-of-type {
+  max-width: 680px;
+}
+.path-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin: 45px 0 70px;
+}
+.path-card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  text-decoration: none;
+  color: var(--ink);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.path-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px #172c2c0b;
+}
+.path-card h2 {
+  font-size: 1.9rem;
+  line-height: 1.2;
+  margin: 25px 0 15px;
+}
+.path-card p {
+  color: var(--muted);
+}
+.path-link {
+  margin-top: auto;
+  padding-top: 24px;
+  color: var(--accent);
+  font-weight: 600;
+}
+.home-note {
+  max-width: 720px;
+  margin: 0 auto 90px;
+  text-align: center;
+}
+.home-note h2 {
+  font-size: 2.5rem;
+}
+.site-directory {
+  position: relative;
+}
+.site-directory summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.directory-links {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 12px 30px #172c2c20;
+  width: 290px;
+  padding: 12px;
+  z-index: 30;
+  display: grid;
+  gap: 0;
+}
+.directory-links a {
+  padding: 10px !important;
+  display: block;
+}
+.site-header nav {
+  align-items: center;
+  flex-wrap: wrap;
+}
+.site-header nav a[aria-current="page"] {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+.comparison-panel {
+  border-top: 1px solid var(--line);
+  margin-top: 36px;
+  padding-top: 24px;
+}
+.return-selector {
+  display: inline-block;
+  margin: 15px 0;
+}
+.baseline-evidence {
+  background: #eef1e8;
+  border-left: 3px solid var(--accent);
+  padding: 22px;
+  margin: 25px 0 35px;
+}
+.baseline-evidence h3 {
+  margin-top: 0;
+}
+.forecast-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin: 25px 0;
+}
+.forecast-card {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px;
+  background: var(--white);
+  min-width: 0;
+}
+.forecast-card h3 {
+  font-size: 1.6rem;
+  margin: 0 0 8px;
+}
+.quote-value {
+  font-size: 2rem;
+  color: var(--accent);
+  margin: 18px 0 5px;
+  font-variant-numeric: tabular-nums;
+}
+.target-time {
+  font-weight: 600;
+}
+.scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 18px 0;
+  margin: 20px 0;
+}
+.scenario-grid dt {
+  font-size: 0.7rem;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.scenario-grid dd {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.forecast-card details {
+  padding-top: 12px;
+}
+.structure-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 20px 0;
+}
+.structure-card {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  min-width: 0;
+}
+.structure-value {
+  font-size: 1.7rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent);
+}
+.structure-spark {
+  width: 100%;
+  height: 70px;
+  color: var(--accent);
+}
+.structure-card p {
+  overflow-wrap: anywhere;
+}
+.tool {
+  scroll-margin-top: 25px;
+}
+.regime-chart-heading {
+  flex-wrap: wrap;
+}
+.toggle-group {
+  flex-wrap: wrap;
+}
+nav a,
+summary {
+  touch-action: manipulation;
+}
+.panel {
+  min-width: 0;
+}
+@media (max-width: 900px) {
+  .site-header {
+    gap: 22px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .path-grid {
+    gap: 14px;
+  }
+  .path-card {
+    padding: 22px;
+  }
+  .path-card h2 {
+    font-size: 1.55rem;
+  }
+}
+@media (max-width: 700px) {
+  .path-grid,
+  .forecast-cards,
+  .structure-grid {
+    grid-template-columns: 1fr;
+  }
+  .path-card {
+    padding: 28px;
+  }
+  .page-intro {
+    padding-top: 34px;
+  }
+  .site-header nav {
+    width: 100%;
+    gap: 10px;
+  }
+  .site-header nav > a {
+    font-size: 0.75rem;
+  }
+  .site-directory {
+    margin-left: auto;
+  }
+  .directory-links {
+    right: 0;
+    max-width: calc(100vw - 40px);
+  }
+  .forecast-card {
+    padding: 20px;
+  }
+  .scenario-grid {
+    gap: 7px;
+  }
+  .site-directory summary {
+    font-size: 0.8rem;
+  }
+  .baseline-evidence {
+    padding: 16px;
+  }
+  .home-note h2 {
+    font-size: 2rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .path-card {
+    transition: none;
+  }
+  .path-card:hover {
+    transform: none;
+  }
+}

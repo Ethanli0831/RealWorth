@@ -2,42 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta
+      content="Three paths to explore purchasing power, historical evidence and the market today."
       name="description"
-      content="Look beyond headline returns. Compare Bitcoin, gold, stocks and Treasuries after inflation, through drawdowns and across inflation regimes."
     />
-    <meta name="theme-color" content="#142b2b" />
+    <meta content="#142b2b" name="theme-color" />
     <title>Is Bitcoin Digital Gold? — RealWorth</title>
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/style.css" />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.js"
-      integrity="sha384-sitkSLEO56SJYRloHWybrHos3JVvByQSlOZYJ1HiExytjxUlVOernDbpQcOgwtW8"
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="assets/app.js"></script>
-    <script defer src="assets/research.js"></script>
-    <script defer src="assets/intelligence.js"></script>
+    <link href="assets/favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="assets/style.css" rel="stylesheet" />
+
+    <script defer="" src="assets/home.js"></script>
+    <script defer="" src="assets/navigation.js"></script>
   </head>
   <body>
-    <a class="skip-link" href="#calculator">Skip to the tools</a>
+    <a class="skip-link" href="#dashboard">Skip to content</a>
     <header class="site-header wrap">
-      <a class="brand" href="./" aria-label="RealWorth home"
-        ><span class="brand-mark" aria-hidden="true">R<span>W</span></span
+      <a aria-label="RealWorth home" class="brand" href="./"
+        ><span aria-hidden="true" class="brand-mark">R<span>W</span></span
         >RealWorth<span class="brand-note">A research project</span></a
       >
       <nav aria-label="Main navigation">
-        <a href="#calculator">Calculator</a><a href="#scorecard">Scorecard</a
-        ><a href="#regime">Inflation</a><a href="#weather">Research</a
-        ><a href="methodology.html"
-          >Methodology <span aria-hidden="true">↗</span></a
-        >
+        <a href="purchasing-power.html">Purchasing Power</a
+        ><a href="research.html">Research</a
+        ><a href="monitor.html">Market Monitor</a>
+        <details class="site-directory">
+          <summary>Explore <span aria-hidden="true">▾</span></summary>
+          <div class="directory-links">
+            <a href="./">Home</a
+            ><a href="purchasing-power.html#calculator"
+              >Real-return calculator</a
+            ><a href="research.html#scorecard">Common-period scorecard</a
+            ><a href="research.html#rolling">Rolling holding periods</a
+            ><a href="research.html#regime">Inflation evidence</a
+            ><a href="research.html#weather">Economic Weather &amp; sources</a
+            ><a href="monitor.html#outlook">Today → Tomorrow</a
+            ><a href="monitor.html#news">News &amp; analysis</a
+            ><a href="monitor.html#market-structure"
+              >Flows, leverage &amp; network</a
+            ><a href="methodology.html">Methodology &amp; quiz</a>
+          </div>
+        </details>
       </nav>
     </header>
-    <main class="wrap" id="dashboard" aria-busy="true">
-      <section class="hero" aria-labelledby="page-title">
+    <main aria-busy="false" class="wrap" id="dashboard">
+      <section aria-labelledby="page-title" class="hero">
         <div class="hero-copy">
           <p class="eyebrow">The store-of-value dashboard</p>
           <p class="disclaimer">
@@ -49,14 +58,14 @@
             A big return is only half the story. See what your money really
             earned—and what you would have had to endure along the way.
           </p>
-          <a class="button" href="#calculator"
+          <a class="button" href="purchasing-power.html"
             >Find your real return <span aria-hidden="true">↓</span></a
           >
           <p class="data-stamp" id="data-stamp">
             Loading monthly research data…
           </p>
         </div>
-        <aside class="hero-card" aria-label="Bitcoin risk in context">
+        <aside aria-label="Bitcoin risk in context" class="hero-card">
           <div class="card-kicker">
             <span class="dot"></span> Beyond the headline return
           </div>
@@ -67,34 +76,33 @@
             month end.
           </p>
           <svg
-            class="hero-illustration"
-            viewBox="0 0 360 88"
-            role="img"
             aria-label="Illustration of a rise, a steep fall, and a recovery; not market data"
+            class="hero-illustration"
+            role="img"
+            viewbox="0 0 360 88"
           >
             <path
               d="M0 74 L35 62 L65 67 L104 26 L133 38 L165 8 L194 64 L225 77 L252 52 L288 61 L325 25 L360 11"
               fill="none"
               stroke="currentColor"
               stroke-width="3"
-            />
+            ></path>
             <path
               d="M165 8 L194 64 L225 77"
               fill="none"
               stroke="#f6a393"
               stroke-width="3"
-            />
+            ></path>
           </svg>
           <p class="tiny">
             Illustration. Metrics above use actual monthly observations.
           </p>
-          <a href="#scorecard"
+          <a href="research.html#scorecard"
             >Compare all five assets <span aria-hidden="true">→</span></a
           >
         </aside>
       </section>
-
-      <div class="asset-strip" aria-label="Assets in this study">
+      <div aria-label="Assets in this study" class="asset-strip">
         <span>Five ways to hold value</span
         ><span><b>₿</b> Bitcoin <small>BTC-USD</small></span
         ><span><b>◈</b> Gold <small>GLD</small></span
@@ -102,727 +110,42 @@
         ><span><b>≋</b> T-Bills <small>BIL</small></span
         ><span><b>⌁</b> LT Bonds <small>TLT</small></span>
       </div>
-      <p id="load-status" class="notice" role="status">
-        Loading data. Controls will become available shortly.
-      </p>
-      <p id="chart-warning" class="notice" hidden>
-        Charts could not load. All calculations and the data tables still work.
-        Check your connection to the chart CDN.
-      </p>
-      <noscript
-        ><p class="notice error">
-          Enable JavaScript to use the interactive tools. You can still read the
-          <a href="methodology.html">methodology</a> and
-          <a href="data/data.json">derived dataset</a>.
-        </p></noscript
-      >
-
-      <section id="calculator" class="tool" aria-labelledby="calculator-title">
-        <div class="section-heading">
-          <span class="section-number">01</span>
-          <div>
-            <p class="eyebrow">Make the research personal</p>
-            <h2 id="calculator-title">What did it really earn?</h2>
-            <p>
-              Choose a month-end investment. Compare the dollars you made with
-              the purchasing power you kept.
-            </p>
-          </div>
-        </div>
-        <div class="panel">
-          <form id="calculator-form">
-            <fieldset id="calculator-inputs" disabled>
-              <legend class="sr-only">Your investment</legend>
-              <div class="input-grid">
-                <label
-                  >Asset<select id="asset" name="asset">
-                    <option>Bitcoin</option>
-                    <option>Gold</option>
-                    <option>S&amp;P 500</option>
-                    <option>T-Bills</option>
-                    <option>LT Bonds</option>
-                  </select></label
-                >
-                <label
-                  >Buy month<input
-                    id="buy-month"
-                    name="buy-month"
-                    type="month"
-                    required
-                    aria-describedby="month-help"
-                /></label>
-                <label
-                  >Holding period<select
-                    id="holding-period"
-                    name="holding-period"
-                  >
-                    <option value="12">1 year</option>
-                    <option value="36">3 years</option>
-                    <option value="60">5 years</option>
-                    <option value="120">10 years</option>
-                    <option value="latest">Until latest data</option>
-                  </select></label
-                >
-                <label
-                  >Amount invested (USD)<input
-                    id="amount"
-                    name="amount"
-                    type="number"
-                    min="1"
-                    max="1000000000"
-                    step="any"
-                    value="1000"
-                    required
-                    inputmode="decimal"
-                /></label>
-              </div>
-              <div class="form-bottom">
-                <p class="tiny" id="month-help">
-                  Buys and sells occur at month end. “Latest” means the last
-                  month with released CPI.
-                </p>
-                <button class="button" type="submit">
-                  Calculate return <span aria-hidden="true">→</span>
-                </button>
-              </div>
-            </fieldset>
-          </form>
-          <p id="calculator-error" class="notice error" role="alert" hidden></p>
-          <div id="calculator-results" hidden aria-live="polite">
-            <p class="result-period" id="result-period"></p>
-            <div class="result-grid">
-              <article class="result-card">
-                <h3>Nominal value at end</h3>
-                <p class="result-value" id="nominal-value"></p>
-                <p id="nominal-return"></p>
-                <small>Before accounting for inflation</small>
-              </article>
-              <article class="result-card featured">
-                <h3>Value after inflation</h3>
-                <p class="result-value" id="real-value"></p>
-                <p id="real-return"></p>
-                <small id="real-units"></small>
-              </article>
-              <article class="result-card">
-                <h3>Worst drop along the way</h3>
-                <p class="result-value" id="hold-drawdown"></p>
-                <p id="hold-severity"></p>
-                <small>Fall from an earlier real-value peak</small>
-              </article>
-            </div>
-            <p class="plain-summary" id="calculator-summary"></p>
-            <p id="gap-warning" class="notice" hidden></p>
-            <div class="chart-heading">
-              <h3>Your purchasing power over time</h3>
-              <span>In buy-month USD</span>
-            </div>
-            <div class="chart-container">
-              <canvas
-                id="investment-chart"
-                role="img"
-                aria-label="Real investment value over the selected holding period"
-              ></canvas>
-              <p class="chart-fallback" hidden>
-                Chart unavailable. The return and observed drawdown are shown
-                above.
-              </p>
-            </div>
-          </div>
-        </div>
+      <section aria-label="Choose your research path" class="path-grid">
+        <a class="path-card" href="purchasing-power.html"
+          ><span class="eyebrow">01 / Purchasing Power</span>
+          <h2>Did my money<br />keep its value?</h2>
+          <p>
+            Compare five assets for one buy month, after inflation and through
+            drawdowns.
+          </p>
+          <span class="path-link">Open calculator →</span></a
+        ><a class="path-card" href="research.html"
+          ><span class="eyebrow">02 / Research</span>
+          <h2>When did<br />holding work?</h2>
+          <p>
+            Common histories, rolling holding periods, inflation distributions
+            and economic context.
+          </p>
+          <span class="path-link">Explore the evidence →</span></a
+        ><a class="path-card" href="monitor.html"
+          ><span class="eyebrow">03 / Market Monitor</span>
+          <h2>What changed?<br />What held up?</h2>
+          <p>
+            Relevant news, market structure, frozen scenarios and results versus
+            a simple baseline.
+          </p>
+          <span class="path-link">Open market monitor →</span></a
+        >
       </section>
-
-      <section id="scorecard" class="tool" aria-labelledby="scorecard-title">
-        <div class="section-heading">
-          <span class="section-number">02</span>
-          <div>
-            <p class="eyebrow">Compare the trade-offs</p>
-            <h2 id="scorecard-title">Store-of-Value Scorecard</h2>
-            <p>
-              Keeping purchasing power is one thing. Keeping your nerve is
-              another. Compare growth with the risk taken to earn it.
-            </p>
-          </div>
-        </div>
-        <div class="panel">
-          <div
-            class="table-wrap"
-            tabindex="0"
-            role="region"
-            aria-label="Asset scorecard; scroll horizontally to see all columns"
-          >
-            <table class="score-table">
-              <caption class="sr-only">
-                Full-history real performance. Bitcoin begins September 2014;
-                ETFs begin January 2014. Undefined ratios are labelled Not
-                defined.
-              </caption>
-              <thead>
-                <tr>
-                  <th scope="col">Asset</th>
-                  <th scope="col">Real return<br />(% per year)</th>
-                  <th scope="col">Volatility<br />(% per year)</th>
-                  <th scope="col">Sharpe<br />(ratio)</th>
-                  <th scope="col">Max drawdown<br />(%)</th>
-                  <th scope="col">Calmar<br />(ratio)</th>
-                  <th scope="col">Current drawdown<br />(%)</th>
-                  <th scope="col">Verdict for this sample</th>
-                </tr>
-              </thead>
-              <tbody id="scorecard-body"></tbody>
-            </table>
-          </div>
-          <div class="legend" aria-label="Drawdown severity">
-            <span class="risk-low"
-              ><i aria-hidden="true"></i> Mild: better than −15%</span
-            ><span class="risk-medium"
-              ><i aria-hidden="true"></i> Significant: −15% to −40%</span
-            ><span class="risk-high"
-              ><i aria-hidden="true"></i> Severe: worse than −40%</span
-            >
-          </div>
-          <p class="explanation">
-            Sharpe compares average return above T-bills with the variability of
-            those monthly returns; Calmar compares annualised real growth with
-            the largest observed loss from a peak. A strong Sharpe can coexist
-            with a very deep drawdown—it does not tell you how painful the worst
-            decline felt.
-          </p>
-          <details class="rules">
-            <summary>How the verdicts are assigned</summary>
-            <p>
-              Negative real annual return: “Loses to inflation”. Otherwise,
-              drawdown worse than −40%: “Positive return, deep drawdowns”; −15%
-              to −40%: “Grows, with drawdown risk”; better than −15%: “Preserved
-              purchasing power”. These describe this historical sample, not
-              future safety.
-            </p>
-          </details>
-          <div class="chart-heading">
-            <h3>The deepest fall in purchasing power</h3>
-            <span>Max real drawdown · closer to zero is milder</span>
-          </div>
-          <div class="chart-container short">
-            <canvas
-              id="drawdown-chart"
-              role="img"
-              aria-label="Maximum real drawdown for the five assets, also listed in the scorecard table"
-            ></canvas>
-            <p class="chart-fallback" hidden>
-              Chart unavailable. The exact drawdowns are listed in the table
-              above.
-            </p>
-          </div>
-          <p class="tiny">
-            Assets use their own available histories. CAGR uses calendar time;
-            monthly risk statistics exclude unavailable CPI pairs. BIL’s Sharpe
-            is not defined because it is its own risk-free proxy. Drawdowns use
-            observed months and can miss losses during CPI gaps.
-          </p>
-        </div>
-      </section>
-      <section id="regime" class="tool" aria-labelledby="regime-title">
-        <div class="section-heading">
-          <span class="section-number">03</span>
-          <div>
-            <p class="eyebrow">Put inflation in context</p>
-            <h2 id="regime-title">Inflation Regime Tracker</h2>
-            <p>
-              Inflation is rising. Does Bitcoin protect you? Start with what
-              happened in comparable months—not with a promise.
-            </p>
-          </div>
-        </div>
-        <div class="panel">
-          <div class="regime-layout">
-            <div>
-              <p class="eyebrow">US consumer price inflation</p>
-              <p class="inflation-number" id="current-inflation">—</p>
-              <p class="inflation-label" id="inflation-month">Year over year</p>
-              <div>
-                <span class="badge" id="regime-badge">Loading regime…</span
-                ><span class="badge neutral" id="quartile-badge">—</span>
-              </div>
-              <p class="tiny" id="regime-thresholds"></p>
-            </div>
-            <div>
-              <div class="chart-heading">
-                <h3>US inflation over the sample</h3>
-                <span>Year-over-year CPI change (%)</span>
-              </div>
-              <div class="chart-container short">
-                <canvas
-                  id="cpi-chart"
-                  role="img"
-                  aria-label="US CPI year-over-year inflation with historical median and quartile threshold lines"
-                ></canvas>
-                <p class="chart-fallback" hidden>
-                  Chart unavailable. Current inflation and threshold values are
-                  shown alongside it.
-                </p>
-              </div>
-            </div>
-          </div>
-          <hr class="regime-divider" />
-          <div class="chart-heading regime-chart-heading">
-            <div>
-              <h3>How did assets perform in these months?</h3>
-              <span>Average nominal monthly return · not annualised</span>
-            </div>
-            <div
-              class="toggle"
-              role="group"
-              aria-label="Inflation regime comparison"
-            >
-              <button id="median-toggle" type="button" aria-pressed="true">
-                High vs Low</button
-              ><button id="quartile-toggle" type="button" aria-pressed="false">
-                Top vs Bottom 25%
-              </button>
-            </div>
-          </div>
-          <div class="chart-container">
-            <canvas
-              id="regime-chart"
-              role="img"
-              aria-label="Average monthly asset returns in high and low inflation regimes"
-            ></canvas>
-            <p class="chart-fallback" hidden>
-              Chart unavailable. Open the monthly return data table below to
-              compare the groups.
-            </p>
-          </div>
-          <p class="plain-summary" id="regime-summary" aria-live="polite"></p>
-          <details class="rules">
-            <summary>View monthly return data</summary>
-            <div class="table-wrap">
-              <table class="regime-table">
-                <caption class="sr-only">
-                  Mean nominal monthly returns in the selected inflation groups
-                </caption>
-                <thead id="regime-table-head"></thead>
-                <tbody id="regime-table-body"></tbody>
-              </table>
-            </div>
-          </details>
-          <div class="caveat">
-            <p>
-              Past regime averages do not predict future returns or prove an
-              inflation hedge. The sample starts in 2014 and uses US inflation
-              only. Missing CPI months are shown as gaps and excluded from
-              regime averages.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="weather" class="tool" aria-labelledby="weather-heading">
-        <div class="section-heading">
-          <span class="section-number">04</span>
-          <div>
-            <p class="eyebrow">Growth, inflation &amp; the debt cycle</p>
-            <h2 id="weather-heading">Economic Weather</h2>
-            <p>
-              Observe the regime. Explore what could change next. A transparent
-              US signal panel inspired by Ray Dalio’s debt-cycle framework.
-            </p>
-          </div>
-        </div>
-        <div class="panel">
-          <div class="research-toolbar">
-            <p class="tiny">
-              Current readings and conditional outlooks; not a calibrated
-              forecast or a Bridgewater cycle call.
-            </p>
-            <button class="text-button" id="research-refresh" type="button">
-              Check latest snapshot
-            </button>
-          </div>
-          <p class="notice" id="research-load-status" role="status">
-            Loading macro and news research…
-          </p>
-          <div id="research-content" hidden>
-            <p class="tiny" id="weather-updated"></p>
-            <p class="notice" id="weather-warning" hidden></p>
-            <h3 class="weather-title" id="weather-title"></h3>
-            <p>
-              Growth direction: latest real GDP YoY growth versus the previous
-              quarter. Inflation direction: latest CPI YoY versus six months
-              earlier. Both use a ±0.10 percentage-point deadband.
-            </p>
-            <div
-              class="weather-quadrants"
-              role="group"
-              aria-label="Four growth and inflation environments; current observed signals are labelled"
-            >
-              <div
-                data-weather-growth="Rising"
-                data-weather-inflation="Falling"
-              >
-                <strong>Growth improving · inflation easing</strong
-                ><small
-                  >Watch whether credit and employment stay resilient.</small
-                ><span class="weather-current"></span>
-              </div>
-              <div data-weather-growth="Rising" data-weather-inflation="Rising">
-                <strong>Growth improving · inflation rising</strong
-                ><small>Watch policy tightening and real yields.</small
-                ><span class="weather-current"></span>
-              </div>
-              <div
-                data-weather-growth="Falling"
-                data-weather-inflation="Falling"
-              >
-                <strong>Growth slowing · inflation easing</strong
-                ><small>Watch easing policy against worsening credit.</small
-                ><span class="weather-current"></span>
-              </div>
-              <div
-                data-weather-growth="Falling"
-                data-weather-inflation="Rising"
-              >
-                <strong>Growth slowing · inflation rising</strong
-                ><small
-                  >Watch the trade-off between inflation and activity.</small
-                ><span class="weather-current"></span>
-              </div>
-            </div>
-            <div class="cycle-grid">
-              <div>
-                <p class="eyebrow">Short-cycle signal</p>
-                <h3 id="weather-cycle"></h3>
-                <ul id="weather-flags"></ul>
-              </div>
-              <div>
-                <p class="eyebrow">Long debt cycle</p>
-                <p id="weather-long-cycle"></p>
-                <p class="tiny">
-                  Debt denomination, maturity, private versus public balance
-                  sheets, external funding and policy capacity need a deeper
-                  country study. Household debt service is not total-economy
-                  debt service.
-                </p>
-              </div>
-            </div>
-            <p class="notice" id="weather-outlook"></p>
-            <details class="rules">
-              <summary>How this model reads the debt cycle</summary>
-              <p>
-                Credit can raise spending faster than income until repayment and
-                funding constraints bind. A short-cycle slowdown is different
-                from long-term deleveraging. Dalio’s framework considers debt
-                restructuring, spending restraint, transfers and monetary
-                financing; this panel does not mechanically date those phases.
-              </p>
-              <p>
-                Short-cycle stress flags use a high-yield spread ≥5 percentage
-                points or a three-month unemployment average ≥0.5 points above
-                its trailing 12-month minimum. These are our educational
-                thresholds, not Dalio’s published stage rules or an official
-                recession determination. Rate moves of at least ±0.25 points
-                over three months distinguish easing and tightening.
-              </p>
-              <p>
-                Daily observations older than 10 days, monthly periods more than
-                75 days past period end and quarterly periods more than 200 days
-                past period end are excluded from current classification.
-                Sources have different release dates and revisions; this is not
-                a simultaneous live snapshot or a backtested predictive model.
-              </p>
-            </details>
-            <div
-              class="table-wrap macro-table"
-              role="region"
-              tabindex="0"
-              aria-label="Macro indicator evidence, scroll horizontally"
-            >
-              <table class="score-table">
-                <caption>
-                  Evidence behind the regime · source dates and change baselines
-                  matter
-                </caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Signal</th>
-                    <th scope="col">Latest value</th>
-                    <th scope="col">Observation period</th>
-                    <th scope="col">Change (pp)</th>
-                    <th scope="col">Source</th>
-                  </tr>
-                </thead>
-                <tbody id="macro-body"></tbody>
-              </table>
-            </div>
-            <div id="research-sources" class="source-directory">
-              <h3>Build your research reading list</h3>
-              <p>
-                Start with
-                <a href="https://www.bridgewater.com/research-and-insights"
-                  >Bridgewater</a
-                >, primary
-                <a href="https://www.bis.org/publ/quarterly.htm">BIS</a>/<a
-                  href="https://www.federalreserve.gov/publications/financial-stability-report.htm"
-                  >Fed</a
-                >
-                evidence, competing bank outlooks, and
-                <a href="https://www.economist.com/finance-and-economics"
-                  >The Economist</a
-                >
-                or <a href="https://www.ft.com/global-economy">FT</a> for
-                context. Compare assumptions, publication dates and geographic
-                coverage.
-              </p>
-              <p class="tiny">
-                Directory links are reading recommendations. Paywalled bank
-                research is not scraped, and the classifier does not claim to
-                have read these reports.
-              </p>
-              <details id="source-directory-details">
-                <summary>
-                  Browse banks, fund research, journalism and primary
-                  institutions
-                </summary>
-                <div class="research-filters">
-                  <label
-                    >Source category<select id="source-category">
-                      <option value="">All categories</option>
-                    </select></label
-                  >
-                  <p class="tiny" id="source-count"></p>
-                </div>
-                <div class="source-grid" id="research-source-list"></div>
-              </details>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="news" class="tool" aria-labelledby="news-heading">
-        <div class="section-heading">
-          <span class="section-number">05</span>
-          <div>
-            <p class="eyebrow">Follow the mechanism, question the claim</p>
-            <h2 id="news-heading">News &amp; Impact Chains</h2>
-            <p>
-              Publisher headlines → possible transmission channels → gold and
-              Bitcoin → evidence that could change the conclusion.
-            </p>
-          </div>
-        </div>
-        <div class="panel">
-          <p class="notice">
-            News and quotes are scanned on an approximately 15-minute schedule;
-            this page checks research updates every five minutes while visible.
-            This is not continuous real-time monitoring. Open the original
-            source before treating a headline as fact. Rule templates and actual
-            AI-assisted article readings are labelled separately. The hourly AI
-            reader checks selected public bodies and shows source evidence;
-            neither type establishes a verified causal effect.
-          </p>
-          <p id="article-ai-status" class="notice" role="status">
-            Loading actual article-model coverage…
-          </p>
-          <p id="article-ai-warning" class="notice" hidden></p>
-          <div id="news-content" hidden>
-            <p class="tiny" id="news-updated"></p>
-            <p class="notice" id="news-health-warning" hidden></p>
-            <details class="rules">
-              <summary>News source health &amp; coverage</summary>
-              <ul id="feed-health-list"></ul>
-              <p>
-                Only dated, relevant headlines in the last 14 days are retained,
-                capped at 60. Matching uses headline keywords and can miss
-                context, negation or important stories. A fetched feed can have
-                zero relevant items. Articles are not ranked by expected
-                investment return.
-              </p>
-            </details>
-            <div class="research-filters">
-              <label
-                >Impact channel<select id="news-topic">
-                  <option value="">All channels</option>
-                </select></label
-              ><label
-                >Search headlines or publishers<input
-                  id="news-search"
-                  type="search"
-                  placeholder="Gold, Bitcoin, Fed…"
-              /></label>
-            </div>
-            <p class="tiny" id="news-result-count" role="status"></p>
-            <div id="news-list"></div>
-            <button class="text-button" id="news-more" type="button" hidden>
-              Show more headlines
-            </button>
-            <details class="gold-case">
-              <summary>
-                Worked example: “artificial gold” and the Bitcoin scarcity
-                narrative
-              </summary>
-              <p>
-                <strong>Background case, not a current alert.</strong> CERN’s
-                ALICE lead-to-gold observation is a possible reference for the
-                described French story. Creating gold nuclei is different from
-                demonstrating commercially competitive gold supply. A separate
-                French announcement has not been established here.
-              </p>
-              <div id="gold-case-evidence"></div>
-            </details>
-          </div>
-        </div>
-      </section>
-      <section id="outlook" class="tool" aria-labelledby="outlook-heading">
-        <div class="section-heading">
-          <span class="section-number">06</span>
-          <div>
-            <p class="eyebrow">Observed prices, testable scenarios</p>
-            <h2 id="outlook-heading">Today → Tomorrow</h2>
-            <p>
-              Latest reported quotes, frozen next-period price scenarios, and a
-              public record of what happened afterward.
-            </p>
-          </div>
-        </div>
-        <div class="panel">
-          <div class="research-toolbar">
-            <p class="tiny">
-              All prices in USD. Gold is GLD per ETF share, not spot gold per
-              ounce. Times below use Eastern Time.
-            </p>
-            <button id="forecast-refresh" type="button" class="text-button">
-              Check latest quotes &amp; AI
-            </button>
-          </div>
-          <p id="forecast-load-status" class="notice" role="status">
-            Loading observed quotes and frozen scenarios…
-          </p>
-          <p id="forecast-warning" class="notice" hidden></p>
-          <div id="forecast-content" hidden>
-            <p id="forecast-updated" class="tiny"></p>
-            <p class="notice">
-              These are historical price scenarios, not guaranteed future
-              probabilities. AI news context is shown separately from the
-              numerical model. Issued forecasts stay frozen while observed
-              quotes keep updating.
-            </p>
-            <div
-              class="table-wrap"
-              role="region"
-              tabindex="0"
-              aria-label="Next-period price scenarios; scroll horizontally"
-            >
-              <table class="score-table forecast-table">
-                <caption>
-                  Quotes update on a scheduled approximately 15-minute cycle;
-                  the visible page checks snapshots each minute. Source/exchange
-                  and GitHub delays apply.
-                </caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Asset</th>
-                    <th scope="col">Latest observed quote</th>
-                    <th scope="col">Forecast target &amp; issue time</th>
-                    <th scope="col">Lower scenario<br />Q10–Q30</th>
-                    <th scope="col">Central median<br />Q40–Q60 band</th>
-                    <th scope="col">Upper scenario<br />Q70–Q90</th>
-                    <th scope="col">Related AI news context</th>
-                  </tr>
-                </thead>
-                <tbody id="forecast-body"></tbody>
-              </table>
-            </div>
-            <details class="rules">
-              <summary>
-                How prices, market closures and forecasts are handled
-              </summary>
-              <p>
-                Bitcoin trades continuously: each day’s first forecast uses a
-                reported quote and targets roughly 24 hours later, rounded up to
-                the next five-minute boundary. ETF scenarios use the last
-                completed daily close and the first NYSE-calendar close on or
-                after tomorrow, including holidays and early closes. If tomorrow
-                has no ETF session, the target explicitly moves to the next
-                trading close; no Sunday price is fabricated.
-              </p>
-              <p>
-                Forecasts are issued once per Bitcoin Eastern-calendar day or
-                ETF target and completed anchor combination, and remain
-                unchanged. A new completed close can create a separate issue for
-                the same target. A forecast issued earlier is not an
-                up-to-the-minute conditional model. The latest quote is shown
-                separately with its original source time. Training uses 252
-                completed one- or two-session price-only returns matched to the
-                actual anchor-to-target span, excluding cash distributions. No
-                forecasting advantage over a random walk is established.
-              </p>
-              <p>
-                Public Yahoo histories are processed transiently; complete raw
-                price arrays are not published. Requested current quote points
-                and derived scenario prices are published. After verification,
-                the archive retains derived realized returns and errors instead
-                of raw closing-price histories.
-              </p>
-            </details>
-            <details class="rules">
-              <summary>
-                Historical walk-forward diagnostic · distinct from future
-                verification
-              </summary>
-              <p>
-                Each of the last 90 test predictions uses 252 matching-horizon
-                returns whose endpoints were known by its historical origin.
-                Overlapping two-session returns are not independent. The Q10–Q90
-                coverage target is nominally 80%; the measured historical result
-                below is not a promise for tomorrow. Bitcoin’s daily-close
-                diagnostic is a proxy, not a test of the exact intraday 24-hour
-                forecast anchors. Lower price error is better; compare the model
-                with a no-change random walk.
-              </p>
-              <div class="table-wrap">
-                <table class="score-table">
-                  <thead>
-                    <tr>
-                      <th scope="col">Asset</th>
-                      <th scope="col">Test observations</th>
-                      <th scope="col">Historical outer-band coverage</th>
-                      <th scope="col">Model mean absolute error</th>
-                      <th scope="col">No-change baseline error</th>
-                    </tr>
-                  </thead>
-                  <tbody id="forecast-backtest-body"></tbody>
-                </table>
-              </div>
-            </details>
-            <h3 class="verification-title">What happened after issue?</h3>
-            <p id="forecast-verification" class="notice"></p>
-            <details class="rules">
-              <summary>
-                Frozen forecast and outcome ledger · latest 30 records
-              </summary>
-              <p>
-                Verification waits for a later source observation. Bitcoin uses
-                the first completed five-minute bar at or after its target, at
-                most five minutes late. ETFs use their scheduled close. Missing
-                data is labelled unverified. No realized outcome exists until
-                the target has passed; the first release will show pending
-                records.
-              </p>
-              <div class="table-wrap">
-                <table class="score-table">
-                  <thead>
-                    <tr>
-                      <th scope="col">Asset</th>
-                      <th scope="col">Issued</th>
-                      <th scope="col">Target</th>
-                      <th scope="col">Status</th>
-                      <th scope="col">Realized return</th>
-                      <th scope="col">Median price error</th>
-                      <th scope="col">Outer band</th>
-                    </tr>
-                  </thead>
-                  <tbody id="forecast-ledger-body"></tbody>
-                </table>
-              </div>
-            </details>
-          </div>
-        </div>
+      <section class="home-note">
+        <p class="eyebrow">Read the evidence in order</p>
+        <h2>A return is a result.<br /><em>Preserving value is a test.</em></h2>
+        <p>
+          Begin with purchasing power. Compare the same history. Check
+          uncertainty before a price estimate, and look for evidence that could
+          change an interpretation.
+        </p>
+        <a href="methodology.html">Read formulas, sources and limitations →</a>
       </section>
     </main>
     <footer class="site-footer wrap">

@@ -185,7 +185,63 @@ def parse_date(text):
 
 
 def classify(title, mechanisms):
-    return [m['id'] for m in mechanisms if re.search(m['pattern'], title, re.I)][:3]
+    """Conservative headline routing, not a claim to understand an article.
+
+    Require context for ambiguous words before allowing a mechanism template.
+    Abstention is preferable to inventing a macro event from a personal story.
+    """
+    if re.search(r'job search|job hunt|jobseeker|career advice|five jobs|fraud|scam|gold medal|golden globe', title, re.I):
+        return []
+    tags = [m['id'] for m in mechanisms if re.search(m['pattern'], title, re.I)]
+    if 'energy' in tags and not re.search(
+            r'\boil\b|\bcrude\b|energy (?:price|suppl)|geopolit|shipping|hormuz|military|missile|invasion|armed conflict|sanctions? (?:on|against)|war in (?:ukraine|gaza|iran)', title, re.I):
+        tags.remove('energy')
+    if 'growth' in tags and not re.search(
+            r'\bgdp\b|recession|economic (?:growth|slowdown)|nonfarm|payrolls?|unemployment|(?:labour|labor) market|jobless|jobs report|(?:economy|us|u\.s\.|uk|britain) (?:adds?|loses?|created) [\d,]+ jobs', title, re.I):
+        tags.remove('growth')
+    return tags[:3]
+
+
+def relevance(title, topics):
+    return {'status': 'Relevant' if topics else 'No clear macro impact',
+            'reason': 'Specific asset or macro context in the headline; article verification still required.' if topics
+            else 'Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated.'}
+
+
+def group_events(items):
+    """Merge high-confidence same-entity/action stories within three days.
+
+    Avoid generic topic clustering: two banks or two employment releases are
+    different events. Links and individual publication times are retained.
+    """
+    groups = []
+    for original in sorted(items, key=lambda n: n['published_at'], reverse=True):
+        item = {**original}
+        item['topics'] = classify(item['title'], json.loads((ROOT / 'research/mechanisms.json').read_text()))
+        item['relevance'] = relevance(item['title'], item['topics'])
+        words = set(re.findall(r'[a-z0-9]+', item['title'].lower())) - set('the a an to of in on as and for with is are says said'.split())
+        layoffs = bool(re.search(r'cuts?|cutting|shed|ax[es]|layoffs?|lay off', item['title'], re.I))
+        # A named employer plus a layoff action is stronger than "jobs" alone.
+        employer = next((name for name in ('barclays', 'netflix', 'amazon', 'hsbc', 'meta', 'microsoft', 'intel') if name in words), None)
+        key = (employer, 'layoffs') if employer and layoffs else None
+        match = None
+        for group in groups:
+            within = abs((parse_date(group['published_at']) - parse_date(item['published_at'])).total_seconds()) <= 3 * 86400
+            same = key is not None and key == group['_event_key']
+            similar = len(words & group['_words']) / max(1, len(words | group['_words'])) >= .8
+            if within and (item['url'] == group['url'] or same or similar):
+                match = group
+                break
+        report = {k: item[k] for k in ('title', 'url', 'publisher', 'published_at')}
+        if match:
+            if report['url'] not in {r['url'] for r in match['related_reports']}:
+                match['related_reports'].append(report)
+        else:
+            item.update(_event_key=key, _words=words, related_reports=original.get('related_reports', [report]))
+            groups.append(item)
+    for item in groups:
+        item.pop('_event_key'); item.pop('_words')
+    return groups[:60]
 
 
 def parse_feed(text, feed, mechanisms, now):
@@ -205,7 +261,7 @@ def parse_feed(text, feed, mechanisms, now):
             return ''
         title = re.sub(r'\s+', ' ', field(['title', '{http://www.w3.org/2005/Atom}title']))[:300]
         tags = classify(title, mechanisms)
-        if not tags:
+        if not tags and not re.search(r'jobs?|employment|fraud|scam|bank|econom', title, re.I):
             continue
         try:
             published = parse_date(field(['pubDate', '{http://www.w3.org/2005/Atom}published', '{http://www.w3.org/2005/Atom}updated']))
@@ -321,7 +377,7 @@ def build(previous, now, macro_only=False):
         if item['url'] not in unique and normalized not in titles:
             unique[item['url']] = item
             titles.add(normalized)
-    news = sorted(unique.values(), key=lambda x: x['published_at'], reverse=True)[:60]
+    news = group_events(unique.values())
     return {'meta': {'checked_at': stamp(now), 'region': 'United States', 'refresh': '15-minute scheduled scan; GitHub queue and publisher delays apply.', 'model': 'Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.', 'news_window_days': 14, 'analysis': 'Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects.'},
             'macro': macro, 'news': news, 'feed_health': health, 'sources': config['sources'], 'mechanisms': mechanisms,
             'gold_case': check_case(config['case_source'], now, previous.get('gold_case', {}))}

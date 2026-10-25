@@ -221,6 +221,7 @@
   const api = { validateData, calculateHolding, risk, verdict, monthLabel };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   if (typeof document === "undefined") return;
+  const A = global.RealWorthAnalytics;
   const charts = new Map();
   const text = (id, value) => {
     const element = document.getElementById(id);
@@ -279,6 +280,19 @@
     updateMin();
     function update(event) {
       event?.preventDefault();
+      const period = document.getElementById("holding-period");
+      const start = data.growth.dates.indexOf(buyInput.value);
+      for (const option of period.options) {
+        option.disabled =
+          option.value !== "latest" &&
+          start + Number(option.value) >= data.growth.dates.length;
+      }
+      const changed = period.selectedOptions[0]?.disabled;
+      if (changed) period.value = "latest";
+      text(
+        "period-help",
+        `Unavailable terms are disabled: data ends ${monthLabel(data.meta.data_through)}.${changed ? " Selected term exceeded the data; showing until latest data." : ""}`,
+      );
       error.hidden = true;
       try {
         const result = calculateHolding(
@@ -383,6 +397,7 @@
             },
           }),
         });
+        renderComparison(data, result);
       } catch (exc) {
         results.hidden = true;
         error.hidden = false;
@@ -398,12 +413,90 @@
     });
     update();
   }
+  function renderComparison(data, selected) {
+    const body = document.getElementById("comparison-body");
+    if (!body) return;
+    const sets = [];
+    body.replaceChildren();
+    const palette = [
+      colors.green,
+      colors.gold,
+      "#637eaa",
+      "#986c89",
+      "#668171",
+    ];
+    for (const [i, asset] of data.meta.assets.entries()) {
+      const row = document.createElement("tr"),
+        name = document.createElement("th");
+      name.scope = "row";
+      name.textContent = asset;
+      row.append(name);
+      let vals;
+      try {
+        const result = calculateHolding(
+          data,
+          asset,
+          data.growth.dates[selected.start],
+          document.getElementById("holding-period").value,
+          selected.amount,
+        );
+        const rec = A.recovery(result.values);
+        vals = [
+          money(result.realValue),
+          result.drawdown === null ? "No data" : percent(result.drawdown * 100),
+          rec.months === null
+            ? rec.status
+            : `${rec.months} months · ${rec.status}`,
+        ];
+        sets.push({
+          label: asset,
+          data: result.values,
+          borderColor: palette[i],
+          borderWidth: 2,
+          pointRadius: 0,
+          spanGaps: false,
+        });
+      } catch (e) {
+        vals = ["No data", "No data", e.message];
+      }
+      for (const v of vals) {
+        const td = document.createElement("td");
+        td.textContent = v;
+        row.append(td);
+      }
+      body.append(row);
+    }
+    plot("comparison-chart", {
+      type: "line",
+      data: { labels: selected.dates.map(monthLabel), datasets: sets },
+      options: chartOptions({
+        plugins: { legend: { display: true, position: "bottom" } },
+        scales: {
+          y: { ticks: { callback: (v) => money(v) } },
+          x: { ticks: { maxTicksLimit: 6, maxRotation: 0 } },
+        },
+      }),
+    });
+  }
   function renderScorecard(data) {
     const body = document.getElementById("scorecard-body");
     if (!body) return;
     body.replaceChildren();
+    const common = document.getElementById("history-scope")?.value !== "full";
+    const b = A.bounds(data);
+    const scores = common
+      ? Object.fromEntries(
+          data.meta.assets.map((a) => [a, A.score(data, a, b.start, b.end)]),
+        )
+      : data.scorecard;
+    text(
+      "scorecard-period",
+      common
+        ? `Common period: ${monthLabel(data.growth.dates[b.start])}–${monthLabel(data.growth.dates[b.end])}. All five assets start and end together.`
+        : "Full histories: each asset uses its own first available month. These are unequal samples.",
+    );
     for (const asset of data.meta.assets) {
-      const metrics = data.scorecard[asset];
+      const metrics = scores[asset];
       const row = document.createElement("tr");
       row.dataset.asset = asset;
       const name = document.createElement("th");
@@ -454,13 +547,11 @@
         datasets: [
           {
             label: "Max real drawdown (%)",
-            data: data.meta.assets.map(
-              (asset) => data.scorecard[asset].max_drawdown,
-            ),
+            data: data.meta.assets.map((asset) => scores[asset].max_drawdown),
             backgroundColor: data.meta.assets.map((asset) =>
-              data.scorecard[asset].max_drawdown < -40
+              scores[asset].max_drawdown < -40
                 ? colors.red
-                : data.scorecard[asset].max_drawdown <= -15
+                : scores[asset].max_drawdown <= -15
                   ? colors.gold
                   : colors.green,
             ),
@@ -568,119 +659,125 @@
         },
       }),
     });
+    let currentMode = "median";
     function update(mode) {
-      const quartiles = mode === "quartile";
-      const groups = quartiles ? ["Top 25%", "Bottom 25%"] : ["High", "Low"];
-      const source = quartiles ? regime.by_quartile : regime.by_median;
-      document
-        .getElementById("median-toggle")
-        .setAttribute("aria-pressed", String(!quartiles));
-      document
-        .getElementById("quartile-toggle")
-        .setAttribute("aria-pressed", String(quartiles));
+      currentMode = mode;
+      const kind = document.getElementById("regime-return-kind").value;
+      const groups = A.regimeStats(data, mode, kind);
+      for (const [id, m] of [
+        ["median-toggle", "median"],
+        ["quartile-toggle", "quartile"],
+        ["trend-toggle", "trend"],
+      ])
+        document
+          .getElementById(id)
+          .setAttribute("aria-pressed", String(mode === m));
+      const body = document.getElementById("regime-table-body"),
+        head = document.getElementById("regime-table-head");
+      head.innerHTML =
+        '<tr><th scope="col">Asset / group</th><th scope="col">Months</th><th scope="col">Mean (%)</th><th scope="col">Median (%)</th><th scope="col">P10–P90 (%)</th><th scope="col">Min–max (%)</th></tr>';
+      body.replaceChildren();
+      for (const asset of data.meta.assets)
+        for (const group of groups) {
+          const r = group.assets[asset],
+            row = document.createElement("tr");
+          for (const [i, v] of [
+            `${asset} · ${group.label}`,
+            r.n,
+            percent(r.mean),
+            percent(r.median),
+            `${percent(r.q10)} to ${percent(r.q90)}`,
+            `${percent(r.min)} to ${percent(r.max)}`,
+          ].entries()) {
+            const cell = document.createElement(i === 0 ? "th" : "td");
+            if (!i) cell.scope = "row";
+            cell.textContent = v;
+            row.append(cell);
+          }
+          body.append(row);
+        }
       plot("regime-chart", {
         type: "bar",
         data: {
           labels: data.meta.assets,
-          datasets: groups.map((group, i) => ({
-            label: group,
-            data: data.meta.assets.map((asset) => source[group][asset]),
-            backgroundColor: i === 0 ? colors.green : colors.gold,
-            borderRadius: 3,
-            barPercentage: 0.8,
-          })),
+          datasets: groups.flatMap((group, i) =>
+            ["mean", "median"].map((stat, j) => ({
+              label: `${group.label} · ${stat}`,
+              data: data.meta.assets.map((a) => group.assets[a][stat]),
+              backgroundColor:
+                i === 0
+                  ? j
+                    ? "#75a18f"
+                    : colors.green
+                  : j
+                    ? "#ddc19d"
+                    : colors.gold,
+            })),
+          ),
         },
         options: chartOptions({
-          plugins: {
-            legend: {
-              display: true,
-              position: "bottom",
-              labels: { boxWidth: 12, font: { size: 11 } },
-            },
-            tooltip: {
-              callbacks: {
-                label: (context) =>
-                  `${context.dataset.label}: ${percent(context.parsed.y)} per month`,
-              },
-            },
-          },
+          plugins: { legend: { display: true, position: "bottom" } },
           scales: {
-            x: {
-              grid: { display: false },
-              ticks: {
-                color: colors.muted,
-                maxRotation: 0,
-                font: { size: 10 },
-              },
-            },
-            y: {
-              grid: { color: colors.grid },
-              ticks: { color: colors.muted, callback: (v) => `${v}%` },
-            },
+            y: { ticks: { callback: (v) => `${v}%` } },
+            x: { ticks: { maxRotation: 0 } },
           },
         }),
       });
+      text(
+        "regime-summary",
+        regime.current_regime === null
+          ? "Current CPI YoY is unavailable. We do not assign a current regime. Historical groups only use observed months."
+          : `Current level regime: ${regime.current_regime}. The chart compares ${kind} monthly mean and median returns; the table reports sample sizes and distribution ranges. ${mode === "trend" ? "Rising versus falling/flat inflation is a separate test from high versus low inflation." : "Level groups use the historical CPI YoY median/quartiles."}`,
+      );
       document
         .getElementById("regime-chart")
         .setAttribute(
           "aria-label",
-          `Mean nominal monthly returns for the five assets: ${groups.join(" versus ")}. Exact values are in the data table.`,
-        );
-      const head = document.getElementById("regime-table-head");
-      const body = document.getElementById("regime-table-body");
-      head.replaceChildren();
-      body.replaceChildren();
-      const headings = document.createElement("tr");
-      for (const label of [
-        "Asset",
-        ...groups.map((group) => `${group} (% per month)`),
-      ]) {
-        const cell = document.createElement("th");
-        cell.scope = "col";
-        cell.textContent = label;
-        headings.append(cell);
-      }
-      head.append(headings);
-      for (const asset of data.meta.assets) {
-        const row = document.createElement("tr");
-        const name = document.createElement("th");
-        name.scope = "row";
-        name.textContent = asset;
-        row.append(name);
-        for (const group of groups) {
-          const cell = document.createElement("td");
-          cell.textContent = percent(source[group][asset]);
-          row.append(cell);
-        }
-        body.append(row);
-      }
-      if (quartiles)
-        text(
-          "regime-summary",
-          `In the highest-inflation quartile, Bitcoin returned ${percent(source["Top 25%"].Bitcoin)} per month on average versus ${percent(source["Top 25%"].Gold)} for gold. In the lowest quartile, Bitcoin averaged ${percent(source["Bottom 25%"].Bitcoin)} versus ${percent(source["Bottom 25%"].Gold)} for gold. These are nominal returns.`,
-        );
-      else if (regime.current_regime !== null) {
-        const group = source[regime.current_regime];
-        text(
-          "regime-summary",
-          `We are currently in a ${regime.current_regime.toLowerCase()}-inflation regime. Historically, in these months Bitcoin returned ${percent(group.Bitcoin)} per month on average versus ${percent(group.Gold)} for gold. These are nominal returns, before subtracting inflation.`,
-        );
-      } else
-        text(
-          "regime-summary",
-          "Current CPI YoY is unavailable because a required CPI observation is missing. We do not assign a current regime. The chart and table still compare historical months with observed inflation.",
+          `${kind} monthly mean and median returns by ${mode}; sample sizes and ranges in the visible table.`,
         );
     }
+    for (const [id, mode] of [
+      ["median-toggle", "median"],
+      ["quartile-toggle", "quartile"],
+      ["trend-toggle", "trend"],
+    ])
+      document.getElementById(id).addEventListener("click", () => update(mode));
     document
-      .getElementById("median-toggle")
-      .addEventListener("click", () => update("median"));
-    document
-      .getElementById("quartile-toggle")
-      .addEventListener("click", () => update("quartile"));
+      .getElementById("regime-return-kind")
+      .addEventListener("change", () => update(currentMode));
     update("median");
   }
+  function renderRolling(data) {
+    const target = document.getElementById("rolling-body");
+    if (!target) return;
+    const common = document.getElementById("history-scope").value !== "full";
+    const months = Number(document.getElementById("rolling-period").value);
+    target.replaceChildren();
+    for (const asset of data.meta.assets) {
+      const r = A.rolling(data, asset, months, common),
+        row = document.createElement("tr");
+      for (const [i, v] of [
+        asset,
+        `${r.n} (${r.skipped} omitted)`,
+        percent(r.beat),
+        percent(r.min),
+        percent(r.median),
+        `${percent(r.q10)} to ${percent(r.q90)}`,
+      ].entries()) {
+        const cell = document.createElement(i === 0 ? "th" : "td");
+        if (!i) cell.scope = "row";
+        cell.textContent = v;
+        row.append(cell);
+      }
+      target.append(row);
+    }
+  }
   async function initDashboard() {
-    if (!document.getElementById("calculator-form")) return;
+    if (
+      !document.getElementById("calculator-form") &&
+      !document.getElementById("scorecard-body")
+    )
+      return;
     const status = document.getElementById("load-status");
     try {
       const response = await fetch(
@@ -698,9 +795,19 @@
       status.hidden = true;
       document.getElementById("chart-warning").hidden =
         typeof global.Chart === "function";
-      renderCalculator(data);
+      if (document.getElementById("calculator-form")) renderCalculator(data);
       renderScorecard(data);
       renderRegime(data);
+      renderRolling(data);
+      document
+        .getElementById("history-scope")
+        ?.addEventListener("change", () => {
+          renderScorecard(data);
+          renderRolling(data);
+        });
+      document
+        .getElementById("rolling-period")
+        ?.addEventListener("change", () => renderRolling(data));
       document.getElementById("dashboard").setAttribute("aria-busy", "false");
       const age =
         (Date.now() - Date.parse(`${data.meta.last_updated}T00:00:00Z`)) /

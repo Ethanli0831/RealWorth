@@ -20,6 +20,42 @@ verified after deployment; see [VALIDATION.md](VALIDATION.md).
 
 ![RealWorth's calculator, five-asset scorecard and inflation charts](docs/assets/screenshot.png)
 
+## Three reading paths
+
+- [Purchasing Power](https://ethanli0831.github.io/RealWorth/purchasing-power.html):
+  one buy date and amount, five real-value paths, drawdowns and first observed
+  purchasing-power recovery. Terms beyond released data are disabled.
+- [Research](https://ethanli0831.github.io/RealWorth/research.html): common-period
+  scorecard by default, full-history switch, overlapping 1/3/5-year holding
+  distributions, real/nominal inflation samples with means, medians and ranges,
+  and a separate rising-inflation test.
+- [Market Monitor](https://ethanli0831.github.io/RealWorth/monitor.html): visible
+  unchanged-price benchmark, five scenario cards, per-asset prospective scores,
+  context-filtered/grouped news and selected market-structure sources.
+
+The home page is an overview. The Explore menu links directly to every tool;
+old home-page hashes redirect to their new page. Historical point estimates do
+not demonstrate an advantage merely by producing a plausible price. Coverage
+is not direction accuracy; repeated same-date issues are not independent tests.
+Prospective summaries score the first issue per asset/target date and expose
+both issue counts and distinct dates.
+
+`build_data.py` now also publishes derived `regime.observations` under the
+existing four top-level JSON keys. Missing CPI pairs remain null. Common-period
+and rolling metrics are computed from derived indices by `assets/analytics.js`.
+No raw Yahoo price history is added.
+
+`python scripts/build_structure.py` writes `docs/data/structure.json` with public
+IBIT/GLD holdings, Deribit derivatives, Coin Metrics community activity, FRED
+money/dollar measures and CFTC gold positioning. `update-structure.yml` requests
+refreshes every four hours (minute 47 UTC); actual source/GitHub delays apply.
+Individual missing sources stay labelled; an entirely failed refresh fails
+visibly and preserves the old file. Local cloud egress may require the exact
+publisher/API domains in environment settings; production fetches run on GitHub.
+No user keys are needed. WGC physical-demand breakdowns, option skew and Canadian
+purchasing-power calculations are explicitly not connected. Holdings/AUM are
+never labelled as net dollar inflows.
+
 ## Use the website locally
 
 From the repository root, run:
@@ -77,7 +113,7 @@ Run the calculation and failure-safety tests:
 
 ```sh
 python -m unittest discover -s tests -v
-node --test tests/test_dashboard.js
+node --test tests/test_*.js
 ```
 
 Node 22 or newer is used only for these dependency-free JavaScript tests.

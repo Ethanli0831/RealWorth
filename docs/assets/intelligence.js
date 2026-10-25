@@ -66,8 +66,59 @@
     }
     return data;
   }
+  function verificationByAsset(records) {
+    const groups = new Map();
+    for (const r of records) {
+      if (
+        r.status !== "Verified against later observation" ||
+        !finite(r.median_error_percent) ||
+        !finite(r.actual_return_percent)
+      )
+        continue;
+      if (!groups.has(r.ticker)) groups.set(r.ticker, []);
+      groups.get(r.ticker).push(r);
+    }
+    return [...groups].map(([ticker, issues]) => {
+      const days = new Map();
+      for (const r of [...issues].sort(
+        (a, b) => Date.parse(a.issued_at) - Date.parse(b.issued_at),
+      )) {
+        const day = new Intl.DateTimeFormat("en-CA", {
+          timeZone: "America/Toronto",
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+        }).format(new Date(r.target_at));
+        if (!days.has(day)) days.set(day, r);
+      }
+      const rows = [...days.values()],
+        n = rows.length;
+      return {
+        ticker,
+        issues: issues.length,
+        dates: n,
+        coverage:
+          (100 * rows.filter((r) => r.inside_outer_band === true).length) / n,
+        mae: rows.reduce((v, r) => v + Math.abs(r.median_error_percent), 0) / n,
+        baseline:
+          rows.reduce(
+            (v, r) =>
+              v +
+              Math.abs(
+                (100 * r.actual_return_percent) /
+                  (100 + r.actual_return_percent),
+              ),
+            0,
+          ) / n,
+      };
+    });
+  }
   if (typeof module !== "undefined" && module.exports)
-    module.exports = { validateForecasts, validateIntelligence };
+    module.exports = {
+      validateForecasts,
+      validateIntelligence,
+      verificationByAsset,
+    };
   if (typeof document === "undefined") return;
   const make = (tag, text, cls) => {
     const n = document.createElement(tag);
@@ -186,8 +237,12 @@
       const old = card.querySelector(".article-ai");
       const opened = old?.querySelector("details")?.open;
       const box = make("div", undefined, "article-ai");
-      const record = byUrl.get(card.dataset.sourceUrl);
-      if (record?.analysis) {
+      const record =
+        byUrl.get(card.dataset.sourceUrl) ||
+        JSON.parse(card.dataset.relatedUrls || "[]")
+          .map((u) => byUrl.get(u))
+          .find((r) => r?.analysis);
+      if (record?.analysis && card.dataset.relevant !== "false") {
         const node = interpretationNode(record);
         node.open = !!opened || openedAI.has(record.url);
         box.append(node);
@@ -195,9 +250,11 @@
         box.append(
           make(
             "p",
-            record
-              ? `Article AI: ${record.status}`
-              : "Article AI: not yet read/analyzed in the selected-article queue.",
+            card.dataset.relevant === "false"
+              ? "No clear macro impact; AI analysis intentionally withheld."
+              : record
+                ? `Article AI: ${record.status}`
+                : "Article AI: not yet read/analyzed in the selected-article queue.",
             "tiny",
           ),
         );
@@ -259,58 +316,72 @@
       ? "The quote snapshot is older than 45 minutes. Treat displayed prices and targets as dated observations."
       : "Some assets could not refresh; retained values and forecasts are labelled stale.";
     const rows = data.assets.map((row) => {
-      const tr = make("tr");
-      const name = make("th");
-      name.scope = "row";
-      name.append(safeLink(row.asset, row.source));
-      tr.append(name);
-      const quote = make("td", money(row.quote));
-      quote.append(
-        make("small", date(row.quote_at), "metric-baseline"),
+      const card = make("article", undefined, "forecast-card");
+      const title = make("h3");
+      title.append(safeLink(row.asset, row.source));
+      card.append(title);
+      card.append(
         make(
-          "small",
-          `${row.market_status}${row.quote_stale ? " · stale quote" : ""}`,
-          "metric-baseline",
+          "p",
+          `${row.ticker} · ${row.market_status}${row.quote_stale ? " · stale quote" : ""}`,
+          "tiny",
         ),
       );
-      if (row.error) quote.append(make("small", row.error, "metric-baseline"));
-      tr.append(quote);
+      card.append(make("p", money(row.quote), "quote-value"));
+      card.append(make("p", `Observed ${date(row.quote_at)}`, "tiny"));
+      if (row.error) card.append(make("p", row.error, "notice"));
       const f = row.forecast;
       if (!f) {
-        for (let i = 0; i < 5; i++) tr.append(make("td", "No forecast"));
-        return tr;
+        card.append(make("p", "No forecast available."));
+        return card;
       }
-      const expired = Date.parse(f.target_at) < Date.now();
-      const target = make("td", date(f.target_at));
-      target.append(
+      card.append(make("p", `Target ${date(f.target_at)}`, "target-time"));
+      card.append(
         make(
-          "small",
-          row.tomorrow_has_session === false
-            ? "No scheduled ETF session tomorrow; these levels refer to the next trading close."
-            : row.ticker === "BTC-USD"
-              ? "24h after the frozen quote anchor (rounded to a 5-minute target)."
-              : `First trading close on/after tomorrow; ${f.horizon_sessions || 1}-session return horizon from the frozen anchor.`,
-          "metric-baseline",
+          "p",
+          `Issued ${date(f.issued_at)} · ${row.ticker === "BTC-USD" ? "24h from frozen quote" : `${f.horizon_sessions || 1} exchange session(s), next eligible close`}`,
+          "tiny",
         ),
       );
-      target.append(
+      if (Date.parse(f.target_at) < Date.now())
+        card.append(
+          make(
+            "p",
+            "Target elapsed; awaiting refreshed verification.",
+            "notice",
+          ),
+        );
+      const scenarios = make("dl", undefined, "scenario-grid"),
+        q = f.levels;
+      for (const [label, value] of [
+        ["Lower · Q10–Q30", `${money(q.q10)}–${money(q.q30)}`],
+        ["Central · Q50", money(q.q50)],
+        ["Upper · Q70–Q90", `${money(q.q70)}–${money(q.q90)}`],
+      ]) {
+        const group = make("div");
+        group.append(make("dt", label), make("dd", value));
+        scenarios.append(group);
+      }
+      card.append(
+        scenarios,
         make(
-          "small",
-          `Issued ${date(f.issued_at)}${expired ? " · target elapsed; refresh/verification required" : ""}`,
-          "metric-baseline",
+          "p",
+          `Central band Q40–Q60: ${money(q.q40)}–${money(q.q60)}`,
+          "tiny",
         ),
       );
-      tr.append(target);
-      const q = f.levels;
-      tr.append(make("td", `${money(q.q10)} – ${money(q.q30)}`));
-      const center = make("td", money(q.q50));
-      center.append(
-        make("small", `${money(q.q40)} – ${money(q.q60)}`, "metric-baseline"),
+      const details = make("details");
+      details.append(
+        make("summary", "AI news context & limitations"),
+        make("p", aiContext(row.ticker)),
+        make(
+          "p",
+          "News hypotheses do not adjust the numerical price bands. GLD is an ETF share price, not spot gold per ounce.",
+          "tiny",
+        ),
       );
-      tr.append(center);
-      tr.append(make("td", `${money(q.q70)} – ${money(q.q90)}`));
-      tr.append(make("td", aiContext(row.ticker), "forecast-ai-context"));
-      return tr;
+      card.append(details);
+      return card;
     });
     document.getElementById("forecast-body").replaceChildren(...rows);
     const backtests = data.assets.map((row) => {
@@ -330,18 +401,51 @@
     document
       .getElementById("forecast-backtest-body")
       .replaceChildren(...backtests);
+    const evidence = data.assets.filter(
+      (r) =>
+        finite(r.forecast?.backtest?.mean_abs_price_error_percent) &&
+        finite(r.forecast?.backtest?.random_walk_error_percent),
+    );
+    const better = evidence.filter(
+      (r) =>
+        r.forecast.backtest.mean_abs_price_error_percent <
+        r.forecast.backtest.random_walk_error_percent - 0.005,
+    );
+    set(
+      "baseline-finding",
+      better.length
+        ? `${better.length}/${evidence.length} asset diagnostics have lower model error in this sample; this does not establish a repeatable forecasting edge. Compare each row below.`
+        : "No point-forecast advantage over unchanged prices is demonstrated in this historical test. Model errors are equal to or higher than the simple baseline at displayed precision.",
+    );
     const v = data.verification;
     set(
       "forecast-verification",
-      v.verified_forecasts
-        ? `${v.verified_forecasts} prospective forecasts verified · outer-band coverage ${percent(v.outer_band_coverage_percent)} · mean absolute median error ${percent(v.mean_abs_median_error_percent)} · ${v.pending} pending · ${v.missed} missed observations.`
-        : `${v.pending} forecasts await future observations. No prospective accuracy is claimed yet. ${v.missed} target observations missed. ${v.invalidated || 0} invalidated draft issues excluded from scoring.`,
+      `${v.pending} pending issues · ${v.missed} missed observations · ${v.invalidated || 0} invalidated drafts excluded. Scores below are separated by asset; interval coverage is not direction-prediction accuracy.`,
     );
     document.getElementById("forecast-content").hidden = false;
     renderLedger();
   }
   function renderLedger() {
     if (!ledger) return;
+    const summaries = verificationByAsset(ledger.records);
+    const body = document.getElementById("verification-by-asset");
+    if (body)
+      body.replaceChildren(
+        ...["BTC-USD", "GLD", "SPY", "BIL", "TLT"].map((ticker) => {
+          const s = summaries.find((r) => r.ticker === ticker),
+            row = make("tr");
+          row.append(make("th", ticker));
+          for (const v of [
+            s?.issues ?? 0,
+            s?.dates ?? 0,
+            s ? percent(s.coverage) : "Pending",
+            s ? percent(s.mae) : "Pending",
+            s ? percent(s.baseline) : "Pending",
+          ])
+            row.append(make("td", String(v)));
+          return row;
+        }),
+      );
     const rows = ledger.records.slice(0, 30).map((r) => {
       const empty = r.status.startsWith("Pending") ? "Pending" : "Not scored";
       const tr = make("tr");

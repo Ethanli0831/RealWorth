@@ -288,6 +288,15 @@ def build_payload(prices: pd.DataFrame, cpi: pd.Series, updated: date) -> dict:
             "current_quartile": quartile,
             "by_median": {"High": means(regime_yoy > median), "Low": means(regime_yoy <= median)},
             "by_quartile": {"Bottom 25%": means(regime_yoy <= q25), "Top 25%": means(regime_yoy >= q75)},
+            "observations": [
+                {"month": str(month),
+                 "level": "High" if regime_yoy.loc[month] > median else "Low",
+                 "quartile": "Bottom 25%" if regime_yoy.loc[month] <= q25 else "Top 25%" if regime_yoy.loc[month] >= q75 else "Middle 50%",
+                 "trend": None if pd.isna(yoy.shift(1).loc[month]) else "Rising" if yoy.loc[month] > yoy.shift(1).loc[month] else "Falling / flat",
+                 "nominal": {a: round(float(nominal.loc[month, a]) * 100, 8) for a in assets},
+                 "real": {a: None if pd.isna(real.loc[month, a]) else round(float(real.loc[month, a]) * 100, 8) for a in assets}}
+                for month in common.index
+            ],
         },
     }
 

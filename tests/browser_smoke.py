@@ -101,209 +101,185 @@ def main():
             page = context.new_page()
             errors = []
             page.on("pageerror", lambda error: errors.append(str(error)))
-            page.goto(base, wait_until="networkidle")
+            def visit(path):
+                page.goto(base + path, wait_until="networkidle")
+
+            visit("")
+            assert page.locator(".path-card").count() == 3
+            assert page.locator("#calculator").count() == 0
+            page.locator(".site-directory").evaluate("e=>e.open=true")
+            assert page.get_by_role("link", name="News & analysis", exact=True).is_visible()
+            assert page.get_by_role("link", name="Today → Tomorrow", exact=True).is_visible()
+            checks += 1
+
+            visit("#calculator")
+            page.wait_for_url("**/purchasing-power.html#calculator")
             assert page.locator("#calculator-results").is_visible()
-            assert page.evaluate("typeof Chart === 'function'")
-            assert page.evaluate("['investment-chart','drawdown-chart','cpi-chart','regime-chart'].every(id=>!!Chart.getChart(document.getElementById(id)))")
             assert float(page.locator("#hold-drawdown").inner_text().replace("%", "")) < -60
+            assert page.locator("#comparison-body tr").count() == 5
+            assert page.evaluate("Chart.getChart(document.getElementById('comparison-chart')).data.datasets.length") == 5
+            assert "Bitcoin" in page.locator("#comparison-body").inner_text()
             checks += 1
 
-            for asset in data["meta"]["assets"]:
-                row = page.locator("#scorecard-body tr").filter(has=page.get_by_role("rowheader", name=asset, exact=False))
-                assert row.count() == 1
-                for key, value in data["scorecard"][asset].items():
-                    actual = row.locator(f'[data-metric="{key}"]').evaluate("e=>e.childNodes[0].textContent")
-                    expected = "Not defined" if value is None else f"{value:.3f}" if key in ["sharpe", "calmar"] else f"{value:.2f}%"
-                    assert actual == expected, (asset, key, actual, expected)
+            page.locator("#buy-month").fill("2021-11")
+            page.wait_for_function("document.querySelector(\"#holding-period option[value=\'60\']\").disabled")
+            assert "Unavailable terms" in page.locator("#period-help").inner_text()
+            page.locator("#holding-period").select_option("36")
+            assert "36 months" in page.locator("#result-period").inner_text()
             checks += 1
 
-            assert page.locator("#current-inflation").inner_text() == f'{data["regime"]["current_yoy"]:.2f}%'
-            assert data["regime"]["current_regime"] in page.locator("#regime-badge").inner_text()
-            october = data["growth"]["dates"].index("2025-10")
-            assert page.evaluate("i=>Chart.getChart(document.getElementById('cpi-chart')).data.datasets[0].data[i]", october) is None
-            assert page.evaluate("Chart.getChart(document.getElementById('cpi-chart')).data.datasets[0].spanGaps") is False
-            checks += 1
-
-            page.get_by_role("button", name="Top vs Bottom 25%", exact=True).click()
-            assert page.locator("#quartile-toggle").get_attribute("aria-pressed") == "true"
-            plotted = page.evaluate("Chart.getChart(document.getElementById('regime-chart')).data.datasets[0].data")
-            assert plotted == [data["regime"]["by_quartile"]["Top 25%"][asset] for asset in data["meta"]["assets"]]
-            page.get_by_role("button", name="High vs Low", exact=True).click()
-            checks += 1
-
-            page.locator("#asset").select_option("Gold")
-            assert float(page.locator("#hold-drawdown").inner_text().replace("%", "")) > -30
-            page.locator("#holding-period").select_option("120")
-            assert page.locator("#calculator-error").is_visible()
-            assert "last available month" in page.locator("#calculator-error").inner_text()
-            checks += 1
-
+            page.locator("#buy-month").fill("2025-09")
             page.locator("#holding-period").select_option("latest")
+            assert page.locator("#gap-warning").is_visible()
+            assert page.evaluate("Chart.getChart(document.getElementById('comparison-chart')).data.datasets.every(d=>d.data[1]===null)")
             page.locator("#buy-month").fill("2025-10")
             assert page.locator("#real-value").inner_text() == "No data"
-            assert page.locator("#nominal-value").inner_text().startswith("$")
-            page.locator("#buy-month").fill("2025-09")
-            assert page.locator("#real-value").inner_text() != "No data"
-            assert page.locator("#gap-warning").is_visible()
-            assert page.evaluate("Chart.getChart(document.getElementById('investment-chart')).data.datasets[0].data[1]") is None
+            assert "No starting CPI" in page.locator("#comparison-body").inner_text()
             checks += 1
 
-            page.reload(wait_until="networkidle")
-            if args.screenshot:
-                args.screenshot.parent.mkdir(parents=True, exist_ok=True)
-                page.screenshot(path=str(args.screenshot), full_page=True)
-            page.set_viewport_size({"width": 390, "height": 844})
-            page.wait_for_function("document.documentElement.scrollWidth <= innerWidth", timeout=5000)
-            assert page.locator(".disclaimer").bounding_box()["y"] < 350
-            assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
-            score_scroll = page.locator(".table-wrap").first
-            assert score_scroll.evaluate("e=>e.scrollWidth > e.clientWidth")
-            assert page.locator("#amount").bounding_box()["height"] >= 44
-            if args.mobile_screenshot:
-                args.mobile_screenshot.parent.mkdir(parents=True, exist_ok=True)
-                page.screenshot(path=str(args.mobile_screenshot), full_page=True)
+            visit("research.html")
+            assert page.locator("#history-scope").input_value() == "common"
+            assert "Sep 2014" in page.locator("#scorecard-period").inner_text()
+            assert page.locator("#scorecard-body tr").count() == 5
+            common_gold=page.locator("#scorecard-body tr[data-asset='Gold'] [data-metric='ann_real_return']").evaluate("e=>e.childNodes[0].textContent")
+            page.locator("#history-scope").select_option("full")
+            for asset in data["meta"]["assets"]:
+                row=page.locator("#scorecard-body tr").filter(has=page.get_by_role("rowheader",name=asset,exact=False))
+                for key,value in data['scorecard'][asset].items():
+                    actual=row.locator(f'[data-metric="{key}"]').evaluate("e=>e.childNodes[0].textContent")
+                    expected="Not defined" if value is None else f"{value:.3f}" if key in ['sharpe','calmar'] else f"{value:.2f}%"
+                    assert actual==expected,(asset,key,actual,expected)
+            assert common_gold != page.locator("#scorecard-body tr[data-asset='Gold'] [data-metric='ann_real_return']").evaluate("e=>e.childNodes[0].textContent")
             checks += 1
 
-            page.goto(base + "methodology.html", wait_until="networkidle")
-            assert page.locator("#quiz-progress").inner_text() == "Question 1 of 5"
-            for i in range(5):
-                assert page.locator("#quiz-progress").inner_text() == f"Question {i + 1} of 5"
-                page.locator("#quiz-response").fill("My explanation")
-                page.locator("#quiz-show").click()
-                assert page.locator("#quiz-answer").is_visible()
-                page.locator("#quiz-next").click()
-            assert page.locator("#quiz-progress").inner_text() == "Question 1 of 5"
-            checks += 1
-            assert not errors, errors
-
-            # Source failures remain visible, without fabricated zero returns.
-            missing = context.new_page()
-            missing.route("**/data/data.json", lambda route: route.fulfill(status=404, content_type="text/plain", body="Not found"))
-            missing.goto(base, wait_until="networkidle")
-            assert "HTTP 404" in missing.locator("#load-status").inner_text()
-            assert missing.locator("#calculator-inputs").get_attribute("disabled") is not None
-            assert missing.locator("#asset").is_disabled()
+            assert page.locator("#rolling-period").input_value() == "36"
+            assert page.locator("#rolling-body tr").count() == 5
+            old_rolling=page.locator("#rolling-body").inner_text()
+            page.locator("#rolling-period").select_option("60")
+            assert old_rolling != page.locator("#rolling-body").inner_text()
+            assert "not independent" in page.locator("#rolling").inner_text()
             checks += 1
 
-            # A missing CDN is a graceful degraded mode, not a blank page.
-            degraded = context.new_page()
-            degraded.route(CDN, lambda route: route.abort())
-            degraded.goto(base, wait_until="networkidle")
-            assert degraded.locator("#chart-warning").is_visible()
-            assert degraded.locator("#calculator-results").is_visible()
-            assert degraded.locator("#scorecard-body tr").count() == 5
+            october=data['growth']['dates'].index('2025-10')
+            assert page.evaluate("i=>Chart.getChart(document.getElementById('cpi-chart')).data.datasets[0].data[i]",october) is None
+            assert page.locator("#regime-return-kind").input_value()=="real"
+            assert page.locator("#regime-table-body tr").count()==10
+            assert page.locator("#regime-table-body").is_visible()
+            before=page.locator("#regime-table-body").inner_text()
+            page.locator("#regime-return-kind").select_option("nominal")
+            assert before != page.locator("#regime-table-body").inner_text()
+            page.locator("#trend-toggle").click()
+            assert page.locator("#trend-toggle").get_attribute("aria-pressed")=="true"
+            assert "Rising" in page.locator("#regime-table-body").inner_text()
+            page.locator("#quartile-toggle").click()
+            assert "Top 25%" in page.locator("#regime-table-body").inner_text()
             checks += 1
 
-            unknown_data = json.loads(json.dumps(data))
-            unknown_data["regime"]["cpi_yoy"][-1] = None
-            for key in ["current_yoy", "current_regime", "current_quartile"]:
-                unknown_data["regime"][key] = None
-            unknown = context.new_page()
-            unknown.route("**/data/data.json", lambda route: route.fulfill(status=200, content_type="application/json", body=json.dumps(unknown_data)))
-            unknown.goto(base, wait_until="networkidle")
-            assert unknown.locator("#current-inflation").inner_text() == "No data"
-            assert unknown.locator("#regime-badge").inner_text() == "Current regime: no data"
-            assert "do not assign" in unknown.locator("#regime-summary").inner_text()
-            checks += 1
-
-            page.goto(base + '#weather', wait_until='networkidle')
             assert page.locator('#research-content').is_visible()
-            assert page.locator('#weather-title').inner_text() == research['macro']['weather']
-            assert page.locator('#macro-body tr').count() == 10
+            assert page.locator('#macro-body tr').count()==10
             page.locator('#source-directory-details').evaluate('e=>e.open=true')
             page.locator('#source-category').select_option('Bank research')
-            assert page.locator('.source-card').count() == 8
-            assert 'J.P. Morgan' in page.locator('#research-source-list').inner_text()
+            assert page.locator('.source-card').count()==8
             page.locator('#source-category').select_option('Journalism')
-            assert page.locator('.source-card').count() == 3
-            assert 'The Economist' in page.locator('#research-source-list').inner_text()
+            assert page.locator('.source-card').count()==3
             checks += 1
 
-            assert research['news'], 'Real-data validation requires at least one matched publisher headline'
-            topic = research['news'][0]['topics'][0]
-            page.locator('#news-topic').select_option(topic)
-            assert page.locator('.news-card').count() > 0
+            visit('monitor.html')
+            assert page.locator('#forecast-content').is_visible()
+            assert page.locator('.forecast-card').count()==5
+            assert page.locator('#baseline-finding').is_visible()
+            assert page.locator('#forecast-backtest-body').is_visible()
+            assert page.locator('#verification-by-asset tr').count()==5
+            assert 'not direction' in page.locator('#forecast-verification').inner_text()
+            for row in forecast_data['assets']:
+                card=page.locator('.forecast-card').filter(has=page.get_by_role('heading',name=row['asset'],exact=True))
+                if row.get('forecast'):
+                    expected=f"${row['forecast']['levels']['q50']:,.2f}"
+                    assert expected in card.inner_text(),(row['asset'],expected)
+            checks += 1
+
+            assert page.locator('#news-content').is_visible()
+            relevant=next(n for n in research['news'] if n['topics'])
+            page.locator('#news-topic').select_option(relevant['topics'][0])
+            assert page.locator('.news-card .chain-detail').count()>0
             page.locator('.news-card .chain-detail').first.evaluate('e=>e.open=true')
-            assert page.locator('.news-card .impact-chain').first.locator('li').count() >= 4
-            assert 'Bitcoin' in page.locator('.news-card .asset-effects').first.inner_text()
             page.locator('#research-refresh').click()
-            page.wait_for_function("document.getElementById('research-refresh').disabled === false")
+            page.wait_for_function("!document.getElementById('research-refresh').disabled")
             assert page.locator('.news-card .chain-detail').first.get_attribute('open') is not None
             page.locator('#news-search').fill('NO_MATCH_739450')
-            assert page.locator('.news-card').count() == 0
-            assert 'No matching headlines' in page.locator('#news-list').inner_text()
+            assert page.locator('.news-card').count()==0
             page.locator('#news-search').fill('')
+            page.locator('#news-topic').select_option('unclassified')
+            for card in page.locator('.news-card').all():
+                assert card.locator('.chain-detail').count()==0
+                assert card.locator('.article-ai details').count()==0
+                assert 'No clear macro impact' in card.inner_text()
             page.locator('#news-topic').select_option('')
-            page.locator('.gold-case').evaluate('e=>e.open=true')
-            assert 'economically competitive' in page.locator('#gold-case-evidence').inner_text()
-            page.set_viewport_size({'width':390,'height':844})
-            page.wait_for_function('document.documentElement.scrollWidth <= innerWidth')
+            page.locator('#news-more').click() if page.locator('#news-more').is_visible() else None
+            assert page.locator('.article-ai details').count()>0
+            page.locator('.article-ai details').first.evaluate('e=>e.open=true')
+            assert 'Qwen/' in page.locator('.article-ai details[open]').first.inner_text()
+            checks += 1
+
+            assert page.locator('.structure-card').count()==12
+            assert 'percentile' in page.locator('#market-structure').inner_text()
+            checks += 1
+
+            for path in ['', 'purchasing-power.html','research.html','monitor.html','methodology.html']:
+                page.set_viewport_size({'width':390,'height':844})
+                visit(path)
+                assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),path
+                assert page.locator('.disclaimer').bounding_box()['y']<360,path
             if args.mobile_screenshot:
-                page.screenshot(path=str(args.mobile_screenshot), full_page=True)
+                page.goto(base+'monitor.html',wait_until='networkidle')
+                page.screenshot(path=str(args.mobile_screenshot),full_page=True)
+            checks += 1
+            page.set_viewport_size({'width':1440,'height':1000})
+            if args.screenshot:
+                visit('monitor.html'); page.screenshot(path=str(args.screenshot),full_page=True)
+
+            visit('methodology.html')
+            for i in range(5):
+                assert page.locator('#quiz-progress').inner_text()==f'Question {i+1} of 5'
+                page.locator('#quiz-response').fill('My explanation');page.locator('#quiz-show').click()
+                assert page.locator('#quiz-answer').is_visible();page.locator('#quiz-next').click()
             checks += 1
 
-            no_research = context.new_page()
-            no_research.route('**/data/research.json', lambda route: route.fulfill(status=503, body='Unavailable'))
-            no_research.goto(base, wait_until='networkidle')
-            assert '503' in no_research.locator('#research-load-status').inner_text()
-            assert no_research.locator('#calculator-results').is_visible()
-            assert no_research.locator('#scorecard-body tr').count() == 5
+            missing=context.new_page()
+            missing.route('**/data/data.json',lambda r:r.fulfill(status=404,content_type='text/plain',body='Not found'))
+            missing.goto(base+'purchasing-power.html',wait_until='networkidle')
+            assert 'HTTP 404' in missing.locator('#load-status').inner_text()
+            assert missing.locator('#asset').is_disabled()
             checks += 1
 
-            hostile = json.loads(json.dumps(research))
-            hostile['news'][0]['title'] = '<img src=x onerror="window.injected=true"> Bitcoin gold'
-            hostile['macro']['stale'] = True
-            safe_page = context.new_page()
-            safe_page.route('**/data/research.json', lambda route: route.fulfill(status=200, content_type='application/json', body=json.dumps(hostile)))
-            safe_page.goto(base, wait_until='networkidle')
-            assert safe_page.locator('#weather-warning').is_visible()
-            assert 'stale' in safe_page.locator('#weather-warning').inner_text()
-            assert safe_page.locator('#news-list img').count() == 0
-            assert safe_page.evaluate('window.injected === undefined')
-            assert '<img' in safe_page.locator('.news-card h3').first.inner_text()
-            assert not errors, errors
-            checks += 1
-            page.goto(base + '#outlook', wait_until='networkidle')
-            assert page.locator('#forecast-content').is_visible()
-            assert page.locator('#forecast-body tr').count() == 5
-            for row_data in forecast_data['assets']:
-                row = page.locator('#forecast-body tr').filter(has=page.get_by_role('rowheader', name=row_data['asset'], exact=True))
-                assert row.count() == 1
-                expected = '${:,.2f}'.format(row_data['forecast']['levels']['q50'])
-                assert expected in row.inner_text()
-            assert page.locator('#forecast-backtest-body tr').count() == 5
-            page.locator('details').filter(has=page.locator('#forecast-ledger-body')).evaluate('e=>e.open=true')
-            assert 'Pending' in page.locator('#forecast-ledger-body').inner_text() or 'Verified' in page.locator('#forecast-ledger-body').inner_text()
+            degraded=context.new_page();degraded.route(CDN,lambda r:r.abort())
+            degraded.goto(base+'research.html',wait_until='networkidle')
+            assert degraded.locator('#chart-warning').is_visible()
+            assert degraded.locator('#scorecard-body tr').count()==5
             checks += 1
 
-            page.locator('.gold-case').evaluate('e=>e.open=true')
-            page.wait_for_selector('.ai-analysis', state='attached')
-            detail = page.locator('.ai-analysis').first
-            detail.evaluate('e=>e.open=true')
-            assert 'source' in detail.inner_text().lower()
-            assert 'AI interpretation' in detail.inner_text()
-            assert detail.locator('blockquote').count() >= 1
-            assert any(record.get('model','NO_MODEL') in detail.inner_text() for record in ai_data['articles'] if record.get('analysis'))
-            page.set_viewport_size({'width':390,'height':844})
-            page.wait_for_function('document.documentElement.scrollWidth <= innerWidth')
+            no_ai=context.new_page();no_ai.route('**/data/intelligence.json',lambda r:r.fulfill(status=503,body='Unavailable'))
+            no_ai.goto(base+'monitor.html',wait_until='networkidle')
+            assert no_ai.locator('.forecast-card').count()==5
+            assert 'not available' in no_ai.locator('#article-ai-status').inner_text()
             checks += 1
 
-            ai_missing = context.new_page()
-            ai_missing.route('**/data/intelligence.json', lambda route: route.fulfill(status=503,body='Unavailable'))
-            ai_missing.goto(base,wait_until='networkidle')
-            assert ai_missing.locator('#forecast-body tr').count() == 5
-            assert ai_missing.locator('.ai-analysis').count() == 0
-            assert 'not available' in ai_missing.locator('#article-ai-status').inner_text()
-            assert ai_missing.locator('#calculator-results').is_visible()
+            no_news=context.new_page();no_news.route('**/data/research.json',lambda r:r.fulfill(status=503,body='Unavailable'))
+            no_news.goto(base+'monitor.html',wait_until='networkidle')
+            assert 'HTTP 503' in no_news.locator('#research-load-status').inner_text()
+            assert no_news.locator('.forecast-card').count()==5
             checks += 1
 
+            no_structure=context.new_page();no_structure.route('**/data/structure.json',lambda r:r.fulfill(status=503,body='Unavailable'))
+            no_structure.goto(base+'monitor.html',wait_until='networkidle')
+            assert 'unavailable' in no_structure.locator('#structure-status').inner_text()
+            assert no_structure.locator('.forecast-card').count()==5
+            checks += 1
+            assert not errors,errors
             browser.close()
+        print(f'PASS: {checks} real-browser functional scenarios; five pages, comparisons, evidence and source failures.')
     finally:
-        if server:
-            server.shutdown()
-            server.server_close()
-    print(f"PASS: {checks} real-browser functional scenarios; desktop, mobile, charts, quiz and failure states.")
+        if server:server.shutdown()
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

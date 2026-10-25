@@ -47,7 +47,7 @@ jobs:
         run: python scripts/build_data.py
 
       - name: Test dashboard calculations
-        run: node --test tests/test_dashboard.js tests/test_research.js tests/test_intelligence.js
+        run: node --test tests/test_*.js
 
       - name: Commit only changed derived data
         id: commit

@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="Review forecast baselines, later outcomes, relevant news and market-structure evidence."
+      name="description"
+    />
+    <meta content="#142b2b" name="theme-color" />
+    <title>Market Monitor — RealWorth</title>
+    <link href="assets/favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="assets/style.css" rel="stylesheet" />
+
+    <script defer="" src="assets/research.js"></script>
+    <script defer="" src="assets/intelligence.js"></script>
+    <script defer="" src="assets/structure.js"></script>
+    <script defer="" src="assets/navigation.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#dashboard">Skip to content</a>
+    <header class="site-header wrap">
+      <a aria-label="RealWorth home" class="brand" href="./"
+        ><span aria-hidden="true" class="brand-mark">R<span>W</span></span
+        >RealWorth<span class="brand-note">A research project</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="purchasing-power.html">Purchasing Power</a
+        ><a href="research.html">Research</a
+        ><a href="monitor.html">Market Monitor</a>
+        <details class="site-directory">
+          <summary>Explore <span aria-hidden="true">▾</span></summary>
+          <div class="directory-links">
+            <a href="./">Home</a
+            ><a href="purchasing-power.html#calculator"
+              >Real-return calculator</a
+            ><a href="research.html#scorecard">Common-period scorecard</a
+            ><a href="research.html#rolling">Rolling holding periods</a
+            ><a href="research.html#regime">Inflation evidence</a
+            ><a href="research.html#weather">Economic Weather &amp; sources</a
+            ><a href="monitor.html#outlook">Today → Tomorrow</a
+            ><a href="monitor.html#news">News &amp; analysis</a
+            ><a href="monitor.html#market-structure"
+              >Flows, leverage &amp; network</a
+            ><a href="methodology.html">Methodology &amp; quiz</a>
+          </div>
+        </details>
+      </nav>
+    </header>
+    <main aria-busy="false" class="wrap" id="dashboard">
+      <section class="page-intro">
+        <p class="eyebrow">Market Monitor</p>
+        <p class="disclaimer">Educational research. Not financial advice.</p>
+        <h1>Watch the market.<br /><em>Check the claim.</em></h1>
+        <p>
+          Compare scenarios with a simple baseline, inspect later outcomes, and
+          follow relevant developments.
+        </p>
+        <p class="tiny" id="data-stamp"></p>
+      </section>
+      <section aria-labelledby="outlook-heading" class="tool" id="outlook">
+        <div class="section-heading">
+          <span class="section-number">06</span>
+          <div>
+            <p class="eyebrow">Observed prices, testable scenarios</p>
+            <h2 id="outlook-heading">Today → Tomorrow</h2>
+            <p>
+              Latest reported quotes, frozen next-period price scenarios, and a
+              public record of what happened afterward.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="research-toolbar">
+            <p class="tiny">
+              All prices in USD. Gold is GLD per ETF share, not spot gold per
+              ounce. Times below use Eastern Time.
+            </p>
+            <button class="text-button" id="forecast-refresh" type="button">
+              Check latest quotes &amp; AI
+            </button>
+          </div>
+          <p class="notice" id="forecast-load-status" role="status">
+            Loading observed quotes and frozen scenarios…
+          </p>
+          <p class="notice" hidden="" id="forecast-warning"></p>
+          <div hidden="" id="forecast-content">
+            <p class="tiny" id="forecast-updated"></p>
+            <p class="notice">
+              These are historical price scenarios, not guaranteed future
+              probabilities. AI news context is shown separately from the
+              numerical model. Issued forecasts stay frozen while observed
+              quotes keep updating.
+            </p>
+            <section class="baseline-evidence">
+              <h3>Does the point estimate beat unchanged prices?</h3>
+              <p class="notice" id="baseline-finding"></p>
+              <p>
+                The range describes uncertainty. Q10–Q90 coverage is the share
+                of outcomes inside the outer interval, not the accuracy of
+                predicting up or down.
+              </p>
+              <p>
+                Each of the last 90 test predictions uses 252 matching-horizon
+                returns whose endpoints were known by its historical origin.
+                Overlapping two-session returns are not independent. The Q10–Q90
+                coverage target is nominally 80%; the measured historical result
+                below is not a promise for tomorrow. Bitcoin’s daily-close
+                diagnostic is a proxy, not a test of the exact intraday 24-hour
+                forecast anchors. Lower price error is better; compare the model
+                with a no-change random walk.
+              </p>
+              <div class="table-wrap">
+                <table class="score-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Asset</th>
+                      <th scope="col">Test observations</th>
+                      <th scope="col">Historical outer-band coverage</th>
+                      <th scope="col">Model mean absolute error</th>
+                      <th scope="col">No-change baseline error</th>
+                    </tr>
+                  </thead>
+                  <tbody id="forecast-backtest-body"></tbody>
+                </table>
+              </div>
+            </section>
+            <div class="forecast-cards" id="forecast-body"></div>
+            <details class="rules">
+              <summary>
+                How prices, market closures and forecasts are handled
+              </summary>
+              <p>
+                Bitcoin trades continuously: each day’s first forecast uses a
+                reported quote and targets roughly 24 hours later, rounded up to
+                the next five-minute boundary. ETF scenarios use the last
+                completed daily close and the first NYSE-calendar close on or
+                after tomorrow, including holidays and early closes. If tomorrow
+                has no ETF session, the target explicitly moves to the next
+                trading close; no Sunday price is fabricated.
+              </p>
+              <p>
+                Forecasts are issued once per Bitcoin Eastern-calendar day or
+                ETF target and completed anchor combination, and remain
+                unchanged. A new completed close can create a separate issue for
+                the same target. A forecast issued earlier is not an
+                up-to-the-minute conditional model. The latest quote is shown
+                separately with its original source time. Training uses 252
+                completed one- or two-session price-only returns matched to the
+                actual anchor-to-target span, excluding cash distributions. No
+                forecasting advantage over a random walk is established.
+              </p>
+              <p>
+                Public Yahoo histories are processed transiently; complete raw
+                price arrays are not published. Requested current quote points
+                and derived scenario prices are published. After verification,
+                the archive retains derived realized returns and errors instead
+                of raw closing-price histories.
+              </p>
+            </details>
+
+            <h3 class="verification-title">What happened after issue?</h3>
+            <p class="notice" id="forecast-verification"></p>
+            <div class="table-wrap">
+              <table class="score-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Asset</th>
+                    <th scope="col">Verified issues</th>
+                    <th scope="col">Distinct target dates</th>
+                    <th scope="col">Outer-band coverage (%)</th>
+                    <th scope="col">Median estimate MAE (%)</th>
+                    <th scope="col">Unchanged-price MAE (%)</th>
+                  </tr>
+                </thead>
+                <tbody id="verification-by-asset"></tbody>
+              </table>
+            </div>
+            <p class="tiny">
+              Scoring uses the earliest issued forecast for each asset/target
+              date in America/Toronto, avoiding extra weight for repeated issues
+              on one date. Dates are distinct, not statistically independent;
+              horizons can differ, returns overlap and assets share shocks. All
+              issues remain in the ledger. These small samples do not establish
+              predictive skill.
+            </p>
+            <details class="rules">
+              <summary>
+                Frozen forecast and outcome ledger · latest 30 records
+              </summary>
+              <p>
+                Verification waits for a later source observation. Bitcoin uses
+                the first completed five-minute bar at or after its target, at
+                most five minutes late. ETFs use their scheduled close. Missing
+                data is labelled unverified. No realized outcome exists until
+                the target has passed; the first release will show pending
+                records.
+              </p>
+              <div class="table-wrap">
+                <table class="score-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Asset</th>
+                      <th scope="col">Issued</th>
+                      <th scope="col">Target</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Realized return</th>
+                      <th scope="col">Median price error</th>
+                      <th scope="col">Outer band</th>
+                    </tr>
+                  </thead>
+                  <tbody id="forecast-ledger-body"></tbody>
+                </table>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section aria-labelledby="news-heading" class="tool" id="news">
+        <div class="section-heading">
+          <span class="section-number">05</span>
+          <div>
+            <p class="eyebrow">Follow the mechanism, question the claim</p>
+            <h2 id="news-heading">News &amp; Impact Chains</h2>
+            <p>
+              Publisher headlines → possible transmission channels → gold and
+              Bitcoin → evidence that could change the conclusion.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="research-toolbar">
+            <button class="text-button" id="research-refresh" type="button">
+              Check latest news snapshot
+            </button>
+            <p class="notice" id="research-load-status" role="status">
+              Loading news…
+            </p>
+          </div>
+          <p class="notice">
+            News and quotes are scanned on an approximately 15-minute schedule;
+            this page checks research updates every five minutes while visible.
+            This is not continuous real-time monitoring. Open the original
+            source before treating a headline as fact. Rule templates and actual
+            AI-assisted article readings are labelled separately. The hourly AI
+            reader checks selected public bodies and shows source evidence;
+            neither type establishes a verified causal effect.
+          </p>
+          <p class="notice" id="article-ai-status" role="status">
+            Loading actual article-model coverage…
+          </p>
+          <p class="notice" hidden="" id="article-ai-warning"></p>
+          <div hidden="" id="news-content">
+            <p class="tiny" id="news-updated"></p>
+            <p class="notice" hidden="" id="news-health-warning"></p>
+            <details class="rules">
+              <summary>News source health &amp; coverage</summary>
+              <ul id="feed-health-list"></ul>
+              <p>
+                Only dated, relevant headlines in the last 14 days are retained,
+                capped at 60. Matching uses headline keywords and can miss
+                context, negation or important stories. A fetched feed can have
+                zero relevant items. Articles are not ranked by expected
+                investment return.
+              </p>
+            </details>
+            <div class="research-filters">
+              <label
+                >Impact channel<select id="news-topic">
+                  <option value="">All channels</option>
+                  <option value="unclassified">No clear macro impact</option>
+                </select></label
+              ><label
+                >Search headlines or publishers<input
+                  id="news-search"
+                  placeholder="Gold, Bitcoin, Fed…"
+                  type="search"
+              /></label>
+            </div>
+            <p class="tiny" id="news-result-count" role="status"></p>
+            <div id="news-list"></div>
+            <button class="text-button" hidden="" id="news-more" type="button">
+              Show more headlines
+            </button>
+            <details class="gold-case">
+              <summary>
+                Worked example: “artificial gold” and the Bitcoin scarcity
+                narrative
+              </summary>
+              <p>
+                <strong>Background case, not a current alert.</strong> CERN’s
+                ALICE lead-to-gold observation is a possible reference for the
+                described French story. Creating gold nuclei is different from
+                demonstrating commercially competitive gold supply. A separate
+                French announcement has not been established here.
+              </p>
+              <div id="gold-case-evidence"></div>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section class="tool" id="market-structure">
+        <div class="section-heading">
+          <span class="section-number">03</span>
+          <div>
+            <p class="eyebrow">Demand, positioning &amp; network use</p>
+            <h2>What else moved?</h2>
+            <p>
+              Observe fund holdings, derivatives pricing and activity alongside
+              prices. None is a mechanical buy/sell signal.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <p class="notice" id="structure-status" role="status">
+            Loading market-structure sources…
+          </p>
+          <div class="structure-grid" id="structure-cards"></div>
+          <details>
+            <summary>Coverage, access and interpretation</summary>
+            <p>
+              Source dates and missing readings are explicit. Assets under
+              management can rise through price alone and are never relabelled
+              as fund flows. A history percentile is shown only with sufficient
+              comparable observations. Active addresses are not people; exchange
+              derivatives are not the whole market. Official gold demand and
+              CFTC positioning can have longer release lags.
+            </p>
+            <div id="structure-directory"></div>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <div>
+        <a class="brand" href="./">RealWorth</a>
+        <p>Educational research project, not financial advice.</p>
+        <p class="tiny">
+          Sources: Yahoo Finance · FRED (CPIAUCSL). Monthly observations, US
+          dollars.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="methodology.html">Methodology</a
+        ><a href="https://github.com/Ethanli0831/RealWorth"
+          >GitHub repository ↗</a
+        ><a href="data/data.json">Derived data</a>
+      </div>
+    </footer>
+  </body>
+</html>

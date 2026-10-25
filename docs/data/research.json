@@ -5,7 +5,8 @@
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
     "news_window_days": 14,
-    "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
+    "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects.",
+    "classification": "Conservative headline relevance gate; no clear macro impact is a valid outcome. Related reports are grouped by high-confidence same event."
   },
   "macro": {
     "checked_at": "2026-10-25T11:45:15Z",
@@ -133,7 +134,19 @@
         "energy"
       ],
       "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Rosebank: Life on the oil field at the centre of a political storm",
+          "url": "https://www.bbc.co.uk/news/articles/cqy8ljkle97ro?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-10-25T07:15:38Z"
+        }
+      ]
     },
     {
       "title": "Heating oil costs 'more than double' ahead of winter",
@@ -146,7 +159,19 @@
         "energy"
       ],
       "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Heating oil costs 'more than double' ahead of winter",
+          "url": "https://www.bbc.co.uk/news/articles/c6n8de1jgrdvo?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-10-25T07:12:21Z"
+        }
+      ]
     },
     {
       "title": "Firms 'holding back' on new jobs ahead of Budget",
@@ -155,11 +180,21 @@
       "source_id": "bbc",
       "publisher": "BBC Business",
       "source_kind": "Publisher headline",
-      "topics": [
-        "growth"
-      ],
+      "topics": [],
       "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "Firms 'holding back' on new jobs ahead of Budget",
+          "url": "https://www.bbc.co.uk/news/articles/c62kep355q02o?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-10-25T07:06:12Z"
+        }
+      ]
     },
     {
       "title": "Oil price rises above $117 a barrel amid fears US will renew strikes on Iran",
@@ -172,7 +207,19 @@
         "energy"
       ],
       "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Oil price rises above $117 a barrel amid fears US will renew strikes on Iran",
+          "url": "https://www.theguardian.com/business/2026/oct/23/oil-five-month-high-fears-us-renews-strikes-iran",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-10-23T16:48:28Z"
+        }
+      ]
     },
     {
       "title": "Civil servant who juggled five jobs says he was 'surprised' to be charged with fraud",
@@ -181,11 +228,21 @@
       "source_id": "bbc",
       "publisher": "BBC Business",
       "source_kind": "Publisher headline",
-      "topics": [
-        "growth"
-      ],
+      "topics": [],
       "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "Civil servant who juggled five jobs says he was 'surprised' to be charged with fraud",
+          "url": "https://www.bbc.co.uk/news/articles/c6lykzwjkj1eo?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-10-23T15:15:13Z"
+        }
+      ]
     },
     {
       "title": "ECB Consumer Expectations Survey results – September 2026",
@@ -198,7 +255,19 @@
         "policy"
       ],
       "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "ECB Consumer Expectations Survey results – September 2026",
+          "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
+          "publisher": "European Central Bank",
+          "published_at": "2026-10-23T08:00:00Z"
+        }
+      ]
     },
     {
       "title": "'I wasn't thinking straight' says five jobs civil servant",
@@ -207,11 +276,21 @@
       "source_id": "bbc",
       "publisher": "BBC Business",
       "source_kind": "Publisher headline",
-      "topics": [
-        "growth"
-      ],
+      "topics": [],
       "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "'I wasn't thinking straight' says five jobs civil servant",
+          "url": "https://www.bbc.co.uk/news/articles/cmx23dwp3qzro?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-10-22T15:05:47Z"
+        }
+      ]
     },
     {
       "title": "Barclays to cut 5,000 jobs as bank’s bosses hail AI productivity advances",
@@ -220,24 +299,27 @@
       "source_id": "guardian",
       "publisher": "The Guardian Business",
       "source_kind": "Publisher headline",
-      "topics": [
-        "growth"
-      ],
+      "topics": [],
       "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
-    },
-    {
-      "title": "Barclays cutting 5,000 jobs as it increases reliance on AI",
-      "url": "https://www.bbc.co.uk/news/articles/cm4g1p347qgxo?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-10-22T14:28:59Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "growth"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "Barclays to cut 5,000 jobs as bank’s bosses hail AI productivity advances",
+          "url": "https://www.theguardian.com/business/2026/oct/22/barclays-profits-up-as-uk-banks-brace-for-tax-increase-in-budget",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-10-22T14:39:29Z"
+        },
+        {
+          "title": "Barclays cutting 5,000 jobs as it increases reliance on AI",
+          "url": "https://www.bbc.co.uk/news/articles/cm4g1p347qgxo?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-10-22T14:28:59Z"
+        }
+      ]
     },
     {
       "title": "Marine life in Gulf of Mexico has still not fully recovered from 2010 BP oil spill",
@@ -250,7 +332,19 @@
         "energy"
       ],
       "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Marine life in Gulf of Mexico has still not fully recovered from 2010 BP oil spill",
+          "url": "https://www.theguardian.com/environment/2026/oct/22/deepwater-horizon-oil-spill-gulf-marine-life",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-10-22T12:00:44Z"
+        }
+      ]
     },
     {
       "title": "Is an 'AI war' complicating your job search?",
@@ -259,11 +353,21 @@
       "source_id": "bbc",
       "publisher": "BBC Business",
       "source_kind": "Publisher headline",
-      "topics": [
-        "energy"
-      ],
+      "topics": [],
       "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "Is an 'AI war' complicating your job search?",
+          "url": "https://www.bbc.co.uk/news/articles/cm9qzgg5z89no?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-10-22T05:01:31Z"
+        }
+      ]
     },
     {
       "title": "The 'trillion pound' oil fund the government believes Britain could have built",
@@ -276,7 +380,19 @@
         "energy"
       ],
       "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "The 'trillion pound' oil fund the government believes Britain could have built",
+          "url": "https://www.bbc.co.uk/news/articles/cm4g1zrl2nrqo?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-10-21T23:27:05Z"
+        }
+      ]
     },
     {
       "title": "Faisal Islam: Inflation and borrowing figures illustrate chancellor's Budget challenge",
@@ -289,7 +405,19 @@
         "inflation"
       ],
       "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Faisal Islam: Inflation and borrowing figures illustrate chancellor's Budget challenge",
+          "url": "https://www.bbc.co.uk/news/articles/cm3wv9pn22e5o?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-10-21T10:20:15Z"
+        }
+      ]
     },
     {
       "title": "‘Hunted like animals’: inside Trump’s war on the people who build America",
@@ -298,11 +426,21 @@
       "source_id": "guardian",
       "publisher": "The Guardian Business",
       "source_kind": "Publisher headline",
-      "topics": [
-        "energy"
-      ],
+      "topics": [],
       "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "‘Hunted like animals’: inside Trump’s war on the people who build America",
+          "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/21/trump-ice-construction-worker-deportation",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-10-21T10:00:02Z"
+        }
+      ]
     },
     {
       "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
@@ -315,7 +453,19 @@
         "fiscal"
       ],
       "cached": true,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
+          "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
+          "publisher": "CNBC Economy",
+          "published_at": "2026-10-16T22:34:29Z"
+        }
+      ]
     },
     {
       "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
@@ -328,7 +478,19 @@
         "policy"
       ],
       "cached": true,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
+          "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
+          "publisher": "CNBC Economy",
+          "published_at": "2026-10-16T16:27:31Z"
+        }
+      ]
     },
     {
       "title": "Economists: Hot PPI shows Fed's work is not done",
@@ -341,7 +503,19 @@
         "policy"
       ],
       "cached": true,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Economists: Hot PPI shows Fed's work is not done",
+          "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
+          "publisher": "CNBC Economy",
+          "published_at": "2026-10-15T15:37:59Z"
+        }
+      ]
     },
     {
       "title": "IMF sees milder global slowdown as AI boom offsets war hit — warns resilience is nearing limits",
@@ -350,11 +524,21 @@
       "source_id": "cnbc",
       "publisher": "CNBC Economy",
       "source_kind": "Publisher headline",
-      "topics": [
-        "energy"
-      ],
+      "topics": [],
       "cached": true,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "IMF sees milder global slowdown as AI boom offsets war hit — warns resilience is nearing limits",
+          "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
+          "publisher": "CNBC Economy",
+          "published_at": "2026-10-15T06:35:31Z"
+        }
+      ]
     },
     {
       "title": "How high inflation became a 'fact of life' in the U.S.",
@@ -367,7 +551,19 @@
         "inflation"
       ],
       "cached": true,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "How high inflation became a 'fact of life' in the U.S.",
+          "url": "https://www.cnbc.com/2026/10/14/high-inflation-fed-expectations.html",
+          "publisher": "CNBC Economy",
+          "published_at": "2026-10-14T17:20:23Z"
+        }
+      ]
     },
     {
       "title": "'Godzilla El Niño' is wreaking havoc with Philippine central bank's inflation forecasts",
@@ -381,7 +577,19 @@
         "inflation"
       ],
       "cached": true,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "'Godzilla El Niño' is wreaking havoc with Philippine central bank's inflation forecasts",
+          "url": "https://www.cnbc.com/2026/10/14/godzilla-el-nino-asia-inflation-philippines.html",
+          "publisher": "CNBC Economy",
+          "published_at": "2026-10-14T04:24:28Z"
+        }
+      ]
     },
     {
       "title": "The latest inflation data is expected to show price increases are accelerating",
@@ -394,7 +602,19 @@
         "inflation"
       ],
       "cached": true,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "The latest inflation data is expected to show price increases are accelerating",
+          "url": "https://www.cnbc.com/2026/10/13/september-consumer-price-index-inflation.html",
+          "publisher": "CNBC Economy",
+          "published_at": "2026-10-13T18:05:57Z"
+        }
+      ]
     },
     {
       "title": "World Bank jobs council urges 'crisis-era' employment support measures as IMF warns of AI ‘tsunami’",
@@ -403,11 +623,21 @@
       "source_id": "cnbc",
       "publisher": "CNBC Economy",
       "source_kind": "Publisher headline",
-      "topics": [
-        "growth"
-      ],
+      "topics": [],
       "cached": true,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "World Bank jobs council urges 'crisis-era' employment support measures as IMF warns of AI ‘tsunami’",
+          "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html",
+          "publisher": "CNBC Economy",
+          "published_at": "2026-10-13T13:09:55Z"
+        }
+      ]
     },
     {
       "title": "IMF warns bond yields could see a 'disorderly' spike as debt, inflation risks worsen",
@@ -420,7 +650,19 @@
         "inflation"
       ],
       "cached": true,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "IMF warns bond yields could see a 'disorderly' spike as debt, inflation risks worsen",
+          "url": "https://www.cnbc.com/2026/10/13/treasury-yields-imf-debt-inflation-.html",
+          "publisher": "CNBC Economy",
+          "published_at": "2026-10-13T04:54:07Z"
+        }
+      ]
     },
     {
       "title": "India’s retail inflation jumps to 5.54% in September, above estimates",
@@ -433,7 +675,19 @@
         "inflation"
       ],
       "cached": true,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified."
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "India’s retail inflation jumps to 5.54% in September, above estimates",
+          "url": "https://www.cnbc.com/2026/10/12/india-inflation-oil-energy-iran-war.html",
+          "publisher": "CNBC Economy",
+          "published_at": "2026-10-12T10:49:24Z"
+        }
+      ]
     }
   ],
   "feed_health": [

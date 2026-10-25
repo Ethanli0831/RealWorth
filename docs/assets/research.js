@@ -62,7 +62,6 @@
           safeLink(n.url) &&
           Number.isFinite(Date.parse(n.published_at)) &&
           Array.isArray(n.topics) &&
-          n.topics.length &&
           n.topics.every((id) => ids.has(id)),
       )
     )
@@ -73,7 +72,10 @@
     const term = query.trim().toLowerCase();
     return data.news.filter(
       (n) =>
-        (!topic || n.topics.includes(topic)) &&
+        (!topic ||
+          (topic === "unclassified"
+            ? !n.topics.length
+            : n.topics.includes(topic))) &&
         (!term || `${n.title} ${n.publisher}`.toLowerCase().includes(term)),
     );
   }
@@ -87,7 +89,8 @@
     return node;
   };
   const set = (id, text) => {
-    document.getElementById(id).textContent = text;
+    const node = document.getElementById(id);
+    if (node) node.textContent = text;
   };
   const link = (label, url) => {
     const node = el("a", label);
@@ -108,8 +111,9 @@
   const pct = (value) => (finite(value) ? `${value.toFixed(2)}%` : "No data");
   let state;
   let loading = false;
-  let visible = 12;
+  let visible = 6;
   function renderMacro(data) {
+    if (!document.getElementById("macro-body")) return;
     const macro = data.macro;
     set("weather-title", macro.weather);
     set("weather-cycle", macro.short_cycle);
@@ -195,6 +199,7 @@
     document.getElementById("macro-body").replaceChildren(...rows);
   }
   function renderSources(data) {
+    if (!document.getElementById("source-category")) return;
     const selector = document.getElementById("source-category");
     if (selector.options.length === 1) {
       for (const category of new Set(data.sources.map((s) => s.category))) {
@@ -224,6 +229,7 @@
     set("source-count", `${shown.length} research sources`);
   }
   function renderNews(data) {
+    if (!document.getElementById("news-list")) return;
     const opened = new Set(
       Array.from(
         document.querySelectorAll("#news-list details[open]"),
@@ -240,6 +246,10 @@
     const cards = shown.map((n) => {
       const card = el("article", undefined, "news-card");
       card.dataset.sourceUrl = n.url;
+      card.dataset.relevant = String(n.topics.length > 0);
+      card.dataset.relatedUrls = JSON.stringify(
+        (n.related_reports || []).map((r) => r.url),
+      );
       card.append(
         el(
           "p",
@@ -254,10 +264,25 @@
       card.append(
         el(
           "p",
-          "Rule-template status: conditional mechanism · headline match · causal effect unverified",
+          n.topics.length
+            ? "Relevant headline · conditional mechanism template · causal effect unverified"
+            : "No clear macro impact · no analysis generated",
           "analysis-label",
         ),
       );
+      if (n.relevance) card.append(el("p", n.relevance.reason, "tiny"));
+      if (n.related_reports?.length > 1) {
+        const related = el("details");
+        related.append(
+          el("summary", `${n.related_reports.length} reports of this event`),
+        );
+        for (const report of n.related_reports) {
+          const p = el("p");
+          p.append(link(`${report.publisher}: ${report.title}`, report.url));
+          related.append(p);
+        }
+        card.append(related);
+      }
       for (const id of n.topics) {
         const m = mechanismMap.get(id);
         const detail = el("details", undefined, "chain-detail");
@@ -306,6 +331,7 @@
     document.getElementById("news-more").hidden = shown.length >= items.length;
   }
   function renderCase(data) {
+    if (!document.getElementById("gold-case-evidence")) return;
     const c = data.gold_case;
     const m = data.mechanisms.find((m) => m.id === "transmutation");
     const root = document.getElementById("gold-case-evidence");
@@ -346,6 +372,7 @@
     );
   }
   function renderHealth(data) {
+    if (!document.getElementById("feed-health-list")) return;
     const fetched = data.feed_health.filter(
       (h) => h.status === "Fetched",
     ).length;
@@ -392,15 +419,17 @@
       renderHealth(data);
       renderCase(data);
       const topic = document.getElementById("news-topic");
-      if (topic.options.length === 1)
+      if (topic && topic.options.length <= 2)
         for (const m of data.mechanisms) {
           const option = el("option", m.name);
           option.value = m.id;
           topic.append(option);
         }
       renderNews(data);
-      document.getElementById("research-content").hidden = false;
-      document.getElementById("news-content").hidden = false;
+      for (const id of ["research-content", "news-content"]) {
+        const n = document.getElementById(id);
+        if (n) n.hidden = false;
+      }
       status.hidden = true;
     } catch (e) {
       status.textContent = `Research could not refresh: ${e.message}. ${state ? "Previously loaded readings remain visible; check their dates." : "The calculator, scorecard and inflation tracker remain available."}`;
@@ -415,11 +444,11 @@
     ?.addEventListener("change", () => state && renderSources(state));
   for (const id of ["news-topic", "news-search"])
     document.getElementById(id)?.addEventListener("input", () => {
-      visible = 12;
+      visible = 6;
       if (state) renderNews(state);
     });
   document.getElementById("news-more")?.addEventListener("click", () => {
-    visible += 12;
+    visible += 6;
     if (state) renderNews(state);
   });
   if (document.getElementById("research-refresh")) {

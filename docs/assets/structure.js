@@ -106,8 +106,8 @@
         make(
           "p",
           Number.isFinite(r.percentile)
-            ? `Empirical trailing-year rank: ${r.percentile.toFixed(1)}th percentile (${r.observations} observations).`
-            : `Trailing-year percentile unavailable: ${r.observations} comparable observations; requires ≥250 spanning ≥330 days.`,
+            ? `Empirical rank over the year ending at the observation date: ${r.percentile.toFixed(1)}th percentile (${r.observations} observations).`
+            : `Trailing-year percentile unavailable: ${r.observations} comparable observations; requires ≥${r.percentile_minimum || 250} spanning ≥330 days.`,
           "tiny",
         ),
       );

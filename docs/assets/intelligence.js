@@ -289,13 +289,16 @@
     }
     if (forecasts) renderForecasts();
   }
+  let relevantNewsUrls = null;
   function aiContext(ticker) {
     const asset =
       ticker === "BTC-USD" ? "bitcoin" : ticker === "GLD" ? "gold" : null;
     if (!asset)
       return "Macro context: see Economic Weather. No asset-specific AI price adjustment.";
     const records = (intelligence?.articles || [])
-      .filter((a) => a.analysis && !a.historical)
+      .filter(
+        (a) => a.analysis && !a.historical && relevantNewsUrls?.has(a.url),
+      )
       .sort((a, b) => Date.parse(b.analyzed_at) - Date.parse(a.analyzed_at));
     if (!records.length)
       return "No published article-model interpretation yet.";
@@ -523,7 +526,10 @@
       loading = false;
     }
   }
-  document.addEventListener("realworth:news-rendered", attachAI);
+  document.addEventListener("realworth:news-rendered", (event) => {
+    relevantNewsUrls = new Set(event.detail?.relevantUrls || []);
+    attachAI();
+  });
   document
     .getElementById("forecast-refresh")
     ?.addEventListener("click", refresh);

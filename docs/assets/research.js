@@ -323,7 +323,18 @@
         ),
       );
     document.getElementById("news-list").replaceChildren(...cards);
-    document.dispatchEvent(new Event("realworth:news-rendered"));
+    document.dispatchEvent(
+      new CustomEvent("realworth:news-rendered", {
+        detail: {
+          relevantUrls: data.news
+            .filter((n) => n.topics.length)
+            .flatMap((n) => [
+              n.url,
+              ...(n.related_reports || []).map((r) => r.url),
+            ]),
+        },
+      }),
+    );
     set(
       "news-result-count",
       `${items.length} matched headlines · showing ${shown.length}`,

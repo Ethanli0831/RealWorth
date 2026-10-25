@@ -2,7 +2,7 @@
 """Public market-structure observations. Source failures never become zeroes.
 
 No keys. Publish selected observations/derived indices, not downloaded files.
-Historical percentiles require >=250 points spanning >=330 days, explicitly
+Historical percentiles require daily/weekly/monthly minimums and >=330 days, explicitly
 reported as empirical ranks, not next-return forecasts.
 """
 from concurrent.futures import ThreadPoolExecutor
@@ -347,9 +347,9 @@ def tasks(now):
     ]
 
 
-def empirical_rank(points):
+def empirical_rank(points, minimum=250):
     if (
-        len(points) < 250
+        len(points) < minimum
         or (pd.Timestamp(points[-1]["date"]) - pd.Timestamp(points[0]["date"])).days
         < 330
     ):
@@ -373,12 +373,24 @@ def build(previous, now):
     with ThreadPoolExecutor(max_workers=4) as pool:
         for ids, readings, error in pool.map(fetch, tasks(now)):
             for key in ids:
-                results[key] = (readings.get(key), error)
+                value = readings.get(key)
+                results[key] = (
+                    (value, error)
+                    if value and value[0]
+                    else (None, error or "No usable comparable source observations")
+                )
     indicators = []
-    cut = (now - timedelta(days=366)).date().isoformat()
     for key, (name, category, url, caveat) in SOURCES.items():
         result, error = results[key]
         last = old.get(key, {})
+        dates = [
+            p["date"]
+            for p in (result[0] if result else last.get("history", []))
+            if p["date"] <= now.date().isoformat()
+        ]
+        latest_date = max(dates) if dates else now.date().isoformat()
+        cut = (pd.Timestamp(latest_date) - pd.Timedelta(days=366)).date().isoformat()
+        minimum = 12 if key == "m2" else 48 if key == "cot" else 250
         series = {p["date"]: p for p in last.get("history", []) if p["date"] >= cut}
         if result:
             values, unit = result
@@ -427,7 +439,8 @@ def build(previous, now):
                     else now.isoformat()
                 ),
                 "history": history,
-                "percentile": empirical_rank(history),
+                "percentile": empirical_rank(history, minimum),
+                "percentile_minimum": minimum,
                 "observations": len(history),
             }
         )

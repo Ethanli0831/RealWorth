@@ -83,3 +83,8 @@ class Structure(unittest.TestCase):
         r[13] = "2000"
         with self.assertRaises(ValueError):
             m.parse_cot(",".join(r))
+
+    def test_monthly_rank_uses_monthly_sample_requirement(self):
+        points = [{"date": f"2025-{i:02}-01", "value": i} for i in range(1, 13)]
+        self.assertEqual(m.empirical_rank(points, 12), 100)
+        self.assertIsNone(m.empirical_rank(points))

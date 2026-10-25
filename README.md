@@ -52,6 +52,9 @@ refreshes every four hours (minute 47 UTC); actual source/GitHub delays apply.
 Individual missing sources stay labelled; an entirely failed refresh fails
 visibly and preserves the old file. Local cloud egress may require the exact
 publisher/API domains in environment settings; production fetches run on GitHub.
+At the October 25 check, 11/12 readings were fetched. IBIT uses the issuer-linked
+`latest-holdings.csv`; the GLD download returned a custodian bar-list PDF, which
+is deliberately rejected as a substitute for full-fund holdings.
 No user keys are needed. WGC physical-demand breakdowns, option skew and Canadian
 purchasing-power calculations are explicitly not connected. Holdings/AUM are
 never labelled as net dollar inflows.

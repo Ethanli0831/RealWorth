@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-24T22:49:38Z",
-    "scan_started_at": "2026-10-24T22:42:08Z",
+    "checked_at": "2026-10-25T01:32:44Z",
+    "scan_started_at": "2026-10-25T01:28:08Z",
     "provider_requested": "local",
     "article_reads": 10,
-    "ai_interpretations": 7,
-    "new_interpretations": 0,
+    "ai_interpretations": 9,
+    "new_interpretations": 2,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -17,6 +17,211 @@
       "published_at": null,
       "historical": true,
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cqy8ljkle97ro?at_medium=RSS&at_campaign=rss",
+      "title": "Rosebank: Life on the oil field at the centre of a political storm",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-24T23:15:18Z",
+      "historical": null,
+      "read_at": "2026-10-25T01:28:09Z",
+      "body_sha256": "df9fff09df5238c5b01b8ca648018d8548b8b74f5cf409c7fa11d5cf4a0db52e",
+      "body_characters": 8680,
+      "model_context_characters": 4500,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The article describes a visit to the Rosebank oil field, a floating production vessel in the North Sea, before a potential production decision.",
+        "evidence_ids": [
+          "E5",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: Rosebank oil field visit",
+          "financial_channel: If production is approved, it could increase supply",
+          "asset_hypothesis: If supply increases, gold and Bitcoin direction could be mixed"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If production increases, it could reduce demand for gold as a safe-haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If supply increases, risk appetite might shift, but Bitcoin's role as a hedge is unclear."
+        },
+        "uncertainty": "Environmental campaigners could prevent production, negating any supply increase."
+      },
+      "evidence": {
+        "E5": "When we landed by helicopter at Rosebank, this oil field was at",
+        "E7": "But already attention was shifting to this wild and windy patch of"
+      },
+      "analyzed_at": "2026-10-25T01:30:38Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/oct/23/oil-five-month-high-fears-us-renews-strikes-iran",
+      "title": "Oil price rises above $117 a barrel amid fears US will renew strikes on Iran",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-23T16:48:28Z",
+      "historical": null,
+      "read_at": "2026-10-25T01:27:22Z",
+      "body_sha256": "13106a71c5ebb387feee7612d6c7aa09d24fbb92344bac728ac171ba8aff78e1",
+      "body_characters": 2068,
+      "model_context_characters": 2068,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Oil prices rose above $117 due to threats of US military strikes on Iran and attacks on Gulf facilities.",
+        "evidence_ids": [
+          "E2",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: threats of US military strikes on Iran",
+          "financial_channel: If geopolitical tensions increase, oil supply risks rise",
+          "asset_hypothesis: If supply risks increase, oil prices will rise"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If geopolitical tensions increase, gold may be seen as a safer haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If oil prices rise, risk appetite may shift away from Bitcoin, but liquidity concerns could also support it."
+        },
+        "uncertainty": "If the US decides against military strikes, oil prices could fall."
+      },
+      "evidence": {
+        "E2": "Brent crude increase follows Tehran threatening retaliatory attacks on Gulf refineries and",
+        "E5": "The jump came after Tehran said it would attack oil facilities, undersea"
+      },
+      "analyzed_at": "2026-10-24T19:48:58Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
+      "title": "ECB Consumer Expectations Survey results – September 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-23T08:00:00Z",
+      "historical": null,
+      "read_at": "2026-10-25T01:27:23Z",
+      "body_sha256": "168e137e7ef9bbf0b708cdd0d22ac771eb240a3d19c5155bb9e205bf7646d8b2",
+      "body_characters": 3289,
+      "model_context_characters": 3289,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "ECB Consumer Expectations Survey shows inflation and spending growth expectations increased in September 2026.",
+        "evidence_ids": [
+          "E1",
+          "E8"
+        ],
+        "chain": [
+          "reported_event: Inflation and spending growth expectations increased",
+          "financial_channel: If inflation expectations rise, gold demand may increase",
+          "asset_hypothesis: If spending growth expectations rise, Bitcoin demand may increase"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations rise, gold may be seen as a hedge against inflation."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If spending growth expectations rise, Bitcoin may be seen as a store of value, but higher inflation expectations may reduce its appeal as a hedge."
+        },
+        "uncertainty": "If the economy improves, consumers may reduce their inflation and spending growth expectations."
+      },
+      "evidence": {
+        "E1": "In September the median rate of perceived inflation over the previous 12",
+        "E8": "Median expectations for inflation over the next 12 months also increased, to"
+      },
+      "analyzed_at": "2026-10-24T01:56:43Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c6lykzwjkj1eo?at_medium=RSS&at_campaign=rss",
+      "title": "Civil servant who juggled five jobs says he was 'surprised' to be charged with fraud",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-23T15:15:13Z",
+      "historical": null,
+      "read_at": "2026-10-25T01:30:39Z",
+      "body_sha256": "707a109299b72016eb864c6c227493b9d9597380ef314d3ac8ece7c502f0ad07",
+      "body_characters": 3494,
+      "model_context_characters": 3494,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Civil servant Kashim Chowdhury is accused of fraudulently earning over £284,000 by juggling multiple government jobs.",
+        "evidence_ids": [
+          "E1",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: civil servant accused of fraud",
+          "financial_channel: If risk appetite increases, civil servants may take on more jobs",
+          "asset_hypothesis: If liquidity decreases, civil servants may seek alternative income sources"
+        ],
+        "gold": {
+          "direction": "mixed",
+          "condition": "If the trial results in a guilty verdict, it may increase risk aversion, driving gold up; if acquitted, it may have no impact on gold prices."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If the trial results in a guilty verdict, it may increase risk aversion, driving Bitcoin down; if acquitted, it may have no impact on Bitcoin prices."
+        },
+        "uncertainty": "If the civil servant is found not guilty, it may reduce concerns about fraud, potentially lowering both gold and Bitcoin prices."
+      },
+      "evidence": {
+        "E1": "Civil servant Kashim Chowdhury is accused of fraududlently earning more than £284,000",
+        "E7": "Between 2020 and 2023 Chowdhury had eight overlapping public sector jobs."
+      },
+      "analyzed_at": "2026-10-25T01:32:44Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/oct/22/barclays-profits-up-as-uk-banks-brace-for-tax-increase-in-budget",
+      "title": "Barclays to cut 5,000 jobs as bank’s bosses hail AI productivity advances",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-22T14:39:29Z",
+      "historical": null,
+      "read_at": "2026-10-24T16:50:26Z",
+      "body_sha256": "070415832d1ad51ee6b5f9f765713703571c7c6f38d99abf9d5e9127d477d753",
+      "body_characters": 4355,
+      "model_context_characters": 4355,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Barclays is cutting 5,000 jobs and reporting strong profits, equating to 5% of its global staff.",
+        "evidence_ids": [
+          "E2",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: Barclays cutting jobs and reporting profits",
+          "financial_channel: If job cuts reduce labor costs, it may improve profitability.",
+          "asset_hypothesis: If banks reduce costs, they may have more capital for lending."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If the job cuts lead to reduced labor costs, it may improve bank profitability, potentially boosting gold as a hedge against inflation."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If the job cuts reduce risk appetite, it may favor traditional assets like gold over Bitcoin; however, if the strong profits boost market confidence, it could be positive for Bitcoin."
+        },
+        "uncertainty": "If the job cuts are not offset by increased efficiency, the strong profits may be short-lived, reducing the positive impact on gold and Bitcoin."
+      },
+      "evidence": {
+        "E2": "Barclays is cutting 5,000 jobs as part of wider cost-saving plans that",
+        "E6": "Equating to the loss of 5% of its 93,000 global staff, job"
+      },
+      "analyzed_at": "2026-10-22T18:49:45Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/cmz6581p1ee8o?at_medium=RSS&at_campaign=rss",
@@ -147,11 +352,11 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-21T10:00:02Z",
       "historical": null,
-      "read_at": "2026-10-24T22:42:10Z",
+      "read_at": "2026-10-25T01:32:44Z",
       "body_sha256": "27ce87978b0015659a52334570758e52fc73fb83f31a31e261ac8fed4af72b9d",
       "body_characters": 18000,
       "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/cm4g1p347qgxo?at_medium=RSS&at_campaign=rss",
@@ -190,153 +395,6 @@
         "E7": "The banking group said 1,000 posts had already been closed and it"
       },
       "analyzed_at": "2026-10-23T18:46:10Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cm9qzgg5z89no?at_medium=RSS&at_campaign=rss",
-      "title": "Is an 'AI war' complicating your job search?",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-22T05:01:31Z",
-      "historical": null,
-      "read_at": "2026-10-24T22:46:02Z",
-      "body_sha256": "9770bee2e9f1e0513220ea18d5797692c990aff39b7139833976bfe46c0ba186",
-      "body_characters": 8939,
-      "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/oct/23/oil-five-month-high-fears-us-renews-strikes-iran",
-      "title": "Oil price rises above $117 a barrel amid fears US will renew strikes on Iran",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-23T16:48:28Z",
-      "historical": null,
-      "read_at": "2026-10-24T19:47:18Z",
-      "body_sha256": "13106a71c5ebb387feee7612d6c7aa09d24fbb92344bac728ac171ba8aff78e1",
-      "body_characters": 2068,
-      "model_context_characters": 2068,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Oil prices rose above $117 due to threats of US military strikes on Iran and attacks on Gulf facilities.",
-        "evidence_ids": [
-          "E2",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: threats of US military strikes on Iran",
-          "financial_channel: If geopolitical tensions increase, oil supply risks rise",
-          "asset_hypothesis: If supply risks increase, oil prices will rise"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If geopolitical tensions increase, gold may be seen as a safer haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If oil prices rise, risk appetite may shift away from Bitcoin, but liquidity concerns could also support it."
-        },
-        "uncertainty": "If the US decides against military strikes, oil prices could fall."
-      },
-      "evidence": {
-        "E2": "Brent crude increase follows Tehran threatening retaliatory attacks on Gulf refineries and",
-        "E5": "The jump came after Tehran said it would attack oil facilities, undersea"
-      },
-      "analyzed_at": "2026-10-24T19:48:58Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c6lykzwjkj1eo?at_medium=RSS&at_campaign=rss",
-      "title": "Civil servant who juggled five jobs says he was 'surprised' to be charged with fraud",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-23T15:15:13Z",
-      "historical": null,
-      "read_at": "2026-10-24T22:49:38Z",
-      "body_sha256": "707a109299b72016eb864c6c227493b9d9597380ef314d3ac8ece7c502f0ad07",
-      "body_characters": 3494,
-      "model_context_characters": 3494,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
-      "title": "ECB Consumer Expectations Survey results – September 2026",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-23T08:00:00Z",
-      "historical": null,
-      "read_at": "2026-10-24T16:50:25Z",
-      "body_sha256": "168e137e7ef9bbf0b708cdd0d22ac771eb240a3d19c5155bb9e205bf7646d8b2",
-      "body_characters": 3289,
-      "model_context_characters": 3289,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "ECB Consumer Expectations Survey shows inflation and spending growth expectations increased in September 2026.",
-        "evidence_ids": [
-          "E1",
-          "E8"
-        ],
-        "chain": [
-          "reported_event: Inflation and spending growth expectations increased",
-          "financial_channel: If inflation expectations rise, gold demand may increase",
-          "asset_hypothesis: If spending growth expectations rise, Bitcoin demand may increase"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation expectations rise, gold may be seen as a hedge against inflation."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If spending growth expectations rise, Bitcoin may be seen as a store of value, but higher inflation expectations may reduce its appeal as a hedge."
-        },
-        "uncertainty": "If the economy improves, consumers may reduce their inflation and spending growth expectations."
-      },
-      "evidence": {
-        "E1": "In September the median rate of perceived inflation over the previous 12",
-        "E8": "Median expectations for inflation over the next 12 months also increased, to"
-      },
-      "analyzed_at": "2026-10-24T01:56:43Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/oct/22/barclays-profits-up-as-uk-banks-brace-for-tax-increase-in-budget",
-      "title": "Barclays to cut 5,000 jobs as bank’s bosses hail AI productivity advances",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-22T14:39:29Z",
-      "historical": null,
-      "read_at": "2026-10-24T16:50:26Z",
-      "body_sha256": "070415832d1ad51ee6b5f9f765713703571c7c6f38d99abf9d5e9127d477d753",
-      "body_characters": 4355,
-      "model_context_characters": 4355,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Barclays is cutting 5,000 jobs and reporting strong profits, equating to 5% of its global staff.",
-        "evidence_ids": [
-          "E2",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: Barclays cutting jobs and reporting profits",
-          "financial_channel: If job cuts reduce labor costs, it may improve profitability.",
-          "asset_hypothesis: If banks reduce costs, they may have more capital for lending."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If the job cuts lead to reduced labor costs, it may improve bank profitability, potentially boosting gold as a hedge against inflation."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If the job cuts reduce risk appetite, it may favor traditional assets like gold over Bitcoin; however, if the strong profits boost market confidence, it could be positive for Bitcoin."
-        },
-        "uncertainty": "If the job cuts are not offset by increased efficiency, the strong profits may be short-lived, reducing the positive impact on gold and Bitcoin."
-      },
-      "evidence": {
-        "E2": "Barclays is cutting 5,000 jobs as part of wider cost-saving plans that",
-        "E6": "Equating to the loss of 5% of its 93,000 global staff, job"
-      },
-      "analyzed_at": "2026-10-22T18:49:45Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"

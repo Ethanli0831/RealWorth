@@ -1,15 +1,14 @@
 {
   "meta": {
-    "checked_at": "2026-10-25T11:45:15Z",
+    "checked_at": "2026-10-25T14:10:10Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
     "news_window_days": 14,
-    "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects.",
-    "classification": "Conservative headline relevance gate; no clear macro impact is a valid outcome. Related reports are grouped by high-confidence same event."
+    "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-10-25T11:45:15Z",
+    "checked_at": "2026-10-25T14:10:10Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -420,12 +419,12 @@
       ]
     },
     {
-      "title": "‘Hunted like animals’: inside Trump’s war on the people who build America",
-      "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/21/trump-ice-construction-worker-deportation",
-      "published_at": "2026-10-21T10:00:02Z",
-      "source_id": "guardian",
-      "publisher": "The Guardian Business",
-      "source_kind": "Publisher headline",
+      "title": "Piero Cipollone: Pontes and Appia: unlocking opportunities for banks",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021_1~d190f2c349.en.pdf",
+      "published_at": "2026-10-21T08:00:00Z",
+      "source_id": "ecb",
+      "publisher": "European Central Bank",
+      "source_kind": "Primary institutional release",
       "topics": [],
       "cached": false,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
@@ -435,10 +434,33 @@
       },
       "related_reports": [
         {
-          "title": "‘Hunted like animals’: inside Trump’s war on the people who build America",
-          "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/21/trump-ice-construction-worker-deportation",
-          "publisher": "The Guardian Business",
-          "published_at": "2026-10-21T10:00:02Z"
+          "title": "Piero Cipollone: Pontes and Appia: unlocking opportunities for banks",
+          "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021_1~d190f2c349.en.pdf",
+          "publisher": "European Central Bank",
+          "published_at": "2026-10-21T08:00:00Z"
+        }
+      ]
+    },
+    {
+      "title": "Frank Elderson: From climate and nature risks to economic resilience and competitiveness",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261019~f0a3e053de.en.html",
+      "published_at": "2026-10-19T06:00:00Z",
+      "source_id": "ecb",
+      "publisher": "European Central Bank",
+      "source_kind": "Primary institutional release",
+      "topics": [],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "Frank Elderson: From climate and nature risks to economic resilience and competitiveness",
+          "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261019~f0a3e053de.en.html",
+          "publisher": "European Central Bank",
+          "published_at": "2026-10-19T06:00:00Z"
         }
       ]
     },
@@ -514,6 +536,52 @@
           "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
           "publisher": "CNBC Economy",
           "published_at": "2026-10-15T15:37:59Z"
+        }
+      ]
+    },
+    {
+      "title": "Bad news for Trump ahead of the midterms: it’s still the economy, stupid",
+      "url": "https://www.theguardian.com/business/2026/oct/15/trump-economy-midterm-elections",
+      "published_at": "2026-10-15T12:00:12Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
+      "source_kind": "Publisher headline",
+      "topics": [],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "Bad news for Trump ahead of the midterms: it’s still the economy, stupid",
+          "url": "https://www.theguardian.com/business/2026/oct/15/trump-economy-midterm-elections",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-10-15T12:00:12Z"
+        }
+      ]
+    },
+    {
+      "title": "Gen Z wrestle with shame from ordering delivery food: ‘This economy is not for the weak’",
+      "url": "https://www.theguardian.com/food/2026/oct/15/food-delivery-apps-cost-economy",
+      "published_at": "2026-10-15T11:00:10Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
+      "source_kind": "Publisher headline",
+      "topics": [],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "Gen Z wrestle with shame from ordering delivery food: ‘This economy is not for the weak’",
+          "url": "https://www.theguardian.com/food/2026/oct/15/food-delivery-apps-cost-economy",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-10-15T11:00:10Z"
         }
       ]
     },
@@ -695,47 +763,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-10-25T11:45:15Z",
+      "checked_at": "2026-10-25T14:10:10Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-25T11:45:15Z",
+      "last_success": "2026-10-25T14:10:10Z",
       "matched": 0
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-10-25T11:45:15Z",
+      "checked_at": "2026-10-25T14:10:10Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-25T11:45:15Z",
-      "matched": 1
+      "last_success": "2026-10-25T14:10:10Z",
+      "matched": 3
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-10-25T11:45:15Z",
+      "checked_at": "2026-10-25T14:10:10Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-25T11:45:15Z",
+      "last_success": "2026-10-25T14:10:10Z",
       "matched": 9
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-10-25T11:45:15Z",
+      "checked_at": "2026-10-25T14:10:10Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-25T11:45:15Z",
-      "matched": 4
+      "last_success": "2026-10-25T14:10:10Z",
+      "matched": 5
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-10-25T11:45:15Z",
+      "checked_at": "2026-10-25T14:10:10Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -745,10 +813,10 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-10-25T11:45:15Z",
+      "checked_at": "2026-10-25T14:10:10Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-25T11:45:15Z",
+      "last_success": "2026-10-25T14:10:10Z",
       "matched": 0
     }
   ],

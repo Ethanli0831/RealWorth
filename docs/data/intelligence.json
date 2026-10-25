@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-10-25T12:50:19Z",
-    "scan_started_at": "2026-10-25T12:43:14Z",
+    "checked_at": "2026-10-25T14:17:14Z",
+    "scan_started_at": "2026-10-25T14:10:58Z",
     "provider_requested": "local",
-    "article_reads": 10,
-    "ai_interpretations": 8,
+    "article_reads": 7,
+    "ai_interpretations": 5,
     "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -19,147 +19,12 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
-      "title": "ECB Consumer Expectations Survey results – September 2026",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-23T08:00:00Z",
-      "historical": null,
-      "read_at": "2026-10-25T12:42:15Z",
-      "body_sha256": "168e137e7ef9bbf0b708cdd0d22ac771eb240a3d19c5155bb9e205bf7646d8b2",
-      "body_characters": 3289,
-      "model_context_characters": 3289,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "ECB Consumer Expectations Survey shows inflation and spending growth expectations increased in September 2026.",
-        "evidence_ids": [
-          "E1",
-          "E8"
-        ],
-        "chain": [
-          "reported_event: Inflation and spending growth expectations increased",
-          "financial_channel: If inflation expectations rise, gold demand may increase",
-          "asset_hypothesis: If spending growth expectations rise, Bitcoin demand may increase"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation expectations rise, gold may be seen as a hedge against inflation."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If spending growth expectations rise, Bitcoin may be seen as a store of value, but higher inflation expectations may reduce its appeal as a hedge."
-        },
-        "uncertainty": "If the economy improves, consumers may reduce their inflation and spending growth expectations."
-      },
-      "evidence": {
-        "E1": "In September the median rate of perceived inflation over the previous 12",
-        "E8": "Median expectations for inflation over the next 12 months also increased, to"
-      },
-      "analyzed_at": "2026-10-24T01:56:43Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c6n8de1jgrdvo?at_medium=RSS&at_campaign=rss",
-      "title": "Heating oil costs 'more than double' ahead of winter",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-25T07:12:21Z",
-      "historical": null,
-      "read_at": "2026-10-25T12:43:15Z",
-      "body_sha256": "bd006c94db8655d6b27ff50320ba3a825ea6069e3098bab7a721644e73a8ef65",
-      "body_characters": 3217,
-      "model_context_characters": 3217,
-      "status": "Unavailable: AI reported event does not match the article topic"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/oct/22/barclays-profits-up-as-uk-banks-brace-for-tax-increase-in-budget",
-      "title": "Barclays to cut 5,000 jobs as bank’s bosses hail AI productivity advances",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-22T14:39:29Z",
-      "historical": null,
-      "read_at": "2026-10-25T12:42:15Z",
-      "body_sha256": "070415832d1ad51ee6b5f9f765713703571c7c6f38d99abf9d5e9127d477d753",
-      "body_characters": 4355,
-      "model_context_characters": 4355,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Barclays is cutting 5,000 jobs and reporting strong profits, equating to 5% of its global staff.",
-        "evidence_ids": [
-          "E2",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: Barclays cutting jobs and reporting profits",
-          "financial_channel: If job cuts reduce labor costs, it may improve profitability.",
-          "asset_hypothesis: If banks reduce costs, they may have more capital for lending."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If the job cuts lead to reduced labor costs, it may improve bank profitability, potentially boosting gold as a hedge against inflation."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If the job cuts reduce risk appetite, it may favor traditional assets like gold over Bitcoin; however, if the strong profits boost market confidence, it could be positive for Bitcoin."
-        },
-        "uncertainty": "If the job cuts are not offset by increased efficiency, the strong profits may be short-lived, reducing the positive impact on gold and Bitcoin."
-      },
-      "evidence": {
-        "E2": "Barclays is cutting 5,000 jobs as part of wider cost-saving plans that",
-        "E6": "Equating to the loss of 5% of its 93,000 global staff, job"
-      },
-      "analyzed_at": "2026-10-22T18:49:45Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c62kep355q02o?at_medium=RSS&at_campaign=rss",
-      "title": "Firms 'holding back' on new jobs ahead of Budget",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-25T07:06:12Z",
-      "historical": null,
-      "read_at": "2026-10-25T12:47:50Z",
-      "body_sha256": "18bf8c68038f61999ec62ad346cd41e1d38f3bdd5216c6f9b1c424a3f5bca0a1",
-      "body_characters": 4719,
-      "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "Businesses in Devon are calling for reduced costs of employing staff ahead of the Chancellor's Budget.",
-        "evidence_ids": [
-          "E1",
-          "E2"
-        ],
-        "chain": [
-          "reported_event: Businesses are calling for reduced costs of employing staff.",
-          "financial_channel: If employment costs are reduced, businesses may hire more staff, increasing labor demand.",
-          "asset_hypothesis: If more staff are hired, businesses may need more office space, benefiting commercial real estate."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If the economy improves due to increased hiring, gold may be seen as a hedge against inflation."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite increases due to improved business conditions, some may shift from Bitcoin to gold as a safer haven."
-        },
-        "uncertainty": "If the Budget includes significant tax increases, businesses may still face higher costs and reduced hiring."
-      },
-      "evidence": {
-        "E1": "Some businesses are calling for the costs of employing staff to be",
-        "E2": "A publisher from Tavistock, Devon, said he was \"holding back\" from filling"
-      },
-      "analyzed_at": "2026-10-25T12:50:19Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
       "url": "https://www.theguardian.com/environment/2026/oct/22/deepwater-horizon-oil-spill-gulf-marine-life",
       "title": "Marine life in Gulf of Mexico has still not fully recovered from 2010 BP oil spill",
       "publisher": "The Guardian Business",
       "published_at": "2026-10-22T12:00:44Z",
       "historical": null,
-      "read_at": "2026-10-25T06:42:43Z",
+      "read_at": "2026-10-25T14:10:11Z",
       "body_sha256": "f46424c07337d26224702b3f35e534cf97af54b5ec120f4e8569319cb1086d1e",
       "body_characters": 5488,
       "model_context_characters": 4500,
@@ -195,95 +60,54 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/c6lykzwjkj1eo?at_medium=RSS&at_campaign=rss",
-      "title": "Civil servant who juggled five jobs says he was 'surprised' to be charged with fraud",
+      "url": "https://www.bbc.co.uk/news/articles/cm4g1zrl2nrqo?at_medium=RSS&at_campaign=rss",
+      "title": "The 'trillion pound' oil fund the government believes Britain could have built",
       "publisher": "BBC Business",
-      "published_at": "2026-10-23T15:15:13Z",
+      "published_at": "2026-10-21T23:27:05Z",
       "historical": null,
-      "read_at": "2026-10-25T06:42:43Z",
-      "body_sha256": "707a109299b72016eb864c6c227493b9d9597380ef314d3ac8ece7c502f0ad07",
-      "body_characters": 3494,
-      "model_context_characters": 3494,
-      "status": "Cached AI interpretation; awaiting re-read",
+      "read_at": "2026-10-25T14:10:59Z",
+      "body_sha256": "68895ef9ae1942e8c0e1d90cc2a82ef0dc90622e2f7bf2ef9c81a3d50360afa3",
+      "body_characters": 3950,
+      "model_context_characters": 3950,
+      "status": "Unavailable: AI chain contains no financial transmission mechanism"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cm3wv9pn22e5o?at_medium=RSS&at_campaign=rss",
+      "title": "Faisal Islam: Inflation and borrowing figures illustrate chancellor's Budget challenge",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-21T10:20:15Z",
+      "historical": null,
+      "read_at": "2026-10-25T14:15:28Z",
+      "body_sha256": "498b10f1706929fbf1914e9ed5e4bc4c49ca6ec7ebd9f0e58e2c2d9e9e078550",
+      "body_characters": 3063,
+      "model_context_characters": 3063,
+      "status": "AI interpretation generated · not independently verified",
       "analysis": {
-        "summary": "Civil servant Kashim Chowdhury is accused of fraudulently earning over £284,000 by juggling multiple government jobs.",
+        "summary": "The UK's inflation rate has reached 3.5%, and the National Debt has surpassed £3 trillion for the first time, posing challenges for the chancellor's upcoming Budget.",
         "evidence_ids": [
-          "E1",
+          "E2",
           "E7"
         ],
         "chain": [
-          "reported_event: civil servant accused of fraud",
-          "financial_channel: If risk appetite increases, civil servants may take on more jobs",
-          "asset_hypothesis: If liquidity decreases, civil servants may seek alternative income sources"
-        ],
-        "gold": {
-          "direction": "mixed",
-          "condition": "If the trial results in a guilty verdict, it may increase risk aversion, driving gold up; if acquitted, it may have no impact on gold prices."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If the trial results in a guilty verdict, it may increase risk aversion, driving Bitcoin down; if acquitted, it may have no impact on Bitcoin prices."
-        },
-        "uncertainty": "If the civil servant is found not guilty, it may reduce concerns about fraud, potentially lowering both gold and Bitcoin prices."
-      },
-      "evidence": {
-        "E1": "Civil servant Kashim Chowdhury is accused of fraududlently earning more than £284,000",
-        "E7": "Between 2020 and 2023 Chowdhury had eight overlapping public sector jobs."
-      },
-      "analyzed_at": "2026-10-25T01:32:44Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/21/trump-ice-construction-worker-deportation",
-      "title": "‘Hunted like animals’: inside Trump’s war on the people who build America",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-21T10:00:02Z",
-      "historical": null,
-      "read_at": "2026-10-25T12:50:19Z",
-      "body_sha256": "27ce87978b0015659a52334570758e52fc73fb83f31a31e261ac8fed4af72b9d",
-      "body_characters": 18000,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmx23dwp3qzro?at_medium=RSS&at_campaign=rss",
-      "title": "'I wasn't thinking straight' says five jobs civil servant",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-22T15:05:47Z",
-      "historical": null,
-      "read_at": "2026-10-25T06:42:43Z",
-      "body_sha256": "31f46a92d8e7b21706ad180f684a42c012bae2a7384cb04b8f375617abae68a0",
-      "body_characters": 2912,
-      "model_context_characters": 2912,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "A civil servant admitted to fraudulently juggling five government jobs, citing panic and fear of losing his Defra position.",
-        "evidence_ids": [
-          "E3",
-          "E4"
-        ],
-        "chain": [
-          "reported_event: A civil servant admitted to fraudulently juggling five government jobs.",
-          "financial_channel: If risk appetite decreases, civil servants may be more cautious about multiple roles.",
-          "asset_hypothesis: If liquidity improves, civil servants may have more options to manage their employment."
+          "reported_event: Inflation and National Debt figures released",
+          "financial_channel: If inflation rises, it may lead to higher interest rates",
+          "asset_hypothesis: If the National Debt increases, it could affect government bond yields"
         ],
         "gold": {
           "direction": "up",
-          "condition": "If economic uncertainty increases, gold may be seen as a safer haven."
+          "condition": "If inflation rises, gold may be seen as a hedge against currency depreciation."
         },
         "bitcoin": {
           "direction": "mixed",
-          "condition": "If risk appetite decreases, Bitcoin may underperform as a speculative asset; if liquidity improves, it may see increased trading activity."
+          "condition": "If inflation increases, risk appetite may shift towards traditional assets, but if the National Debt increases, liquidity concerns could favor Bitcoin."
         },
-        "uncertainty": "The civil servant's mother's health did not deteriorate to the point of requiring full-time care, which could have been a more compelling reason for his actions."
+        "uncertainty": "If the economy shows signs of resilience, the need for inflationary measures may be reduced, easing pressure on both gold and Bitcoin."
       },
       "evidence": {
-        "E3": "A civil servant accused of fraudulently juggling multiple public sector jobs has",
-        "E4": "Kashim Chowdhury said he was \"in a panic\" when he applied for"
+        "E2": "The headline rate of inflation has hit 3.5% and is surely heading",
+        "E7": "The National Debt has topped £3 trillion for the first time in"
       },
-      "analyzed_at": "2026-10-22T18:47:05Z",
+      "analyzed_at": "2026-10-25T14:17:14Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
@@ -369,6 +193,59 @@
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
+      "title": "ECB Consumer Expectations Survey results – September 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-23T08:00:00Z",
+      "historical": null,
+      "read_at": "2026-10-25T12:42:15Z",
+      "body_sha256": "168e137e7ef9bbf0b708cdd0d22ac771eb240a3d19c5155bb9e205bf7646d8b2",
+      "body_characters": 3289,
+      "model_context_characters": 3289,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "ECB Consumer Expectations Survey shows inflation and spending growth expectations increased in September 2026.",
+        "evidence_ids": [
+          "E1",
+          "E8"
+        ],
+        "chain": [
+          "reported_event: Inflation and spending growth expectations increased",
+          "financial_channel: If inflation expectations rise, gold demand may increase",
+          "asset_hypothesis: If spending growth expectations rise, Bitcoin demand may increase"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations rise, gold may be seen as a hedge against inflation."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If spending growth expectations rise, Bitcoin may be seen as a store of value, but higher inflation expectations may reduce its appeal as a hedge."
+        },
+        "uncertainty": "If the economy improves, consumers may reduce their inflation and spending growth expectations."
+      },
+      "evidence": {
+        "E1": "In September the median rate of perceived inflation over the previous 12",
+        "E8": "Median expectations for inflation over the next 12 months also increased, to"
+      },
+      "analyzed_at": "2026-10-24T01:56:43Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c6n8de1jgrdvo?at_medium=RSS&at_campaign=rss",
+      "title": "Heating oil costs 'more than double' ahead of winter",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-25T07:12:21Z",
+      "historical": null,
+      "read_at": "2026-10-25T14:17:14Z",
+      "body_sha256": "bd006c94db8655d6b27ff50320ba3a825ea6069e3098bab7a721644e73a8ef65",
+      "body_characters": 3217,
+      "model_context_characters": 3217,
+      "status": "Public body read; queued for AI"
     }
   ]
 }

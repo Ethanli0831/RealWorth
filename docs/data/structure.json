@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-10-25T14:05:11.391652+00:00",
+    "checked_at": "2026-10-25T14:11:20.228830+00:00",
     "refresh": "Every four hours requested; source publication and GitHub delays apply.",
     "scope": "Selected free public sources. Missing/paid sources are not substituted with estimates."
   },
@@ -15,7 +15,7 @@
       "value": null,
       "period": null,
       "status": "Source unavailable; dated history retained",
-      "error": "ParserError: Error tokenizing data. C error: Expected 5767 fields in line 6, saw 8881\n",
+      "error": "KeyError: 'Ticker'",
       "stale": true,
       "last_success": null,
       "history": [],
@@ -32,7 +32,7 @@
       "value": null,
       "period": null,
       "status": "Source unavailable; dated history retained",
-      "error": "StopIteration: ",
+      "error": "ValueError: GLD header missing: [['%PDF-1.5'], ['%����']]",
       "stale": true,
       "last_success": null,
       "history": [],
@@ -46,16 +46,16 @@
       "source": "https://docs.deribit.com/#public-get_book_summary_by_currency",
       "note": "Deribit BTC-PERPETUAL only; 8-hour funding is not annualised. Positive funding is not a directional forecast.",
       "unit": "% / 8 hours",
-      "value": 0.004489,
+      "value": 0.00446,
       "period": "2026-10-25",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-25T14:05:11.391652+00:00",
+      "last_success": "2026-10-25T14:11:20.228830+00:00",
       "history": [
         {
           "date": "2026-10-25",
-          "value": 0.004489
+          "value": 0.00446
         }
       ],
       "percentile": null,
@@ -68,16 +68,16 @@
       "source": "https://docs.deribit.com/#public-get_book_summary_by_currency",
       "note": "USD notional can rise from price changes. One exchange does not measure all leverage.",
       "unit": "USD notional",
-      "value": 839438210.0,
+      "value": 839384560.0,
       "period": "2026-10-25",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-25T14:05:11.391652+00:00",
+      "last_success": "2026-10-25T14:11:20.228830+00:00",
       "history": [
         {
           "date": "2026-10-25",
-          "value": 839438210.0
+          "value": 839384560.0
         }
       ],
       "percentile": null,
@@ -95,7 +95,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-25T14:05:11.391652+00:00",
+      "last_success": "2026-10-25T14:11:20.228830+00:00",
       "history": [
         {
           "date": "2025-10-24",
@@ -1577,7 +1577,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-25T14:05:11.391652+00:00",
+      "last_success": "2026-10-25T14:11:20.228830+00:00",
       "history": [
         {
           "date": "2025-10-24",
@@ -3059,7 +3059,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-25T14:05:11.391652+00:00",
+      "last_success": "2026-10-25T14:11:20.228830+00:00",
       "history": [
         {
           "date": "2025-10-24",
@@ -4541,7 +4541,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-25T14:05:11.391652+00:00",
+      "last_success": "2026-10-25T14:11:20.228830+00:00",
       "history": [
         {
           "date": "2025-10-24",
@@ -6023,7 +6023,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-25T14:05:11.391652+00:00",
+      "last_success": "2026-10-25T14:11:20.228830+00:00",
       "history": [
         {
           "date": "2025-10-24",
@@ -7505,7 +7505,7 @@
       "status": "Fetched",
       "error": null,
       "stale": true,
-      "last_success": "2026-10-25T14:05:11.391652+00:00",
+      "last_success": "2026-10-25T14:11:20.228830+00:00",
       "history": [
         {
           "date": "2025-11-01",
@@ -7563,7 +7563,7 @@
       "status": "Fetched",
       "error": null,
       "stale": true,
-      "last_success": "2026-10-25T14:05:11.391652+00:00",
+      "last_success": "2026-10-25T14:11:20.228830+00:00",
       "history": [
         {
           "date": "2025-10-24",
@@ -8555,16 +8555,21 @@
       "category": "Institutional positioning",
       "source": "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm",
       "note": "COMEX gold futures-only managed-money longs minus shorts. Weekly positions are released with a lag; categories are not one unified institution.",
-      "unit": "",
-      "value": null,
-      "period": null,
-      "status": "Source unavailable; dated history retained",
-      "error": "ValueError: CFTC missing Report_Date_as_YYYY-MM-DD; fields ['WHEAT-SRW - CHICAGO BOARD OF TRADE', '261020', '2026-10-20', '001602', 'CBT', '00', '001', '516379', '71522', '112168', '87258', '16830', '29189', '88258', '140263', '132594', '43276', '20541', '29480', '481577', '481065', '34802', '35314', '425649', '53428', '81994', '72024', '12777', '20052', '84855']",
-      "stale": true,
-      "last_success": null,
-      "history": [],
+      "unit": "contracts net long",
+      "value": 104206.0,
+      "period": "2026-10-20",
+      "status": "Fetched",
+      "error": null,
+      "stale": false,
+      "last_success": "2026-10-25T14:11:20.228830+00:00",
+      "history": [
+        {
+          "date": "2026-10-20",
+          "value": 104206.0
+        }
+      ],
       "percentile": null,
-      "observations": 0
+      "observations": 1
     }
   ],
   "directory": [

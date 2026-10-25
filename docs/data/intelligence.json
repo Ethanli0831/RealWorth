@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-25T14:17:14Z",
-    "scan_started_at": "2026-10-25T14:10:58Z",
+    "checked_at": "2026-10-25T17:22:17Z",
+    "scan_started_at": "2026-10-25T17:12:42Z",
     "provider_requested": "local",
     "article_reads": 7,
     "ai_interpretations": 5,
-    "new_interpretations": 1,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,12 +19,24 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.bbc.co.uk/news/articles/c6n8de1jgrdvo?at_medium=RSS&at_campaign=rss",
+      "title": "Heating oil costs 'more than double' ahead of winter",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-25T07:12:21Z",
+      "historical": null,
+      "read_at": "2026-10-25T17:12:43Z",
+      "body_sha256": "bd006c94db8655d6b27ff50320ba3a825ea6069e3098bab7a721644e73a8ef65",
+      "body_characters": 3217,
+      "model_context_characters": 3217,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
       "url": "https://www.theguardian.com/environment/2026/oct/22/deepwater-horizon-oil-spill-gulf-marine-life",
       "title": "Marine life in Gulf of Mexico has still not fully recovered from 2010 BP oil spill",
       "publisher": "The Guardian Business",
       "published_at": "2026-10-22T12:00:44Z",
       "historical": null,
-      "read_at": "2026-10-25T14:10:11Z",
+      "read_at": "2026-10-25T17:11:08Z",
       "body_sha256": "f46424c07337d26224702b3f35e534cf97af54b5ec120f4e8569319cb1086d1e",
       "body_characters": 5488,
       "model_context_characters": 4500,
@@ -65,7 +77,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-21T23:27:05Z",
       "historical": null,
-      "read_at": "2026-10-25T14:10:59Z",
+      "read_at": "2026-10-25T17:17:29Z",
       "body_sha256": "68895ef9ae1942e8c0e1d90cc2a82ef0dc90622e2f7bf2ef9c81a3d50360afa3",
       "body_characters": 3950,
       "model_context_characters": 3950,
@@ -81,7 +93,7 @@
       "body_sha256": "498b10f1706929fbf1914e9ed5e4bc4c49ca6ec7ebd9f0e58e2c2d9e9e078550",
       "body_characters": 3063,
       "model_context_characters": 3063,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "The UK's inflation rate has reached 3.5%, and the National Debt has surpassed £3 trillion for the first time, posing challenges for the chancellor's upcoming Budget.",
         "evidence_ids": [
@@ -234,18 +246,6 @@
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c6n8de1jgrdvo?at_medium=RSS&at_campaign=rss",
-      "title": "Heating oil costs 'more than double' ahead of winter",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-25T07:12:21Z",
-      "historical": null,
-      "read_at": "2026-10-25T14:17:14Z",
-      "body_sha256": "bd006c94db8655d6b27ff50320ba3a825ea6069e3098bab7a721644e73a8ef65",
-      "body_characters": 3217,
-      "model_context_characters": 3217,
-      "status": "Public body read; queued for AI"
     }
   ]
 }

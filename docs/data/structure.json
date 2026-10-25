@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-10-25T14:20:31.721056+00:00",
+    "checked_at": "2026-10-25T14:24:17.894007+00:00",
     "refresh": "Every four hours requested; source publication and GitHub delays apply.",
     "scope": "Selected free public sources. Missing/paid sources are not substituted with estimates."
   },
@@ -17,15 +17,20 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-25T14:20:31.721056+00:00",
+      "last_success": "2026-10-25T14:24:17.894007+00:00",
       "history": [
+        {
+          "date": "2026-10-22",
+          "value": 811138.2604
+        },
         {
           "date": "2026-10-23",
           "value": 809779.8626
         }
       ],
       "percentile": null,
-      "observations": 1
+      "percentile_minimum": 250,
+      "observations": 2
     },
     {
       "id": "gld",
@@ -42,6 +47,7 @@
       "last_success": null,
       "history": [],
       "percentile": null,
+      "percentile_minimum": 250,
       "observations": 0
     },
     {
@@ -51,19 +57,20 @@
       "source": "https://docs.deribit.com/#public-get_book_summary_by_currency",
       "note": "Deribit BTC-PERPETUAL only; 8-hour funding is not annualised. Positive funding is not a directional forecast.",
       "unit": "% / 8 hours",
-      "value": 0.004425,
+      "value": 0.004438,
       "period": "2026-10-25",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-25T14:20:31.721056+00:00",
+      "last_success": "2026-10-25T14:24:17.894007+00:00",
       "history": [
         {
           "date": "2026-10-25",
-          "value": 0.004425
+          "value": 0.004438
         }
       ],
       "percentile": null,
+      "percentile_minimum": 250,
       "observations": 1
     },
     {
@@ -73,19 +80,20 @@
       "source": "https://docs.deribit.com/#public-get_book_summary_by_currency",
       "note": "USD notional can rise from price changes. One exchange does not measure all leverage.",
       "unit": "USD notional",
-      "value": 838913620.0,
+      "value": 838969010.0,
       "period": "2026-10-25",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-25T14:20:31.721056+00:00",
+      "last_success": "2026-10-25T14:24:17.894007+00:00",
       "history": [
         {
           "date": "2026-10-25",
-          "value": 838913620.0
+          "value": 838969010.0
         }
       ],
       "percentile": null,
+      "percentile_minimum": 250,
       "observations": 1
     },
     {
@@ -100,8 +108,12 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-25T14:20:31.721056+00:00",
+      "last_success": "2026-10-25T14:24:17.894007+00:00",
       "history": [
+        {
+          "date": "2025-10-23",
+          "value": 45.13
+        },
         {
           "date": "2025-10-24",
           "value": 42.84
@@ -1567,8 +1579,9 @@
           "value": 37.93
         }
       ],
-      "percentile": 26.0,
-      "observations": 366
+      "percentile": 25.9,
+      "percentile_minimum": 250,
+      "observations": 367
     },
     {
       "id": "addresses",
@@ -1582,8 +1595,12 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-25T14:20:31.721056+00:00",
+      "last_success": "2026-10-25T14:24:17.894007+00:00",
       "history": [
+        {
+          "date": "2025-10-23",
+          "value": 679681.0
+        },
         {
           "date": "2025-10-24",
           "value": 734616.0
@@ -3050,7 +3067,8 @@
         }
       ],
       "percentile": 18.0,
-      "observations": 366
+      "percentile_minimum": 250,
+      "observations": 367
     },
     {
       "id": "transactions",
@@ -3064,8 +3082,12 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-25T14:20:31.721056+00:00",
+      "last_success": "2026-10-25T14:24:17.894007+00:00",
       "history": [
+        {
+          "date": "2025-10-23",
+          "value": 436183.0
+        },
         {
           "date": "2025-10-24",
           "value": 565682.0
@@ -4531,8 +4553,9 @@
           "value": 715046.0
         }
       ],
-      "percentile": 82.5,
-      "observations": 366
+      "percentile": 82.6,
+      "percentile_minimum": 250,
+      "observations": 367
     },
     {
       "id": "fees",
@@ -4546,8 +4569,12 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-25T14:20:31.721056+00:00",
+      "last_success": "2026-10-25T14:24:17.894007+00:00",
       "history": [
+        {
+          "date": "2025-10-23",
+          "value": 2.625464
+        },
         {
           "date": "2025-10-24",
           "value": 2.926514
@@ -6014,7 +6041,8 @@
         }
       ],
       "percentile": 5.7,
-      "observations": 366
+      "percentile_minimum": 250,
+      "observations": 367
     },
     {
       "id": "hashrate",
@@ -6028,8 +6056,12 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-25T14:20:31.721056+00:00",
+      "last_success": "2026-10-25T14:24:17.894007+00:00",
       "history": [
+        {
+          "date": "2025-10-23",
+          "value": 1035647823.825049
+        },
         {
           "date": "2025-10-24",
           "value": 1305499727.720974
@@ -7495,8 +7527,9 @@
           "value": 1020270540.494259
         }
       ],
-      "percentile": 67.2,
-      "observations": 366
+      "percentile": 67.0,
+      "percentile_minimum": 250,
+      "observations": 367
     },
     {
       "id": "m2",
@@ -7510,8 +7543,20 @@
       "status": "Fetched",
       "error": null,
       "stale": true,
-      "last_success": "2026-10-25T14:20:31.721056+00:00",
+      "last_success": "2026-10-25T14:24:17.894007+00:00",
       "history": [
+        {
+          "date": "2025-08-01",
+          "value": 4.249717
+        },
+        {
+          "date": "2025-09-01",
+          "value": 4.232548
+        },
+        {
+          "date": "2025-10-01",
+          "value": 4.27997
+        },
         {
           "date": "2025-11-01",
           "value": 3.845777
@@ -7553,8 +7598,9 @@
           "value": 5.658908
         }
       ],
-      "percentile": null,
-      "observations": 10
+      "percentile": 100.0,
+      "percentile_minimum": 12,
+      "observations": 13
     },
     {
       "id": "dollar",
@@ -7568,8 +7614,36 @@
       "status": "Fetched",
       "error": null,
       "stale": true,
-      "last_success": "2026-10-25T14:20:31.721056+00:00",
+      "last_success": "2026-10-25T14:24:17.894007+00:00",
       "history": [
+        {
+          "date": "2025-10-15",
+          "value": 1.451633
+        },
+        {
+          "date": "2025-10-16",
+          "value": 1.268566
+        },
+        {
+          "date": "2025-10-17",
+          "value": 0.87012
+        },
+        {
+          "date": "2025-10-20",
+          "value": 0.697161
+        },
+        {
+          "date": "2025-10-21",
+          "value": 0.896631
+        },
+        {
+          "date": "2025-10-22",
+          "value": 1.066375
+        },
+        {
+          "date": "2025-10-23",
+          "value": 0.651074
+        },
         {
           "date": "2025-10-24",
           "value": 0.325696
@@ -8551,8 +8625,9 @@
           "value": 1.722597
         }
       ],
-      "percentile": null,
-      "observations": 245
+      "percentile": 88.9,
+      "percentile_minimum": 250,
+      "observations": 252
     },
     {
       "id": "cot",
@@ -8566,7 +8641,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-25T14:20:31.721056+00:00",
+      "last_success": "2026-10-25T14:24:17.894007+00:00",
       "history": [
         {
           "date": "2026-10-20",
@@ -8574,6 +8649,7 @@
         }
       ],
       "percentile": null,
+      "percentile_minimum": 48,
       "observations": 1
     }
   ],

@@ -1516,3 +1516,36 @@ summary {
   padding: 8px 0;
   color: var(--accent);
 }
+.site-directory > summary::before {
+  content: none;
+}
+@media (max-width: 700px) {
+  .site-header {
+    position: relative;
+    padding-block: 18px 12px;
+    gap: 10px;
+  }
+  .site-directory {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    margin: 0;
+  }
+  .site-directory summary {
+    min-height: 44px;
+    padding: 10px 12px;
+  }
+  .site-header nav > a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .directory-links {
+    top: 52px;
+  }
+  .page-links a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}

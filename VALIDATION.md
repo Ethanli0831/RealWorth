@@ -1,5 +1,84 @@
 # Validation record
 
+## Reading paths and evidence quality — 2026-10-25 (Toronto)
+
+- **54 Python tests, 24 JavaScript tests and 18 real Chromium scenarios passed
+  locally.** The multi-page browser suite also passed 18 scenarios against the
+  public HTTPS site before the final mobile-menu adjustment; the final public
+  check is recorded below. Tests use actual derived datasets, actual retained
+  model records, verified system TLS and the pinned Chart.js SHA-384 checksum.
+  They do not replace live data with fabricated finance or AI responses.
+- The homepage is now a three-path overview. Purchasing Power, Research and
+  Market Monitor are separate HTML pages, with a shared Explore directory and
+  local section links. Legacy homepage hashes redirect to the corresponding
+  page. Cream, forest green and serif headings remain. The mobile directory is
+  placed beside the brand, and navigation targets are at least 44 pixels high.
+  The README screenshot was replaced with the actual new overview.
+- News classification now checks context before applying a template. Regression
+  tests cover individual five-job fraud and metaphorical AI-war/job-search
+  headlines, plus genuinely macro payroll and energy events. No clear macro
+  impact is an allowed visible outcome; those cards get neither a template nor
+  an AI interpretation. Related employer/layoff stories and nearly identical
+  headlines can group within three days with source links retained. This is a
+  conservative heuristic, not verified semantic event detection. Price-card AI
+  context is also restricted to relevance-checked news URLs.
+- The scorecard defaults to common endpoints for all five assets, with a full
+  history switch. Rolling 1/3/5-year distributions show observed endpoint-window
+  counts, omitted CPI endpoints, the fraction beating inflation, worst return,
+  median and P10/P90. Window overlap and historical rather than predictive
+  proportions are stated beside the table. The calculator compares five real
+  paths, values, drawdowns and first observed purchase-power recovery, and
+  disables terms beyond available data before submission.
+- Inflation tables are visible and default to exact real monthly returns,
+  exposing per-group observation count, mean, median, P10/P90 and min/max.
+  Nominal returns remain selectable; rising versus falling/flat CPI YoY is a
+  distinct comparison. Missing CPI pairs are omitted rather than filled. Group
+  labels use the original unrounded CPI in generated regime.observations, not
+  thresholds reverse-engineered from rounded chart labels.
+- Historical model errors and unchanged-price errors appear before scenario
+  cards. The conclusion reflects each asset's measured sample rather than
+  assuming a forecasting edge. Prospective summaries are separated by asset,
+  expose both verified issues and distinct target dates, and score the earliest
+  issued record per asset/date in America/Toronto. Same-date repetitions do not
+  increase its weight. Dates still overlap/share shocks and are not statistically
+  independent. Interval coverage is explicitly not up/down accuracy. Original
+  frozen scenario levels and outcome records were not rewritten for these UI
+  summaries.
+- A new four-hour public-data updater succeeded on the real GitHub runner:
+  [market-structure run](https://github.com/Ethanli0831/RealWorth/actions/runs/40202046087).
+  It fetched **11/12 readings**: official IBIT bitcoin holdings, Deribit BTC
+  perpetual funding and open interest, DVOL, four Coin Metrics community activity
+  measures, FRED M2 growth and dollar changes, and CFTC gold managed-money net
+  futures. Each metric exposes its own date/source/status. Daily, weekly and
+  monthly rank thresholds are distinct, all require at least 330 days, and
+  insufficient histories have no displayed percentile. Histories for current-only
+  sources are accumulated prospectively, not fabricated backward.
+- **GLD total holdings remain unavailable.** Its former CSV URL returned a
+  custodian allocated-bar-list PDF. A vault/account subtotal is not full-fund
+  tonnes and was deliberately not substituted. IBIT's legacy Ajax URL returned
+  HTML; inspecting the issuer page found the actual latest-holdings.csv link,
+  which produced a dated bitcoin quantity. CFTC's current report is headerless;
+  bounds-tested column parsing now distinguishes managed money from producers.
+  The [manual read-only source inspector](.github/workflows/check-structure-sources.yml)
+  remains available for future schema troubleshooting.
+- WGC physical demand breakdowns, comparable option skew and Canadian CPI/FX
+  purchasing-power calculations are **not connected** and are labelled that way.
+  AUM/holdings are not labelled as net dollar inflows, addresses are not people,
+  and derivatives do not mechanically predict asset direction. The original
+  paper-replication and student physical-phone/quiz limitations below remain.
+- The existing monthly pipeline also passed with expanded tests:
+  [monthly run](https://github.com/Ethanli0831/RealWorth/actions/runs/40202046063).
+  The new structure writer has its own concurrency group and bounded rebase/push
+  retries, so pending monthly/news jobs cannot continually replace it.
+- Cloud dependencies passed pip check. Updated installation/startup instructions
+  use all JavaScript test files and describe the new pages/data and 54/24/18
+  checks. The configuration draft also preserves existing destinations and adds
+  the five required fund/market API hosts. Saving this draft does not apply its
+  egress changes or publish a fresh environment. Current local optional external
+  fetches were restricted; actual new-source ingestion was verified on GitHub's
+  runner. Website publication is separate from environment publication.
+
+
 ## Article AI and next-period scenarios — 2026-10-18 UTC
 
 This section supersedes the earlier headline-only scope, refresh cadence and

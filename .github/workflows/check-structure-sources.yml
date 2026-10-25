@@ -31,12 +31,15 @@ jobs:
               if r.content.startswith(b'%PDF'):
                 text='\n'.join(p.extract_text() or '' for p in PdfReader(io.BytesIO(r.content)).pages[:3])
                 lines=text.splitlines()
+                print('PDF_HEADER',repr(lines[:35])[:2200])
               else:
                 soup=BeautifulSoup(r.text,'html.parser')
                 print('TITLE',soup.title.get_text()[:120] if soup.title else 'CSV/no HTML title')
+                for table in soup.find_all('table')[:8]: print('TABLE_SCHEMA',table.get_text(' | ',strip=True)[:900])
+                for a in soup.find_all('a',href=re.compile('fileType=csv|holdings.*ajax',re.I))[:5]:print('CSV_LINK',a.get('href'))
                 for bad in soup(['script','style']):bad.decompose()
                 lines=soup.get_text('\n',strip=True).splitlines() if soup.title else r.text.splitlines()
               matches=[i for i,line in enumerate(lines) if re.search(r'tonnes|gold in trust|bitcoin held|holdings as of|shares outstanding|ticker,|quantity|as of|as at',line,re.I)]
-              for i in matches[:12]:print('SCHEMA',' | '.join(lines[max(0,i-1):i+4])[:420])
+              for i in matches[-8:]:print('SCHEMA',' | '.join(lines[max(0,i-1):i+4])[:420])
             except Exception as e:print(type(e).__name__,str(e)[:200])
           PY

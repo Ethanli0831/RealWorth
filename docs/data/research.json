@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-10-26T06:24:58Z",
+    "checked_at": "2026-10-26T13:29:13Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-10-26T06:24:58Z",
+    "checked_at": "2026-10-26T13:29:13Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -122,6 +122,31 @@
     "outlook": "If growth keeps slowing while inflation rises, watch for a policy trade-off. If inflation eases without worsening credit or employment, a softer adjustment is more plausible. These are conditional scenarios, not probability forecasts."
   },
   "news": [
+    {
+      "title": "‘We don’t have inflation’? Five charts show the US economic reality of Trump’s second term so far",
+      "url": "https://www.theguardian.com/us-news/2026/oct/26/trump-second-term-economy-charts",
+      "published_at": "2026-10-26T11:00:42Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "inflation"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "‘We don’t have inflation’? Five charts show the US economic reality of Trump’s second term so far",
+          "url": "https://www.theguardian.com/us-news/2026/oct/26/trump-second-term-economy-charts",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-10-26T11:00:42Z"
+        }
+      ]
+    },
     {
       "title": "Frank Elderson: Taking action for nature – investing in economic resilience and prosperity",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261026~d903d7ad85.en.html",
@@ -386,54 +411,6 @@
           "url": "https://www.bbc.co.uk/news/articles/cm4g1p347qgxo?at_medium=RSS&at_campaign=rss",
           "publisher": "BBC Business",
           "published_at": "2026-10-22T14:28:59Z"
-        }
-      ]
-    },
-    {
-      "title": "Marine life in Gulf of Mexico has still not fully recovered from 2010 BP oil spill",
-      "url": "https://www.theguardian.com/environment/2026/oct/22/deepwater-horizon-oil-spill-gulf-marine-life",
-      "published_at": "2026-10-22T12:00:44Z",
-      "source_id": "guardian",
-      "publisher": "The Guardian Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "energy"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Marine life in Gulf of Mexico has still not fully recovered from 2010 BP oil spill",
-          "url": "https://www.theguardian.com/environment/2026/oct/22/deepwater-horizon-oil-spill-gulf-marine-life",
-          "publisher": "The Guardian Business",
-          "published_at": "2026-10-22T12:00:44Z"
-        }
-      ]
-    },
-    {
-      "title": "Is an 'AI war' complicating your job search?",
-      "url": "https://www.bbc.co.uk/news/articles/cm9qzgg5z89no?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-10-22T05:01:31Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "No clear macro impact",
-        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
-      },
-      "related_reports": [
-        {
-          "title": "Is an 'AI war' complicating your job search?",
-          "url": "https://www.bbc.co.uk/news/articles/cm9qzgg5z89no?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-10-22T05:01:31Z"
         }
       ]
     },
@@ -775,31 +752,6 @@
           "published_at": "2026-10-13T04:54:07Z"
         }
       ]
-    },
-    {
-      "title": "India’s retail inflation jumps to 5.54% in September, above estimates",
-      "url": "https://www.cnbc.com/2026/10/12/india-inflation-oil-energy-iran-war.html",
-      "published_at": "2026-10-12T10:49:24Z",
-      "source_id": "cnbc",
-      "publisher": "CNBC Economy",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "inflation"
-      ],
-      "cached": true,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "India’s retail inflation jumps to 5.54% in September, above estimates",
-          "url": "https://www.cnbc.com/2026/10/12/india-inflation-oil-energy-iran-war.html",
-          "publisher": "CNBC Economy",
-          "published_at": "2026-10-12T10:49:24Z"
-        }
-      ]
     }
   ],
   "feed_health": [
@@ -807,60 +759,60 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-10-26T06:24:58Z",
+      "checked_at": "2026-10-26T13:29:13Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-26T06:24:58Z",
+      "last_success": "2026-10-26T13:29:13Z",
       "matched": 0
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-10-26T06:24:58Z",
+      "checked_at": "2026-10-26T13:29:13Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-26T06:24:58Z",
+      "last_success": "2026-10-26T13:29:13Z",
       "matched": 4
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-10-26T06:24:58Z",
+      "checked_at": "2026-10-26T13:29:13Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-26T06:24:58Z",
-      "matched": 9
+      "last_success": "2026-10-26T13:29:13Z",
+      "matched": 8
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-10-26T06:24:58Z",
+      "checked_at": "2026-10-26T13:29:13Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-26T06:24:58Z",
+      "last_success": "2026-10-26T13:29:13Z",
       "matched": 6
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-10-26T06:24:58Z",
+      "checked_at": "2026-10-26T13:29:13Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
-      "matched": 10
+      "matched": 9
     },
     {
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-10-26T06:24:58Z",
+      "checked_at": "2026-10-26T13:29:13Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-26T06:24:58Z",
+      "last_success": "2026-10-26T13:29:13Z",
       "matched": 0
     }
   ],

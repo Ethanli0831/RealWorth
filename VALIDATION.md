@@ -3,7 +3,11 @@
 ## Plain-language cards and money-purpose guidance — 2026-10-26 (Toronto)
 
 - **54 Python tests, 38 JavaScript tests and 23 real Chromium scenarios passed
-  locally.** The new checks exercise essential/borrowed/zero-loss money,
+  locally; the same 23 browser scenarios also passed against the public HTTPS
+  site.** All eight changed served application files matched the checkout.
+  [Production CI](https://github.com/Ethanli0831/RealWorth/actions/runs/40347261450)
+  and [Pages deployment](https://github.com/Ethanli0831/RealWorth/actions/runs/40347361233)
+  succeeded for the feature commit. The new checks exercise essential/borrowed/zero-loss money,
   readiness overrides, quick-profit refusal, long-term comparisons, stable
   income versus capital preservation, non-USD uncertainty, stale/missing data,
   frozen-anchor illustrations, bilingual controls and invalidating old results

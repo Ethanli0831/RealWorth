@@ -187,8 +187,12 @@ def main():
             visit('monitor.html')
             assert page.locator('#forecast-content').is_visible()
             assert page.locator('.forecast-card').count()==5
-            assert page.locator('#baseline-finding').is_visible()
+            assert not page.locator('#baseline-finding').is_visible()
+            assert page.locator('.card-explanation').count()==5
+            assert page.locator('.asset-plain-description').count()==5
+            page.locator('.baseline-methods').evaluate('e=>e.open=true')
             assert page.locator('#forecast-backtest-body').is_visible()
+            page.locator('.baseline-methods').evaluate('e=>e.open=false')
             assert page.locator('#verification-by-asset tr').count()==5
             assert 'not direction' in page.locator('#forecast-verification').inner_text()
             for row in forecast_data['assets']:
@@ -196,6 +200,53 @@ def main():
                 if row.get('forecast'):
                     expected=f"${row['forecast']['levels']['q50']:,.2f}"
                     assert expected in card.inner_text(),(row['asset'],expected)
+            checks += 1
+
+            # The money-purpose screen uses real research, not fabricated model answers.
+            page.locator('[data-guide-language]').first.select_option('en')
+            assert page.locator('#money-purpose').evaluate('e=>e.selectedOptions[0].textContent')=='Choose an answer'
+            def answer_money(**changes):
+                values={'purpose':'surplus','horizon':'60','loss':'50','readiness':'ready','goal':'growth','currency':'USD'}
+                values.update(changes)
+                for key,value in values.items():page.locator('#money-'+key).select_option(value)
+                page.locator('#money-form button[type=submit]').click()
+                page.wait_for_function("!document.querySelector('#money-form button').disabled")
+                assert page.locator('#money-result').is_visible()
+
+            answer_money(purpose='essential',loss='100',goal='quick')
+            assert 'Keep this money out' in page.locator('#money-result h3').inner_text()
+            assert page.locator('.money-asset[data-status=avoid]').count()==5
+            assert 'quick profit is not established' in page.locator('#money-result').inner_text()
+            assert all('Not suitable' in n.inner_text() for n in page.locator('.card-fit').all())
+            checks += 1
+
+            answer_money()
+            assert page.locator('.money-asset[data-asset="S&P 500"]').get_attribute('data-status')=='research'
+            assert page.locator('.money-asset[data-asset="Bitcoin"]').get_attribute('data-status')=='avoid'
+            page.locator('.money-asset details').first.evaluate('e=>e.open=true')
+            assert data['meta']['data_through'] in page.locator('.money-asset details[open]').first.inner_text()
+            assert 'not predictions' in page.locator('.money-asset details[open]').first.inner_text()
+            page.locator('#money-goal').select_option('quick')
+            assert page.locator('#money-result').is_hidden()
+            assert 'Answers changed' in page.locator('#money-status').inner_text()
+            checks += 1
+
+            answer_money(goal='quick',loss='100',horizon='0')
+            assert 'quick-profit' in page.locator('#money-result h3').inner_text()
+            assert page.locator('.money-asset[data-status=avoid]').count()==5
+            page.locator('[data-guide-language]').first.select_option('zh')
+            assert '这笔钱' in page.locator('#money-title').inner_text()
+            assert '赚快钱' in page.locator('#money-result h3').inner_text()
+            assert '这对你意味着什么' in page.locator('.card-explanation').first.inner_text()
+            page.locator('[data-guide-language]').first.select_option('en')
+            checks += 1
+
+            answer_money(currency='CAD')
+            assert 'currency risk' in page.locator('#money-result h3').inner_text()
+            assert page.locator('.money-asset[data-status=unknown]').count()==5
+            answer_money(readiness='no-reserve')
+            assert 'emergency reserve' in page.locator('#money-result h3').inner_text()
+            assert page.locator('.money-asset[data-status=avoid]').count()==5
             checks += 1
 
             assert page.locator('#news-content').is_visible()
@@ -274,6 +325,16 @@ def main():
             no_structure.goto(base+'monitor.html',wait_until='networkidle')
             assert 'unavailable' in no_structure.locator('#structure-status').inner_text()
             assert no_structure.locator('.forecast-card').count()==5
+            checks += 1
+            no_evidence=context.new_page()
+            no_evidence.route('**/data/data.json',lambda r:r.fulfill(status=503,body='Unavailable'))
+            no_evidence.goto(base+'monitor.html',wait_until='networkidle')
+            for key,value in {'purpose':'surplus','horizon':'60','loss':'100','readiness':'ready','goal':'growth','currency':'USD'}.items():no_evidence.locator('#money-'+key).select_option(value)
+            no_evidence.locator('#money-form button').click()
+            no_evidence.wait_for_function("!document.querySelector('#money-form button').disabled")
+            assert 'No asset is being cleared' in no_evidence.locator('#money-result').inner_text()
+            assert no_evidence.locator('.money-asset').count()==0
+            assert no_evidence.locator('.forecast-card').count()==5
             checks += 1
             assert not errors,errors
             browser.close()

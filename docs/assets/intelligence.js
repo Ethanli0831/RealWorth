@@ -113,12 +113,13 @@
       };
     });
   }
+  globalThis.RealWorthForecastMath = {
+    validateForecasts,
+    validateIntelligence,
+    verificationByAsset,
+  };
   if (typeof module !== "undefined" && module.exports)
-    module.exports = {
-      validateForecasts,
-      validateIntelligence,
-      verificationByAsset,
-    };
+    module.exports = globalThis.RealWorthForecastMath;
   if (typeof document === "undefined") return;
   const make = (tag, text, cls) => {
     const n = document.createElement(tag);
@@ -323,6 +324,14 @@
       const title = make("h3");
       title.append(safeLink(row.asset, row.source));
       card.append(title);
+      if (globalThis.RealWorthGuidance)
+        card.append(
+          make(
+            "p",
+            globalThis.RealWorthGuidance.assetDescription(row.ticker),
+            "asset-plain-description",
+          ),
+        );
       card.append(
         make(
           "p",
@@ -331,14 +340,32 @@
         ),
       );
       card.append(make("p", money(row.quote), "quote-value"));
-      card.append(make("p", `Observed ${date(row.quote_at)}`, "tiny"));
+      card.append(
+        make(
+          "p",
+          `${globalThis.RealWorthGuidance?.language() === "zh" ? "报价时间" : "Observed"} ${date(row.quote_at)}`,
+          "tiny",
+        ),
+      );
       if (row.error) card.append(make("p", row.error, "notice"));
       const f = row.forecast;
       if (!f) {
         card.append(make("p", "No forecast available."));
+        globalThis.RealWorthGuidance?.appendCardGuide(
+          row,
+          card,
+          data.meta,
+          null,
+        );
         return card;
       }
-      card.append(make("p", `Target ${date(f.target_at)}`, "target-time"));
+      card.append(
+        make(
+          "p",
+          `${globalThis.RealWorthGuidance?.language() === "zh" ? "情景对应时间" : "Target"} ${date(f.target_at)}`,
+          "target-time",
+        ),
+      );
       card.append(
         make(
           "p",
@@ -357,9 +384,24 @@
       const scenarios = make("dl", undefined, "scenario-grid"),
         q = f.levels;
       for (const [label, value] of [
-        ["Lower · Q10–Q30", `${money(q.q10)}–${money(q.q30)}`],
-        ["Central · Q50", money(q.q50)],
-        ["Upper · Q70–Q90", `${money(q.q70)}–${money(q.q90)}`],
+        [
+          globalThis.RealWorthGuidance?.language() === "zh"
+            ? "历史偏低情景"
+            : "Lower historical range",
+          `${money(q.q10)}–${money(q.q30)}`,
+        ],
+        [
+          globalThis.RealWorthGuidance?.language() === "zh"
+            ? "历史中间值"
+            : "Middle estimate",
+          money(q.q50),
+        ],
+        [
+          globalThis.RealWorthGuidance?.language() === "zh"
+            ? "历史偏高情景"
+            : "Upper historical range",
+          `${money(q.q70)}–${money(q.q90)}`,
+        ],
       ]) {
         const group = make("div");
         group.append(make("dt", label), make("dd", value));
@@ -369,9 +411,19 @@
         scenarios,
         make(
           "p",
-          `Central band Q40–Q60: ${money(q.q40)}–${money(q.q60)}`,
+          `${globalThis.RealWorthGuidance?.language() === "zh" ? "历史中间一段" : "Middle historical range"}: ${money(q.q40)}–${money(q.q60)}`,
           "tiny",
         ),
+      );
+      globalThis.RealWorthGuidance?.appendCardGuide(
+        row,
+        card,
+        data.meta,
+        ledger
+          ? verificationByAsset(ledger.records).find(
+              (r) => r.ticker === row.ticker,
+            )
+          : null,
       );
       const details = make("details");
       details.append(
@@ -518,6 +570,7 @@
       ) {
         ledger = results[2].value;
         renderLedger();
+        if (forecasts) renderForecasts();
       }
     } catch (e) {
       set("forecast-load-status", `Data validation failed: ${e.message}`);
@@ -526,6 +579,9 @@
       loading = false;
     }
   }
+  document.addEventListener("realworth:guidance-changed", () => {
+    if (forecasts) renderForecasts();
+  });
   document.addEventListener("realworth:news-rendered", (event) => {
     relevantNewsUrls = new Set(event.detail?.relevantUrls || []);
     attachAI();

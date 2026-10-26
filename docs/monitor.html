@@ -2,6 +2,8 @@
 
 <html lang="en">
   <head>
+    <script defer="" src="assets/analytics.js"></script>
+    <script defer="" src="assets/guidance.js"></script>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta
@@ -31,7 +33,8 @@
         <details class="site-directory">
           <summary>Explore <span aria-hidden="true">▾</span></summary>
           <div class="directory-links">
-            <a href="./">Home</a
+            <a href="monitor.html#money-plan">What fits my money?</a
+            ><a href="./">Home</a
             ><a href="purchasing-power.html#calculator"
               >Real-return calculator</a
             ><a href="research.html#scorecard">Common-period scorecard</a
@@ -59,12 +62,46 @@
         <p class="tiny" id="data-stamp"></p>
       </section>
       <nav aria-label="On this page" class="page-links">
+        <a href="#money-plan">What fits my money?</a>
         <a href="#outlook">Scenarios &amp; results</a><a href="#news">News</a
         ><a href="#market-structure">Market structure</a>
       </nav>
-      <section aria-labelledby="outlook-heading" class="tool" id="outlook">
+      <section aria-labelledby="money-title" class="tool" id="money-plan">
         <div class="section-heading">
           <span class="section-number">01</span>
+          <div>
+            <p class="eyebrow">Start with your money’s job</p>
+            <h2 id="money-title">What is this money for?</h2>
+            <p id="money-intro">
+              Tell us what this money must do before choosing an investment.
+            </p>
+          </div>
+        </div>
+        <div class="panel money-panel">
+          <label class="guide-language"
+            >解释语言 / Guide language<select
+              aria-label="Money guide language"
+              data-guide-language=""
+            >
+              <option value="en">English</option>
+              <option value="zh">简体中文</option>
+            </select></label
+          >
+          <p class="tiny" id="money-privacy"></p>
+          <div id="money-form-root"></div>
+          <p class="tiny" id="money-status" role="status"></p>
+          <div aria-live="polite" hidden="" id="money-result"></div>
+          <noscript
+            ><p>
+              Enable JavaScript to answer the questions. Without your money’s
+              purpose and reliable evidence, no suitability conclusion is made.
+            </p></noscript
+          >
+        </div>
+      </section>
+      <section aria-labelledby="outlook-heading" class="tool" id="outlook">
+        <div class="section-heading">
+          <span class="section-number">02</span>
           <div>
             <p class="eyebrow">Observed prices, testable scenarios</p>
             <h2 id="outlook-heading">Today → Tomorrow</h2>
@@ -96,8 +133,31 @@
               numerical model. Issued forecasts stay frozen while observed
               quotes keep updating.
             </p>
-            <section class="baseline-evidence">
-              <h3>Does the point estimate beat unchanged prices?</h3>
+            <div class="forecast-introduction">
+              <div>
+                <h3 id="forecast-guide-title">
+                  What do these cards mean for my money?
+                </h3>
+                <p id="forecast-guide-summary">
+                  A rough range can help you understand uncertainty. It does not
+                  establish that buying today will make money.
+                </p>
+              </div>
+              <label class="guide-language"
+                >解释语言 / Guide language<select
+                  aria-label="Price explanation language"
+                  data-guide-language=""
+                >
+                  <option value="en">English</option>
+                  <option value="zh">简体中文</option>
+                </select></label
+              >
+            </div>
+            <div class="forecast-cards" id="forecast-body"></div>
+            <details class="rules baseline-methods">
+              <summary>
+                How we checked these estimates · technical details
+              </summary>
               <p class="notice" id="baseline-finding"></p>
               <p>
                 The range describes uncertainty. Q10–Q90 coverage is the share
@@ -128,8 +188,7 @@
                   <tbody id="forecast-backtest-body"></tbody>
                 </table>
               </div>
-            </section>
-            <div class="forecast-cards" id="forecast-body"></div>
+            </details>
             <details class="rules">
               <summary>
                 How prices, market closures and forecasts are handled
@@ -221,7 +280,7 @@
       </section>
       <section aria-labelledby="news-heading" class="tool" id="news">
         <div class="section-heading">
-          <span class="section-number">02</span>
+          <span class="section-number">03</span>
           <div>
             <p class="eyebrow">Follow the mechanism, question the claim</p>
             <h2 id="news-heading">News &amp; Impact Chains</h2>
@@ -304,7 +363,7 @@
       </section>
       <section class="tool" id="market-structure">
         <div class="section-heading">
-          <span class="section-number">03</span>
+          <span class="section-number">04</span>
           <div>
             <p class="eyebrow">Demand, positioning &amp; network use</p>
             <h2>What else moved?</h2>

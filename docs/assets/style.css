@@ -1549,3 +1549,191 @@ summary {
     align-items: center;
   }
 }
+.money-panel {
+  border-top: 3px solid var(--accent);
+}
+.guide-language {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+.guide-language select {
+  width: auto;
+  min-height: 44px;
+  max-width: 180px;
+}
+.money-questions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin: 25px 0;
+}
+.money-questions label {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  min-width: 0;
+  font-weight: 600;
+}
+.money-questions select,
+.money-questions input {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  font-size: 0.88rem;
+}
+.money-questions select {
+  white-space: normal;
+}
+.money-questions input {
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+#money-result {
+  border-top: 1px solid var(--line);
+  padding-top: 28px;
+  margin-top: 28px;
+  scroll-margin-top: 25px;
+}
+#money-result > h3 {
+  font-family: Georgia, serif;
+  font-size: 1.75rem;
+  line-height: 1.35;
+}
+.money-reasons {
+  padding: 18px 22px;
+  background: #f4f1e8;
+  border-radius: 12px;
+  margin: 22px 0;
+}
+.money-evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+.money-asset {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px;
+  min-width: 0;
+}
+.money-asset h4 {
+  font-size: 1.2rem;
+  margin: 0 0 12px;
+}
+.money-asset p {
+  overflow-wrap: anywhere;
+}
+.fit-label {
+  font-weight: 600;
+}
+.money-avoid .fit-label {
+  color: var(--amber);
+}
+.money-compare .fit-label {
+  color: var(--accent);
+}
+.money-asset details {
+  margin-top: 15px;
+}
+.forecast-introduction {
+  display: flex;
+  gap: 22px;
+  align-items: start;
+  margin: 28px 0 12px;
+}
+.forecast-introduction > div {
+  flex: 1;
+}
+.forecast-introduction h3 {
+  font-family: Georgia, serif;
+  font-size: 1.65rem;
+  margin-top: 0;
+}
+.forecast-introduction .guide-language {
+  flex-direction: column;
+  align-items: start;
+  min-width: 150px;
+}
+.asset-plain-description {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  min-height: 4.3em;
+}
+.card-explanation {
+  border-left: 3px solid var(--accent);
+  background: #eef1e8;
+  padding: 16px;
+  margin: 20px 0;
+}
+.card-explanation h4 {
+  margin: 0 0 10px;
+}
+.card-explanation p {
+  overflow-wrap: anywhere;
+}
+.card-explanation .card-fit {
+  font-weight: 600;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+.card-explanation a {
+  font-size: 0.8rem;
+}
+.baseline-methods {
+  margin: 25px 0;
+}
+.money-status {
+  min-height: 1em;
+}
+@media (max-width: 700px) {
+  .money-questions,
+  .money-evidence-grid {
+    grid-template-columns: 1fr;
+  }
+  .money-questions select {
+    font-size: 0.85rem;
+  }
+  .forecast-introduction {
+    display: block;
+  }
+  .forecast-introduction .guide-language {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .money-panel > .guide-language {
+    justify-content: space-between;
+  }
+  #money-form > .button {
+    width: 100%;
+    white-space: normal;
+  }
+  .money-asset {
+    padding: 18px;
+  }
+}
+.money-current {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  margin: 24px 0;
+  background: #f4f1e8;
+}
+.card-explanation details {
+  margin: 12px 0;
+}
+.card-test-evidence summary {
+  font-size: 0.82rem;
+}
+.money-asset a {
+  font-size: 0.82rem;
+  margin-right: 10px;
+}

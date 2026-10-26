@@ -20,6 +20,29 @@ verified after deployment; see [VALIDATION.md](VALIDATION.md).
 
 ![RealWorth's calculator, five-asset scorecard and inflation charts](docs/assets/screenshot.png)
 
+## Start with the money's purpose
+
+[What fits my money?](https://ethanli0831.github.io/RealWorth/monitor.html#money-plan)
+asks six short questions and shows a practical recommendation, per-asset fit
+and dated supporting evidence. English and simplified Chinese are available.
+Essential/borrowed money, zero-loss needs and missing financial basics override
+speculative appetite. Short-term quick-profit requests get no buy signal;
+waiting or choosing locally appropriate cash arrangements can be the result.
+The five-asset comparison is a transparent rule-based screen, not an LLM
+portfolio manager. It does not calculate allocations or promise returns.
+
+Price-card explanations now integrate the baseline comparison in everyday
+language. Detailed error/coverage statistics are available inside each card and
+the technical table is folded below the cards. Dollar examples use the frozen
+anchor, not a newly refreshed quote. Historical ranges do not establish a
+profitable trading strategy or a current entry opportunity.
+
+`docs/assets/guidance.js` contains the auditable screening rules, bilingual
+explanations and browser-only questionnaire. No answers are saved, added to
+URLs or sent to an AI endpoint. The methodology documents policy stress
+assumptions separately from measured historical evidence. Missing core data
+fails closed, and USD research does not become a CAD purchasing-power claim.
+
 ## Three reading paths
 
 - [Purchasing Power](https://ethanli0831.github.io/RealWorth/purchasing-power.html):
@@ -29,7 +52,7 @@ verified after deployment; see [VALIDATION.md](VALIDATION.md).
   scorecard by default, full-history switch, overlapping 1/3/5-year holding
   distributions, real/nominal inflation samples with means, medians and ranges,
   and a separate rising-inflation test.
-- [Market Monitor](https://ethanli0831.github.io/RealWorth/monitor.html): visible
+- [Market Monitor](https://ethanli0831.github.io/RealWorth/monitor.html): plain per-card
   unchanged-price benchmark, five scenario cards, per-asset prospective scores,
   context-filtered/grouped news and selected market-structure sources.
 

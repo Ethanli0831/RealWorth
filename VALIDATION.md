@@ -1,5 +1,42 @@
 # Validation record
 
+## Plain-language cards and money-purpose guidance — 2026-10-26 (Toronto)
+
+- **54 Python tests, 38 JavaScript tests and 23 real Chromium scenarios passed
+  locally.** The new checks exercise essential/borrowed/zero-loss money,
+  readiness overrides, quick-profit refusal, long-term comparisons, stable
+  income versus capital preservation, non-USD uncertainty, stale/missing data,
+  frozen-anchor illustrations, bilingual controls and invalidating old results
+  after editing answers. Software tests do not prove investment profitability.
+- The technical baseline table is folded below the five price cards. Each card
+  now explains the asset, what the historical error comparison means, separate
+  published checks, the user's money-purpose fit and the limits of its range.
+  Dollar examples scale the frozen anchor; refreshed quotes cannot rewrite
+  their meaning. No lower prediction error is relabelled as a validated trading
+  strategy or an instruction to buy today.
+- [What fits my money?](https://ethanli0831.github.io/RealWorth/monitor.html#money-plan)
+  asks six questions plus amount, in English or simplified Chinese. Answers
+  remain in memory, are not persisted or sent to an AI service, and affect only
+  transparent rules. Essential/borrowed money, zero-loss constraints and missing
+  financial basics override willingness to speculate. Waiting, retaining cash,
+  researching local protected savings or prioritising debt can be the action.
+- Every asset exposes the actual shared sample endpoints, nominal versus real
+  drawdown, matching holding-window count, omitted endpoints, worst final real
+  return, historical inflation-beating proportion and source links. The policy
+  loss floors and minimum horizons are disclosed separately as assumptions,
+  not future-loss forecasts, statistical calibration or capital guarantees.
+  Insufficient history and non-USD purchasing power are unassessed, not claimed
+  safe or intrinsically unsuitable.
+- Dated macro growth/inflation and pressure signals provide conditional caution;
+  missing/stale readings cannot justify entry. Quick-profit requests are refused
+  as a reliable strategy even if a sample has a smaller model error. A short
+  gain is possible; a dependable fee-adjusted short-term edge is not established
+  by these data. There is no portfolio-percentage or exact-entry-price advice.
+- README, the Chinese guide and Methodology document the workflow, privacy,
+  stress policies, limited product coverage, currency gap and source dates.
+  The original paper-matching and unconnected-source limitations remain.
+
+
 ## Reading paths and evidence quality — 2026-10-25 (Toronto)
 
 - **54 Python tests, 24 JavaScript tests and 18 real Chromium scenarios passed

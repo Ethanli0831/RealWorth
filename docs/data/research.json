@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-10-26T19:31:37Z",
+    "checked_at": "2026-10-26T23:17:53Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-10-26T19:31:37Z",
+    "checked_at": "2026-10-26T23:17:53Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -95,11 +95,11 @@
       {
         "id": "DFII10",
         "name": "10-year Treasury real yield",
-        "value": 2.64,
+        "value": 2.66,
         "unit": "%",
-        "period": "2026-10-22",
+        "period": "2026-10-23",
         "stale": false,
-        "change": 0.72,
+        "change": 0.74,
         "source": "https://fred.stlouisfed.org/series/DFII10"
       },
       {
@@ -107,9 +107,9 @@
         "name": "10-year minus 3-month Treasury yield",
         "value": 0.78,
         "unit": "percentage points",
-        "period": "2026-10-23",
+        "period": "2026-10-26",
         "stale": false,
-        "change": 0.13,
+        "change": 0.16,
         "source": "https://fred.stlouisfed.org/series/T10Y3M"
       }
     ],
@@ -736,47 +736,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-10-26T19:31:37Z",
+      "checked_at": "2026-10-26T23:17:53Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-26T19:31:37Z",
+      "last_success": "2026-10-26T23:17:53Z",
       "matched": 0
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-10-26T19:31:37Z",
+      "checked_at": "2026-10-26T23:17:53Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-26T19:31:37Z",
+      "last_success": "2026-10-26T23:17:53Z",
       "matched": 4
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-10-26T19:31:37Z",
+      "checked_at": "2026-10-26T23:17:53Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-26T19:31:37Z",
+      "last_success": "2026-10-26T23:17:53Z",
       "matched": 8
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-10-26T19:31:37Z",
+      "checked_at": "2026-10-26T23:17:53Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-26T19:31:37Z",
+      "last_success": "2026-10-26T23:17:53Z",
       "matched": 5
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-10-26T19:31:37Z",
+      "checked_at": "2026-10-26T23:17:53Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -786,10 +786,10 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-10-26T19:31:37Z",
+      "checked_at": "2026-10-26T23:17:53Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-26T19:31:37Z",
+      "last_success": "2026-10-26T23:17:53Z",
       "matched": 0
     }
   ],

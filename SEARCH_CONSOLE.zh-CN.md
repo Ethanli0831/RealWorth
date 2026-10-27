@@ -1,5 +1,8 @@
 # 让 Google 发现并检查 RealWorth
 
+当前所有者已确认 HTML 文件验证成功。请保留验证文件；接下来从下方第 5 步提交站点地图，再用网址检查请求编入索引。英文主说明见 [SEARCH_CONSOLE.md](SEARCH_CONSOLE.md)。
+
+
 网站：https://ethanli0831.github.io/RealWorth/
 
 站点地图：https://ethanli0831.github.io/RealWorth/sitemap.xml

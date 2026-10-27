@@ -16,7 +16,9 @@ verified after deployment; see [VALIDATION.md](VALIDATION.md).
 
 **Source:** https://github.com/Ethanli0831/RealWorth
 
-**中文网站说明书：** [操作方法、指标解读与维护说明](USER_GUIDE.zh-CN.md)
+**User guide:** [Tool instructions, interpretation and maintenance](USER_GUIDE.md)
+
+**Optional translation:** [Simplified Chinese user guide](USER_GUIDE.zh-CN.md)
 
 ![RealWorth's calculator, five-asset scorecard and inflation charts](docs/assets/screenshot.png)
 
@@ -24,12 +26,14 @@ verified after deployment; see [VALIDATION.md](VALIDATION.md).
 
 The public sitemap is https://ethanli0831.github.io/RealWorth/sitemap.xml.
 Canonical URLs, distinct descriptions, share metadata and WebPage identity are
-provided for each landing page. [中文介绍](https://ethanli0831.github.io/RealWorth/zh.html)
+provided for each landing page. [Chinese overview](https://ethanli0831.github.io/RealWorth/zh.html)
 is a static Chinese overview; [About](https://ethanli0831.github.io/RealWorth/about.html)
 explains maintenance and corrections. None of these guarantees Google indexing
-or ranking. The owner still needs Google Search Console ownership verification
-and sitemap submission; see [the click-by-click guide](SEARCH_CONSOLE.zh-CN.md).
-No verification token has been invented. A robots.txt under /RealWorth/ would
+or ranking. The owner has confirmed successful Google Search Console ownership
+verification using the published HTML file. Keep
+`docs/google7bf7bdb92ac21724.html` in place. The next steps are sitemap submission
+and URL inspection; see [the English step-by-step guide](SEARCH_CONSOLE.md).
+Verification does not establish indexing. A robots.txt under /RealWorth/ would
 not control origin-root crawling, so no misleading project robots file is added.
 
 ## Start with the money's purpose

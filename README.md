@@ -1,4 +1,4 @@
-# RealWorth — Store-of-Value Dashboard
+# RealWorth — Bitcoin, Gold & Purchasing Power Research
 
 An independent educational project comparing Bitcoin (`BTC-USD`), gold (`GLD`),
 the S&P 500 (`SPY`), Treasury bills (`BIL`), and long-term Treasury bonds (`TLT`).
@@ -22,6 +22,19 @@ verified after deployment; see [VALIDATION.md](VALIDATION.md).
 
 ![RealWorth's calculator, five-asset scorecard and inflation charts](docs/assets/screenshot.png)
 
+## Research explainers
+
+[RealWorth explained](https://ethanli0831.github.io/RealWorth/learn.html) connects
+observed data with practical questions:
+
+- [Does Bitcoin protect against inflation?](https://ethanli0831.github.io/RealWorth/bitcoin-inflation.html)
+- [What happened to the same $1,000 in five assets?](https://ethanli0831.github.io/RealWorth/compare-purchasing-power.html)
+- [Why is a price scenario not a buy signal?](https://ethanli0831.github.io/RealWorth/forecast-evidence.html)
+
+The articles include dated numerical examples and links to immutable source
+snapshots. Their tables do not refresh with the live dashboard. They are
+educational explanations, not a ranking of recommended investments.
+
 ## Search discoverability
 
 The public sitemap is https://ethanli0831.github.io/RealWorth/sitemap.xml.
@@ -31,9 +44,12 @@ is a static Chinese overview; [About](https://ethanli0831.github.io/RealWorth/ab
 explains maintenance and corrections. None of these guarantees Google indexing
 or ranking. The owner has confirmed successful Google Search Console ownership
 verification using the published HTML file. Keep
-`docs/google7bf7bdb92ac21724.html` in place. The next steps are sitemap submission
-and URL inspection; see [the English step-by-step guide](SEARCH_CONSOLE.md).
-Verification does not establish indexing. A robots.txt under /RealWorth/ would
+`docs/google7bf7bdb92ac21724.html` in place. The owner also supplied a Search
+Console screenshot confirming that the home
+page is indexed. That does not establish indexing for every page or a ranking
+for the RealWorth brand. Sitemap fetch errors remain a separate owner-console
+check; see [the English step-by-step guide](SEARCH_CONSOLE.md). A robots.txt under
+/RealWorth/ would
 not control origin-root crawling, so no misleading project robots file is added.
 
 ## Start with the money's purpose

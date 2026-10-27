@@ -1288,6 +1288,66 @@ details[open] > summary::before {
   margin: 0 auto 90px;
   text-align: center;
 }
+.home-explainers {
+  margin: 0 auto 72px;
+  max-width: 900px;
+}
+.home-explainers h2 {
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+}
+.explainer-links {
+  padding: 0;
+  list-style: none;
+}
+.explainer-links li,
+.article-list article {
+  padding: 24px;
+  margin: 18px 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+.explainer-links a,
+.explainer-links span,
+.article-related a {
+  display: block;
+  margin: 8px 0;
+}
+.explainer-links span {
+  color: var(--muted);
+}
+.article-page {
+  padding-bottom: 64px;
+}
+.article-page p,
+.article-page li {
+  font-size: 16px;
+}
+.article-page .page-intro {
+  padding-top: 0;
+}
+.article-answer {
+  padding: 22px;
+  border-left: 4px solid var(--accent);
+  background: var(--white);
+}
+.article-list h2 {
+  margin-top: 12px;
+}
+.article-page caption {
+  text-align: left;
+  padding: 16px;
+  font-weight: 600;
+}
+.article-related {
+  display: block;
+  font-size: 14px;
+  margin-top: 48px;
+  border-top: 1px solid var(--line);
+}
+.article-related a {
+  text-decoration: underline;
+}
 .home-note h2 {
   font-size: 2.5rem;
 }

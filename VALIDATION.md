@@ -1,5 +1,31 @@
 # Validation record
 
+## Branded research explainers — 2026-10-27 (Toronto)
+
+- Added an explainer hub and three original, static research articles. Tables
+  use the immutable `2b357dfb774e64117250563d46533f66108bcc3b` source snapshot,
+  dated October 27, 2026. Monthly examples use September 2014–September 2026
+  common growth history, exact purchasing power and actual usable sample counts.
+  Article figures intentionally remain fixed while dashboard data refreshes.
+- Home and About explain the RealWorth identity; README, Home, Research and
+  Explore link the articles. The sitemap lists eleven content pages and excludes
+  the Google verification file. Each new article has WebPage and Article metadata,
+  an accurate project byline, a publication date and source links.
+- All **5 existing SEO checks** and **25 existing Chromium scenarios** passed
+  locally. An additional browser check visited all four new pages at 1440px and
+  390px, checked structured data, static tables, navigation and absence of page
+  overflow or JavaScript errors. Phone-width tables scroll within their region;
+  no physical-device or Google-ranking outcome is claimed.
+- The owner supplied a Search Console screenshot reporting that the home page
+  is indexed. This is owner-provided status, not authenticated Console access.
+  The earlier sitemap-fetch error has not been confirmed resolved. New-page
+  indexing and branded-query ranking are still Google's decisions.
+- Updating repository About description and Website was attempted again under
+  explicit user authorization, but GitHub returned HTTP 403, “Resource not
+  accessible by integration.” These fields and personal/social profiles were
+  not changed. The English Search Console guide includes the exact owner steps
+  and a consistent profile description.
+
 ## Tiered guidance and search discoverability — 2026-10-27 (Toronto)
 
 - **59 Python, 43 JavaScript and 25 real Chromium scenarios passed locally;

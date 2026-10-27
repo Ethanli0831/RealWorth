@@ -27,10 +27,11 @@ has already been indexed.
 
 ## 2. Inspect the main pages
 
-Use **URL inspection** for the home page and the static Chinese overview:
+Use **URL inspection** for the home page and the main research pages:
 
 - https://ethanli0831.github.io/RealWorth/
-- https://ethanli0831.github.io/RealWorth/zh.html
+- https://ethanli0831.github.io/RealWorth/research.html
+- https://ethanli0831.github.io/RealWorth/learn.html
 
 Read the indexing status, run the live test if needed, and select **Request
 indexing** when available. In **Page indexing**, distinguish undiscovered URLs,
@@ -43,11 +44,39 @@ request does not guarantee inclusion, a deadline or a ranking for competitive
 terms such as Bitcoin. A `site:` search can provide a clue, but it is not a full
 index inventory; Search Console is the better owner diagnostic.
 
+## If searching RealWorth still does not show this website
+
+1. Inspect `https://ethanli0831.github.io/RealWorth/` again. If the current
+   report says **URL is on Google**, the home page is indexed. Absence from the
+   first results for a brand query alone does not establish a crawling failure.
+   If it instead reports exclusion, open **Page indexing** and follow that
+   specific explanation; do not change a working sitemap at random.
+2. In **Performance → Search results**, enable **Impressions** and **Average
+   position**, add a query filter containing `realworth`, and inspect the date
+   range. Impressions without many clicks suggest the site is being shown but
+   not attracting clicks at those positions. An empty or delayed report does
+   not establish that the home page has been removed from the index.
+3. As discovery checks, try `"RealWorth" Bitcoin` and
+   `site:ethanli0831.github.io/RealWorth/`. Neither query is a complete index
+   inventory or a substitute for URL Inspection.
+4. Add the accurate website URL and name to the repository About section and
+   public profiles you control. The repository metadata update is blocked by
+   the integration's HTTP 403, so the owner must save those fields manually.
+5. Keep useful, sourced content available and monitor actual query impressions
+   over time. New pages and changes can take time to be crawled and evaluated;
+   there is no guaranteed date or first-place ranking. Repeated requests or
+   removing a translation do not automatically raise a page's position.
+
+The former translated page was removed at the owner's request. Its URL can
+return 404 until Google drops that old entry. This is distinct from the home
+page's index status. Keep the Google ownership verification file published.
+
 ## Existing site configuration
 
-The eleven content pages have distinct titles/descriptions, project-scoped
+The ten content pages have distinct titles/descriptions, project-scoped
 canonical URLs, index/follow declarations, share metadata and truthful WebPage
-identity. The English and Chinese home overviews have reciprocal language links.
+identity. All public pages use English; the former translated overview and its
+language links have been removed.
 About and Methodology explain the project's maintenance, sources and limitations.
 The explainer hub links three original research notes with fixed, dated tables
 and immutable source links. Home, Research, the Explore directory and README link
@@ -97,12 +126,10 @@ In **Performance → Search results**, filter queries containing `realworth` and
 review impressions, clicks and average position over time. New reports can be
 empty or delayed; average position is not a fixed ranking for every person.
 Repeated indexing requests do not move a page up the crawl queue. The sitemap
-URL is unchanged and now lists eleven pages, excluding the verification file.
+URL is unchanged and now lists ten pages, excluding the verification file.
 
 Official references:
 
 - https://developers.google.com/search/docs/fundamentals/get-on-google
 - https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
 - https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl
-
-An optional [Chinese setup guide](SEARCH_CONSOLE.zh-CN.md) is retained for reference.

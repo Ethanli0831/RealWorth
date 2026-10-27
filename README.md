@@ -18,8 +18,6 @@ verified after deployment; see [VALIDATION.md](VALIDATION.md).
 
 **User guide:** [Tool instructions, interpretation and maintenance](USER_GUIDE.md)
 
-**Optional translation:** [Simplified Chinese user guide](USER_GUIDE.zh-CN.md)
-
 ![RealWorth's calculator, five-asset scorecard and inflation charts](docs/assets/screenshot.png)
 
 ## Research explainers
@@ -39,24 +37,24 @@ educational explanations, not a ranking of recommended investments.
 
 The public sitemap is https://ethanli0831.github.io/RealWorth/sitemap.xml.
 Canonical URLs, distinct descriptions, share metadata and WebPage identity are
-provided for each landing page. [Chinese overview](https://ethanli0831.github.io/RealWorth/zh.html)
-is a static Chinese overview; [About](https://ethanli0831.github.io/RealWorth/about.html)
-explains maintenance and corrections. None of these guarantees Google indexing
-or ranking. The owner has confirmed successful Google Search Console ownership
+provided for each landing page. [About](https://ethanli0831.github.io/RealWorth/about.html)
+explains maintenance and corrections. The website and guides are English-only.
+None of these guarantees Google indexing or ranking. The owner has confirmed
+successful Google Search Console ownership
 verification using the published HTML file. Keep
 `docs/google7bf7bdb92ac21724.html` in place. The owner also supplied a Search
-Console screenshot confirming that the home
-page is indexed. That does not establish indexing for every page or a ranking
+Console screenshot confirming that the home page is indexed. That does not
+establish indexing for every page or a ranking
 for the RealWorth brand. Sitemap fetch errors remain a separate owner-console
 check; see [the English step-by-step guide](SEARCH_CONSOLE.md). A robots.txt under
-/RealWorth/ would
-not control origin-root crawling, so no misleading project robots file is added.
+/RealWorth/ would not control origin-root crawling, so no misleading project
+robots file is added.
 
 ## Start with the money's purpose
 
 [What fits my money?](https://ethanli0831.github.io/RealWorth/monitor.html#money-plan)
 asks six short questions and shows a practical recommendation, per-asset fit
-and dated supporting evidence. English and simplified Chinese are available.
+and dated supporting evidence, with English explanations.
 Purpose fit, exposure size and next-period timing are assessed separately.
 Reduced USD exposure can be illustrated under an explicit stress budget; the
 remainder is assumed unchanged cash, each card is a separate alternative, and
@@ -74,7 +72,7 @@ the technical table is folded below the cards. Dollar examples use the frozen
 anchor, not a newly refreshed quote. Historical ranges do not establish a
 profitable trading strategy or a current entry opportunity.
 
-`docs/assets/guidance.js` contains the auditable screening rules, bilingual
+`docs/assets/guidance.js` contains the auditable screening rules, English
 explanations and browser-only questionnaire. No answers are saved, added to
 URLs or sent to an AI endpoint. The methodology documents policy stress
 assumptions separately from measured historical evidence. Missing core data

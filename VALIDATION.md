@@ -1,5 +1,29 @@
 # Validation record
 
+## English-only publication — 2026-10-27 (Toronto)
+
+- Removed the translated overview, optional translated guides, language
+  selectors, translation dictionary, localized card branches and language links.
+  The sitemap now lists ten English content pages. The Google ownership file
+  remains published. The retired translation URL is intentionally no longer a
+  content page; no redirect or continued indexing of that URL is claimed.
+- **59 Python tests, 43 JavaScript tests and 25 local Chromium scenarios passed.**
+  The browser run includes all ten page layouts and a separate `zh-CN` browser
+  locale confirming English questionnaire/card output. The existing English
+  guidance dictionary was compared with the previous commit and is unchanged.
+  No change to the numerical suitability rules was required.
+- A repository text scan found no remaining Han-script text in tracked source,
+  public data or guides. Added AI validation rejects mixed CJK-language output
+  both when generated and when cached. One existing interpretation was withdrawn,
+  not rewritten and relabelled as model output; three original interpretations
+  remain available. Cleanup preserved source check dates and news/macro readings.
+- Before publication, the public homepage, sitemap, explainer hub and ownership
+  file each returned HTTP 200 without an X-Robots-Tag exclusion. These requests
+  do not establish Google's latest actual crawl, branded-search position or
+  account-specific Search Console status. The owner previously supplied an
+  indexed-homepage screenshot. The English search guide now distinguishes
+  indexing, query impressions, ranking and the retired translation's 404.
+
 ## Branded research explainers — 2026-10-27 (Toronto)
 
 - Added an explainer hub and three original, static research articles. Tables

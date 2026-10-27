@@ -4,10 +4,11 @@
     "scan_started_at": "2026-10-27T13:29:43Z",
     "provider_requested": "github",
     "article_reads": 4,
-    "ai_interpretations": 4,
+    "ai_interpretations": 3,
     "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
-    "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
+    "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published.",
+    "language_reviewed_at": "2026-10-27T18:09:05.511293Z"
   },
   "articles": [
     {
@@ -151,28 +152,7 @@
       "body_sha256": "df5f1b9c46efd2b94f88c5f6c9975f9316c2edce23954a56bb21740f0a0d7999",
       "body_characters": 8745,
       "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The article describes a visit to the Rosebank oil field, a floating production vessel in the North Sea, just before a storm arrives.",
-        "evidence_ids": [
-          "E2",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: visit to Rosebank oil field",
-          "financial_channel: If winter weather conditions worsen, it could affect production costs.",
-          "asset_hypothesis: If the oil field starts production, it could increase supply."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If global economic recovery continues, demand for gold as a safe-haven will increase."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite remains high, Bitcoin may not see a safe-haven flow; if risk appetite decreases, it could attract some避风港资金。"
-        },
-        "uncertainty": "If the UK government grants production consent, it could lead to increased supply and potentially lower oil prices, which might not directly impact gold or Bitcoin."
-      },
+      "status": "AI interpretation withdrawn: mixed-language output; awaiting a validated English replacement",
       "evidence": {
         "E2": "We came here - days before Storm Boelo arrived with strong winds",
         "E5": "When we landed by helicopter at Rosebank, this oil field was at"
@@ -180,7 +160,8 @@
       "analyzed_at": "2026-10-26T15:29:19Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+      "validation_error": "AI interpretation must use English; mixed-language output rejected"
     }
   ]
 }

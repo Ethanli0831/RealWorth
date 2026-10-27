@@ -17,8 +17,8 @@ website.
 | [Methodology](https://ethanli0831.github.io/RealWorth/methodology.html) | Read formulas, data handling, policy assumptions and limitations. |
 | [About](https://ethanli0831.github.io/RealWorth/about.html) | Learn how the project is maintained and how to report errors. |
 
-The **Explore** menu links directly to each tool. The money-purpose questionnaire
-and new asset-card explanations support English and simplified Chinese.
+The **Explore** menu links directly to each tool. The website, money-purpose
+questionnaire and asset-card explanations use English regardless of browser locale.
 
 ## 1. Match an investment to the money's purpose
 
@@ -143,4 +143,3 @@ The methodology includes a five-question self-check with reference answers.
 
 For setup, development and maintenance, see [README.md](README.md).
 For indexing steps, see [SEARCH_CONSOLE.md](SEARCH_CONSOLE.md).
-An optional [simplified Chinese user guide](USER_GUIDE.zh-CN.md) is also available.

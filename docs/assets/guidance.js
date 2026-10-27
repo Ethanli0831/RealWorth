@@ -180,144 +180,6 @@
       oldResearch:
         "Research data is dated; historical comparisons are shown, but do not establish current entry conditions.",
     },
-    zh: {
-      title: "这笔钱，是用来做什么的？",
-      intro:
-        "先告诉我们这笔钱承担什么任务，再看哪些风险能承受、哪些选择不合适，以及判断依据。",
-      privacy:
-        "答案只留在当前页面，不建账户、不保存个人档案，也不发给 AI。这是有限的资金适配检查，不能代替完整财务规划。",
-      purpose: "1. 这笔钱是什么钱？",
-      purposeOptions: [
-        ["essential", "房租、学费、应急金——需要拿回来"],
-        ["reserve", "重要储蓄——亏损会推迟我的计划"],
-        ["surplus", "真正的闲钱——亏掉也不影响生活"],
-        ["borrowed", "借来的钱／需要还给别人的钱"],
-      ],
-      horizon: "2. 什么时候可能要用？",
-      horizonOptions: [
-        ["0", "几天或几周内"],
-        ["3", "几个月内"],
-        ["12", "大约一年后"],
-        ["36", "至少三年后"],
-        ["60", "至少五年后"],
-        ["120", "至少十年后"],
-      ],
-      loss: "3. 少了多少，会影响你的计划？",
-      lossOptions: [
-        ["0", "不能少——需要拿回全额"],
-        ["5", "5%——每 1,000 元少 50 元"],
-        ["15", "15%——每 1,000 元少 150 元"],
-        ["30", "30%——每 1,000 元少 300 元"],
-        ["50", "50%——可以承受少一半"],
-        ["100", "全亏也可以——只是可随意使用的实验资金"],
-      ],
-      readiness: "4. 基本的资金安排做好了吗？",
-      readinessOptions: [
-        ["ready", "有应急储备，也没有需要优先处理的高息债务"],
-        ["no-reserve", "还没有应急储备"],
-        ["debt", "有高息债务需要处理"],
-        ["unknown", "还不确定"],
-      ],
-      goal: "5. 希望它帮你做什么？",
-      goalOptions: [
-        ["protect", "保持可用，尽量保住这笔金额"],
-        ["income", "提供稳定收入"],
-        ["growth", "用几年时间增长购买力"],
-        ["quick", "靠短期涨跌赚快钱"],
-      ],
-      currency: "6. 以后主要用什么货币花这笔钱？",
-      currencyOptions: [
-        ["USD", "美元（USD）"],
-        ["CAD", "加元（CAD）"],
-        ["other", "其他货币"],
-      ],
-      amount: "考虑投入的金额",
-      choose: "请选择",
-      submit: "查看建议和数据依据",
-      changed: "答案已改变，请重新生成建议；旧结论不再适用。",
-      result: "对这笔钱，我们的建议是",
-      why: "为什么这样建议？",
-      next: "接下来可以做什么",
-      evidence: "逐个检查这些资产是否适合你的用途",
-      history: "共同历史区间里，实际发生过什么",
-      data: "查看原始派生数据",
-      rules: "筛选规则与限制",
-      protected: "先把这笔钱留在这些市场投资之外。",
-      debt: "不要拿这笔钱投机，先处理必须用钱的地方和高息债务。",
-      reserve: "先建立或弄清应急储备，再决定要冒多少市场风险。",
-      quick: "不要把这个网站当作短期赚快钱的交易系统。",
-      short: "近期要用的钱，先比较现金类安排，再考虑市场投资。",
-      currencyTitle: "先弄清花钱货币与美元投资之间的汇率风险。",
-      growth: "先研究分散的长期投资方式，不把 Bitcoin 当作储蓄替代品。",
-      income: "先比较流动性和收入来源；这些 ETF 都不承诺固定收益或保本。",
-      cautious:
-        "按你的用途、期限与现有证据，不宜据此加大市场风险。先留住资金也是一种选择。",
-      need: "你表示这笔钱涉及必要开支、借款，或不能承受损失。想多赚一些，并不会消除这个限制。",
-      basics:
-        "没有应急金、有高息债务，或还不了解自己的现金安排，都会降低实际承担风险的能力。",
-      quickWhy:
-        "短期可能赚钱，也可能亏钱；可靠赚快钱的方法在这里没有得到证明。预测误差小、价格落在区间内，都不等于扣除费用和税后能靠交易获利。",
-      shortWhy:
-        "月度历史不能证明几天、几周内保住资金的概率。即使波动较低的 ETF 也会下跌，现金类 ETF 也不是受存款保障的银行余额。",
-      currencyWhy:
-        "研究数据以美元和美国 CPI 为基础，没有计算你以加元或其他货币花钱时的购买力、换汇成本和当地税务影响。",
-      longWhy:
-        "有较长时间、也有真正闲钱，才有进一步研究的空间。这不代表安全；未来可能比历史更差，重叠持有窗口也不是独立实验。",
-      cashNext:
-        "比较与你的花钱货币、用钱期限和取款需求相匹配的受保障储蓄／存款或短期政府证券。保障资格、额度和提前取款条件应向当地机构核实；本网站没有比较这些产品的当前利率。",
-      debtNext:
-        "先弄清必要现金开支和债务成本，再考虑风险投资。不要借钱追逐价格波动。",
-      reserveNext:
-        "先划出必须随时可用的钱。不确定之前，先不要把这笔金额投入投机资产。",
-      quickNext:
-        "先暂停以赚快钱为目的的下单。可以观察冻结预测与后续结果，而不动用必要资金。网站目前没有经验证、扣费后可获利的“今天买入”择时信号。",
-      longNext:
-        "先看下方哪些比较通过了初步筛选，再核对费用、税务、汇率和已有投资。这里不给具体入场价、仓位比例或保证收益。",
-      avoid: "不适合你填写的用途",
-      research: "可以进一步比较，不等于建议今天买入",
-      experiment: "仅限可全损的实验闲钱，不能当储蓄",
-      unknown: "现有数据不足，无法判断",
-      reasons: {
-        protected: "必要资金或保本要求，优先于追求回报。",
-        basics: "基本资金安排还没有确认。",
-        quick: "价格工具没有证明可靠的短期交易获利方法。",
-        currency: "这里没有评估你实际花钱货币的风险。",
-        deadline: "用钱时间短于该资产的保守筛选期限。",
-        loss: "你能承受的亏损，小于筛选使用的压力情景。",
-        income: "它不能可靠满足你要求的稳定收入。",
-        history: "相同持有期的历史窗口太少，无法据此支持比较。",
-        capital: "这不符合优先保住金额、保持资金可用的目标。",
-        eligible: "通过的只是有限筛选，仍可能亏损或跑输。",
-      },
-      insufficient:
-        "研究数据不可用、不完整或过旧，无法完成适配判断；不会把任何资产标为适合。先保护必要资金，等有可靠且带日期的证据后再看。",
-      limited:
-        "这里只比较五种资产，并依赖你自己填写的答案，不了解你的完整财务、税务或当地可用产品，不能代替专业适当性评估。",
-      whyCards: "这些价格卡片，对我的钱有什么意义？",
-      summary:
-        "卡片展示类似历史时段里价格可能波动的范围，不能证明今天买入会赚钱。先确定钱的用途，再看数字。",
-      cardNames: {
-        "BTC-USD":
-          "Bitcoin 是波动很大的数字资产。页面报价是一枚的价格，并不是说必须买整枚。",
-        GLD: "这是黄金基金的一份价格，不是一盎司黄金；黄金基金也可能下跌。",
-        SPY: "这个基金持有多家美国大公司。分散了单一公司的风险，但仍会受到整个股市下跌的影响。",
-        BIL: "这个基金持有短期美国国债。通常比很多资产平稳，但不是保证不减少的银行余额。",
-        TLT: "这个基金持有长期美国国债。发行人是政府，也不代表基金价格稳定；利率变化时仍可能大跌。",
-      },
-      plain: "这对你意味着什么",
-      details: "展开数字和检验方法",
-      noSignal: "这只是粗略的波动参考，不是可靠的今天买卖理由。",
-      noTest: "这张卡片没有可用的历史误差比较。",
-      equal: "过去这段测试里，这个估计和“价格保持不变”的猜法差不多准。",
-      worse: "过去这段测试里，这个估计还不如直接假设价格不变。",
-      lower: "这段样本里估计误差更小，但还不能证明能靠它交易赚钱。",
-      coverage: "落在外层范围内，不等于猜对了涨跌；实际价格也可能跑到范围外。",
-      stale: "快照、目标时间已过期，或数据不完整，不能当作新的入场信号。",
-      fit: "结合你这笔钱的用途",
-      beforeFit: "想知道这类风险是否适合你？先回答上面的资金用途问题。",
-      oldResearch:
-        "历史研究数据已有时差，展示历史比较不代表已经判断当前适合买入。",
-    },
   };
   Object.assign(dict.en, {
     amount: "Total money for this plan (not the purchase amount for one asset)",
@@ -349,43 +211,14 @@
     noSignal:
       "This next-period range is not an entry-timing rule. Long-term suitability is assessed separately above.",
   });
-  Object.assign(dict.zh, {
-    amount: "本次计划安排的资金总额（不是单一资产的买入金额）",
-    partial: "可降低单项投入后再比较，不宜整笔投入",
-    conditional: "可先研究美元资产，仍需补上汇率评估",
-    observe: "可以观察学习，但没有可靠的短炒方法",
-    budgetTitle: "有些选项可以缩小投入后研究，先看整笔资金的损失预算。",
-    currencyTitle: "有可研究的美元资产选项；花钱货币的风险需要另外评估。",
-    research: "用途和期限支持进一步研究",
-    experiment: "可作为可全损闲钱的实验比较",
-    role: "可能承担的任务",
-    roles: {
-      Bitcoin: "高风险实验",
-      Gold: "黄金敞口／分散工具",
-      "S&P 500": "长期分散股票增长",
-      "T-Bills": "短期限流动性缓冲",
-      "LT Bonds": "长期利率敞口",
-    },
-    budgetNext:
-      "先比较下方降低单项投入后的数学演示。它假设其余资金是不变的现金、资产发生所列压力跌幅，不是推荐仓位或最大损失保证。再核对费用、汇率、已有持仓和这类损失是否仍不影响计划。",
-    currencyNext:
-      "先用美元历史列出研究清单，再单独比较未对冲／对冲敞口、换汇成本和本地购买力。汇率影响没有评估之前，不给本地货币的金额风险预算。",
-    fitTiming: "长期是否适配，与短线什么时候买，是两个问题",
-    timingText:
-      "次日模型没有证明可靠的交易买点，但这不等于符合用途和期限的长期投资不适合。可以继续研究分散、费用和投入节奏，而不声称知道明天的最佳价格。",
-    noSignal:
-      "这张次日区间卡片不能提供可靠买点；长期是否适配，要单独看上方的资金用途筛选。",
-  });
+
   Object.assign(dict.en.reasons, {
     budget:
       "The all-in exposure exceeds your loss limit; a reduced-exposure scenario can be researched.",
     quick:
       "The quick-profit strategy is unsupported; that is different from saying the asset can never serve a longer-term role.",
   });
-  Object.assign(dict.zh.reasons, {
-    budget: "整笔投入超出你的损失限度，可以研究降低单项敞口的演示。",
-    quick: "缺少依据的是可靠赚快钱的方法，并不是说这种资产永远没有长期用途。",
-  });
+
   function exposureScenario(amount, lossPercent, stressPercent) {
     if (
       ![amount, lossPercent, stressPercent].every(Number.isFinite) ||
@@ -719,32 +552,13 @@
     return n;
   };
   const pct = (n) => (Number.isFinite(n) ? n.toFixed(2) + "%" : "—");
-  let lang = navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en",
-    state = null,
+  let state = null,
     history = null,
     forecasts = null,
     busy = false;
-  const t = () => dict[lang];
-  const label = (asset) =>
-    lang === "zh"
-      ? {
-          Bitcoin: "Bitcoin／比特币",
-          Gold: "黄金基金 GLD",
-          "S&P 500": "美股基金 SPY",
-          "T-Bills": "短债基金 BIL",
-          "LT Bonds": "长债基金 TLT",
-        }[asset] || asset
-      : asset;
-  function languageChange(next) {
-    lang = next === "zh" ? "zh" : "en";
-    document
-      .querySelectorAll("[data-guide-language]")
-      .forEach((s) => (s.value = lang));
-    renderForm(true);
-    renderResult();
-    api.updateIntro();
-    document.dispatchEvent(new Event("realworth:guidance-changed"));
-  }
+  const t = () => dict.en;
+  const label = (asset) => asset;
+
   function renderForm(preserve = false) {
     const mount = document.getElementById("money-form-root");
     if (!mount) return;
@@ -843,62 +657,39 @@
       box.append(
         make(
           "p",
-          lang === "zh"
-            ? `数学演示：总额 ${f(state.profile.amount)}，若资产下跌 ${pct(x.stressPercent)}，风险部分 ${f(x.riskAmount)}、其余 ${f(x.cashAmount)} 假设不变时，损失约 ${f(x.stressLoss)}，相当于总额 ${x.lossPercent}%。这不是推荐仓位；跌幅更大、费用或汇率变化仍可能超出预算。`
-            : `Arithmetic illustration: from ${f(state.profile.amount)}, ${f(x.riskAmount)} exposed to a ${pct(x.stressPercent)} fall and ${f(x.cashAmount)} assumed unchanged would lose about ${f(x.stressLoss)} (${x.lossPercent}% of the total). This is not a recommended allocation; a larger fall, costs or FX can exceed it.`,
+          `Arithmetic illustration: from ${f(state.profile.amount)}, ${f(x.riskAmount)} exposed to a ${pct(x.stressPercent)} fall and ${f(x.cashAmount)} assumed unchanged would lose about ${f(x.stressLoss)} (${x.lossPercent}% of the total). This is not a recommended allocation; a larger fall, costs or FX can exceed it.`,
           "budget-illustration",
         ),
       );
     }
     if (r.currencyUnassessed) box.append(make("p", d.currencyWhy, "tiny"));
     const detailed = make("details"),
-      summary = make(
-        "summary",
-        lang === "zh" ? "为什么？查看数据依据" : "Why? See the evidence",
-      );
+      summary = make("summary", "Why? See the evidence");
     detailed.append(summary);
-    const lines =
-      lang === "zh"
-        ? [
-            `同一起止月：${state.start} 至 ${state.end}，数据更新 ${state.updated}。`,
-            `月末观察到的最大名义回撤 ${pct(r.nominalDD)}；扣通胀后的最大回撤 ${pct(r.realDD)}。这两者口径不同，月中可能跌得更深。`,
-            `${r.matching / 12} 年持有窗口 ${r.rolling.n} 个，因缺少端点而遗漏 ${r.rolling.skipped} 个。历史跑赢通胀比例 ${pct(r.rolling.beat)}，最差到期实际回报 ${pct(r.rolling.min)}。${r.matchedToDeadline ? "" : "这是一年背景资料，不是你几天／几个月期限的结果。"}`,
-            `你的亏损限度 ${pLoss()}%；保守筛选使用 ${pct(r.stress)} 的名义损失压力情景。${r.asset === "Bitcoin" ? "Bitcoin 只允许可全损的真正闲钱进入实验比较。" : "压力情景至少为 " + r.policy.stress + "%，也不能小于本样本名义最大回撤。"}这些是公开的筛选假设，不是预测，也不是最大可能损失。`,
-            `下一步价格估计：${forecastWords(r.market)} 这不是已验证的交易收益证据。`,
-          ]
-        : [
-            `Same endpoints: ${state.start} to ${state.end}; data updated ${state.updated}.`,
-            `Observed month-end nominal drawdown ${pct(r.nominalDD)}; real drawdown ${pct(r.realDD)}. These measure different losses; intra-month falls can be worse.`,
-            `${r.matching / 12}-year windows: ${r.rolling.n}, with ${r.rolling.skipped} missing endpoints omitted. Historical inflation-beating share ${pct(r.rolling.beat)}; worst final real return ${pct(r.rolling.min)}. ${r.matchedToDeadline ? "" : "This is one-year context, not a result for your days/months deadline."}`,
-            `Your loss limit: ${pLoss()}%; screening stress: ${pct(r.stress)} nominal loss. The policy floor is ${r.policy.stress}%, and never below the observed nominal drawdown. Bitcoin requires disposable money that can be lost entirely. These are disclosed screening assumptions, not predictions or maximum possible losses.`,
-            `Next-period estimate: ${forecastWords(r.market)} This is not evidence of trading profitability.`,
-          ];
+    const lines = [
+      `Same endpoints: ${state.start} to ${state.end}; data updated ${state.updated}.`,
+      `Observed month-end nominal drawdown ${pct(r.nominalDD)}; real drawdown ${pct(r.realDD)}. These measure different losses; intra-month falls can be worse.`,
+      `${r.matching / 12}-year windows: ${r.rolling.n}, with ${r.rolling.skipped} missing endpoints omitted. Historical inflation-beating share ${pct(r.rolling.beat)}; worst final real return ${pct(r.rolling.min)}. ${r.matchedToDeadline ? "" : "This is one-year context, not a result for your days/months deadline."}`,
+      `Your loss limit: ${pLoss()}%; screening stress: ${pct(r.stress)} nominal loss. The policy floor is ${r.policy.stress}%, and never below the observed nominal drawdown. Bitcoin requires disposable money that can be lost entirely. These are disclosed screening assumptions, not predictions or maximum possible losses.`,
+      `Next-period estimate: ${forecastWords(r.market)} This is not evidence of trading profitability.`,
+    ];
     for (const line of lines) detailed.append(make("p", line, "tiny"));
     if (state.profile.currency === "USD")
       detailed.append(
         make(
           "p",
-          lang === "zh"
-            ? `以你填写的 $${state.profile.amount.toLocaleString()} 示意，同等名义跌幅会减少约 $${((state.profile.amount * Math.abs(r.nominalDD)) / 100).toFixed(0)}；这是历史跌幅的金额缩放，不是未来亏损估计。`
-            : `For your $${state.profile.amount.toLocaleString()}, the same historical nominal decline would reduce value by about $${((state.profile.amount * Math.abs(r.nominalDD)) / 100).toFixed(0)}. This scales a past decline, not a future loss estimate.`,
+          `For your $${state.profile.amount.toLocaleString()}, the same historical nominal decline would reduce value by about $${((state.profile.amount * Math.abs(r.nominalDD)) / 100).toFixed(0)}. This scales a past decline, not a future loss estimate.`,
           "tiny",
         ),
       );
     detailed.append(
       make(
         "p",
-        lang === "zh"
-          ? `本区间年化实际增长 ${pct(r.annReal)}。这不是承诺收益；若为负，表示这段样本里购买力在减少。`
-          : `Annualised real growth over this sample: ${pct(r.annReal)}. This is not an expected future return; a negative value means purchasing power eroded in this sample.`,
+        `Annualised real growth over this sample: ${pct(r.annReal)}. This is not an expected future return; a negative value means purchasing power eroded in this sample.`,
         "tiny",
       ),
     );
-    const readable = make(
-      "a",
-      lang === "zh"
-        ? "查看可读的历史比较表 → "
-        : "Open the historical comparison tables → ",
-    );
+    const readable = make("a", "Open the historical comparison tables → ");
     readable.href = "research.html#scorecard";
     detailed.append(readable);
     const source = make("a", d.data);
@@ -913,9 +704,7 @@
   function forecastWords(m) {
     if (!m.valid) return t().noTest;
     return (
-      (lang === "zh"
-        ? `平均误差 ${pct(m.model)}，价格不变猜法 ${pct(m.baseline)}，${m.n} 次历史检验。`
-        : `Average miss ${pct(m.model)} versus ${pct(m.baseline)} for unchanged prices, across ${m.n} historical checks. `) +
+      `Average miss ${pct(m.model)} versus ${pct(m.baseline)} for unchanged prices, across ${m.n} historical checks. ` +
       t()[m.comparison]
     );
   }
@@ -983,9 +772,7 @@
       mount.append(
         make(
           "p",
-          (lang === "zh"
-            ? "可继续研究的选项（不代表推荐顺序）："
-            : "Research options (not a return ranking): ") +
+          "Research options (not a return ranking): " +
             choices.map((r) => label(r.asset)).join(" · "),
           "research-shortlist",
         ),
@@ -994,9 +781,7 @@
       mount.append(
         make(
           "p",
-          lang === "zh"
-            ? "当前报价快照不够新或无法取得；不能据此判断现在是否适合入场。"
-            : "The quote snapshot is stale or unavailable; it cannot establish current entry conditions.",
+          "The quote snapshot is stale or unavailable; it cannot establish current entry conditions.",
           "notice",
         ),
       );
@@ -1007,44 +792,26 @@
     if (m?.fresh) {
       const text =
         m.growth === "Falling" && m.inflation === "Rising"
-          ? lang === "zh"
-            ? "宏观面板显示增长放慢、通胀上升：政策取舍更难，不能把它当成短线机会。"
-            : "The macro panel shows slowing growth and rising inflation: a harder policy trade-off, not a short-term opportunity signal."
-          : lang === "zh"
-            ? "宏观面板可作背景，但没有经过验证的择时能力。"
-            : "The macro panel supplies context, not a validated entry-timing model.";
+          ? "The macro panel shows slowing growth and rising inflation: a harder policy trade-off, not a short-term opportunity signal."
+          : "The macro panel supplies context, not a validated entry-timing model.";
       current.append(make("p", text));
       if (m.pressure.length)
         current.append(
           make(
             "p",
-            lang === "zh"
-              ? "面板还标记了信用或就业压力，先调查风险，不把压力当作抄底理由。"
-              : "The panel also flags credit or employment pressure. Investigate the risk rather than treating stress as a reason to buy.",
+            "The panel also flags credit or employment pressure. Investigate the risk rather than treating stress as a reason to buy.",
           ),
         );
-      current.append(
-        make(
-          "p",
-          (lang === "zh" ? "宏观快照检查时间：" : "Macro snapshot checked: ") +
-            m.checked,
-          "tiny",
-        ),
-      );
+      current.append(make("p", "Macro snapshot checked: " + m.checked, "tiny"));
     } else
       current.append(
         make(
           "p",
-          lang === "zh"
-            ? "当前宏观数据缺失或过期，不能据此断言现在适合买入。"
-            : "Current macro evidence is missing or stale; it cannot establish that now is a good entry time.",
+          "Current macro evidence is missing or stale; it cannot establish that now is a good entry time.",
           "tiny",
         ),
       );
-    const macroLink = make(
-      "a",
-      lang === "zh" ? "查看经济环境证据" : "Inspect the economic evidence",
-    );
+    const macroLink = make("a", "Inspect the economic evidence");
     macroLink.href = "research.html#weather";
     current.append(macroLink);
     mount.append(current);
@@ -1053,9 +820,7 @@
       mount.append(
         make(
           "p",
-          lang === "zh"
-            ? "每张卡片是独立的“单一资产＋其余资金不变”替代情景，不能把多张卡片的投入金额叠加。若同时持有多项风险资产，需要重新评估总损失与相关性。"
-            : "Each card is an alternative single-asset-plus-unchanged-cash scenario. Do not add their amounts together. Multiple simultaneous exposures require a new assessment of combined loss and correlation.",
+          "Each card is an alternative single-asset-plus-unchanged-cash scenario. Do not add their amounts together. Multiple simultaneous exposures require a new assessment of combined loss and correlation.",
           "notice",
         ),
       );
@@ -1067,9 +832,7 @@
       make("summary", d.rules),
       make(
         "p",
-        lang === "zh"
-          ? "先检查必要资金、借款、零亏损和基本资金安排，再检查短线目的、货币、期限、压力情景和历史样本。不能因为愿意冒险，就忽略实际上承担不起风险。SPY/TLT 最少五年，黄金和 Bitcoin 最少三年；这些保守期限与压力数值是筛选规则，不保证持有到期不亏。重叠窗口比例不是未来概率，也不证明当前价格便宜。"
-          : "The screen checks essential/borrowed money, zero-loss needs and financial basics before goals, currency, horizon, stress and sample size. Willingness does not override capacity. Policy minima: five years for SPY/TLT; three for gold/Bitcoin. These conservative horizons and stress amounts do not guarantee recovery. Overlapping window proportions are not future probabilities or evidence that today’s price is cheap.",
+        "The screen checks essential/borrowed money, zero-loss needs and financial basics before goals, currency, horizon, stress and sample size. Willingness does not override capacity. Policy minima: five years for SPY/TLT; three for gold/Bitcoin. These conservative horizons and stress amounts do not guarantee recovery. Overlapping window proportions are not future probabilities or evidence that today’s price is cheap.",
       ),
       make("p", d.limited, "tiny"),
     );
@@ -1087,10 +850,7 @@
     const status = document.getElementById("money-status");
     busy = true;
     document.querySelector("#money-form button").disabled = true;
-    status.textContent =
-      lang === "zh"
-        ? "正在读取带日期的研究与价格数据……"
-        : "Reading dated research and price evidence…";
+    status.textContent = "Reading dated research and price evidence…";
     const answers = readForm();
     try {
       const results = await Promise.allSettled([
@@ -1116,17 +876,13 @@
       renderResult();
       status.textContent = state.unavailable
         ? t().insufficient
-        : lang === "zh"
-          ? "结果已生成。先看结论，再展开每张资产卡片的数据依据。"
-          : "Ready. Read the conclusion, then open each asset’s evidence.";
+        : "Ready. Read the conclusion, then open each asset’s evidence.";
       document.dispatchEvent(new Event("realworth:guidance-changed"));
     } catch (e) {
       state = null;
       renderResult();
       status.textContent =
-        lang === "zh"
-          ? "无法完成检查，请确认问题已填全且金额有效。没有生成适合买入的结论。"
-          : "Could not complete this check. Confirm every answer and amount; no asset has been cleared for purchase.";
+        "Could not complete this check. Confirm every answer and amount; no asset has been cleared for purchase.";
     } finally {
       busy = false;
       document.querySelector("#money-form button").disabled = false;
@@ -1147,14 +903,10 @@
       Date.now() - Date.parse(meta.checked_at) > 45 * 6e4 ||
       Date.parse(meta.checked_at) > Date.now() + 6e5;
     const staleText = oldSnapshot
-      ? lang === "zh"
-        ? "报价快照不是足够新的当前观察；先检查更新时间，不把它当作入场信号。"
-        : "The quote snapshot is not a sufficiently fresh current observation. Check its update time before considering an entry."
+      ? "The quote snapshot is not a sufficiently fresh current observation. Check its update time before considering an entry."
       : validTime(row.forecast?.target_at) &&
           Date.parse(row.forecast.target_at) <= Date.now()
-        ? lang === "zh"
-          ? "这次情景的目标时间已经过去；应先看后续核验，不当作新预测。"
-          : "This scenario’s target has passed. Read the outcome check rather than treating it as a new prediction."
+        ? "This scenario’s target has passed. Read the outcome check rather than treating it as a new prediction."
         : d.stale;
     box.append(
       make("h4", d.plain),
@@ -1163,12 +915,7 @@
     const proof = make("details");
     proof.className = "card-test-evidence";
     proof.append(
-      make(
-        "summary",
-        lang === "zh"
-          ? "为什么这样说？看检验记录"
-          : "Why? See the test evidence",
-      ),
+      make("summary", "Why? See the test evidence"),
       make("p", forecastWords(m), "tiny"),
       make("p", d.noSignal, "tiny"),
       make("p", d.coverage, "tiny"),
@@ -1177,9 +924,7 @@
       proof.append(
         make(
           "p",
-          lang === "zh"
-            ? `公开发布后的记录：${live.dates} 个不同目标日期，外层范围覆盖 ${pct(live.coverage)}。这不是赚钱比例，也不是猜对涨跌的比例。`
-            : `Published checks: ${live.dates} distinct target dates; ${pct(live.coverage)} inside the outer range. This is not the share of profitable trades or correct directions.`,
+          `Published checks: ${live.dates} distinct target dates; ${pct(live.coverage)} inside the outer range. This is not the share of profitable trades or correct directions.`,
           "tiny",
         ),
       );
@@ -1187,9 +932,7 @@
       proof.append(
         make(
           "p",
-          lang === "zh"
-            ? "尚未读到这项资产的发布后核验结果。"
-            : "Post-publication checks are not available for this card.",
+          "Post-publication checks are not available for this card.",
           "tiny",
         ),
       );
@@ -1201,17 +944,10 @@
         const exampleBox = make("details"),
           format = (n) => "$" + Math.round(n).toLocaleString();
         exampleBox.append(
-          make(
-            "summary",
-            lang === "zh"
-              ? "换成一笔钱，会是多少？"
-              : "What would that mean for an amount of money?",
-          ),
+          make("summary", "What would that mean for an amount of money?"),
           make(
             "p",
-            lang === "zh"
-              ? `只为理解数字：假设在冻结起点价格投入 ${format(amount)}，外层范围对应约 ${format(example.lower)} 至 ${format(example.upper)}。这不是从今天报价买入后的回报预测，未计费用和税，实际也可能超出范围。`
-              : `For illustration only: ${format(amount)} invested at the frozen starting quote would scale the outer range to about ${format(example.lower)}–${format(example.upper)}. This is not a return forecast for buying at today’s quote, excludes costs/taxes, and outcomes can lie outside it.`,
+            `For illustration only: ${format(amount)} invested at the frozen starting quote would scale the outer range to about ${format(example.lower)}–${format(example.upper)}. This is not a return forecast for buying at today’s quote, excludes costs/taxes, and outcomes can lie outside it.`,
             "tiny",
           ),
         );
@@ -1230,17 +966,14 @@
         "card-fit",
       ),
     );
-    const link = make(
-      "a",
-      lang === "zh" ? "回到资金用途检查 ↑" : "Check my money’s purpose ↑",
-    );
+    const link = make("a", "Check my money’s purpose ↑");
     link.href = "#money-plan";
     box.append(link);
     card.append(box);
   }
   api.appendCardGuide = appendCardGuide;
   api.assetDescription = (ticker) => t().cardNames[ticker];
-  api.language = () => lang;
+
   api.snapshot = () => state;
   api.updateIntro = () => {
     const h = document.getElementById("forecast-guide-title"),
@@ -1249,9 +982,6 @@
     if (p) p.textContent = t().summary;
   };
   api.updateIntro();
-  document.querySelectorAll("[data-guide-language]").forEach((select) => {
-    select.value = lang;
-    select.addEventListener("change", () => languageChange(select.value));
-  });
+
   renderForm();
 })(globalThis);

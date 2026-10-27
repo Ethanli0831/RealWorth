@@ -2,7 +2,7 @@
   {
     "id": "transmutation",
     "name": "Gold transmutation / supply technology",
-    "pattern": "(?=.*(?:\\bgold\\b|黄金))(?=.*(?:transmut|artificial|nuclear|lead into|lead to|合成|人造))",
+    "pattern": "(?=.*(?:\\bgold\\b))(?=.*(?:transmut|artificial|nuclear|lead into|lead to))",
     "chain": [
       "A report claims that gold nuclei can be produced by nuclear transmutation.",
       "First check reproducible yield, energy cost, usable output, isotope stability and commercial scale.",

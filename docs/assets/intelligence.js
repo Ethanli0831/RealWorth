@@ -340,13 +340,7 @@
         ),
       );
       card.append(make("p", money(row.quote), "quote-value"));
-      card.append(
-        make(
-          "p",
-          `${globalThis.RealWorthGuidance?.language() === "zh" ? "报价时间" : "Observed"} ${date(row.quote_at)}`,
-          "tiny",
-        ),
-      );
+      card.append(make("p", `${"Observed"} ${date(row.quote_at)}`, "tiny"));
       if (row.error) card.append(make("p", row.error, "notice"));
       const f = row.forecast;
       if (!f) {
@@ -359,13 +353,7 @@
         );
         return card;
       }
-      card.append(
-        make(
-          "p",
-          `${globalThis.RealWorthGuidance?.language() === "zh" ? "情景对应时间" : "Target"} ${date(f.target_at)}`,
-          "target-time",
-        ),
-      );
+      card.append(make("p", `${"Target"} ${date(f.target_at)}`, "target-time"));
       card.append(
         make(
           "p",
@@ -384,24 +372,9 @@
       const scenarios = make("dl", undefined, "scenario-grid"),
         q = f.levels;
       for (const [label, value] of [
-        [
-          globalThis.RealWorthGuidance?.language() === "zh"
-            ? "历史偏低情景"
-            : "Lower historical range",
-          `${money(q.q10)}–${money(q.q30)}`,
-        ],
-        [
-          globalThis.RealWorthGuidance?.language() === "zh"
-            ? "历史中间值"
-            : "Middle estimate",
-          money(q.q50),
-        ],
-        [
-          globalThis.RealWorthGuidance?.language() === "zh"
-            ? "历史偏高情景"
-            : "Upper historical range",
-          `${money(q.q70)}–${money(q.q90)}`,
-        ],
+        ["Lower historical range", `${money(q.q10)}–${money(q.q30)}`],
+        ["Middle estimate", money(q.q50)],
+        ["Upper historical range", `${money(q.q70)}–${money(q.q90)}`],
       ]) {
         const group = make("div");
         group.append(make("dt", label), make("dd", value));
@@ -411,7 +384,7 @@
         scenarios,
         make(
           "p",
-          `${globalThis.RealWorthGuidance?.language() === "zh" ? "历史中间一段" : "Middle historical range"}: ${money(q.q40)}–${money(q.q60)}`,
+          `${"Middle historical range"}: ${money(q.q40)}–${money(q.q60)}`,
           "tiny",
         ),
       );

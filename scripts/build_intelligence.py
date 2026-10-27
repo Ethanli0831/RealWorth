@@ -132,6 +132,15 @@ def evidence_blocks(body):
 
 
 def validate_analysis(value, evidence, title=None):
+    # The public site is English-only. Also revalidate cached model prose so a
+    # mixed-language interpretation cannot return during a later refresh.
+    if re.search(
+        r"[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]",
+        json.dumps(value, ensure_ascii=False),
+    ):
+        raise ValueError(
+            "AI interpretation must use English; mixed-language output rejected"
+        )
     if (
         not isinstance(value, dict)
         or not isinstance(value.get("summary"), str)

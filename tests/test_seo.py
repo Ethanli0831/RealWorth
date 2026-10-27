@@ -65,17 +65,14 @@ class SearchDiscoverability(unittest.TestCase):
                 s.find("meta", attrs={"property": "og:url"})["content"], data["url"]
             )
 
-    def test_equivalent_home_languages_are_reciprocal_and_statically_readable(self):
-        for filename in ["index.html", "zh.html"]:
-            s = BeautifulSoup((DOCS / filename).read_text(), "html.parser")
-            alts = {n["hreflang"]: n["href"] for n in s.select("link[hreflang]")}
-            self.assertEqual(
-                alts, {"en": BASE, "zh-Hans": BASE + "zh.html", "x-default": BASE}
-            )
-        zh = BeautifulSoup((DOCS / "zh.html").read_text(), "html.parser")
-        self.assertEqual(zh.html["lang"], "zh-Hans")
-        self.assertIn("比特币", zh.main.get_text())
-        self.assertGreater(len(zh.main.get_text()), 500)
+    def test_public_pages_use_english_without_retired_translation_links(self):
+        self.assertFalse((DOCS / "zh.html").exists())
+        for p in pages():
+            s = BeautifulSoup(p.read_text(), "html.parser")
+            self.assertEqual(s.html["lang"], "en")
+            self.assertFalse(s.select("link[hreflang], [data-guide-language]"))
+            self.assertNotRegex(s.get_text(), r"[\u3400-\u4dbf\u4e00-\u9fff]")
+            self.assertFalse(s.select('a[href="zh.html"]'))
 
     def test_local_html_links_resolve_without_javascript(self):
         for p in pages():

@@ -1612,19 +1612,6 @@ summary {
 .money-panel {
   border-top: 3px solid var(--accent);
 }
-.guide-language {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 12px;
-  font-size: 0.8rem;
-  margin-bottom: 15px;
-}
-.guide-language select {
-  width: auto;
-  min-height: 44px;
-  max-width: 180px;
-}
 .money-questions {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1716,11 +1703,6 @@ summary {
   font-size: 1.65rem;
   margin-top: 0;
 }
-.forecast-introduction .guide-language {
-  flex-direction: column;
-  align-items: start;
-  min-width: 150px;
-}
 .asset-plain-description {
   color: var(--muted);
   font-size: 0.88rem;
@@ -1763,14 +1745,6 @@ summary {
   }
   .forecast-introduction {
     display: block;
-  }
-  .forecast-introduction .guide-language {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .money-panel > .guide-language {
-    justify-content: space-between;
   }
   #money-form > .button {
     width: 100%;

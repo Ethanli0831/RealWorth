@@ -66,6 +66,10 @@ class ArticleEvidence(unittest.TestCase):
         self.assertEqual(
             m.validate_analysis(good, evidence)["gold"]["direction"], "mixed"
         )
+        good["bitcoin"]["condition"] += " \u907f\u98ce\u6e2f"
+        with self.assertRaisesRegex(ValueError, "must use English"):
+            m.validate_analysis(good, evidence)
+        good["bitcoin"]["condition"] = "Depends on risk appetite and liquidity."
         good["evidence_ids"] = ["E99"]
         with self.assertRaises(ValueError):
             m.validate_analysis(good, evidence)

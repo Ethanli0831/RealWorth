@@ -203,7 +203,6 @@ def main():
             checks += 1
 
             # The money-purpose screen uses real research, not fabricated model answers.
-            page.locator('[data-guide-language]').first.select_option('en')
             assert page.locator('#money-purpose').evaluate('e=>e.selectedOptions[0].textContent')=='Choose an answer'
             def answer_money(**changes):
                 values={'purpose':'surplus','horizon':'60','loss':'50','readiness':'ready','goal':'growth','currency':'USD'}
@@ -235,11 +234,9 @@ def main():
             answer_money(goal='quick',loss='100',horizon='0')
             assert 'quick-profit' in page.locator('#money-result h3').inner_text()
             assert page.locator('.money-asset[data-status=observe]').count()==5
-            page.locator('[data-guide-language]').first.select_option('zh')
-            assert '这笔钱' in page.locator('#money-title').inner_text()
-            assert '赚快钱' in page.locator('#money-result h3').inner_text()
-            assert '这对你意味着什么' in page.locator('.card-explanation').first.inner_text()
-            page.locator('[data-guide-language]').first.select_option('en')
+            assert page.locator('[data-guide-language]').count()==0
+            assert 'What is this money for?' in page.locator('#money-title').inner_text()
+            assert 'What this means' in page.locator('.card-explanation').first.inner_text()
             checks += 1
 
             answer_money(currency='CAD')
@@ -278,7 +275,7 @@ def main():
             assert 'percentile' in page.locator('#market-structure').inner_text()
             checks += 1
 
-            for path in ['', 'purchasing-power.html','research.html','monitor.html','methodology.html','zh.html','about.html']:
+            for path in ['', 'purchasing-power.html','research.html','monitor.html','methodology.html','about.html','learn.html','bitcoin-inflation.html','compare-purchasing-power.html','forecast-evidence.html']:
                 page.set_viewport_size({'width':390,'height':844})
                 visit(path)
                 assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),path
@@ -338,13 +335,17 @@ def main():
             assert no_evidence.locator('.money-asset').count()==0
             assert no_evidence.locator('.forecast-card').count()==5
             checks += 1
-            visit('zh.html')
-            assert page.locator('html').get_attribute('lang')=='zh-Hans'
-            assert '比特币' in page.locator('h1').inner_text()
-            assert page.locator('link[rel=canonical]').get_attribute('href')=='https://ethanli0831.github.io/RealWorth/zh.html'
-            page.get_by_role('link',name='开始资金用途问答 →').click()
-            page.wait_for_url('**/monitor.html#money-plan')
-            assert page.locator('#money-form').is_visible()
+            # English-only output must not depend on the browser's preferred locale.
+            locale_context=browser.new_context(locale='zh-CN')
+            locale_context.route(CDN, lambda route: route.fulfill(status=200, headers={'content-type': chart_type, 'access-control-allow-origin': cors}, body=chart_js))
+            if args.system_tls_transport:
+                locale_context.route(base + '**', fetch_verified_site)
+            locale_page=locale_context.new_page()
+            locale_page.goto(base+'monitor.html',wait_until='networkidle')
+            assert locale_page.locator('#money-title').inner_text()=='What is this money for?'
+            assert locale_page.locator('[data-guide-language]').count()==0
+            assert locale_page.locator('.card-explanation').count()==5
+            locale_context.close()
             checks += 1
             visit('about.html')
             assert 'GitHub repository' in page.locator('main').inner_text()
@@ -352,7 +353,7 @@ def main():
             checks += 1
             assert not errors,errors
             browser.close()
-        print(f'PASS: {checks} real-browser functional scenarios; seven pages, comparisons, evidence and source failures.')
+        print(f'PASS: {checks} real-browser functional scenarios; ten pages, English-only guidance, comparisons, evidence and source failures.')
     finally:
         if server:server.shutdown()
 

@@ -20,11 +20,28 @@ verified after deployment; see [VALIDATION.md](VALIDATION.md).
 
 ![RealWorth's calculator, five-asset scorecard and inflation charts](docs/assets/screenshot.png)
 
+## Search discoverability
+
+The public sitemap is https://ethanli0831.github.io/RealWorth/sitemap.xml.
+Canonical URLs, distinct descriptions, share metadata and WebPage identity are
+provided for each landing page. [中文介绍](https://ethanli0831.github.io/RealWorth/zh.html)
+is a static Chinese overview; [About](https://ethanli0831.github.io/RealWorth/about.html)
+explains maintenance and corrections. None of these guarantees Google indexing
+or ranking. The owner still needs Google Search Console ownership verification
+and sitemap submission; see [the click-by-click guide](SEARCH_CONSOLE.zh-CN.md).
+No verification token has been invented. A robots.txt under /RealWorth/ would
+not control origin-root crawling, so no misleading project robots file is added.
+
 ## Start with the money's purpose
 
 [What fits my money?](https://ethanli0831.github.io/RealWorth/monitor.html#money-plan)
 asks six short questions and shows a practical recommendation, per-asset fit
 and dated supporting evidence. English and simplified Chinese are available.
+Purpose fit, exposure size and next-period timing are assessed separately.
+Reduced USD exposure can be illustrated under an explicit stress budget; the
+remainder is assumed unchanged cash, each card is a separate alternative, and
+no allocation or loss cap is promised. CAD/other-currency users can view
+conditional USD comparisons without a fabricated local-currency assessment.
 Essential/borrowed money, zero-loss needs and missing financial basics override
 speculative appetite. Short-term quick-profit requests get no buy signal;
 waiting or choosing locally appropriate cash arrangements can be the result.

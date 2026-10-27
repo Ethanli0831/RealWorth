@@ -1737,3 +1737,27 @@ summary {
   font-size: 0.82rem;
   margin-right: 10px;
 }
+.budget-illustration {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: #f5f2e9;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+.research-shortlist {
+  font-weight: 600;
+  color: var(--accent);
+  padding: 14px 0;
+}
+.money-conditional .fit-label {
+  color: var(--amber);
+}
+.money-observe .fit-label,
+.money-unknown .fit-label {
+  color: var(--muted);
+}
+.money-partial .fit-label,
+.money-experiment .fit-label {
+  color: var(--amber);
+}

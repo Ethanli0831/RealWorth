@@ -319,6 +319,94 @@
         "历史研究数据已有时差，展示历史比较不代表已经判断当前适合买入。",
     },
   };
+  Object.assign(dict.en, {
+    amount: "Total money for this plan (not the purchase amount for one asset)",
+    partial: "Compare reduced exposure, not an all-in position",
+    conditional: "USD comparison possible; currency assessment still needed",
+    observe: "Observe and learn; no validated quick-profit strategy",
+    budgetTitle:
+      "Some options may fit at a smaller scale. Compare the loss budget first.",
+    currencyTitle:
+      "There are USD comparisons to research; separately assess the currency you will spend.",
+    research: "Purpose and horizon support further research",
+    experiment: "Possible disposable-money experiment",
+    next: "A practical next step",
+    role: "Possible role",
+    roles: {
+      Bitcoin: "High-risk experiment",
+      Gold: "Diversification / gold exposure",
+      "S&P 500": "Long-term diversified equity growth",
+      "T-Bills": "Short-duration liquidity buffer",
+      "LT Bonds": "Long-duration rate exposure",
+    },
+    budgetNext:
+      "Compare the smaller-exposure illustrations below. They assume the remainder is unchanged cash and the stated stress occurs; they are not recommended allocations or loss caps. Then review fees, currency, existing holdings and whether that assumed loss still fits your plans.",
+    currencyNext:
+      "Use the USD evidence to make a research shortlist, then compare unhedged versus hedged exposure, exchange costs and local purchasing power. Amount-based risk budgets are withheld until the currency effect is assessed.",
+    fitTiming: "Long-term fit and short-term timing are different questions",
+    timingText:
+      "The next-period model has not established a profitable entry rule. That does not make a compatible long-term investment unsuitable. You can research diversification, costs and an investment schedule without claiming to know tomorrow’s best price.",
+    noSignal:
+      "This next-period range is not an entry-timing rule. Long-term suitability is assessed separately above.",
+  });
+  Object.assign(dict.zh, {
+    amount: "本次计划安排的资金总额（不是单一资产的买入金额）",
+    partial: "可降低单项投入后再比较，不宜整笔投入",
+    conditional: "可先研究美元资产，仍需补上汇率评估",
+    observe: "可以观察学习，但没有可靠的短炒方法",
+    budgetTitle: "有些选项可以缩小投入后研究，先看整笔资金的损失预算。",
+    currencyTitle: "有可研究的美元资产选项；花钱货币的风险需要另外评估。",
+    research: "用途和期限支持进一步研究",
+    experiment: "可作为可全损闲钱的实验比较",
+    role: "可能承担的任务",
+    roles: {
+      Bitcoin: "高风险实验",
+      Gold: "黄金敞口／分散工具",
+      "S&P 500": "长期分散股票增长",
+      "T-Bills": "短期限流动性缓冲",
+      "LT Bonds": "长期利率敞口",
+    },
+    budgetNext:
+      "先比较下方降低单项投入后的数学演示。它假设其余资金是不变的现金、资产发生所列压力跌幅，不是推荐仓位或最大损失保证。再核对费用、汇率、已有持仓和这类损失是否仍不影响计划。",
+    currencyNext:
+      "先用美元历史列出研究清单，再单独比较未对冲／对冲敞口、换汇成本和本地购买力。汇率影响没有评估之前，不给本地货币的金额风险预算。",
+    fitTiming: "长期是否适配，与短线什么时候买，是两个问题",
+    timingText:
+      "次日模型没有证明可靠的交易买点，但这不等于符合用途和期限的长期投资不适合。可以继续研究分散、费用和投入节奏，而不声称知道明天的最佳价格。",
+    noSignal:
+      "这张次日区间卡片不能提供可靠买点；长期是否适配，要单独看上方的资金用途筛选。",
+  });
+  Object.assign(dict.en.reasons, {
+    budget:
+      "The all-in exposure exceeds your loss limit; a reduced-exposure scenario can be researched.",
+    quick:
+      "The quick-profit strategy is unsupported; that is different from saying the asset can never serve a longer-term role.",
+  });
+  Object.assign(dict.zh.reasons, {
+    budget: "整笔投入超出你的损失限度，可以研究降低单项敞口的演示。",
+    quick: "缺少依据的是可靠赚快钱的方法，并不是说这种资产永远没有长期用途。",
+  });
+  function exposureScenario(amount, lossPercent, stressPercent) {
+    if (
+      ![amount, lossPercent, stressPercent].every(Number.isFinite) ||
+      amount <= 0 ||
+      lossPercent <= 0 ||
+      lossPercent > 100 ||
+      stressPercent <= 0 ||
+      stressPercent > 100
+    )
+      return null;
+    const fraction = Math.min(1, lossPercent / stressPercent),
+      riskAmount = amount * fraction;
+    return {
+      fraction,
+      riskAmount,
+      cashAmount: amount - riskAmount,
+      stressLoss: (riskAmount * stressPercent) / 100,
+      stressPercent,
+      lossPercent,
+    };
+  }
   function validateProfile(p) {
     for (const key of [
       "purpose",
@@ -487,15 +575,13 @@
           : "reserve"
         : p.goal === "quick"
           ? "quick"
-          : p.currency !== "USD"
-            ? "currencyTitle"
-            : p.horizon <= 12
-              ? "short"
-              : p.goal === "protect"
-                ? "cautious"
-                : p.goal === "income"
-                  ? "income"
-                  : "growth";
+          : p.horizon <= 12
+            ? "short"
+            : p.goal === "protect"
+              ? "cautious"
+              : p.goal === "income"
+                ? "income"
+                : "growth";
     const matching = p.horizon >= 12 ? p.horizon : 12;
     const rows = data.meta.assets.map((asset) => {
       const policy = policies[asset],
@@ -513,38 +599,50 @@
           ? "basics"
           : p.goal === "quick"
             ? "quick"
-            : p.currency !== "USD"
-              ? "currency"
-              : p.horizon < policy.months
-                ? "deadline"
-                : p.loss < stress
-                  ? "loss"
-                  : p.goal === "protect" && asset !== "T-Bills"
-                    ? "capital"
-                    : p.goal === "income" && asset !== "T-Bills"
-                      ? "income"
-                      : rolling.n < 12
-                        ? "history"
+            : p.horizon < policy.months
+              ? "deadline"
+              : p.goal === "protect" && asset !== "T-Bills"
+                ? "capital"
+                : p.goal === "income" && asset !== "T-Bills"
+                  ? "income"
+                  : rolling.n < 12
+                    ? "history"
+                    : asset === "Bitcoin" && p.purpose !== "surplus"
+                      ? "protected"
+                      : p.loss < stress
+                        ? "budget"
                         : "eligible";
-      if (
-        asset === "Bitcoin" &&
-        p.purpose !== "surplus" &&
+      let baseStatus =
         reason === "eligible"
-      )
-        reason = "protected";
-      const status = ["currency", "history"].includes(reason)
-        ? "unknown"
-        : reason !== "eligible"
-          ? "avoid"
-          : asset === "Bitcoin"
+          ? asset === "Bitcoin"
             ? "experiment"
-            : "research";
+            : "research"
+          : reason === "budget"
+            ? "partial"
+            : reason === "quick"
+              ? "observe"
+              : reason === "history"
+                ? "unknown"
+                : "avoid";
+      const currencyUnassessed = p.currency !== "USD";
+      const status =
+        currencyUnassessed &&
+        ["research", "partial", "experiment"].includes(baseStatus)
+          ? "conditional"
+          : baseStatus;
+      const scenario =
+        baseStatus === "partial" && !currencyUnassessed
+          ? exposureScenario(p.amount, p.loss, stress)
+          : null;
       const f = forecasts?.assets?.find((r) => r.ticker === tickers[asset]);
       return {
         asset,
         ticker: tickers[asset],
         status,
         reason,
+        baseStatus,
+        currencyUnassessed,
+        scenario,
         nominalDD,
         realDD: real.max_drawdown,
         annReal: real.ann_real_return,
@@ -556,11 +654,23 @@
         market: assessForecast(f, now),
       };
     });
+    const candidates = rows.filter((r) =>
+      ["research", "partial", "conditional", "experiment"].includes(r.status),
+    );
+    if (action === "growth") {
+      if (!candidates.length) action = "cautious";
+      else if (rows.some((r) => r.baseStatus === "partial"))
+        action = "budgetTitle";
+    }
     if (
-      action === "growth" &&
-      !rows.some((r) => r.status === "research" && r.asset === "S&P 500")
+      p.currency !== "USD" &&
+      candidates.length &&
+      !protectedMoney &&
+      !basics &&
+      p.goal !== "quick" &&
+      ["growth", "budgetTitle", "income"].includes(action)
     )
-      action = "cautious";
+      action = "currencyTitle";
     return {
       profile: p,
       action,
@@ -594,6 +704,7 @@
     evaluate,
     assessForecast,
     investmentIllustration,
+    exposureScenario,
     validateProfile,
     policies,
     dict,
@@ -715,7 +826,7 @@
         "article",
         undefined,
         "money-asset " +
-          (r.status === "avoid" ? "money-avoid" : "money-compare"),
+          (r.status === "research" ? "money-compare" : "money-" + r.status),
       );
     box.dataset.asset = r.asset;
     box.dataset.status = r.status;
@@ -724,6 +835,22 @@
       make("p", d[r.status], "fit-label"),
       make("p", d.reasons[r.reason]),
     );
+    box.append(make("p", `${d.role}: ${d.roles[r.asset]}`, "tiny"));
+    if (r.scenario) {
+      const x = r.scenario,
+        f = (n) =>
+          "$" + n.toLocaleString("en-US", { maximumFractionDigits: 2 });
+      box.append(
+        make(
+          "p",
+          lang === "zh"
+            ? `数学演示：总额 ${f(state.profile.amount)}，若资产下跌 ${pct(x.stressPercent)}，风险部分 ${f(x.riskAmount)}、其余 ${f(x.cashAmount)} 假设不变时，损失约 ${f(x.stressLoss)}，相当于总额 ${x.lossPercent}%。这不是推荐仓位；跌幅更大、费用或汇率变化仍可能超出预算。`
+            : `Arithmetic illustration: from ${f(state.profile.amount)}, ${f(x.riskAmount)} exposed to a ${pct(x.stressPercent)} fall and ${f(x.cashAmount)} assumed unchanged would lose about ${f(x.stressLoss)} (${x.lossPercent}% of the total). This is not a recommended allocation; a larger fall, costs or FX can exceed it.`,
+          "budget-illustration",
+        ),
+      );
+    }
+    if (r.currencyUnassessed) box.append(make("p", d.currencyWhy, "tiny"));
     const detailed = make("details"),
       summary = make(
         "summary",
@@ -846,7 +973,23 @@
             : state.action === "currencyTitle"
               ? d.cashNext
               : d.longNext;
+    if (state.action === "budgetTitle") next = d.budgetNext;
+    if (state.action === "currencyTitle") next = d.currencyNext;
     mount.append(make("h4", d.next), make("p", next));
+    const choices = state.rows.filter((r) =>
+      ["research", "partial", "conditional", "experiment"].includes(r.status),
+    );
+    if (choices.length)
+      mount.append(
+        make(
+          "p",
+          (lang === "zh"
+            ? "可继续研究的选项（不代表推荐顺序）："
+            : "Research options (not a return ranking): ") +
+            choices.map((r) => label(r.asset)).join(" · "),
+          "research-shortlist",
+        ),
+      );
     if (state.forecastsStale)
       mount.append(
         make(
@@ -858,22 +1001,8 @@
         ),
       );
     const current = make("div", undefined, "money-current");
-    current.append(
-      make(
-        "h4",
-        lang === "zh"
-          ? "现在的市场，给了买入理由吗？"
-          : "Does today’s evidence justify entering now?",
-      ),
-    );
-    current.append(
-      make(
-        "p",
-        lang === "zh"
-          ? "没有经验证的短线获利信号。即使某些价格估计误差略小，也没有证明扣除费用后能赚钱；暂时不投是允许的结论。"
-          : "There is no validated short-term profit signal. A slightly smaller price error does not establish gains after costs; choosing not to invest now remains valid.",
-      ),
-    );
+    current.append(make("h4", d.fitTiming));
+    current.append(make("p", d.timingText));
     const m = state.macro;
     if (m?.fresh) {
       const text =
@@ -920,6 +1049,16 @@
     current.append(macroLink);
     mount.append(current);
     mount.append(make("h4", d.evidence));
+    if (state.rows.some((r) => r.scenario))
+      mount.append(
+        make(
+          "p",
+          lang === "zh"
+            ? "每张卡片是独立的“单一资产＋其余资金不变”替代情景，不能把多张卡片的投入金额叠加。若同时持有多项风险资产，需要重新评估总损失与相关性。"
+            : "Each card is an alternative single-asset-plus-unchanged-cash scenario. Do not add their amounts together. Multiple simultaneous exposures require a new assessment of combined loss and correlation.",
+          "notice",
+        ),
+      );
     const grid = make("div", undefined, "money-evidence-grid");
     for (const row of state.rows) grid.append(evidenceRow(row));
     mount.append(grid);

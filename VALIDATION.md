@@ -1,5 +1,50 @@
 # Validation record
 
+## Tiered guidance and search discoverability — 2026-10-27 (Toronto)
+
+- **59 Python, 43 JavaScript and 25 real Chromium scenarios passed locally.**
+  New coverage checks reduced-exposure arithmetic and constraint priority,
+  conditional non-USD comparisons, short-horizon liquidity, seven page layouts,
+  Chinese landing navigation, reciprocal language links, canonical URLs,
+  sitemap coverage and structured identity. SEO tests do not assert Google
+  indexing, and finance tests do not prove future profitability.
+- Guidance separates purpose fit, exposure size and next-period timing. A
+  missing trading edge no longer reads as a blanket ban on long-term investing.
+  Reduced-exposure illustrations apply only after purpose, financial basics,
+  deadline, goal and evidence checks pass. They are independent single-asset
+  plus unchanged-cash alternatives, not additive portfolios, recommended
+  allocations or guaranteed loss caps. USD-only evidence does not become local
+  purchasing-power assessment; non-USD amount budgets remain withheld.
+- A fixed profile check retained all five exclusions for essential money,
+  zero-loss needs, borrowing and missing emergency reserves. For ready USD
+  spare money, five-year growth and a 15% total loss limit, the previous four
+  exclusions plus BIL comparison became four partial-exposure illustrations
+  plus BIL comparison. This is a scope/size distinction, not stronger return
+  evidence. Quick-profit profiles get observation-only strategy guidance;
+  an unsupported short strategy is not labelled permanent asset unsuitability.
+- All seven public landing pages now have distinct title/description,
+  project-scoped canonical, index/follow, Open Graph/share metadata and truthful
+  WebPage identity. sitemap.xml lists their canonical URLs. A static Chinese
+  overview and an About/corrections page provide crawlable context and internal
+  links. Only the equivalent English/Chinese overviews have reciprocal
+  hreflang; no financial credentials, reviews or Google token was invented.
+- Before changes, public HTTP checks returned 200 for the home page, no
+  X-Robots-Tag exclusion, 404 for the missing sitemap and 404 for the origin-root
+  robots file. This does not establish Google's current index status or prove
+  the missing sitemap was the cause. A project-level /RealWorth/robots.txt would
+  not control origin-root crawling, so none was added as a misleading fix.
+- [Search Console owner instructions](SEARCH_CONSOLE.zh-CN.md) explain URL-prefix
+  verification, deploying the actual Google HTML file or meta tag, sitemap
+  submission and URL inspection. These owner-account steps remain outstanding;
+  Google discovery/indexing/ranking is not guaranteed by a deployment. Tests
+  allow correctly formatted future Google verification files without treating
+  them as content landing pages in the sitemap.
+- The optional attempt to set the repository's empty About homepage/description
+  was denied by the GitHub integration with HTTP 403. No update was claimed;
+  the guide explains the owner's manual About settings. README already links
+  the website, and this metadata denial does not block Pages or on-site SEO.
+
+
 ## Plain-language cards and money-purpose guidance — 2026-10-26 (Toronto)
 
 - **54 Python tests, 38 JavaScript tests and 23 real Chromium scenarios passed

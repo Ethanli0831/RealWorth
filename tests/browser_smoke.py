@@ -222,7 +222,8 @@ def main():
 
             answer_money()
             assert page.locator('.money-asset[data-asset="S&P 500"]').get_attribute('data-status')=='research'
-            assert page.locator('.money-asset[data-asset="Bitcoin"]').get_attribute('data-status')=='avoid'
+            assert page.locator('.money-asset[data-asset="Bitcoin"]').get_attribute('data-status')=='partial'
+            assert page.locator('.budget-illustration').count()>0
             page.locator('.money-asset details').first.evaluate('e=>e.open=true')
             assert data['meta']['data_through'] in page.locator('.money-asset details[open]').first.inner_text()
             assert 'not predictions' in page.locator('.money-asset details[open]').first.inner_text()
@@ -233,7 +234,7 @@ def main():
 
             answer_money(goal='quick',loss='100',horizon='0')
             assert 'quick-profit' in page.locator('#money-result h3').inner_text()
-            assert page.locator('.money-asset[data-status=avoid]').count()==5
+            assert page.locator('.money-asset[data-status=observe]').count()==5
             page.locator('[data-guide-language]').first.select_option('zh')
             assert '这笔钱' in page.locator('#money-title').inner_text()
             assert '赚快钱' in page.locator('#money-result h3').inner_text()
@@ -242,8 +243,9 @@ def main():
             checks += 1
 
             answer_money(currency='CAD')
-            assert 'currency risk' in page.locator('#money-result h3').inner_text()
-            assert page.locator('.money-asset[data-status=unknown]').count()==5
+            assert 'USD comparisons' in page.locator('#money-result h3').inner_text()
+            assert page.locator('.money-asset[data-status=conditional]').count()>0
+            assert page.locator('.budget-illustration').count()==0
             answer_money(readiness='no-reserve')
             assert 'emergency reserve' in page.locator('#money-result h3').inner_text()
             assert page.locator('.money-asset[data-status=avoid]').count()==5
@@ -276,7 +278,7 @@ def main():
             assert 'percentile' in page.locator('#market-structure').inner_text()
             checks += 1
 
-            for path in ['', 'purchasing-power.html','research.html','monitor.html','methodology.html']:
+            for path in ['', 'purchasing-power.html','research.html','monitor.html','methodology.html','zh.html','about.html']:
                 page.set_viewport_size({'width':390,'height':844})
                 visit(path)
                 assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),path
@@ -336,9 +338,21 @@ def main():
             assert no_evidence.locator('.money-asset').count()==0
             assert no_evidence.locator('.forecast-card').count()==5
             checks += 1
+            visit('zh.html')
+            assert page.locator('html').get_attribute('lang')=='zh-Hans'
+            assert '比特币' in page.locator('h1').inner_text()
+            assert page.locator('link[rel=canonical]').get_attribute('href')=='https://ethanli0831.github.io/RealWorth/zh.html'
+            page.get_by_role('link',name='开始资金用途问答 →').click()
+            page.wait_for_url('**/monitor.html#money-plan')
+            assert page.locator('#money-form').is_visible()
+            checks += 1
+            visit('about.html')
+            assert 'GitHub repository' in page.locator('main').inner_text()
+            assert page.locator('script[type="application/ld+json"]').count()==1
+            checks += 1
             assert not errors,errors
             browser.close()
-        print(f'PASS: {checks} real-browser functional scenarios; five pages, comparisons, evidence and source failures.')
+        print(f'PASS: {checks} real-browser functional scenarios; seven pages, comparisons, evidence and source failures.')
     finally:
         if server:server.shutdown()
 

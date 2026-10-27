@@ -34,7 +34,7 @@ test("zero-loss, borrowed money and missing financial basics do not get risky ap
 test("quick-profit demand is refused even for genuinely spare money and favourable model error", () => {
   const r = assess({ goal: "quick", loss: "100" });
   assert.equal(r.action, "quick");
-  assert.ok(r.rows.every((a) => a.status === "avoid"));
+  assert.ok(r.rows.every((a) => a.status === "observe"));
   assert.ok(r.rows.every((a) => a.market.entrySignal === false));
 });
 test("a short deadline is not described by one-year window outcomes", () => {
@@ -47,11 +47,11 @@ test("a short deadline is not described by one-year window outcomes", () => {
   );
   assert.ok(r.rows.every((a) => !a.matchedToDeadline && a.matching === 12));
 });
-test("long-term spare money can compare diversified equities while Bitcoin fails a 50-percent limit", () => {
+test("long-term spare money can research diversified equities and compare reduced Bitcoin exposure", () => {
   const r = assess({});
-  assert.equal(r.action, "growth");
+  assert.equal(r.action, "budgetTitle");
   assert.equal(r.rows.find((a) => a.asset === "S&P 500").status, "research");
-  assert.equal(r.rows.find((a) => a.asset === "Bitcoin").status, "avoid");
+  assert.equal(r.rows.find((a) => a.asset === "Bitcoin").status, "partial");
   const spare = assess({ loss: "100" });
   assert.equal(
     spare.rows.find((a) => a.asset === "Bitcoin").status,
@@ -80,7 +80,8 @@ test("non-USD spending is not assessed as local purchasing power", () => {
   for (const currency of ["CAD", "other"]) {
     const r = assess({ currency });
     assert.equal(r.action, "currencyTitle");
-    assert.ok(r.rows.every((a) => a.status === "unknown"));
+    assert.ok(r.rows.some((a) => a.status === "conditional"));
+    assert.ok(r.rows.every((a) => a.currencyUnassessed && a.scenario === null));
   }
 });
 test("evidence uses shared endpoints and actual historical metrics with transparent stress floors", () => {
@@ -178,4 +179,53 @@ test("stale macro context cannot be presented as a current market assessment", (
   const fresh = structuredClone(macro);
   fresh.macro.checked_at = new Date(now - 36e5).toISOString();
   assert.equal(G.evaluate(base, data, forecasts, now, fresh).macro.fresh, true);
+});
+
+test("a partial exposure is a disclosed stress scenario rather than a recommended position", () => {
+  const r = assess({ loss: "15" }),
+    spy = r.rows.find((a) => a.asset === "S&P 500");
+  assert.equal(spy.status, "partial");
+  assert.equal(spy.reason, "budget");
+  assert.ok(
+    Math.abs(spy.scenario.riskAmount + spy.scenario.cashAmount - 1000) < 1e-8,
+  );
+  assert.ok(Math.abs(spy.scenario.stressLoss - 150) < 1e-8);
+  assert.ok(spy.scenario.fraction < 1);
+  assert.equal(G.exposureScenario(1000, 15, 40).riskAmount, 375);
+  assert.equal(G.exposureScenario(1000, 0, 40), null);
+});
+test("reduced exposure cannot bypass essential money, zero-loss, debt or emergency constraints", () => {
+  for (const patch of [
+    { purpose: "essential" },
+    { purpose: "borrowed" },
+    { loss: "0" },
+    { readiness: "no-reserve" },
+    { readiness: "debt" },
+  ]) {
+    const r = assess({ ...patch, loss: patch.loss || "15" });
+    assert.ok(r.rows.every((a) => a.status === "avoid" && a.scenario === null));
+  }
+});
+test("income, capital and short-horizon exclusions are checked before exposure arithmetic", () => {
+  for (const goal of ["income", "protect"])
+    for (const row of assess({ goal, loss: "5" }).rows.filter(
+      (a) => a.asset !== "T-Bills",
+    ))
+      assert.equal(row.status, "avoid");
+  assert.ok(
+    assess({ horizon: "0", loss: "5" })
+      .rows.filter((a) => a.asset !== "T-Bills")
+      .every((a) => a.scenario === null),
+  );
+});
+test("a non-SPY research candidate no longer forces a generic cannot-invest verdict", () => {
+  const r = assess({ horizon: "36", loss: "50" });
+  assert.notEqual(r.action, "cautious");
+  assert.ok(r.rows.some((a) => a.status === "research"));
+});
+
+test("short non-USD money keeps the liquidity-first action instead of an FX-investment prompt", () => {
+  const r = assess({ currency: "CAD", horizon: "0", loss: "15" });
+  assert.equal(r.action, "short");
+  assert.ok(r.rows.every((a) => a.scenario === null));
 });

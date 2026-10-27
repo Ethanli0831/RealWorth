@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-10-27T02:09:33Z",
+    "checked_at": "2026-10-27T08:00:29Z",
     "model": "empirical-log-return-quantiles-v2",
     "timezone": "America/Toronto",
-    "today": "2026-10-26",
-    "tomorrow": "2026-10-27",
+    "today": "2026-10-27",
+    "tomorrow": "2026-10-28",
     "quote_refresh": "Scheduled about every 15 minutes; provider and GitHub queue delays apply.",
     "disclosure": "Price-only empirical matching-horizon log-return scenarios, not AI price targets. Lower/central/upper bands are historical quantile ranges, not guaranteed probabilities. Bitcoin uses a frozen quote-to-24h target; ETFs use the last completed close to the first session close on/after tomorrow, with matching one/two-session returns. No forecasts are revised after issue.",
     "failures": []
@@ -13,27 +13,27 @@
     {
       "ticker": "BTC-USD",
       "asset": "Bitcoin / USD",
-      "quote": 79891.04,
-      "quote_at": "2026-10-27T02:09:27Z",
+      "quote": 79687.88,
+      "quote_at": "2026-10-27T08:00:21Z",
       "quote_stale": false,
       "market_status": "Continuous trading; quote may be delayed by provider",
       "tomorrow_has_session": true,
       "source": "https://finance.yahoo.com/quote/BTC-USD/",
       "forecast": {
-        "id": "BTC-USD|2026-10-26",
+        "id": "BTC-USD|2026-10-27",
         "ticker": "BTC-USD",
-        "issued_at": "2026-10-26T06:25:02Z",
-        "target_at": "2026-10-27T06:25:00Z",
-        "anchor_at": "2026-10-26T06:24:56Z",
-        "anchor_price": 79930.63,
+        "issued_at": "2026-10-27T08:00:28Z",
+        "target_at": "2026-10-28T08:05:00Z",
+        "anchor_at": "2026-10-27T08:00:21Z",
+        "anchor_price": 79687.88,
         "levels": {
-          "q10": 78070.8615,
-          "q30": 79330.9331,
-          "q40": 79685.85,
-          "q50": 79917.5339,
-          "q60": 80245.3668,
-          "q70": 80568.5968,
-          "q90": 81772.6583
+          "q10": 77833.7596,
+          "q30": 79090.0043,
+          "q40": 79443.8434,
+          "q50": 79668.0477,
+          "q60": 80001.6609,
+          "q70": 80323.9093,
+          "q90": 81524.314
         },
         "model": "empirical-log-return-quantiles-v2",
         "training_observations": 252,
@@ -42,12 +42,12 @@
         "backtest": {
           "observations": 90,
           "coverage_percent": 86.67,
-          "mean_abs_price_error_percent": 1.287,
-          "random_walk_error_percent": 1.28,
+          "mean_abs_price_error_percent": 1.267,
+          "random_walk_error_percent": 1.26,
           "horizon_sessions": 1,
           "method": "Walk-forward: each 1-session prediction uses 252 prior completed matching-horizon log returns. Overlapping training outcomes are not independent. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
         },
-        "issued_digest": "d75f1a49eccefab39c6f51375dc40bf7878d6f0c037dac7800b86f491c99aa53"
+        "issued_digest": "75c45a58188d71e11f386c1508bfdb4dbc92efd31d295f899289d909c00593b8"
       },
       "error": null
     },
@@ -61,34 +61,34 @@
       "tomorrow_has_session": true,
       "source": "https://finance.yahoo.com/quote/GLD/",
       "forecast": {
-        "id": "GLD|2026-10-27T20:00:00Z|2026-10-26T20:00:00Z",
+        "id": "GLD|2026-10-28T20:00:00Z|2026-10-26T20:00:00Z",
         "ticker": "GLD",
-        "issued_at": "2026-10-26T23:17:58Z",
-        "target_at": "2026-10-27T20:00:00Z",
+        "issued_at": "2026-10-27T08:00:28Z",
+        "target_at": "2026-10-28T20:00:00Z",
         "anchor_at": "2026-10-26T20:00:00Z",
         "anchor_price": 367.82000732,
         "levels": {
-          "q10": 360.4642,
-          "q30": 365.5676,
-          "q40": 367.1598,
-          "q50": 368.0436,
-          "q60": 369.4878,
-          "q70": 370.8489,
-          "q90": 375.0303
+          "q10": 357.1609,
+          "q30": 364.2768,
+          "q40": 366.151,
+          "q50": 367.4865,
+          "q60": 370.0104,
+          "q70": 371.7122,
+          "q90": 379.3629
         },
         "model": "empirical-log-return-quantiles-v2",
         "training_observations": 252,
-        "horizon_sessions": 1,
+        "horizon_sessions": 2,
         "status": "Pending future observation",
         "backtest": {
           "observations": 90,
           "coverage_percent": 85.56,
-          "mean_abs_price_error_percent": 1.149,
-          "random_walk_error_percent": 1.148,
-          "horizon_sessions": 1,
-          "method": "Walk-forward: each 1-session prediction uses 252 prior completed matching-horizon log returns. Overlapping training outcomes are not independent. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
+          "mean_abs_price_error_percent": 1.598,
+          "random_walk_error_percent": 1.563,
+          "horizon_sessions": 2,
+          "method": "Walk-forward: each 2-session prediction uses 252 prior completed matching-horizon log returns. Overlapping training outcomes are not independent. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
         },
-        "issued_digest": "45da5a53b23716b103ebfef746296b2502711596df870b28459887c393413520"
+        "issued_digest": "06816672d680bbe4bb14a93a84a2142fcfd6654880c06653ee6cf91ec0f36a61"
       },
       "error": null
     },
@@ -102,34 +102,34 @@
       "tomorrow_has_session": true,
       "source": "https://finance.yahoo.com/quote/SPY/",
       "forecast": {
-        "id": "SPY|2026-10-27T20:00:00Z|2026-10-26T20:00:00Z",
+        "id": "SPY|2026-10-28T20:00:00Z|2026-10-26T20:00:00Z",
         "ticker": "SPY",
-        "issued_at": "2026-10-26T23:17:59Z",
-        "target_at": "2026-10-27T20:00:00Z",
+        "issued_at": "2026-10-27T08:00:28Z",
+        "target_at": "2026-10-28T20:00:00Z",
         "anchor_at": "2026-10-26T20:00:00Z",
         "anchor_price": 765.36999512,
         "levels": {
-          "q10": 757.1977,
-          "q30": 763.0835,
-          "q40": 764.4439,
-          "q50": 765.8005,
-          "q60": 767.2829,
-          "q70": 769.0386,
-          "q90": 772.8214
+          "q10": 755.4209,
+          "q30": 761.709,
+          "q40": 763.3043,
+          "q50": 766.7969,
+          "q60": 768.6149,
+          "q70": 770.3038,
+          "q90": 776.5168
         },
         "model": "empirical-log-return-quantiles-v2",
         "training_observations": 252,
-        "horizon_sessions": 1,
+        "horizon_sessions": 2,
         "status": "Pending future observation",
         "backtest": {
           "observations": 90,
-          "coverage_percent": 84.44,
-          "mean_abs_price_error_percent": 0.573,
-          "random_walk_error_percent": 0.557,
-          "horizon_sessions": 1,
-          "method": "Walk-forward: each 1-session prediction uses 252 prior completed matching-horizon log returns. Overlapping training outcomes are not independent. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
+          "coverage_percent": 86.67,
+          "mean_abs_price_error_percent": 0.804,
+          "random_walk_error_percent": 0.786,
+          "horizon_sessions": 2,
+          "method": "Walk-forward: each 2-session prediction uses 252 prior completed matching-horizon log returns. Overlapping training outcomes are not independent. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
         },
-        "issued_digest": "6deebacba4ec6636fa6551ea2f8ee1a9cd01f828d5e9fca02f5d509e2d196ddd"
+        "issued_digest": "80f91a618493b1595a09200e28cc181df7ee06df645666bbc6d012fb0610e8b3"
       },
       "error": null
     },
@@ -143,34 +143,34 @@
       "tomorrow_has_session": true,
       "source": "https://finance.yahoo.com/quote/BIL/",
       "forecast": {
-        "id": "BIL|2026-10-27T20:00:00Z|2026-10-26T20:00:00Z",
+        "id": "BIL|2026-10-28T20:00:00Z|2026-10-26T20:00:00Z",
         "ticker": "BIL",
-        "issued_at": "2026-10-26T23:17:59Z",
-        "target_at": "2026-10-27T20:00:00Z",
+        "issued_at": "2026-10-27T08:00:29Z",
+        "target_at": "2026-10-28T20:00:00Z",
         "anchor_at": "2026-10-26T20:00:00Z",
         "anchor_price": 91.63999939,
         "levels": {
           "q10": 91.64,
-          "q30": 91.65,
-          "q40": 91.65,
-          "q50": 91.65,
-          "q60": 91.65,
-          "q70": 91.66,
-          "q90": 91.67
+          "q30": 91.66,
+          "q40": 91.66,
+          "q50": 91.66,
+          "q60": 91.67,
+          "q70": 91.6701,
+          "q90": 91.6801
         },
         "model": "empirical-log-return-quantiles-v2",
         "training_observations": 252,
-        "horizon_sessions": 1,
+        "horizon_sessions": 2,
         "status": "Pending future observation",
         "backtest": {
           "observations": 90,
-          "coverage_percent": 81.11,
-          "mean_abs_price_error_percent": 0.022,
-          "random_walk_error_percent": 0.027,
-          "horizon_sessions": 1,
-          "method": "Walk-forward: each 1-session prediction uses 252 prior completed matching-horizon log returns. Overlapping training outcomes are not independent. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
+          "coverage_percent": 80.0,
+          "mean_abs_price_error_percent": 0.035,
+          "random_walk_error_percent": 0.049,
+          "horizon_sessions": 2,
+          "method": "Walk-forward: each 2-session prediction uses 252 prior completed matching-horizon log returns. Overlapping training outcomes are not independent. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
         },
-        "issued_digest": "2eb27ab827f38aee0d74662c5cf71d9c66a5fb3c4306ae54c00167fbf4990059"
+        "issued_digest": "3e767571b17be421bf303bb202b36ddc99486d9882f3914c012bd7f590a4ba57"
       },
       "error": null
     },
@@ -184,44 +184,44 @@
       "tomorrow_has_session": true,
       "source": "https://finance.yahoo.com/quote/TLT/",
       "forecast": {
-        "id": "TLT|2026-10-27T20:00:00Z|2026-10-26T20:00:00Z",
+        "id": "TLT|2026-10-28T20:00:00Z|2026-10-26T20:00:00Z",
         "ticker": "TLT",
-        "issued_at": "2026-10-26T23:17:59Z",
-        "target_at": "2026-10-27T20:00:00Z",
+        "issued_at": "2026-10-27T08:00:29Z",
+        "target_at": "2026-10-28T20:00:00Z",
         "anchor_at": "2026-10-26T20:00:00Z",
         "anchor_price": 81.68000031,
         "levels": {
-          "q10": 81.0476,
-          "q30": 81.411,
-          "q40": 81.5134,
-          "q50": 81.6613,
-          "q60": 81.779,
-          "q70": 81.8763,
-          "q90": 82.2104
+          "q10": 80.7294,
+          "q30": 81.2298,
+          "q40": 81.4591,
+          "q50": 81.621,
+          "q60": 81.7882,
+          "q70": 81.9582,
+          "q90": 82.4766
         },
         "model": "empirical-log-return-quantiles-v2",
         "training_observations": 252,
-        "horizon_sessions": 1,
+        "horizon_sessions": 2,
         "status": "Pending future observation",
         "backtest": {
           "observations": 90,
-          "coverage_percent": 72.22,
-          "mean_abs_price_error_percent": 0.498,
-          "random_walk_error_percent": 0.5,
-          "horizon_sessions": 1,
-          "method": "Walk-forward: each 1-session prediction uses 252 prior completed matching-horizon log returns. Overlapping training outcomes are not independent. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
+          "coverage_percent": 67.78,
+          "mean_abs_price_error_percent": 0.783,
+          "random_walk_error_percent": 0.777,
+          "horizon_sessions": 2,
+          "method": "Walk-forward: each 2-session prediction uses 252 prior completed matching-horizon log returns. Overlapping training outcomes are not independent. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
         },
-        "issued_digest": "2fa124cf872e40846ebee5f0626a070f92bd95193cdcec38eda5ebdf2da0309e"
+        "issued_digest": "9d656a8294b60a39c92c79f2ff2f95d461218a68a51c35db914ceb494cecbfc3"
       },
       "error": null
     }
   ],
   "verification": {
     "invalidated": 1,
-    "verified_forecasts": 53,
-    "outer_band_coverage_percent": 81.13,
-    "mean_abs_median_error_percent": 0.694,
-    "pending": 9,
+    "verified_forecasts": 54,
+    "outer_band_coverage_percent": 81.48,
+    "mean_abs_median_error_percent": 0.688,
+    "pending": 13,
     "missed": 0
   }
 }

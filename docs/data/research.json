@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-10-27T02:09:29Z",
+    "checked_at": "2026-10-27T08:00:23Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-10-27T02:09:29Z",
+    "checked_at": "2026-10-27T08:00:23Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -122,6 +122,29 @@
     "outlook": "If growth keeps slowing while inflation rises, watch for a policy trade-off. If inflation eases without worsening credit or employment, a softer adjustment is more plausible. These are conditional scenarios, not probability forecasts."
   },
   "news": [
+    {
+      "title": "Donald Trump's biggest economic problem looks strangely familiar",
+      "url": "https://www.bbc.co.uk/news/articles/cwvg0ddz1z77o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-27T06:01:11Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "Donald Trump's biggest economic problem looks strangely familiar",
+          "url": "https://www.bbc.co.uk/news/articles/cwvg0ddz1z77o?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-10-27T06:01:11Z"
+        }
+      ]
+    },
     {
       "title": "‘We don’t have inflation’? Five charts show the US economic reality of Trump’s second term so far",
       "url": "https://www.theguardian.com/us-news/2026/oct/26/trump-second-term-economy-charts",
@@ -242,54 +265,6 @@
       ]
     },
     {
-      "title": "Heating oil costs 'more than double' ahead of winter",
-      "url": "https://www.bbc.co.uk/news/articles/c6n8de1jgrdvo?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-10-25T07:12:21Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "energy"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Heating oil costs 'more than double' ahead of winter",
-          "url": "https://www.bbc.co.uk/news/articles/c6n8de1jgrdvo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-10-25T07:12:21Z"
-        }
-      ]
-    },
-    {
-      "title": "Firms 'holding back' on new jobs ahead of Budget",
-      "url": "https://www.bbc.co.uk/news/articles/c62kep355q02o?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-10-25T07:06:12Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "No clear macro impact",
-        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
-      },
-      "related_reports": [
-        {
-          "title": "Firms 'holding back' on new jobs ahead of Budget",
-          "url": "https://www.bbc.co.uk/news/articles/c62kep355q02o?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-10-25T07:06:12Z"
-        }
-      ]
-    },
-    {
       "title": "Oil price rises above $117 a barrel amid fears US will renew strikes on Iran",
       "url": "https://www.theguardian.com/business/2026/oct/23/oil-five-month-high-fears-us-renews-strikes-iran",
       "published_at": "2026-10-23T16:48:28Z",
@@ -311,29 +286,6 @@
           "url": "https://www.theguardian.com/business/2026/oct/23/oil-five-month-high-fears-us-renews-strikes-iran",
           "publisher": "The Guardian Business",
           "published_at": "2026-10-23T16:48:28Z"
-        }
-      ]
-    },
-    {
-      "title": "Civil servant who juggled five jobs says he was 'surprised' to be charged with fraud",
-      "url": "https://www.bbc.co.uk/news/articles/c6lykzwjkj1eo?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-10-23T15:15:13Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "No clear macro impact",
-        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
-      },
-      "related_reports": [
-        {
-          "title": "Civil servant who juggled five jobs says he was 'surprised' to be charged with fraud",
-          "url": "https://www.bbc.co.uk/news/articles/c6lykzwjkj1eo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-10-23T15:15:13Z"
         }
       ]
     },
@@ -363,29 +315,6 @@
       ]
     },
     {
-      "title": "'I wasn't thinking straight' says five jobs civil servant",
-      "url": "https://www.bbc.co.uk/news/articles/cmx23dwp3qzro?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-10-22T15:05:47Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "No clear macro impact",
-        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
-      },
-      "related_reports": [
-        {
-          "title": "'I wasn't thinking straight' says five jobs civil servant",
-          "url": "https://www.bbc.co.uk/news/articles/cmx23dwp3qzro?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-10-22T15:05:47Z"
-        }
-      ]
-    },
-    {
       "title": "Barclays to cut 5,000 jobs as bank’s bosses hail AI productivity advances",
       "url": "https://www.theguardian.com/business/2026/oct/22/barclays-profits-up-as-uk-banks-brace-for-tax-increase-in-budget",
       "published_at": "2026-10-22T14:39:29Z",
@@ -405,37 +334,6 @@
           "url": "https://www.theguardian.com/business/2026/oct/22/barclays-profits-up-as-uk-banks-brace-for-tax-increase-in-budget",
           "publisher": "The Guardian Business",
           "published_at": "2026-10-22T14:39:29Z"
-        },
-        {
-          "title": "Barclays cutting 5,000 jobs as it increases reliance on AI",
-          "url": "https://www.bbc.co.uk/news/articles/cm4g1p347qgxo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-10-22T14:28:59Z"
-        }
-      ]
-    },
-    {
-      "title": "The 'trillion pound' oil fund the government believes Britain could have built",
-      "url": "https://www.bbc.co.uk/news/articles/cm4g1zrl2nrqo?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-10-21T23:27:05Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "energy"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "The 'trillion pound' oil fund the government believes Britain could have built",
-          "url": "https://www.bbc.co.uk/news/articles/cm4g1zrl2nrqo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-10-21T23:27:05Z"
         }
       ]
     },
@@ -704,31 +602,6 @@
           "published_at": "2026-10-13T13:09:55Z"
         }
       ]
-    },
-    {
-      "title": "IMF warns bond yields could see a 'disorderly' spike as debt, inflation risks worsen",
-      "url": "https://www.cnbc.com/2026/10/13/treasury-yields-imf-debt-inflation-.html",
-      "published_at": "2026-10-13T04:54:07Z",
-      "source_id": "cnbc",
-      "publisher": "CNBC Economy",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "inflation"
-      ],
-      "cached": true,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "IMF warns bond yields could see a 'disorderly' spike as debt, inflation risks worsen",
-          "url": "https://www.cnbc.com/2026/10/13/treasury-yields-imf-debt-inflation-.html",
-          "publisher": "CNBC Economy",
-          "published_at": "2026-10-13T04:54:07Z"
-        }
-      ]
     }
   ],
   "feed_health": [
@@ -736,60 +609,60 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-10-27T02:09:29Z",
+      "checked_at": "2026-10-27T08:00:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-27T02:09:29Z",
+      "last_success": "2026-10-27T08:00:23Z",
       "matched": 0
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-10-27T02:09:29Z",
+      "checked_at": "2026-10-27T08:00:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-27T02:09:29Z",
+      "last_success": "2026-10-27T08:00:23Z",
       "matched": 4
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-10-27T02:09:29Z",
+      "checked_at": "2026-10-27T08:00:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-27T02:09:29Z",
-      "matched": 8
+      "last_success": "2026-10-27T08:00:23Z",
+      "matched": 4
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-10-27T02:09:29Z",
+      "checked_at": "2026-10-27T08:00:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-27T02:09:29Z",
+      "last_success": "2026-10-27T08:00:23Z",
       "matched": 5
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-10-27T02:09:29Z",
+      "checked_at": "2026-10-27T08:00:23Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
-      "matched": 9
+      "matched": 8
     },
     {
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-10-27T02:09:29Z",
+      "checked_at": "2026-10-27T08:00:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-27T02:09:29Z",
+      "last_success": "2026-10-27T08:00:23Z",
       "matched": 0
     }
   ],

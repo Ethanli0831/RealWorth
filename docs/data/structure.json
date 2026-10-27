@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-10-27T14:56:45.282419+00:00",
+    "checked_at": "2026-10-27T20:59:28.381753+00:00",
     "refresh": "Every four hours requested; source publication and GitHub delays apply.",
     "scope": "Selected free public sources. Missing/paid sources are not substituted with estimates."
   },
@@ -12,12 +12,12 @@
       "source": "https://www.ishares.com/us/products/333011/ishares-bitcoin-trust-etf",
       "note": "Fund bitcoins are not net flows. AUM changes include price effects.",
       "unit": "BTC",
-      "value": 809779.8626,
-      "period": "2026-10-23",
+      "value": 811160.8205,
+      "period": "2026-10-26",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-27T14:56:45.282419+00:00",
+      "last_success": "2026-10-27T20:59:28.381753+00:00",
       "history": [
         {
           "date": "2026-10-22",
@@ -26,11 +26,15 @@
         {
           "date": "2026-10-23",
           "value": 809779.8626
+        },
+        {
+          "date": "2026-10-26",
+          "value": 811160.8205
         }
       ],
       "percentile": null,
       "percentile_minimum": 250,
-      "observations": 2
+      "observations": 3
     },
     {
       "id": "gld",
@@ -57,12 +61,12 @@
       "source": "https://docs.deribit.com/#public-get_book_summary_by_currency",
       "note": "Deribit BTC-PERPETUAL only; 8-hour funding is not annualised. Positive funding is not a directional forecast.",
       "unit": "% / 8 hours",
-      "value": 0.008983,
+      "value": 0.003294,
       "period": "2026-10-27",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-27T14:56:45.282419+00:00",
+      "last_success": "2026-10-27T20:59:28.381753+00:00",
       "history": [
         {
           "date": "2026-10-25",
@@ -74,7 +78,7 @@
         },
         {
           "date": "2026-10-27",
-          "value": 0.008983
+          "value": 0.003294
         }
       ],
       "percentile": null,
@@ -88,12 +92,12 @@
       "source": "https://docs.deribit.com/#public-get_book_summary_by_currency",
       "note": "USD notional can rise from price changes. One exchange does not measure all leverage.",
       "unit": "USD notional",
-      "value": 821138730.0,
+      "value": 814471330.0,
       "period": "2026-10-27",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-27T14:56:45.282419+00:00",
+      "last_success": "2026-10-27T20:59:28.381753+00:00",
       "history": [
         {
           "date": "2026-10-25",
@@ -105,7 +109,7 @@
         },
         {
           "date": "2026-10-27",
-          "value": 821138730.0
+          "value": 814471330.0
         }
       ],
       "percentile": null,
@@ -124,7 +128,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-27T14:56:45.282419+00:00",
+      "last_success": "2026-10-27T20:59:28.381753+00:00",
       "history": [
         {
           "date": "2025-10-25",
@@ -1611,7 +1615,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-27T14:56:45.282419+00:00",
+      "last_success": "2026-10-27T20:59:28.381753+00:00",
       "history": [
         {
           "date": "2025-10-25",
@@ -3098,7 +3102,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-27T14:56:45.282419+00:00",
+      "last_success": "2026-10-27T20:59:28.381753+00:00",
       "history": [
         {
           "date": "2025-10-25",
@@ -4585,7 +4589,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-27T14:56:45.282419+00:00",
+      "last_success": "2026-10-27T20:59:28.381753+00:00",
       "history": [
         {
           "date": "2025-10-25",
@@ -6072,7 +6076,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-27T14:56:45.282419+00:00",
+      "last_success": "2026-10-27T20:59:28.381753+00:00",
       "history": [
         {
           "date": "2025-10-25",
@@ -7554,64 +7558,64 @@
       "source": "https://fred.stlouisfed.org/series/M2SL",
       "note": "Year-over-year US money growth; publication lags and revisions apply. Correlation is not causation.",
       "unit": "% YoY",
-      "value": 5.658908,
-      "period": "2026-08-01",
+      "value": 5.709913,
+      "period": "2026-09-01",
       "status": "Fetched",
       "error": null,
-      "stale": true,
-      "last_success": "2026-10-27T14:56:45.282419+00:00",
+      "stale": false,
+      "last_success": "2026-10-27T20:59:28.381753+00:00",
       "history": [
         {
-          "date": "2025-08-01",
-          "value": 4.249717
-        },
-        {
           "date": "2025-09-01",
-          "value": 4.232548
+          "value": 4.23202
         },
         {
           "date": "2025-10-01",
-          "value": 4.27997
+          "value": 4.27946
         },
         {
           "date": "2025-11-01",
-          "value": 3.845777
+          "value": 3.844736
         },
         {
           "date": "2025-12-01",
-          "value": 4.038143
+          "value": 4.038766
         },
         {
           "date": "2026-01-01",
-          "value": 4.058163
+          "value": 4.057898
         },
         {
           "date": "2026-02-01",
-          "value": 4.588748
+          "value": 4.592908
         },
         {
           "date": "2026-03-01",
-          "value": 4.409683
+          "value": 4.416504
         },
         {
           "date": "2026-04-01",
-          "value": 4.528083
+          "value": 4.528751
         },
         {
           "date": "2026-05-01",
-          "value": 5.392904
+          "value": 5.374436
         },
         {
           "date": "2026-06-01",
-          "value": 5.342576
+          "value": 5.300213
         },
         {
           "date": "2026-07-01",
-          "value": 5.413246
+          "value": 5.360918
         },
         {
           "date": "2026-08-01",
-          "value": 5.658908
+          "value": 5.596871
+        },
+        {
+          "date": "2026-09-01",
+          "value": 5.709913
         }
       ],
       "percentile": 100.0,
@@ -7630,7 +7634,7 @@
       "status": "Fetched",
       "error": null,
       "stale": true,
-      "last_success": "2026-10-27T14:56:45.282419+00:00",
+      "last_success": "2026-10-27T20:59:28.381753+00:00",
       "history": [
         {
           "date": "2025-10-22",
@@ -8657,7 +8661,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-27T14:56:45.282419+00:00",
+      "last_success": "2026-10-27T20:59:28.381753+00:00",
       "history": [
         {
           "date": "2026-10-20",

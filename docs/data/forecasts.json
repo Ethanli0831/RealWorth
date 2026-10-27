@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-10-27T14:21:53Z",
+    "checked_at": "2026-10-27T18:12:00Z",
     "model": "empirical-log-return-quantiles-v2",
     "timezone": "America/Toronto",
     "today": "2026-10-27",
@@ -13,8 +13,8 @@
     {
       "ticker": "BTC-USD",
       "asset": "Bitcoin / USD",
-      "quote": 79859.97,
-      "quote_at": "2026-10-27T14:21:46Z",
+      "quote": 80458.55,
+      "quote_at": "2026-10-27T18:11:52Z",
       "quote_stale": false,
       "market_status": "Continuous trading; quote may be delayed by provider",
       "tomorrow_has_session": true,
@@ -54,8 +54,8 @@
     {
       "ticker": "GLD",
       "asset": "Gold ETF (GLD)",
-      "quote": 369.56,
-      "quote_at": "2026-10-27T14:21:47Z",
+      "quote": 371.845,
+      "quote_at": "2026-10-27T18:11:58Z",
       "quote_stale": false,
       "market_status": "Market open · delayed quote",
       "tomorrow_has_session": true,
@@ -95,8 +95,8 @@
     {
       "ticker": "SPY",
       "asset": "S&P 500 ETF (SPY)",
-      "quote": 765.245,
-      "quote_at": "2026-10-27T14:21:51Z",
+      "quote": 769.33,
+      "quote_at": "2026-10-27T18:11:58Z",
       "quote_stale": false,
       "market_status": "Market open · delayed quote",
       "tomorrow_has_session": true,
@@ -137,7 +137,7 @@
       "ticker": "BIL",
       "asset": "T-Bill ETF (BIL)",
       "quote": 91.651,
-      "quote_at": "2026-10-27T14:21:08Z",
+      "quote_at": "2026-10-27T18:11:38Z",
       "quote_stale": false,
       "market_status": "Market open · delayed quote",
       "tomorrow_has_session": true,
@@ -177,8 +177,8 @@
     {
       "ticker": "TLT",
       "asset": "Long-bond ETF (TLT)",
-      "quote": 81.47,
-      "quote_at": "2026-10-27T14:21:48Z",
+      "quote": 81.605,
+      "quote_at": "2026-10-27T18:11:56Z",
       "quote_stale": false,
       "market_status": "Market open · delayed quote",
       "tomorrow_has_session": true,

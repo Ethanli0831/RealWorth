@@ -2,7 +2,12 @@
 
 ## Tiered guidance and search discoverability — 2026-10-27 (Toronto)
 
-- **59 Python, 43 JavaScript and 25 real Chromium scenarios passed locally.**
+- **59 Python, 43 JavaScript and 25 real Chromium scenarios passed locally;
+  the same 25 browser scenarios passed against public HTTPS.** All ten changed
+  served application/SEO files matched the checkout. Sitemap, Chinese overview
+  and About returned 200. [Production CI](https://github.com/Ethanli0831/RealWorth/actions/runs/40515795740)
+  and [Pages deployment](https://github.com/Ethanli0831/RealWorth/actions/runs/40515876033)
+  succeeded. No Google indexing status was inferred from those checks.
   New coverage checks reduced-exposure arithmetic and constraint priority,
   conditional non-USD comparisons, short-horizon liquidity, seven page layouts,
   Chinese landing navigation, reciprocal language links, canonical URLs,

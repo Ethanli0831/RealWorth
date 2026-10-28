@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-10-28T02:09:29Z",
+    "checked_at": "2026-10-28T08:42:49Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-10-28T02:09:29Z",
+    "checked_at": "2026-10-28T08:42:49Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -123,9 +123,9 @@
   },
   "news": [
     {
-      "title": "Tax on banks, energy bill help and minimum wage rise - what could be in the Budget?",
+      "title": "Energy bill help, minimum wage rise and bank taxes - what could be in the Budget?",
       "url": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-10-28T00:03:10Z",
+      "published_at": "2026-10-28T07:39:54Z",
       "source_id": "bbc",
       "publisher": "BBC Business",
       "source_kind": "Publisher headline",
@@ -138,10 +138,10 @@
       },
       "related_reports": [
         {
-          "title": "Tax on banks, energy bill help and minimum wage rise - what could be in the Budget?",
+          "title": "Energy bill help, minimum wage rise and bank taxes - what could be in the Budget?",
           "url": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno?at_medium=RSS&at_campaign=rss",
           "publisher": "BBC Business",
-          "published_at": "2026-10-28T00:03:10Z"
+          "published_at": "2026-10-28T07:39:54Z"
         }
       ]
     },
@@ -240,29 +240,6 @@
       ]
     },
     {
-      "title": "Healey's Budget needs to sustain the stronger economy through gathering clouds",
-      "url": "https://www.bbc.co.uk/news/articles/ck87z4ng2l03o?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-10-26T00:26:49Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "No clear macro impact",
-        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
-      },
-      "related_reports": [
-        {
-          "title": "Healey's Budget needs to sustain the stronger economy through gathering clouds",
-          "url": "https://www.bbc.co.uk/news/articles/ck87z4ng2l03o?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-10-26T00:26:49Z"
-        }
-      ]
-    },
-    {
       "title": "Volkswagen to build $4bn Audi SUV factory in US despite job cuts at home",
       "url": "https://www.theguardian.com/business/2026/oct/25/volkswagen-to-build-4bn-audi-suv-factory-in-us-despite-job-cuts-at-home",
       "published_at": "2026-10-25T13:43:19Z",
@@ -282,31 +259,6 @@
           "url": "https://www.theguardian.com/business/2026/oct/25/volkswagen-to-build-4bn-audi-suv-factory-in-us-despite-job-cuts-at-home",
           "publisher": "The Guardian Business",
           "published_at": "2026-10-25T13:43:19Z"
-        }
-      ]
-    },
-    {
-      "title": "Rosebank: Life on the oil field at the centre of a political storm",
-      "url": "https://www.bbc.co.uk/news/articles/cqy8ljkle97ro?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-10-25T07:15:38Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "energy"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Rosebank: Life on the oil field at the centre of a political storm",
-          "url": "https://www.bbc.co.uk/news/articles/cqy8ljkle97ro?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-10-25T07:15:38Z"
         }
       ]
     },
@@ -551,32 +503,6 @@
           "published_at": "2026-10-14T17:20:23Z"
         }
       ]
-    },
-    {
-      "title": "'Godzilla El Niño' is wreaking havoc with Philippine central bank's inflation forecasts",
-      "url": "https://www.cnbc.com/2026/10/14/godzilla-el-nino-asia-inflation-philippines.html",
-      "published_at": "2026-10-14T04:24:28Z",
-      "source_id": "cnbc",
-      "publisher": "CNBC Economy",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "policy",
-        "inflation"
-      ],
-      "cached": true,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "'Godzilla El Niño' is wreaking havoc with Philippine central bank's inflation forecasts",
-          "url": "https://www.cnbc.com/2026/10/14/godzilla-el-nino-asia-inflation-philippines.html",
-          "publisher": "CNBC Economy",
-          "published_at": "2026-10-14T04:24:28Z"
-        }
-      ]
     }
   ],
   "feed_health": [
@@ -584,60 +510,60 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-10-28T02:09:29Z",
+      "checked_at": "2026-10-28T08:42:49Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-28T02:09:29Z",
+      "last_success": "2026-10-28T08:42:49Z",
       "matched": 0
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-10-28T02:09:29Z",
+      "checked_at": "2026-10-28T08:42:49Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-28T02:09:29Z",
+      "last_success": "2026-10-28T08:42:49Z",
       "matched": 5
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-10-28T02:09:29Z",
+      "checked_at": "2026-10-28T08:42:49Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-28T02:09:29Z",
-      "matched": 4
+      "last_success": "2026-10-28T08:42:49Z",
+      "matched": 2
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-10-28T02:09:29Z",
+      "checked_at": "2026-10-28T08:42:49Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-28T02:09:29Z",
+      "last_success": "2026-10-28T08:42:49Z",
       "matched": 4
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-10-28T02:09:29Z",
+      "checked_at": "2026-10-28T08:42:49Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
-      "matched": 6
+      "matched": 5
     },
     {
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-10-28T02:09:29Z",
+      "checked_at": "2026-10-28T08:42:49Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-28T02:09:29Z",
+      "last_success": "2026-10-28T08:42:49Z",
       "matched": 0
     }
   ],

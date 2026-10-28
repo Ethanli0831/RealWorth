@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-28T13:23:32Z",
-    "scan_started_at": "2026-10-28T13:23:28Z",
-    "provider_requested": "github",
-    "article_reads": 3,
-    "ai_interpretations": 3,
-    "new_interpretations": 0,
+    "checked_at": "2026-10-28T19:05:20Z",
+    "scan_started_at": "2026-10-28T19:00:33Z",
+    "provider_requested": "local",
+    "article_reads": 5,
+    "ai_interpretations": 5,
+    "new_interpretations": 2,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,42 +19,124 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.theguardian.com/business/2026/oct/23/oil-five-month-high-fears-us-renews-strikes-iran",
-      "title": "Oil price rises above $117 a barrel amid fears US will renew strikes on Iran",
+      "url": "https://www.theguardian.com/business/2026/oct/28/fed-interest-rates-midterms",
+      "title": "Fed set to hold interest rates steady in last decision before midterms",
       "publisher": "The Guardian Business",
-      "published_at": "2026-10-23T16:48:28Z",
+      "published_at": "2026-10-28T10:00:03Z",
       "historical": null,
-      "read_at": "2026-10-28T13:23:30Z",
-      "body_sha256": "13106a71c5ebb387feee7612d6c7aa09d24fbb92344bac728ac171ba8aff78e1",
-      "body_characters": 2068,
-      "model_context_characters": 2068,
-      "status": "Cached AI interpretation; awaiting re-read",
+      "read_at": "2026-10-28T19:00:33Z",
+      "body_sha256": "0574708e66152a10a22afa417a77929e9a809acb7f8d998b8ba1abdaccdcdb9d",
+      "body_characters": 3755,
+      "model_context_characters": 3755,
+      "status": "AI interpretation generated · not independently verified",
       "analysis": {
-        "summary": "Oil prices rose above $117 due to threats of US military strikes on Iran and attacks on Gulf facilities.",
+        "summary": "The US Federal Reserve left interest rates unchanged before the midterm elections, citing rising inflation.",
         "evidence_ids": [
-          "E2",
+          "E4",
           "E5"
         ],
         "chain": [
-          "reported_event: threats of US military strikes on Iran",
-          "financial_channel: If geopolitical tensions increase, oil supply risks rise",
-          "asset_hypothesis: If supply risks increase, oil prices will rise"
+          "reported_event: Fed left interest rates unchanged",
+          "financial_channel: If inflation remains high, real yields may increase",
+          "asset_hypothesis: If inflation persists, gold may be seen as a hedge"
         ],
         "gold": {
           "direction": "up",
-          "condition": "If geopolitical tensions increase, gold may be seen as a safer haven."
+          "condition": "If inflation remains high, gold may be seen as a hedge against currency debasement."
         },
         "bitcoin": {
           "direction": "mixed",
-          "condition": "If oil prices rise, risk appetite may shift away from Bitcoin, but liquidity concerns could also support it."
+          "condition": "If risk appetite remains cautious, Bitcoin may underperform traditional assets; if liquidity is high, it may see gains."
         },
-        "uncertainty": "If the US decides against military strikes, oil prices could fall."
+        "uncertainty": "If the Fed decides to raise rates in the next meeting, gold and Bitcoin may face downward pressure."
       },
       "evidence": {
-        "E2": "Brent crude increase follows Tehran threatening retaliatory attacks on Gulf refineries and",
-        "E5": "The jump came after Tehran said it would attack oil facilities, undersea"
+        "E4": "The US Federal Reserve left interest rates unchanged on Wednesday during its",
+        "E5": "“The accumulation of more information will help the committee determine the policy"
       },
-      "analyzed_at": "2026-10-24T19:48:58Z",
+      "analyzed_at": "2026-10-28T19:03:11Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
+      "title": "ECB Consumer Expectations Survey results – September 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-23T08:00:00Z",
+      "historical": null,
+      "read_at": "2026-10-28T18:59:59Z",
+      "body_sha256": "168e137e7ef9bbf0b708cdd0d22ac771eb240a3d19c5155bb9e205bf7646d8b2",
+      "body_characters": 3289,
+      "model_context_characters": 3289,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "ECB Consumer Expectations Survey shows inflation and spending growth expectations increased in September 2026.",
+        "evidence_ids": [
+          "E1",
+          "E8"
+        ],
+        "chain": [
+          "reported_event: Inflation and spending growth expectations increased",
+          "financial_channel: If inflation expectations rise, gold demand may increase",
+          "asset_hypothesis: If spending growth expectations rise, Bitcoin demand may increase"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations rise, gold may be seen as a hedge against inflation."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If spending growth expectations rise, Bitcoin may be seen as a store of value, but higher inflation expectations may reduce its appeal as a hedge."
+        },
+        "uncertainty": "If the economy improves, consumers may reduce their inflation and spending growth expectations."
+      },
+      "evidence": {
+        "E1": "In September the median rate of perceived inflation over the previous 12",
+        "E8": "Median expectations for inflation over the next 12 months also increased, to"
+      },
+      "analyzed_at": "2026-10-24T01:56:43Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/oct/28/inflation-rate-australia-2026-number-data-consumer-price-index-cpi-release",
+      "title": "Australia’s inflation rate rises to 4.3%, fuelling fears of fifth interest rate hike this year",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-28T02:17:32Z",
+      "historical": null,
+      "read_at": "2026-10-28T19:03:12Z",
+      "body_sha256": "6f51a244a8b3b2a18f6aa03cedb9cbce9faed52a768acbd13f7dfaa0ca7d675b",
+      "body_characters": 3814,
+      "model_context_characters": 3814,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Australia's inflation rate rose to 4.3%, prompting fears of a fifth interest rate hike this year.",
+        "evidence_ids": [
+          "E1",
+          "E4"
+        ],
+        "chain": [
+          "reported_event: inflation rate rises",
+          "financial_channel: If higher inflation, then increased borrowing costs",
+          "asset_hypothesis: If higher inflation, then reduced asset value"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If higher inflation, then increased demand for gold as a hedge."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If higher inflation, then reduced risk appetite, but increased liquidity may favor Bitcoin."
+        },
+        "uncertainty": "If the Middle East conflict ends, fuel prices may fall, reducing inflationary pressures."
+      },
+      "evidence": {
+        "E1": "Australia’s headline inflation rate has accelerated to 4.3%, with a key gauge",
+        "E4": "The CPI release comes shortly ahead of the central bank’s next monetary"
+      },
+      "analyzed_at": "2026-10-28T19:05:20Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
@@ -65,7 +147,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-26T11:00:42Z",
       "historical": null,
-      "read_at": "2026-10-28T13:23:30Z",
+      "read_at": "2026-10-28T18:59:58Z",
       "body_sha256": "1e639b1293cae00018bb96016f51b7249b105f1b1ac0b602b30c7c6124e6b34f",
       "body_characters": 6549,
       "model_context_characters": 4500,
@@ -101,42 +183,42 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
-      "title": "ECB Consumer Expectations Survey results – September 2026",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-23T08:00:00Z",
+      "url": "https://www.theguardian.com/business/2026/oct/23/oil-five-month-high-fears-us-renews-strikes-iran",
+      "title": "Oil price rises above $117 a barrel amid fears US will renew strikes on Iran",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-23T16:48:28Z",
       "historical": null,
-      "read_at": "2026-10-28T13:23:32Z",
-      "body_sha256": "168e137e7ef9bbf0b708cdd0d22ac771eb240a3d19c5155bb9e205bf7646d8b2",
-      "body_characters": 3289,
-      "model_context_characters": 3289,
+      "read_at": "2026-10-28T18:59:58Z",
+      "body_sha256": "13106a71c5ebb387feee7612d6c7aa09d24fbb92344bac728ac171ba8aff78e1",
+      "body_characters": 2068,
+      "model_context_characters": 2068,
       "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
-        "summary": "ECB Consumer Expectations Survey shows inflation and spending growth expectations increased in September 2026.",
+        "summary": "Oil prices rose above $117 due to threats of US military strikes on Iran and attacks on Gulf facilities.",
         "evidence_ids": [
-          "E1",
-          "E8"
+          "E2",
+          "E5"
         ],
         "chain": [
-          "reported_event: Inflation and spending growth expectations increased",
-          "financial_channel: If inflation expectations rise, gold demand may increase",
-          "asset_hypothesis: If spending growth expectations rise, Bitcoin demand may increase"
+          "reported_event: threats of US military strikes on Iran",
+          "financial_channel: If geopolitical tensions increase, oil supply risks rise",
+          "asset_hypothesis: If supply risks increase, oil prices will rise"
         ],
         "gold": {
           "direction": "up",
-          "condition": "If inflation expectations rise, gold may be seen as a hedge against inflation."
+          "condition": "If geopolitical tensions increase, gold may be seen as a safer haven."
         },
         "bitcoin": {
           "direction": "mixed",
-          "condition": "If spending growth expectations rise, Bitcoin may be seen as a store of value, but higher inflation expectations may reduce its appeal as a hedge."
+          "condition": "If oil prices rise, risk appetite may shift away from Bitcoin, but liquidity concerns could also support it."
         },
-        "uncertainty": "If the economy improves, consumers may reduce their inflation and spending growth expectations."
+        "uncertainty": "If the US decides against military strikes, oil prices could fall."
       },
       "evidence": {
-        "E1": "In September the median rate of perceived inflation over the previous 12",
-        "E8": "Median expectations for inflation over the next 12 months also increased, to"
+        "E2": "Brent crude increase follows Tehran threatening retaliatory attacks on Gulf refineries and",
+        "E5": "The jump came after Tehran said it would attack oil facilities, undersea"
       },
-      "analyzed_at": "2026-10-24T01:56:43Z",
+      "analyzed_at": "2026-10-24T19:48:58Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"

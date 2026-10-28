@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-10-27T23:06:52Z",
+    "checked_at": "2026-10-28T02:09:34Z",
     "model": "empirical-log-return-quantiles-v2",
     "timezone": "America/Toronto",
     "today": "2026-10-27",
@@ -13,8 +13,8 @@
     {
       "ticker": "BTC-USD",
       "asset": "Bitcoin / USD",
-      "quote": 80840.99,
-      "quote_at": "2026-10-27T23:06:48Z",
+      "quote": 80804.42,
+      "quote_at": "2026-10-28T02:09:29Z",
       "quote_stale": false,
       "market_status": "Continuous trading; quote may be delayed by provider",
       "tomorrow_has_session": true,

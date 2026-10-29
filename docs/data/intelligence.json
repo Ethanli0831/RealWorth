@@ -1,7 +1,7 @@
 {
   "meta": {
-    "checked_at": "2026-10-29T02:42:47Z",
-    "scan_started_at": "2026-10-29T02:42:44Z",
+    "checked_at": "2026-10-29T10:20:17Z",
+    "scan_started_at": "2026-10-29T10:20:14Z",
     "provider_requested": "github",
     "article_reads": 4,
     "ai_interpretations": 4,
@@ -19,53 +19,12 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/oct/26/trump-second-term-economy-charts",
-      "title": "‘We don’t have inflation’? Five charts show the US economic reality of Trump’s second term so far",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-26T11:00:42Z",
-      "historical": null,
-      "read_at": "2026-10-29T02:42:45Z",
-      "body_sha256": "1e639b1293cae00018bb96016f51b7249b105f1b1ac0b602b30c7c6124e6b34f",
-      "body_characters": 6549,
-      "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "The article discusses the US economic reality under Trump’s second term, focusing on inflation and the job market.",
-        "evidence_ids": [
-          "E6",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: Inflation and job market fluctuations",
-          "financial_channel: If higher interest rates and tariffs affect borrowing and job growth",
-          "asset_hypothesis: If investors remain uncertain about economic stability"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation remains high, gold may be seen as a hedge against currency devaluation."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite fluctuates, Bitcoin may see mixed reactions as an alternative investment."
-        },
-        "uncertainty": "If the Iran war ends and oil prices stabilize, inflation could drop, affecting gold and Bitcoin differently."
-      },
-      "evidence": {
-        "E6": "Inflation , especially gas prices, has soared over the last year.",
-        "E7": "The job market has been in stasis, and higher interest rates have"
-      },
-      "analyzed_at": "2026-10-27T00:45:42Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
       "url": "https://www.theguardian.com/business/2026/oct/28/fed-interest-rates-midterms",
       "title": "Fed holds interest rates steady in last decision before midterms",
       "publisher": "The Guardian Business",
       "published_at": "2026-10-28T19:26:41Z",
       "historical": null,
-      "read_at": "2026-10-29T02:42:45Z",
+      "read_at": "2026-10-29T10:20:15Z",
       "body_sha256": "4559a0dbfdc35fbf389fc900a606e0b1dcd47bd742124715a2e3857e9808d554",
       "body_characters": 4240,
       "model_context_characters": 4240,
@@ -114,7 +73,7 @@
       "publisher": "European Central Bank",
       "published_at": "2026-10-23T08:00:00Z",
       "historical": null,
-      "read_at": "2026-10-29T02:42:47Z",
+      "read_at": "2026-10-29T10:20:17Z",
       "body_sha256": "168e137e7ef9bbf0b708cdd0d22ac771eb240a3d19c5155bb9e205bf7646d8b2",
       "body_characters": 3289,
       "model_context_characters": 3289,
@@ -155,7 +114,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-28T02:17:32Z",
       "historical": null,
-      "read_at": "2026-10-29T02:42:47Z",
+      "read_at": "2026-10-29T10:20:17Z",
       "body_sha256": "6f51a244a8b3b2a18f6aa03cedb9cbce9faed52a768acbd13f7dfaa0ca7d675b",
       "body_characters": 3814,
       "model_context_characters": 3814,
@@ -186,6 +145,47 @@
         "E4": "The CPI release comes shortly ahead of the central bank’s next monetary"
       },
       "analyzed_at": "2026-10-28T19:05:20Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/26/trump-second-term-economy-charts",
+      "title": "‘We don’t have inflation’? Five charts show the US economic reality of Trump’s second term so far",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-26T11:00:42Z",
+      "historical": null,
+      "read_at": "2026-10-29T10:20:17Z",
+      "body_sha256": "1e639b1293cae00018bb96016f51b7249b105f1b1ac0b602b30c7c6124e6b34f",
+      "body_characters": 6549,
+      "model_context_characters": 4500,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The article discusses the US economic reality under Trump’s second term, focusing on inflation and the job market.",
+        "evidence_ids": [
+          "E6",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: Inflation and job market fluctuations",
+          "financial_channel: If higher interest rates and tariffs affect borrowing and job growth",
+          "asset_hypothesis: If investors remain uncertain about economic stability"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation remains high, gold may be seen as a hedge against currency devaluation."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite fluctuates, Bitcoin may see mixed reactions as an alternative investment."
+        },
+        "uncertainty": "If the Iran war ends and oil prices stabilize, inflation could drop, affecting gold and Bitcoin differently."
+      },
+      "evidence": {
+        "E6": "Inflation , especially gas prices, has soared over the last year.",
+        "E7": "The job market has been in stasis, and higher interest rates have"
+      },
+      "analyzed_at": "2026-10-27T00:45:42Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"

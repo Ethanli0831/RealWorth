@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-10-29T06:01:47Z",
+    "checked_at": "2026-10-29T12:49:55Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-10-29T06:01:47Z",
+    "checked_at": "2026-10-29T12:49:55Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -122,6 +122,56 @@
     "outlook": "If growth keeps slowing while inflation rises, watch for a policy trade-off. If inflation eases without worsening credit or employment, a softer adjustment is more plausible. These are conditional scenarios, not probability forecasts."
   },
   "news": [
+    {
+      "title": "ECB President Lagarde to step down on 7 February 2027",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
+      "published_at": "2026-10-29T10:00:00Z",
+      "source_id": "ecb",
+      "publisher": "European Central Bank",
+      "source_kind": "Primary institutional release",
+      "topics": [
+        "policy"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "ECB President Lagarde to step down on 7 February 2027",
+          "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
+          "publisher": "European Central Bank",
+          "published_at": "2026-10-29T10:00:00Z"
+        }
+      ]
+    },
+    {
+      "title": "Fuel is now liquid gold, haulier says after theft",
+      "url": "https://www.bbc.co.uk/news/articles/ck9qzdwjp03lo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-29T06:17:02Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "gold"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Fuel is now liquid gold, haulier says after theft",
+          "url": "https://www.bbc.co.uk/news/articles/ck9qzdwjp03lo?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-10-29T06:17:02Z"
+        }
+      ]
+    },
     {
       "title": "What we now know about the UK economy in four charts",
       "url": "https://www.bbc.co.uk/news/articles/c9x28350ly07o?at_medium=RSS&at_campaign=rss",
@@ -245,29 +295,6 @@
       ]
     },
     {
-      "title": "Donald Trump's biggest economic problem looks strangely familiar",
-      "url": "https://www.bbc.co.uk/news/articles/cwvg0ddz1z77o?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-10-27T06:01:11Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "No clear macro impact",
-        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
-      },
-      "related_reports": [
-        {
-          "title": "Donald Trump's biggest economic problem looks strangely familiar",
-          "url": "https://www.bbc.co.uk/news/articles/cwvg0ddz1z77o?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-10-27T06:01:11Z"
-        }
-      ]
-    },
-    {
       "title": "October 2026 euro area bank lending survey",
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261027~506ef03145.en.html",
       "published_at": "2026-10-27T00:00:00Z",
@@ -335,29 +362,6 @@
           "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261026~d903d7ad85.en.html",
           "publisher": "European Central Bank",
           "published_at": "2026-10-26T05:00:00Z"
-        }
-      ]
-    },
-    {
-      "title": "Volkswagen to build $4bn Audi SUV factory in US despite job cuts at home",
-      "url": "https://www.theguardian.com/business/2026/oct/25/volkswagen-to-build-4bn-audi-suv-factory-in-us-despite-job-cuts-at-home",
-      "published_at": "2026-10-25T13:43:19Z",
-      "source_id": "guardian",
-      "publisher": "The Guardian Business",
-      "source_kind": "Publisher headline",
-      "topics": [],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "No clear macro impact",
-        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
-      },
-      "related_reports": [
-        {
-          "title": "Volkswagen to build $4bn Audi SUV factory in US despite job cuts at home",
-          "url": "https://www.theguardian.com/business/2026/oct/25/volkswagen-to-build-4bn-audi-suv-factory-in-us-despite-job-cuts-at-home",
-          "publisher": "The Guardian Business",
-          "published_at": "2026-10-25T13:43:19Z"
         }
       ]
     },
@@ -506,29 +510,6 @@
           "published_at": "2026-10-15T15:37:59Z"
         }
       ]
-    },
-    {
-      "title": "IMF sees milder global slowdown as AI boom offsets war hit — warns resilience is nearing limits",
-      "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
-      "published_at": "2026-10-15T06:35:31Z",
-      "source_id": "cnbc",
-      "publisher": "CNBC Economy",
-      "source_kind": "Publisher headline",
-      "topics": [],
-      "cached": true,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "No clear macro impact",
-        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
-      },
-      "related_reports": [
-        {
-          "title": "IMF sees milder global slowdown as AI boom offsets war hit — warns resilience is nearing limits",
-          "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
-          "publisher": "CNBC Economy",
-          "published_at": "2026-10-15T06:35:31Z"
-        }
-      ]
     }
   ],
   "feed_health": [
@@ -536,60 +517,60 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-10-29T06:01:47Z",
+      "checked_at": "2026-10-29T12:49:55Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-29T06:01:47Z",
+      "last_success": "2026-10-29T12:49:55Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-10-29T06:01:47Z",
+      "checked_at": "2026-10-29T12:49:55Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-29T06:01:47Z",
-      "matched": 5
+      "last_success": "2026-10-29T12:49:55Z",
+      "matched": 6
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-10-29T06:01:47Z",
+      "checked_at": "2026-10-29T12:49:55Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-29T06:01:47Z",
+      "last_success": "2026-10-29T12:49:55Z",
       "matched": 3
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-10-29T06:01:47Z",
+      "checked_at": "2026-10-29T12:49:55Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-29T06:01:47Z",
-      "matched": 4
+      "last_success": "2026-10-29T12:49:55Z",
+      "matched": 3
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-10-29T06:01:47Z",
+      "checked_at": "2026-10-29T12:49:55Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
-      "matched": 4
+      "matched": 3
     },
     {
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-10-29T06:01:47Z",
+      "checked_at": "2026-10-29T12:49:55Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-29T06:01:47Z",
+      "last_success": "2026-10-29T12:49:55Z",
       "matched": 0
     }
   ],

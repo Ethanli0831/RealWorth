@@ -1,20 +1,37 @@
 {
   "meta": {
-    "checked_at": "2026-10-28T20:31:54Z",
+    "checked_at": "2026-10-29T00:20:15Z",
     "model": "empirical-log-return-quantiles-v2",
     "timezone": "America/Toronto",
     "today": "2026-10-28",
     "tomorrow": "2026-10-29",
     "quote_refresh": "Scheduled about every 15 minutes; provider and GitHub queue delays apply.",
     "disclosure": "Price-only empirical matching-horizon log-return scenarios, not AI price targets. Lower/central/upper bands are historical quantile ranges, not guaranteed probabilities. Bitcoin uses a frozen quote-to-24h target; ETFs use the last completed close to the first session close on/after tomorrow, with matching one/two-session returns. No forecasts are revised after issue.",
-    "failures": []
+    "failures": [
+      {
+        "ticker": "GLD",
+        "error": "ValueError"
+      },
+      {
+        "ticker": "SPY",
+        "error": "ValueError"
+      },
+      {
+        "ticker": "BIL",
+        "error": "ValueError"
+      },
+      {
+        "ticker": "TLT",
+        "error": "ValueError"
+      }
+    ]
   },
   "assets": [
     {
       "ticker": "BTC-USD",
       "asset": "Bitcoin / USD",
-      "quote": 81109.72,
-      "quote_at": "2026-10-28T20:31:47Z",
+      "quote": 81164.1,
+      "quote_at": "2026-10-29T00:20:08Z",
       "quote_stale": false,
       "market_status": "Continuous trading; quote may be delayed by provider",
       "tomorrow_has_session": true,
@@ -56,7 +73,7 @@
       "asset": "Gold ETF (GLD)",
       "quote": 373.51,
       "quote_at": "2026-10-28T20:00:00Z",
-      "quote_stale": false,
+      "quote_stale": true,
       "market_status": "Market closed · last reported quote",
       "tomorrow_has_session": true,
       "source": "https://finance.yahoo.com/quote/GLD/",
@@ -90,14 +107,14 @@
         },
         "issued_digest": "b3b5e751eba831b418708110e7d912d6b9ca660d04588a46751d2e8613538c00"
       },
-      "error": null
+      "error": "Latest refresh failed; retained previous snapshot"
     },
     {
       "ticker": "SPY",
       "asset": "S&P 500 ETF (SPY)",
       "quote": 772.31,
       "quote_at": "2026-10-28T20:00:00Z",
-      "quote_stale": false,
+      "quote_stale": true,
       "market_status": "Market closed · last reported quote",
       "tomorrow_has_session": true,
       "source": "https://finance.yahoo.com/quote/SPY/",
@@ -131,14 +148,14 @@
         },
         "issued_digest": "ab2d073aa71ac4222259a331a20b208d2ca6cb06905b14252db7c9207af5d514"
       },
-      "error": null
+      "error": "Latest refresh failed; retained previous snapshot"
     },
     {
       "ticker": "BIL",
       "asset": "T-Bill ETF (BIL)",
       "quote": 91.66,
       "quote_at": "2026-10-28T20:00:00Z",
-      "quote_stale": false,
+      "quote_stale": true,
       "market_status": "Market closed · last reported quote",
       "tomorrow_has_session": true,
       "source": "https://finance.yahoo.com/quote/BIL/",
@@ -172,14 +189,14 @@
         },
         "issued_digest": "6ef590a5b4c6936f118204f789d4a39c43fb4848da91bf286352fa4c307f165f"
       },
-      "error": null
+      "error": "Latest refresh failed; retained previous snapshot"
     },
     {
       "ticker": "TLT",
       "asset": "Long-bond ETF (TLT)",
       "quote": 80.99,
       "quote_at": "2026-10-28T20:00:00Z",
-      "quote_stale": false,
+      "quote_stale": true,
       "market_status": "Market closed · last reported quote",
       "tomorrow_has_session": true,
       "source": "https://finance.yahoo.com/quote/TLT/",
@@ -213,7 +230,7 @@
         },
         "issued_digest": "190da7e74b785a88063838ba545017f992ce5b45b8733170ec565c617e280bc2"
       },
-      "error": null
+      "error": "Latest refresh failed; retained previous snapshot"
     }
   ],
   "verification": {

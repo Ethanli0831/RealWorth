@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-10-28T20:31:49Z",
+    "checked_at": "2026-10-29T00:20:11Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-10-28T20:31:49Z",
+    "checked_at": "2026-10-29T00:20:11Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -105,11 +105,11 @@
       {
         "id": "T10Y3M",
         "name": "10-year minus 3-month Treasury yield",
-        "value": 0.77,
+        "value": 0.87,
         "unit": "percentage points",
-        "period": "2026-10-27",
+        "period": "2026-10-28",
         "stale": false,
-        "change": 0.1,
+        "change": 0.19,
         "source": "https://fred.stlouisfed.org/series/T10Y3M"
       }
     ],
@@ -362,31 +362,6 @@
       ]
     },
     {
-      "title": "Oil price rises above $117 a barrel amid fears US will renew strikes on Iran",
-      "url": "https://www.theguardian.com/business/2026/oct/23/oil-five-month-high-fears-us-renews-strikes-iran",
-      "published_at": "2026-10-23T16:48:28Z",
-      "source_id": "guardian",
-      "publisher": "The Guardian Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "energy"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Oil price rises above $117 a barrel amid fears US will renew strikes on Iran",
-          "url": "https://www.theguardian.com/business/2026/oct/23/oil-five-month-high-fears-us-renews-strikes-iran",
-          "publisher": "The Guardian Business",
-          "published_at": "2026-10-23T16:48:28Z"
-        }
-      ]
-    },
-    {
       "title": "ECB Consumer Expectations Survey results – September 2026",
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
       "published_at": "2026-10-23T08:00:00Z",
@@ -561,47 +536,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-10-28T20:31:49Z",
+      "checked_at": "2026-10-29T00:20:11Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-28T20:31:49Z",
+      "last_success": "2026-10-29T00:20:11Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-10-28T20:31:49Z",
+      "checked_at": "2026-10-29T00:20:11Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-28T20:31:49Z",
+      "last_success": "2026-10-29T00:20:11Z",
       "matched": 5
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-10-28T20:31:49Z",
+      "checked_at": "2026-10-29T00:20:11Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-28T20:31:49Z",
+      "last_success": "2026-10-29T00:20:11Z",
       "matched": 3
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-10-28T20:31:49Z",
+      "checked_at": "2026-10-29T00:20:11Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-28T20:31:49Z",
-      "matched": 5
+      "last_success": "2026-10-29T00:20:11Z",
+      "matched": 4
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-10-28T20:31:49Z",
+      "checked_at": "2026-10-29T00:20:11Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -611,10 +586,10 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-10-28T20:31:49Z",
+      "checked_at": "2026-10-29T00:20:11Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-28T20:31:49Z",
+      "last_success": "2026-10-29T00:20:11Z",
       "matched": 0
     }
   ],

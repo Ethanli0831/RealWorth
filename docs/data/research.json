@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-10-29T12:49:55Z",
+    "checked_at": "2026-10-29T18:41:15Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,18 +8,18 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-10-29T12:49:55Z",
+    "checked_at": "2026-10-29T18:41:15Z",
     "stale": false,
     "failures": [],
     "indicators": [
       {
         "id": "GDPC1",
         "name": "Real GDP growth, year over year",
-        "value": 2.192,
+        "value": 2.066,
         "unit": "%",
-        "period": "2026Q2",
+        "period": "2026Q3",
         "stale": false,
-        "change": -0.448,
+        "change": -0.126,
         "source": "https://fred.stlouisfed.org/series/GDPC1"
       },
       {
@@ -85,11 +85,11 @@
       {
         "id": "BAMLH0A0HYM2",
         "name": "US high-yield credit spread",
-        "value": 3.18,
+        "value": 3.14,
         "unit": "percentage points",
-        "period": "2026-10-27",
+        "period": "2026-10-28",
         "stale": false,
-        "change": 0.34,
+        "change": 0.29,
         "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
       },
       {
@@ -123,6 +123,106 @@
   },
   "news": [
     {
+      "title": "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
+      "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
+      "published_at": "2026-10-29T16:05:50Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "policy"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
+          "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-10-29T16:05:50Z"
+        }
+      ]
+    },
+    {
+      "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement",
+      "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
+      "published_at": "2026-10-29T14:00:00Z",
+      "source_id": "ecb",
+      "publisher": "European Central Bank",
+      "source_kind": "Primary institutional release",
+      "topics": [
+        "policy"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement",
+          "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
+          "publisher": "European Central Bank",
+          "published_at": "2026-10-29T14:00:00Z"
+        }
+      ]
+    },
+    {
+      "title": "Monetary policy decisions",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
+      "published_at": "2026-10-29T13:15:00Z",
+      "source_id": "ecb",
+      "publisher": "European Central Bank",
+      "source_kind": "Primary institutional release",
+      "topics": [
+        "policy"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Monetary policy decisions",
+          "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
+          "publisher": "European Central Bank",
+          "published_at": "2026-10-29T13:15:00Z"
+        }
+      ]
+    },
+    {
+      "title": "US economy grows faster than expected but inflation rises to 3.7%",
+      "url": "https://www.theguardian.com/business/2026/oct/29/economy-growth-third-quarter",
+      "published_at": "2026-10-29T13:09:00Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "inflation"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "US economy grows faster than expected but inflation rises to 3.7%",
+          "url": "https://www.theguardian.com/business/2026/oct/29/economy-growth-third-quarter",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-10-29T13:09:00Z"
+        }
+      ]
+    },
+    {
       "title": "ECB President Lagarde to step down on 7 February 2027",
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
       "published_at": "2026-10-29T10:00:00Z",
@@ -144,31 +244,6 @@
           "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
           "publisher": "European Central Bank",
           "published_at": "2026-10-29T10:00:00Z"
-        }
-      ]
-    },
-    {
-      "title": "Fuel is now liquid gold, haulier says after theft",
-      "url": "https://www.bbc.co.uk/news/articles/ck9qzdwjp03lo?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-10-29T06:17:02Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "gold"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Fuel is now liquid gold, haulier says after theft",
-          "url": "https://www.bbc.co.uk/news/articles/ck9qzdwjp03lo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-10-29T06:17:02Z"
         }
       ]
     },
@@ -485,31 +560,6 @@
           "published_at": "2026-10-16T16:27:31Z"
         }
       ]
-    },
-    {
-      "title": "Economists: Hot PPI shows Fed's work is not done",
-      "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
-      "published_at": "2026-10-15T15:37:59Z",
-      "source_id": "cnbc",
-      "publisher": "CNBC Economy",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "policy"
-      ],
-      "cached": true,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Economists: Hot PPI shows Fed's work is not done",
-          "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
-          "publisher": "CNBC Economy",
-          "published_at": "2026-10-15T15:37:59Z"
-        }
-      ]
     }
   ],
   "feed_health": [
@@ -517,60 +567,60 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-10-29T12:49:55Z",
+      "checked_at": "2026-10-29T18:41:15Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-29T12:49:55Z",
+      "last_success": "2026-10-29T18:41:15Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-10-29T12:49:55Z",
+      "checked_at": "2026-10-29T18:41:15Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-29T12:49:55Z",
-      "matched": 6
+      "last_success": "2026-10-29T18:41:15Z",
+      "matched": 8
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-10-29T12:49:55Z",
+      "checked_at": "2026-10-29T18:41:15Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-29T12:49:55Z",
-      "matched": 3
+      "last_success": "2026-10-29T18:41:15Z",
+      "matched": 2
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-10-29T12:49:55Z",
+      "checked_at": "2026-10-29T18:41:15Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-29T12:49:55Z",
-      "matched": 3
+      "last_success": "2026-10-29T18:41:15Z",
+      "matched": 5
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-10-29T12:49:55Z",
+      "checked_at": "2026-10-29T18:41:15Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
-      "matched": 3
+      "matched": 2
     },
     {
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-10-29T12:49:55Z",
+      "checked_at": "2026-10-29T18:41:15Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-10-29T12:49:55Z",
+      "last_success": "2026-10-29T18:41:15Z",
       "matched": 0
     }
   ],

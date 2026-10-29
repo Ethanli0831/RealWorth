@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-29T17:06:56Z",
-    "scan_started_at": "2026-10-29T17:03:11Z",
+    "checked_at": "2026-10-29T22:09:38Z",
+    "scan_started_at": "2026-10-29T21:57:31Z",
     "provider_requested": "local",
-    "article_reads": 6,
-    "ai_interpretations": 6,
-    "new_interpretations": 2,
+    "article_reads": 9,
+    "ai_interpretations": 5,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,127 +19,36 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/oct/26/trump-second-term-economy-charts",
-      "title": "‘We don’t have inflation’? Five charts show the US economic reality of Trump’s second term so far",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "title": "Federal Reserve issues FOMC statement",
+      "publisher": "Federal Reserve",
+      "published_at": "2026-10-28T18:00:00Z",
+      "historical": null,
+      "status": "Unavailable: Insufficient public article text"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/oct/29/economy-growth-third-quarter",
+      "title": "US economy grows faster than expected but inflation rises to 3.7%",
       "publisher": "The Guardian Business",
-      "published_at": "2026-10-26T11:00:42Z",
+      "published_at": "2026-10-29T13:09:00Z",
       "historical": null,
-      "read_at": "2026-10-29T17:02:07Z",
-      "body_sha256": "1e639b1293cae00018bb96016f51b7249b105f1b1ac0b602b30c7c6124e6b34f",
-      "body_characters": 6549,
-      "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "The article discusses the US economic reality under Trump’s second term, focusing on inflation and the job market.",
-        "evidence_ids": [
-          "E6",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: Inflation and job market fluctuations",
-          "financial_channel: If higher interest rates and tariffs affect borrowing and job growth",
-          "asset_hypothesis: If investors remain uncertain about economic stability"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation remains high, gold may be seen as a hedge against currency devaluation."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite fluctuates, Bitcoin may see mixed reactions as an alternative investment."
-        },
-        "uncertainty": "If the Iran war ends and oil prices stabilize, inflation could drop, affecting gold and Bitcoin differently."
-      },
-      "evidence": {
-        "E6": "Inflation , especially gas prices, has soared over the last year.",
-        "E7": "The job market has been in stasis, and higher interest rates have"
-      },
-      "analyzed_at": "2026-10-27T00:45:42Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+      "read_at": "2026-10-29T21:57:32Z",
+      "body_sha256": "81a524cb158dcf9bb39491aecc1f17d5b70bd38c1d8a5f166df929ed6f962087",
+      "body_characters": 3882,
+      "model_context_characters": 3882,
+      "status": "Unavailable: Extra data: line 1 column 836 (char 835)"
     },
     {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
-      "title": "ECB President Lagarde to step down on 7 February 2027",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
+      "title": "Monetary policy decisions",
       "publisher": "European Central Bank",
-      "published_at": "2026-10-29T10:00:00Z",
+      "published_at": "2026-10-29T13:15:00Z",
       "historical": null,
-      "read_at": "2026-10-29T17:03:13Z",
-      "body_sha256": "1b6539a3dc709a189446519ed7d225e95e45f122cfa3135e39f21cda7b4539e1",
-      "body_characters": 683,
-      "model_context_characters": 683,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "ECB President Christine Lagarde will step down on February 7, 2027, as per the European Council.",
-        "evidence_ids": [
-          "E1",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: ECB President stepping down",
-          "financial_channel: If market perceives change in monetary policy",
-          "asset_hypothesis: If risk appetite increases"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If market perceives change in monetary policy leading to uncertainty"
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite increases, but liquidity remains stable"
-        },
-        "uncertainty": "If the new ECB President maintains similar policies, gold and Bitcoin may not react significantly."
-      },
-      "evidence": {
-        "E1": "European Central Bank President Christine Lagarde today informed the Governing Council and",
-        "E5": "Reproduction is permitted provided that the source is acknowledged."
-      },
-      "analyzed_at": "2026-10-29T17:04:21Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/ck9qzdwjp03lo?at_medium=RSS&at_campaign=rss",
-      "title": "Fuel is now liquid gold, haulier says after theft",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-29T06:17:02Z",
-      "historical": null,
-      "read_at": "2026-10-29T17:04:21Z",
-      "body_sha256": "ae91bd6dcf665d04c537331a69e1feb99349a554820860621b2e2e2749e81dae",
-      "body_characters": 2189,
-      "model_context_characters": 2189,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "A West Midlands haulage company reported fuel thefts motivated by rising diesel prices, estimating the stolen diesel was worth about £800.",
-        "evidence_ids": [
-          "E1",
-          "E2"
-        ],
-        "chain": [
-          "reported_event: fuel thefts reported",
-          "financial_channel: If fuel prices rise, demand for theft increases",
-          "asset_hypothesis: If fuel prices rise, alternative-hedge channels are sought"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If fuel prices rise, transportation costs increase, potentially boosting gold as a hedge."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If fuel prices rise, risk appetite may shift, but Bitcoin's role as a hedge is unproven."
-        },
-        "uncertainty": "If fuel prices stabilize, the risk of further thefts may decrease, reducing the perceived value of fuel as a 'liquid gold'."
-      },
-      "evidence": {
-        "E1": "\"[It happened] because of the price of fuel,\" he claimed, adding that",
-        "E2": "Pinches said fuel had become \"liquid gold\" and estimated the missing diesel"
-      },
-      "analyzed_at": "2026-10-29T17:06:56Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+      "read_at": "2026-10-29T22:06:12Z",
+      "body_sha256": "e52a8e85579ddc5486c59deada912991be969527725e31e211233bb9162d005f",
+      "body_characters": 2593,
+      "model_context_characters": 2593,
+      "status": "Unavailable: AI reported event does not match the article topic"
     },
     {
       "url": "https://www.theguardian.com/business/2026/oct/28/fed-interest-rates-midterms",
@@ -183,50 +92,42 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-      "title": "Federal Reserve issues FOMC statement",
-      "publisher": "Federal Reserve",
-      "published_at": "2026-10-28T18:00:00Z",
-      "historical": null,
-      "status": "Unavailable: Insufficient public article text"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
-      "title": "ECB Consumer Expectations Survey results – September 2026",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
+      "title": "ECB President Lagarde to step down on 7 February 2027",
       "publisher": "European Central Bank",
-      "published_at": "2026-10-23T08:00:00Z",
+      "published_at": "2026-10-29T10:00:00Z",
       "historical": null,
-      "read_at": "2026-10-29T10:20:17Z",
-      "body_sha256": "168e137e7ef9bbf0b708cdd0d22ac771eb240a3d19c5155bb9e205bf7646d8b2",
-      "body_characters": 3289,
-      "model_context_characters": 3289,
+      "read_at": "2026-10-29T17:03:13Z",
+      "body_sha256": "1b6539a3dc709a189446519ed7d225e95e45f122cfa3135e39f21cda7b4539e1",
+      "body_characters": 683,
+      "model_context_characters": 683,
       "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
-        "summary": "ECB Consumer Expectations Survey shows inflation and spending growth expectations increased in September 2026.",
+        "summary": "ECB President Christine Lagarde will step down on February 7, 2027, as per the European Council.",
         "evidence_ids": [
           "E1",
-          "E8"
+          "E5"
         ],
         "chain": [
-          "reported_event: Inflation and spending growth expectations increased",
-          "financial_channel: If inflation expectations rise, gold demand may increase",
-          "asset_hypothesis: If spending growth expectations rise, Bitcoin demand may increase"
+          "reported_event: ECB President stepping down",
+          "financial_channel: If market perceives change in monetary policy",
+          "asset_hypothesis: If risk appetite increases"
         ],
         "gold": {
           "direction": "up",
-          "condition": "If inflation expectations rise, gold may be seen as a hedge against inflation."
+          "condition": "If market perceives change in monetary policy leading to uncertainty"
         },
         "bitcoin": {
           "direction": "mixed",
-          "condition": "If spending growth expectations rise, Bitcoin may be seen as a store of value, but higher inflation expectations may reduce its appeal as a hedge."
+          "condition": "If risk appetite increases, but liquidity remains stable"
         },
-        "uncertainty": "If the economy improves, consumers may reduce their inflation and spending growth expectations."
+        "uncertainty": "If the new ECB President maintains similar policies, gold and Bitcoin may not react significantly."
       },
       "evidence": {
-        "E1": "In September the median rate of perceived inflation over the previous 12",
-        "E8": "Median expectations for inflation over the next 12 months also increased, to"
+        "E1": "European Central Bank President Christine Lagarde today informed the Governing Council and",
+        "E5": "Reproduction is permitted provided that the source is acknowledged."
       },
-      "analyzed_at": "2026-10-24T01:56:43Z",
+      "analyzed_at": "2026-10-29T17:04:21Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
@@ -271,6 +172,112 @@
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
+      "title": "ECB Consumer Expectations Survey results – September 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-23T08:00:00Z",
+      "historical": null,
+      "read_at": "2026-10-29T10:20:17Z",
+      "body_sha256": "168e137e7ef9bbf0b708cdd0d22ac771eb240a3d19c5155bb9e205bf7646d8b2",
+      "body_characters": 3289,
+      "model_context_characters": 3289,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "ECB Consumer Expectations Survey shows inflation and spending growth expectations increased in September 2026.",
+        "evidence_ids": [
+          "E1",
+          "E8"
+        ],
+        "chain": [
+          "reported_event: Inflation and spending growth expectations increased",
+          "financial_channel: If inflation expectations rise, gold demand may increase",
+          "asset_hypothesis: If spending growth expectations rise, Bitcoin demand may increase"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations rise, gold may be seen as a hedge against inflation."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If spending growth expectations rise, Bitcoin may be seen as a store of value, but higher inflation expectations may reduce its appeal as a hedge."
+        },
+        "uncertainty": "If the economy improves, consumers may reduce their inflation and spending growth expectations."
+      },
+      "evidence": {
+        "E1": "In September the median rate of perceived inflation over the previous 12",
+        "E8": "Median expectations for inflation over the next 12 months also increased, to"
+      },
+      "analyzed_at": "2026-10-24T01:56:43Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/26/trump-second-term-economy-charts",
+      "title": "‘We don’t have inflation’? Five charts show the US economic reality of Trump’s second term so far",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-26T11:00:42Z",
+      "historical": null,
+      "read_at": "2026-10-29T17:02:07Z",
+      "body_sha256": "1e639b1293cae00018bb96016f51b7249b105f1b1ac0b602b30c7c6124e6b34f",
+      "body_characters": 6549,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "The article discusses the US economic reality under Trump’s second term, focusing on inflation and the job market.",
+        "evidence_ids": [
+          "E6",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: Inflation and job market fluctuations",
+          "financial_channel: If higher interest rates and tariffs affect borrowing and job growth",
+          "asset_hypothesis: If investors remain uncertain about economic stability"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation remains high, gold may be seen as a hedge against currency devaluation."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite fluctuates, Bitcoin may see mixed reactions as an alternative investment."
+        },
+        "uncertainty": "If the Iran war ends and oil prices stabilize, inflation could drop, affecting gold and Bitcoin differently."
+      },
+      "evidence": {
+        "E6": "Inflation , especially gas prices, has soared over the last year.",
+        "E7": "The job market has been in stasis, and higher interest rates have"
+      },
+      "analyzed_at": "2026-10-27T00:45:42Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
+      "title": "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-29T16:05:50Z",
+      "historical": null,
+      "read_at": "2026-10-29T22:09:37Z",
+      "body_sha256": "9fbe046a23b65dc5f133b3df5a5dea1afae81a94d09d409f4ac1f1d68ba9fa1a",
+      "body_characters": 4362,
+      "model_context_characters": 4362,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
+      "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-29T14:00:00Z",
+      "historical": null,
+      "read_at": "2026-10-29T22:09:38Z",
+      "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
+      "body_characters": 18000,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
     }
   ]
 }

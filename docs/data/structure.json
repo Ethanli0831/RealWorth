@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-10-30T15:22:05.633908+00:00",
+    "checked_at": "2026-10-30T21:04:50.899124+00:00",
     "refresh": "Every four hours requested; source publication and GitHub delays apply.",
     "scope": "Selected free public sources. Missing/paid sources are not substituted with estimates."
   },
@@ -12,12 +12,12 @@
       "source": "https://www.ishares.com/us/products/333011/ishares-bitcoin-trust-etf",
       "note": "Fund bitcoins are not net flows. AUM changes include price effects.",
       "unit": "BTC",
-      "value": 814715.1472,
-      "period": "2026-10-28",
+      "value": 814873.6203,
+      "period": "2026-10-29",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-30T15:22:05.633908+00:00",
+      "last_success": "2026-10-30T21:04:50.899124+00:00",
       "history": [
         {
           "date": "2026-10-22",
@@ -38,11 +38,15 @@
         {
           "date": "2026-10-28",
           "value": 814715.1472
+        },
+        {
+          "date": "2026-10-29",
+          "value": 814873.6203
         }
       ],
       "percentile": null,
       "percentile_minimum": 250,
-      "observations": 5
+      "observations": 6
     },
     {
       "id": "gld",
@@ -69,12 +73,12 @@
       "source": "https://docs.deribit.com/#public-get_book_summary_by_currency",
       "note": "Deribit BTC-PERPETUAL only; 8-hour funding is not annualised. Positive funding is not a directional forecast.",
       "unit": "% / 8 hours",
-      "value": 0.000273,
+      "value": 0.001372,
       "period": "2026-10-30",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-30T15:22:05.633908+00:00",
+      "last_success": "2026-10-30T21:04:50.899124+00:00",
       "history": [
         {
           "date": "2026-10-25",
@@ -98,7 +102,7 @@
         },
         {
           "date": "2026-10-30",
-          "value": 0.000273
+          "value": 0.001372
         }
       ],
       "percentile": null,
@@ -112,12 +116,12 @@
       "source": "https://docs.deribit.com/#public-get_book_summary_by_currency",
       "note": "USD notional can rise from price changes. One exchange does not measure all leverage.",
       "unit": "USD notional",
-      "value": 697138370.0,
+      "value": 710902640.0,
       "period": "2026-10-30",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-30T15:22:05.633908+00:00",
+      "last_success": "2026-10-30T21:04:50.899124+00:00",
       "history": [
         {
           "date": "2026-10-25",
@@ -141,7 +145,7 @@
         },
         {
           "date": "2026-10-30",
-          "value": 697138370.0
+          "value": 710902640.0
         }
       ],
       "percentile": null,
@@ -160,7 +164,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-30T15:22:05.633908+00:00",
+      "last_success": "2026-10-30T21:04:50.899124+00:00",
       "history": [
         {
           "date": "2025-10-28",
@@ -1647,7 +1651,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-30T15:22:05.633908+00:00",
+      "last_success": "2026-10-30T21:04:50.899124+00:00",
       "history": [
         {
           "date": "2025-10-28",
@@ -3134,7 +3138,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-30T15:22:05.633908+00:00",
+      "last_success": "2026-10-30T21:04:50.899124+00:00",
       "history": [
         {
           "date": "2025-10-28",
@@ -4621,7 +4625,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-30T15:22:05.633908+00:00",
+      "last_success": "2026-10-30T21:04:50.899124+00:00",
       "history": [
         {
           "date": "2025-10-28",
@@ -6108,7 +6112,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-30T15:22:05.633908+00:00",
+      "last_success": "2026-10-30T21:04:50.899124+00:00",
       "history": [
         {
           "date": "2025-10-28",
@@ -7595,7 +7599,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-30T15:22:05.633908+00:00",
+      "last_success": "2026-10-30T21:04:50.899124+00:00",
       "history": [
         {
           "date": "2025-09-01",
@@ -7666,7 +7670,7 @@
       "status": "Fetched",
       "error": null,
       "stale": true,
-      "last_success": "2026-10-30T15:22:05.633908+00:00",
+      "last_success": "2026-10-30T21:04:50.899124+00:00",
       "history": [
         {
           "date": "2025-10-22",
@@ -8688,21 +8692,25 @@
       "source": "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm",
       "note": "COMEX gold futures-only managed-money longs minus shorts. Weekly positions are released with a lag; categories are not one unified institution.",
       "unit": "contracts net long",
-      "value": 104206.0,
-      "period": "2026-10-20",
+      "value": 105562.0,
+      "period": "2026-10-27",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-10-30T15:22:05.633908+00:00",
+      "last_success": "2026-10-30T21:04:50.899124+00:00",
       "history": [
         {
           "date": "2026-10-20",
           "value": 104206.0
+        },
+        {
+          "date": "2026-10-27",
+          "value": 105562.0
         }
       ],
       "percentile": null,
       "percentile_minimum": 48,
-      "observations": 1
+      "observations": 2
     }
   ],
   "directory": [

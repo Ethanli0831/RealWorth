@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-10-29T23:00:45Z",
+    "updated_at": "2026-10-30T02:32:29Z",
     "retention_days": 120,
     "verification": "Bitcoin: first completed 5-minute bar at/after target, at most 5 minutes late. ETFs: scheduled session close. Missing target data never becomes a fabricated outcome."
   },

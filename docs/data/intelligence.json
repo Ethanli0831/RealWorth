@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-10-30T02:18:58Z",
-    "scan_started_at": "2026-10-30T02:06:41Z",
+    "checked_at": "2026-10-30T09:06:56Z",
+    "scan_started_at": "2026-10-30T08:53:33Z",
     "provider_requested": "local",
     "article_reads": 9,
-    "ai_interpretations": 5,
+    "ai_interpretations": 4,
     "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -19,20 +19,12 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-      "title": "Federal Reserve issues FOMC statement",
-      "publisher": "Federal Reserve",
-      "published_at": "2026-10-28T18:00:00Z",
-      "historical": null,
-      "status": "Unavailable: Insufficient public article text"
-    },
-    {
       "url": "https://www.theguardian.com/business/2026/oct/29/economy-growth-third-quarter",
       "title": "US economy grows faster than expected but inflation rises to 3.7%",
       "publisher": "The Guardian Business",
       "published_at": "2026-10-29T13:09:00Z",
       "historical": null,
-      "read_at": "2026-10-30T02:06:43Z",
+      "read_at": "2026-10-30T08:53:34Z",
       "body_sha256": "81a524cb158dcf9bb39491aecc1f17d5b70bd38c1d8a5f166df929ed6f962087",
       "body_characters": 3882,
       "model_context_characters": 3882,
@@ -44,7 +36,7 @@
       "publisher": "European Central Bank",
       "published_at": "2026-10-29T13:15:00Z",
       "historical": null,
-      "read_at": "2026-10-30T02:15:21Z",
+      "read_at": "2026-10-30T09:03:04Z",
       "body_sha256": "e52a8e85579ddc5486c59deada912991be969527725e31e211233bb9162d005f",
       "body_characters": 2593,
       "model_context_characters": 2593,
@@ -174,47 +166,6 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
-      "title": "ECB Consumer Expectations Survey results – September 2026",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-23T08:00:00Z",
-      "historical": null,
-      "read_at": "2026-10-29T10:20:17Z",
-      "body_sha256": "168e137e7ef9bbf0b708cdd0d22ac771eb240a3d19c5155bb9e205bf7646d8b2",
-      "body_characters": 3289,
-      "model_context_characters": 3289,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "ECB Consumer Expectations Survey shows inflation and spending growth expectations increased in September 2026.",
-        "evidence_ids": [
-          "E1",
-          "E8"
-        ],
-        "chain": [
-          "reported_event: Inflation and spending growth expectations increased",
-          "financial_channel: If inflation expectations rise, gold demand may increase",
-          "asset_hypothesis: If spending growth expectations rise, Bitcoin demand may increase"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation expectations rise, gold may be seen as a hedge against inflation."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If spending growth expectations rise, Bitcoin may be seen as a store of value, but higher inflation expectations may reduce its appeal as a hedge."
-        },
-        "uncertainty": "If the economy improves, consumers may reduce their inflation and spending growth expectations."
-      },
-      "evidence": {
-        "E1": "In September the median rate of perceived inflation over the previous 12",
-        "E8": "Median expectations for inflation over the next 12 months also increased, to"
-      },
-      "analyzed_at": "2026-10-24T01:56:43Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
       "url": "https://www.theguardian.com/us-news/2026/oct/26/trump-second-term-economy-charts",
       "title": "‘We don’t have inflation’? Five charts show the US economic reality of Trump’s second term so far",
       "publisher": "The Guardian Business",
@@ -256,15 +207,27 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
+      "url": "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o?at_medium=RSS&at_campaign=rss",
+      "title": "Crypto worth billions frozen after suspected Binance hack",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-30T02:18:00Z",
+      "historical": null,
+      "read_at": "2026-10-30T09:06:55Z",
+      "body_sha256": "433cb43b724b00eaebf1e775414ee188408b68219b3a5c6f3d767d58fc6f7aea",
+      "body_characters": 4847,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
       "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
       "title": "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
       "publisher": "The Guardian Business",
       "published_at": "2026-10-29T16:05:50Z",
       "historical": null,
-      "read_at": "2026-10-30T02:18:57Z",
-      "body_sha256": "9fbe046a23b65dc5f133b3df5a5dea1afae81a94d09d409f4ac1f1d68ba9fa1a",
-      "body_characters": 4362,
-      "model_context_characters": 4362,
+      "read_at": "2026-10-30T09:06:55Z",
+      "body_sha256": "816c2c44d39c4991993bd1f5936df49e29178ba65f6f2df699f48c09acc066ce",
+      "body_characters": 4367,
+      "model_context_characters": 4367,
       "status": "Public body read; queued for AI"
     },
     {
@@ -273,11 +236,19 @@
       "publisher": "European Central Bank",
       "published_at": "2026-10-29T14:00:00Z",
       "historical": null,
-      "read_at": "2026-10-30T02:18:58Z",
+      "read_at": "2026-10-30T09:06:56Z",
       "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
       "body_characters": 18000,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "title": "Federal Reserve issues FOMC statement",
+      "publisher": "Federal Reserve",
+      "published_at": "2026-10-28T18:00:00Z",
+      "historical": null,
+      "status": "Unavailable: Insufficient public article text"
     }
   ]
 }

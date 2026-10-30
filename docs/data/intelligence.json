@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-30T09:06:56Z",
-    "scan_started_at": "2026-10-30T08:53:33Z",
+    "checked_at": "2026-10-30T16:15:59Z",
+    "scan_started_at": "2026-10-30T16:10:26Z",
     "provider_requested": "local",
     "article_reads": 9,
-    "ai_interpretations": 4,
-    "new_interpretations": 0,
+    "ai_interpretations": 3,
+    "new_interpretations": 2,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,16 +19,154 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
+      "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-30T14:00:00Z",
+      "historical": null,
+      "read_at": "2026-10-30T16:10:28Z",
+      "body_sha256": "008585d2480f3877175b1f0876a49c571e898add6f7532626674fbd6d446e640",
+      "body_characters": 4117,
+      "model_context_characters": 4117,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "ECB President Lagarde will step down on February 7, 2027, after informing the Governing Council on October 29, 2026.",
+        "evidence_ids": [
+          "E1",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: ECB President stepping down",
+          "financial_channel: If risk appetite decreases, gold may see mixed reactions",
+          "asset_hypothesis: If liquidity remains stable, gold may remain stable"
+        ],
+        "gold": {
+          "direction": "mixed",
+          "condition": "If risk appetite decreases, gold may see mixed reactions due to uncertainty surrounding the new leadership."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If risk appetite decreases, Bitcoin may face mixed reactions, but liquidity and alternative-hedge channels could influence its direction."
+        },
+        "uncertainty": "If Lagarde's departure leads to increased confidence in the ECB's future leadership, gold and Bitcoin may both see upward trends."
+      },
+      "evidence": {
+        "E1": "On 29 October 2026 ECB President Christine Lagarde informed the Governing Council",
+        "E3": "ECB President Lagarde to step down on 7 February 2027"
+      },
+      "analyzed_at": "2026-10-30T16:13:24Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/oct/29/binance-crypto-exchange-hack",
+      "title": "North Korean group blamed for $6.3bn Binance hack in biggest ever crypto heist",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-30T12:48:40Z",
+      "historical": null,
+      "read_at": "2026-10-30T16:13:24Z",
+      "body_sha256": "16320a313453cc78790b2de3f494ce59c7bf78cc16d0c75f78edd7a75278395e",
+      "body_characters": 5994,
+      "model_context_characters": 4500,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Binance suffered a $6.3 billion hack, the largest in crypto history, with North Korea suspected as the culprit.",
+        "evidence_ids": [
+          "E1",
+          "E8"
+        ],
+        "chain": [
+          "reported_event: Binance hack",
+          "financial_channel: If risk appetite decreases, investors may move to safer assets.",
+          "asset_hypothesis: If alternative-hedge channels are saturated, Bitcoin may see increased demand."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If global economic uncertainty rises, gold may be seen as a safer haven."
+        },
+        "bitcoin": {
+          "direction": "down",
+          "condition": "If risk appetite decreases, investors may shift to traditional assets, reducing Bitcoin demand."
+        },
+        "uncertainty": "If North Korea's involvement is proven, the hack could lead to stricter regulations, affecting all cryptocurrencies."
+      },
+      "evidence": {
+        "E1": "Markets reacted immediately in early Asian trading on Friday, and bitcoin –",
+        "E8": "Tell us: have you been affected by the Binance hack?"
+      },
+      "analyzed_at": "2026-10-30T16:15:56Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o?at_medium=RSS&at_campaign=rss",
+      "title": "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-30T09:33:51Z",
+      "historical": null,
+      "read_at": "2026-10-30T16:15:56Z",
+      "body_sha256": "2a804ccc569ec5abf5d07bf8f34a5fac584abe0c583313f4b4cbc32cabe2599b",
+      "body_characters": 4998,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "title": "Federal Reserve issues FOMC statement",
+      "publisher": "Federal Reserve",
+      "published_at": "2026-10-28T18:00:00Z",
+      "historical": null,
+      "status": "Unavailable: Insufficient public article text"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
+      "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-30T09:00:00Z",
+      "historical": null,
+      "read_at": "2026-10-30T16:15:57Z",
+      "body_sha256": "b08617b909ac57c43730654a8505de9828f2411ea40ce692e1dea6f5ac6288d0",
+      "body_characters": 1747,
+      "model_context_characters": 1747,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
+      "title": "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-29T16:05:50Z",
+      "historical": null,
+      "read_at": "2026-10-30T16:15:57Z",
+      "body_sha256": "816c2c44d39c4991993bd1f5936df49e29178ba65f6f2df699f48c09acc066ce",
+      "body_characters": 4367,
+      "model_context_characters": 4367,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
+      "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-29T14:00:00Z",
+      "historical": null,
+      "read_at": "2026-10-30T16:15:58Z",
+      "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
+      "body_characters": 18000,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
       "url": "https://www.theguardian.com/business/2026/oct/29/economy-growth-third-quarter",
       "title": "US economy grows faster than expected but inflation rises to 3.7%",
       "publisher": "The Guardian Business",
       "published_at": "2026-10-29T13:09:00Z",
       "historical": null,
-      "read_at": "2026-10-30T08:53:34Z",
+      "read_at": "2026-10-30T16:15:58Z",
       "body_sha256": "81a524cb158dcf9bb39491aecc1f17d5b70bd38c1d8a5f166df929ed6f962087",
       "body_characters": 3882,
       "model_context_characters": 3882,
-      "status": "Unavailable: Extra data: line 1 column 836 (char 835)"
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
@@ -36,11 +174,11 @@
       "publisher": "European Central Bank",
       "published_at": "2026-10-29T13:15:00Z",
       "historical": null,
-      "read_at": "2026-10-30T09:03:04Z",
+      "read_at": "2026-10-30T16:15:59Z",
       "body_sha256": "e52a8e85579ddc5486c59deada912991be969527725e31e211233bb9162d005f",
       "body_characters": 2593,
       "model_context_characters": 2593,
-      "status": "Unavailable: AI reported event does not match the article topic"
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.theguardian.com/business/2026/oct/28/fed-interest-rates-midterms",
@@ -82,173 +220,6 @@
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
-      "title": "ECB President Lagarde to step down on 7 February 2027",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-29T10:00:00Z",
-      "historical": null,
-      "read_at": "2026-10-29T17:03:13Z",
-      "body_sha256": "1b6539a3dc709a189446519ed7d225e95e45f122cfa3135e39f21cda7b4539e1",
-      "body_characters": 683,
-      "model_context_characters": 683,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "ECB President Christine Lagarde will step down on February 7, 2027, as per the European Council.",
-        "evidence_ids": [
-          "E1",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: ECB President stepping down",
-          "financial_channel: If market perceives change in monetary policy",
-          "asset_hypothesis: If risk appetite increases"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If market perceives change in monetary policy leading to uncertainty"
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite increases, but liquidity remains stable"
-        },
-        "uncertainty": "If the new ECB President maintains similar policies, gold and Bitcoin may not react significantly."
-      },
-      "evidence": {
-        "E1": "European Central Bank President Christine Lagarde today informed the Governing Council and",
-        "E5": "Reproduction is permitted provided that the source is acknowledged."
-      },
-      "analyzed_at": "2026-10-29T17:04:21Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/2026/oct/28/inflation-rate-australia-2026-number-data-consumer-price-index-cpi-release",
-      "title": "Australia’s inflation rate rises to 4.3%, fuelling fears of fifth interest rate hike this year",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-28T02:17:32Z",
-      "historical": null,
-      "read_at": "2026-10-29T10:20:17Z",
-      "body_sha256": "6f51a244a8b3b2a18f6aa03cedb9cbce9faed52a768acbd13f7dfaa0ca7d675b",
-      "body_characters": 3814,
-      "model_context_characters": 3814,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Australia's inflation rate rose to 4.3%, prompting fears of a fifth interest rate hike this year.",
-        "evidence_ids": [
-          "E1",
-          "E4"
-        ],
-        "chain": [
-          "reported_event: inflation rate rises",
-          "financial_channel: If higher inflation, then increased borrowing costs",
-          "asset_hypothesis: If higher inflation, then reduced asset value"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If higher inflation, then increased demand for gold as a hedge."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If higher inflation, then reduced risk appetite, but increased liquidity may favor Bitcoin."
-        },
-        "uncertainty": "If the Middle East conflict ends, fuel prices may fall, reducing inflationary pressures."
-      },
-      "evidence": {
-        "E1": "Australia’s headline inflation rate has accelerated to 4.3%, with a key gauge",
-        "E4": "The CPI release comes shortly ahead of the central bank’s next monetary"
-      },
-      "analyzed_at": "2026-10-28T19:05:20Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/oct/26/trump-second-term-economy-charts",
-      "title": "‘We don’t have inflation’? Five charts show the US economic reality of Trump’s second term so far",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-26T11:00:42Z",
-      "historical": null,
-      "read_at": "2026-10-29T17:02:07Z",
-      "body_sha256": "1e639b1293cae00018bb96016f51b7249b105f1b1ac0b602b30c7c6124e6b34f",
-      "body_characters": 6549,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The article discusses the US economic reality under Trump’s second term, focusing on inflation and the job market.",
-        "evidence_ids": [
-          "E6",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: Inflation and job market fluctuations",
-          "financial_channel: If higher interest rates and tariffs affect borrowing and job growth",
-          "asset_hypothesis: If investors remain uncertain about economic stability"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation remains high, gold may be seen as a hedge against currency devaluation."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite fluctuates, Bitcoin may see mixed reactions as an alternative investment."
-        },
-        "uncertainty": "If the Iran war ends and oil prices stabilize, inflation could drop, affecting gold and Bitcoin differently."
-      },
-      "evidence": {
-        "E6": "Inflation , especially gas prices, has soared over the last year.",
-        "E7": "The job market has been in stasis, and higher interest rates have"
-      },
-      "analyzed_at": "2026-10-27T00:45:42Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o?at_medium=RSS&at_campaign=rss",
-      "title": "Crypto worth billions frozen after suspected Binance hack",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-30T02:18:00Z",
-      "historical": null,
-      "read_at": "2026-10-30T09:06:55Z",
-      "body_sha256": "433cb43b724b00eaebf1e775414ee188408b68219b3a5c6f3d767d58fc6f7aea",
-      "body_characters": 4847,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
-      "title": "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-29T16:05:50Z",
-      "historical": null,
-      "read_at": "2026-10-30T09:06:55Z",
-      "body_sha256": "816c2c44d39c4991993bd1f5936df49e29178ba65f6f2df699f48c09acc066ce",
-      "body_characters": 4367,
-      "model_context_characters": 4367,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
-      "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-29T14:00:00Z",
-      "historical": null,
-      "read_at": "2026-10-30T09:06:56Z",
-      "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
-      "body_characters": 18000,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-      "title": "Federal Reserve issues FOMC statement",
-      "publisher": "Federal Reserve",
-      "published_at": "2026-10-28T18:00:00Z",
-      "historical": null,
-      "status": "Unavailable: Insufficient public article text"
     }
   ]
 }

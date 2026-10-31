@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-31T07:32:05Z",
-    "scan_started_at": "2026-10-31T07:24:55Z",
+    "checked_at": "2026-10-31T13:51:30Z",
+    "scan_started_at": "2026-10-31T13:49:15Z",
     "provider_requested": "local",
     "article_reads": 8,
-    "ai_interpretations": 3,
-    "new_interpretations": 1,
+    "ai_interpretations": 5,
+    "new_interpretations": 2,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,65 +19,12 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
-      "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-30T21:13:14Z",
-      "historical": null,
-      "read_at": "2026-10-31T07:24:56Z",
-      "body_sha256": "f2a85fd95ab4438749aeb85bb46821150687226ac601c97af3d87fa8dd78a95d",
-      "body_characters": 5018,
-      "model_context_characters": 4500,
-      "status": "Unavailable: AI numerical statements require exact cited source support"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/oct/29/binance-crypto-exchange-hack",
-      "title": "North Korea is likely culprit behind $6.3bn crypto hack, ‘largest heist in history’",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-30T16:35:44Z",
-      "historical": null,
-      "read_at": "2026-10-31T07:29:48Z",
-      "body_sha256": "654d70ea393ed55249cbbd82a6a1cb410f199e635d7f3cbf9271d08db20af8d6",
-      "body_characters": 6441,
-      "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "Binance, the world's largest cryptocurrency exchange, was hacked for $6.3 billion, with North Korea suspected as the culprit.",
-        "evidence_ids": [
-          "E8",
-          "E2"
-        ],
-        "chain": [
-          "reported_event: Binance was hacked for $6.3 billion",
-          "financial_channel: If risk appetite decreases, investors may move to safer assets.",
-          "asset_hypothesis: If liquidity tightens, alternative-hedge channels may be sought."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If risk appetite decreases, gold may be seen as a safer haven."
-        },
-        "bitcoin": {
-          "direction": "down",
-          "condition": "If the hack dampens risk appetite, investors may move away from riskier assets like Bitcoin."
-        },
-        "uncertainty": "If North Korea's involvement is proven, the hack could lead to increased regulatory scrutiny, affecting all cryptocurrencies."
-      },
-      "evidence": {
-        "E8": "The world’s largest cryptocurrency exchange has been hit by a record $6.3bn",
-        "E2": "Markets reacted immediately in early Asian trading on Friday, and within hours"
-      },
-      "analyzed_at": "2026-10-31T07:32:01Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
       "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
       "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
       "publisher": "European Central Bank",
       "published_at": "2026-10-30T14:00:00Z",
       "historical": null,
-      "read_at": "2026-10-30T16:10:28Z",
+      "read_at": "2026-10-31T13:47:27Z",
       "body_sha256": "008585d2480f3877175b1f0876a49c571e898add6f7532626674fbd6d446e640",
       "body_characters": 4117,
       "model_context_characters": 4117,
@@ -134,11 +81,40 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-30T15:17:01Z",
       "historical": null,
-      "read_at": "2026-10-31T07:32:02Z",
+      "read_at": "2026-10-31T13:49:17Z",
       "body_sha256": "592981412e427db89b7535b298cc6a38bcbcc35d3d1b90c6f13c43d6384241c4",
       "body_characters": 7009,
       "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Binance suffered a $6.3 billion crypto heist, the largest in history, involving a compromised engineer’s laptop.",
+        "evidence_ids": [
+          "E8",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: Binance crypto heist",
+          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
+          "asset_hypothesis: If liquidity tightens, alternative-hedge channels may be explored."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If risk appetite decreases, gold may be seen as a safer haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If liquidity tightens, Bitcoin may be used as an alternative hedge; otherwise, it may be seen as volatile."
+        },
+        "uncertainty": "If the heist is contained and Binance covers the loss, the market reaction may be limited."
+      },
+      "evidence": {
+        "E8": "The incident at Binance could be the biggest theft of any kind",
+        "E6": "Instead, a Binance engineer’s laptop was infiltrated, which in turn allowed the"
+      },
+      "analyzed_at": "2026-10-31T13:50:33Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
@@ -146,11 +122,40 @@
       "publisher": "European Central Bank",
       "published_at": "2026-10-30T09:00:00Z",
       "historical": null,
-      "read_at": "2026-10-31T07:32:04Z",
+      "read_at": "2026-10-31T13:50:35Z",
       "body_sha256": "b08617b909ac57c43730654a8505de9828f2411ea40ce692e1dea6f5ac6288d0",
       "body_characters": 1747,
       "model_context_characters": 1747,
-      "status": "Public body read; queued for AI"
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The ECB Survey of Professional Forecasters for 2026-2028 indicated higher inflation and GDP growth expectations, with risks tilted to the upside for inflation and downside for GDP growth.",
+        "evidence_ids": [
+          "E1",
+          "E4"
+        ],
+        "chain": [
+          "reported_event: Inflation and GDP growth expectations revised",
+          "financial_channel: If inflation expectations rise, gold may benefit from safe-haven demand",
+          "asset_hypothesis: If GDP growth expectations decline, risk appetite may shift away from equities, potentially favoring gold"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations rise, gold may benefit from safe-haven demand"
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite shifts, Bitcoin may face competition from traditional safe-havens like gold"
+        },
+        "uncertainty": "If the war in the Middle East does not lead to significant energy price shocks, inflation expectations may not rise as much."
+      },
+      "evidence": {
+        "E1": "Respondents’ expectations for headline inflation, as measured by the Harmonised Index of",
+        "E4": "Respondents expected real GDP growth of 1.0% in 2026 and 1.3% in"
+      },
+      "analyzed_at": "2026-10-31T13:51:29Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o?at_medium=RSS&at_campaign=rss",
@@ -158,7 +163,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-30T09:33:51Z",
       "historical": null,
-      "read_at": "2026-10-31T07:32:04Z",
+      "read_at": "2026-10-31T13:51:30Z",
       "body_sha256": "5aa1cff5c21417a8768e3785db309156dd1669d4168702825cc1a562eafc2859",
       "body_characters": 4995,
       "model_context_characters": 4500,
@@ -211,11 +216,64 @@
       "publisher": "European Central Bank",
       "published_at": "2026-10-29T14:00:00Z",
       "historical": null,
-      "read_at": "2026-10-31T07:32:05Z",
+      "read_at": "2026-10-31T13:51:30Z",
       "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
       "body_characters": 18000,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
+      "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-30T21:13:14Z",
+      "historical": null,
+      "read_at": "2026-10-31T13:51:30Z",
+      "body_sha256": "f2a85fd95ab4438749aeb85bb46821150687226ac601c97af3d87fa8dd78a95d",
+      "body_characters": 5018,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/oct/29/binance-crypto-exchange-hack",
+      "title": "North Korea is likely culprit behind $6.3bn crypto hack, ‘largest heist in history’",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-30T16:35:44Z",
+      "historical": null,
+      "read_at": "2026-10-31T07:29:48Z",
+      "body_sha256": "654d70ea393ed55249cbbd82a6a1cb410f199e635d7f3cbf9271d08db20af8d6",
+      "body_characters": 6441,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Binance, the world's largest cryptocurrency exchange, was hacked for $6.3 billion, with North Korea suspected as the culprit.",
+        "evidence_ids": [
+          "E8",
+          "E2"
+        ],
+        "chain": [
+          "reported_event: Binance was hacked for $6.3 billion",
+          "financial_channel: If risk appetite decreases, investors may move to safer assets.",
+          "asset_hypothesis: If liquidity tightens, alternative-hedge channels may be sought."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If risk appetite decreases, gold may be seen as a safer haven."
+        },
+        "bitcoin": {
+          "direction": "down",
+          "condition": "If the hack dampens risk appetite, investors may move away from riskier assets like Bitcoin."
+        },
+        "uncertainty": "If North Korea's involvement is proven, the hack could lead to increased regulatory scrutiny, affecting all cryptocurrencies."
+      },
+      "evidence": {
+        "E8": "The world’s largest cryptocurrency exchange has been hit by a record $6.3bn",
+        "E2": "Markets reacted immediately in early Asian trading on Friday, and within hours"
+      },
+      "analyzed_at": "2026-10-31T07:32:01Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     }
   ]
 }

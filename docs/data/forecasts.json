@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-10-30T23:54:33Z",
+    "checked_at": "2026-10-31T05:23:13Z",
     "model": "empirical-log-return-quantiles-v2",
     "timezone": "America/Toronto",
-    "today": "2026-10-30",
-    "tomorrow": "2026-10-31",
+    "today": "2026-10-31",
+    "tomorrow": "2026-11-01",
     "quote_refresh": "Scheduled about every 15 minutes; provider and GitHub queue delays apply.",
     "disclosure": "Price-only empirical matching-horizon log-return scenarios, not AI price targets. Lower/central/upper bands are historical quantile ranges, not guaranteed probabilities. Bitcoin uses a frozen quote-to-24h target; ETFs use the last completed close to the first session close on/after tomorrow, with matching one/two-session returns. No forecasts are revised after issue.",
     "failures": []
@@ -13,27 +13,27 @@
     {
       "ticker": "BTC-USD",
       "asset": "Bitcoin / USD",
-      "quote": 77131.54,
-      "quote_at": "2026-10-30T23:54:28Z",
+      "quote": 77096.25,
+      "quote_at": "2026-10-31T05:23:10Z",
       "quote_stale": false,
       "market_status": "Continuous trading; quote may be delayed by provider",
       "tomorrow_has_session": true,
       "source": "https://finance.yahoo.com/quote/BTC-USD/",
       "forecast": {
-        "id": "BTC-USD|2026-10-30",
+        "id": "BTC-USD|2026-10-31",
         "ticker": "BTC-USD",
-        "issued_at": "2026-10-30T08:55:08Z",
-        "target_at": "2026-10-31T09:00:00Z",
-        "anchor_at": "2026-10-30T08:55:01Z",
-        "anchor_price": 77942.59,
+        "issued_at": "2026-10-31T05:23:12Z",
+        "target_at": "2026-11-01T05:25:00Z",
+        "anchor_at": "2026-10-31T05:23:10Z",
+        "anchor_price": 77096.25,
         "levels": {
-          "q10": 76103.5994,
-          "q30": 77363.2799,
-          "q40": 77722.6415,
-          "q50": 77932.3175,
-          "q60": 78254.2307,
-          "q70": 78582.3288,
-          "q90": 79738.8032
+          "q10": 75277.2281,
+          "q30": 76523.2304,
+          "q40": 76878.6898,
+          "q50": 77086.089,
+          "q60": 77404.5068,
+          "q70": 77729.0421,
+          "q90": 78872.959
         },
         "model": "empirical-log-return-quantiles-v2",
         "training_observations": 252,
@@ -47,7 +47,7 @@
           "horizon_sessions": 1,
           "method": "Walk-forward: each 1-session prediction uses 252 prior completed matching-horizon log returns. Overlapping training outcomes are not independent. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
         },
-        "issued_digest": "42b7cdaa7dad77604ab49aee4cc47a8c2df31b1ca27d6e4b7bc59ccdca1c20fc"
+        "issued_digest": "f0ed1a2afbbdb3a6767c7607c1096b481805c62f5b7e2caa7fd406cf070d8214"
       },
       "error": null
     },
@@ -221,7 +221,7 @@
     "verified_forecasts": 89,
     "outer_band_coverage_percent": 83.15,
     "mean_abs_median_error_percent": 0.802,
-    "pending": 9,
+    "pending": 10,
     "missed": 0
   }
 }

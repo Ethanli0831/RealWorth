@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-31T13:51:30Z",
-    "scan_started_at": "2026-10-31T13:49:15Z",
+    "checked_at": "2026-10-31T18:49:51Z",
+    "scan_started_at": "2026-10-31T18:42:27Z",
     "provider_requested": "local",
     "article_reads": 8,
     "ai_interpretations": 5,
-    "new_interpretations": 2,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -24,7 +24,7 @@
       "publisher": "European Central Bank",
       "published_at": "2026-10-30T14:00:00Z",
       "historical": null,
-      "read_at": "2026-10-31T13:47:27Z",
+      "read_at": "2026-10-31T18:41:16Z",
       "body_sha256": "008585d2480f3877175b1f0876a49c571e898add6f7532626674fbd6d446e640",
       "body_characters": 4117,
       "model_context_characters": 4117,
@@ -81,7 +81,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-30T15:17:01Z",
       "historical": null,
-      "read_at": "2026-10-31T13:49:17Z",
+      "read_at": "2026-10-31T18:41:17Z",
       "body_sha256": "592981412e427db89b7535b298cc6a38bcbcc35d3d1b90c6f13c43d6384241c4",
       "body_characters": 7009,
       "model_context_characters": 4500,
@@ -122,7 +122,7 @@
       "publisher": "European Central Bank",
       "published_at": "2026-10-30T09:00:00Z",
       "historical": null,
-      "read_at": "2026-10-31T13:50:35Z",
+      "read_at": "2026-10-31T18:41:18Z",
       "body_sha256": "b08617b909ac57c43730654a8505de9828f2411ea40ce692e1dea6f5ac6288d0",
       "body_characters": 1747,
       "model_context_characters": 1747,
@@ -163,11 +163,11 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-30T09:33:51Z",
       "historical": null,
-      "read_at": "2026-10-31T13:51:30Z",
+      "read_at": "2026-10-31T18:42:29Z",
       "body_sha256": "5aa1cff5c21417a8768e3785db309156dd1669d4168702825cc1a562eafc2859",
       "body_characters": 4995,
       "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
+      "status": "Unavailable: Extra data: line 1 column 773 (char 772)"
     },
     {
       "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
@@ -175,7 +175,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-29T16:05:50Z",
       "historical": null,
-      "read_at": "2026-10-30T20:59:34Z",
+      "read_at": "2026-10-31T18:41:19Z",
       "body_sha256": "816c2c44d39c4991993bd1f5936df49e29178ba65f6f2df699f48c09acc066ce",
       "body_characters": 4367,
       "model_context_characters": 4367,
@@ -216,11 +216,11 @@
       "publisher": "European Central Bank",
       "published_at": "2026-10-29T14:00:00Z",
       "historical": null,
-      "read_at": "2026-10-31T13:51:30Z",
+      "read_at": "2026-10-31T18:47:45Z",
       "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
       "body_characters": 18000,
       "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
+      "status": "Unavailable: AI reported event does not match the article topic"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
@@ -228,7 +228,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-10-30T21:13:14Z",
       "historical": null,
-      "read_at": "2026-10-31T13:51:30Z",
+      "read_at": "2026-10-31T18:49:51Z",
       "body_sha256": "f2a85fd95ab4438749aeb85bb46821150687226ac601c97af3d87fa8dd78a95d",
       "body_characters": 5018,
       "model_context_characters": 4500,

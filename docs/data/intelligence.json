@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-31T01:10:20Z",
-    "scan_started_at": "2026-10-31T00:59:10Z",
+    "checked_at": "2026-10-31T07:32:05Z",
+    "scan_started_at": "2026-10-31T07:24:55Z",
     "provider_requested": "local",
     "article_reads": 8,
     "ai_interpretations": 3,
-    "new_interpretations": 0,
+    "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,131 +19,54 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
-      "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-30T09:00:00Z",
-      "historical": null,
-      "read_at": "2026-10-31T00:59:12Z",
-      "body_sha256": "b08617b909ac57c43730654a8505de9828f2411ea40ce692e1dea6f5ac6288d0",
-      "body_characters": 1747,
-      "model_context_characters": 1747,
-      "status": "Unavailable: AI numerical statements require exact cited source support"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o?at_medium=RSS&at_campaign=rss",
-      "title": "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-30T09:33:51Z",
-      "historical": null,
-      "read_at": "2026-10-31T01:02:54Z",
-      "body_sha256": "2a804ccc569ec5abf5d07bf8f34a5fac584abe0c583313f4b4cbc32cabe2599b",
-      "body_characters": 4998,
-      "model_context_characters": 4500,
-      "status": "Unavailable: Extra data: line 1 column 751 (char 750)"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
-      "title": "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-29T16:05:50Z",
-      "historical": null,
-      "read_at": "2026-10-30T20:59:34Z",
-      "body_sha256": "816c2c44d39c4991993bd1f5936df49e29178ba65f6f2df699f48c09acc066ce",
-      "body_characters": 4367,
-      "model_context_characters": 4367,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Christine Lagarde, the eurozone’s top central banker, resigns nine months early to pursue freedom of speech.",
-        "evidence_ids": [
-          "E6",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: Christine Lagarde resigns from ECB",
-          "financial_channel: If ECB's neutrality rules limit public commentary, risk appetite may shift",
-          "asset_hypothesis: If Lagarde's departure affects ECB's communication, gold may see mixed reactions."
-        ],
-        "gold": {
-          "direction": "mixed",
-          "condition": "If ECB's communication style changes, gold may face mixed reactions due to uncertainty in policy signals."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If Lagarde's departure does not directly impact financial markets, Bitcoin's direction remains unclear."
-        },
-        "uncertainty": "If Lagarde's successor is a strong advocate for free speech, it could reduce concerns about ECB's communication."
-      },
-      "evidence": {
-        "E6": "Possible candidate to run World Economic Forum departs ECB nine months early,",
-        "E7": "Christine Lagarde, the eurozone’s top central banker, has said she is stepping"
-      },
-      "analyzed_at": "2026-10-30T21:02:27Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
-      "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-29T14:00:00Z",
-      "historical": null,
-      "read_at": "2026-10-31T01:10:18Z",
-      "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
-      "body_characters": 18000,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
       "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
       "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
       "publisher": "BBC Business",
       "published_at": "2026-10-30T21:13:14Z",
       "historical": null,
-      "read_at": "2026-10-31T01:10:19Z",
-      "body_sha256": "56bda2f882f3b4bccbd6bd149101dbd40214fc25dc06202fecc2b9aaef9757b6",
-      "body_characters": 5016,
+      "read_at": "2026-10-31T07:24:56Z",
+      "body_sha256": "f2a85fd95ab4438749aeb85bb46821150687226ac601c97af3d87fa8dd78a95d",
+      "body_characters": 5018,
       "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
+      "status": "Unavailable: AI numerical statements require exact cited source support"
     },
     {
       "url": "https://www.theguardian.com/business/2026/oct/29/binance-crypto-exchange-hack",
-      "title": "North Korean group blamed for $6.3bn Binance hack in biggest ever crypto heist",
+      "title": "North Korea is likely culprit behind $6.3bn crypto hack, ‘largest heist in history’",
       "publisher": "The Guardian Business",
-      "published_at": "2026-10-30T12:48:40Z",
+      "published_at": "2026-10-30T16:35:44Z",
       "historical": null,
-      "read_at": "2026-10-30T16:13:24Z",
-      "body_sha256": "16320a313453cc78790b2de3f494ce59c7bf78cc16d0c75f78edd7a75278395e",
-      "body_characters": 5994,
+      "read_at": "2026-10-31T07:29:48Z",
+      "body_sha256": "654d70ea393ed55249cbbd82a6a1cb410f199e635d7f3cbf9271d08db20af8d6",
+      "body_characters": 6441,
       "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
+      "status": "AI interpretation generated · not independently verified",
       "analysis": {
-        "summary": "Binance suffered a $6.3 billion hack, the largest in crypto history, with North Korea suspected as the culprit.",
+        "summary": "Binance, the world's largest cryptocurrency exchange, was hacked for $6.3 billion, with North Korea suspected as the culprit.",
         "evidence_ids": [
-          "E1",
-          "E8"
+          "E8",
+          "E2"
         ],
         "chain": [
-          "reported_event: Binance hack",
+          "reported_event: Binance was hacked for $6.3 billion",
           "financial_channel: If risk appetite decreases, investors may move to safer assets.",
-          "asset_hypothesis: If alternative-hedge channels are saturated, Bitcoin may see increased demand."
+          "asset_hypothesis: If liquidity tightens, alternative-hedge channels may be sought."
         ],
         "gold": {
           "direction": "up",
-          "condition": "If global economic uncertainty rises, gold may be seen as a safer haven."
+          "condition": "If risk appetite decreases, gold may be seen as a safer haven."
         },
         "bitcoin": {
           "direction": "down",
-          "condition": "If risk appetite decreases, investors may shift to traditional assets, reducing Bitcoin demand."
+          "condition": "If the hack dampens risk appetite, investors may move away from riskier assets like Bitcoin."
         },
-        "uncertainty": "If North Korea's involvement is proven, the hack could lead to stricter regulations, affecting all cryptocurrencies."
+        "uncertainty": "If North Korea's involvement is proven, the hack could lead to increased regulatory scrutiny, affecting all cryptocurrencies."
       },
       "evidence": {
-        "E1": "Markets reacted immediately in early Asian trading on Friday, and bitcoin –",
-        "E8": "Tell us: have you been affected by the Binance hack?"
+        "E8": "The world’s largest cryptocurrency exchange has been hit by a record $6.3bn",
+        "E2": "Markets reacted immediately in early Asian trading on Friday, and within hours"
       },
-      "analyzed_at": "2026-10-30T16:15:56Z",
+      "analyzed_at": "2026-10-31T07:32:01Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
@@ -211,9 +134,86 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-30T15:17:01Z",
       "historical": null,
-      "read_at": "2026-10-31T01:10:20Z",
+      "read_at": "2026-10-31T07:32:02Z",
       "body_sha256": "592981412e427db89b7535b298cc6a38bcbcc35d3d1b90c6f13c43d6384241c4",
       "body_characters": 7009,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
+      "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-30T09:00:00Z",
+      "historical": null,
+      "read_at": "2026-10-31T07:32:04Z",
+      "body_sha256": "b08617b909ac57c43730654a8505de9828f2411ea40ce692e1dea6f5ac6288d0",
+      "body_characters": 1747,
+      "model_context_characters": 1747,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o?at_medium=RSS&at_campaign=rss",
+      "title": "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-30T09:33:51Z",
+      "historical": null,
+      "read_at": "2026-10-31T07:32:04Z",
+      "body_sha256": "5aa1cff5c21417a8768e3785db309156dd1669d4168702825cc1a562eafc2859",
+      "body_characters": 4995,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
+      "title": "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-29T16:05:50Z",
+      "historical": null,
+      "read_at": "2026-10-30T20:59:34Z",
+      "body_sha256": "816c2c44d39c4991993bd1f5936df49e29178ba65f6f2df699f48c09acc066ce",
+      "body_characters": 4367,
+      "model_context_characters": 4367,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Christine Lagarde, the eurozone’s top central banker, resigns nine months early to pursue freedom of speech.",
+        "evidence_ids": [
+          "E6",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: Christine Lagarde resigns from ECB",
+          "financial_channel: If ECB's neutrality rules limit public commentary, risk appetite may shift",
+          "asset_hypothesis: If Lagarde's departure affects ECB's communication, gold may see mixed reactions."
+        ],
+        "gold": {
+          "direction": "mixed",
+          "condition": "If ECB's communication style changes, gold may face mixed reactions due to uncertainty in policy signals."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If Lagarde's departure does not directly impact financial markets, Bitcoin's direction remains unclear."
+        },
+        "uncertainty": "If Lagarde's successor is a strong advocate for free speech, it could reduce concerns about ECB's communication."
+      },
+      "evidence": {
+        "E6": "Possible candidate to run World Economic Forum departs ECB nine months early,",
+        "E7": "Christine Lagarde, the eurozone’s top central banker, has said she is stepping"
+      },
+      "analyzed_at": "2026-10-30T21:02:27Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
+      "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-29T14:00:00Z",
+      "historical": null,
+      "read_at": "2026-10-31T07:32:05Z",
+      "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
+      "body_characters": 18000,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
     }

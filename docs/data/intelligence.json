@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-10-30T21:07:17Z",
-    "scan_started_at": "2026-10-30T20:59:31Z",
+    "checked_at": "2026-10-31T01:10:20Z",
+    "scan_started_at": "2026-10-31T00:59:10Z",
     "provider_requested": "local",
     "article_reads": 8,
     "ai_interpretations": 3,
-    "new_interpretations": 1,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,6 +19,30 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
+      "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-30T09:00:00Z",
+      "historical": null,
+      "read_at": "2026-10-31T00:59:12Z",
+      "body_sha256": "b08617b909ac57c43730654a8505de9828f2411ea40ce692e1dea6f5ac6288d0",
+      "body_characters": 1747,
+      "model_context_characters": 1747,
+      "status": "Unavailable: AI numerical statements require exact cited source support"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o?at_medium=RSS&at_campaign=rss",
+      "title": "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-30T09:33:51Z",
+      "historical": null,
+      "read_at": "2026-10-31T01:02:54Z",
+      "body_sha256": "2a804ccc569ec5abf5d07bf8f34a5fac584abe0c583313f4b4cbc32cabe2599b",
+      "body_characters": 4998,
+      "model_context_characters": 4500,
+      "status": "Unavailable: Extra data: line 1 column 751 (char 750)"
+    },
+    {
       "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
       "title": "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
       "publisher": "The Guardian Business",
@@ -28,7 +52,7 @@
       "body_sha256": "816c2c44d39c4991993bd1f5936df49e29178ba65f6f2df699f48c09acc066ce",
       "body_characters": 4367,
       "model_context_characters": 4367,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "Christine Lagarde, the eurozone’s top central banker, resigns nine months early to pursue freedom of speech.",
         "evidence_ids": [
@@ -65,21 +89,21 @@
       "publisher": "European Central Bank",
       "published_at": "2026-10-29T14:00:00Z",
       "historical": null,
-      "read_at": "2026-10-30T21:02:28Z",
+      "read_at": "2026-10-31T01:10:18Z",
       "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
       "body_characters": 18000,
       "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
       "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
       "publisher": "BBC Business",
-      "published_at": "2026-10-30T20:10:56Z",
+      "published_at": "2026-10-30T21:13:14Z",
       "historical": null,
-      "read_at": "2026-10-30T21:07:15Z",
-      "body_sha256": "70ea96b5911f2ac9fbba6526f047088325f7b29aefbedec6f44d04c8f09a54b7",
-      "body_characters": 4852,
+      "read_at": "2026-10-31T01:10:19Z",
+      "body_sha256": "56bda2f882f3b4bccbd6bd149101dbd40214fc25dc06202fecc2b9aaef9757b6",
+      "body_characters": 5016,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
     },
@@ -187,33 +211,9 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-30T15:17:01Z",
       "historical": null,
-      "read_at": "2026-10-30T21:07:16Z",
+      "read_at": "2026-10-31T01:10:20Z",
       "body_sha256": "592981412e427db89b7535b298cc6a38bcbcc35d3d1b90c6f13c43d6384241c4",
       "body_characters": 7009,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
-      "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-30T09:00:00Z",
-      "historical": null,
-      "read_at": "2026-10-30T21:07:17Z",
-      "body_sha256": "b08617b909ac57c43730654a8505de9828f2411ea40ce692e1dea6f5ac6288d0",
-      "body_characters": 1747,
-      "model_context_characters": 1747,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o?at_medium=RSS&at_campaign=rss",
-      "title": "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-30T09:33:51Z",
-      "historical": null,
-      "read_at": "2026-10-30T21:07:17Z",
-      "body_sha256": "2a804ccc569ec5abf5d07bf8f34a5fac584abe0c583313f4b4cbc32cabe2599b",
-      "body_characters": 4998,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
     }

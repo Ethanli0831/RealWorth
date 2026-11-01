@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-01T09:25:04Z",
+    "checked_at": "2026-11-01T16:17:01Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-11-01T09:25:04Z",
+    "checked_at": "2026-11-01T16:17:01Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -122,6 +122,31 @@
     "outlook": "If growth keeps slowing while inflation rises, watch for a policy trade-off. If inflation eases without worsening credit or employment, a softer adjustment is more plausible. These are conditional scenarios, not probability forecasts."
   },
   "news": [
+    {
+      "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+      "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-11-01T13:11:37Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "crypto"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+          "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-11-01T13:11:37Z"
+        }
+      ]
+    },
     {
       "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
       "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
@@ -321,31 +346,6 @@
       ]
     },
     {
-      "title": "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
-      "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
-      "published_at": "2026-10-29T16:05:50Z",
-      "source_id": "guardian",
-      "publisher": "The Guardian Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "policy"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
-          "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
-          "publisher": "The Guardian Business",
-          "published_at": "2026-10-29T16:05:50Z"
-        }
-      ]
-    },
-    {
       "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
       "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
       "published_at": "2026-10-29T14:00:00Z",
@@ -469,31 +469,6 @@
       ]
     },
     {
-      "title": "Fed holds interest rates steady in last decision before midterms",
-      "url": "https://www.theguardian.com/business/2026/oct/28/fed-interest-rates-midterms",
-      "published_at": "2026-10-28T19:26:41Z",
-      "source_id": "guardian",
-      "publisher": "The Guardian Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "policy"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Fed holds interest rates steady in last decision before midterms",
-          "url": "https://www.theguardian.com/business/2026/oct/28/fed-interest-rates-midterms",
-          "publisher": "The Guardian Business",
-          "published_at": "2026-10-28T19:26:41Z"
-        }
-      ]
-    },
-    {
       "title": "Healey unveils £100 for energy bills and bank tax in first Budget",
       "url": "https://www.bbc.co.uk/news/articles/cqpvgxz3y49go?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-28T18:45:09Z",
@@ -591,31 +566,6 @@
       ]
     },
     {
-      "title": "‘We don’t have inflation’? Five charts show the US economic reality of Trump’s second term so far",
-      "url": "https://www.theguardian.com/us-news/2026/oct/26/trump-second-term-economy-charts",
-      "published_at": "2026-10-26T11:00:42Z",
-      "source_id": "guardian",
-      "publisher": "The Guardian Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "inflation"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "‘We don’t have inflation’? Five charts show the US economic reality of Trump’s second term so far",
-          "url": "https://www.theguardian.com/us-news/2026/oct/26/trump-second-term-economy-charts",
-          "publisher": "The Guardian Business",
-          "published_at": "2026-10-26T11:00:42Z"
-        }
-      ]
-    },
-    {
       "title": "Frank Elderson: Taking action for nature – investing in economic resilience and prosperity",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261026~d903d7ad85.en.html",
       "published_at": "2026-10-26T05:00:00Z",
@@ -692,47 +642,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-01T09:25:04Z",
+      "checked_at": "2026-11-01T16:17:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-01T09:25:04Z",
+      "last_success": "2026-11-01T16:17:01Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-01T09:25:04Z",
+      "checked_at": "2026-11-01T16:17:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-01T09:25:04Z",
+      "last_success": "2026-11-01T16:17:01Z",
       "matched": 9
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-01T09:25:04Z",
+      "checked_at": "2026-11-01T16:17:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-01T09:25:04Z",
-      "matched": 6
+      "last_success": "2026-11-01T16:17:01Z",
+      "matched": 7
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-01T09:25:04Z",
+      "checked_at": "2026-11-01T16:17:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-01T09:25:04Z",
-      "matched": 7
+      "last_success": "2026-11-01T16:17:01Z",
+      "matched": 4
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-01T09:25:04Z",
+      "checked_at": "2026-11-01T16:17:01Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -742,10 +692,10 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-01T09:25:04Z",
+      "checked_at": "2026-11-01T16:17:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-01T09:25:04Z",
+      "last_success": "2026-11-01T16:17:01Z",
       "matched": 0
     }
   ],

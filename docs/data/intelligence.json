@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-11-03T01:50:41Z",
-    "scan_started_at": "2026-11-03T01:45:32Z",
+    "checked_at": "2026-11-03T10:00:14Z",
+    "scan_started_at": "2026-11-03T09:55:12Z",
     "provider_requested": "local",
     "article_reads": 9,
-    "ai_interpretations": 5,
+    "ai_interpretations": 6,
     "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -17,6 +17,112 @@
       "published_at": null,
       "historical": true,
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
+      "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-30T21:13:14Z",
+      "historical": null,
+      "read_at": "2026-11-03T09:54:18Z",
+      "body_sha256": "f2a85fd95ab4438749aeb85bb46821150687226ac601c97af3d87fa8dd78a95d",
+      "body_characters": 5018,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Binance reports a $6.3 billion hack, freezing half the stolen funds, with the US Secret Service working to recover the stolen assets.",
+        "evidence_ids": [
+          "E4",
+          "E8"
+        ],
+        "chain": [
+          "reported_event: Binance hack",
+          "financial_channel: If risk appetite decreases, liquidity may tighten",
+          "asset_hypothesis: If investors fear further hacks, they may reduce crypto exposure"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If geopolitical tensions rise due to the hack, gold may be seen as a safer haven."
+        },
+        "bitcoin": {
+          "direction": "down",
+          "condition": "If the hack spooks investors, they may move to more established safe-havens like gold."
+        },
+        "uncertainty": "If Binance successfully recovers the stolen funds, the market reaction could be positive for crypto assets."
+      },
+      "evidence": {
+        "E4": "Binance, the world's largest cryptocurrency exchange, says it has frozen around half",
+        "E8": "The US Secret Service said it was \"working around the clock\" \"to"
+      },
+      "analyzed_at": "2026-10-31T22:45:58Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
+      "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-29T14:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-03T09:55:14Z",
+      "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
+      "body_characters": 18000,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/02/oil-price-falls-amid-hope-of-a-breakthrough-to-end-iran-war",
+      "title": "Oil price falls amid hope of a breakthrough to end Iran war",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-02T17:14:23Z",
+      "historical": null,
+      "read_at": "2026-11-03T09:58:49Z",
+      "body_sha256": "2c735f242a320af64ec340c443c6683a9919b72af41a1ae793f8119a2ae9f87e",
+      "body_characters": 2662,
+      "model_context_characters": 2662,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Brent crude fell by over 6% amid hopes for a breakthrough in the Iran war, dropping to $105.55 a barrel.",
+        "evidence_ids": [
+          "E5",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: Brent crude price drop",
+          "financial_channel: If oil supply expectations change, it impacts global markets",
+          "asset_hypothesis: If geopolitical tensions ease, risk appetite increases"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If geopolitical tensions ease, gold may be seen as less of a safe haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite increases, Bitcoin may see increased trading but no established safe-haven status."
+        },
+        "uncertainty": "If the Iran war continues, oil prices could rise again, affecting both gold and Bitcoin."
+      },
+      "evidence": {
+        "E5": "Brent crude drops by more than 6% to $105.55 a barrel, the",
+        "E6": "The oil price has fallen to its lowest level in more two"
+      },
+      "analyzed_at": "2026-11-03T10:00:13Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cwj34gdmnly4o?at_medium=RSS&at_campaign=rss",
+      "title": "Binance users withdraw $3.6bn after largest-ever crypto hack",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-02T07:42:33Z",
+      "historical": null,
+      "read_at": "2026-11-03T10:00:14Z",
+      "body_sha256": "0924b2101f25756d1af9ad26a23d430cafa9e7ce7827ad598f68faa3a87caba6",
+      "body_characters": 3587,
+      "model_context_characters": 3587,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
@@ -118,7 +224,7 @@
       "body_sha256": "139f00ea7d236b480c04a34c251dd679760a50b8913795ff4980a0d687c505aa",
       "body_characters": 3371,
       "model_context_characters": 3371,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "Binance has covered 90% of a $6.3 billion hack, with the remaining 10% expected to be replenished over time.",
         "evidence_ids": [
@@ -159,7 +265,7 @@
       "body_sha256": "b08617b909ac57c43730654a8505de9828f2411ea40ce692e1dea6f5ac6288d0",
       "body_characters": 1747,
       "model_context_characters": 1747,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "The ECB Survey of Professional Forecasters for 2026-2028 indicated higher inflation and GDP growth expectations, with risks tilted to the upside for inflation and downside for GDP growth.",
         "evidence_ids": [
@@ -196,87 +302,10 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-29T13:09:00Z",
       "historical": null,
-      "read_at": "2026-11-03T01:47:25Z",
+      "read_at": "2026-11-03T10:00:14Z",
       "body_sha256": "81a524cb158dcf9bb39491aecc1f17d5b70bd38c1d8a5f166df929ed6f962087",
       "body_characters": 3882,
       "model_context_characters": 3882,
-      "status": "Unavailable: AI numerical statements require exact cited source support"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
-      "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-30T21:13:14Z",
-      "historical": null,
-      "read_at": "2026-11-01T09:38:34Z",
-      "body_sha256": "f2a85fd95ab4438749aeb85bb46821150687226ac601c97af3d87fa8dd78a95d",
-      "body_characters": 5018,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Binance reports a $6.3 billion hack, freezing half the stolen funds, with the US Secret Service working to recover the stolen assets.",
-        "evidence_ids": [
-          "E4",
-          "E8"
-        ],
-        "chain": [
-          "reported_event: Binance hack",
-          "financial_channel: If risk appetite decreases, liquidity may tighten",
-          "asset_hypothesis: If investors fear further hacks, they may reduce crypto exposure"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If geopolitical tensions rise due to the hack, gold may be seen as a safer haven."
-        },
-        "bitcoin": {
-          "direction": "down",
-          "condition": "If the hack spooks investors, they may move to more established safe-havens like gold."
-        },
-        "uncertainty": "If Binance successfully recovers the stolen funds, the market reaction could be positive for crypto assets."
-      },
-      "evidence": {
-        "E4": "Binance, the world's largest cryptocurrency exchange, says it has frozen around half",
-        "E8": "The US Secret Service said it was \"working around the clock\" \"to"
-      },
-      "analyzed_at": "2026-10-31T22:45:58Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
-      "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-29T14:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-03T01:50:41Z",
-      "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
-      "body_characters": 18000,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/02/oil-price-falls-amid-hope-of-a-breakthrough-to-end-iran-war",
-      "title": "Oil price falls amid hope of a breakthrough to end Iran war",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-02T17:14:23Z",
-      "historical": null,
-      "read_at": "2026-11-03T01:50:41Z",
-      "body_sha256": "ca4a923699da3f6624fdd2e88ee7561aa37a39c13112c3607d75c699d721da4c",
-      "body_characters": 2307,
-      "model_context_characters": 2307,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cwj34gdmnly4o?at_medium=RSS&at_campaign=rss",
-      "title": "Binance users withdraw $3.6bn after largest-ever crypto hack",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-02T07:42:33Z",
-      "historical": null,
-      "read_at": "2026-11-03T01:50:41Z",
-      "body_sha256": "0924b2101f25756d1af9ad26a23d430cafa9e7ce7827ad598f68faa3a87caba6",
-      "body_characters": 3587,
-      "model_context_characters": 3587,
       "status": "Public body read; queued for AI"
     }
   ]

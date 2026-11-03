@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-11-03T10:00:14Z",
-    "scan_started_at": "2026-11-03T09:55:12Z",
+    "checked_at": "2026-11-03T18:05:08Z",
+    "scan_started_at": "2026-11-03T18:00:03Z",
     "provider_requested": "local",
-    "article_reads": 9,
-    "ai_interpretations": 6,
+    "article_reads": 8,
+    "ai_interpretations": 5,
     "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -19,42 +19,83 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
-      "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-30T21:13:14Z",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
+      "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-30T09:00:00Z",
       "historical": null,
-      "read_at": "2026-11-03T09:54:18Z",
-      "body_sha256": "f2a85fd95ab4438749aeb85bb46821150687226ac601c97af3d87fa8dd78a95d",
-      "body_characters": 5018,
-      "model_context_characters": 4500,
+      "read_at": "2026-11-03T17:59:17Z",
+      "body_sha256": "b08617b909ac57c43730654a8505de9828f2411ea40ce692e1dea6f5ac6288d0",
+      "body_characters": 1747,
+      "model_context_characters": 1747,
       "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
-        "summary": "Binance reports a $6.3 billion hack, freezing half the stolen funds, with the US Secret Service working to recover the stolen assets.",
+        "summary": "The ECB Survey of Professional Forecasters for 2026-2028 indicated higher inflation and GDP growth expectations, with risks tilted to the upside for inflation and downside for GDP growth.",
         "evidence_ids": [
-          "E4",
-          "E8"
+          "E1",
+          "E4"
         ],
         "chain": [
-          "reported_event: Binance hack",
-          "financial_channel: If risk appetite decreases, liquidity may tighten",
-          "asset_hypothesis: If investors fear further hacks, they may reduce crypto exposure"
+          "reported_event: Inflation and GDP growth expectations revised",
+          "financial_channel: If inflation expectations rise, gold may benefit from safe-haven demand",
+          "asset_hypothesis: If GDP growth expectations decline, risk appetite may shift away from equities, potentially favoring gold"
         ],
         "gold": {
           "direction": "up",
-          "condition": "If geopolitical tensions rise due to the hack, gold may be seen as a safer haven."
+          "condition": "If inflation expectations rise, gold may benefit from safe-haven demand"
         },
         "bitcoin": {
-          "direction": "down",
-          "condition": "If the hack spooks investors, they may move to more established safe-havens like gold."
+          "direction": "mixed",
+          "condition": "If risk appetite shifts, Bitcoin may face competition from traditional safe-havens like gold"
         },
-        "uncertainty": "If Binance successfully recovers the stolen funds, the market reaction could be positive for crypto assets."
+        "uncertainty": "If the war in the Middle East does not lead to significant energy price shocks, inflation expectations may not rise as much."
       },
       "evidence": {
-        "E4": "Binance, the world's largest cryptocurrency exchange, says it has frozen around half",
-        "E8": "The US Secret Service said it was \"working around the clock\" \"to"
+        "E1": "Respondents’ expectations for headline inflation, as measured by the Harmonised Index of",
+        "E4": "Respondents expected real GDP growth of 1.0% in 2026 and 1.3% in"
       },
-      "analyzed_at": "2026-10-31T22:45:58Z",
+      "analyzed_at": "2026-10-31T13:51:29Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/oct/28/inflation-rate-australia-2026-number-data-consumer-price-index-cpi-release",
+      "title": "Australia’s inflation rate rises to 4.3%, fuelling fears of fifth interest rate hike this year",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-10-28T02:17:32Z",
+      "historical": null,
+      "read_at": "2026-11-03T18:00:04Z",
+      "body_sha256": "6f51a244a8b3b2a18f6aa03cedb9cbce9faed52a768acbd13f7dfaa0ca7d675b",
+      "body_characters": 3814,
+      "model_context_characters": 3814,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Australia's inflation rate rose to 4.3%, prompting fears of another interest rate hike next week.",
+        "evidence_ids": [
+          "E1",
+          "E4"
+        ],
+        "chain": [
+          "reported_event: inflation rate rose",
+          "financial_channel: If higher inflation, then increased borrowing costs",
+          "asset_hypothesis: If higher inflation, then reduced asset value"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If higher inflation, then increased demand for gold as a hedge"
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If higher inflation, then reduced risk appetite, but increased liquidity may favor Bitcoin"
+        },
+        "uncertainty": "If the Middle East conflict ends, fuel prices may fall, reducing inflationary pressures."
+      },
+      "evidence": {
+        "E1": "Australia’s headline inflation rate has accelerated to 4.3%, with a key gauge",
+        "E4": "The CPI release comes shortly ahead of the central bank’s next monetary"
+      },
+      "analyzed_at": "2026-11-03T18:01:49Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
@@ -65,11 +106,23 @@
       "publisher": "European Central Bank",
       "published_at": "2026-10-29T14:00:00Z",
       "historical": null,
-      "read_at": "2026-11-03T09:55:14Z",
+      "read_at": "2026-11-03T18:01:50Z",
       "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
       "body_characters": 18000,
       "model_context_characters": 4500,
       "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
+      "title": "Monetary policy decisions",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-29T13:15:00Z",
+      "historical": null,
+      "read_at": "2026-11-03T18:05:07Z",
+      "body_sha256": "e52a8e85579ddc5486c59deada912991be969527725e31e211233bb9162d005f",
+      "body_characters": 2593,
+      "model_context_characters": 2593,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.theguardian.com/business/2026/nov/02/oil-price-falls-amid-hope-of-a-breakthrough-to-end-iran-war",
@@ -81,7 +134,7 @@
       "body_sha256": "2c735f242a320af64ec340c443c6683a9919b72af41a1ae793f8119a2ae9f87e",
       "body_characters": 2662,
       "model_context_characters": 2662,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "Brent crude fell by over 6% amid hopes for a breakthrough in the Iran war, dropping to $105.55 a barrel.",
         "evidence_ids": [
@@ -118,7 +171,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-02T07:42:33Z",
       "historical": null,
-      "read_at": "2026-11-03T10:00:14Z",
+      "read_at": "2026-11-03T18:05:07Z",
       "body_sha256": "0924b2101f25756d1af9ad26a23d430cafa9e7ce7827ad598f68faa3a87caba6",
       "body_characters": 3587,
       "model_context_characters": 3587,
@@ -179,7 +232,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-10-30T16:35:44Z",
       "historical": null,
-      "read_at": "2026-11-03T01:44:30Z",
+      "read_at": "2026-11-03T17:59:16Z",
       "body_sha256": "654d70ea393ed55249cbbd82a6a1cb410f199e635d7f3cbf9271d08db20af8d6",
       "body_characters": 6441,
       "model_context_characters": 4500,
@@ -215,98 +268,12 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
-      "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+      "url": "https://www.bbc.co.uk/news/videos/c6m2dpz0yxn8o?at_medium=RSS&at_campaign=rss",
+      "title": "Binance's $6.3bn crypto hack biggest in history",
       "publisher": "BBC Business",
-      "published_at": "2026-11-01T13:11:37Z",
+      "published_at": "2026-10-30T17:41:10Z",
       "historical": null,
-      "read_at": "2026-11-03T01:45:34Z",
-      "body_sha256": "139f00ea7d236b480c04a34c251dd679760a50b8913795ff4980a0d687c505aa",
-      "body_characters": 3371,
-      "model_context_characters": 3371,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Binance has covered 90% of a $6.3 billion hack, with the remaining 10% expected to be replenished over time.",
-        "evidence_ids": [
-          "E4",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: Binance covers 90% of a $6.3 billion hack",
-          "financial_channel: If risk appetite is high, Binance's liquidity may be unaffected",
-          "asset_hypothesis: If Binance's user base is large, the hack may not significantly impact asset prices"
-        ],
-        "gold": {
-          "direction": "mixed",
-          "condition": "If global economic uncertainty increases, gold may see increased demand as a safe haven"
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If Bitcoin's risk appetite remains stable, it may not react strongly to Binance's hack"
-        },
-        "uncertainty": "If North Korea's involvement is confirmed, it could lead to increased geopolitical tensions, affecting both gold and Bitcoin."
-      },
-      "evidence": {
-        "E4": "Binance, the world's largest cryptocurrency exchange, says it has covered 90% of",
-        "E5": "The remaining 10% may take longer to source in the required amounts,"
-      },
-      "analyzed_at": "2026-11-03T01:47:24Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
-      "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-30T09:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-03T01:44:32Z",
-      "body_sha256": "b08617b909ac57c43730654a8505de9828f2411ea40ce692e1dea6f5ac6288d0",
-      "body_characters": 1747,
-      "model_context_characters": 1747,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The ECB Survey of Professional Forecasters for 2026-2028 indicated higher inflation and GDP growth expectations, with risks tilted to the upside for inflation and downside for GDP growth.",
-        "evidence_ids": [
-          "E1",
-          "E4"
-        ],
-        "chain": [
-          "reported_event: Inflation and GDP growth expectations revised",
-          "financial_channel: If inflation expectations rise, gold may benefit from safe-haven demand",
-          "asset_hypothesis: If GDP growth expectations decline, risk appetite may shift away from equities, potentially favoring gold"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation expectations rise, gold may benefit from safe-haven demand"
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite shifts, Bitcoin may face competition from traditional safe-havens like gold"
-        },
-        "uncertainty": "If the war in the Middle East does not lead to significant energy price shocks, inflation expectations may not rise as much."
-      },
-      "evidence": {
-        "E1": "Respondents’ expectations for headline inflation, as measured by the Harmonised Index of",
-        "E4": "Respondents expected real GDP growth of 1.0% in 2026 and 1.3% in"
-      },
-      "analyzed_at": "2026-10-31T13:51:29Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/oct/29/economy-growth-third-quarter",
-      "title": "US economy grows faster than expected but inflation rises to 3.7%",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-29T13:09:00Z",
-      "historical": null,
-      "read_at": "2026-11-03T10:00:14Z",
-      "body_sha256": "81a524cb158dcf9bb39491aecc1f17d5b70bd38c1d8a5f166df929ed6f962087",
-      "body_characters": 3882,
-      "model_context_characters": 3882,
-      "status": "Public body read; queued for AI"
+      "status": "Unavailable: Insufficient public article text"
     }
   ]
 }

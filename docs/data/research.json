@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-02T20:18:08Z",
+    "checked_at": "2026-11-03T02:26:13Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-11-02T20:18:08Z",
+    "checked_at": "2026-11-03T02:26:13Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -35,11 +35,11 @@
       {
         "id": "FEDFUNDS",
         "name": "Federal funds rate",
-        "value": 3.75,
+        "value": 3.88,
         "unit": "%",
-        "period": "2026-09",
+        "period": "2026-10",
         "stale": false,
-        "change": 0.12,
+        "change": 0.25,
         "source": "https://fred.stlouisfed.org/series/FEDFUNDS"
       },
       {
@@ -95,21 +95,21 @@
       {
         "id": "DFII10",
         "name": "10-year Treasury real yield",
-        "value": 2.63,
+        "value": 2.6,
         "unit": "%",
-        "period": "2026-10-29",
+        "period": "2026-10-30",
         "stale": false,
-        "change": 0.67,
+        "change": 0.66,
         "source": "https://fred.stlouisfed.org/series/DFII10"
       },
       {
         "id": "T10Y3M",
         "name": "10-year minus 3-month Treasury yield",
-        "value": 0.78,
+        "value": 0.7,
         "unit": "percentage points",
-        "period": "2026-10-30",
+        "period": "2026-11-02",
         "stale": false,
-        "change": 0.06,
+        "change": -0.01,
         "source": "https://fred.stlouisfed.org/series/T10Y3M"
       }
     ],
@@ -621,47 +621,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-02T20:18:08Z",
+      "checked_at": "2026-11-03T02:26:13Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-02T20:18:08Z",
+      "last_success": "2026-11-03T02:26:13Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-02T20:18:08Z",
+      "checked_at": "2026-11-03T02:26:13Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-02T20:18:08Z",
+      "last_success": "2026-11-03T02:26:13Z",
       "matched": 9
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-02T20:18:08Z",
+      "checked_at": "2026-11-03T02:26:13Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-02T20:18:08Z",
+      "last_success": "2026-11-03T02:26:13Z",
       "matched": 6
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-02T20:18:08Z",
+      "checked_at": "2026-11-03T02:26:13Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-02T20:18:08Z",
+      "last_success": "2026-11-03T02:26:13Z",
       "matched": 4
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-02T20:18:08Z",
+      "checked_at": "2026-11-03T02:26:13Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -671,10 +671,10 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-02T20:18:08Z",
+      "checked_at": "2026-11-03T02:26:13Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-02T20:18:08Z",
+      "last_success": "2026-11-03T02:26:13Z",
       "matched": 0
     }
   ],

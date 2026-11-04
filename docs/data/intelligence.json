@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-04T15:50:32Z",
-    "scan_started_at": "2026-11-04T15:41:48Z",
+    "checked_at": "2026-11-04T22:12:34Z",
+    "scan_started_at": "2026-11-04T22:05:19Z",
     "provider_requested": "local",
-    "article_reads": 8,
-    "ai_interpretations": 5,
-    "new_interpretations": 0,
+    "article_reads": 9,
+    "ai_interpretations": 4,
+    "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,89 +19,12 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
-      "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-29T14:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-04T15:41:49Z",
-      "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
-      "body_characters": 18000,
-      "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
-      "title": "Monetary policy decisions",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-29T13:15:00Z",
-      "historical": null,
-      "read_at": "2026-11-04T15:46:56Z",
-      "body_sha256": "e52a8e85579ddc5486c59deada912991be969527725e31e211233bb9162d005f",
-      "body_characters": 2593,
-      "model_context_characters": 2593,
-      "status": "Unavailable: AI reported event does not match the article topic"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
-      "title": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-04T00:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-04T15:50:32Z",
-      "body_sha256": "eee7b882dee8add9aa9234a47f3f4491a38345d5a70a0cb9496da0d5dc612064",
-      "body_characters": 7461,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
-      "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-03T16:19:29Z",
-      "historical": null,
-      "read_at": "2026-11-04T06:55:44Z",
-      "body_sha256": "0403f2f3f83698cc092d16fb766b5e1f8366bb9281e04a6e61083918524e9c89",
-      "body_characters": 4292,
-      "model_context_characters": 4292,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Binance disclosed a $6.3bn crypto hack involving fake job interviews and compromised AI tools.",
-        "evidence_ids": [
-          "E6",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: Binance disclosed a $6.3bn crypto hack",
-          "financial_channel: If risk appetite decreases, investors may shift to gold.",
-          "asset_hypothesis: If liquidity tightens, Bitcoin may face selling pressure."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If risk appetite decreases, investors may shift to gold."
-        },
-        "bitcoin": {
-          "direction": "down",
-          "condition": "If liquidity tightens, Bitcoin may face selling pressure."
-        },
-        "uncertainty": "If North Korea denies involvement, it could weaken the suspicion and impact on risk appetite."
-      },
-      "evidence": {
-        "E6": "Hackers who stole a record $6.3bn (£4.7bn) from Binance used fake job",
-        "E7": "It said they used a range of techniques such as malicious software"
-      },
-      "analyzed_at": "2026-11-04T06:58:22Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
       "url": "https://www.theguardian.com/business/2026/nov/02/oil-price-falls-amid-hope-of-a-breakthrough-to-end-iran-war",
       "title": "Oil price falls amid hope of a breakthrough to end Iran war",
       "publisher": "The Guardian Business",
       "published_at": "2026-11-02T17:14:23Z",
       "historical": null,
-      "read_at": "2026-11-04T06:53:25Z",
+      "read_at": "2026-11-04T22:04:20Z",
       "body_sha256": "2c735f242a320af64ec340c443c6683a9919b72af41a1ae793f8119a2ae9f87e",
       "body_characters": 2662,
       "model_context_characters": 2662,
@@ -137,12 +60,45 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-      "title": "Federal Reserve issues FOMC statement",
-      "publisher": "Federal Reserve",
-      "published_at": "2026-10-28T18:00:00Z",
+      "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
+      "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-03T16:19:29Z",
       "historical": null,
-      "status": "Unavailable: Insufficient public article text"
+      "read_at": "2026-11-04T22:05:21Z",
+      "body_sha256": "094cebdbe9ae5158201a714b3ab608281d8d54caa064a34d69e9b03072655aa4",
+      "body_characters": 4181,
+      "model_context_characters": 4181,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Binance disclosed a $6.3bn hack using sophisticated social engineering techniques, including fake job interviews and malware.",
+        "evidence_ids": [
+          "E6",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: Binance hack",
+          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
+          "asset_hypothesis: If liquidity tightens, alternative-hedge channels may be sought."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If risk appetite decreases, gold may be seen as a safe-haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If liquidity tightens, Bitcoin may be used as an alternative-hedge, but if risk appetite decreases, it may underperform."
+        },
+        "uncertainty": "If North Korea denies responsibility, the hack's origin remains unclear."
+      },
+      "evidence": {
+        "E6": "Hackers who stole a record $6.3bn (£4.7bn) from Binance used fake job",
+        "E7": "It said they used a range of techniques such as malicious software"
+      },
+      "analyzed_at": "2026-11-04T22:07:59Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
@@ -150,7 +106,7 @@
       "publisher": "European Central Bank",
       "published_at": "2026-10-30T14:00:00Z",
       "historical": null,
-      "read_at": "2026-11-04T06:53:26Z",
+      "read_at": "2026-11-04T22:04:22Z",
       "body_sha256": "008585d2480f3877175b1f0876a49c571e898add6f7532626674fbd6d446e640",
       "body_characters": 4117,
       "model_context_characters": 4117,
@@ -194,53 +150,12 @@
       "status": "Unavailable: Insufficient public article text"
     },
     {
-      "url": "https://www.theguardian.com/business/2026/oct/29/binance-crypto-exchange-hack",
-      "title": "North Korea is likely culprit behind $6.3bn crypto hack, ‘largest heist in history’",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-30T16:35:44Z",
-      "historical": null,
-      "read_at": "2026-11-04T06:53:26Z",
-      "body_sha256": "654d70ea393ed55249cbbd82a6a1cb410f199e635d7f3cbf9271d08db20af8d6",
-      "body_characters": 6441,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Binance, the world's largest cryptocurrency exchange, was hacked for $6.3 billion, with North Korea suspected as the culprit.",
-        "evidence_ids": [
-          "E8",
-          "E2"
-        ],
-        "chain": [
-          "reported_event: Binance was hacked for $6.3 billion",
-          "financial_channel: If risk appetite decreases, investors may move to safer assets.",
-          "asset_hypothesis: If liquidity tightens, alternative-hedge channels may be sought."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If risk appetite decreases, gold may be seen as a safer haven."
-        },
-        "bitcoin": {
-          "direction": "down",
-          "condition": "If the hack dampens risk appetite, investors may move away from riskier assets like Bitcoin."
-        },
-        "uncertainty": "If North Korea's involvement is proven, the hack could lead to increased regulatory scrutiny, affecting all cryptocurrencies."
-      },
-      "evidence": {
-        "E8": "The world’s largest cryptocurrency exchange has been hit by a record $6.3bn",
-        "E2": "Markets reacted immediately in early Asian trading on Friday, and within hours"
-      },
-      "analyzed_at": "2026-10-31T07:32:01Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
       "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
       "publisher": "European Central Bank",
       "published_at": "2026-10-30T09:00:00Z",
       "historical": null,
-      "read_at": "2026-11-04T06:53:27Z",
+      "read_at": "2026-11-04T22:04:23Z",
       "body_sha256": "b08617b909ac57c43730654a8505de9828f2411ea40ce692e1dea6f5ac6288d0",
       "body_characters": 1747,
       "model_context_characters": 1747,
@@ -274,6 +189,66 @@
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
+      "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-29T14:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-04T22:08:00Z",
+      "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
+      "body_characters": 18000,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
+      "title": "Monetary policy decisions",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-29T13:15:00Z",
+      "historical": null,
+      "read_at": "2026-11-04T22:12:32Z",
+      "body_sha256": "e52a8e85579ddc5486c59deada912991be969527725e31e211233bb9162d005f",
+      "body_characters": 2593,
+      "model_context_characters": 2593,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
+      "title": "ECB President Lagarde to step down on 7 February 2027",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-29T10:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-04T22:12:33Z",
+      "body_sha256": "1b6539a3dc709a189446519ed7d225e95e45f122cfa3135e39f21cda7b4539e1",
+      "body_characters": 683,
+      "model_context_characters": 683,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c6pvgw8gz1k4o?at_medium=RSS&at_campaign=rss",
+      "title": "Swim and gym prices set to rise above inflation",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-04T06:13:19Z",
+      "historical": null,
+      "read_at": "2026-11-04T22:12:33Z",
+      "body_sha256": "688750827cf99eef00582f7dd1a37bac6d8220ee2ad47881bc332e4e7e3c273a",
+      "body_characters": 3110,
+      "model_context_characters": 3110,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
+      "title": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-04T00:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-04T22:12:34Z",
+      "body_sha256": "eee7b882dee8add9aa9234a47f3f4491a38345d5a70a0cb9496da0d5dc612064",
+      "body_characters": 7461,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
     }
   ]
 }

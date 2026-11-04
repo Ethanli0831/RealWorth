@@ -1,7 +1,7 @@
 {
   "meta": {
-    "checked_at": "2026-11-03T18:05:08Z",
-    "scan_started_at": "2026-11-03T18:00:03Z",
+    "checked_at": "2026-11-04T07:02:56Z",
+    "scan_started_at": "2026-11-04T06:55:42Z",
     "provider_requested": "local",
     "article_reads": 8,
     "ai_interpretations": 5,
@@ -19,110 +19,45 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
-      "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-30T09:00:00Z",
+      "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
+      "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-03T16:19:29Z",
       "historical": null,
-      "read_at": "2026-11-03T17:59:17Z",
-      "body_sha256": "b08617b909ac57c43730654a8505de9828f2411ea40ce692e1dea6f5ac6288d0",
-      "body_characters": 1747,
-      "model_context_characters": 1747,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The ECB Survey of Professional Forecasters for 2026-2028 indicated higher inflation and GDP growth expectations, with risks tilted to the upside for inflation and downside for GDP growth.",
-        "evidence_ids": [
-          "E1",
-          "E4"
-        ],
-        "chain": [
-          "reported_event: Inflation and GDP growth expectations revised",
-          "financial_channel: If inflation expectations rise, gold may benefit from safe-haven demand",
-          "asset_hypothesis: If GDP growth expectations decline, risk appetite may shift away from equities, potentially favoring gold"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation expectations rise, gold may benefit from safe-haven demand"
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite shifts, Bitcoin may face competition from traditional safe-havens like gold"
-        },
-        "uncertainty": "If the war in the Middle East does not lead to significant energy price shocks, inflation expectations may not rise as much."
-      },
-      "evidence": {
-        "E1": "Respondents’ expectations for headline inflation, as measured by the Harmonised Index of",
-        "E4": "Respondents expected real GDP growth of 1.0% in 2026 and 1.3% in"
-      },
-      "analyzed_at": "2026-10-31T13:51:29Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/2026/oct/28/inflation-rate-australia-2026-number-data-consumer-price-index-cpi-release",
-      "title": "Australia’s inflation rate rises to 4.3%, fuelling fears of fifth interest rate hike this year",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-10-28T02:17:32Z",
-      "historical": null,
-      "read_at": "2026-11-03T18:00:04Z",
-      "body_sha256": "6f51a244a8b3b2a18f6aa03cedb9cbce9faed52a768acbd13f7dfaa0ca7d675b",
-      "body_characters": 3814,
-      "model_context_characters": 3814,
+      "read_at": "2026-11-04T06:55:44Z",
+      "body_sha256": "0403f2f3f83698cc092d16fb766b5e1f8366bb9281e04a6e61083918524e9c89",
+      "body_characters": 4292,
+      "model_context_characters": 4292,
       "status": "AI interpretation generated · not independently verified",
       "analysis": {
-        "summary": "Australia's inflation rate rose to 4.3%, prompting fears of another interest rate hike next week.",
+        "summary": "Binance disclosed a $6.3bn crypto hack involving fake job interviews and compromised AI tools.",
         "evidence_ids": [
-          "E1",
-          "E4"
+          "E6",
+          "E7"
         ],
         "chain": [
-          "reported_event: inflation rate rose",
-          "financial_channel: If higher inflation, then increased borrowing costs",
-          "asset_hypothesis: If higher inflation, then reduced asset value"
+          "reported_event: Binance disclosed a $6.3bn crypto hack",
+          "financial_channel: If risk appetite decreases, investors may shift to gold.",
+          "asset_hypothesis: If liquidity tightens, Bitcoin may face selling pressure."
         ],
         "gold": {
           "direction": "up",
-          "condition": "If higher inflation, then increased demand for gold as a hedge"
+          "condition": "If risk appetite decreases, investors may shift to gold."
         },
         "bitcoin": {
-          "direction": "mixed",
-          "condition": "If higher inflation, then reduced risk appetite, but increased liquidity may favor Bitcoin"
+          "direction": "down",
+          "condition": "If liquidity tightens, Bitcoin may face selling pressure."
         },
-        "uncertainty": "If the Middle East conflict ends, fuel prices may fall, reducing inflationary pressures."
+        "uncertainty": "If North Korea denies involvement, it could weaken the suspicion and impact on risk appetite."
       },
       "evidence": {
-        "E1": "Australia’s headline inflation rate has accelerated to 4.3%, with a key gauge",
-        "E4": "The CPI release comes shortly ahead of the central bank’s next monetary"
+        "E6": "Hackers who stole a record $6.3bn (£4.7bn) from Binance used fake job",
+        "E7": "It said they used a range of techniques such as malicious software"
       },
-      "analyzed_at": "2026-11-03T18:01:49Z",
+      "analyzed_at": "2026-11-04T06:58:22Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
-      "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-29T14:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-03T18:01:50Z",
-      "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
-      "body_characters": 18000,
-      "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
-      "title": "Monetary policy decisions",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-29T13:15:00Z",
-      "historical": null,
-      "read_at": "2026-11-03T18:05:07Z",
-      "body_sha256": "e52a8e85579ddc5486c59deada912991be969527725e31e211233bb9162d005f",
-      "body_characters": 2593,
-      "model_context_characters": 2593,
-      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.theguardian.com/business/2026/nov/02/oil-price-falls-amid-hope-of-a-breakthrough-to-end-iran-war",
@@ -130,7 +65,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-02T17:14:23Z",
       "historical": null,
-      "read_at": "2026-11-03T09:58:49Z",
+      "read_at": "2026-11-04T06:53:25Z",
       "body_sha256": "2c735f242a320af64ec340c443c6683a9919b72af41a1ae793f8119a2ae9f87e",
       "body_characters": 2662,
       "model_context_characters": 2662,
@@ -166,24 +101,12 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cwj34gdmnly4o?at_medium=RSS&at_campaign=rss",
-      "title": "Binance users withdraw $3.6bn after largest-ever crypto hack",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-02T07:42:33Z",
-      "historical": null,
-      "read_at": "2026-11-03T18:05:07Z",
-      "body_sha256": "0924b2101f25756d1af9ad26a23d430cafa9e7ce7827ad598f68faa3a87caba6",
-      "body_characters": 3587,
-      "model_context_characters": 3587,
-      "status": "Public body read; queued for AI"
-    },
-    {
       "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
       "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
       "publisher": "European Central Bank",
       "published_at": "2026-10-30T14:00:00Z",
       "historical": null,
-      "read_at": "2026-11-03T01:44:29Z",
+      "read_at": "2026-11-04T06:53:26Z",
       "body_sha256": "008585d2480f3877175b1f0876a49c571e898add6f7532626674fbd6d446e640",
       "body_characters": 4117,
       "model_context_characters": 4117,
@@ -227,12 +150,20 @@
       "status": "Unavailable: Insufficient public article text"
     },
     {
+      "url": "https://www.bbc.co.uk/news/videos/c6m2dpz0yxn8o?at_medium=RSS&at_campaign=rss",
+      "title": "Binance's $6.3bn crypto hack biggest in history",
+      "publisher": "BBC Business",
+      "published_at": "2026-10-30T17:41:10Z",
+      "historical": null,
+      "status": "Unavailable: Insufficient public article text"
+    },
+    {
       "url": "https://www.theguardian.com/business/2026/oct/29/binance-crypto-exchange-hack",
       "title": "North Korea is likely culprit behind $6.3bn crypto hack, ‘largest heist in history’",
       "publisher": "The Guardian Business",
       "published_at": "2026-10-30T16:35:44Z",
       "historical": null,
-      "read_at": "2026-11-03T17:59:16Z",
+      "read_at": "2026-11-04T06:53:26Z",
       "body_sha256": "654d70ea393ed55249cbbd82a6a1cb410f199e635d7f3cbf9271d08db20af8d6",
       "body_characters": 6441,
       "model_context_characters": 4500,
@@ -268,12 +199,81 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.bbc.co.uk/news/videos/c6m2dpz0yxn8o?at_medium=RSS&at_campaign=rss",
-      "title": "Binance's $6.3bn crypto hack biggest in history",
-      "publisher": "BBC Business",
-      "published_at": "2026-10-30T17:41:10Z",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
+      "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-30T09:00:00Z",
       "historical": null,
-      "status": "Unavailable: Insufficient public article text"
+      "read_at": "2026-11-04T06:53:27Z",
+      "body_sha256": "b08617b909ac57c43730654a8505de9828f2411ea40ce692e1dea6f5ac6288d0",
+      "body_characters": 1747,
+      "model_context_characters": 1747,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "The ECB Survey of Professional Forecasters for 2026-2028 indicated higher inflation and GDP growth expectations, with risks tilted to the upside for inflation and downside for GDP growth.",
+        "evidence_ids": [
+          "E1",
+          "E4"
+        ],
+        "chain": [
+          "reported_event: Inflation and GDP growth expectations revised",
+          "financial_channel: If inflation expectations rise, gold may benefit from safe-haven demand",
+          "asset_hypothesis: If GDP growth expectations decline, risk appetite may shift away from equities, potentially favoring gold"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations rise, gold may benefit from safe-haven demand"
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite shifts, Bitcoin may face competition from traditional safe-havens like gold"
+        },
+        "uncertainty": "If the war in the Middle East does not lead to significant energy price shocks, inflation expectations may not rise as much."
+      },
+      "evidence": {
+        "E1": "Respondents’ expectations for headline inflation, as measured by the Harmonised Index of",
+        "E4": "Respondents expected real GDP growth of 1.0% in 2026 and 1.3% in"
+      },
+      "analyzed_at": "2026-10-31T13:51:29Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
+      "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-29T14:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-04T06:58:23Z",
+      "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
+      "body_characters": 18000,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
+      "title": "Monetary policy decisions",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-29T13:15:00Z",
+      "historical": null,
+      "read_at": "2026-11-04T07:02:56Z",
+      "body_sha256": "e52a8e85579ddc5486c59deada912991be969527725e31e211233bb9162d005f",
+      "body_characters": 2593,
+      "model_context_characters": 2593,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
+      "title": "ECB President Lagarde to step down on 7 February 2027",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-29T10:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-04T07:02:56Z",
+      "body_sha256": "1b6539a3dc709a189446519ed7d225e95e45f122cfa3135e39f21cda7b4539e1",
+      "body_characters": 683,
+      "model_context_characters": 683,
+      "status": "Public body read; queued for AI"
     }
   ]
 }

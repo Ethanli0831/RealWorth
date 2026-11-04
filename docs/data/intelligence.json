@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-04T07:02:56Z",
-    "scan_started_at": "2026-11-04T06:55:42Z",
+    "checked_at": "2026-11-04T15:50:32Z",
+    "scan_started_at": "2026-11-04T15:41:48Z",
     "provider_requested": "local",
     "article_reads": 8,
     "ai_interpretations": 5,
-    "new_interpretations": 1,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,6 +19,42 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
+      "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-29T14:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-04T15:41:49Z",
+      "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
+      "body_characters": 18000,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
+      "title": "Monetary policy decisions",
+      "publisher": "European Central Bank",
+      "published_at": "2026-10-29T13:15:00Z",
+      "historical": null,
+      "read_at": "2026-11-04T15:46:56Z",
+      "body_sha256": "e52a8e85579ddc5486c59deada912991be969527725e31e211233bb9162d005f",
+      "body_characters": 2593,
+      "model_context_characters": 2593,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
+      "title": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-04T00:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-04T15:50:32Z",
+      "body_sha256": "eee7b882dee8add9aa9234a47f3f4491a38345d5a70a0cb9496da0d5dc612064",
+      "body_characters": 7461,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
       "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
       "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
       "publisher": "BBC Business",
@@ -28,7 +64,7 @@
       "body_sha256": "0403f2f3f83698cc092d16fb766b5e1f8366bb9281e04a6e61083918524e9c89",
       "body_characters": 4292,
       "model_context_characters": 4292,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "Binance disclosed a $6.3bn crypto hack involving fake job interviews and compromised AI tools.",
         "evidence_ids": [
@@ -101,6 +137,14 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "title": "Federal Reserve issues FOMC statement",
+      "publisher": "Federal Reserve",
+      "published_at": "2026-10-28T18:00:00Z",
+      "historical": null,
+      "status": "Unavailable: Insufficient public article text"
+    },
+    {
       "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
       "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
       "publisher": "European Central Bank",
@@ -140,14 +184,6 @@
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-      "title": "Federal Reserve issues FOMC statement",
-      "publisher": "Federal Reserve",
-      "published_at": "2026-10-28T18:00:00Z",
-      "historical": null,
-      "status": "Unavailable: Insufficient public article text"
     },
     {
       "url": "https://www.bbc.co.uk/news/videos/c6m2dpz0yxn8o?at_medium=RSS&at_campaign=rss",
@@ -238,42 +274,6 @@
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
-      "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-29T14:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-04T06:58:23Z",
-      "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
-      "body_characters": 18000,
-      "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
-      "title": "Monetary policy decisions",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-29T13:15:00Z",
-      "historical": null,
-      "read_at": "2026-11-04T07:02:56Z",
-      "body_sha256": "e52a8e85579ddc5486c59deada912991be969527725e31e211233bb9162d005f",
-      "body_characters": 2593,
-      "model_context_characters": 2593,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
-      "title": "ECB President Lagarde to step down on 7 February 2027",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-29T10:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-04T07:02:56Z",
-      "body_sha256": "1b6539a3dc709a189446519ed7d225e95e45f122cfa3135e39f21cda7b4539e1",
-      "body_characters": 683,
-      "model_context_characters": 683,
-      "status": "Public body read; queued for AI"
     }
   ]
 }

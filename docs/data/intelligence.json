@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-05T11:28:48Z",
-    "scan_started_at": "2026-11-05T11:24:41Z",
+    "checked_at": "2026-11-05T19:04:11Z",
+    "scan_started_at": "2026-11-05T18:55:55Z",
     "provider_requested": "local",
-    "article_reads": 8,
-    "ai_interpretations": 5,
-    "new_interpretations": 0,
+    "article_reads": 7,
+    "ai_interpretations": 6,
+    "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,94 +19,12 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
-      "title": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-04T00:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-05T11:23:39Z",
-      "body_sha256": "eee7b882dee8add9aa9234a47f3f4491a38345d5a70a0cb9496da0d5dc612064",
-      "body_characters": 7461,
-      "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "The ECB wage tracker suggests slightly higher wage growth in the first three quarters of 2027 compared to 2026.",
-        "evidence_ids": [
-          "E4",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: ECB wage tracker indicates higher wage growth",
-          "financial_channel: If wage growth increases, demand for goods and services may rise",
-          "asset_hypothesis: If demand increases, gold may see higher demand as a hedge"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If wage growth increases, demand for goods and services may rise, potentially increasing demand for gold as a hedge."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If demand increases, gold may see higher demand, but Bitcoin's direction is unclear as it depends on broader market sentiment."
-        },
-        "uncertainty": "The coverage of the wage tracker is still limited for the third quarter of 2027, which may affect the accuracy of the wage growth indication."
-      },
-      "evidence": {
-        "E4": "The European Central Bank (ECB) headline wage tracker, which covers active collective",
-        "E6": "Excluding one-offs, the ECB wage tracker averages 2.8% in the first three"
-      },
-      "analyzed_at": "2026-11-05T02:48:35Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/02/oil-price-falls-amid-hope-of-a-breakthrough-to-end-iran-war",
-      "title": "Oil price falls amid hope of a breakthrough to end Iran war",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-02T17:14:23Z",
-      "historical": null,
-      "read_at": "2026-11-05T11:23:39Z",
-      "body_sha256": "2c735f242a320af64ec340c443c6683a9919b72af41a1ae793f8119a2ae9f87e",
-      "body_characters": 2662,
-      "model_context_characters": 2662,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Brent crude fell by over 6% amid hopes for a breakthrough in the Iran war, dropping to $105.55 a barrel.",
-        "evidence_ids": [
-          "E5",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: Brent crude price drop",
-          "financial_channel: If oil supply expectations change, it impacts global markets",
-          "asset_hypothesis: If geopolitical tensions ease, risk appetite increases"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If geopolitical tensions ease, gold may be seen as less of a safe haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite increases, Bitcoin may see increased trading but no established safe-haven status."
-        },
-        "uncertainty": "If the Iran war continues, oil prices could rise again, affecting both gold and Bitcoin."
-      },
-      "evidence": {
-        "E5": "Brent crude drops by more than 6% to $105.55 a barrel, the",
-        "E6": "The oil price has fallen to its lowest level in more two"
-      },
-      "analyzed_at": "2026-11-03T10:00:13Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
       "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
       "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
       "publisher": "BBC Business",
       "published_at": "2026-11-03T16:19:29Z",
       "historical": null,
-      "read_at": "2026-11-05T11:23:39Z",
+      "read_at": "2026-11-05T18:54:29Z",
       "body_sha256": "094cebdbe9ae5158201a714b3ab608281d8d54caa064a34d69e9b03072655aa4",
       "body_characters": 4181,
       "model_context_characters": 4181,
@@ -147,7 +65,7 @@
       "publisher": "European Central Bank",
       "published_at": "2026-10-30T14:00:00Z",
       "historical": null,
-      "read_at": "2026-11-05T11:23:40Z",
+      "read_at": "2026-11-05T18:54:30Z",
       "body_sha256": "008585d2480f3877175b1f0876a49c571e898add6f7532626674fbd6d446e640",
       "body_characters": 4117,
       "model_context_characters": 4117,
@@ -196,7 +114,7 @@
       "publisher": "European Central Bank",
       "published_at": "2026-10-30T09:00:00Z",
       "historical": null,
-      "read_at": "2026-11-05T11:23:41Z",
+      "read_at": "2026-11-05T18:54:31Z",
       "body_sha256": "b08617b909ac57c43730654a8505de9828f2411ea40ce692e1dea6f5ac6288d0",
       "body_characters": 1747,
       "model_context_characters": 1747,
@@ -232,28 +150,45 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
-      "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
+      "title": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
       "publisher": "European Central Bank",
-      "published_at": "2026-10-29T14:00:00Z",
+      "published_at": "2026-11-05T08:00:00Z",
       "historical": null,
-      "read_at": "2026-11-05T11:24:43Z",
-      "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
+      "read_at": "2026-11-05T18:55:57Z",
+      "body_sha256": "fe0994f5db6c7237cba806d0ab616c3ba7a879e6d9b329af31ad0b72f1710b59",
       "body_characters": 18000,
       "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
-      "title": "Monetary policy decisions",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-29T13:15:00Z",
-      "historical": null,
-      "read_at": "2026-11-05T11:27:03Z",
-      "body_sha256": "e52a8e85579ddc5486c59deada912991be969527725e31e211233bb9162d005f",
-      "body_characters": 2593,
-      "model_context_characters": 2593,
-      "status": "Unavailable: AI reported event does not match the article topic"
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Isabel Schnabel reflects on the ECB's monetary policy journey from low inflation to inflationary shocks.",
+        "evidence_ids": [
+          "E4",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: ECB's monetary policy shift",
+          "financial_channel: If inflation expectations change, gold demand may fluctuate",
+          "asset_hypothesis: If central banks adjust policies, asset risk appetites may shift"
+        ],
+        "gold": {
+          "direction": "mixed",
+          "condition": "If inflation expectations rise, gold may lose some appeal as a safe-haven; if policy tightening continues, gold may gain as a hedge."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If gold's safe-haven status wanes, Bitcoin may gain as an alternative hedge, but evidence is lacking."
+        },
+        "uncertainty": "If the global economy remains integrated, gold's traditional safe-haven status may persist, countering the shift in focus."
+      },
+      "evidence": {
+        "E4": "We have moved from a world in which inflation was persistently too",
+        "E5": "During the post-pandemic inflation surge, the ECB demonstrated its ability to tighten"
+      },
+      "analyzed_at": "2026-11-05T19:00:26Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/c6pvgw8gz1k4o?at_medium=RSS&at_campaign=rss",
@@ -261,11 +196,93 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-04T06:13:19Z",
       "historical": null,
-      "read_at": "2026-11-05T11:28:48Z",
+      "read_at": "2026-11-05T19:00:26Z",
       "body_sha256": "688750827cf99eef00582f7dd1a37bac6d8220ee2ad47881bc332e4e7e3c273a",
       "body_characters": 3110,
       "model_context_characters": 3110,
-      "status": "Public body read; queued for AI"
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/02/oil-price-falls-amid-hope-of-a-breakthrough-to-end-iran-war",
+      "title": "Oil price falls amid hope of a breakthrough to end Iran war",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-02T17:14:23Z",
+      "historical": null,
+      "read_at": "2026-11-05T11:23:39Z",
+      "body_sha256": "2c735f242a320af64ec340c443c6683a9919b72af41a1ae793f8119a2ae9f87e",
+      "body_characters": 2662,
+      "model_context_characters": 2662,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Brent crude fell by over 6% amid hopes for a breakthrough in the Iran war, dropping to $105.55 a barrel.",
+        "evidence_ids": [
+          "E5",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: Brent crude price drop",
+          "financial_channel: If oil supply expectations change, it impacts global markets",
+          "asset_hypothesis: If geopolitical tensions ease, risk appetite increases"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If geopolitical tensions ease, gold may be seen as less of a safe haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite increases, Bitcoin may see increased trading but no established safe-haven status."
+        },
+        "uncertainty": "If the Iran war continues, oil prices could rise again, affecting both gold and Bitcoin."
+      },
+      "evidence": {
+        "E5": "Brent crude drops by more than 6% to $105.55 a barrel, the",
+        "E6": "The oil price has fallen to its lowest level in more two"
+      },
+      "analyzed_at": "2026-11-03T10:00:13Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
+      "title": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-04T00:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-05T11:23:39Z",
+      "body_sha256": "eee7b882dee8add9aa9234a47f3f4491a38345d5a70a0cb9496da0d5dc612064",
+      "body_characters": 7461,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "The ECB wage tracker suggests slightly higher wage growth in the first three quarters of 2027 compared to 2026.",
+        "evidence_ids": [
+          "E4",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: ECB wage tracker indicates higher wage growth",
+          "financial_channel: If wage growth increases, demand for goods and services may rise",
+          "asset_hypothesis: If demand increases, gold may see higher demand as a hedge"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If wage growth increases, demand for goods and services may rise, potentially increasing demand for gold as a hedge."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If demand increases, gold may see higher demand, but Bitcoin's direction is unclear as it depends on broader market sentiment."
+        },
+        "uncertainty": "The coverage of the wage tracker is still limited for the third quarter of 2027, which may affect the accuracy of the wage growth indication."
+      },
+      "evidence": {
+        "E4": "The European Central Bank (ECB) headline wage tracker, which covers active collective",
+        "E6": "Excluding one-offs, the ECB wage tracker averages 2.8% in the first three"
+      },
+      "analyzed_at": "2026-11-05T02:48:35Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     }
   ]
 }

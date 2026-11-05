@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-11-04T22:12:34Z",
-    "scan_started_at": "2026-11-04T22:05:19Z",
+    "checked_at": "2026-11-05T02:48:38Z",
+    "scan_started_at": "2026-11-05T02:42:43Z",
     "provider_requested": "local",
     "article_reads": 9,
-    "ai_interpretations": 4,
+    "ai_interpretations": 5,
     "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -17,6 +17,59 @@
       "published_at": null,
       "historical": true,
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c6pvgw8gz1k4o?at_medium=RSS&at_campaign=rss",
+      "title": "Swim and gym prices set to rise above inflation",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-04T06:13:19Z",
+      "historical": null,
+      "read_at": "2026-11-05T02:42:45Z",
+      "body_sha256": "688750827cf99eef00582f7dd1a37bac6d8220ee2ad47881bc332e4e7e3c273a",
+      "body_characters": 3110,
+      "model_context_characters": 3110,
+      "status": "Unavailable: AI numerical statements require exact cited source support"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
+      "title": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-04T00:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-05T02:46:32Z",
+      "body_sha256": "eee7b882dee8add9aa9234a47f3f4491a38345d5a70a0cb9496da0d5dc612064",
+      "body_characters": 7461,
+      "model_context_characters": 4500,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The ECB wage tracker suggests slightly higher wage growth in the first three quarters of 2027 compared to 2026.",
+        "evidence_ids": [
+          "E4",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: ECB wage tracker indicates higher wage growth",
+          "financial_channel: If wage growth increases, demand for goods and services may rise",
+          "asset_hypothesis: If demand increases, gold may see higher demand as a hedge"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If wage growth increases, demand for goods and services may rise, potentially increasing demand for gold as a hedge."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If demand increases, gold may see higher demand, but Bitcoin's direction is unclear as it depends on broader market sentiment."
+        },
+        "uncertainty": "The coverage of the wage tracker is still limited for the third quarter of 2027, which may affect the accuracy of the wage growth indication."
+      },
+      "evidence": {
+        "E4": "The European Central Bank (ECB) headline wage tracker, which covers active collective",
+        "E6": "Excluding one-offs, the ECB wage tracker averages 2.8% in the first three"
+      },
+      "analyzed_at": "2026-11-05T02:48:35Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.theguardian.com/business/2026/nov/02/oil-price-falls-amid-hope-of-a-breakthrough-to-end-iran-war",
@@ -69,7 +122,7 @@
       "body_sha256": "094cebdbe9ae5158201a714b3ab608281d8d54caa064a34d69e9b03072655aa4",
       "body_characters": 4181,
       "model_context_characters": 4181,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "Binance disclosed a $6.3bn hack using sophisticated social engineering techniques, including fake job interviews and malware.",
         "evidence_ids": [
@@ -196,11 +249,11 @@
       "publisher": "European Central Bank",
       "published_at": "2026-10-29T14:00:00Z",
       "historical": null,
-      "read_at": "2026-11-04T22:08:00Z",
+      "read_at": "2026-11-05T02:48:36Z",
       "body_sha256": "8d9f2833cebd2a6c39891ef1cd2bd688ee15a896394e0ed7e549a4641e576a1d",
       "body_characters": 18000,
       "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
@@ -208,7 +261,7 @@
       "publisher": "European Central Bank",
       "published_at": "2026-10-29T13:15:00Z",
       "historical": null,
-      "read_at": "2026-11-04T22:12:32Z",
+      "read_at": "2026-11-05T02:48:37Z",
       "body_sha256": "e52a8e85579ddc5486c59deada912991be969527725e31e211233bb9162d005f",
       "body_characters": 2593,
       "model_context_characters": 2593,
@@ -220,34 +273,10 @@
       "publisher": "European Central Bank",
       "published_at": "2026-10-29T10:00:00Z",
       "historical": null,
-      "read_at": "2026-11-04T22:12:33Z",
+      "read_at": "2026-11-05T02:48:38Z",
       "body_sha256": "1b6539a3dc709a189446519ed7d225e95e45f122cfa3135e39f21cda7b4539e1",
       "body_characters": 683,
       "model_context_characters": 683,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c6pvgw8gz1k4o?at_medium=RSS&at_campaign=rss",
-      "title": "Swim and gym prices set to rise above inflation",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-04T06:13:19Z",
-      "historical": null,
-      "read_at": "2026-11-04T22:12:33Z",
-      "body_sha256": "688750827cf99eef00582f7dd1a37bac6d8220ee2ad47881bc332e4e7e3c273a",
-      "body_characters": 3110,
-      "model_context_characters": 3110,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
-      "title": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-04T00:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-04T22:12:34Z",
-      "body_sha256": "eee7b882dee8add9aa9234a47f3f4491a38345d5a70a0cb9496da0d5dc612064",
-      "body_characters": 7461,
-      "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
     }
   ]

@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-11-06T08:27:43Z",
-    "scan_started_at": "2026-11-06T08:22:50Z",
+    "checked_at": "2026-11-06T16:17:52Z",
+    "scan_started_at": "2026-11-06T16:09:54Z",
     "provider_requested": "local",
-    "article_reads": 8,
-    "ai_interpretations": 7,
+    "article_reads": 6,
+    "ai_interpretations": 4,
     "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -19,45 +19,16 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cmj47j7e92gvo?at_medium=RSS&at_campaign=rss",
-      "title": "'I've taken an extra job to pay for heating oil'",
+      "url": "https://www.bbc.co.uk/news/articles/cx4g1q3vlp62o?at_medium=RSS&at_campaign=rss",
+      "title": "Three ways the interest rate rise could affect you",
       "publisher": "BBC Business",
-      "published_at": "2026-11-06T06:06:00Z",
+      "published_at": "2026-11-05T13:08:30Z",
       "historical": null,
-      "read_at": "2026-11-06T08:22:52Z",
-      "body_sha256": "2cfb73ade89ab611809f58ff8ce50c19076b025b5a181a1c8d0f327b38b356b7",
-      "body_characters": 1965,
-      "model_context_characters": 1965,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "A woman in East Sussex has taken on an extra job to pay for her heating oil, which has doubled in cost since 2026.",
-        "evidence_ids": [
-          "E1",
-          "E4"
-        ],
-        "chain": [
-          "reported_event: A woman in East Sussex takes on an extra job",
-          "financial_channel: If demand for labor increases",
-          "asset_hypothesis: If risk appetite for alternative investments decreases"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflationary pressures persist and real yields remain low"
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite for alternative investments decreases, but liquidity remains high"
-        },
-        "uncertainty": "If the government's support for vulnerable households significantly reduces the need for additional work."
-      },
-      "evidence": {
-        "E1": "A woman from East Sussex says she is having to take on",
-        "E4": "Sheila Williams has taken on an extra waitress job to help pay"
-      },
-      "analyzed_at": "2026-11-06T08:24:19Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+      "read_at": "2026-11-06T16:09:55Z",
+      "body_sha256": "ab71c9d3d38c07cdeef2aa41ad38eed7ee145a6262f6845d75fb13d0446d4f67",
+      "body_characters": 4278,
+      "model_context_characters": 4278,
+      "status": "Unavailable: AI numerical statements require exact cited source support"
     },
     {
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
@@ -65,7 +36,7 @@
       "publisher": "European Central Bank",
       "published_at": "2026-11-05T08:00:00Z",
       "historical": null,
-      "read_at": "2026-11-06T08:21:37Z",
+      "read_at": "2026-11-06T16:08:53Z",
       "body_sha256": "fe0994f5db6c7237cba806d0ab616c3ba7a879e6d9b329af31ad0b72f1710b59",
       "body_characters": 18000,
       "model_context_characters": 4500,
@@ -101,106 +72,12 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.theguardian.com/business/2026/nov/02/oil-price-falls-amid-hope-of-a-breakthrough-to-end-iran-war",
-      "title": "Oil price falls amid hope of a breakthrough to end Iran war",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-02T17:14:23Z",
-      "historical": null,
-      "read_at": "2026-11-06T08:21:37Z",
-      "body_sha256": "2c735f242a320af64ec340c443c6683a9919b72af41a1ae793f8119a2ae9f87e",
-      "body_characters": 2662,
-      "model_context_characters": 2662,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Brent crude fell by over 6% amid hopes for a breakthrough in the Iran war, dropping to $105.55 a barrel.",
-        "evidence_ids": [
-          "E5",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: Brent crude price drop",
-          "financial_channel: If oil supply expectations change, it impacts global markets",
-          "asset_hypothesis: If geopolitical tensions ease, risk appetite increases"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If geopolitical tensions ease, gold may be seen as less of a safe haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite increases, Bitcoin may see increased trading but no established safe-haven status."
-        },
-        "uncertainty": "If the Iran war continues, oil prices could rise again, affecting both gold and Bitcoin."
-      },
-      "evidence": {
-        "E5": "Brent crude drops by more than 6% to $105.55 a barrel, the",
-        "E6": "The oil price has fallen to its lowest level in more two"
-      },
-      "analyzed_at": "2026-11-03T10:00:13Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cx4g1q3vlp62o?at_medium=RSS&at_campaign=rss",
-      "title": "Three ways the interest rate rise could affect you",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-05T13:08:30Z",
-      "historical": null,
-      "read_at": "2026-11-06T08:24:19Z",
-      "body_sha256": "ab71c9d3d38c07cdeef2aa41ad38eed7ee145a6262f6845d75fb13d0446d4f67",
-      "body_characters": 4278,
-      "model_context_characters": 4278,
-      "status": "Unavailable: AI numerical statements require exact cited source support"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
-      "title": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-04T00:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-05T11:23:39Z",
-      "body_sha256": "eee7b882dee8add9aa9234a47f3f4491a38345d5a70a0cb9496da0d5dc612064",
-      "body_characters": 7461,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The ECB wage tracker suggests slightly higher wage growth in the first three quarters of 2027 compared to 2026.",
-        "evidence_ids": [
-          "E4",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: ECB wage tracker indicates higher wage growth",
-          "financial_channel: If wage growth increases, demand for goods and services may rise",
-          "asset_hypothesis: If demand increases, gold may see higher demand as a hedge"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If wage growth increases, demand for goods and services may rise, potentially increasing demand for gold as a hedge."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If demand increases, gold may see higher demand, but Bitcoin's direction is unclear as it depends on broader market sentiment."
-        },
-        "uncertainty": "The coverage of the wage tracker is still limited for the third quarter of 2027, which may affect the accuracy of the wage growth indication."
-      },
-      "evidence": {
-        "E4": "The European Central Bank (ECB) headline wage tracker, which covers active collective",
-        "E6": "Excluding one-offs, the ECB wage tracker averages 2.8% in the first three"
-      },
-      "analyzed_at": "2026-11-05T02:48:35Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
       "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
       "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
       "publisher": "BBC Business",
       "published_at": "2026-11-03T16:19:29Z",
       "historical": null,
-      "read_at": "2026-11-05T18:54:29Z",
+      "read_at": "2026-11-06T16:08:53Z",
       "body_sha256": "094cebdbe9ae5158201a714b3ab608281d8d54caa064a34d69e9b03072655aa4",
       "body_characters": 4181,
       "model_context_characters": 4181,
@@ -236,86 +113,98 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
-      "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
+      "title": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
       "publisher": "European Central Bank",
-      "published_at": "2026-10-30T14:00:00Z",
+      "published_at": "2026-11-04T00:00:00Z",
       "historical": null,
-      "read_at": "2026-11-05T18:54:30Z",
-      "body_sha256": "008585d2480f3877175b1f0876a49c571e898add6f7532626674fbd6d446e640",
-      "body_characters": 4117,
-      "model_context_characters": 4117,
+      "read_at": "2026-11-06T16:08:54Z",
+      "body_sha256": "eee7b882dee8add9aa9234a47f3f4491a38345d5a70a0cb9496da0d5dc612064",
+      "body_characters": 7461,
+      "model_context_characters": 4500,
       "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
-        "summary": "ECB President Lagarde will step down on February 7, 2027, after informing the Governing Council on October 29, 2026.",
+        "summary": "The ECB wage tracker suggests slightly higher wage growth in the first three quarters of 2027 compared to 2026.",
         "evidence_ids": [
-          "E1",
-          "E3"
+          "E4",
+          "E6"
         ],
         "chain": [
-          "reported_event: ECB President stepping down",
-          "financial_channel: If risk appetite decreases, gold may see mixed reactions",
-          "asset_hypothesis: If liquidity remains stable, gold may remain stable"
+          "reported_event: ECB wage tracker indicates higher wage growth",
+          "financial_channel: If wage growth increases, demand for goods and services may rise",
+          "asset_hypothesis: If demand increases, gold may see higher demand as a hedge"
         ],
         "gold": {
-          "direction": "mixed",
-          "condition": "If risk appetite decreases, gold may see mixed reactions due to uncertainty surrounding the new leadership."
+          "direction": "up",
+          "condition": "If wage growth increases, demand for goods and services may rise, potentially increasing demand for gold as a hedge."
         },
         "bitcoin": {
-          "direction": "unclear",
-          "condition": "If risk appetite decreases, Bitcoin may face mixed reactions, but liquidity and alternative-hedge channels could influence its direction."
+          "direction": "mixed",
+          "condition": "If demand increases, gold may see higher demand, but Bitcoin's direction is unclear as it depends on broader market sentiment."
         },
-        "uncertainty": "If Lagarde's departure leads to increased confidence in the ECB's future leadership, gold and Bitcoin may both see upward trends."
+        "uncertainty": "The coverage of the wage tracker is still limited for the third quarter of 2027, which may affect the accuracy of the wage growth indication."
       },
       "evidence": {
-        "E1": "On 29 October 2026 ECB President Christine Lagarde informed the Governing Council",
-        "E3": "ECB President Lagarde to step down on 7 February 2027"
+        "E4": "The European Central Bank (ECB) headline wage tracker, which covers active collective",
+        "E6": "Excluding one-offs, the ECB wage tracker averages 2.8% in the first three"
       },
-      "analyzed_at": "2026-10-30T16:13:24Z",
+      "analyzed_at": "2026-11-05T02:48:35Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
-      "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-30T09:00:00Z",
+      "url": "https://www.bbc.co.uk/news/articles/cmj47j7e92gvo?at_medium=RSS&at_campaign=rss",
+      "title": "'I've taken an extra job to pay for heating oil'",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-06T11:40:35Z",
       "historical": null,
-      "read_at": "2026-11-05T18:54:31Z",
-      "body_sha256": "b08617b909ac57c43730654a8505de9828f2411ea40ce692e1dea6f5ac6288d0",
-      "body_characters": 1747,
-      "model_context_characters": 1747,
-      "status": "Cached AI interpretation; awaiting re-read",
+      "read_at": "2026-11-06T16:14:30Z",
+      "body_sha256": "9d9258bd8e3e1a287c709deda7cb3f9ba5f74c4bb07c7ada50447f98eaa6d99e",
+      "body_characters": 2190,
+      "model_context_characters": 2190,
+      "status": "AI interpretation generated · not independently verified",
       "analysis": {
-        "summary": "The ECB Survey of Professional Forecasters for 2026-2028 indicated higher inflation and GDP growth expectations, with risks tilted to the upside for inflation and downside for GDP growth.",
+        "summary": "Heating oil prices have more than doubled, forcing some households to seek extra work to cover costs.",
         "evidence_ids": [
-          "E1",
-          "E4"
+          "E4",
+          "E6"
         ],
         "chain": [
-          "reported_event: Inflation and GDP growth expectations revised",
-          "financial_channel: If inflation expectations rise, gold may benefit from safe-haven demand",
-          "asset_hypothesis: If GDP growth expectations decline, risk appetite may shift away from equities, potentially favoring gold"
+          "reported_event: Heating oil prices have more than doubled",
+          "financial_channel: If demand for heating oil increases, prices may rise further",
+          "asset_hypothesis: If households rely more on heating oil, they may reduce gold demand"
         ],
         "gold": {
-          "direction": "up",
-          "condition": "If inflation expectations rise, gold may benefit from safe-haven demand"
+          "direction": "down",
+          "condition": "If households need to save more for heating oil, they may reduce gold purchases due to higher priority expenses."
         },
         "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite shifts, Bitcoin may face competition from traditional safe-havens like gold"
+          "direction": "unclear",
+          "condition": "If households seek alternative investments, Bitcoin may be considered, but there's no evidence of increased demand."
         },
-        "uncertainty": "If the war in the Middle East does not lead to significant energy price shocks, inflation expectations may not rise as much."
+        "uncertainty": "If the government's support measures are effective, households may not need to seek extra work, reducing the pressure on heating oil prices."
       },
       "evidence": {
-        "E1": "Respondents’ expectations for headline inflation, as measured by the Harmonised Index of",
-        "E4": "Respondents expected real GDP growth of 1.0% in 2026 and 1.3% in"
+        "E4": "Heating oil costs 'more than double' ahead of winter",
+        "E6": "She said her oil bill had doubled since the start of 2026"
       },
-      "analyzed_at": "2026-10-31T13:51:29Z",
+      "analyzed_at": "2026-11-06T16:17:51Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
+      "title": "ECB publishes consolidated banking data for end-June 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-06T09:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-06T16:17:52Z",
+      "body_sha256": "5d63ffb09003e052ea5c0fd742237462d9f2473fedd24eb55a87051dfec8e3ac",
+      "body_characters": 2315,
+      "model_context_characters": 2315,
+      "status": "Public body read; queued for AI"
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-11-06T16:17:52Z",
-    "scan_started_at": "2026-11-06T16:09:54Z",
+    "checked_at": "2026-11-06T21:50:06Z",
+    "scan_started_at": "2026-11-06T21:43:50Z",
     "provider_requested": "local",
     "article_reads": 6,
-    "ai_interpretations": 4,
+    "ai_interpretations": 5,
     "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -19,16 +19,135 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cx4g1q3vlp62o?at_medium=RSS&at_campaign=rss",
-      "title": "Three ways the interest rate rise could affect you",
+      "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
+      "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
       "publisher": "BBC Business",
-      "published_at": "2026-11-05T13:08:30Z",
+      "published_at": "2026-11-03T16:19:29Z",
       "historical": null,
-      "read_at": "2026-11-06T16:09:55Z",
-      "body_sha256": "ab71c9d3d38c07cdeef2aa41ad38eed7ee145a6262f6845d75fb13d0446d4f67",
-      "body_characters": 4278,
-      "model_context_characters": 4278,
-      "status": "Unavailable: AI numerical statements require exact cited source support"
+      "read_at": "2026-11-06T21:42:43Z",
+      "body_sha256": "094cebdbe9ae5158201a714b3ab608281d8d54caa064a34d69e9b03072655aa4",
+      "body_characters": 4181,
+      "model_context_characters": 4181,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Binance disclosed a $6.3bn hack using sophisticated social engineering techniques, including fake job interviews and malware.",
+        "evidence_ids": [
+          "E6",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: Binance hack",
+          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
+          "asset_hypothesis: If liquidity tightens, alternative-hedge channels may be sought."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If risk appetite decreases, gold may be seen as a safe-haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If liquidity tightens, Bitcoin may be used as an alternative-hedge, but if risk appetite decreases, it may underperform."
+        },
+        "uncertainty": "If North Korea denies responsibility, the hack's origin remains unclear."
+      },
+      "evidence": {
+        "E6": "Hackers who stole a record $6.3bn (£4.7bn) from Binance used fake job",
+        "E7": "It said they used a range of techniques such as malicious software"
+      },
+      "analyzed_at": "2026-11-04T22:07:59Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/videos/cq369l9r634ro?at_medium=RSS&at_campaign=rss",
+      "title": "Workers' rights 'second place' to economic growth",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-06T14:52:49Z",
+      "historical": null,
+      "status": "Unavailable: Insufficient public article text"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
+      "title": "ECB publishes consolidated banking data for end-June 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-06T09:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-06T21:43:54Z",
+      "body_sha256": "5d63ffb09003e052ea5c0fd742237462d9f2473fedd24eb55a87051dfec8e3ac",
+      "body_characters": 2315,
+      "model_context_characters": 2315,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The ECB published consolidated banking data for EU credit institutions as of end-June 2026, covering 336 banking groups and 2283 credit institutions.",
+        "evidence_ids": [
+          "E5",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: ECB publishes banking data",
+          "financial_channel: If banking data improves, risk appetite may increase",
+          "asset_hypothesis: If risk appetite increases, gold may be down"
+        ],
+        "gold": {
+          "direction": "down",
+          "condition": "If banking data improves, risk appetite may increase, reducing demand for gold as a safe-haven."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If risk appetite increases, Bitcoin may be mixed as it competes with gold but lacks established safe-haven status."
+        },
+        "uncertainty": "If the banking data shows significant stress, risk appetite could decrease, increasing gold demand."
+      },
+      "evidence": {
+        "E5": "The data cover 336 banking groups and 2283 stand-alone credit institutions and",
+        "E7": "Source: ECB Note: Data for all reference periods relate to the EU27."
+      },
+      "analyzed_at": "2026-11-06T21:46:42Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmj47j7e92gvo?at_medium=RSS&at_campaign=rss",
+      "title": "'I've taken an extra job to pay for heating oil'",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-06T11:40:35Z",
+      "historical": null,
+      "read_at": "2026-11-06T21:42:45Z",
+      "body_sha256": "9d9258bd8e3e1a287c709deda7cb3f9ba5f74c4bb07c7ada50447f98eaa6d99e",
+      "body_characters": 2190,
+      "model_context_characters": 2190,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Heating oil prices have more than doubled, forcing some households to seek extra work to cover costs.",
+        "evidence_ids": [
+          "E4",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: Heating oil prices have more than doubled",
+          "financial_channel: If demand for heating oil increases, prices may rise further",
+          "asset_hypothesis: If households rely more on heating oil, they may reduce gold demand"
+        ],
+        "gold": {
+          "direction": "down",
+          "condition": "If households need to save more for heating oil, they may reduce gold purchases due to higher priority expenses."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If households seek alternative investments, Bitcoin may be considered, but there's no evidence of increased demand."
+        },
+        "uncertainty": "If the government's support measures are effective, households may not need to seek extra work, reducing the pressure on heating oil prices."
+      },
+      "evidence": {
+        "E4": "Heating oil costs 'more than double' ahead of winter",
+        "E6": "She said her oil bill had doubled since the start of 2026"
+      },
+      "analyzed_at": "2026-11-06T16:17:51Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
@@ -36,7 +155,7 @@
       "publisher": "European Central Bank",
       "published_at": "2026-11-05T08:00:00Z",
       "historical": null,
-      "read_at": "2026-11-06T16:08:53Z",
+      "read_at": "2026-11-06T21:42:46Z",
       "body_sha256": "fe0994f5db6c7237cba806d0ab616c3ba7a879e6d9b329af31ad0b72f1710b59",
       "body_characters": 18000,
       "model_context_characters": 4500,
@@ -72,45 +191,16 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
-      "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
+      "url": "https://www.bbc.co.uk/news/articles/cx4g1q3vlp62o?at_medium=RSS&at_campaign=rss",
+      "title": "Three ways the interest rate rise could affect you",
       "publisher": "BBC Business",
-      "published_at": "2026-11-03T16:19:29Z",
+      "published_at": "2026-11-05T13:08:30Z",
       "historical": null,
-      "read_at": "2026-11-06T16:08:53Z",
-      "body_sha256": "094cebdbe9ae5158201a714b3ab608281d8d54caa064a34d69e9b03072655aa4",
-      "body_characters": 4181,
-      "model_context_characters": 4181,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Binance disclosed a $6.3bn hack using sophisticated social engineering techniques, including fake job interviews and malware.",
-        "evidence_ids": [
-          "E6",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: Binance hack",
-          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
-          "asset_hypothesis: If liquidity tightens, alternative-hedge channels may be sought."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If risk appetite decreases, gold may be seen as a safe-haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If liquidity tightens, Bitcoin may be used as an alternative-hedge, but if risk appetite decreases, it may underperform."
-        },
-        "uncertainty": "If North Korea denies responsibility, the hack's origin remains unclear."
-      },
-      "evidence": {
-        "E6": "Hackers who stole a record $6.3bn (£4.7bn) from Binance used fake job",
-        "E7": "It said they used a range of techniques such as malicious software"
-      },
-      "analyzed_at": "2026-11-04T22:07:59Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+      "read_at": "2026-11-06T21:46:43Z",
+      "body_sha256": "ab71c9d3d38c07cdeef2aa41ad38eed7ee145a6262f6845d75fb13d0446d4f67",
+      "body_characters": 4278,
+      "model_context_characters": 4278,
+      "status": "Unavailable: AI numerical statements require exact cited source support"
     },
     {
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
@@ -152,59 +242,6 @@
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmj47j7e92gvo?at_medium=RSS&at_campaign=rss",
-      "title": "'I've taken an extra job to pay for heating oil'",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-06T11:40:35Z",
-      "historical": null,
-      "read_at": "2026-11-06T16:14:30Z",
-      "body_sha256": "9d9258bd8e3e1a287c709deda7cb3f9ba5f74c4bb07c7ada50447f98eaa6d99e",
-      "body_characters": 2190,
-      "model_context_characters": 2190,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "Heating oil prices have more than doubled, forcing some households to seek extra work to cover costs.",
-        "evidence_ids": [
-          "E4",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: Heating oil prices have more than doubled",
-          "financial_channel: If demand for heating oil increases, prices may rise further",
-          "asset_hypothesis: If households rely more on heating oil, they may reduce gold demand"
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If households need to save more for heating oil, they may reduce gold purchases due to higher priority expenses."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If households seek alternative investments, Bitcoin may be considered, but there's no evidence of increased demand."
-        },
-        "uncertainty": "If the government's support measures are effective, households may not need to seek extra work, reducing the pressure on heating oil prices."
-      },
-      "evidence": {
-        "E4": "Heating oil costs 'more than double' ahead of winter",
-        "E6": "She said her oil bill had doubled since the start of 2026"
-      },
-      "analyzed_at": "2026-11-06T16:17:51Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
-      "title": "ECB publishes consolidated banking data for end-June 2026",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-06T09:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-06T16:17:52Z",
-      "body_sha256": "5d63ffb09003e052ea5c0fd742237462d9f2473fedd24eb55a87051dfec8e3ac",
-      "body_characters": 2315,
-      "model_context_characters": 2315,
-      "status": "Public body read; queued for AI"
     }
   ]
 }

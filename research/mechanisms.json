@@ -165,7 +165,7 @@
   {
     "id": "ai_economics",
     "name": "AI revenue, spending and valuation",
-    "pattern": "(?=.*\\b(ai|artificial intelligence|nvidia|semiconductor\\w*|data cent(?:er|re)s?|hyperscaler\\w*)\\b)(?=.*\\b(revenue|profit\\w*|earnings|cash flow|capex|capital (?:spending|expenditure)|orders?|demand|valuation|bubble|returns?|investment|spending)\\b)",
+    "pattern": "(?=.*\\b(ai|artificial intelligence|nvidia|semiconductor\\w*|data cent(?:er|re)s?|hyperscaler\\w*)\\b)(?=.*\\b(revenue|profit\\w*|earnings|cash flow|capex|capital (?:spending|expenditure)|orders?|demand|valuation|bubble|returns?|investment|spending|stocks?|shares?|selloff|sell-off|slowdown)\\b)",
     "chain": [
       "A report concerns AI demand, investment, earnings or valuation.",
       "Revenue, utilization, margins, depreciation and funding costs determine whether capital spending can earn a return.",

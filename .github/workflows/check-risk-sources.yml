@@ -1,0 +1,46 @@
+name: Inspect official risk-calendar formats
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.11'
+      - run: pip install requests==2.32.5 beautifulsoup4==4.13.5
+      - name: Read bounded official calendar metadata
+        run: |
+          python - <<'PY'
+          import requests,re
+          from bs4 import BeautifulSoup
+          urls=[
+            'https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm',
+            'https://www.bls.gov/schedule/news_release/bls.ics',
+            'https://www.bls.gov/schedule/news_release/cpi.htm',
+            'https://www.bls.gov/schedule/2026/home.htm',
+          ]
+          for url in urls:
+            try:
+              r=requests.get(url,timeout=25)
+              print('SOURCE',url,'STATUS',r.status_code,'TYPE',r.headers.get('Content-Type'),'BYTES',len(r.content))
+              if not r.ok:continue
+              s=BeautifulSoup(r.text,'html.parser')
+              print('TITLE',s.title.get_text(' ',strip=True)[:120] if s.title else 'No HTML title')
+              for h in s.select('h2,h3,h4'):
+                if re.search('2026|2027|FOMC|Schedule',h.get_text(),re.I):print('HEADING',h.name,h.get('class'),h.get_text(' ',strip=True)[:100])
+              if 'fomc' in url:
+                for n in s.find_all(class_=lambda x:x and 'fomc-meeting' in x)[:12]:
+                  print('MEETING_NODE',n.name,n.get('class'),n.get_text(' | ',strip=True)[:200])
+                  if any('month' in c for c in n.get('class',[])):
+                    print('PARENT',str(n.parent)[:1700])
+                    print('ANCESTOR_HEADINGS',[(x.name,x.get_text(' ',strip=True)[:100]) for x in n.parent.parent.select('h2,h3,h4')[:5]])
+              else:
+                for tr in s.select('tr')[:5]:print('ROW',tr.get_text(' | ',strip=True)[:260])
+                for a in s.select('a[href]'):
+                  if re.search(r'\.ics|ical|calendar',a.get('href',''),re.I):print('CALENDAR_LINK',a.get('href')[:200])
+            except Exception as exc:print('ERROR',type(exc).__name__,str(exc)[:100])
+          PY

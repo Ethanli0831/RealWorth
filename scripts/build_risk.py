@@ -17,7 +17,7 @@ from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
 import requests
-from build_research import ROOT, parse_date, safe_url, stamp, write_atomic
+from build_research import ROOT, parse_date, safe_url, stamp, write_atomic, political_finance_context
 
 FRAMEWORK = ROOT / 'research/risk-framework.json'
 OUTPUT = ROOT / 'docs/data/risk.json'
@@ -61,7 +61,7 @@ def topics(title, framework):
         return []
     found = [c for c in framework['categories'] if re.search(c['pattern'], title, re.I)]
     # An election headline needs a public-policy/economic context, not a club vote.
-    if not re.search(r'\b(us|u\.s\.|united states|congress|midterms?|government|parliament|tax|trade|tariff|regulat\w*|policy|policies|econom\w*|markets?|ai|artificial intelligence)\b', title, re.I):
+    if not political_finance_context(title):
         found = [c for c in found if c['id'] != 'elections']
     return found
 

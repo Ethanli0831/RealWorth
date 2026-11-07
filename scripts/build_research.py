@@ -184,6 +184,12 @@ def parse_date(text):
     return value.astimezone(timezone.utc)
 
 
+def political_finance_context(title):
+    return bool(re.search(
+        r'\b(econom\w*|markets?|stocks?|shares?|bonds?|investors?|tax\w*|trade|tariffs?|regulat\w*|polic\w*|budget|fiscal|debt|deficit|energy|ai|artificial intelligence|data cent(?:er|re)s?)\b',
+        title, re.I))
+
+
 def classify(title, mechanisms):
     """Conservative headline routing, not a claim to understand an article.
 
@@ -193,8 +199,7 @@ def classify(title, mechanisms):
     if re.search(r'job search|job hunt|jobseeker|career advice|five jobs|fraud|scam|gold medal|golden globe', title, re.I):
         return []
     tags = [m['id'] for m in mechanisms if re.search(m['pattern'], title, re.I)]
-    if 'elections' in tags and not re.search(
-            r'\b(us|u\.s\.|united states|congress|midterms?|government|parliament|tax|trade|tariff|regulat\w*|policy|policies|econom\w*|markets?|ai|artificial intelligence)\b', title, re.I):
+    if 'elections' in tags and not political_finance_context(title):
         tags.remove('elections')
     if 'energy' in tags and not re.search(
             r'\boil\b|\bcrude\b|energy (?:price|suppl)|geopolit|shipping|hormuz|military|missile|invasion|armed conflict|sanctions? (?:on|against)|war in (?:ukraine|gaza|iran)', title, re.I):

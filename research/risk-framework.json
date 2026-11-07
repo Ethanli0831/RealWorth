@@ -49,7 +49,7 @@
     {
       "id": "ai_economics",
       "name": "AI revenue, spending and valuation",
-      "pattern": "(?=.*\\b(ai|artificial intelligence|nvidia|semiconductor\\w*|data cent(?:er|re)s?|hyperscaler\\w*)\\b)(?=.*\\b(revenue|profit\\w*|earnings|cash flow|capex|capital (?:spending|expenditure)|orders?|demand|valuation|bubble|returns?|investment|spending)\\b)",
+      "pattern": "(?=.*\\b(ai|artificial intelligence|nvidia|semiconductor\\w*|data cent(?:er|re)s?|hyperscaler\\w*)\\b)(?=.*\\b(revenue|profit\\w*|earnings|cash flow|capex|capital (?:spending|expenditure)|orders?|demand|valuation|bubble|returns?|investment|spending|stocks?|shares?|selloff|sell-off|slowdown)\\b)",
       "tickers": [
         "BTC-USD",
         "SPY"

@@ -47,7 +47,7 @@ class NewsEvidence(unittest.TestCase):
             m.parse_feed('<html>not a feed</html>', FEED, MECHANISMS, NOW)
 
     def test_ambiguous_jobs_and_war_can_abstain(self):
-        for title in ["Civil servant worked five jobs and is charged with fraud", "Is an 'AI war' complicating your job search?", "A football star wins a gold medal"]:
+        for title in ["Civil servant worked five jobs and is charged with fraud", "Is an 'AI war' complicating your job search?", "A football star wins a gold medal", "'I've taken an extra job to pay for heating oil'"]:
             self.assertEqual(m.classify(title, MECHANISMS), [])
         self.assertIn('growth',m.classify('US payrolls fall as unemployment climbs',MECHANISMS))
         self.assertIn('energy',m.classify('Oil supplies disrupted by attacks in Hormuz',MECHANISMS))

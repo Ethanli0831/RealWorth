@@ -265,10 +265,13 @@ def main():
                 assert card.locator('.article-ai details').count()==0
                 assert 'No clear macro impact' in card.inner_text()
             page.locator('#news-topic').select_option('')
-            page.locator('#news-more').click() if page.locator('#news-more').is_visible() else None
+            # Expanded source coverage can push analyzed articles past page two.
+            # Reveal the real list; do not assume the first 12 were AI-read.
+            while page.locator('.article-ai details').count()==0 and page.locator('#news-more').is_visible():
+                page.locator('#news-more').click()
             assert page.locator('.article-ai details').count()>0
             page.locator('.article-ai details').first.evaluate('e=>e.open=true')
-            assert 'Qwen/' in page.locator('.article-ai details[open]').first.inner_text()
+            assert any(a.get('model') and a['model'] in page.locator('.article-ai details[open]').first.inner_text() for a in ai_data['articles'] if a.get('analysis'))
             checks += 1
 
             assert page.locator('.structure-card').count()==12

@@ -190,13 +190,17 @@ def political_finance_context(title):
         title, re.I))
 
 
+def personal_story(title):
+    return bool(re.search(r'''^["'“‘]?(?:i['’](?:ve|m)|i was|my |we (?:bought|paid))''', title, re.I))
+
+
 def classify(title, mechanisms):
     """Conservative headline routing, not a claim to understand an article.
 
     Require context for ambiguous words before allowing a mechanism template.
     Abstention is preferable to inventing a macro event from a personal story.
     """
-    if re.search(r'job search|job hunt|jobseeker|career advice|five jobs|fraud|scam|gold medal|golden globe', title, re.I):
+    if personal_story(title) or re.search(r'job search|job hunt|jobseeker|career advice|five jobs|fraud|scam|gold medal|golden globe', title, re.I):
         return []
     tags = [m['id'] for m in mechanisms if re.search(m['pattern'], title, re.I)]
     if 'elections' in tags and not political_finance_context(title):

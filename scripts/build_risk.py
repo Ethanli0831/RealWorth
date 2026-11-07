@@ -17,7 +17,7 @@ from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
 import requests
-from build_research import ROOT, parse_date, safe_url, stamp, write_atomic, political_finance_context
+from build_research import ROOT, parse_date, safe_url, stamp, write_atomic, political_finance_context, personal_story
 
 FRAMEWORK = ROOT / 'research/risk-framework.json'
 OUTPUT = ROOT / 'docs/data/risk.json'
@@ -57,7 +57,7 @@ def stage(title):
 
 
 def topics(title, framework):
-    if re.search(r'job search|job hunt|jobseeker|career advice|five jobs|gold medal|golden globe', title, re.I) or re.search(r'''^["'“‘]?(?:i['’](?:ve|m)|i was|my |we (?:bought|paid))''', title, re.I):
+    if personal_story(title) or re.search(r'job search|job hunt|jobseeker|career advice|five jobs|gold medal|golden globe', title, re.I):
         return []
     found = [c for c in framework['categories'] if re.search(c['pattern'], title, re.I)]
     # An election headline needs a public-policy/economic context, not a club vote.

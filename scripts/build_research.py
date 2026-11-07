@@ -186,7 +186,7 @@ def parse_date(text):
 
 def political_finance_context(title):
     return bool(re.search(
-        r'\b(econom\w*|markets?|stocks?|shares?|bonds?|investors?|tax\w*|trade|tariffs?|regulat\w*|polic\w*|budget|fiscal|debt|deficit|energy|ai|artificial intelligence|data cent(?:er|re)s?)\b',
+        r'\b(econom\w*|markets?|stocks?|shares?|bonds?|investors?|tax\w*|trade|tariffs?|regulat\w*|polic(?:y|ies)|budget|fiscal|debt|deficit|energy|ai|artificial intelligence|data cent(?:er|re)s?)\b',
         title, re.I))
 
 

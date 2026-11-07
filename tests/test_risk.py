@@ -97,7 +97,7 @@ class EventRisk(unittest.TestCase):
   self.assertEqual([r['at'] for r in rows],['2026-12-09T05:00:00Z','2023-02-01T05:00:00Z'])
 
  def test_political_commentary_without_financial_context_can_abstain(self):
-  for title in ['Israel took a beating in the US midterms','The most diverse Congress in history is cause for optimism','The content creator election: midterms coverage']:
+  for title in ['Israel took a beating in the US midterms','The most diverse Congress in history is cause for optimism','The content creator election: midterms coverage','US Congress calls police after a protest']:
    self.assertNotIn('elections',[c['id'] for c in m.topics(title,FRAME)])
   self.assertIn('ai_economics',[c['id'] for c in m.topics('Global stocks fall amid worries over AI after US midterms',FRAME)])
 

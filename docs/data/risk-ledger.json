@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-07T17:49:19Z",
-    "record_count": 14,
+    "updated_at": "2026-11-07T18:00:10Z",
+    "record_count": 27,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -423,6 +423,384 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "7324857eefbeccf696b91dbf90d83a9deb6840e54aa1a2cd57f612277c3803aa"
+    },
+    {
+      "id": "1ccda951e006fbf30e09ca21",
+      "first_observed_at": "2026-11-07T18:00:10Z",
+      "snapshot": {
+        "title": "‘People are active, they are fed up’: young voters fueled the Democratic wave",
+        "url": "https://www.theguardian.com/us-news/2026/nov/07/youth-vote-turnout-midterm-elections",
+        "publisher": "The Guardian US Politics",
+        "published_at": "2026-11-07T17:00:16Z",
+        "categories": [
+          "rates"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "400e2947276cd30ba6db1c4b61d0a21b18dc28ee73e4d10cb3f10b0f4a4ae836"
+    },
+    {
+      "id": "0386342f22eedfa9ce9dbe36",
+      "first_observed_at": "2026-11-07T18:00:10Z",
+      "snapshot": {
+        "title": "Israel took a beating in the US midterms | Judith Levine",
+        "url": "https://www.theguardian.com/commentisfree/2026/nov/07/midterms-israel-criticism",
+        "publisher": "The Guardian US Politics",
+        "published_at": "2026-11-07T12:00:11Z",
+        "categories": [
+          "elections"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "ce5938e1e88f03cac291ac2aeacb9755d4c160d367a8f147dfd135ef03dfb877"
+    },
+    {
+      "id": "d07bdf9912a5c8d9ece17452",
+      "first_observed_at": "2026-11-07T18:00:10Z",
+      "snapshot": {
+        "title": "Trump may have lost but don’t bet Democrats can fix the economy",
+        "url": "https://www.theguardian.com/business/2026/nov/07/democrats-economy-affordability-crisis",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-07T11:00:08Z",
+        "categories": [
+          "elections"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Proposal or possibility reported; not enacted law",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "f38a72fcc683e33c98d5543c983e2e48ccfce456eb11df7e0e5169a1a45d461e"
+    },
+    {
+      "id": "921eced63c35ab8499b8ca3c",
+      "first_observed_at": "2026-11-07T18:00:10Z",
+      "snapshot": {
+        "title": "Global stocks fall amid ‘big worries over AI’ after Democrats’ midterms triumph",
+        "url": "https://www.theguardian.com/business/2026/nov/06/global-stocks-plunge-amid-ai-slowdown-fears-after-democrats-midterm-triumph",
+        "publisher": "The Guardian Technology",
+        "published_at": "2026-11-06T21:23:54Z",
+        "categories": [
+          "elections"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "38910afc01347e28692f6c99862e8258304ca6f546971c08eaf6b0de82819717"
+    },
+    {
+      "id": "51480beeed8ee7d0de356e4f",
+      "first_observed_at": "2026-11-07T18:00:10Z",
+      "snapshot": {
+        "title": "Why the US midterms sparked an AI stock selloff",
+        "url": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-06T18:32:16Z",
+        "categories": [
+          "elections"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "59f1085d7ba39067d8e2677d166684dcaa5fb1c25000b8655ef583f22c006ee1"
+    },
+    {
+      "id": "9ebd7544c76ec08a9c025adc",
+      "first_observed_at": "2026-11-07T18:00:10Z",
+      "snapshot": {
+        "title": "Could the AI bubble burst after Democrats' midterms sweep? - The Latest",
+        "url": "https://www.theguardian.com/news/video/2026/nov/06/could-the-ai-bubble-burst-after-democrats-midterms-sweep-the-latest",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-06T17:04:41Z",
+        "categories": [
+          "elections",
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Proposal or possibility reported; not enacted law",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "bc72eac20211905f959b7bcc1f464a6b7e1a3d85e70da69b17a10fdf740a204b",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "26dfa33c459facc39ba0a0de8233144e52702cde052a5d9d1de49af1936b2748"
+    },
+    {
+      "id": "f2d4022cbed209aeb5f5168f",
+      "first_observed_at": "2026-11-07T18:00:10Z",
+      "snapshot": {
+        "title": "The most diverse, anti-establishment Congress in history is cause for optimism",
+        "url": "https://www.theguardian.com/us-news/2026/nov/05/congress-midterms-diverse",
+        "publisher": "The Guardian US Politics",
+        "published_at": "2026-11-06T14:17:18Z",
+        "categories": [
+          "elections"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "5fc71565523e6a03041005de01f40a165ebbdcd19a251fbf014d54aebce83acd"
+    },
+    {
+      "id": "4686af7509ba0ccf46921506",
+      "first_observed_at": "2026-11-07T18:00:10Z",
+      "snapshot": {
+        "title": "Rural voters were feeling left behind before the midterms, poll shows",
+        "url": "https://www.theguardian.com/business/2026/nov/05/former-trump-voters-economy",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-05T11:00:22Z",
+        "categories": [
+          "elections"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "f8da6668463edafbad91465532887960edf5f2e2d64eb6992fe4bc9ce7fb8b78"
+    },
+    {
+      "id": "6b05f93258cf7754ab2516e5",
+      "first_observed_at": "2026-11-07T18:00:10Z",
+      "snapshot": {
+        "title": "Elon Musk’s nearly half a billion dollars in midterms spending was a flop",
+        "url": "https://www.theguardian.com/technology/2026/nov/04/elon-musk-midterm-spending-analysis",
+        "publisher": "The Guardian Technology",
+        "published_at": "2026-11-05T02:00:50Z",
+        "categories": [
+          "elections"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "6f0694eb7dd6be65c1e9b822869216908c1004f0923d45eebab79dc73cb1a576"
+    },
+    {
+      "id": "2761e2d32e7b2dfa96a95055",
+      "first_observed_at": "2026-11-07T18:00:10Z",
+      "snapshot": {
+        "title": "Elon Musk's millions failed to deliver Republican wins in fierce midterms",
+        "url": "https://www.bbc.co.uk/news/articles/cv8ez3p3ge5ko?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-04T21:41:15Z",
+        "categories": [
+          "elections"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "8b5853384cac4db51c796ce03760d51bfd5ce58ab4c804395b77a5feb7533b51"
+    },
+    {
+      "id": "f71953c0b050a019312f9e62",
+      "first_observed_at": "2026-11-07T18:00:10Z",
+      "snapshot": {
+        "title": "US stocks rise, dollar slides as investors digest Democrats’ midterm victories",
+        "url": "https://www.theguardian.com/business/2026/nov/04/us-dollar-slides-democrats-midterm-election-win-growth-fears",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-04T16:38:28Z",
+        "categories": [
+          "elections"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "3b2dbbfd6758d615a68e26d81ea308f6a8a0973658a0a719fcffea0fe2acdbcc"
+    },
+    {
+      "id": "fd47d50acd1e31a07a5f092e",
+      "first_observed_at": "2026-11-07T18:00:10Z",
+      "snapshot": {
+        "title": "US tech stocks recover after selloff spooks investors over AI spending",
+        "url": "https://www.theguardian.com/business/2026/nov/03/us-tech-stocks-recovery-ai-spending",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-03T22:18:45Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "2040fdfbbc8e8b260ff7bdffb3d476b01ee30626a627357aeb60a224080764a6",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "05699bc72a495784d5e36f7222c31685fdb5572c5223a58a2a025d6848cc4c03"
+    },
+    {
+      "id": "c73454eff47b236c65c5ddb5",
+      "first_observed_at": "2026-11-07T18:00:10Z",
+      "snapshot": {
+        "title": "‘The content creator election’: digital streamers and TV networks face off for midterms coverage",
+        "url": "https://www.theguardian.com/us-news/2026/nov/02/content-creators-tv-network-midterm-coverage",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-02T11:00:41Z",
+        "categories": [
+          "elections"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "60b7132a24acff710cd426fd9d64d2a2afcfd840eb6538ff48dae36f995a13d4"
     }
   ]
 }

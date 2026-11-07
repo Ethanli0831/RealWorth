@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-07T13:16:22Z",
+    "checked_at": "2026-11-07T18:00:04Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-11-07T13:16:22Z",
+    "checked_at": "2026-11-07T18:00:04Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -123,6 +123,157 @@
   },
   "news": [
     {
+      "title": "‘People are active, they are fed up’: young voters fueled the Democratic wave",
+      "url": "https://www.theguardian.com/us-news/2026/nov/07/youth-vote-turnout-midterm-elections",
+      "published_at": "2026-11-07T17:00:16Z",
+      "source_id": "guardian_us_policy",
+      "publisher": "The Guardian US Politics",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "policy"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "‘People are active, they are fed up’: young voters fueled the Democratic wave",
+          "url": "https://www.theguardian.com/us-news/2026/nov/07/youth-vote-turnout-midterm-elections",
+          "publisher": "The Guardian US Politics",
+          "published_at": "2026-11-07T17:00:16Z"
+        }
+      ]
+    },
+    {
+      "title": "Israel took a beating in the US midterms | Judith Levine",
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/07/midterms-israel-criticism",
+      "published_at": "2026-11-07T12:00:11Z",
+      "source_id": "guardian_us_policy",
+      "publisher": "The Guardian US Politics",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "elections"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Israel took a beating in the US midterms | Judith Levine",
+          "url": "https://www.theguardian.com/commentisfree/2026/nov/07/midterms-israel-criticism",
+          "publisher": "The Guardian US Politics",
+          "published_at": "2026-11-07T12:00:11Z"
+        }
+      ]
+    },
+    {
+      "title": "Trump may have lost but don’t bet Democrats can fix the economy",
+      "url": "https://www.theguardian.com/business/2026/nov/07/democrats-economy-affordability-crisis",
+      "published_at": "2026-11-07T11:00:08Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "elections"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Trump may have lost but don’t bet Democrats can fix the economy",
+          "url": "https://www.theguardian.com/business/2026/nov/07/democrats-economy-affordability-crisis",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-11-07T11:00:08Z"
+        }
+      ]
+    },
+    {
+      "title": "Global stocks fall amid ‘big worries over AI’ after Democrats’ midterms triumph",
+      "url": "https://www.theguardian.com/business/2026/nov/06/global-stocks-plunge-amid-ai-slowdown-fears-after-democrats-midterm-triumph",
+      "published_at": "2026-11-06T21:23:54Z",
+      "source_id": "guardian_technology",
+      "publisher": "The Guardian Technology",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "elections"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Global stocks fall amid ‘big worries over AI’ after Democrats’ midterms triumph",
+          "url": "https://www.theguardian.com/business/2026/nov/06/global-stocks-plunge-amid-ai-slowdown-fears-after-democrats-midterm-triumph",
+          "publisher": "The Guardian Technology",
+          "published_at": "2026-11-06T21:23:54Z"
+        }
+      ]
+    },
+    {
+      "title": "Why the US midterms sparked an AI stock selloff",
+      "url": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-11-06T18:32:16Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "elections"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Why the US midterms sparked an AI stock selloff",
+          "url": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-11-06T18:32:16Z"
+        }
+      ]
+    },
+    {
+      "title": "Could the AI bubble burst after Democrats' midterms sweep? - The Latest",
+      "url": "https://www.theguardian.com/news/video/2026/nov/06/could-the-ai-bubble-burst-after-democrats-midterms-sweep-the-latest",
+      "published_at": "2026-11-06T17:04:41Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "elections",
+        "ai_economics"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Could the AI bubble burst after Democrats' midterms sweep? - The Latest",
+          "url": "https://www.theguardian.com/news/video/2026/nov/06/could-the-ai-bubble-burst-after-democrats-midterms-sweep-the-latest",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-11-06T17:04:41Z"
+        }
+      ]
+    },
+    {
       "title": "Food bank to close amid rising costs",
       "url": "https://www.bbc.co.uk/news/articles/cqrkyyj6rx7ro?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-11-06T16:42:23Z",
@@ -190,6 +341,54 @@
           "url": "https://www.bbc.co.uk/news/videos/cq369l9r634ro?at_medium=RSS&at_campaign=rss",
           "publisher": "BBC Business",
           "published_at": "2026-11-06T14:52:49Z"
+        }
+      ]
+    },
+    {
+      "title": "The most diverse, anti-establishment Congress in history is cause for optimism",
+      "url": "https://www.theguardian.com/us-news/2026/nov/05/congress-midterms-diverse",
+      "published_at": "2026-11-06T14:17:18Z",
+      "source_id": "guardian_us_policy",
+      "publisher": "The Guardian US Politics",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "elections"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "The most diverse, anti-establishment Congress in history is cause for optimism",
+          "url": "https://www.theguardian.com/us-news/2026/nov/05/congress-midterms-diverse",
+          "publisher": "The Guardian US Politics",
+          "published_at": "2026-11-06T14:17:18Z"
+        }
+      ]
+    },
+    {
+      "title": "Fearing AI disruption, white-collar workers are quitting their jobs",
+      "url": "https://www.theguardian.com/technology/2026/nov/06/ai-disruption-job-quitting",
+      "published_at": "2026-11-06T14:00:45Z",
+      "source_id": "guardian_technology",
+      "publisher": "The Guardian Technology",
+      "source_kind": "Publisher headline",
+      "topics": [],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "Fearing AI disruption, white-collar workers are quitting their jobs",
+          "url": "https://www.theguardian.com/technology/2026/nov/06/ai-disruption-job-quitting",
+          "publisher": "The Guardian Technology",
+          "published_at": "2026-11-06T14:00:45Z"
         }
       ]
     },
@@ -338,6 +537,31 @@
       ]
     },
     {
+      "title": "Rural voters were feeling left behind before the midterms, poll shows",
+      "url": "https://www.theguardian.com/business/2026/nov/05/former-trump-voters-economy",
+      "published_at": "2026-11-05T11:00:22Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "elections"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Rural voters were feeling left behind before the midterms, poll shows",
+          "url": "https://www.theguardian.com/business/2026/nov/05/former-trump-voters-economy",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-11-05T11:00:22Z"
+        }
+      ]
+    },
+    {
       "title": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
       "published_at": "2026-11-05T08:00:00Z",
@@ -359,6 +583,81 @@
           "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
           "publisher": "European Central Bank",
           "published_at": "2026-11-05T08:00:00Z"
+        }
+      ]
+    },
+    {
+      "title": "Elon Musk’s nearly half a billion dollars in midterms spending was a flop",
+      "url": "https://www.theguardian.com/technology/2026/nov/04/elon-musk-midterm-spending-analysis",
+      "published_at": "2026-11-05T02:00:50Z",
+      "source_id": "guardian_technology",
+      "publisher": "The Guardian Technology",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "elections"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Elon Musk’s nearly half a billion dollars in midterms spending was a flop",
+          "url": "https://www.theguardian.com/technology/2026/nov/04/elon-musk-midterm-spending-analysis",
+          "publisher": "The Guardian Technology",
+          "published_at": "2026-11-05T02:00:50Z"
+        }
+      ]
+    },
+    {
+      "title": "Elon Musk's millions failed to deliver Republican wins in fierce midterms",
+      "url": "https://www.bbc.co.uk/news/articles/cv8ez3p3ge5ko?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-11-04T21:41:15Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "elections"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Elon Musk's millions failed to deliver Republican wins in fierce midterms",
+          "url": "https://www.bbc.co.uk/news/articles/cv8ez3p3ge5ko?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-11-04T21:41:15Z"
+        }
+      ]
+    },
+    {
+      "title": "US stocks rise, dollar slides as investors digest Democrats’ midterm victories",
+      "url": "https://www.theguardian.com/business/2026/nov/04/us-dollar-slides-democrats-midterm-election-win-growth-fears",
+      "published_at": "2026-11-04T16:38:28Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "elections"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "US stocks rise, dollar slides as investors digest Democrats’ midterm victories",
+          "url": "https://www.theguardian.com/business/2026/nov/04/us-dollar-slides-democrats-midterm-election-win-growth-fears",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-11-04T16:38:28Z"
         }
       ]
     },
@@ -411,6 +710,31 @@
       ]
     },
     {
+      "title": "US tech stocks recover after selloff spooks investors over AI spending",
+      "url": "https://www.theguardian.com/business/2026/nov/03/us-tech-stocks-recovery-ai-spending",
+      "published_at": "2026-11-03T22:18:45Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "ai_economics"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "US tech stocks recover after selloff spooks investors over AI spending",
+          "url": "https://www.theguardian.com/business/2026/nov/03/us-tech-stocks-recovery-ai-spending",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-11-03T22:18:45Z"
+        }
+      ]
+    },
+    {
       "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
       "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-11-03T16:19:29Z",
@@ -432,6 +756,31 @@
           "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
           "publisher": "BBC Business",
           "published_at": "2026-11-03T16:19:29Z"
+        }
+      ]
+    },
+    {
+      "title": "‘The content creator election’: digital streamers and TV networks face off for midterms coverage",
+      "url": "https://www.theguardian.com/us-news/2026/nov/02/content-creators-tv-network-midterm-coverage",
+      "published_at": "2026-11-02T11:00:41Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "elections"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "‘The content creator election’: digital streamers and TV networks face off for midterms coverage",
+          "url": "https://www.theguardian.com/us-news/2026/nov/02/content-creators-tv-network-midterm-coverage",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-11-02T11:00:41Z"
         }
       ]
     },
@@ -607,29 +956,6 @@
           "published_at": "2026-10-27T00:00:00Z"
         }
       ]
-    },
-    {
-      "title": "Frank Elderson: Taking action for nature – investing in economic resilience and prosperity",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261026~d903d7ad85.en.html",
-      "published_at": "2026-10-26T05:00:00Z",
-      "source_id": "ecb",
-      "publisher": "European Central Bank",
-      "source_kind": "Primary institutional release",
-      "topics": [],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "No clear macro impact",
-        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
-      },
-      "related_reports": [
-        {
-          "title": "Frank Elderson: Taking action for nature – investing in economic resilience and prosperity",
-          "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261026~d903d7ad85.en.html",
-          "publisher": "European Central Bank",
-          "published_at": "2026-10-26T05:00:00Z"
-        }
-      ]
     }
   ],
   "feed_health": [
@@ -637,47 +963,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-07T13:16:22Z",
+      "checked_at": "2026-11-07T18:00:04Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T13:16:22Z",
+      "last_success": "2026-11-07T18:00:04Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-07T13:16:22Z",
+      "checked_at": "2026-11-07T18:00:04Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T13:16:22Z",
-      "matched": 10
+      "last_success": "2026-11-07T18:00:04Z",
+      "matched": 9
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-07T13:16:22Z",
+      "checked_at": "2026-11-07T18:00:04Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T13:16:22Z",
-      "matched": 8
+      "last_success": "2026-11-07T18:00:04Z",
+      "matched": 10
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-07T13:16:22Z",
+      "checked_at": "2026-11-07T18:00:04Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T13:16:22Z",
-      "matched": 2
+      "last_success": "2026-11-07T18:00:04Z",
+      "matched": 8
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-07T13:16:22Z",
+      "checked_at": "2026-11-07T18:00:04Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -687,11 +1013,41 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-07T13:16:22Z",
+      "checked_at": "2026-11-07T18:00:04Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T13:16:22Z",
+      "last_success": "2026-11-07T18:00:04Z",
       "matched": 0
+    },
+    {
+      "id": "guardian_technology",
+      "name": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/rss",
+      "checked_at": "2026-11-07T18:00:04Z",
+      "status": "Fetched",
+      "error": null,
+      "last_success": "2026-11-07T18:00:04Z",
+      "matched": 3
+    },
+    {
+      "id": "guardian_us_policy",
+      "name": "The Guardian US Politics",
+      "url": "https://www.theguardian.com/us-news/us-politics/rss",
+      "checked_at": "2026-11-07T18:00:04Z",
+      "status": "Fetched",
+      "error": null,
+      "last_success": "2026-11-07T18:00:04Z",
+      "matched": 3
+    },
+    {
+      "id": "bbc_technology",
+      "name": "BBC Technology",
+      "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+      "checked_at": "2026-11-07T18:00:04Z",
+      "status": "Fetched",
+      "error": null,
+      "last_success": "2026-11-07T18:00:04Z",
+      "matched": 3
     }
   ],
   "sources": [

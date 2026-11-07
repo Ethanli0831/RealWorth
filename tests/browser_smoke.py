@@ -275,7 +275,7 @@ def main():
             assert 'percentile' in page.locator('#market-structure').inner_text()
             checks += 1
 
-            for path in ['', 'purchasing-power.html','research.html','monitor.html','methodology.html','about.html','learn.html','bitcoin-inflation.html','compare-purchasing-power.html','forecast-evidence.html']:
+            for path in ['', 'purchasing-power.html','research.html','monitor.html','methodology.html','about.html','learn.html','bitcoin-inflation.html','compare-purchasing-power.html','forecast-evidence.html','risk.html']:
                 page.set_viewport_size({'width':390,'height':844})
                 visit(path)
                 assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),path
@@ -347,13 +347,78 @@ def main():
             assert locale_page.locator('.card-explanation').count()==5
             locale_context.close()
             checks += 1
+            visit('risk.html')
+            page.wait_for_selector('.risk-event')
+            assert page.locator('#risk-coverage tr').count()>=12
+            assert page.locator('.risk-region').count()==6
+            assert 'Tracking began' in page.locator('#risk-tracking').inner_text()
+            assert 'not' in page.locator('#risk-status').inner_text()
+            page.locator('.risk-event details').first.evaluate('e=>e.open=true')
+            assert 'Possible transmission' in page.locator('.risk-event details').first.inner_text()
+            with urlopen(base+'data/risk.json',timeout=30) as response:actual_risk=json.load(response)
+            if len(actual_risk['events'])>6:
+                last_id=actual_risk['events'][-1]['id']
+                visit('risk.html#event-'+last_id)
+                assert page.locator('#event-'+last_id).is_visible()
+                assert page.locator('.risk-event').count()==len(actual_risk['events'])
+                checks += 1
+            page.locator('#risk-category').select_option('ai_regulation')
+            assert 'not a safety signal' in page.locator('#risk-event-count').inner_text()
+            checks += 1
+
+            # Synthetic policy input is routed in-browser only; it is never published.
+            with urlopen(base+'data/risk.json',timeout=30) as response:risk_fixture=json.load(response)
+            from datetime import datetime,timezone,timedelta
+            instant=datetime.now(timezone.utc)
+            stamp=lambda t:t.isoformat().replace('+00:00','Z')
+            risk_fixture['meta'].update(built_at=stamp(instant),source_checked_at=stamp(instant),tracking_started_at=stamp(instant),news_stale=False,news_unavailable=False)
+            risk_fixture['events']=[{'id':'a'*24,'title':'Synthetic browser test: US lawmakers propose AI restrictions','url':'https://example.org/policy','publisher':'Synthetic test','first_observed_at':stamp(instant),'published_at':stamp(instant-timedelta(hours=1)),'scheduled_at':None,'kind':'Headline watch','stage':'Proposal reported; not enacted law','evidence':'Synthetic test fixture only','categories':['ai_regulation'],'tickers':['BTC-USD','SPY'],'regions':['All']}]
+            event_page=context.new_page()
+            event_page.on('pageerror',lambda error:errors.append(str(error)))
+            event_page.route('**/data/risk.json',lambda r:r.fulfill(status=200,content_type='application/json',body=json.dumps(risk_fixture)))
+            event_page.goto(base+'monitor.html',wait_until='networkidle')
+            values={'purpose':'surplus','horizon':'60','loss':'50','readiness':'ready','goal':'growth','currency':'USD','concentration':'ai','region':'China'}
+            def event_answer(**changes):
+                for key,value in {**values,**changes}.items():event_page.locator('#money-'+key).select_option(value)
+                event_page.locator('#money-form button').click()
+                event_page.wait_for_function("!document.querySelector('#money-form button').disabled")
+            event_answer()
+            assert 'Review the event' in event_page.locator('#money-result h3').inner_text()
+            assert event_page.locator('.money-asset[data-asset="S&P 500"]').get_attribute('data-status')=='review'
+            assert event_page.locator('.money-asset[data-asset="T-Bills"]').get_attribute('data-status')=='research'
+            assert 'not an instruction to liquidate' in event_page.locator('#money-result').inner_text()
+            assert 'China index loss range' in event_page.locator('.money-event-risk').inner_text()
+            assert event_page.locator('.money-event-risk a[href="risk.html#event-'+('a'*24)+'"]').count()==1
+            assert 'Event-risk review' in event_page.locator('.card-fit').first.inner_text()
+            checks += 1
+            event_page.locator('#money-concentration').select_option('diversified')
+            assert event_page.locator('#money-result').is_hidden()
+            event_answer(concentration='diversified')
+            assert event_page.locator('.money-asset[data-asset="S&P 500"]').get_attribute('data-status')=='research'
+            checks += 1
+            event_answer(purpose='essential',loss='100')
+            assert event_page.locator('.money-asset[data-status="avoid"]').count()==5
+            checks += 1
+            event_page.close()
+            missing_risk=context.new_page()
+            missing_risk.route('**/data/risk.json',lambda r:r.fulfill(status=503,body='Unavailable'))
+            missing_risk.goto(base+'monitor.html',wait_until='networkidle')
+            for key,value in values.items():missing_risk.locator('#money-'+key).select_option(value)
+            missing_risk.locator('#money-form button').click()
+            missing_risk.wait_for_function("!document.querySelector('#money-form button').disabled")
+            assert 'Event-risk evidence is unavailable' in missing_risk.locator('.money-event-risk').inner_text()
+            assert missing_risk.locator('.forecast-card').count()==5
+            missing_risk.goto(base+'risk.html',wait_until='networkidle')
+            assert 'No current safety conclusion' in missing_risk.locator('#risk-status').inner_text()
+            missing_risk.close()
+            checks += 1
             visit('about.html')
             assert 'GitHub repository' in page.locator('main').inner_text()
             assert page.locator('script[type="application/ld+json"]').count()==1
             checks += 1
             assert not errors,errors
             browser.close()
-        print(f'PASS: {checks} real-browser functional scenarios; ten pages, English-only guidance, comparisons, evidence and source failures.')
+        print(f'PASS: {checks} real-browser functional scenarios; eleven pages, event-risk gates, English-only guidance, comparisons, evidence and source failures.')
     finally:
         if server:server.shutdown()
 

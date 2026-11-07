@@ -14,6 +14,7 @@ website.
 | [Purchasing Power](https://ethanli0831.github.io/RealWorth/purchasing-power.html) | Compare the same investment across five assets after inflation. |
 | [Research](https://ethanli0831.github.io/RealWorth/research.html) | Examine comparable histories, rolling holding periods and inflation groups. |
 | [Market Monitor](https://ethanli0831.github.io/RealWorth/monitor.html) | Match money purpose to risks, inspect current observations and check published forecasts. |
+| [Risk Watch](https://ethanli0831.github.io/RealWorth/risk.html) | Review dated event leads, cross-region channels, unknowns and frozen records. |
 | [Methodology](https://ethanli0831.github.io/RealWorth/methodology.html) | Read formulas, data handling, policy assumptions and limitations. |
 | [About](https://ethanli0831.github.io/RealWorth/about.html) | Learn how the project is maintained and how to report errors. |
 
@@ -24,7 +25,8 @@ questionnaire and asset-card explanations use English regardless of browser loca
 
 Open **Market Monitor → What fits my money?** Answer the six questions about
 purpose, earliest spending date, loss capacity, financial readiness, goal and
-spending currency. Enter the total amount being considered for this plan.
+spending currency. Add concentration and region if known; their defaults are
+unknown/global. Enter the total amount being considered for this plan.
 
 The result distinguishes further research, reduced-exposure comparisons,
 disposable-money experiments, conditional USD evidence, observation-only
@@ -143,3 +145,22 @@ The methodology includes a five-question self-check with reference answers.
 
 For setup, development and maintenance, see [README.md](README.md).
 For indexing steps, see [SEARCH_CONSOLE.md](SEARCH_CONSOLE.md).
+
+## Event Risk Watch and the additional review
+
+Open **Explore → Event Risk Watch**. Filter the watches by category, read the
+source and stage, then expand the possible transmission and checks. A proposal
+is not an effective law. Region cards explain possible links without a forecast
+of an Asian or European index loss. Coverage rows and source health show limits;
+zero matching watches does not mean zero risk.
+
+In the money questionnaire, declared AI/regional concentration or a short spending
+deadline can trigger **Event-risk review needed before adding exposure** for
+affected proxies. Follow the evidence links and verify primary sources before
+relying on the historical comparison. The tool does not tell everyone to sell
+on an election result. Long-term fit, current event uncertainty and short-term
+price scenarios remain different assessments.
+
+Check **Frozen records** to see when this site first recorded a watch. The news
+publication date is separate; a watch recorded today cannot prove an earlier
+warning. This is an on-site tool, not an email or push-alert service.

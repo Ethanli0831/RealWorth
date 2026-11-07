@@ -3,6 +3,7 @@
 <html lang="en">
   <head>
     <script defer="" src="assets/analytics.js"></script>
+    <script defer="" src="assets/risk.js"></script>
     <script defer="" src="assets/guidance.js"></script>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -104,7 +105,8 @@
             ><a href="monitor.html#news">News &amp; analysis</a
             ><a href="monitor.html#market-structure"
               >Flows, leverage &amp; network</a
-            ><a href="learn.html">RealWorth explained</a>
+            ><a href="risk.html">Event Risk Watch</a>
+            <a href="learn.html">RealWorth explained</a>
             <a href="methodology.html">Methodology &amp; quiz</a>
             <a href="about.html">About &amp; corrections</a>
           </div>
@@ -127,6 +129,16 @@
         <a href="#outlook">Scenarios &amp; results</a><a href="#news">News</a
         ><a href="#market-structure">Market structure</a>
       </nav>
+      <aside
+        class="notice event-risk-banner"
+        aria-label="Current event-risk coverage"
+      >
+        <p id="event-risk-summary">
+          Loading event-risk coverage; no current-entry conclusion is implied.
+        </p>
+        <div id="event-risk-leads"></div>
+        <a href="risk.html">Open election, AI and global Risk Watch →</a>
+      </aside>
       <section aria-labelledby="money-title" class="tool" id="money-plan">
         <div class="section-heading">
           <span class="section-number">01</span>
@@ -196,6 +208,12 @@
                 </p>
               </div>
             </div>
+            <p class="notice">
+              These historical price bands are not adjusted for elections, new
+              laws or individual news events. A policy or earnings surprise can
+              move prices outside them.
+              <a href="risk.html">Check Risk Watch and its coverage gaps.</a>
+            </p>
             <div class="forecast-cards" id="forecast-body"></div>
             <details class="rules baseline-methods">
               <summary>

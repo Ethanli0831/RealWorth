@@ -73,7 +73,7 @@ page's index status. Keep the Google ownership verification file published.
 
 ## Existing site configuration
 
-The ten content pages have distinct titles/descriptions, project-scoped
+The eleven content pages have distinct titles/descriptions, project-scoped
 canonical URLs, index/follow declarations, share metadata and truthful WebPage
 identity. All public pages use English; the former translated overview and its
 language links have been removed.
@@ -126,7 +126,7 @@ In **Performance → Search results**, filter queries containing `realworth` and
 review impressions, clicks and average position over time. New reports can be
 empty or delayed; average position is not a fixed ranking for every person.
 Repeated indexing requests do not move a page up the crawl queue. The sitemap
-URL is unchanged and now lists ten pages, excluding the verification file.
+URL is unchanged and now lists eleven pages, excluding the verification file.
 
 Official references:
 

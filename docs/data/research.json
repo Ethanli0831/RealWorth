@@ -975,6 +975,90 @@
       "bitcoin": "Risk aversion can hurt; eventual easier liquidity could support a different outcome.",
       "counter": "Check revisions, unemployment, credit spreads and actual monetary conditions.",
       "horizon": "Days to quarters."
+    },
+    {
+      "id": "elections",
+      "name": "Elections and government policy",
+      "pattern": "\\b(elections?|midterms?|congress|parliament|democrats?|republicans?|ballot)\\b",
+      "chain": [
+        "A reported election or political change can alter expected policy.",
+        "Tax, spending, trade and regulatory proposals may change expected cash flows and funding costs.",
+        "Asset reactions depend on the actual powers won, legislative support and what prices already reflected."
+      ],
+      "gold": "Direction is uncertain; check real yields, the dollar, liquidity and any actual substitution evidence.",
+      "bitcoin": "Direction is uncertain; risk appetite, leverage and liquidity can offset a scarcity narrative.",
+      "counter": "Confirm the result with the election authority. Separate campaign promises, introduced bills, enacted law and effective dates. Check company exposures rather than treating a party as an automatic buy/sell signal.",
+      "horizon": "Event timing and implementation vary; no numerical impact range is estimated."
+    },
+    {
+      "id": "ai_regulation",
+      "name": "AI regulation and data-center permissions",
+      "pattern": "(?=.*\\b(ai|artificial intelligence|data cent(?:er|re)s?|gpu|chips?)\\b)(?=.*\\b(regulat\\w*|ban\\w*|moratorium|permit\\w*|approv\\w*|legislat\\w*|restrict\\w*|law|laws|safety|privacy)\\b)",
+      "chain": [
+        "A headline reports a possible rule or infrastructure permission affecting AI.",
+        "Compliance, power costs or construction delays could change investment returns and supplier orders.",
+        "A proposal is not a shutdown; the effect depends on jurisdiction, legal stage, customers and enforceability."
+      ],
+      "gold": "Direction is uncertain; check real yields, the dollar, liquidity and any actual substitution evidence.",
+      "bitcoin": "Direction is uncertain; risk appetite, leverage and liquidity can offset a scarcity narrative.",
+      "counter": "Read the actual rule and identify its jurisdiction. Check whether it concerns model use, chip exports, electricity costs or construction. Verify effective dates and company guidance; do not infer a global ban.",
+      "horizon": "Event timing and implementation vary; no numerical impact range is estimated."
+    },
+    {
+      "id": "ai_economics",
+      "name": "AI revenue, spending and valuation",
+      "pattern": "(?=.*\\b(ai|artificial intelligence|nvidia|semiconductor\\w*|data cent(?:er|re)s?|hyperscaler\\w*)\\b)(?=.*\\b(revenue|profit\\w*|earnings|cash flow|capex|capital (?:spending|expenditure)|orders?|demand|valuation|bubble|returns?|investment|spending)\\b)",
+      "chain": [
+        "A report concerns AI demand, investment, earnings or valuation.",
+        "Revenue, utilization, margins, depreciation and funding costs determine whether capital spending can earn a return.",
+        "Technology usefulness does not prove an attractive stock price; uncertainty can affect suppliers outside the US."
+      ],
+      "gold": "Direction is uncertain; check real yields, the dollar, liquidity and any actual substitution evidence.",
+      "bitcoin": "Direction is uncertain; risk appetite, leverage and liquidity can offset a scarcity narrative.",
+      "counter": "Compare actual revenue and free cash flow with capital spending. Check utilization, order cancellations, financing and customer concentration. Distinguish a lower share valuation from cash automatically moving to another country.",
+      "horizon": "Event timing and implementation vary; no numerical impact range is estimated."
+    },
+    {
+      "id": "trade",
+      "name": "Trade, export controls and supply chains",
+      "pattern": "\\b(tariffs?|export (?:controls?|bans?|restrictions?)|trade war|chip exports?|supply.chain disruption|sanctions?)\\b",
+      "chain": [
+        "A report concerns trade restrictions or cross-border supply.",
+        "Costs, accessible customers and delivery times can change across a connected production chain.",
+        "Domestic policy differences can cushion or amplify the effect; geography does not guarantee immunity."
+      ],
+      "gold": "Direction is uncertain; check real yields, the dollar, liquidity and any actual substitution evidence.",
+      "bitcoin": "Direction is uncertain; risk appetite, leverage and liquidity can offset a scarcity narrative.",
+      "counter": "Confirm covered products, exemptions and effective dates. Map supplier revenue by customer and destination. Review retaliation, substitution and currency exposure.",
+      "horizon": "Event timing and implementation vary; no numerical impact range is estimated."
+    },
+    {
+      "id": "earnings",
+      "name": "Corporate earnings and concentration",
+      "pattern": "\\b(earnings|profit warning|cash flow|guidance cut|orders? cancel\\w*|capital expenditure|buybacks?|dividend cut)\\b",
+      "chain": [
+        "A report concerns corporate earnings, investment or distributions.",
+        "Cash generation and financing determine the value available to shareholders.",
+        "An index can be diversified by name yet concentrated in a few firms or industries."
+      ],
+      "gold": "Direction is uncertain; check real yields, the dollar, liquidity and any actual substitution evidence.",
+      "bitcoin": "Direction is uncertain; risk appetite, leverage and liquidity can offset a scarcity narrative.",
+      "counter": "Read issuer filings and earnings guidance. Check margins, debt service and cash conversion. Review actual portfolio and index weights; this site does not import brokerage holdings.",
+      "horizon": "Event timing and implementation vary; no numerical impact range is estimated."
+    },
+    {
+      "id": "currency",
+      "name": "Currencies and international capital flows",
+      "pattern": "\\b(exchange rate|yen|yuan|renminbi|dollar (?:surge|fall|funding)|currency|capital (?:flow|flight)|capital controls?)\\b",
+      "chain": [
+        "A report concerns currencies or cross-border funding.",
+        "Exchange rates, hedging costs and capital access can change a foreign investor's outcome.",
+        "US-dollar asset returns do not equal local purchasing-power returns or prove a flow into China or Europe."
+      ],
+      "gold": "Direction is uncertain; check real yields, the dollar, liquidity and any actual substitution evidence.",
+      "bitcoin": "Direction is uncertain; risk appetite, leverage and liquidity can offset a scarcity narrative.",
+      "counter": "Specify the currency in which money will be spent. Check actual flow data, FX exposure and hedging costs. Separate market-value losses from transactions and fund flows.",
+      "horizon": "Event timing and implementation vary; no numerical impact range is estimated."
     }
   ],
   "gold_case": {

@@ -5,6 +5,10 @@
     typeof module !== "undefined" && module.exports
       ? require("./analytics.js")
       : root.RealWorthAnalytics;
+  const Risk =
+    typeof module !== "undefined" && module.exports
+      ? require("./risk.js")
+      : root.RealWorthRisk;
   const tickers = {
     Bitcoin: "BTC-USD",
     Gold: "GLD",
@@ -182,6 +186,26 @@
     },
   };
   Object.assign(dict.en, {
+    concentration: "7. Is this money concentrated in one theme or region?",
+    concentrationOptions: [
+      ["unknown", "Not sure — concentration has not been assessed"],
+      ["diversified", "Spread across assets and industries"],
+      ["ai", "Large AI / semiconductor exposure"],
+      ["regional", "Large single-country or regional exposure"],
+    ],
+    region: "8. Which region's exposure do you want to examine?",
+    regionOptions: [
+      ["Global", "Global / not sure"],
+      ["US", "United States"],
+      ["Japan", "Japan"],
+      ["Korea", "South Korea"],
+      ["Taiwan", "Taiwan"],
+      ["China", "China"],
+      ["Europe", "Europe"],
+    ],
+    eventReview:
+      "Review the event and concentrated exposure before adding risk.",
+    review: "Event-risk review needed before adding exposure",
     amount: "Total money for this plan (not the purchase amount for one asset)",
     partial: "Compare reduced exposure, not an all-in position",
     conditional: "USD comparison possible; currency assessment still needed",
@@ -213,6 +237,8 @@
   });
 
   Object.assign(dict.en.reasons, {
+    event:
+      "A recent event watch or nearby official release overlaps your short deadline or concentrated exposure. Verify it before relying on a historical comparison.",
     budget:
       "The all-in exposure exceeds your loss limit; a reduced-exposure scenario can be researched.",
     quick:
@@ -261,6 +287,14 @@
       throw Error("Enter an amount from 1 to 1,000,000,000.");
     return {
       ...p,
+      concentration: dict.en.concentrationOptions.some(
+        (x) => x[0] === p.concentration,
+      )
+        ? p.concentration
+        : "unknown",
+      region: dict.en.regionOptions.some((x) => x[0] === p.region)
+        ? p.region
+        : "Global",
       horizon: Number(p.horizon),
       loss: Number(p.loss),
       amount: Number(p.amount),
@@ -387,8 +421,10 @@
     forecasts,
     now = Date.now(),
     research = null,
+    risks = null,
   ) {
     const p = validateProfile(profile);
+    const eventRisk = Risk.assess(p, risks, now);
     let bounds;
     try {
       bounds = validateHistory(data, now);
@@ -458,21 +494,33 @@
                 ? "unknown"
                 : "avoid";
       const currencyUnassessed = p.currency !== "USD";
-      const status =
+      let status =
         currencyUnassessed &&
         ["research", "partial", "experiment"].includes(baseStatus)
           ? "conditional"
           : baseStatus;
+      const eventReview =
+        eventRisk.review &&
+        eventRisk.gatedTickers.includes(tickers[asset]) &&
+        ["research", "partial", "conditional", "experiment"].includes(status);
+      if (eventReview) status = "review";
       const scenario =
-        baseStatus === "partial" && !currencyUnassessed
+        baseStatus === "partial" && !currencyUnassessed && !eventReview
           ? exposureScenario(p.amount, p.loss, stress)
           : null;
+      const riskWatchIds = eventReview
+        ? eventRisk.events
+            .filter((e) => e.tickers.includes(tickers[asset]))
+            .map((e) => e.id)
+        : [];
       const f = forecasts?.assets?.find((r) => r.ticker === tickers[asset]);
       return {
         asset,
         ticker: tickers[asset],
         status,
         reason,
+        eventReview,
+        riskWatchIds,
         baseStatus,
         currencyUnassessed,
         scenario,
@@ -504,10 +552,18 @@
       ["growth", "budgetTitle", "income"].includes(action)
     )
       action = "currencyTitle";
+    if (
+      rows.some((r) => r.eventReview) &&
+      !protectedMoney &&
+      !basics &&
+      p.goal !== "quick"
+    )
+      action = "eventReview";
     return {
       profile: p,
       action,
       rows,
+      eventRisk,
       bounds,
       start: data.growth.dates[bounds.start],
       end: data.growth.dates[bounds.end],
@@ -578,17 +634,21 @@
       "readiness",
       "goal",
       "currency",
+      "concentration",
+      "region",
     ]) {
       const wrapper = make("label", d[key]),
         select = make("select");
       select.name = key;
       select.id = "money-" + key;
       select.required = true;
-      const empty = make("option", d.choose);
-      empty.value = "";
-      empty.disabled = true;
-      empty.selected = true;
-      select.append(empty);
+      if (!["concentration", "region"].includes(key)) {
+        const empty = make("option", d.choose);
+        empty.value = "";
+        empty.disabled = true;
+        empty.selected = true;
+        select.append(empty);
+      }
       for (const [value, text] of d[key + "Options"]) {
         const option = make("option", text);
         option.value = value;
@@ -647,7 +707,7 @@
     box.append(
       make("h4", label(r.asset)),
       make("p", d[r.status], "fit-label"),
-      make("p", d.reasons[r.reason]),
+      make("p", r.eventReview ? d.reasons.event : d.reasons[r.reason]),
     );
     box.append(make("p", `${d.role}: ${d.roles[r.asset]}`, "tiny"));
     if (r.scenario) {
@@ -666,6 +726,14 @@
     const detailed = make("details"),
       summary = make("summary", "Why? See the evidence");
     detailed.append(summary);
+    for (const id of r.riskWatchIds.slice(0, 3)) {
+      const e = state.eventRisk.events.find((x) => x.id === id);
+      const p = make("p"),
+        a = make("a", "Event evidence: " + e.title);
+      a.href = "risk.html#event-" + id;
+      p.append(a);
+      detailed.append(p);
+    }
     const lines = [
       `Same endpoints: ${state.start} to ${state.end}; data updated ${state.updated}.`,
       `Observed month-end nominal drawdown ${pct(r.nominalDD)}; real drawdown ${pct(r.realDD)}. These measure different losses; intra-month falls can be worse.`,
@@ -731,6 +799,8 @@
       "readiness",
       "goal",
       "currency",
+      "concentration",
+      "region",
     ].map(
       (key) =>
         d[key + "Options"].find((o) => o[0] === String(state.profile[key]))[1],
@@ -764,6 +834,9 @@
               : d.longNext;
     if (state.action === "budgetTitle") next = d.budgetNext;
     if (state.action === "currencyTitle") next = d.currencyNext;
+    if (state.action === "eventReview")
+      next =
+        "Pause adding the flagged concentrated exposure while you verify the source, legal stage, timing and issuer guidance. Review diversification and your spending deadline. This is not an instruction to liquidate existing positions or a claim that a decline is certain.";
     mount.append(make("h4", d.next), make("p", next));
     const choices = state.rows.filter((r) =>
       ["research", "partial", "conditional", "experiment"].includes(r.status),
@@ -788,6 +861,42 @@
     const current = make("div", undefined, "money-current");
     current.append(make("h4", d.fitTiming));
     current.append(make("p", d.timingText));
+    const eventBox = make("div", undefined, "money-event-risk");
+    eventBox.append(
+      make("h4", "Election, policy and market-event review"),
+      make("p", state.eventRisk.message),
+    );
+    if (state.profile.concentration === "unknown")
+      eventBox.append(
+        make(
+          "p",
+          "Your concentration is unknown. The site cannot assess company weights or a complete portfolio from these answers.",
+          "tiny",
+        ),
+      );
+    if (state.profile.region !== "Global")
+      eventBox.append(
+        make(
+          "p",
+          "Regional channels are qualitative. No " +
+            state.profile.region +
+            " index loss range or local-currency return was calculated.",
+          "tiny",
+        ),
+      );
+    for (const e of state.eventRisk.events.slice(0, 4)) {
+      const source = make("a", e.title + " — " + e.stage);
+      source.href = "risk.html#event-" + e.id;
+      eventBox.append(make("p", undefined, "tiny"));
+      eventBox.lastChild.append(source);
+    }
+    const riskLink = make(
+      "a",
+      "Inspect Risk Watch, coverage gaps and sources →",
+    );
+    riskLink.href = "risk.html";
+    eventBox.append(riskLink);
+    current.append(eventBox);
     const m = state.macro;
     if (m?.fresh) {
       const text =
@@ -857,6 +966,7 @@
         read("data/data.json"),
         read("data/forecasts.json"),
         read("data/research.json"),
+        read("data/risk.json"),
       ]);
       if (JSON.stringify(readForm()) !== JSON.stringify(answers)) {
         state = null;
@@ -872,6 +982,7 @@
         forecasts,
         Date.now(),
         results[2].status === "fulfilled" ? results[2].value : null,
+        results[3].status === "fulfilled" ? results[3].value : null,
       );
       renderResult();
       status.textContent = state.unavailable
@@ -959,7 +1070,7 @@
       make(
         "p",
         fit
-          ? `${d.fit}: ${d[fit.status]} — ${d.reasons[fit.reason]}`
+          ? `${d.fit}: ${d[fit.status]} — ${fit.eventReview ? d.reasons.event : d.reasons[fit.reason]}`
           : state?.unavailable
             ? d.insufficient
             : d.beforeFit,

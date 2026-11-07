@@ -1,7 +1,7 @@
 {
   "sources": [
     {
-      "name": "Ray Dalio · Economic Principles",
+      "name": "Ray Dalio \u00b7 Economic Principles",
       "category": "Framework",
       "url": "https://www.economicprinciples.org/",
       "access": "Public explanations; book availability varies",
@@ -81,7 +81,7 @@
       "limits": "Listed as a reading source; paywalled text is not scraped."
     },
     {
-      "name": "The Economist · Finance & economics",
+      "name": "The Economist \u00b7 Finance & economics",
       "category": "Journalism",
       "url": "https://www.economist.com/finance-and-economics",
       "access": "Mostly subscription",
@@ -89,7 +89,7 @@
       "limits": "Journalistic interpretation; trace important claims to primary data."
     },
     {
-      "name": "Financial Times · Global economy",
+      "name": "Financial Times \u00b7 Global economy",
       "category": "Journalism",
       "url": "https://www.ft.com/global-economy",
       "access": "Mostly subscription",
@@ -97,7 +97,7 @@
       "limits": "News and opinion are different evidence types."
     },
     {
-      "name": "Reuters · Markets",
+      "name": "Reuters \u00b7 Markets",
       "category": "Journalism",
       "url": "https://www.reuters.com/markets/",
       "access": "Access varies by region and article",
@@ -105,7 +105,7 @@
       "limits": "A market move after an event does not establish a causal effect."
     },
     {
-      "name": "IMF · Global Financial Stability Report",
+      "name": "IMF \u00b7 Global Financial Stability Report",
       "category": "Primary data & institutions",
       "url": "https://www.imf.org/en/Publications/GFSR",
       "access": "Public",
@@ -113,7 +113,7 @@
       "limits": "Publication lag and scenario assumptions matter."
     },
     {
-      "name": "BIS · Quarterly Review",
+      "name": "BIS \u00b7 Quarterly Review",
       "category": "Primary data & institutions",
       "url": "https://www.bis.org/publ/quarterly.htm",
       "access": "Public",
@@ -121,7 +121,7 @@
       "limits": "Credit aggregates have coverage differences and release lags."
     },
     {
-      "name": "Federal Reserve · Financial Stability Report",
+      "name": "Federal Reserve \u00b7 Financial Stability Report",
       "category": "Primary data & institutions",
       "url": "https://www.federalreserve.gov/publications/financial-stability-report.htm",
       "access": "Public",
@@ -129,7 +129,7 @@
       "limits": "Financial vulnerability is not a prediction of a crisis date."
     },
     {
-      "name": "New York Fed · Household Debt and Credit",
+      "name": "New York Fed \u00b7 Household Debt and Credit",
       "category": "Primary data & institutions",
       "url": "https://www.newyorkfed.org/microeconomics/hhdc",
       "access": "Public",
@@ -181,6 +181,24 @@
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
       "kind": "Science publisher headline"
+    },
+    {
+      "id": "guardian_technology",
+      "name": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/rss",
+      "kind": "Publisher headline"
+    },
+    {
+      "id": "guardian_us_policy",
+      "name": "The Guardian US Politics",
+      "url": "https://www.theguardian.com/us-news/us-politics/rss",
+      "kind": "Publisher headline"
+    },
+    {
+      "id": "bbc_technology",
+      "name": "BBC Technology",
+      "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+      "kind": "Publisher headline"
     }
   ],
   "case_source": "https://home.cern/news/news/physics/alice-detects-conversion-lead-gold-lhc"

@@ -1761,6 +1761,79 @@ summary {
   margin: 24px 0;
   background: #f4f1e8;
 }
+.event-risk-banner {
+  margin-bottom: 30px;
+}
+.event-risk-banner p {
+  margin-top: 0;
+}
+.risk-events,
+.risk-region-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin: 24px 0;
+}
+.risk-event,
+.risk-region,
+.risk-scenarios article {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.risk-event h3,
+.risk-region h3,
+.risk-scenarios h3 {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+.risk-event p,
+.risk-region p,
+.risk-introduction li {
+  line-height: 1.8;
+}
+.risk-event details {
+  margin-top: 20px;
+}
+.risk-event summary {
+  cursor: pointer;
+  padding-block: 12px;
+}
+.risk-coverage-table {
+  min-width: 680px;
+}
+.risk-coverage-table caption {
+  text-align: left;
+  padding: 16px;
+}
+.risk-coverage-table td:last-child {
+  white-space: normal;
+  min-width: 280px;
+  text-align: left;
+}
+.money-event-risk {
+  padding: 18px;
+  margin: 20px 0;
+  border-left: 4px solid var(--amber);
+  background: var(--white);
+}
+.money-asset[data-status="review"] {
+  border-top: 4px solid var(--amber);
+}
+@media (max-width: 700px) {
+  .risk-events,
+  .risk-region-grid {
+    grid-template-columns: 1fr;
+  }
+  .risk-event,
+  .risk-region {
+    padding: 20px;
+  }
+}
 .card-explanation details {
   margin: 12px 0;
 }

@@ -8,6 +8,8 @@ on:
     branches: [main]
     paths:
       - "scripts/build_research.py"
+      - "scripts/build_risk.py"
+      - "tests/test_risk.py"
       - "research/**"
       - "tests/test_research.py"
       - "scripts/build_forecasts.py"
@@ -48,6 +50,8 @@ jobs:
         id: quotes
         continue-on-error: true
         run: python scripts/build_forecasts.py
+      - name: Refresh event-risk coverage, official calendars and frozen records
+        run: python scripts/build_risk.py
       - name: Commit research and forecast data only
         shell: bash
         env:
@@ -69,7 +73,8 @@ jobs:
           else
             echo '::warning::Quote refresh failed; preserving previous dated prices and forecasts.'
           fi
-          if git diff --cached --quiet -- docs/data/research.json docs/data/forecasts.json docs/data/forecast-ledger.json; then
+          git add -- docs/data/risk.json docs/data/risk-ledger.json
+          if git diff --cached --quiet -- docs/data/research.json docs/data/forecasts.json docs/data/forecast-ledger.json docs/data/risk.json docs/data/risk-ledger.json; then
             echo 'Research unchanged.'
           else
             git config user.name 'github-actions[bot]'

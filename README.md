@@ -20,6 +20,18 @@ verified after deployment; see [VALIDATION.md](VALIDATION.md).
 
 ![RealWorth's calculator, five-asset scorecard and inflation charts](docs/assets/screenshot.png)
 
+## Event Risk Watch
+
+[Risk Watch](https://ethanli0831.github.io/RealWorth/risk.html) connects election,
+AI regulation/economics, trade, funding and other selected events with potential
+asset and regional channels. Concentrated or short-horizon money can require
+an event review before adding exposure; diversified long-term comparisons are
+not automatically rejected. Missing evidence is unknown, not a safe-entry signal.
+First-observed records are frozen without backdating. Sources, calendar failures
+and coverage gaps stay visible. This tool cannot consider all factors or predict
+a crash; the statistical price bands are not adjusted for these events.
+See [the model, rules and maintenance guide](RISK_MODEL.md).
+
 ## Research explainers
 
 [RealWorth explained](https://ethanli0831.github.io/RealWorth/learn.html) connects
@@ -53,7 +65,8 @@ robots file is added.
 ## Start with the money's purpose
 
 [What fits my money?](https://ethanli0831.github.io/RealWorth/monitor.html#money-plan)
-asks six short questions and shows a practical recommendation, per-asset fit
+asks about money purpose, horizon, loss capacity, financial basics, currency,
+concentration and region, and shows a practical recommendation, per-asset fit
 and dated supporting evidence, with English explanations.
 Purpose fit, exposure size and next-period timing are assessed separately.
 Reduced USD exposure can be illustrated under an explicit stress budget; the
@@ -434,7 +447,8 @@ Run it with `python scripts/build_research.py`.
 **Economic weather and news update** runs at minutes 7, 22, 37 and 52 UTC and supports
 manual dispatch. A visible browser page checks for published snapshots every
 five minutes. Real publisher and GitHub queue delays apply. It commits only
-research.json, forecasts.json and forecast-ledger.json and requests a Pages rebuild. Headlines are dated, attributed,
+research.json, forecasts.json, forecast-ledger.json, risk.json and risk-ledger.json
+and requests a Pages rebuild. Headlines are dated, attributed,
 keyword-matched, deduplicated and limited to 14 days/60 items. Some sources may
 be unavailable; the panel reports coverage and cached items explicitly.
 A total source failure retains the previous file and fails the workflow.

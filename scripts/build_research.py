@@ -193,6 +193,9 @@ def classify(title, mechanisms):
     if re.search(r'job search|job hunt|jobseeker|career advice|five jobs|fraud|scam|gold medal|golden globe', title, re.I):
         return []
     tags = [m['id'] for m in mechanisms if re.search(m['pattern'], title, re.I)]
+    if 'elections' in tags and not re.search(
+            r'\b(us|u\.s\.|united states|congress|midterms?|government|parliament|tax|trade|tariff|regulat\w*|policy|policies|econom\w*|markets?|ai|artificial intelligence)\b', title, re.I):
+        tags.remove('elections')
     if 'energy' in tags and not re.search(
             r'\boil\b|\bcrude\b|energy (?:price|suppl)|geopolit|shipping|hormuz|military|missile|invasion|armed conflict|sanctions? (?:on|against)|war in (?:ukraine|gaza|iran)', title, re.I):
         tags.remove('energy')

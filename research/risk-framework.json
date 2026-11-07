@@ -1,0 +1,428 @@
+{
+  "version": "event-risk-v1",
+  "categories": [
+    {
+      "id": "elections",
+      "name": "Elections and government policy",
+      "pattern": "\\b(elections?|midterms?|congress|parliament|democrats?|republicans?|ballot)\\b",
+      "tickers": [
+        "BTC-USD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "chain": [
+        "A reported election or political change can alter expected policy.",
+        "Tax, spending, trade and regulatory proposals may change expected cash flows and funding costs.",
+        "Asset reactions depend on the actual powers won, legislative support and what prices already reflected."
+      ],
+      "checks": [
+        "Confirm the result with the election authority.",
+        "Separate campaign promises, introduced bills, enacted law and effective dates.",
+        "Check company exposures rather than treating a party as an automatic buy/sell signal."
+      ]
+    },
+    {
+      "id": "ai_regulation",
+      "name": "AI regulation and data-center permissions",
+      "pattern": "(?=.*\\b(ai|artificial intelligence|data cent(?:er|re)s?|gpu|chips?)\\b)(?=.*\\b(regulat\\w*|ban\\w*|moratorium|permit\\w*|approv\\w*|legislat\\w*|restrict\\w*|law|laws|safety|privacy)\\b)",
+      "tickers": [
+        "BTC-USD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "chain": [
+        "A headline reports a possible rule or infrastructure permission affecting AI.",
+        "Compliance, power costs or construction delays could change investment returns and supplier orders.",
+        "A proposal is not a shutdown; the effect depends on jurisdiction, legal stage, customers and enforceability."
+      ],
+      "checks": [
+        "Read the actual rule and identify its jurisdiction.",
+        "Check whether it concerns model use, chip exports, electricity costs or construction.",
+        "Verify effective dates and company guidance; do not infer a global ban."
+      ]
+    },
+    {
+      "id": "ai_economics",
+      "name": "AI revenue, spending and valuation",
+      "pattern": "(?=.*\\b(ai|artificial intelligence|nvidia|semiconductor\\w*|data cent(?:er|re)s?|hyperscaler\\w*)\\b)(?=.*\\b(revenue|profit\\w*|earnings|cash flow|capex|capital (?:spending|expenditure)|orders?|demand|valuation|bubble|returns?|investment|spending)\\b)",
+      "tickers": [
+        "BTC-USD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "chain": [
+        "A report concerns AI demand, investment, earnings or valuation.",
+        "Revenue, utilization, margins, depreciation and funding costs determine whether capital spending can earn a return.",
+        "Technology usefulness does not prove an attractive stock price; uncertainty can affect suppliers outside the US."
+      ],
+      "checks": [
+        "Compare actual revenue and free cash flow with capital spending.",
+        "Check utilization, order cancellations, financing and customer concentration.",
+        "Distinguish a lower share valuation from cash automatically moving to another country."
+      ]
+    },
+    {
+      "id": "trade",
+      "name": "Trade, export controls and supply chains",
+      "pattern": "\\b(tariffs?|export (?:controls?|bans?|restrictions?)|trade war|chip exports?|supply.chain disruption|sanctions?)\\b",
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "chain": [
+        "A report concerns trade restrictions or cross-border supply.",
+        "Costs, accessible customers and delivery times can change across a connected production chain.",
+        "Domestic policy differences can cushion or amplify the effect; geography does not guarantee immunity."
+      ],
+      "checks": [
+        "Confirm covered products, exemptions and effective dates.",
+        "Map supplier revenue by customer and destination.",
+        "Review retaliation, substitution and currency exposure."
+      ]
+    },
+    {
+      "id": "rates",
+      "name": "Inflation, rates and liquidity",
+      "pattern": "\\b(federal reserve|fed|ecb|bank of japan|interest rates?|inflation|\\bcpi\\b|liquidity|monetary policy)\\b",
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "chain": [
+        "A release concerns inflation, rates or monetary conditions.",
+        "Real yields, discount rates, borrowing costs and available liquidity can change together.",
+        "Gold, stocks, Bitcoin and long bonds can react differently; a known calendar date does not predict the surprise."
+      ],
+      "checks": [
+        "Compare the release with expectations and prior revisions.",
+        "Check real yields, dollar funding and the policy response.",
+        "Separate a growth shock from an inflation shock."
+      ]
+    },
+    {
+      "id": "credit",
+      "name": "Credit, debt and financial stability",
+      "pattern": "\\b(credit (?:stress|crunch|spread)|bank (?:failure|run)|banking crisis|sovereign|debt ceiling|refinanc\\w*|default|fiscal|funding stress)\\b",
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "chain": [
+        "A report flags repayment or funding pressure.",
+        "Refinancing costs, forced selling and lending conditions can transmit stress beyond its origin.",
+        "Government support and currency denomination change the outcome; safe-haven behavior is not assured."
+      ],
+      "checks": [
+        "Check spreads, maturities and the size of exposed institutions.",
+        "Separate an isolated borrower from systemic funding stress.",
+        "Inspect policy support, liquidity and currency denomination."
+      ]
+    },
+    {
+      "id": "energy",
+      "name": "Energy and infrastructure constraints",
+      "pattern": "\\b(oil|crude|gas suppl\\w*|electricity|power grid|energy prices?|water shortage|shipping disruption)\\b",
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "chain": [
+        "A report concerns physical energy, power or infrastructure capacity.",
+        "Operating costs, inflation and construction timing can affect households, miners and data centers.",
+        "A local bottleneck does not imply all projects move abroad; customer access and network constraints still matter."
+      ],
+      "checks": [
+        "Check physical capacity and delivery dates.",
+        "Distinguish announcements from operating supply.",
+        "Review power prices, water, transmission and customer location."
+      ]
+    },
+    {
+      "id": "geopolitics",
+      "name": "Conflict and geopolitical disruption",
+      "pattern": "\\b(geopolit\\w*|military|missile|invasion|armed conflict|war in (?:ukraine|gaza|iran)|hormuz|blockade)\\b",
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "chain": [
+        "A report concerns a possible geopolitical disruption.",
+        "Trade, shipping, energy, insurance and risk appetite could transmit the shock.",
+        "Market moves following news do not establish the news as their sole cause."
+      ],
+      "checks": [
+        "Verify the reported event and affected routes.",
+        "Compare actual disruption with scenario assumptions.",
+        "Watch funding conditions and competing safe-haven channels."
+      ]
+    },
+    {
+      "id": "earnings",
+      "name": "Corporate earnings and concentration",
+      "pattern": "\\b(earnings|profit warning|cash flow|guidance cut|orders? cancel\\w*|capital expenditure|buybacks?|dividend cut)\\b",
+      "tickers": [
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "chain": [
+        "A report concerns corporate earnings, investment or distributions.",
+        "Cash generation and financing determine the value available to shareholders.",
+        "An index can be diversified by name yet concentrated in a few firms or industries."
+      ],
+      "checks": [
+        "Read issuer filings and earnings guidance.",
+        "Check margins, debt service and cash conversion.",
+        "Review actual portfolio and index weights; this site does not import brokerage holdings."
+      ]
+    },
+    {
+      "id": "currency",
+      "name": "Currencies and international capital flows",
+      "pattern": "\\b(exchange rate|yen|yuan|renminbi|dollar (?:surge|fall|funding)|currency|capital (?:flow|flight)|capital controls?)\\b",
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "BIL",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "chain": [
+        "A report concerns currencies or cross-border funding.",
+        "Exchange rates, hedging costs and capital access can change a foreign investor's outcome.",
+        "US-dollar asset returns do not equal local purchasing-power returns or prove a flow into China or Europe."
+      ],
+      "checks": [
+        "Specify the currency in which money will be spent.",
+        "Check actual flow data, FX exposure and hedging costs.",
+        "Separate market-value losses from transactions and fund flows."
+      ]
+    },
+    {
+      "id": "leverage",
+      "name": "Leverage, positioning and market plumbing",
+      "pattern": "\\b(liquidations?|margin calls?|funding rate|open interest|redemptions?|etf flows?|volatility spike)\\b",
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "chain": [
+        "A report concerns leverage, positioning or fund demand.",
+        "Crowded positions and margin requirements can accelerate an initial price move.",
+        "Funding, open interest and volatility measure different things; none alone supplies a direction forecast."
+      ],
+      "checks": [
+        "Check timestamps and comparable units.",
+        "Distinguish assets under management from net subscriptions.",
+        "Inspect liquidity, leverage and the separately dated structure readings."
+      ]
+    },
+    {
+      "id": "commodity_supply",
+      "name": "Physical commodity supply and technology",
+      "pattern": "(?=.*\\bgold\\b)(?=.*\\b(transmut\\w*|artificial|nuclear|mine supply|central bank|recycl\\w*)\\b)",
+      "tickers": [
+        "GLD",
+        "BTC-USD"
+      ],
+      "regions": [
+        "All"
+      ],
+      "chain": [
+        "A report concerns gold supply, demand or production technology.",
+        "Only usable output at competitive cost and meaningful scale can materially change supply.",
+        "A laboratory observation is not commercial production or evidence that Bitcoin must benefit."
+      ],
+      "checks": [
+        "Check yield, cost, isotope stability and annual capacity.",
+        "Read primary technical evidence and independent replication.",
+        "Look for actual gold supply and investor-flow changes."
+      ]
+    },
+    {
+      "id": "growth",
+      "name": "Growth, employment and household demand",
+      "pattern": "\\b(gdp|recession|economic (?:growth|slowdown)|job growth|payrolls?|unemployment|jobless|consumer spending|retail sales)\\b",
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "chain": [
+        "A release concerns growth, jobs or household spending.",
+        "Demand, earnings, credit losses and policy responses can transmit a slowdown across borders.",
+        "An equity drawdown is not itself proof of recession; countries and sectors can follow different cycles."
+      ],
+      "checks": [
+        "Check release dates, revisions and real versus nominal measures.",
+        "Compare employment, spending and credit rather than relying on a single release.",
+        "Review export/customer exposure and the scope of local policy support."
+      ]
+    },
+    {
+      "id": "crypto_access",
+      "name": "Crypto access, custody and operational risk",
+      "pattern": "(?=.*\\b(bitcoin|crypto|digital assets?|stablecoins?)\\b)(?=.*\\b(regulat\\w*|custod\\w*|hack\\w*|exchange|access|ban\\w*|law|laws|etf|reserves?|fraud)\\b)",
+      "tickers": [
+        "BTC-USD"
+      ],
+      "regions": [
+        "All"
+      ],
+      "chain": [
+        "A report concerns access to or the operation of a digital-asset market.",
+        "Custody losses, restrictions, reserve doubts or changes in access may affect liquidity and confidence.",
+        "A single platform problem is not automatically a Bitcoin protocol failure or a known price decline."
+      ],
+      "checks": [
+        "Read the actual rule, filing or security disclosure.",
+        "Identify which users, assets and jurisdictions are affected.",
+        "Check custody arrangements, redemption terms and independently reported facts."
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "id": "US",
+      "name": "United States",
+      "channel": "Cloud spending, earnings, discount rates and dollar funding can affect US assets and overseas suppliers.",
+      "caveat": "Policy proposals differ by federal, state and local authority; a proposal is not nationwide law."
+    },
+    {
+      "id": "Japan",
+      "name": "Japan",
+      "channel": "Semiconductor equipment, export orders, US demand and the yen can transmit a technology or recession shock.",
+      "caveat": "Social challenges or a few prominent investors do not determine a whole index; weights and revenue exposure matter."
+    },
+    {
+      "id": "Korea",
+      "name": "South Korea",
+      "channel": "Memory chips, electronics exports, customer capex and foreign-currency funding can transmit global demand changes.",
+      "caveat": "Samsung is an important company, not the entire economy; offshore production alone does not explain a market move."
+    },
+    {
+      "id": "Taiwan",
+      "name": "Taiwan",
+      "channel": "Foundry, packaging and hardware orders connect local companies with global AI spending.",
+      "caveat": "Chip manufacturers do not operate all customer data centers; factories and customers cannot be relocated costlessly."
+    },
+    {
+      "id": "China",
+      "name": "China",
+      "channel": "Domestic policy can differ while exports, technology valuations, currencies and global risk appetite still transmit shocks.",
+      "caveat": "Political separation does not guarantee the smallest loss or immunity; mainland and Hong Kong listings can differ."
+    },
+    {
+      "id": "Europe",
+      "name": "Europe",
+      "channel": "Trade, banks, industrial demand, currencies and energy constraints can transmit US or technology weakness.",
+      "caveat": "Europe has different countries and sector weights; it is neither automatically insulated nor a guaranteed destination for US outflows."
+    }
+  ],
+  "source_directory": [
+    {
+      "name": "Federal Reserve calendar",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "scope": "Scheduled rate decisions",
+      "connection": "Automated calendar retrieval attempted; failed reads are disclosed"
+    },
+    {
+      "name": "BLS release calendar",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "scope": "Inflation and employment releases",
+      "connection": "Automated calendar retrieval attempted; failed reads are disclosed"
+    },
+    {
+      "name": "Federal Election Commission",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-and-voting-information/",
+      "scope": "US federal elections",
+      "connection": "Reference only; election outcomes are not automatically verified"
+    },
+    {
+      "name": "SEC issuer filings",
+      "url": "https://www.sec.gov/edgar/search/",
+      "scope": "Revenue, cash flow, debt and capex",
+      "connection": "Reference only; no complete issuer-filings ingestion"
+    },
+    {
+      "name": "US Bureau of Industry and Security",
+      "url": "https://www.bis.gov/",
+      "scope": "Export controls and covered products",
+      "connection": "Reference only; legal texts require review"
+    },
+    {
+      "name": "European Commission digital policy",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "scope": "EU AI rules and implementation",
+      "connection": "Reference only; no complete legal register ingestion"
+    },
+    {
+      "name": "Bank of Japan",
+      "url": "https://www.boj.or.jp/en/",
+      "scope": "Japanese monetary conditions",
+      "connection": "Reference only; no regional price forecast"
+    },
+    {
+      "name": "Bank of Korea",
+      "url": "https://www.bok.or.kr/eng/main/main.do",
+      "scope": "Korean monetary conditions",
+      "connection": "Reference only; no regional price forecast"
+    },
+    {
+      "name": "People's Bank of China",
+      "url": "https://www.pbc.gov.cn/en/",
+      "scope": "Chinese monetary conditions",
+      "connection": "Reference only; no capital-flow attribution"
+    },
+    {
+      "name": "Taiwan central bank",
+      "url": "https://www.cbc.gov.tw/en/",
+      "scope": "Taiwanese monetary conditions",
+      "connection": "Reference only; no regional price forecast"
+    }
+  ]
+}

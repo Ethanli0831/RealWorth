@@ -1,5 +1,42 @@
 # Validation record
 
+## Prospective event-risk review — 2026-11-07 (Toronto)
+
+- Added an independent Risk Watch page, fourteen disclosed risk categories,
+  selected AI/policy/technology feed routes, qualitative channels for six regions,
+  official-calendar retrieval attempts and explicit coverage gaps. Headlines,
+  proposals, primary legal confirmation and effective dates are not conflated.
+  Source counts are coverage descriptions, not confidence probabilities.
+- The six original financial questions now have concentration/region selectors.
+  Relevant recent watches or nearby official releases can require review before
+  adding affected exposure for short deadlines or declared concentration.
+  Diversified long-term comparisons can remain research options. Capital,
+  borrowing, loss-capacity and emergency-reserve constraints still take priority.
+  A specific Treasury default watch can also affect BIL. No party or geographic
+  region is assumed to cause or avoid a crash automatically.
+- Risk data and an append-only ledger are generated separately from the monthly
+  return data. First observation is distinct from article publication; no claim
+  is made that this new module warned before its tracking began. Changed content
+  creates a new record. Corrupted retained records fail validation before writes.
+  An unchanged ledger remains unchanged. Digests are not independent timestamp
+  certification or proof that a user received an alert.
+- **69 Python tests, 53 JavaScript tests and 31 local Chromium scenarios passed.**
+  New checks cover frozen records/no backdating, corruption/no overwrite, calendar
+  timezones/year scope/date-only handling, ambiguous headlines, unknown sources,
+  concentrated versus diversified decisions, protected money, specific Treasury
+  risk, direct event links, failure states and all eleven page layouts. The same
+  browser suite distinguishes synthetic test events from actual published data.
+- Executor requests to the new external feeds and official calendars were
+  blocked by its network proxy. The initial generated snapshot therefore retains
+  existing source dates, identifies three configured feeds as not yet retrieved,
+  and marks unavailable calendars without invented dates. The GitHub update job
+  attempts all sources again and publishes their actual health. Full legal-text,
+  global equity-index, company-valuation and portfolio-holdings models remain
+  explicitly unconnected. Statistical price bands are not event-adjusted.
+- This upgrade does not establish an earlier election warning, complete coverage,
+  a calibrated crash probability or profitable entry timing. See RISK_MODEL.md
+  and the public methodology for the policy rules and practical limits.
+
 ## English-only publication — 2026-10-27 (Toronto)
 
 - Removed the translated overview, optional translated guides, language

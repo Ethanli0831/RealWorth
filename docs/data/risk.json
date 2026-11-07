@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-07T18:05:46Z",
-    "source_checked_at": "2026-11-07T18:05:40Z",
+    "built_at": "2026-11-07T18:08:17Z",
+    "source_checked_at": "2026-11-07T18:08:12Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -10,7 +10,7 @@
     "disclosure": "Risk chains are transparent scenarios, not verified causal effects, probability forecasts or AI price targets. No warnings are backdated.",
     "feeds_fetched": 8,
     "feeds_total": 9,
-    "ledger_records": 34
+    "ledger_records": 35
   },
   "events": [
     {
@@ -255,6 +255,34 @@
       "id": "e76833bc6843055cf8992d7d",
       "first_observed_at": "2026-11-07T18:04:21Z",
       "digest": "51c10961acb5b1a70862168ba12c755460c755f5d11bb71159baa8837a89d09b"
+    },
+    {
+      "title": "Scheduled FOMC meeting final day",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "publisher": "Federal Reserve",
+      "published_at": null,
+      "categories": [
+        "rates"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Official scheduled release",
+      "stage": "Schedule retrieved from issuer; timing may change",
+      "legal_effective_at": null,
+      "scheduled_at": "2026-12-09T05:00:00Z",
+      "date_precision": "Date only; decision time not inferred",
+      "framework_version": "event-risk-v1",
+      "evidence": "Official schedule, not a prediction of the outcome or market direction.",
+      "id": "2100a0292cd9b883191420e5",
+      "first_observed_at": "2026-11-07T18:08:17Z",
+      "digest": "479566df9a598e96ffb6d33a3fbe0615df7107cfdb112f53aa6a8b7530b121f0"
     },
     {
       "title": "‘People are active, they are fed up’: young voters fueled the Democratic wave",
@@ -763,7 +791,7 @@
         "Check real yields, dollar funding and the policy response.",
         "Separate a growth shock from an inflation shock."
       ],
-      "event_count": 11,
+      "event_count": 12,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -1089,22 +1117,303 @@
     {
       "id": "fomc",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-      "status": "Unavailable; dates not assumed",
-      "last_success": null,
-      "attempted_at": "2026-11-07T18:05:46Z",
-      "events": [],
-      "stale": true,
-      "error": "ValueError"
+      "status": "Fetched official schedule",
+      "last_success": "2026-11-07T18:08:17Z",
+      "attempted_at": "2026-11-07T18:08:17Z",
+      "events": [
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2026-01-28T05:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2026-03-18T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2026-04-29T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2026-06-17T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2026-07-29T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2026-09-16T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2026-10-28T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2026-12-09T05:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2025-01-29T05:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2025-03-19T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2025-05-07T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2025-06-18T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2025-07-30T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2025-09-17T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2025-10-29T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2025-12-10T05:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2024-01-31T05:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2024-03-20T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2024-05-01T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2024-06-12T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2024-07-31T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2024-09-18T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2024-11-07T05:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2024-12-18T05:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2023-02-01T05:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2023-03-22T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2023-05-03T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2023-06-14T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2023-07-26T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2023-09-20T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2023-11-01T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2023-12-13T05:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2022-01-26T05:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2022-03-16T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2022-05-04T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2022-06-15T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2022-07-27T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2022-09-21T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2022-11-02T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2022-12-14T05:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2021-01-27T05:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2021-03-17T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2021-04-28T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2021-06-16T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2021-07-28T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2021-09-22T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2021-11-03T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2021-12-15T05:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2027-01-27T05:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2027-03-17T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2027-04-28T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2027-06-09T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2027-07-28T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2027-09-15T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2027-10-27T04:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        },
+        {
+          "title": "Scheduled FOMC meeting final day",
+          "at": "2027-12-08T05:00:00Z",
+          "precision": "Date only; decision time not inferred"
+        }
+      ],
+      "stale": false
     },
     {
       "id": "bls",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-07T18:05:46Z",
+      "attempted_at": "2026-11-07T18:08:17Z",
       "events": [],
       "stale": true,
-      "error": "HTTPError"
+      "error": "HTTPError",
+      "detail": "403 Client Error: Forbidden for url: https://www.bls.gov/schedule/news_release/bls.ics"
     }
   ],
   "feed_health": [
@@ -1112,47 +1421,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-07T18:05:40Z",
+      "checked_at": "2026-11-07T18:08:12Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T18:05:40Z",
+      "last_success": "2026-11-07T18:08:12Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-07T18:05:40Z",
+      "checked_at": "2026-11-07T18:08:12Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T18:05:40Z",
+      "last_success": "2026-11-07T18:08:12Z",
       "matched": 9
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-07T18:05:40Z",
+      "checked_at": "2026-11-07T18:08:12Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T18:05:40Z",
+      "last_success": "2026-11-07T18:08:12Z",
       "matched": 11
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-07T18:05:40Z",
+      "checked_at": "2026-11-07T18:08:12Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T18:05:40Z",
+      "last_success": "2026-11-07T18:08:12Z",
       "matched": 6
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-07T18:05:40Z",
+      "checked_at": "2026-11-07T18:08:12Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1162,40 +1471,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-07T18:05:40Z",
+      "checked_at": "2026-11-07T18:08:12Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T18:05:40Z",
+      "last_success": "2026-11-07T18:08:12Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-07T18:05:40Z",
+      "checked_at": "2026-11-07T18:08:12Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T18:05:40Z",
+      "last_success": "2026-11-07T18:08:12Z",
       "matched": 2
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-07T18:05:40Z",
+      "checked_at": "2026-11-07T18:08:12Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T18:05:40Z",
+      "last_success": "2026-11-07T18:08:12Z",
       "matched": 1
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-07T18:05:40Z",
+      "checked_at": "2026-11-07T18:08:12Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T18:05:40Z",
+      "last_success": "2026-11-07T18:08:12Z",
       "matched": 4
     }
   ],

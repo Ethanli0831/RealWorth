@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-07T18:04:21Z",
-    "record_count": 34,
+    "updated_at": "2026-11-07T18:08:17Z",
+    "record_count": 35,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -1004,6 +1004,36 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "51c10961acb5b1a70862168ba12c755460c755f5d11bb71159baa8837a89d09b"
+    },
+    {
+      "id": "2100a0292cd9b883191420e5",
+      "first_observed_at": "2026-11-07T18:08:17Z",
+      "snapshot": {
+        "title": "Scheduled FOMC meeting final day",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "publisher": "Federal Reserve",
+        "published_at": null,
+        "categories": [
+          "rates"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Official scheduled release",
+        "stage": "Schedule retrieved from issuer; timing may change",
+        "legal_effective_at": null,
+        "scheduled_at": "2026-12-09T05:00:00Z",
+        "date_precision": "Date only; decision time not inferred",
+        "framework_version": "event-risk-v1",
+        "evidence": "Official schedule, not a prediction of the outcome or market direction."
+      },
+      "digest": "479566df9a598e96ffb6d33a3fbe0615df7107cfdb112f53aa6a8b7530b121f0"
     }
   ]
 }

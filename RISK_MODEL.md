@@ -24,7 +24,9 @@ of an old article. Tracking begins with the first generated record in the ledger
   export controls, AI legal texts and regional central banks. References marked
   manual are not presented as automated data connections.
 
-A reported proposal does not become an enacted law. Headline adoption wording
+Political headlines require a financial or policy context; general election
+commentary is not automatically routed into an asset-impact chain. A reported
+proposal does not become an enacted law. Headline adoption wording
 is labelled unverified until a reader checks the primary legal text. No political
 party is treated as automatically negative for every asset. AI commercial value
 is assessed separately from a fair share valuation; a loss in market capitalization
@@ -34,7 +36,8 @@ is not a cash balance that must be invested in another country.
 
 The builder attempts the official Federal Reserve FOMC HTML calendar and BLS
 release iCalendar. Only recognizable, explicit dates are accepted. BLS CPI and
-employment entries require a known timezone. FOMC final meeting days are explicitly
+employment entries require a known timezone. Historical cross-month rows such as Jan/Feb use the final named month. FOMC
+final meeting days are explicitly
 date-only; a decision time is not inferred. Date-only entries stay visible during
 that day. Current watches include dates within 45 days; the money-purpose review
 uses the next 72 hours, not a claim about the direction of the release surprise.

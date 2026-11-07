@@ -256,7 +256,7 @@
       card.append(
         make(
           "p",
-          "First recorded here: " +
+          "This watch version first recorded: " +
             date(e.first_observed_at) +
             ". A published date is not proof that this site warned at that earlier time.",
           "tiny",

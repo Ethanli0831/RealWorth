@@ -20,12 +20,26 @@
   creates a new record. Corrupted retained records fail validation before writes.
   An unchanged ledger remains unchanged. Digests are not independent timestamp
   certification or proof that a user received an alert.
-- **69 Python tests, 53 JavaScript tests and 31 local Chromium scenarios passed.**
+- **71 Python tests, 53 JavaScript tests and 31 local Chromium scenarios passed.**
   New checks cover frozen records/no backdating, corruption/no overwrite, calendar
   timezones/year scope/date-only handling, ambiguous headlines, unknown sources,
   concentrated versus diversified decisions, protected money, specific Treasury
   risk, direct event links, failure states and all eleven page layouts. The same
   browser suite distinguishes synthetic test events from actual published data.
+- Public HTTPS checks matched all fifteen changed served static files. Public
+  risk data contains fourteen categories and six regional channels; its frozen
+  records passed integrity validation. The production research update
+  [succeeded](https://github.com/Ethanli0831/RealWorth/actions/runs/42399683407).
+  Eight of nine configured feeds were retrieved, including the three added
+  technology/politics feeds. Current records include attributed November 6 AI
+  market reports, explicitly first recorded on November 7, not pre-event claims.
+- A read-only official-source diagnostic identified historical cross-month FOMC
+  rows. The parser fix was verified against the actual public result: 56 official
+  schedule entries parsed, with December 9, 2026 shown as a date-only upcoming
+  final meeting day. BLS returned HTTP 403 for both iCalendar and HTML paths;
+  no BLS date was substituted or invented. CNBC also remains a labelled source
+  gap. Political commentary without a financial/policy context is excluded from
+  the election-impact route.
 - Executor requests to the new external feeds and official calendars were
   blocked by its network proxy. The initial generated snapshot therefore retains
   existing source dates, identifies three configured feeds as not yet retrieved,

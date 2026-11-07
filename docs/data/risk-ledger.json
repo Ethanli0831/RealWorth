@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-07T18:00:10Z",
-    "record_count": 27,
+    "updated_at": "2026-11-07T18:04:21Z",
+    "record_count": 34,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -801,6 +801,209 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "60b7132a24acff710cd426fd9d64d2a2afcfd840eb6538ff48dae36f995a13d4"
+    },
+    {
+      "id": "b524693ee759f9cb971e0bf8",
+      "first_observed_at": "2026-11-07T18:04:21Z",
+      "snapshot": {
+        "title": "Global stocks fall amid ‘big worries over AI’ after Democrats’ midterms triumph",
+        "url": "https://www.theguardian.com/business/2026/nov/06/global-stocks-plunge-amid-ai-slowdown-fears-after-democrats-midterm-triumph",
+        "publisher": "The Guardian Technology",
+        "published_at": "2026-11-06T21:23:54Z",
+        "categories": [
+          "elections",
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "508ea545bb6410f83380d19d2b650489ead88a23c94c636925bde2042f77ae24",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "d65ab52687598d741c3d06b41d906ddf8cdbadce5ef6bce7da9175f10c06eea7"
+    },
+    {
+      "id": "c6cc521e176f850cac4d6ae0",
+      "first_observed_at": "2026-11-07T18:04:21Z",
+      "snapshot": {
+        "title": "AI stocks climb after trillions wiped from market values",
+        "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-06T21:06:25Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "6c23ae177583c1c190189d7a4ad35e162943352d30791a5aef9f64547979e728"
+    },
+    {
+      "id": "0573d2338c99c1e56189c64e",
+      "first_observed_at": "2026-11-07T18:04:21Z",
+      "snapshot": {
+        "title": "Why the US midterms sparked an AI stock selloff",
+        "url": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-06T18:32:16Z",
+        "categories": [
+          "elections",
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "508ea545bb6410f83380d19d2b650489ead88a23c94c636925bde2042f77ae24",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "74daaf0b1174c0c890fe6d705c3ec1a4f5755edcbe652d7e181fa07aaa21bf19"
+    },
+    {
+      "id": "d425ad20c59ddedcc3d727a5",
+      "first_observed_at": "2026-11-07T18:04:21Z",
+      "snapshot": {
+        "title": "Could the AI bubble burst after Democrats' midterms sweep? - The Latest",
+        "url": "https://www.theguardian.com/news/video/2026/nov/06/could-the-ai-bubble-burst-after-democrats-midterms-sweep-the-latest",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-06T17:04:41Z",
+        "categories": [
+          "elections",
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Proposal or possibility reported; not enacted law",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "508ea545bb6410f83380d19d2b650489ead88a23c94c636925bde2042f77ae24",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "939b51d68b71c9418b305c6735931e6955edbbd7fdd2dac3d3652bf417509c2a"
+    },
+    {
+      "id": "d0e7162af85c5c9b854fcda6",
+      "first_observed_at": "2026-11-07T18:04:21Z",
+      "snapshot": {
+        "title": "Global stocks plunge as fears over US AI slowdown spread to Asia and Europe",
+        "url": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Technology",
+        "published_at": "2026-11-06T13:25:50Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "a5ffd00a2fef033a5f2144e4ef6dda787dcb6433a657c50286cdbce2228129eb"
+    },
+    {
+      "id": "9c6aeeef0b1eb8368c44de26",
+      "first_observed_at": "2026-11-07T18:04:21Z",
+      "snapshot": {
+        "title": "Food, fuel and taxes – can the Democrats actually make life cheaper?",
+        "url": "https://www.bbc.co.uk/news/articles/ck1ex50x5q46o?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-05T06:01:05Z",
+        "categories": [
+          "elections"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "dd6ab86bd1aabdbeff7998f0f73f9a6b4a9fcf873115e9852c3b83ab9514dc4c"
+    },
+    {
+      "id": "e76833bc6843055cf8992d7d",
+      "first_observed_at": "2026-11-07T18:04:21Z",
+      "snapshot": {
+        "title": "US tech stocks recover after selloff spooks investors over AI spending",
+        "url": "https://www.theguardian.com/business/2026/nov/03/us-tech-stocks-recovery-ai-spending",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-03T22:18:45Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "51c10961acb5b1a70862168ba12c755460c755f5d11bb71159baa8837a89d09b"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-07T18:00:10Z",
-    "source_checked_at": "2026-11-07T18:00:04Z",
+    "built_at": "2026-11-07T18:04:21Z",
+    "source_checked_at": "2026-11-07T18:04:16Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -10,36 +10,9 @@
     "disclosure": "Risk chains are transparent scenarios, not verified causal effects, probability forecasts or AI price targets. No warnings are backdated.",
     "feeds_fetched": 8,
     "feeds_total": 9,
-    "ledger_records": 27
+    "ledger_records": 34
   },
   "events": [
-    {
-      "title": "Israel took a beating in the US midterms | Judith Levine",
-      "url": "https://www.theguardian.com/commentisfree/2026/nov/07/midterms-israel-criticism",
-      "publisher": "The Guardian US Politics",
-      "published_at": "2026-11-07T12:00:11Z",
-      "categories": [
-        "elections"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "0386342f22eedfa9ce9dbe36",
-      "first_observed_at": "2026-11-07T18:00:10Z",
-      "digest": "ce5938e1e88f03cac291ac2aeacb9755d4c160d367a8f147dfd135ef03dfb877"
-    },
     {
       "title": "Trump may have lost but don’t bet Democrats can fix the economy",
       "url": "https://www.theguardian.com/business/2026/nov/07/democrats-economy-affordability-crisis",
@@ -73,7 +46,8 @@
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-06T21:23:54Z",
       "categories": [
-        "elections"
+        "elections",
+        "ai_economics"
       ],
       "tickers": [
         "BTC-USD",
@@ -88,11 +62,37 @@
       "legal_effective_at": null,
       "scheduled_at": null,
       "framework_version": "event-risk-v1",
-      "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
+      "framework_digest": "508ea545bb6410f83380d19d2b650489ead88a23c94c636925bde2042f77ae24",
       "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "921eced63c35ab8499b8ca3c",
-      "first_observed_at": "2026-11-07T18:00:10Z",
-      "digest": "38910afc01347e28692f6c99862e8258304ca6f546971c08eaf6b0de82819717"
+      "id": "b524693ee759f9cb971e0bf8",
+      "first_observed_at": "2026-11-07T18:04:21Z",
+      "digest": "d65ab52687598d741c3d06b41d906ddf8cdbadce5ef6bce7da9175f10c06eea7"
+    },
+    {
+      "title": "AI stocks climb after trillions wiped from market values",
+      "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-06T21:06:25Z",
+      "categories": [
+        "ai_economics"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "c6cc521e176f850cac4d6ae0",
+      "first_observed_at": "2026-11-07T18:04:21Z",
+      "digest": "6c23ae177583c1c190189d7a4ad35e162943352d30791a5aef9f64547979e728"
     },
     {
       "title": "Why the US midterms sparked an AI stock selloff",
@@ -100,7 +100,8 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-06T18:32:16Z",
       "categories": [
-        "elections"
+        "elections",
+        "ai_economics"
       ],
       "tickers": [
         "BTC-USD",
@@ -115,11 +116,11 @@
       "legal_effective_at": null,
       "scheduled_at": null,
       "framework_version": "event-risk-v1",
-      "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
+      "framework_digest": "508ea545bb6410f83380d19d2b650489ead88a23c94c636925bde2042f77ae24",
       "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "51480beeed8ee7d0de356e4f",
-      "first_observed_at": "2026-11-07T18:00:10Z",
-      "digest": "59f1085d7ba39067d8e2677d166684dcaa5fb1c25000b8655ef583f22c006ee1"
+      "id": "0573d2338c99c1e56189c64e",
+      "first_observed_at": "2026-11-07T18:04:21Z",
+      "digest": "74daaf0b1174c0c890fe6d705c3ec1a4f5755edcbe652d7e181fa07aaa21bf19"
     },
     {
       "title": "Could the AI bubble burst after Democrats' midterms sweep? - The Latest",
@@ -143,24 +144,23 @@
       "legal_effective_at": null,
       "scheduled_at": null,
       "framework_version": "event-risk-v1",
-      "framework_digest": "bc72eac20211905f959b7bcc1f464a6b7e1a3d85e70da69b17a10fdf740a204b",
+      "framework_digest": "508ea545bb6410f83380d19d2b650489ead88a23c94c636925bde2042f77ae24",
       "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "9ebd7544c76ec08a9c025adc",
-      "first_observed_at": "2026-11-07T18:00:10Z",
-      "digest": "26dfa33c459facc39ba0a0de8233144e52702cde052a5d9d1de49af1936b2748"
+      "id": "d425ad20c59ddedcc3d727a5",
+      "first_observed_at": "2026-11-07T18:04:21Z",
+      "digest": "939b51d68b71c9418b305c6735931e6955edbbd7fdd2dac3d3652bf417509c2a"
     },
     {
-      "title": "The most diverse, anti-establishment Congress in history is cause for optimism",
-      "url": "https://www.theguardian.com/us-news/2026/nov/05/congress-midterms-diverse",
-      "publisher": "The Guardian US Politics",
-      "published_at": "2026-11-06T14:17:18Z",
+      "title": "Global stocks plunge as fears over US AI slowdown spread to Asia and Europe",
+      "url": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Technology",
+      "published_at": "2026-11-06T13:25:50Z",
       "categories": [
-        "elections"
+        "ai_economics"
       ],
       "tickers": [
         "BTC-USD",
-        "SPY",
-        "TLT"
+        "SPY"
       ],
       "regions": [
         "All"
@@ -170,71 +170,17 @@
       "legal_effective_at": null,
       "scheduled_at": null,
       "framework_version": "event-risk-v1",
-      "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
+      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
       "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "f2d4022cbed209aeb5f5168f",
-      "first_observed_at": "2026-11-07T18:00:10Z",
-      "digest": "5fc71565523e6a03041005de01f40a165ebbdcd19a251fbf014d54aebce83acd"
+      "id": "d0e7162af85c5c9b854fcda6",
+      "first_observed_at": "2026-11-07T18:04:21Z",
+      "digest": "a5ffd00a2fef033a5f2144e4ef6dda787dcb6433a657c50286cdbce2228129eb"
     },
     {
-      "title": "Rural voters were feeling left behind before the midterms, poll shows",
-      "url": "https://www.theguardian.com/business/2026/nov/05/former-trump-voters-economy",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-05T11:00:22Z",
-      "categories": [
-        "elections"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "4686af7509ba0ccf46921506",
-      "first_observed_at": "2026-11-07T18:00:10Z",
-      "digest": "f8da6668463edafbad91465532887960edf5f2e2d64eb6992fe4bc9ce7fb8b78"
-    },
-    {
-      "title": "Elon Musk’s nearly half a billion dollars in midterms spending was a flop",
-      "url": "https://www.theguardian.com/technology/2026/nov/04/elon-musk-midterm-spending-analysis",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-05T02:00:50Z",
-      "categories": [
-        "elections"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "6b05f93258cf7754ab2516e5",
-      "first_observed_at": "2026-11-07T18:00:10Z",
-      "digest": "6f0694eb7dd6be65c1e9b822869216908c1004f0923d45eebab79dc73cb1a576"
-    },
-    {
-      "title": "Elon Musk's millions failed to deliver Republican wins in fierce midterms",
-      "url": "https://www.bbc.co.uk/news/articles/cv8ez3p3ge5ko?at_medium=RSS&at_campaign=rss",
+      "title": "Food, fuel and taxes – can the Democrats actually make life cheaper?",
+      "url": "https://www.bbc.co.uk/news/articles/ck1ex50x5q46o?at_medium=RSS&at_campaign=rss",
       "publisher": "BBC Business",
-      "published_at": "2026-11-04T21:41:15Z",
+      "published_at": "2026-11-05T06:01:05Z",
       "categories": [
         "elections"
       ],
@@ -253,9 +199,9 @@
       "framework_version": "event-risk-v1",
       "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
       "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "2761e2d32e7b2dfa96a95055",
-      "first_observed_at": "2026-11-07T18:00:10Z",
-      "digest": "8b5853384cac4db51c796ce03760d51bfd5ce58ab4c804395b77a5feb7533b51"
+      "id": "9c6aeeef0b1eb8368c44de26",
+      "first_observed_at": "2026-11-07T18:04:21Z",
+      "digest": "dd6ab86bd1aabdbeff7998f0f73f9a6b4a9fcf873115e9852c3b83ab9514dc4c"
     },
     {
       "title": "US stocks rise, dollar slides as investors digest Democrats’ midterm victories",
@@ -304,38 +250,11 @@
       "legal_effective_at": null,
       "scheduled_at": null,
       "framework_version": "event-risk-v1",
-      "framework_digest": "2040fdfbbc8e8b260ff7bdffb3d476b01ee30626a627357aeb60a224080764a6",
+      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
       "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "fd47d50acd1e31a07a5f092e",
-      "first_observed_at": "2026-11-07T18:00:10Z",
-      "digest": "05699bc72a495784d5e36f7222c31685fdb5572c5223a58a2a025d6848cc4c03"
-    },
-    {
-      "title": "‘The content creator election’: digital streamers and TV networks face off for midterms coverage",
-      "url": "https://www.theguardian.com/us-news/2026/nov/02/content-creators-tv-network-midterm-coverage",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-02T11:00:41Z",
-      "categories": [
-        "elections"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "c73454eff47b236c65c5ddb5",
-      "first_observed_at": "2026-11-07T18:00:10Z",
-      "digest": "60b7132a24acff710cd426fd9d64d2a2afcfd840eb6538ff48dae36f995a13d4"
+      "id": "e76833bc6843055cf8992d7d",
+      "first_observed_at": "2026-11-07T18:04:21Z",
+      "digest": "51c10961acb5b1a70862168ba12c755460c755f5d11bb71159baa8837a89d09b"
     },
     {
       "title": "‘People are active, they are fed up’: young voters fueled the Democratic wave",
@@ -749,7 +668,7 @@
         "Separate campaign promises, introduced bills, enacted law and effective dates.",
         "Check company exposures rather than treating a party as an automatic buy/sell signal."
       ],
-      "event_count": 11,
+      "event_count": 6,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -795,7 +714,7 @@
         "Check utilization, order cancellations, financing and customer concentration.",
         "Distinguish a lower share valuation from cash automatically moving to another country."
       ],
-      "event_count": 2,
+      "event_count": 6,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -1172,7 +1091,7 @@
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-07T18:00:10Z",
+      "attempted_at": "2026-11-07T18:04:21Z",
       "events": [],
       "stale": true,
       "error": "ValueError"
@@ -1182,7 +1101,7 @@
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-07T18:00:10Z",
+      "attempted_at": "2026-11-07T18:04:21Z",
       "events": [],
       "stale": true,
       "error": "HTTPError"
@@ -1193,47 +1112,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-07T18:00:04Z",
+      "checked_at": "2026-11-07T18:04:16Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T18:00:04Z",
+      "last_success": "2026-11-07T18:04:16Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-07T18:00:04Z",
+      "checked_at": "2026-11-07T18:04:16Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T18:00:04Z",
+      "last_success": "2026-11-07T18:04:16Z",
       "matched": 9
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-07T18:00:04Z",
+      "checked_at": "2026-11-07T18:04:16Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T18:00:04Z",
-      "matched": 10
+      "last_success": "2026-11-07T18:04:16Z",
+      "matched": 11
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-07T18:00:04Z",
+      "checked_at": "2026-11-07T18:04:16Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T18:00:04Z",
-      "matched": 8
+      "last_success": "2026-11-07T18:04:16Z",
+      "matched": 6
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-07T18:00:04Z",
+      "checked_at": "2026-11-07T18:04:16Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1243,41 +1162,41 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-07T18:00:04Z",
+      "checked_at": "2026-11-07T18:04:16Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T18:00:04Z",
+      "last_success": "2026-11-07T18:04:16Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-07T18:00:04Z",
+      "checked_at": "2026-11-07T18:04:16Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T18:00:04Z",
-      "matched": 3
+      "last_success": "2026-11-07T18:04:16Z",
+      "matched": 2
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-07T18:00:04Z",
+      "checked_at": "2026-11-07T18:04:16Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T18:00:04Z",
-      "matched": 3
+      "last_success": "2026-11-07T18:04:16Z",
+      "matched": 1
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-07T18:00:04Z",
+      "checked_at": "2026-11-07T18:04:16Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-07T18:00:04Z",
-      "matched": 3
+      "last_success": "2026-11-07T18:04:16Z",
+      "matched": 4
     }
   ],
   "gaps": [

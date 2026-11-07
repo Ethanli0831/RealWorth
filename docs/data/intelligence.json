@@ -1,7 +1,7 @@
 {
   "meta": {
-    "checked_at": "2026-11-07T09:10:15Z",
-    "scan_started_at": "2026-11-07T09:05:38Z",
+    "checked_at": "2026-11-07T15:56:15Z",
+    "scan_started_at": "2026-11-07T15:51:40Z",
     "provider_requested": "local",
     "article_reads": 6,
     "ai_interpretations": 5,
@@ -19,12 +19,61 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.bbc.co.uk/news/videos/cq369l9r634ro?at_medium=RSS&at_campaign=rss",
+      "title": "Workers' rights 'second place' to economic growth",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-06T14:52:49Z",
+      "historical": null,
+      "status": "Unavailable: Insufficient public article text"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
+      "title": "ECB publishes consolidated banking data for end-June 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-06T09:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-07T15:50:46Z",
+      "body_sha256": "5d63ffb09003e052ea5c0fd742237462d9f2473fedd24eb55a87051dfec8e3ac",
+      "body_characters": 2315,
+      "model_context_characters": 2315,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The ECB published consolidated banking data for EU credit institutions as of end-June 2026, covering 336 banking groups and 2283 credit institutions.",
+        "evidence_ids": [
+          "E5",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: ECB publishes banking data",
+          "financial_channel: If banking data improves, risk appetite may increase",
+          "asset_hypothesis: If risk appetite increases, gold may be down"
+        ],
+        "gold": {
+          "direction": "down",
+          "condition": "If banking data improves, risk appetite may increase, reducing demand for gold as a safe-haven."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If risk appetite increases, Bitcoin may be mixed as it competes with gold but lacks established safe-haven status."
+        },
+        "uncertainty": "If the banking data shows significant stress, risk appetite could decrease, increasing gold demand."
+      },
+      "evidence": {
+        "E5": "The data cover 336 banking groups and 2283 stand-alone credit institutions and",
+        "E7": "Source: ECB Note: Data for all reference periods relate to the EU27."
+      },
+      "analyzed_at": "2026-11-06T21:46:42Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
       "url": "https://www.bbc.co.uk/news/articles/cmj47j7e92gvo?at_medium=RSS&at_campaign=rss",
       "title": "'I've taken an extra job to pay for heating oil'",
       "publisher": "BBC Business",
       "published_at": "2026-11-06T11:40:35Z",
       "historical": null,
-      "read_at": "2026-11-07T09:04:46Z",
+      "read_at": "2026-11-07T15:50:46Z",
       "body_sha256": "9d9258bd8e3e1a287c709deda7cb3f9ba5f74c4bb07c7ada50447f98eaa6d99e",
       "body_characters": 2190,
       "model_context_characters": 2190,
@@ -65,7 +114,7 @@
       "publisher": "European Central Bank",
       "published_at": "2026-11-05T08:00:00Z",
       "historical": null,
-      "read_at": "2026-11-07T09:04:48Z",
+      "read_at": "2026-11-07T15:50:46Z",
       "body_sha256": "fe0994f5db6c7237cba806d0ab616c3ba7a879e6d9b329af31ad0b72f1710b59",
       "body_characters": 18000,
       "model_context_characters": 4500,
@@ -106,7 +155,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-05T13:08:30Z",
       "historical": null,
-      "read_at": "2026-11-07T09:05:39Z",
+      "read_at": "2026-11-07T15:51:42Z",
       "body_sha256": "ab71c9d3d38c07cdeef2aa41ad38eed7ee145a6262f6845d75fb13d0446d4f67",
       "body_characters": 4278,
       "model_context_characters": 4278,
@@ -118,7 +167,7 @@
       "publisher": "European Central Bank",
       "published_at": "2026-11-04T00:00:00Z",
       "historical": null,
-      "read_at": "2026-11-07T09:04:48Z",
+      "read_at": "2026-11-07T15:50:47Z",
       "body_sha256": "eee7b882dee8add9aa9234a47f3f4491a38345d5a70a0cb9496da0d5dc612064",
       "body_characters": 7461,
       "model_context_characters": 4500,
@@ -159,7 +208,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-03T16:19:29Z",
       "historical": null,
-      "read_at": "2026-11-07T09:04:49Z",
+      "read_at": "2026-11-07T15:50:47Z",
       "body_sha256": "094cebdbe9ae5158201a714b3ab608281d8d54caa064a34d69e9b03072655aa4",
       "body_characters": 4181,
       "model_context_characters": 4181,
@@ -190,55 +239,6 @@
         "E7": "It said they used a range of techniques such as malicious software"
       },
       "analyzed_at": "2026-11-04T22:07:59Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/videos/cq369l9r634ro?at_medium=RSS&at_campaign=rss",
-      "title": "Workers' rights 'second place' to economic growth",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-06T14:52:49Z",
-      "historical": null,
-      "status": "Unavailable: Insufficient public article text"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
-      "title": "ECB publishes consolidated banking data for end-June 2026",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-06T09:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-07T09:04:49Z",
-      "body_sha256": "5d63ffb09003e052ea5c0fd742237462d9f2473fedd24eb55a87051dfec8e3ac",
-      "body_characters": 2315,
-      "model_context_characters": 2315,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "The ECB published consolidated banking data for EU credit institutions as of end-June 2026, covering 336 banking groups and 2283 credit institutions.",
-        "evidence_ids": [
-          "E5",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: ECB publishes banking data",
-          "financial_channel: If banking data improves, risk appetite may increase",
-          "asset_hypothesis: If risk appetite increases, gold may be down"
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If banking data improves, risk appetite may increase, reducing demand for gold as a safe-haven."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If risk appetite increases, Bitcoin may be mixed as it competes with gold but lacks established safe-haven status."
-        },
-        "uncertainty": "If the banking data shows significant stress, risk appetite could decrease, increasing gold demand."
-      },
-      "evidence": {
-        "E5": "The data cover 336 banking groups and 2283 stand-alone credit institutions and",
-        "E7": "Source: ECB Note: Data for all reference periods relate to the EU27."
-      },
-      "analyzed_at": "2026-11-06T21:46:42Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"

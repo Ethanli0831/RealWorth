@@ -103,7 +103,7 @@ def parse_fomc(text):
             continue
         year = None
         for ancestor in month.parents:
-            years = set(re.findall(r'(20\d{2}) FOMC Meetings', ancestor.get_text(' ', strip=True)))
+            years = set(re.findall(r'(20\d{2})\s+FOMC\s+Meetings', ancestor.get_text(' ', strip=True)))
             if len(years) == 1:
                 year = int(next(iter(years)))
                 break
@@ -111,7 +111,22 @@ def parse_fomc(text):
         if year is None or days is None:
             continue
         # Use the final meeting day, explicitly date-only; do not invent a time.
-        at = datetime.strptime(f'{year} {month.get_text(" ", strip=True)} {days[2] or days[1]}', '%Y %B %d').replace(tzinfo=ZoneInfo('America/New_York'))
+        # The official page also contains Jan/Feb and Apr/May meetings in
+        # historical years. Their last day belongs to the final named month.
+        months = month.get_text(' ', strip=True).split('/')
+        final_month = months[-1].strip()
+        parsed = None
+        for fmt in ('%Y %B %d', '%Y %b %d'):
+            try:
+                parsed = datetime.strptime(f'{year} {final_month} {days[2] or days[1]}', fmt)
+                break
+            except ValueError:
+                pass
+        if parsed is None:
+            continue
+        if len(months) > 1 and months[0].strip().lower() in ('dec', 'december') and final_month.lower() in ('jan', 'january'):
+            parsed = parsed.replace(year=year + 1)
+        at = parsed.replace(tzinfo=ZoneInfo('America/New_York'))
         events.append({'title': 'Scheduled FOMC meeting final day', 'at': stamp(at.astimezone(timezone.utc)), 'precision': 'Date only; decision time not inferred'})
     if not events:
         raise ValueError('Federal Reserve calendar markup not recognized')
@@ -131,7 +146,7 @@ def calendars(now, previous, fetch=True):
             return {'id': key, 'url': url, 'status': 'Fetched official schedule', 'last_success': stamp(now), 'attempted_at': stamp(now), 'events': rows, 'stale': False}
         except Exception as exc:
             old = prior.get(key, {})
-            return {'id': key, 'url': url, 'status': 'Unavailable; dates not assumed', 'last_success': old.get('last_success'), 'attempted_at': stamp(now), 'events': old.get('events', []), 'stale': True, 'error': type(exc).__name__}
+            return {'id': key, 'url': url, 'status': 'Unavailable; dates not assumed', 'last_success': old.get('last_success'), 'attempted_at': stamp(now), 'events': old.get('events', []), 'stale': True, 'error': type(exc).__name__, 'detail': str(exc)[:160]}
     with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
         return list(pool.map(read, CALENDARS.items()))
 

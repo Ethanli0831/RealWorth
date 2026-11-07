@@ -91,6 +91,16 @@ class EventRisk(unittest.TestCase):
   self.assertTrue(events[0]['precision'].startswith('Date only'))
   with self.assertRaises(ValueError):m.parse_fomc(text.replace('2026 FOMC Meetings','Meeting dates'))
 
+ def test_cross_month_historical_fomc_rows_do_not_break_current_calendar(self):
+  text='<section><h4>2026 FOMC Meetings</h4><div class="fomc-meeting"><div class="fomc-meeting__month">December</div><div class="fomc-meeting__date">8-9*</div></div></section><section><h4>2023 FOMC Meetings</h4><div class="fomc-meeting"><div class="fomc-meeting__month">Jan/Feb</div><div class="fomc-meeting__date">31-1</div></div></section>'
+  rows=m.parse_fomc(text)
+  self.assertEqual([r['at'] for r in rows],['2026-12-09T05:00:00Z','2023-02-01T05:00:00Z'])
+
+ def test_political_commentary_without_financial_context_can_abstain(self):
+  for title in ['Israel took a beating in the US midterms','The most diverse Congress in history is cause for optimism','The content creator election: midterms coverage']:
+   self.assertNotIn('elections',[c['id'] for c in m.topics(title,FRAME)])
+  self.assertIn('ai_economics',[c['id'] for c in m.topics('Global stocks fall amid worries over AI after US midterms',FRAME)])
+
  def test_date_only_calendar_stays_visible_during_the_scheduled_day(self):
   at=m.stamp(NOW.replace(hour=5))
   health=[{'id':'fomc','url':m.CALENDARS['fomc'],'status':'Fetched official schedule','last_success':m.stamp(NOW),'stale':False,'events':[{'title':'Scheduled FOMC meeting final day','at':at,'precision':'Date only; decision time not inferred'}]}]

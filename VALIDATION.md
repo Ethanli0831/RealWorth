@@ -26,6 +26,10 @@
   concentrated versus diversified decisions, protected money, specific Treasury
   risk, direct event links, failure states and all eleven page layouts. The same
   browser suite distinguishes synthetic test events from actual published data.
+  All **31 browser scenarios also passed against public HTTPS**, including
+  paginated actual AI coverage, concentration overrides and unavailable risk
+  inputs. The pagination check reveals the real list until an analyzed article
+  is present; it does not assume the first twelve items were AI-read.
 - Public HTTPS checks matched all fifteen changed served static files. Public
   risk data contains fourteen categories and six regional channels; its frozen
   records passed integrity validation. The production research update

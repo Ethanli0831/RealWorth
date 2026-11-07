@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-06T19:42:55.781542+00:00",
+    "checked_at": "2026-11-07T00:23:20.051934+00:00",
     "refresh": "Every four hours requested; source publication and GitHub delays apply.",
     "scope": "Selected free public sources. Missing/paid sources are not substituted with estimates."
   },
@@ -17,7 +17,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-06T19:42:55.781542+00:00",
+      "last_success": "2026-11-07T00:23:20.051934+00:00",
       "history": [
         {
           "date": "2026-10-22",
@@ -93,12 +93,12 @@
       "source": "https://docs.deribit.com/#public-get_book_summary_by_currency",
       "note": "Deribit BTC-PERPETUAL only; 8-hour funding is not annualised. Positive funding is not a directional forecast.",
       "unit": "% / 8 hours",
-      "value": 0.001812,
-      "period": "2026-11-06",
+      "value": 0.003307,
+      "period": "2026-11-07",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-06T19:42:55.781542+00:00",
+      "last_success": "2026-11-07T00:23:20.051934+00:00",
       "history": [
         {
           "date": "2026-10-25",
@@ -151,11 +151,15 @@
         {
           "date": "2026-11-06",
           "value": 0.001812
+        },
+        {
+          "date": "2026-11-07",
+          "value": 0.003307
         }
       ],
       "percentile": null,
       "percentile_minimum": 250,
-      "observations": 13
+      "observations": 14
     },
     {
       "id": "oi",
@@ -164,12 +168,12 @@
       "source": "https://docs.deribit.com/#public-get_book_summary_by_currency",
       "note": "USD notional can rise from price changes. One exchange does not measure all leverage.",
       "unit": "USD notional",
-      "value": 693731540.0,
-      "period": "2026-11-06",
+      "value": 683392910.0,
+      "period": "2026-11-07",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-06T19:42:55.781542+00:00",
+      "last_success": "2026-11-07T00:23:20.051934+00:00",
       "history": [
         {
           "date": "2026-10-25",
@@ -222,11 +226,15 @@
         {
           "date": "2026-11-06",
           "value": 693731540.0
+        },
+        {
+          "date": "2026-11-07",
+          "value": 683392910.0
         }
       ],
       "percentile": null,
       "percentile_minimum": 250,
-      "observations": 13
+      "observations": 14
     },
     {
       "id": "dvol",
@@ -235,17 +243,13 @@
       "source": "https://docs.deribit.com/#public-get_volatility_index_data",
       "note": "Deribit DVOL is annualised implied volatility, not a price direction or an observed future outcome.",
       "unit": "% annualised IV",
-      "value": 42.27,
-      "period": "2026-11-05",
+      "value": 39.43,
+      "period": "2026-11-06",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-06T19:42:55.781542+00:00",
+      "last_success": "2026-11-07T00:23:20.051934+00:00",
       "history": [
-        {
-          "date": "2025-11-04",
-          "value": 47.79
-        },
         {
           "date": "2025-11-05",
           "value": 46.55
@@ -1709,9 +1713,13 @@
         {
           "date": "2026-11-05",
           "value": 42.27
+        },
+        {
+          "date": "2026-11-06",
+          "value": 39.43
         }
       ],
-      "percentile": 55.0,
+      "percentile": 39.0,
       "percentile_minimum": 250,
       "observations": 367
     },
@@ -1727,7 +1735,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-06T19:42:55.781542+00:00",
+      "last_success": "2026-11-07T00:23:20.051934+00:00",
       "history": [
         {
           "date": "2025-11-04",
@@ -3214,7 +3222,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-06T19:42:55.781542+00:00",
+      "last_success": "2026-11-07T00:23:20.051934+00:00",
       "history": [
         {
           "date": "2025-11-04",
@@ -4701,7 +4709,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-06T19:42:55.781542+00:00",
+      "last_success": "2026-11-07T00:23:20.051934+00:00",
       "history": [
         {
           "date": "2025-11-04",
@@ -6188,7 +6196,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-06T19:42:55.781542+00:00",
+      "last_success": "2026-11-07T00:23:20.051934+00:00",
       "history": [
         {
           "date": "2025-11-04",
@@ -7675,7 +7683,7 @@
       "status": "Fetched",
       "error": null,
       "stale": true,
-      "last_success": "2026-11-06T19:42:55.781542+00:00",
+      "last_success": "2026-11-07T00:23:20.051934+00:00",
       "history": [
         {
           "date": "2025-09-01",
@@ -7746,7 +7754,7 @@
       "status": "Fetched",
       "error": null,
       "stale": true,
-      "last_success": "2026-11-06T19:42:55.781542+00:00",
+      "last_success": "2026-11-07T00:23:20.051934+00:00",
       "history": [
         {
           "date": "2025-10-29",
@@ -8768,12 +8776,12 @@
       "source": "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm",
       "note": "COMEX gold futures-only managed-money longs minus shorts. Weekly positions are released with a lag; categories are not one unified institution.",
       "unit": "contracts net long",
-      "value": 105562.0,
-      "period": "2026-10-27",
+      "value": 103614.0,
+      "period": "2026-11-03",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-06T19:42:55.781542+00:00",
+      "last_success": "2026-11-07T00:23:20.051934+00:00",
       "history": [
         {
           "date": "2026-10-20",
@@ -8782,11 +8790,15 @@
         {
           "date": "2026-10-27",
           "value": 105562.0
+        },
+        {
+          "date": "2026-11-03",
+          "value": 103614.0
         }
       ],
       "percentile": null,
       "percentile_minimum": 48,
-      "observations": 2
+      "observations": 3
     }
   ],
   "directory": [

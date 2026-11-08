@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-11-08T06:41:29Z",
-    "scan_started_at": "2026-11-08T06:33:23Z",
+    "checked_at": "2026-11-08T14:32:56Z",
+    "scan_started_at": "2026-11-08T14:27:59Z",
     "provider_requested": "local",
     "article_reads": 9,
-    "ai_interpretations": 5,
+    "ai_interpretations": 4,
     "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -19,45 +19,93 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.theguardian.com/business/2026/nov/06/global-stocks-plunge-amid-ai-slowdown-fears-after-democrats-midterm-triumph",
-      "title": "Global stocks fall amid ‘big worries over AI’ after Democrats’ midterms triumph",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-06T21:23:54Z",
+      "url": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo?at_medium=RSS&at_campaign=rss",
+      "title": "Why the US midterms sparked an AI stock selloff",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-06T18:32:16Z",
       "historical": null,
-      "read_at": "2026-11-08T06:32:50Z",
-      "body_sha256": "1e46c3c23a598f7501a39540b96a58066438e5cd5449f9ab4fc8a2f7edff8851",
-      "body_characters": 4515,
+      "read_at": "2026-11-08T14:28:00Z",
+      "body_sha256": "85c0916986738639c8b4b5e2d018844eab03d42ac3e0d4eba899059efe91e823",
+      "body_characters": 5125,
       "model_context_characters": 4500,
+      "status": "Unavailable: AI chain contains no financial transmission mechanism"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
+      "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
+      "publisher": "BBC Technology",
+      "published_at": "2026-11-03T16:19:29Z",
+      "historical": null,
+      "read_at": "2026-11-08T14:31:26Z",
+      "body_sha256": "094cebdbe9ae5158201a714b3ab608281d8d54caa064a34d69e9b03072655aa4",
+      "body_characters": 4181,
+      "model_context_characters": 4181,
       "status": "AI interpretation generated · not independently verified",
       "analysis": {
-        "summary": "US tech stocks fell sharply after the Democrats' midterms victory, causing global markets to follow suit.",
+        "summary": "Binance disclosed a $6.3bn crypto hack involving fake job interviews and internal AI tool exploitation.",
         "evidence_ids": [
-          "E5",
-          "E6"
+          "E6",
+          "E7"
         ],
         "chain": [
-          "reported_event: US tech stocks fell sharply",
-          "financial_channel: If tech stocks fall, risk appetite declines",
-          "asset_hypothesis: If risk appetite declines, investors seek safer assets"
+          "reported_event: Binance disclosed a $6.3bn crypto hack",
+          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
+          "asset_hypothesis: If liquidity tightens, alternative-hedge channels may be sought."
         ],
         "gold": {
           "direction": "up",
-          "condition": "If risk appetite declines, investors seek safer assets like gold."
+          "condition": "If risk appetite decreases, gold may be seen as a safer haven."
         },
         "bitcoin": {
           "direction": "mixed",
-          "condition": "If risk appetite declines, some may seek alternatives to gold, but Bitcoin's role as a safe-haven is unclear."
+          "condition": "If liquidity tightens, Bitcoin may be used as an alternative hedge; otherwise, it may be seen as volatile."
         },
-        "uncertainty": "If the Democrats continue to support AI investment, tech stocks may recover, reducing the appeal of gold and Bitcoin."
+        "uncertainty": "If North Korea denies responsibility, the hack's origin remains unclear."
       },
       "evidence": {
-        "E5": "European and Asian stock markets fell sharply on Friday after the Democrats’",
-        "E6": "A sell-off on Wall Street on Thursday was followed by sharp falls"
+        "E6": "Hackers who stole a record $6.3bn (£4.7bn) from Binance used fake job",
+        "E7": "It said they used a range of techniques such as malicious software"
       },
-      "analyzed_at": "2026-11-07T20:28:51Z",
+      "analyzed_at": "2026-11-08T14:32:56Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/08/democrats-congress-trump-midterms",
+      "title": "Healthcare, tariffs – but not Trump impeachment: Democrats chart next two years of power",
+      "publisher": "The Guardian US Politics",
+      "published_at": "2026-11-08T12:00:40Z",
+      "historical": null,
+      "read_at": "2026-11-08T14:32:56Z",
+      "body_sha256": "666a84cdfc90786d162735fb6ffaa7482cea0f6a04c3f43c461c637e531bed0f",
+      "body_characters": 7557,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/07/israel-intelligence-cisco-gaza-palestine",
+      "title": "A ‘customer success story’: leaked documents show Cisco doubled down on Israeli military deals during Gaza war",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-07T12:00:12Z",
+      "historical": null,
+      "read_at": "2026-11-08T14:32:56Z",
+      "body_sha256": "b78ae0f644843f6c2c5a3858a0c84a9726abe3757c1b8c68ec5a81a5d5b6740a",
+      "body_characters": 8813,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/07/democrats-economy-affordability-crisis",
+      "title": "Trump may have lost but don’t bet Democrats can fix the economy",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-07T11:00:08Z",
+      "historical": null,
+      "read_at": "2026-11-08T14:32:56Z",
+      "body_sha256": "aa1fa9ed867bd12bcd2c7ae29b5b622bc9ab4655ada0c3874152c11d98355f41",
+      "body_characters": 5764,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
@@ -65,11 +113,11 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-06T21:06:25Z",
       "historical": null,
-      "read_at": "2026-11-08T06:33:24Z",
+      "read_at": "2026-11-08T14:32:56Z",
       "body_sha256": "62500d369a796a22967a575934e7d1e3dff40e73513e25ef7f4f3509a4777e40",
       "body_characters": 4833,
       "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&at_campaign=rss",
@@ -81,7 +129,7 @@
       "body_sha256": "cc6db6afe2319465f900ab88c60ffb52241bae5611017c14bb79f3afc49db627",
       "body_characters": 4975,
       "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "Global tech stocks fell sharply as fears over US AI slowdown spread to Asia and Europe.",
         "evidence_ids": [
@@ -154,130 +202,53 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
+      "url": "https://www.theguardian.com/business/2026/nov/06/global-stocks-plunge-amid-ai-slowdown-fears-after-democrats-midterm-triumph",
+      "title": "Global stocks fall amid ‘big worries over AI’ after Democrats’ midterms triumph",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-06T21:23:54Z",
+      "historical": null,
+      "read_at": "2026-11-08T06:32:50Z",
+      "body_sha256": "1e46c3c23a598f7501a39540b96a58066438e5cd5449f9ab4fc8a2f7edff8851",
+      "body_characters": 4515,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "US tech stocks fell sharply after the Democrats' midterms victory, causing global markets to follow suit.",
+        "evidence_ids": [
+          "E5",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: US tech stocks fell sharply",
+          "financial_channel: If tech stocks fall, risk appetite declines",
+          "asset_hypothesis: If risk appetite declines, investors seek safer assets"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If risk appetite declines, investors seek safer assets like gold."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite declines, some may seek alternatives to gold, but Bitcoin's role as a safe-haven is unclear."
+        },
+        "uncertainty": "If the Democrats continue to support AI investment, tech stocks may recover, reducing the appeal of gold and Bitcoin."
+      },
+      "evidence": {
+        "E5": "European and Asian stock markets fell sharply on Friday after the Democrats’",
+        "E6": "A sell-off on Wall Street on Thursday was followed by sharp falls"
+      },
+      "analyzed_at": "2026-11-07T20:28:51Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
       "url": "https://www.theguardian.com/news/video/2026/nov/06/could-the-ai-bubble-burst-after-democrats-midterms-sweep-the-latest",
       "title": "Could the AI bubble burst after Democrats' midterms sweep? - The Latest",
       "publisher": "The Guardian Business",
       "published_at": "2026-11-06T17:04:41Z",
       "historical": null,
       "status": "Unavailable: Insufficient public article text"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo?at_medium=RSS&at_campaign=rss",
-      "title": "Why the US midterms sparked an AI stock selloff",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-06T18:32:16Z",
-      "historical": null,
-      "read_at": "2026-11-08T06:41:28Z",
-      "body_sha256": "85c0916986738639c8b4b5e2d018844eab03d42ac3e0d4eba899059efe91e823",
-      "body_characters": 5125,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
-      "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
-      "publisher": "BBC Technology",
-      "published_at": "2026-11-03T16:19:29Z",
-      "historical": null,
-      "read_at": "2026-11-08T06:41:29Z",
-      "body_sha256": "094cebdbe9ae5158201a714b3ab608281d8d54caa064a34d69e9b03072655aa4",
-      "body_characters": 4181,
-      "model_context_characters": 4181,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
-      "title": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-05T08:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-07T23:51:23Z",
-      "body_sha256": "fe0994f5db6c7237cba806d0ab616c3ba7a879e6d9b329af31ad0b72f1710b59",
-      "body_characters": 18000,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Isabel Schnabel reflects on the ECB's monetary policy journey from low inflation to inflationary shocks.",
-        "evidence_ids": [
-          "E4",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: ECB's monetary policy shift",
-          "financial_channel: If inflation expectations change, gold demand may fluctuate",
-          "asset_hypothesis: If central banks adjust policies, asset risk appetites may shift"
-        ],
-        "gold": {
-          "direction": "mixed",
-          "condition": "If inflation expectations rise, gold may lose some appeal as a safe-haven; if policy tightening continues, gold may gain as a hedge."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If gold's safe-haven status wanes, Bitcoin may gain as an alternative hedge, but evidence is lacking."
-        },
-        "uncertainty": "If the global economy remains integrated, gold's traditional safe-haven status may persist, countering the shift in focus."
-      },
-      "evidence": {
-        "E4": "We have moved from a world in which inflation was persistently too",
-        "E5": "During the post-pandemic inflation surge, the ECB demonstrated its ability to tighten"
-      },
-      "analyzed_at": "2026-11-05T19:00:26Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/07/youth-vote-turnout-midterm-elections",
-      "title": "‘People are active, they are fed up’: young voters fueled the Democratic wave",
-      "publisher": "The Guardian US Politics",
-      "published_at": "2026-11-07T17:00:16Z",
-      "historical": null,
-      "read_at": "2026-11-07T23:51:23Z",
-      "body_sha256": "6877244875f2c5d6c40efc91d9ee51a4bcc8aff019a0ab709fce8462b9bb2dec",
-      "body_characters": 10757,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Young voters decisively shifted towards Democrats in the 2026 midterms, with high turnout and significant margins across demographics.",
-        "evidence_ids": [
-          "E8",
-          "E1"
-        ],
-        "chain": [
-          "reported_event: Young voters decisively shifted towards Democrats",
-          "financial_channel: If risk appetite decreases, young voters may seek more stable political outcomes",
-          "asset_hypothesis: If political stability improves, gold demand may decrease"
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If risk appetite decreases, young voters may seek more stable political outcomes, reducing demand for gold as a safe-haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If political stability improves, young voters may not shift to Bitcoin as a hedge, keeping it mixed."
-        },
-        "uncertainty": "If young voters continue to support populist candidates, gold may still see some demand as a hedge against political uncertainty."
-      },
-      "evidence": {
-        "E8": "After helping Trump to victory in 2024, young voters swung decisively toward",
-        "E1": "Young people were credited in part with powering Trump’s 2024 win, though"
-      },
-      "analyzed_at": "2026-11-07T18:21:31Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/07/democrats-economy-affordability-crisis",
-      "title": "Trump may have lost but don’t bet Democrats can fix the economy",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-07T11:00:08Z",
-      "historical": null,
-      "read_at": "2026-11-08T06:41:29Z",
-      "body_sha256": "aa1fa9ed867bd12bcd2c7ae29b5b622bc9ab4655ada0c3874152c11d98355f41",
-      "body_characters": 5764,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
     }
   ]
 }

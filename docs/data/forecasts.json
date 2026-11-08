@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-11-08T00:56:02Z",
+    "checked_at": "2026-11-08T07:11:12Z",
     "model": "empirical-log-return-quantiles-v2",
     "timezone": "America/Toronto",
-    "today": "2026-11-07",
-    "tomorrow": "2026-11-08",
+    "today": "2026-11-08",
+    "tomorrow": "2026-11-09",
     "quote_refresh": "Scheduled about every 15 minutes; provider and GitHub queue delays apply.",
     "disclosure": "Price-only empirical matching-horizon log-return scenarios, not AI price targets. Lower/central/upper bands are historical quantile ranges, not guaranteed probabilities. Bitcoin uses a frozen quote-to-24h target; ETFs use the last completed close to the first session close on/after tomorrow, with matching one/two-session returns. No forecasts are revised after issue.",
     "failures": []
@@ -13,27 +13,27 @@
     {
       "ticker": "BTC-USD",
       "asset": "Bitcoin / USD",
-      "quote": 75667.52,
-      "quote_at": "2026-11-08T00:55:53Z",
+      "quote": 75734.82,
+      "quote_at": "2026-11-08T07:11:07Z",
       "quote_stale": false,
       "market_status": "Continuous trading; quote may be delayed by provider",
       "tomorrow_has_session": true,
       "source": "https://finance.yahoo.com/quote/BTC-USD/",
       "forecast": {
-        "id": "BTC-USD|2026-11-07",
+        "id": "BTC-USD|2026-11-08",
         "ticker": "BTC-USD",
-        "issued_at": "2026-11-07T06:12:28Z",
-        "target_at": "2026-11-08T06:15:00Z",
-        "anchor_at": "2026-11-07T06:12:24Z",
-        "anchor_price": 75939.42,
+        "issued_at": "2026-11-08T07:11:11Z",
+        "target_at": "2026-11-09T07:15:00Z",
+        "anchor_at": "2026-11-08T07:11:07Z",
+        "anchor_price": 75734.82,
         "levels": {
-          "q10": 74147.6925,
-          "q30": 75376.7631,
-          "q40": 75737.541,
-          "q50": 75937.488,
-          "q60": 76248.45,
-          "q70": 76576.085,
-          "q90": 77689.4695
+          "q10": 73950.7379,
+          "q30": 75183.7406,
+          "q40": 75536.9281,
+          "q50": 75732.8932,
+          "q60": 76037.6333,
+          "q70": 76356.4378,
+          "q90": 77480.1544
         },
         "model": "empirical-log-return-quantiles-v2",
         "training_observations": 252,
@@ -42,12 +42,12 @@
         "backtest": {
           "observations": 90,
           "coverage_percent": 84.44,
-          "mean_abs_price_error_percent": 1.397,
-          "random_walk_error_percent": 1.392,
+          "mean_abs_price_error_percent": 1.398,
+          "random_walk_error_percent": 1.394,
           "horizon_sessions": 1,
           "method": "Walk-forward: each 1-session prediction uses 252 prior completed matching-horizon log returns. Overlapping training outcomes are not independent. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
         },
-        "issued_digest": "036e4002e344c27892e156807a373bf3c014a9d15cfcf22ba808af6b9e6570c3"
+        "issued_digest": "19fefb62fa54bac7a1ae46b8f7f926dc61ef27191e220d89c7a7fcfe2ad89b37"
       },
       "error": null
     },
@@ -58,7 +58,7 @@
       "quote_at": "2026-11-06T21:00:00Z",
       "quote_stale": false,
       "market_status": "Market closed · last reported quote",
-      "tomorrow_has_session": false,
+      "tomorrow_has_session": true,
       "source": "https://finance.yahoo.com/quote/GLD/",
       "forecast": {
         "id": "GLD|2026-11-09T21:00:00Z|2026-11-06T21:00:00Z",
@@ -99,7 +99,7 @@
       "quote_at": "2026-11-06T21:00:00Z",
       "quote_stale": false,
       "market_status": "Market closed · last reported quote",
-      "tomorrow_has_session": false,
+      "tomorrow_has_session": true,
       "source": "https://finance.yahoo.com/quote/SPY/",
       "forecast": {
         "id": "SPY|2026-11-09T21:00:00Z|2026-11-06T21:00:00Z",
@@ -140,7 +140,7 @@
       "quote_at": "2026-11-06T21:00:00Z",
       "quote_stale": false,
       "market_status": "Market closed · last reported quote",
-      "tomorrow_has_session": false,
+      "tomorrow_has_session": true,
       "source": "https://finance.yahoo.com/quote/BIL/",
       "forecast": {
         "id": "BIL|2026-11-09T21:00:00Z|2026-11-06T21:00:00Z",
@@ -181,7 +181,7 @@
       "quote_at": "2026-11-06T21:00:00Z",
       "quote_stale": false,
       "market_status": "Market closed · last reported quote",
-      "tomorrow_has_session": false,
+      "tomorrow_has_session": true,
       "source": "https://finance.yahoo.com/quote/TLT/",
       "forecast": {
         "id": "TLT|2026-11-09T21:00:00Z|2026-11-06T21:00:00Z",
@@ -218,9 +218,9 @@
   ],
   "verification": {
     "invalidated": 1,
-    "verified_forecasts": 137,
-    "outer_band_coverage_percent": 77.37,
-    "mean_abs_median_error_percent": 0.928,
+    "verified_forecasts": 138,
+    "outer_band_coverage_percent": 77.54,
+    "mean_abs_median_error_percent": 0.924,
     "pending": 9,
     "missed": 0
   }

@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-08T00:56:02Z",
-    "record_count": 36,
+    "updated_at": "2026-11-08T07:11:13Z",
+    "record_count": 37,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -1061,6 +1061,36 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "00e13190c321360aef16daa260600a18cadeb6146f33b92dabc87713a1c4de62"
+    },
+    {
+      "id": "faae603fc0ab3d3b238b3448",
+      "first_observed_at": "2026-11-08T07:11:13Z",
+      "snapshot": {
+        "title": "A ‘customer success story’: leaked documents show Cisco doubled down on Israeli military deals during Gaza war",
+        "url": "https://www.theguardian.com/world/2026/nov/07/israel-intelligence-cisco-gaza-palestine",
+        "publisher": "The Guardian Technology",
+        "published_at": "2026-11-07T12:00:12Z",
+        "categories": [
+          "geopolitics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "8f6049c3b69eaa7888d53ce0a99803e665966d4b293b557278e800fc38fbb083",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "4a65352aab216a645358ea86c02cb2feea78596d90d3f504f2e6f9cea93e177e"
     }
   ]
 }

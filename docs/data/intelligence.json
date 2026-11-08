@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-07T20:33:00Z",
-    "scan_started_at": "2026-11-07T20:26:15Z",
+    "checked_at": "2026-11-08T00:01:06Z",
+    "scan_started_at": "2026-11-07T23:52:31Z",
     "provider_requested": "local",
     "article_reads": 9,
     "ai_interpretations": 5,
-    "new_interpretations": 1,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,12 +19,147 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
+      "title": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-05T08:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-07T23:51:23Z",
+      "body_sha256": "fe0994f5db6c7237cba806d0ab616c3ba7a879e6d9b329af31ad0b72f1710b59",
+      "body_characters": 18000,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Isabel Schnabel reflects on the ECB's monetary policy journey from low inflation to inflationary shocks.",
+        "evidence_ids": [
+          "E4",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: ECB's monetary policy shift",
+          "financial_channel: If inflation expectations change, gold demand may fluctuate",
+          "asset_hypothesis: If central banks adjust policies, asset risk appetites may shift"
+        ],
+        "gold": {
+          "direction": "mixed",
+          "condition": "If inflation expectations rise, gold may lose some appeal as a safe-haven; if policy tightening continues, gold may gain as a hedge."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If gold's safe-haven status wanes, Bitcoin may gain as an alternative hedge, but evidence is lacking."
+        },
+        "uncertainty": "If the global economy remains integrated, gold's traditional safe-haven status may persist, countering the shift in focus."
+      },
+      "evidence": {
+        "E4": "We have moved from a world in which inflation was persistently too",
+        "E5": "During the post-pandemic inflation surge, the ECB demonstrated its ability to tighten"
+      },
+      "analyzed_at": "2026-11-05T19:00:26Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/04/us-dollar-slides-democrats-midterm-election-win-growth-fears",
+      "title": "US stocks rise, dollar slides as investors digest Democrats’ midterm victories",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-04T16:38:28Z",
+      "historical": null,
+      "read_at": "2026-11-07T23:51:23Z",
+      "body_sha256": "e32f2bd2baa67ab615c8c5bf72a051c4d1e75070f065c32ec8d133d5d58932a5",
+      "body_characters": 5241,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "US stocks rise as Democrats win midterm elections, lifting market sentiment and pushing gold prices up.",
+        "evidence_ids": [
+          "E1",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: Democrats win midterm elections",
+          "financial_channel: If market sentiment improves, risk appetite increases",
+          "asset_hypothesis: If investors seek safety, gold prices rise"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If investors seek safety, gold prices rise"
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite increases, Bitcoin may see mixed reactions due to competing risk-appetite/liquidity channels"
+        },
+        "uncertainty": "If Trump's policies are not significantly impacted, gold's safe-haven status may be diminished."
+      },
+      "evidence": {
+        "E1": "US stocks have surged as investors digest the Democrats’ victories in the",
+        "E6": "The price of gold, a traditional haven asset, rose by 2.2%, soaring"
+      },
+      "analyzed_at": "2026-11-07T18:19:00Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/07/youth-vote-turnout-midterm-elections",
+      "title": "‘People are active, they are fed up’: young voters fueled the Democratic wave",
+      "publisher": "The Guardian US Politics",
+      "published_at": "2026-11-07T17:00:16Z",
+      "historical": null,
+      "read_at": "2026-11-07T23:51:23Z",
+      "body_sha256": "6877244875f2c5d6c40efc91d9ee51a4bcc8aff019a0ab709fce8462b9bb2dec",
+      "body_characters": 10757,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Young voters decisively shifted towards Democrats in the 2026 midterms, with high turnout and significant margins across demographics.",
+        "evidence_ids": [
+          "E8",
+          "E1"
+        ],
+        "chain": [
+          "reported_event: Young voters decisively shifted towards Democrats",
+          "financial_channel: If risk appetite decreases, young voters may seek more stable political outcomes",
+          "asset_hypothesis: If political stability improves, gold demand may decrease"
+        ],
+        "gold": {
+          "direction": "down",
+          "condition": "If risk appetite decreases, young voters may seek more stable political outcomes, reducing demand for gold as a safe-haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If political stability improves, young voters may not shift to Bitcoin as a hedge, keeping it mixed."
+        },
+        "uncertainty": "If young voters continue to support populist candidates, gold may still see some demand as a hedge against political uncertainty."
+      },
+      "evidence": {
+        "E8": "After helping Trump to victory in 2024, young voters swung decisively toward",
+        "E1": "Young people were credited in part with powering Trump’s 2024 win, though"
+      },
+      "analyzed_at": "2026-11-07T18:21:31Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/07/democrats-economy-affordability-crisis",
+      "title": "Trump may have lost but don’t bet Democrats can fix the economy",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-07T11:00:08Z",
+      "historical": null,
+      "read_at": "2026-11-07T23:52:33Z",
+      "body_sha256": "aa1fa9ed867bd12bcd2c7ae29b5b622bc9ab4655ada0c3874152c11d98355f41",
+      "body_characters": 5764,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
       "url": "https://www.theguardian.com/business/2026/nov/06/global-stocks-plunge-amid-ai-slowdown-fears-after-democrats-midterm-triumph",
       "title": "Global stocks fall amid ‘big worries over AI’ after Democrats’ midterms triumph",
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-06T21:23:54Z",
       "historical": null,
-      "read_at": "2026-11-07T20:26:16Z",
+      "read_at": "2026-11-07T23:51:24Z",
       "body_sha256": "1e46c3c23a598f7501a39540b96a58066438e5cd5449f9ab4fc8a2f7edff8851",
       "body_characters": 4515,
       "model_context_characters": 4500,
@@ -65,7 +200,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-06T21:06:25Z",
       "historical": null,
-      "read_at": "2026-11-07T20:28:51Z",
+      "read_at": "2026-11-07T23:57:02Z",
       "body_sha256": "62500d369a796a22967a575934e7d1e3dff40e73513e25ef7f4f3509a4777e40",
       "body_characters": 4833,
       "model_context_characters": 4500,
@@ -77,7 +212,7 @@
       "publisher": "BBC Technology",
       "published_at": "2026-11-06T13:25:50Z",
       "historical": null,
-      "read_at": "2026-11-07T20:33:00Z",
+      "read_at": "2026-11-08T00:01:06Z",
       "body_sha256": "cc6db6afe2319465f900ab88c60ffb52241bae5611017c14bb79f3afc49db627",
       "body_characters": 4975,
       "model_context_characters": 4500,
@@ -138,144 +273,9 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-06T18:32:16Z",
       "historical": null,
-      "read_at": "2026-11-07T20:33:00Z",
+      "read_at": "2026-11-08T00:01:06Z",
       "body_sha256": "85c0916986738639c8b4b5e2d018844eab03d42ac3e0d4eba899059efe91e823",
       "body_characters": 5125,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
-      "title": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-05T08:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-07T18:16:13Z",
-      "body_sha256": "fe0994f5db6c7237cba806d0ab616c3ba7a879e6d9b329af31ad0b72f1710b59",
-      "body_characters": 18000,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Isabel Schnabel reflects on the ECB's monetary policy journey from low inflation to inflationary shocks.",
-        "evidence_ids": [
-          "E4",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: ECB's monetary policy shift",
-          "financial_channel: If inflation expectations change, gold demand may fluctuate",
-          "asset_hypothesis: If central banks adjust policies, asset risk appetites may shift"
-        ],
-        "gold": {
-          "direction": "mixed",
-          "condition": "If inflation expectations rise, gold may lose some appeal as a safe-haven; if policy tightening continues, gold may gain as a hedge."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If gold's safe-haven status wanes, Bitcoin may gain as an alternative hedge, but evidence is lacking."
-        },
-        "uncertainty": "If the global economy remains integrated, gold's traditional safe-haven status may persist, countering the shift in focus."
-      },
-      "evidence": {
-        "E4": "We have moved from a world in which inflation was persistently too",
-        "E5": "During the post-pandemic inflation surge, the ECB demonstrated its ability to tighten"
-      },
-      "analyzed_at": "2026-11-05T19:00:26Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/04/us-dollar-slides-democrats-midterm-election-win-growth-fears",
-      "title": "US stocks rise, dollar slides as investors digest Democrats’ midterm victories",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-04T16:38:28Z",
-      "historical": null,
-      "read_at": "2026-11-07T18:16:13Z",
-      "body_sha256": "e32f2bd2baa67ab615c8c5bf72a051c4d1e75070f065c32ec8d133d5d58932a5",
-      "body_characters": 5241,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "US stocks rise as Democrats win midterm elections, lifting market sentiment and pushing gold prices up.",
-        "evidence_ids": [
-          "E1",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: Democrats win midterm elections",
-          "financial_channel: If market sentiment improves, risk appetite increases",
-          "asset_hypothesis: If investors seek safety, gold prices rise"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If investors seek safety, gold prices rise"
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite increases, Bitcoin may see mixed reactions due to competing risk-appetite/liquidity channels"
-        },
-        "uncertainty": "If Trump's policies are not significantly impacted, gold's safe-haven status may be diminished."
-      },
-      "evidence": {
-        "E1": "US stocks have surged as investors digest the Democrats’ victories in the",
-        "E6": "The price of gold, a traditional haven asset, rose by 2.2%, soaring"
-      },
-      "analyzed_at": "2026-11-07T18:19:00Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/07/youth-vote-turnout-midterm-elections",
-      "title": "‘People are active, they are fed up’: young voters fueled the Democratic wave",
-      "publisher": "The Guardian US Politics",
-      "published_at": "2026-11-07T17:00:16Z",
-      "historical": null,
-      "read_at": "2026-11-07T18:19:00Z",
-      "body_sha256": "6877244875f2c5d6c40efc91d9ee51a4bcc8aff019a0ab709fce8462b9bb2dec",
-      "body_characters": 10757,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Young voters decisively shifted towards Democrats in the 2026 midterms, with high turnout and significant margins across demographics.",
-        "evidence_ids": [
-          "E8",
-          "E1"
-        ],
-        "chain": [
-          "reported_event: Young voters decisively shifted towards Democrats",
-          "financial_channel: If risk appetite decreases, young voters may seek more stable political outcomes",
-          "asset_hypothesis: If political stability improves, gold demand may decrease"
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If risk appetite decreases, young voters may seek more stable political outcomes, reducing demand for gold as a safe-haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If political stability improves, young voters may not shift to Bitcoin as a hedge, keeping it mixed."
-        },
-        "uncertainty": "If young voters continue to support populist candidates, gold may still see some demand as a hedge against political uncertainty."
-      },
-      "evidence": {
-        "E8": "After helping Trump to victory in 2024, young voters swung decisively toward",
-        "E1": "Young people were credited in part with powering Trump’s 2024 win, though"
-      },
-      "analyzed_at": "2026-11-07T18:21:31Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/07/democrats-economy-affordability-crisis",
-      "title": "Trump may have lost but don’t bet Democrats can fix the economy",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-07T11:00:08Z",
-      "historical": null,
-      "read_at": "2026-11-07T20:33:00Z",
-      "body_sha256": "aa1fa9ed867bd12bcd2c7ae29b5b622bc9ab4655ada0c3874152c11d98355f41",
-      "body_characters": 5764,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
     }

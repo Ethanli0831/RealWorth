@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-07T18:08:17Z",
-    "record_count": 35,
+    "updated_at": "2026-11-08T00:56:02Z",
+    "record_count": 36,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -1034,6 +1034,33 @@
         "evidence": "Official schedule, not a prediction of the outcome or market direction."
       },
       "digest": "479566df9a598e96ffb6d33a3fbe0615df7107cfdb112f53aa6a8b7530b121f0"
+    },
+    {
+      "id": "1104f92692cb67acded62a10",
+      "first_observed_at": "2026-11-08T00:56:02Z",
+      "snapshot": {
+        "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
+        "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Technology",
+        "published_at": "2026-11-03T16:19:29Z",
+        "categories": [
+          "crypto_access"
+        ],
+        "tickers": [
+          "BTC-USD"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "12a8002157aef8a9158f43fca6a4531ce00c7a85eab28eef3278b510343f6625",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "00e13190c321360aef16daa260600a18cadeb6146f33b92dabc87713a1c4de62"
     }
   ]
 }

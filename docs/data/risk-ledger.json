@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-08T07:11:13Z",
-    "record_count": 37,
+    "updated_at": "2026-11-08T14:22:45Z",
+    "record_count": 38,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -1091,6 +1091,37 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "4a65352aab216a645358ea86c02cb2feea78596d90d3f504f2e6f9cea93e177e"
+    },
+    {
+      "id": "d794f846323ae55ba81a77c9",
+      "first_observed_at": "2026-11-08T14:22:45Z",
+      "snapshot": {
+        "title": "Healthcare, tariffs – but not Trump impeachment: Democrats chart next two years of power",
+        "url": "https://www.theguardian.com/us-news/2026/nov/08/democrats-congress-trump-midterms",
+        "publisher": "The Guardian US Politics",
+        "published_at": "2026-11-08T12:00:40Z",
+        "categories": [
+          "elections",
+          "trade"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "cc68d757dc7ff29db68961b09d79af9f585bc11e703e02fd3f1a99e9c5f08006",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "6b8c6623a8c318a3a26192451836a1a2b08834b9a121503490decf6ee0a57b60"
     }
   ]
 }

@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-09T09:38:48Z",
-    "record_count": 39,
+    "updated_at": "2026-11-09T20:11:30Z",
+    "record_count": 41,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -1150,6 +1150,63 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "602fb2de57d846917d0812e7e58e9a0fdb72d29410d737d4b593d6d952afc7a2"
+    },
+    {
+      "id": "42566721c33e03b49682ddc4",
+      "first_observed_at": "2026-11-09T20:11:30Z",
+      "snapshot": {
+        "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
+        "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-09T19:58:01Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "7cc1715ed9dcbea607d91276f5e83e2c80bb218ae7d268b5199dfeec01b3fe57"
+    },
+    {
+      "id": "9081c5f5a2722698786fe4fc",
+      "first_observed_at": "2026-11-09T20:11:30Z",
+      "snapshot": {
+        "title": "Economic relief is on the way, Democrats say. But what, how and when?",
+        "url": "https://www.theguardian.com/us-news/2026/nov/09/democrats-midterms-economy-healthcare",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-09T11:00:07Z",
+        "categories": [
+          "elections"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "98426530c08dc71ad1cb960ea462523f22c2550a8890a8bb83a73aae2c39f6a8"
     }
   ]
 }

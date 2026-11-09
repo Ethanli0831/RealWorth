@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-08T14:22:45Z",
-    "record_count": 38,
+    "updated_at": "2026-11-09T09:38:48Z",
+    "record_count": 39,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -1122,6 +1122,34 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "6b8c6623a8c318a3a26192451836a1a2b08834b9a121503490decf6ee0a57b60"
+    },
+    {
+      "id": "f887215c48f6ea93374559a3",
+      "first_observed_at": "2026-11-09T09:38:48Z",
+      "snapshot": {
+        "title": "Weakening AI copyright law will spell ‘disaster for creativity’, global music body warns Albanese",
+        "url": "https://www.theguardian.com/technology/2026/nov/09/weakening-ai-copyright-law-will-spell-disaster-for-creativity-australia",
+        "publisher": "The Guardian Technology",
+        "published_at": "2026-11-08T14:00:43Z",
+        "categories": [
+          "ai_regulation"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "897f5d72cfd89dfb8ee98d8117092ac4ed43a2e697c4dac21638f5486e473305",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "602fb2de57d846917d0812e7e58e9a0fdb72d29410d737d4b593d6d952afc7a2"
     }
   ]
 }

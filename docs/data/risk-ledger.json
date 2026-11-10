@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-10T02:47:37Z",
-    "record_count": 42,
+    "updated_at": "2026-11-10T10:30:13Z",
+    "record_count": 45,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -1237,6 +1237,92 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "c990f3068106ac3ff2c6d7a70b17ea8d0a12de1c77e02c08613f1e09a8af07bc"
+    },
+    {
+      "id": "74b2c4e0230abacd21674a66",
+      "first_observed_at": "2026-11-10T10:30:13Z",
+      "snapshot": {
+        "title": "Mandatory AI safety and security protections announced after OpenAI breach of Medicare – video",
+        "url": "https://www.theguardian.com/australia-news/video/2026/nov/10/mandatory-ai-safety-and-security-protections-announced-after-openai-breach-of-medicare-video",
+        "publisher": "The Guardian Technology",
+        "published_at": "2026-11-10T05:29:32Z",
+        "categories": [
+          "ai_regulation"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "897f5d72cfd89dfb8ee98d8117092ac4ed43a2e697c4dac21638f5486e473305",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "bf55fb2287cc5b029afd7f2946593d106bff57eaf3ff84d298726cb7a62621aa"
+    },
+    {
+      "id": "26fa9aa3b96a11dbb3f0fc6e",
+      "first_observed_at": "2026-11-10T10:30:13Z",
+      "snapshot": {
+        "title": "AI stocks climb after trillions wiped from market values",
+        "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Technology",
+        "published_at": "2026-11-06T21:06:25Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "d21d54059b0efbed4b782ec98c8a76968c0d0801970bf1a248172dcd1e9f11e6"
+    },
+    {
+      "id": "68baf07c2b60e032d751c384",
+      "first_observed_at": "2026-11-10T10:30:13Z",
+      "snapshot": {
+        "title": "Why the US midterms sparked an AI stock selloff",
+        "url": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Technology",
+        "published_at": "2026-11-06T18:32:16Z",
+        "categories": [
+          "elections",
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "508ea545bb6410f83380d19d2b650489ead88a23c94c636925bde2042f77ae24",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "c636181a3aa306abc33b033578f99b393cb51896c72f7fcd59c80b47a1730aa4"
     }
   ]
 }

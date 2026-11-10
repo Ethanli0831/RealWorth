@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-10T18:10:53Z",
-    "record_count": 53,
+    "updated_at": "2026-11-10T23:30:56Z",
+    "record_count": 55,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -1559,6 +1559,64 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "57c1c9f4f26f5ea7ae3b2b531dbac2f4c5cea1e49ee02e23ad1ad1b7f59e7365"
+    },
+    {
+      "id": "70691a5e700a97bbfeae4abe",
+      "first_observed_at": "2026-11-10T23:30:56Z",
+      "snapshot": {
+        "title": "Falkland Islanders face ‘devastating consequences’ if Argentina blocks oil project, says UK",
+        "url": "https://www.theguardian.com/world/2026/nov/10/uk-and-argentina-clash-over-falklands-oil-project-as-hamburg-tribunal-starts",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-10T19:01:33Z",
+        "categories": [
+          "energy"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d8bbcc3e2536f510751f3f7fc1417a5af288b2bec41ac3c65aa827eef6c5d064",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "cfd03f1d50f723a576d91ab17c0905ec20ca02776d28867e0fb73124bc67adaa"
+    },
+    {
+      "id": "670d6f7962e27a1adb6a0948",
+      "first_observed_at": "2026-11-10T23:30:56Z",
+      "snapshot": {
+        "title": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
+        "url": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-10T17:56:12Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "8bb24028a435ba3eb83d89c988780777d08e17aeb84bc0c6b37189814290a1b1"
     }
   ]
 }

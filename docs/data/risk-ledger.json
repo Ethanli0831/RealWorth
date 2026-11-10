@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-10T10:30:13Z",
-    "record_count": 45,
+    "updated_at": "2026-11-10T18:10:53Z",
+    "record_count": 53,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -1323,6 +1323,242 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "c636181a3aa306abc33b033578f99b393cb51896c72f7fcd59c80b47a1730aa4"
+    },
+    {
+      "id": "2b834f1467cb81794893e277",
+      "first_observed_at": "2026-11-10T18:10:53Z",
+      "snapshot": {
+        "title": "Anthropic set for $1.3tn stock market debut despite 'catastrophic' AI warning",
+        "url": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-10T17:56:12Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "bcdf6373046ec04e608f38dc1e5be042d5a3faa54d1e55563fb39a4229503d01"
+    },
+    {
+      "id": "8d78f6242b1d2c2d1dd69325",
+      "first_observed_at": "2026-11-10T18:10:53Z",
+      "snapshot": {
+        "title": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
+        "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html",
+        "publisher": "European Central Bank",
+        "published_at": "2026-11-10T16:45:00Z",
+        "categories": [
+          "rates"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "78e3974e191df6a85cd5c04eaa97790a99309a45ba8542bc9657cc470e63de40"
+    },
+    {
+      "id": "bb1fa9e1dd179276793374f2",
+      "first_observed_at": "2026-11-10T18:10:53Z",
+      "snapshot": {
+        "title": "US inflation rose 0.4% in October as price increases cooled and gas costs dipped",
+        "url": "https://www.theguardian.com/business/2026/nov/10/october-inflation-report",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-10T15:38:48Z",
+        "categories": [
+          "rates"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "08cc69f081b4c9d333f4638c7493158701c0a55f8494c2e9f04a04519f13d2b3"
+    },
+    {
+      "id": "c1885c1de70e33363de87d53",
+      "first_observed_at": "2026-11-10T18:10:53Z",
+      "snapshot": {
+        "title": "Nvidia shaken by scandal amid wider political new order for big tech",
+        "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
+        "publisher": "The Guardian Technology",
+        "published_at": "2026-11-10T15:04:38Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "465c8eaa04250dbd67cb53b61c2e74234a2f800d05c6d1fcff419fa01669697e"
+    },
+    {
+      "id": "91c3b0a6b4f04fee322febdb",
+      "first_observed_at": "2026-11-10T18:10:53Z",
+      "snapshot": {
+        "title": "UK and Argentina clash over Falklands oil project as Hamburg tribunal starts",
+        "url": "https://www.theguardian.com/world/2026/nov/10/uk-and-argentina-clash-over-falklands-oil-project-as-hamburg-tribunal-starts",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-10T14:49:32Z",
+        "categories": [
+          "energy"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d8bbcc3e2536f510751f3f7fc1417a5af288b2bec41ac3c65aa827eef6c5d064",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "858565b70f0918676586470ec9f996f07e2038d3be1c0bb0c7fa5f37c557f3f0"
+    },
+    {
+      "id": "cc278daec2f220580b2f6cb3",
+      "first_observed_at": "2026-11-10T18:10:53Z",
+      "snapshot": {
+        "title": "US inflation higher than expected in October - here's what is happening with prices",
+        "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-10T14:45:46Z",
+        "categories": [
+          "rates"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "f9d47b267f322bcc25ac87546bd27686e993e87debc30dffe2ab59da04d27d14"
+    },
+    {
+      "id": "e42d242b882bc0899ec8d3e7",
+      "first_observed_at": "2026-11-10T18:10:53Z",
+      "snapshot": {
+        "title": "New regulation for heating oil market, but no price controls",
+        "url": "https://www.bbc.co.uk/news/articles/cv70p0d3d686o?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-10T13:42:29Z",
+        "categories": [
+          "energy"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d8bbcc3e2536f510751f3f7fc1417a5af288b2bec41ac3c65aa827eef6c5d064",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "b1418bec934d9ca59d98588179c2e33342661668f1bd7e2682b794bd1ef556fa"
+    },
+    {
+      "id": "48ebbc55813340537e56fea2",
+      "first_observed_at": "2026-11-10T18:10:53Z",
+      "snapshot": {
+        "title": "Oil prices fall to lowest since August as Trump says Iran war is ‘effectively over’",
+        "url": "https://www.theguardian.com/business/2026/nov/10/oil-prices-fall-donald-trump-iran-war-ftse-100-markets",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-10T10:28:47Z",
+        "categories": [
+          "energy"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d8bbcc3e2536f510751f3f7fc1417a5af288b2bec41ac3c65aa827eef6c5d064",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "57c1c9f4f26f5ea7ae3b2b531dbac2f4c5cea1e49ee02e23ad1ad1b7f59e7365"
     }
   ]
 }

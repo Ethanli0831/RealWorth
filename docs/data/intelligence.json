@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-09T22:47:56Z",
-    "scan_started_at": "2026-11-09T22:39:44Z",
+    "checked_at": "2026-11-10T04:51:01Z",
+    "scan_started_at": "2026-11-10T04:44:49Z",
     "provider_requested": "local",
     "article_reads": 9,
-    "ai_interpretations": 3,
-    "new_interpretations": 1,
+    "ai_interpretations": 2,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,94 +19,12 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.theguardian.com/technology/2026/nov/09/weakening-ai-copyright-law-will-spell-disaster-for-creativity-australia",
-      "title": "Weakening AI copyright law will spell ‘disaster for creativity’, global music body warns Albanese",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-08T14:00:43Z",
-      "historical": null,
-      "read_at": "2026-11-09T22:38:48Z",
-      "body_sha256": "7b541e3cccc8112241cdc31cdb734d3402ae18218b404cf1eebd1db8b133467f",
-      "body_characters": 4737,
-      "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "IFPI warns against weakening copyright laws to aid AI companies, citing potential damage to Australia’s cultural power and reputation.",
-        "evidence_ids": [
-          "E3",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: IFPI warns against weakening copyright laws",
-          "financial_channel: If copyright changes, it affects content supply",
-          "asset_hypothesis: If copyright changes, it impacts creative industries' revenue"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If copyright changes, it could reduce creative industries' revenue, increasing demand for gold as a safe-haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If copyright changes, it may reduce risk appetite, but alternative-hedge channels could offset Bitcoin's demand."
-        },
-        "uncertainty": "IFPI's concerns could be mitigated if the Albanese government implements robust copyright protections."
-      },
-      "evidence": {
-        "E3": "Exclusive: Head of IFPI says allowing AI companies access to online content",
-        "E5": "Australia weakening copyright protections to aid AI companies would be “ridiculous and"
-      },
-      "analyzed_at": "2026-11-09T12:03:08Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&at_campaign=rss",
-      "title": "Global stocks plunge as fears over US AI slowdown spread to Asia and Europe",
-      "publisher": "BBC Technology",
-      "published_at": "2026-11-06T13:25:50Z",
-      "historical": null,
-      "read_at": "2026-11-09T22:39:45Z",
-      "body_sha256": "78b2649317c106148fcdc59fc2242607db4293eba5a5990fad32f449ebd2f8eb",
-      "body_characters": 5138,
-      "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "Global tech stocks fell sharply as fears over US AI slowdown spread to Asia and Europe.",
-        "evidence_ids": [
-          "E4",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: Global tech stocks fell sharply",
-          "financial_channel: If tech stocks' demand falls, liquidity dries up",
-          "asset_hypothesis: If tech firms' growth slows, alternative assets become more attractive"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflationary fears rise, gold demand increases as a hedge."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite falls, investors may seek established safe-havens like gold over Bitcoin."
-        },
-        "uncertainty": "If the US AI sector continues to grow, tech stocks may recover, reducing pressure on gold and Bitcoin."
-      },
-      "evidence": {
-        "E4": "Global stock markets have tumbled after investors sold tech shares on fears",
-        "E5": "The sell-off, which started in the US and then spread to Asia"
-      },
-      "analyzed_at": "2026-11-09T22:42:47Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
       "title": "ECB publishes consolidated banking data for end-June 2026",
       "publisher": "European Central Bank",
       "published_at": "2026-11-06T09:00:00Z",
       "historical": null,
-      "read_at": "2026-11-09T22:38:50Z",
+      "read_at": "2026-11-10T04:44:02Z",
       "body_sha256": "5d63ffb09003e052ea5c0fd742237462d9f2473fedd24eb55a87051dfec8e3ac",
       "body_characters": 2315,
       "model_context_characters": 2315,
@@ -147,7 +65,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-06T21:06:25Z",
       "historical": null,
-      "read_at": "2026-11-09T22:42:48Z",
+      "read_at": "2026-11-10T04:44:50Z",
       "body_sha256": "62500d369a796a22967a575934e7d1e3dff40e73513e25ef7f4f3509a4777e40",
       "body_characters": 4833,
       "model_context_characters": 4500,
@@ -159,11 +77,11 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-07T11:00:08Z",
       "historical": null,
-      "read_at": "2026-11-09T22:47:55Z",
+      "read_at": "2026-11-10T04:48:00Z",
       "body_sha256": "aa1fa9ed867bd12bcd2c7ae29b5b622bc9ab4655ada0c3874152c11d98355f41",
       "body_characters": 5764,
       "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
+      "status": "Unavailable: AI reported event does not match the article topic"
     },
     {
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
@@ -171,7 +89,7 @@
       "publisher": "European Central Bank",
       "published_at": "2026-11-05T08:00:00Z",
       "historical": null,
-      "read_at": "2026-11-09T22:47:56Z",
+      "read_at": "2026-11-10T04:51:00Z",
       "body_sha256": "fe0994f5db6c7237cba806d0ab616c3ba7a879e6d9b329af31ad0b72f1710b59",
       "body_characters": 18000,
       "model_context_characters": 4500,
@@ -183,7 +101,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-06T18:32:16Z",
       "historical": null,
-      "read_at": "2026-11-09T22:47:56Z",
+      "read_at": "2026-11-10T04:51:00Z",
       "body_sha256": "85c0916986738639c8b4b5e2d018844eab03d42ac3e0d4eba899059efe91e823",
       "body_characters": 5125,
       "model_context_characters": 4500,
@@ -198,12 +116,24 @@
       "status": "Unavailable: Insufficient public article text"
     },
     {
+      "url": "https://www.theguardian.com/us-news/2026/nov/09/trump-iran-war",
+      "title": "Trump says US war in Iran ‘effectively over’ as he plays down escalation concerns",
+      "publisher": "The Guardian US Politics",
+      "published_at": "2026-11-09T22:58:31Z",
+      "historical": null,
+      "read_at": "2026-11-10T04:51:01Z",
+      "body_sha256": "02b93e47eace2a8e5413bae74913da14bcc17bdb87e50251da92d3371b7588f9",
+      "body_characters": 2460,
+      "model_context_characters": 2460,
+      "status": "Public body read; queued for AI"
+    },
+    {
       "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
       "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
       "publisher": "BBC Business",
       "published_at": "2026-11-09T19:58:01Z",
       "historical": null,
-      "read_at": "2026-11-09T22:47:56Z",
+      "read_at": "2026-11-10T04:51:01Z",
       "body_sha256": "d073cbfad26e3795ecb455feeac9144ccc07a25c14aa622a2cbebeb9d2a10438",
       "body_characters": 5733,
       "model_context_characters": 4500,
@@ -215,11 +145,52 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-09T11:00:07Z",
       "historical": null,
-      "read_at": "2026-11-09T22:47:56Z",
+      "read_at": "2026-11-10T04:51:01Z",
       "body_sha256": "faf58747be924379caabe111a0c85c38af80e58269062f980d2ffd1f271e7a64",
       "body_characters": 8101,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&at_campaign=rss",
+      "title": "Global stocks plunge as fears over US AI slowdown spread to Asia and Europe",
+      "publisher": "BBC Technology",
+      "published_at": "2026-11-06T13:25:50Z",
+      "historical": null,
+      "read_at": "2026-11-09T22:39:45Z",
+      "body_sha256": "78b2649317c106148fcdc59fc2242607db4293eba5a5990fad32f449ebd2f8eb",
+      "body_characters": 5138,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Global tech stocks fell sharply as fears over US AI slowdown spread to Asia and Europe.",
+        "evidence_ids": [
+          "E4",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: Global tech stocks fell sharply",
+          "financial_channel: If tech stocks' demand falls, liquidity dries up",
+          "asset_hypothesis: If tech firms' growth slows, alternative assets become more attractive"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflationary fears rise, gold demand increases as a hedge."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite falls, investors may seek established safe-havens like gold over Bitcoin."
+        },
+        "uncertainty": "If the US AI sector continues to grow, tech stocks may recover, reducing pressure on gold and Bitcoin."
+      },
+      "evidence": {
+        "E4": "Global stock markets have tumbled after investors sold tech shares on fears",
+        "E5": "The sell-off, which started in the US and then spread to Asia"
+      },
+      "analyzed_at": "2026-11-09T22:42:47Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     }
   ]
 }

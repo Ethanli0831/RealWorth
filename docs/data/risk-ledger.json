@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-09T20:11:30Z",
-    "record_count": 41,
+    "updated_at": "2026-11-10T02:47:37Z",
+    "record_count": 42,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -1207,6 +1207,36 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "98426530c08dc71ad1cb960ea462523f22c2550a8890a8bb83a73aae2c39f6a8"
+    },
+    {
+      "id": "1ce7b9e99240f845a4983c7c",
+      "first_observed_at": "2026-11-10T02:47:37Z",
+      "snapshot": {
+        "title": "Trump says US war in Iran ‘effectively over’ as he plays down escalation concerns",
+        "url": "https://www.theguardian.com/us-news/2026/nov/09/trump-iran-war",
+        "publisher": "The Guardian US Politics",
+        "published_at": "2026-11-09T22:58:31Z",
+        "categories": [
+          "geopolitics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "8f6049c3b69eaa7888d53ce0a99803e665966d4b293b557278e800fc38fbb083",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "c990f3068106ac3ff2c6d7a70b17ea8d0a12de1c77e02c08613f1e09a8af07bc"
     }
   ]
 }

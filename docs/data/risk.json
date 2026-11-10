@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-09T20:11:30Z",
-    "source_checked_at": "2026-11-09T20:11:25Z",
+    "built_at": "2026-11-10T02:47:37Z",
+    "source_checked_at": "2026-11-10T02:47:32Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -10,9 +10,37 @@
     "disclosure": "Risk chains are transparent scenarios, not verified causal effects, probability forecasts or AI price targets. No warnings are backdated.",
     "feeds_fetched": 8,
     "feeds_total": 9,
-    "ledger_records": 41
+    "ledger_records": 42
   },
   "events": [
+    {
+      "title": "Trump says US war in Iran ‘effectively over’ as he plays down escalation concerns",
+      "url": "https://www.theguardian.com/us-news/2026/nov/09/trump-iran-war",
+      "publisher": "The Guardian US Politics",
+      "published_at": "2026-11-09T22:58:31Z",
+      "categories": [
+        "geopolitics"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "8f6049c3b69eaa7888d53ce0a99803e665966d4b293b557278e800fc38fbb083",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "1ce7b9e99240f845a4983c7c",
+      "first_observed_at": "2026-11-10T02:47:37Z",
+      "digest": "c990f3068106ac3ff2c6d7a70b17ea8d0a12de1c77e02c08613f1e09a8af07bc"
+    },
     {
       "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
       "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
@@ -65,32 +93,6 @@
       "id": "9081c5f5a2722698786fe4fc",
       "first_observed_at": "2026-11-09T20:11:30Z",
       "digest": "98426530c08dc71ad1cb960ea462523f22c2550a8890a8bb83a73aae2c39f6a8"
-    },
-    {
-      "title": "Weakening AI copyright law will spell ‘disaster for creativity’, global music body warns Albanese",
-      "url": "https://www.theguardian.com/technology/2026/nov/09/weakening-ai-copyright-law-will-spell-disaster-for-creativity-australia",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-08T14:00:43Z",
-      "categories": [
-        "ai_regulation"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "897f5d72cfd89dfb8ee98d8117092ac4ed43a2e697c4dac21638f5486e473305",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "f887215c48f6ea93374559a3",
-      "first_observed_at": "2026-11-09T09:38:48Z",
-      "digest": "602fb2de57d846917d0812e7e58e9a0fdb72d29410d737d4b593d6d952afc7a2"
     },
     {
       "title": "Trump may have lost but don’t bet Democrats can fix the economy",
@@ -664,8 +666,8 @@
         "Check whether it concerns model use, chip exports, electricity costs or construction.",
         "Verify effective dates and company guidance; do not infer a global ban."
       ],
-      "event_count": 1,
-      "coverage": "Limited selected-headline coverage"
+      "event_count": 0,
+      "coverage": "No matching evidence in selected feeds; risk not ruled out"
     },
     {
       "id": "ai_economics",
@@ -811,8 +813,8 @@
         "Compare actual disruption with scenario assumptions.",
         "Watch funding conditions and competing safe-haven channels."
       ],
-      "event_count": 0,
-      "coverage": "No matching evidence in selected feeds; risk not ruled out"
+      "event_count": 1,
+      "coverage": "Limited selected-headline coverage"
     },
     {
       "id": "earnings",
@@ -1063,8 +1065,8 @@
       "id": "fomc",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "Fetched official schedule",
-      "last_success": "2026-11-09T20:11:30Z",
-      "attempted_at": "2026-11-09T20:11:30Z",
+      "last_success": "2026-11-10T02:47:37Z",
+      "attempted_at": "2026-11-10T02:47:37Z",
       "events": [
         {
           "title": "Scheduled FOMC meeting final day",
@@ -1354,7 +1356,7 @@
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-09T20:11:30Z",
+      "attempted_at": "2026-11-10T02:47:37Z",
       "events": [],
       "stale": true,
       "error": "HTTPError",
@@ -1366,47 +1368,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-09T20:11:25Z",
+      "checked_at": "2026-11-10T02:47:32Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-09T20:11:25Z",
+      "last_success": "2026-11-10T02:47:32Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-09T20:11:25Z",
+      "checked_at": "2026-11-10T02:47:32Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-09T20:11:25Z",
-      "matched": 9
+      "last_success": "2026-11-10T02:47:32Z",
+      "matched": 8
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-09T20:11:25Z",
+      "checked_at": "2026-11-10T02:47:32Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-09T20:11:25Z",
-      "matched": 9
+      "last_success": "2026-11-10T02:47:32Z",
+      "matched": 10
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-09T20:11:25Z",
+      "checked_at": "2026-11-10T02:47:32Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-09T20:11:25Z",
+      "last_success": "2026-11-10T02:47:32Z",
       "matched": 5
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-09T20:11:25Z",
+      "checked_at": "2026-11-10T02:47:32Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1416,41 +1418,41 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-09T20:11:25Z",
+      "checked_at": "2026-11-10T02:47:32Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-09T20:11:25Z",
+      "last_success": "2026-11-10T02:47:32Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-09T20:11:25Z",
+      "checked_at": "2026-11-10T02:47:32Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-09T20:11:25Z",
+      "last_success": "2026-11-10T02:47:32Z",
       "matched": 2
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-09T20:11:25Z",
+      "checked_at": "2026-11-10T02:47:32Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-09T20:11:25Z",
-      "matched": 2
+      "last_success": "2026-11-10T02:47:32Z",
+      "matched": 3
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-09T20:11:25Z",
+      "checked_at": "2026-11-10T02:47:32Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-09T20:11:25Z",
-      "matched": 4
+      "last_success": "2026-11-10T02:47:32Z",
+      "matched": 5
     }
   ],
   "gaps": [

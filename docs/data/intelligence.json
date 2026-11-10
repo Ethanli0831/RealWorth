@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-10T04:51:01Z",
-    "scan_started_at": "2026-11-10T04:44:49Z",
+    "checked_at": "2026-11-10T13:51:29Z",
+    "scan_started_at": "2026-11-10T13:43:24Z",
     "provider_requested": "local",
-    "article_reads": 9,
+    "article_reads": 8,
     "ai_interpretations": 2,
-    "new_interpretations": 0,
+    "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -17,6 +17,71 @@
       "published_at": null,
       "historical": true,
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
+      "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-09T19:58:01Z",
+      "historical": null,
+      "read_at": "2026-11-10T13:43:25Z",
+      "body_sha256": "d073cbfad26e3795ecb455feeac9144ccc07a25c14aa622a2cbebeb9d2a10438",
+      "body_characters": 5733,
+      "model_context_characters": 4500,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Nvidia's shares fell by about 4% after an investigation into Jensen Huang's affair with an alleged Chinese spy.",
+        "evidence_ids": [
+          "E6",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: Nvidia shares fall",
+          "financial_channel: If risk appetite decreases",
+          "asset_hypothesis: If tech stocks are seen as riskier"
+        ],
+        "gold": {
+          "direction": "unclear",
+          "condition": "If gold is seen as a safer haven, investors might buy it, but if they focus on tech, gold could be ignored."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If Bitcoin is seen as a riskier alternative, investors might sell it, but if they focus on tech, Bitcoin could be unaffected."
+        },
+        "uncertainty": "If the affair is proven to be unrelated to national security, Nvidia's shares might recover quickly."
+      },
+      "evidence": {
+        "E6": "Hundreds of billions of dollars have been wiped off the value of",
+        "E7": "The tech firm saw its shares fall by about 4% by close"
+      },
+      "analyzed_at": "2026-11-10T13:46:19Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/09/democrats-midterms-economy-healthcare",
+      "title": "Economic relief is on the way, Democrats say. But what, how and when?",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-09T11:00:07Z",
+      "historical": null,
+      "read_at": "2026-11-10T13:46:19Z",
+      "body_sha256": "faf58747be924379caabe111a0c85c38af80e58269062f980d2ffd1f271e7a64",
+      "body_characters": 8101,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
+      "title": "AI stocks climb after trillions wiped from market values",
+      "publisher": "BBC Technology",
+      "published_at": "2026-11-06T21:06:25Z",
+      "historical": null,
+      "read_at": "2026-11-10T13:51:27Z",
+      "body_sha256": "62500d369a796a22967a575934e7d1e3dff40e73513e25ef7f4f3509a4777e40",
+      "body_characters": 4833,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
@@ -60,16 +125,12 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
-      "title": "AI stocks climb after trillions wiped from market values",
+      "url": "https://www.bbc.co.uk/news/videos/cq369l9r634ro?at_medium=RSS&at_campaign=rss",
+      "title": "Workers' rights 'second place' to economic growth",
       "publisher": "BBC Business",
-      "published_at": "2026-11-06T21:06:25Z",
+      "published_at": "2026-11-06T14:52:49Z",
       "historical": null,
-      "read_at": "2026-11-10T04:44:50Z",
-      "body_sha256": "62500d369a796a22967a575934e7d1e3dff40e73513e25ef7f4f3509a4777e40",
-      "body_characters": 4833,
-      "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
+      "status": "Unavailable: Insufficient public article text"
     },
     {
       "url": "https://www.theguardian.com/business/2026/nov/07/democrats-economy-affordability-crisis",
@@ -77,11 +138,23 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-07T11:00:08Z",
       "historical": null,
-      "read_at": "2026-11-10T04:48:00Z",
+      "read_at": "2026-11-10T13:51:28Z",
       "body_sha256": "aa1fa9ed867bd12bcd2c7ae29b5b622bc9ab4655ada0c3874152c11d98355f41",
       "body_characters": 5764,
       "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo?at_medium=RSS&at_campaign=rss",
+      "title": "Why the US midterms sparked an AI stock selloff",
+      "publisher": "BBC Technology",
+      "published_at": "2026-11-06T18:32:16Z",
+      "historical": null,
+      "read_at": "2026-11-10T13:51:28Z",
+      "body_sha256": "85c0916986738639c8b4b5e2d018844eab03d42ac3e0d4eba899059efe91e823",
+      "body_characters": 5125,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
@@ -89,29 +162,17 @@
       "publisher": "European Central Bank",
       "published_at": "2026-11-05T08:00:00Z",
       "historical": null,
-      "read_at": "2026-11-10T04:51:00Z",
+      "read_at": "2026-11-10T13:51:29Z",
       "body_sha256": "fe0994f5db6c7237cba806d0ab616c3ba7a879e6d9b329af31ad0b72f1710b59",
       "body_characters": 18000,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo?at_medium=RSS&at_campaign=rss",
-      "title": "Why the US midterms sparked an AI stock selloff",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-06T18:32:16Z",
-      "historical": null,
-      "read_at": "2026-11-10T04:51:00Z",
-      "body_sha256": "85c0916986738639c8b4b5e2d018844eab03d42ac3e0d4eba899059efe91e823",
-      "body_characters": 5125,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/news/video/2026/nov/06/could-the-ai-bubble-burst-after-democrats-midterms-sweep-the-latest",
-      "title": "Could the AI bubble burst after Democrats' midterms sweep? - The Latest",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-06T17:04:41Z",
+      "url": "https://www.theguardian.com/australia-news/video/2026/nov/10/mandatory-ai-safety-and-security-protections-announced-after-openai-breach-of-medicare-video",
+      "title": "Mandatory AI safety and security protections announced after OpenAI breach of Medicare – video",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-10T05:29:32Z",
       "historical": null,
       "status": "Unavailable: Insufficient public article text"
     },
@@ -121,76 +182,11 @@
       "publisher": "The Guardian US Politics",
       "published_at": "2026-11-09T22:58:31Z",
       "historical": null,
-      "read_at": "2026-11-10T04:51:01Z",
+      "read_at": "2026-11-10T13:51:29Z",
       "body_sha256": "02b93e47eace2a8e5413bae74913da14bcc17bdb87e50251da92d3371b7588f9",
       "body_characters": 2460,
       "model_context_characters": 2460,
       "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
-      "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-09T19:58:01Z",
-      "historical": null,
-      "read_at": "2026-11-10T04:51:01Z",
-      "body_sha256": "d073cbfad26e3795ecb455feeac9144ccc07a25c14aa622a2cbebeb9d2a10438",
-      "body_characters": 5733,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/09/democrats-midterms-economy-healthcare",
-      "title": "Economic relief is on the way, Democrats say. But what, how and when?",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-09T11:00:07Z",
-      "historical": null,
-      "read_at": "2026-11-10T04:51:01Z",
-      "body_sha256": "faf58747be924379caabe111a0c85c38af80e58269062f980d2ffd1f271e7a64",
-      "body_characters": 8101,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&at_campaign=rss",
-      "title": "Global stocks plunge as fears over US AI slowdown spread to Asia and Europe",
-      "publisher": "BBC Technology",
-      "published_at": "2026-11-06T13:25:50Z",
-      "historical": null,
-      "read_at": "2026-11-09T22:39:45Z",
-      "body_sha256": "78b2649317c106148fcdc59fc2242607db4293eba5a5990fad32f449ebd2f8eb",
-      "body_characters": 5138,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Global tech stocks fell sharply as fears over US AI slowdown spread to Asia and Europe.",
-        "evidence_ids": [
-          "E4",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: Global tech stocks fell sharply",
-          "financial_channel: If tech stocks' demand falls, liquidity dries up",
-          "asset_hypothesis: If tech firms' growth slows, alternative assets become more attractive"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflationary fears rise, gold demand increases as a hedge."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite falls, investors may seek established safe-havens like gold over Bitcoin."
-        },
-        "uncertainty": "If the US AI sector continues to grow, tech stocks may recover, reducing pressure on gold and Bitcoin."
-      },
-      "evidence": {
-        "E4": "Global stock markets have tumbled after investors sold tech shares on fears",
-        "E5": "The sell-off, which started in the US and then spread to Asia"
-      },
-      "analyzed_at": "2026-11-09T22:42:47Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     }
   ]
 }

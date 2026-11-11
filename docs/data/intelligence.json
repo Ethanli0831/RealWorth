@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-11T01:32:33Z",
-    "scan_started_at": "2026-11-11T01:24:55Z",
+    "checked_at": "2026-11-11T08:15:39Z",
+    "scan_started_at": "2026-11-11T08:09:07Z",
     "provider_requested": "local",
     "article_reads": 9,
     "ai_interpretations": 3,
-    "new_interpretations": 1,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,16 +19,105 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.theguardian.com/world/2026/nov/10/uk-and-argentina-clash-over-falklands-oil-project-as-hamburg-tribunal-starts",
+      "title": "UK and Argentina clash over Falklands oil project as Hamburg tribunal starts",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-10T14:49:32Z",
+      "historical": null,
+      "read_at": "2026-11-11T08:07:59Z",
+      "body_sha256": "ffa9d9f92ec96e0229bbd766091cf490417f55c01bf5378f8d7c3423a89243b8",
+      "body_characters": 5686,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "The UK and Argentina are clashing over the Falklands oil project at an international tribunal in Hamburg.",
+        "evidence_ids": [
+          "E2",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: UK and Argentina clash over Falklands oil project",
+          "financial_channel: If risk appetite decreases, investors may seek safety",
+          "asset_hypothesis: If geopolitical tensions rise, gold may benefit as a safe-haven"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If geopolitical tensions rise, investors may seek safety in gold."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite decreases, Bitcoin may underperform as a risky asset; if geopolitical tensions rise, it may gain as a hedge."
+        },
+        "uncertainty": "If the tribunal rules in favor of Argentina, the Falkland Islanders may not face the 'devastating consequences' mentioned."
+      },
+      "evidence": {
+        "E2": "Countries clash over Sea Lion project as Hamburg tribunal risks deepening sovereignty",
+        "E3": "The people of the Falkland Islands face “devastating consequences” if Argentina is"
+      },
+      "analyzed_at": "2026-11-10T21:00:24Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
+      "title": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-10T17:56:12Z",
+      "historical": null,
+      "read_at": "2026-11-11T08:09:08Z",
+      "body_sha256": "d45dccb8f97369a0be1a23787e8e7310407513b48ce8981c26eec5defbb97f99",
+      "body_characters": 3353,
+      "model_context_characters": 3353,
+      "status": "Unavailable: AI chain contains no financial transmission mechanism"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html",
+      "title": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-10T16:45:00Z",
+      "historical": null,
+      "read_at": "2026-11-11T08:12:28Z",
+      "body_sha256": "9e55b8784bc179b527498a0a3753e8541b7019a73e5ae28640c4f41ce3fc6d3b",
+      "body_characters": 18000,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI chain contains no financial transmission mechanism"
+    },
+    {
+      "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
+      "title": "Nvidia shaken by scandal amid wider political new order for big tech",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-10T15:04:38Z",
+      "historical": null,
+      "read_at": "2026-11-11T08:15:38Z",
+      "body_sha256": "9a9c8c4a10de1e8c492da6f0c215aae55ed17c28fcd3be809792924a56aa6e0c",
+      "body_characters": 5901,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/10/october-inflation-report",
+      "title": "US inflation rose 0.4% in October as price increases cooled and gas costs dipped",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-10T15:38:48Z",
+      "historical": null,
+      "read_at": "2026-11-11T08:15:39Z",
+      "body_sha256": "f6df0970f7f2b080fa64899b072b611d4e5919f1bf5f87a3af10734b52289cef",
+      "body_characters": 3663,
+      "model_context_characters": 3663,
+      "status": "Public body read; queued for AI"
+    },
+    {
       "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
       "title": "US inflation higher than expected in October - here's what is happening with prices",
       "publisher": "BBC Business",
       "published_at": "2026-11-10T14:45:46Z",
       "historical": null,
-      "read_at": "2026-11-11T01:24:56Z",
+      "read_at": "2026-11-11T08:15:39Z",
       "body_sha256": "9d1295f9399a7d291fb82abe0d2f9e791a2032987c781cdf6401eabf3ec5909b",
       "body_characters": 6310,
       "model_context_characters": 4500,
-      "status": "Unavailable: AI numerical statements require exact cited source support"
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
@@ -89,7 +178,7 @@
       "body_sha256": "3af605bc6ab77a171a4cb76bbead8b25f8e1f660fb26813445e5953065622fb9",
       "body_characters": 2841,
       "model_context_characters": 2841,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "Oil prices fell to their lowest level since August, while stock markets climbed after Trump downplayed the need for further military action against Iran.",
         "evidence_ids": [
@@ -121,104 +210,15 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.theguardian.com/world/2026/nov/10/uk-and-argentina-clash-over-falklands-oil-project-as-hamburg-tribunal-starts",
-      "title": "UK and Argentina clash over Falklands oil project as Hamburg tribunal starts",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-10T14:49:32Z",
-      "historical": null,
-      "read_at": "2026-11-10T20:58:29Z",
-      "body_sha256": "ffa9d9f92ec96e0229bbd766091cf490417f55c01bf5378f8d7c3423a89243b8",
-      "body_characters": 5686,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The UK and Argentina are clashing over the Falklands oil project at an international tribunal in Hamburg.",
-        "evidence_ids": [
-          "E2",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: UK and Argentina clash over Falklands oil project",
-          "financial_channel: If risk appetite decreases, investors may seek safety",
-          "asset_hypothesis: If geopolitical tensions rise, gold may benefit as a safe-haven"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If geopolitical tensions rise, investors may seek safety in gold."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite decreases, Bitcoin may underperform as a risky asset; if geopolitical tensions rise, it may gain as a hedge."
-        },
-        "uncertainty": "If the tribunal rules in favor of Argentina, the Falkland Islanders may not face the 'devastating consequences' mentioned."
-      },
-      "evidence": {
-        "E2": "Countries clash over Sea Lion project as Hamburg tribunal risks deepening sovereignty",
-        "E3": "The people of the Falkland Islands face “devastating consequences” if Argentina is"
-      },
-      "analyzed_at": "2026-11-10T21:00:24Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
-      "title": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
+      "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
+      "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
       "publisher": "BBC Business",
-      "published_at": "2026-11-10T17:56:12Z",
+      "published_at": "2026-11-09T19:58:01Z",
       "historical": null,
-      "read_at": "2026-11-11T01:32:30Z",
-      "body_sha256": "d45dccb8f97369a0be1a23787e8e7310407513b48ce8981c26eec5defbb97f99",
-      "body_characters": 3353,
-      "model_context_characters": 3353,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html",
-      "title": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-10T16:45:00Z",
-      "historical": null,
-      "read_at": "2026-11-11T01:32:32Z",
-      "body_sha256": "9e55b8784bc179b527498a0a3753e8541b7019a73e5ae28640c4f41ce3fc6d3b",
-      "body_characters": 18000,
+      "read_at": "2026-11-11T08:15:39Z",
+      "body_sha256": "d073cbfad26e3795ecb455feeac9144ccc07a25c14aa622a2cbebeb9d2a10438",
+      "body_characters": 5733,
       "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
-      "title": "Nvidia shaken by scandal amid wider political new order for big tech",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-10T15:04:38Z",
-      "historical": null,
-      "read_at": "2026-11-11T01:32:32Z",
-      "body_sha256": "9a9c8c4a10de1e8c492da6f0c215aae55ed17c28fcd3be809792924a56aa6e0c",
-      "body_characters": 5901,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
-      "title": "AI stocks climb after trillions wiped from market values",
-      "publisher": "BBC Technology",
-      "published_at": "2026-11-06T21:06:25Z",
-      "historical": null,
-      "read_at": "2026-11-11T01:32:33Z",
-      "body_sha256": "62500d369a796a22967a575934e7d1e3dff40e73513e25ef7f4f3509a4777e40",
-      "body_characters": 4833,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/10/october-inflation-report",
-      "title": "US inflation rose 0.4% in October as price increases cooled and gas costs dipped",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-10T15:38:48Z",
-      "historical": null,
-      "read_at": "2026-11-11T01:32:33Z",
-      "body_sha256": "f6df0970f7f2b080fa64899b072b611d4e5919f1bf5f87a3af10734b52289cef",
-      "body_characters": 3663,
-      "model_context_characters": 3663,
       "status": "Public body read; queued for AI"
     }
   ]

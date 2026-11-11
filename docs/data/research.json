@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-11T10:43:03Z",
+    "checked_at": "2026-11-11T18:08:01Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-11-11T10:43:03Z",
+    "checked_at": "2026-11-11T18:08:01Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -467,32 +467,6 @@
       ]
     },
     {
-      "title": "Could the AI bubble burst after Democrats' midterms sweep? - The Latest",
-      "url": "https://www.theguardian.com/news/video/2026/nov/06/could-the-ai-bubble-burst-after-democrats-midterms-sweep-the-latest",
-      "published_at": "2026-11-06T17:04:41Z",
-      "source_id": "guardian",
-      "publisher": "The Guardian Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "elections",
-        "ai_economics"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Could the AI bubble burst after Democrats' midterms sweep? - The Latest",
-          "url": "https://www.theguardian.com/news/video/2026/nov/06/could-the-ai-bubble-burst-after-democrats-midterms-sweep-the-latest",
-          "publisher": "The Guardian Business",
-          "published_at": "2026-11-06T17:04:41Z"
-        }
-      ]
-    },
-    {
       "title": "Fearing AI disruption, white-collar workers are quitting their jobs",
       "url": "https://www.theguardian.com/technology/2026/nov/06/ai-disruption-job-quitting",
       "published_at": "2026-11-06T14:00:45Z",
@@ -512,29 +486,6 @@
           "url": "https://www.theguardian.com/technology/2026/nov/06/ai-disruption-job-quitting",
           "publisher": "The Guardian Technology",
           "published_at": "2026-11-06T14:00:45Z"
-        }
-      ]
-    },
-    {
-      "title": "US job growth exceeds expectations in October despite economic uncertainty",
-      "url": "https://www.theguardian.com/business/2026/nov/06/us-job-growth-october",
-      "published_at": "2026-11-06T13:42:26Z",
-      "source_id": "guardian",
-      "publisher": "The Guardian Business",
-      "source_kind": "Publisher headline",
-      "topics": [],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "No clear macro impact",
-        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
-      },
-      "related_reports": [
-        {
-          "title": "US job growth exceeds expectations in October despite economic uncertainty",
-          "url": "https://www.theguardian.com/business/2026/nov/06/us-job-growth-october",
-          "publisher": "The Guardian Business",
-          "published_at": "2026-11-06T13:42:26Z"
         }
       ]
     },
@@ -737,31 +688,6 @@
           "published_at": "2026-10-29T10:00:00Z"
         }
       ]
-    },
-    {
-      "title": "Federal Reserve issues FOMC statement",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-      "published_at": "2026-10-28T18:00:00Z",
-      "source_id": "fed",
-      "publisher": "Federal Reserve",
-      "source_kind": "Primary institutional release",
-      "topics": [
-        "policy"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Federal Reserve issues FOMC statement",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-          "publisher": "Federal Reserve",
-          "published_at": "2026-10-28T18:00:00Z"
-        }
-      ]
     }
   ],
   "feed_health": [
@@ -769,47 +695,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-11T10:43:03Z",
+      "checked_at": "2026-11-11T18:08:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-11T10:43:03Z",
-      "matched": 1
+      "last_success": "2026-11-11T18:08:01Z",
+      "matched": 0
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-11T10:43:03Z",
+      "checked_at": "2026-11-11T18:08:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-11T10:43:03Z",
+      "last_success": "2026-11-11T18:08:01Z",
       "matched": 9
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-11T10:43:03Z",
+      "checked_at": "2026-11-11T18:08:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-11T10:43:03Z",
+      "last_success": "2026-11-11T18:08:01Z",
       "matched": 6
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-11T10:43:03Z",
+      "checked_at": "2026-11-11T18:08:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-11T10:43:03Z",
-      "matched": 6
+      "last_success": "2026-11-11T18:08:01Z",
+      "matched": 4
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-11T10:43:03Z",
+      "checked_at": "2026-11-11T18:08:01Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -819,40 +745,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-11T10:43:03Z",
+      "checked_at": "2026-11-11T18:08:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-11T10:43:03Z",
+      "last_success": "2026-11-11T18:08:01Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-11T10:43:03Z",
+      "checked_at": "2026-11-11T18:08:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-11T10:43:03Z",
+      "last_success": "2026-11-11T18:08:01Z",
       "matched": 4
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-11T10:43:03Z",
+      "checked_at": "2026-11-11T18:08:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-11T10:43:03Z",
+      "last_success": "2026-11-11T18:08:01Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-11T10:43:03Z",
+      "checked_at": "2026-11-11T18:08:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-11T10:43:03Z",
+      "last_success": "2026-11-11T18:08:01Z",
       "matched": 2
     }
   ],

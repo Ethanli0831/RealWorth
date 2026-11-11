@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-11T10:43:08Z",
-    "source_checked_at": "2026-11-11T10:43:03Z",
+    "built_at": "2026-11-11T18:08:07Z",
+    "source_checked_at": "2026-11-11T18:08:01Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -171,34 +171,6 @@
       "digest": "98426530c08dc71ad1cb960ea462523f22c2550a8890a8bb83a73aae2c39f6a8"
     },
     {
-      "title": "Could the AI bubble burst after Democrats' midterms sweep? - The Latest",
-      "url": "https://www.theguardian.com/news/video/2026/nov/06/could-the-ai-bubble-burst-after-democrats-midterms-sweep-the-latest",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-06T17:04:41Z",
-      "categories": [
-        "elections",
-        "ai_economics"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Proposal or possibility reported; not enacted law",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "508ea545bb6410f83380d19d2b650489ead88a23c94c636925bde2042f77ae24",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "d425ad20c59ddedcc3d727a5",
-      "first_observed_at": "2026-11-07T18:04:21Z",
-      "digest": "939b51d68b71c9418b305c6735931e6955edbbd7fdd2dac3d3652bf417509c2a"
-    },
-    {
       "title": "Scheduled FOMC meeting final day",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "publisher": "Federal Reserve",
@@ -365,34 +337,6 @@
       "id": "48ebbc55813340537e56fea2",
       "first_observed_at": "2026-11-10T18:10:53Z",
       "digest": "57c1c9f4f26f5ea7ae3b2b531dbac2f4c5cea1e49ee02e23ad1ad1b7f59e7365"
-    },
-    {
-      "title": "US job growth exceeds expectations in October despite economic uncertainty",
-      "url": "https://www.theguardian.com/business/2026/nov/06/us-job-growth-october",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-06T13:42:26Z",
-      "categories": [
-        "growth"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "GLD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "15fceee2932d3982f99570c393cee785424b5f365cd0711d789d44177099c20a",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "aabe9bc64cef6e00d2560f70",
-      "first_observed_at": "2026-11-07T17:43:49Z",
-      "digest": "195568a35573cb8dd5d1432dc8d9156f0ef2f02424d75598561a395228ebecf6"
     },
     {
       "title": "ECB publishes consolidated banking data for end-June 2026",
@@ -617,34 +561,6 @@
       "id": "a2ffe0632e5c95f6fef2f21d",
       "first_observed_at": "2026-11-07T17:33:52Z",
       "digest": "2de5e0b3511c66a4364e51568bd1d7be66bfb9a7266e76b19bc7809fb924a3b1"
-    },
-    {
-      "title": "Federal Reserve issues FOMC statement",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-      "publisher": "Federal Reserve",
-      "published_at": "2026-10-28T18:00:00Z",
-      "categories": [
-        "rates"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "GLD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "f5295ad54c3222b87685cb74",
-      "first_observed_at": "2026-11-07T17:33:52Z",
-      "digest": "9e40f386a8d48c16a966822f25f1742e49a2e3208b30cce63117e538c61a9cb1"
     }
   ],
   "categories": [
@@ -669,7 +585,7 @@
         "Separate campaign promises, introduced bills, enacted law and effective dates.",
         "Check company exposures rather than treating a party as an automatic buy/sell signal."
       ],
-      "event_count": 2,
+      "event_count": 1,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -715,7 +631,7 @@
         "Check utilization, order cancellations, financing and customer concentration.",
         "Distinguish a lower share valuation from cash automatically moving to another country."
       ],
-      "event_count": 4,
+      "event_count": 3,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -764,7 +680,7 @@
         "Check real yields, dollar funding and the policy response.",
         "Separate a growth shock from an inflation shock."
       ],
-      "event_count": 13,
+      "event_count": 12,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -960,8 +876,8 @@
         "Compare employment, spending and credit rather than relying on a single release.",
         "Review export/customer exposure and the scope of local policy support."
       ],
-      "event_count": 1,
-      "coverage": "Limited selected-headline coverage"
+      "event_count": 0,
+      "coverage": "No matching evidence in selected feeds; risk not ruled out"
     },
     {
       "id": "crypto_access",
@@ -1091,8 +1007,8 @@
       "id": "fomc",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "Fetched official schedule",
-      "last_success": "2026-11-11T10:43:08Z",
-      "attempted_at": "2026-11-11T10:43:08Z",
+      "last_success": "2026-11-11T18:08:07Z",
+      "attempted_at": "2026-11-11T18:08:07Z",
       "events": [
         {
           "title": "Scheduled FOMC meeting final day",
@@ -1382,7 +1298,7 @@
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-11T10:43:08Z",
+      "attempted_at": "2026-11-11T18:08:07Z",
       "events": [],
       "stale": true,
       "error": "HTTPError",
@@ -1394,47 +1310,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-11T10:43:03Z",
+      "checked_at": "2026-11-11T18:08:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-11T10:43:03Z",
-      "matched": 1
+      "last_success": "2026-11-11T18:08:01Z",
+      "matched": 0
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-11T10:43:03Z",
+      "checked_at": "2026-11-11T18:08:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-11T10:43:03Z",
+      "last_success": "2026-11-11T18:08:01Z",
       "matched": 9
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-11T10:43:03Z",
+      "checked_at": "2026-11-11T18:08:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-11T10:43:03Z",
+      "last_success": "2026-11-11T18:08:01Z",
       "matched": 6
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-11T10:43:03Z",
+      "checked_at": "2026-11-11T18:08:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-11T10:43:03Z",
-      "matched": 6
+      "last_success": "2026-11-11T18:08:01Z",
+      "matched": 4
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-11T10:43:03Z",
+      "checked_at": "2026-11-11T18:08:01Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1444,40 +1360,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-11T10:43:03Z",
+      "checked_at": "2026-11-11T18:08:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-11T10:43:03Z",
+      "last_success": "2026-11-11T18:08:01Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-11T10:43:03Z",
+      "checked_at": "2026-11-11T18:08:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-11T10:43:03Z",
+      "last_success": "2026-11-11T18:08:01Z",
       "matched": 4
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-11T10:43:03Z",
+      "checked_at": "2026-11-11T18:08:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-11T10:43:03Z",
+      "last_success": "2026-11-11T18:08:01Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-11T10:43:03Z",
+      "checked_at": "2026-11-11T18:08:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-11T10:43:03Z",
+      "last_success": "2026-11-11T18:08:01Z",
       "matched": 2
     }
   ],

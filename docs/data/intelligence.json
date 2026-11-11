@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-11T16:37:45Z",
-    "scan_started_at": "2026-11-11T16:29:37Z",
+    "checked_at": "2026-11-11T23:10:33Z",
+    "scan_started_at": "2026-11-11T23:00:20Z",
     "provider_requested": "local",
     "article_reads": 9,
     "ai_interpretations": 4,
-    "new_interpretations": 1,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,16 +19,146 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.theguardian.com/education/2026/nov/11/ai-close-to-impossible-assess-university-coursework-regulator",
+      "title": "AI has made it ‘close to impossible’ to assess university coursework, regulator says",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-11T07:00:33Z",
+      "historical": null,
+      "read_at": "2026-11-11T22:58:53Z",
+      "body_sha256": "f5ee77c3406a0a7b90de15d7c36f85b656fd4b6eabe5e887f4127c8acf3dbf9a",
+      "body_characters": 4035,
+      "model_context_characters": 4035,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The Office for Students warns universities to return to traditional exams and in-person presentations to combat AI misuse in coursework assessment.",
+        "evidence_ids": [
+          "E6",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: AI misuse in university coursework assessment",
+          "financial_channel: If risk appetite decreases, institutions may shift to more traditional assessment methods",
+          "asset_hypothesis: If universities face regulatory pressure, they may reduce reliance on AI for assessments"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If regulatory scrutiny intensifies, gold may be seen as a safer haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If universities shift to traditional exams, students may seek alternative investment channels, potentially affecting Bitcoin's liquidity."
+        },
+        "uncertainty": "If AI becomes more sophisticated, traditional assessment methods may not fully mitigate the risk of AI misuse."
+      },
+      "evidence": {
+        "E6": "Office for Students says institutions in England should return to traditional exams",
+        "E7": "Universities should go back to traditional exams and in-person presentations to grade"
+      },
+      "analyzed_at": "2026-11-11T16:37:43Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/10/uk-and-argentina-clash-over-falklands-oil-project-as-hamburg-tribunal-starts",
+      "title": "UK and Argentina clash over Falklands oil project as Hamburg tribunal starts",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-10T14:49:32Z",
+      "historical": null,
+      "read_at": "2026-11-11T22:58:53Z",
+      "body_sha256": "ffa9d9f92ec96e0229bbd766091cf490417f55c01bf5378f8d7c3423a89243b8",
+      "body_characters": 5686,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "The UK and Argentina are clashing over the Falklands oil project at an international tribunal in Hamburg.",
+        "evidence_ids": [
+          "E2",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: UK and Argentina clash over Falklands oil project",
+          "financial_channel: If risk appetite decreases, investors may seek safety",
+          "asset_hypothesis: If geopolitical tensions rise, gold may benefit as a safe-haven"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If geopolitical tensions rise, investors may seek safety in gold."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite decreases, Bitcoin may underperform as a risky asset; if geopolitical tensions rise, it may gain as a hedge."
+        },
+        "uncertainty": "If the tribunal rules in favor of Argentina, the Falkland Islanders may not face the 'devastating consequences' mentioned."
+      },
+      "evidence": {
+        "E2": "Countries clash over Sea Lion project as Hamburg tribunal risks deepening sovereignty",
+        "E3": "The people of the Falkland Islands face “devastating consequences” if Argentina is"
+      },
+      "analyzed_at": "2026-11-10T21:00:24Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
+      "title": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-10T17:56:12Z",
+      "historical": null,
+      "read_at": "2026-11-11T23:00:22Z",
+      "body_sha256": "d45dccb8f97369a0be1a23787e8e7310407513b48ce8981c26eec5defbb97f99",
+      "body_characters": 3353,
+      "model_context_characters": 3353,
+      "status": "Unavailable: AI chain contains no financial transmission mechanism"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html",
+      "title": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-10T16:45:00Z",
+      "historical": null,
+      "read_at": "2026-11-11T23:05:31Z",
+      "body_sha256": "9e55b8784bc179b527498a0a3753e8541b7019a73e5ae28640c4f41ce3fc6d3b",
+      "body_characters": 18000,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI chain contains no financial transmission mechanism"
+    },
+    {
+      "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
+      "title": "Nvidia shaken by scandal amid wider political new order for big tech",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-10T15:04:38Z",
+      "historical": null,
+      "read_at": "2026-11-11T23:10:33Z",
+      "body_sha256": "9a9c8c4a10de1e8c492da6f0c215aae55ed17c28fcd3be809792924a56aa6e0c",
+      "body_characters": 5901,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/10/october-inflation-report",
+      "title": "US inflation rose 0.4% in October as price increases cooled and gas costs dipped",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-10T15:38:48Z",
+      "historical": null,
+      "read_at": "2026-11-11T23:10:33Z",
+      "body_sha256": "f6df0970f7f2b080fa64899b072b611d4e5919f1bf5f87a3af10734b52289cef",
+      "body_characters": 3663,
+      "model_context_characters": 3663,
+      "status": "Public body read; queued for AI"
+    },
+    {
       "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
       "title": "US inflation higher than expected in October - here's what is happening with prices",
       "publisher": "BBC Business",
       "published_at": "2026-11-10T14:45:46Z",
       "historical": null,
-      "read_at": "2026-11-11T16:29:38Z",
+      "read_at": "2026-11-11T23:10:33Z",
       "body_sha256": "9d1295f9399a7d291fb82abe0d2f9e791a2032987c781cdf6401eabf3ec5909b",
       "body_characters": 6310,
       "model_context_characters": 4500,
-      "status": "Unavailable: AI numerical statements require exact cited source support"
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
@@ -85,7 +215,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-10T10:28:47Z",
       "historical": null,
-      "read_at": "2026-11-11T16:29:03Z",
+      "read_at": "2026-11-11T22:58:52Z",
       "body_sha256": "3af605bc6ab77a171a4cb76bbead8b25f8e1f660fb26813445e5953065622fb9",
       "body_characters": 2841,
       "model_context_characters": 2841,
@@ -119,136 +249,6 @@
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/education/2026/nov/11/ai-close-to-impossible-assess-university-coursework-regulator",
-      "title": "AI has made it ‘close to impossible’ to assess university coursework, regulator says",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-11T07:00:33Z",
-      "historical": null,
-      "read_at": "2026-11-11T16:35:21Z",
-      "body_sha256": "f5ee77c3406a0a7b90de15d7c36f85b656fd4b6eabe5e887f4127c8acf3dbf9a",
-      "body_characters": 4035,
-      "model_context_characters": 4035,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "The Office for Students warns universities to return to traditional exams and in-person presentations to combat AI misuse in coursework assessment.",
-        "evidence_ids": [
-          "E6",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: AI misuse in university coursework assessment",
-          "financial_channel: If risk appetite decreases, institutions may shift to more traditional assessment methods",
-          "asset_hypothesis: If universities face regulatory pressure, they may reduce reliance on AI for assessments"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If regulatory scrutiny intensifies, gold may be seen as a safer haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If universities shift to traditional exams, students may seek alternative investment channels, potentially affecting Bitcoin's liquidity."
-        },
-        "uncertainty": "If AI becomes more sophisticated, traditional assessment methods may not fully mitigate the risk of AI misuse."
-      },
-      "evidence": {
-        "E6": "Office for Students says institutions in England should return to traditional exams",
-        "E7": "Universities should go back to traditional exams and in-person presentations to grade"
-      },
-      "analyzed_at": "2026-11-11T16:37:43Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/10/uk-and-argentina-clash-over-falklands-oil-project-as-hamburg-tribunal-starts",
-      "title": "UK and Argentina clash over Falklands oil project as Hamburg tribunal starts",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-10T14:49:32Z",
-      "historical": null,
-      "read_at": "2026-11-11T08:07:59Z",
-      "body_sha256": "ffa9d9f92ec96e0229bbd766091cf490417f55c01bf5378f8d7c3423a89243b8",
-      "body_characters": 5686,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The UK and Argentina are clashing over the Falklands oil project at an international tribunal in Hamburg.",
-        "evidence_ids": [
-          "E2",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: UK and Argentina clash over Falklands oil project",
-          "financial_channel: If risk appetite decreases, investors may seek safety",
-          "asset_hypothesis: If geopolitical tensions rise, gold may benefit as a safe-haven"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If geopolitical tensions rise, investors may seek safety in gold."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite decreases, Bitcoin may underperform as a risky asset; if geopolitical tensions rise, it may gain as a hedge."
-        },
-        "uncertainty": "If the tribunal rules in favor of Argentina, the Falkland Islanders may not face the 'devastating consequences' mentioned."
-      },
-      "evidence": {
-        "E2": "Countries clash over Sea Lion project as Hamburg tribunal risks deepening sovereignty",
-        "E3": "The people of the Falkland Islands face “devastating consequences” if Argentina is"
-      },
-      "analyzed_at": "2026-11-10T21:00:24Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
-      "title": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-10T17:56:12Z",
-      "historical": null,
-      "read_at": "2026-11-11T16:37:43Z",
-      "body_sha256": "d45dccb8f97369a0be1a23787e8e7310407513b48ce8981c26eec5defbb97f99",
-      "body_characters": 3353,
-      "model_context_characters": 3353,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html",
-      "title": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-10T16:45:00Z",
-      "historical": null,
-      "read_at": "2026-11-11T16:37:44Z",
-      "body_sha256": "9e55b8784bc179b527498a0a3753e8541b7019a73e5ae28640c4f41ce3fc6d3b",
-      "body_characters": 18000,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
-      "title": "Nvidia shaken by scandal amid wider political new order for big tech",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-10T15:04:38Z",
-      "historical": null,
-      "read_at": "2026-11-11T16:37:44Z",
-      "body_sha256": "9a9c8c4a10de1e8c492da6f0c215aae55ed17c28fcd3be809792924a56aa6e0c",
-      "body_characters": 5901,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/10/october-inflation-report",
-      "title": "US inflation rose 0.4% in October as price increases cooled and gas costs dipped",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-10T15:38:48Z",
-      "historical": null,
-      "read_at": "2026-11-11T16:37:45Z",
-      "body_sha256": "f6df0970f7f2b080fa64899b072b611d4e5919f1bf5f87a3af10734b52289cef",
-      "body_characters": 3663,
-      "model_context_characters": 3663,
-      "status": "Public body read; queued for AI"
     }
   ]
 }

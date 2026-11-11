@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-10T23:30:56Z",
-    "record_count": 55,
+    "updated_at": "2026-11-11T10:43:08Z",
+    "record_count": 56,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -1617,6 +1617,34 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "8bb24028a435ba3eb83d89c988780777d08e17aeb84bc0c6b37189814290a1b1"
+    },
+    {
+      "id": "4e3cba82945e4a3798bec48a",
+      "first_observed_at": "2026-11-11T10:43:08Z",
+      "snapshot": {
+        "title": "AI has made it ‘close to impossible’ to assess university coursework, regulator says",
+        "url": "https://www.theguardian.com/education/2026/nov/11/ai-close-to-impossible-assess-university-coursework-regulator",
+        "publisher": "The Guardian Technology",
+        "published_at": "2026-11-11T07:00:33Z",
+        "categories": [
+          "ai_regulation"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "897f5d72cfd89dfb8ee98d8117092ac4ed43a2e697c4dac21638f5486e473305",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "29b6571f6f7c472a558460b169fb4fbf297980393d72075b71ef6b4e5f673eff"
     }
   ]
 }

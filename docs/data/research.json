@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-12T16:20:23Z",
+    "checked_at": "2026-11-12T22:19:17Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-11-12T16:20:23Z",
+    "checked_at": "2026-11-12T22:19:17Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -95,21 +95,21 @@
       {
         "id": "DFII10",
         "name": "10-year Treasury real yield",
-        "value": 2.66,
+        "value": 2.78,
         "unit": "%",
-        "period": "2026-11-09",
+        "period": "2026-11-10",
         "stale": false,
-        "change": 0.73,
+        "change": 0.85,
         "source": "https://fred.stlouisfed.org/series/DFII10"
       },
       {
         "id": "T10Y3M",
         "name": "10-year minus 3-month Treasury yield",
-        "value": 0.68,
+        "value": 0.78,
         "unit": "percentage points",
-        "period": "2026-11-10",
+        "period": "2026-11-12",
         "stale": false,
-        "change": -0.01,
+        "change": 0.02,
         "source": "https://fred.stlouisfed.org/series/T10Y3M"
       }
     ],
@@ -123,7 +123,32 @@
   },
   "news": [
     {
-      "title": "US workers are fighting to protect their jobs from AI – and winning",
+      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+      "published_at": "2026-11-12T17:45:00Z",
+      "source_id": "fed",
+      "publisher": "Federal Reserve",
+      "source_kind": "Primary institutional release",
+      "topics": [
+        "policy"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+          "publisher": "Federal Reserve",
+          "published_at": "2026-11-12T17:45:00Z"
+        }
+      ]
+    },
+    {
+      "title": "US public workers are fighting to protect their jobs from AI – and some are winning",
       "url": "https://www.theguardian.com/technology/2026/nov/12/us-workers-governments-unions-ai",
       "published_at": "2026-11-12T15:00:44Z",
       "source_id": "guardian_technology",
@@ -138,7 +163,7 @@
       },
       "related_reports": [
         {
-          "title": "US workers are fighting to protect their jobs from AI – and winning",
+          "title": "US public workers are fighting to protect their jobs from AI – and some are winning",
           "url": "https://www.theguardian.com/technology/2026/nov/12/us-workers-governments-unions-ai",
           "publisher": "The Guardian Technology",
           "published_at": "2026-11-12T15:00:44Z"
@@ -664,47 +689,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-12T16:20:23Z",
+      "checked_at": "2026-11-12T22:19:17Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T16:20:23Z",
-      "matched": 0
+      "last_success": "2026-11-12T22:19:17Z",
+      "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-12T16:20:23Z",
+      "checked_at": "2026-11-12T22:19:17Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T16:20:23Z",
+      "last_success": "2026-11-12T22:19:17Z",
       "matched": 6
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-12T16:20:23Z",
+      "checked_at": "2026-11-12T22:19:17Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T16:20:23Z",
+      "last_success": "2026-11-12T22:19:17Z",
       "matched": 8
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-12T16:20:23Z",
+      "checked_at": "2026-11-12T22:19:17Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T16:20:23Z",
+      "last_success": "2026-11-12T22:19:17Z",
       "matched": 4
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-12T16:20:23Z",
+      "checked_at": "2026-11-12T22:19:17Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -714,41 +739,41 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-12T16:20:23Z",
+      "checked_at": "2026-11-12T22:19:17Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T16:20:23Z",
+      "last_success": "2026-11-12T22:19:17Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-12T16:20:23Z",
+      "checked_at": "2026-11-12T22:19:17Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T16:20:23Z",
+      "last_success": "2026-11-12T22:19:17Z",
       "matched": 4
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-12T16:20:23Z",
+      "checked_at": "2026-11-12T22:19:17Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T16:20:23Z",
+      "last_success": "2026-11-12T22:19:17Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-12T16:20:23Z",
+      "checked_at": "2026-11-12T22:19:17Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T16:20:23Z",
-      "matched": 2
+      "last_success": "2026-11-12T22:19:17Z",
+      "matched": 1
     }
   ],
   "sources": [

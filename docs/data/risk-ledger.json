@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-11T10:43:08Z",
-    "record_count": 56,
+    "updated_at": "2026-11-12T22:19:23Z",
+    "record_count": 57,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -1645,6 +1645,36 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "29b6571f6f7c472a558460b169fb4fbf297980393d72075b71ef6b4e5f673eff"
+    },
+    {
+      "id": "70b67d36477c853201f8d630",
+      "first_observed_at": "2026-11-12T22:19:23Z",
+      "snapshot": {
+        "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+        "publisher": "Federal Reserve",
+        "published_at": "2026-11-12T17:45:00Z",
+        "categories": [
+          "rates"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "d33702329dfd0ea5695000a92d2dcdd07d7d5bb859f5e94ba88871bd773a1d4b"
     }
   ]
 }

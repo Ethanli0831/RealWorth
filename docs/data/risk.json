@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-12T16:20:30Z",
-    "source_checked_at": "2026-11-12T16:20:23Z",
+    "built_at": "2026-11-12T22:19:23Z",
+    "source_checked_at": "2026-11-12T22:19:17Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -10,7 +10,7 @@
     "disclosure": "Risk chains are transparent scenarios, not verified causal effects, probability forecasts or AI price targets. No warnings are backdated.",
     "feeds_fetched": 8,
     "feeds_total": 9,
-    "ledger_records": 56
+    "ledger_records": 57
   },
   "events": [
     {
@@ -171,6 +171,34 @@
       "id": "2100a0292cd9b883191420e5",
       "first_observed_at": "2026-11-07T18:08:17Z",
       "digest": "479566df9a598e96ffb6d33a3fbe0615df7107cfdb112f53aa6a8b7530b121f0"
+    },
+    {
+      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+      "publisher": "Federal Reserve",
+      "published_at": "2026-11-12T17:45:00Z",
+      "categories": [
+        "rates"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "70b67d36477c853201f8d630",
+      "first_observed_at": "2026-11-12T22:19:23Z",
+      "digest": "d33702329dfd0ea5695000a92d2dcdd07d7d5bb859f5e94ba88871bd773a1d4b"
     },
     {
       "title": "Falkland Islanders face ‘devastating consequences’ if Argentina blocks oil project, says UK",
@@ -570,7 +598,7 @@
         "Check real yields, dollar funding and the policy response.",
         "Separate a growth shock from an inflation shock."
       ],
-      "event_count": 9,
+      "event_count": 10,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -897,8 +925,8 @@
       "id": "fomc",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "Fetched official schedule",
-      "last_success": "2026-11-12T16:20:30Z",
-      "attempted_at": "2026-11-12T16:20:30Z",
+      "last_success": "2026-11-12T22:19:23Z",
+      "attempted_at": "2026-11-12T22:19:23Z",
       "events": [
         {
           "title": "Scheduled FOMC meeting final day",
@@ -1177,7 +1205,7 @@
         },
         {
           "title": "Scheduled FOMC meeting final day",
-          "at": "2027-12-08T05:00:00Z",
+          "at": "2027-11-17T05:00:00Z",
           "precision": "Date only; decision time not inferred"
         }
       ],
@@ -1188,7 +1216,7 @@
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-12T16:20:30Z",
+      "attempted_at": "2026-11-12T22:19:23Z",
       "events": [],
       "stale": true,
       "error": "HTTPError",
@@ -1200,47 +1228,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-12T16:20:23Z",
+      "checked_at": "2026-11-12T22:19:17Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T16:20:23Z",
-      "matched": 0
+      "last_success": "2026-11-12T22:19:17Z",
+      "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-12T16:20:23Z",
+      "checked_at": "2026-11-12T22:19:17Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T16:20:23Z",
+      "last_success": "2026-11-12T22:19:17Z",
       "matched": 6
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-12T16:20:23Z",
+      "checked_at": "2026-11-12T22:19:17Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T16:20:23Z",
+      "last_success": "2026-11-12T22:19:17Z",
       "matched": 8
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-12T16:20:23Z",
+      "checked_at": "2026-11-12T22:19:17Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T16:20:23Z",
+      "last_success": "2026-11-12T22:19:17Z",
       "matched": 4
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-12T16:20:23Z",
+      "checked_at": "2026-11-12T22:19:17Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1250,41 +1278,41 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-12T16:20:23Z",
+      "checked_at": "2026-11-12T22:19:17Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T16:20:23Z",
+      "last_success": "2026-11-12T22:19:17Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-12T16:20:23Z",
+      "checked_at": "2026-11-12T22:19:17Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T16:20:23Z",
+      "last_success": "2026-11-12T22:19:17Z",
       "matched": 4
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-12T16:20:23Z",
+      "checked_at": "2026-11-12T22:19:17Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T16:20:23Z",
+      "last_success": "2026-11-12T22:19:17Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-12T16:20:23Z",
+      "checked_at": "2026-11-12T22:19:17Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T16:20:23Z",
-      "matched": 2
+      "last_success": "2026-11-12T22:19:17Z",
+      "matched": 1
     }
   ],
   "gaps": [

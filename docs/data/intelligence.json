@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-11-12T13:14:51Z",
-    "scan_started_at": "2026-11-12T13:07:11Z",
+    "checked_at": "2026-11-12T21:10:06Z",
+    "scan_started_at": "2026-11-12T21:01:43Z",
     "provider_requested": "local",
     "article_reads": 10,
-    "ai_interpretations": 5,
+    "ai_interpretations": 6,
     "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -17,6 +17,112 @@
       "published_at": null,
       "historical": true,
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
+    },
+    {
+      "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
+      "title": "Nvidia shaken by scandal amid wider political new order for big tech",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-10T15:04:38Z",
+      "historical": null,
+      "read_at": "2026-11-12T21:01:46Z",
+      "body_sha256": "9a9c8c4a10de1e8c492da6f0c215aae55ed17c28fcd3be809792924a56aa6e0c",
+      "body_characters": 5901,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/10/october-inflation-report",
+      "title": "US inflation rose 0.4% in October as price increases cooled and gas costs dipped",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-10T15:38:48Z",
+      "historical": null,
+      "read_at": "2026-11-12T21:07:36Z",
+      "body_sha256": "f6df0970f7f2b080fa64899b072b611d4e5919f1bf5f87a3af10734b52289cef",
+      "body_characters": 3663,
+      "model_context_characters": 3663,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "US inflation rose 0.4% in October, slightly above expectations, as energy costs increased due to the Iran war.",
+        "evidence_ids": [
+          "E1",
+          "E2"
+        ],
+        "chain": [
+          "reported_event: US inflation rose 0.4% in October",
+          "financial_channel: If higher energy costs continue, it may affect inflation expectations",
+          "asset_hypothesis: If inflation expectations rise, gold may see increased demand as a hedge."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations rise due to energy costs, investors may seek gold as a hedge."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If risk appetite remains stable, Bitcoin may not see significant movement; otherwise, it could fluctuate."
+        },
+        "uncertainty": "If energy costs stabilize, the impact on inflation may be temporary, reducing pressure on the Fed to hike rates."
+      },
+      "evidence": {
+        "E1": "US inflation rose 0.4% from September to October, slightly above expectations but",
+        "E2": "Higher energy costs driven by the Iran war have been the main"
+      },
+      "analyzed_at": "2026-11-12T21:10:04Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
+      "title": "US inflation higher than expected in October - here's what is happening with prices",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-10T14:45:46Z",
+      "historical": null,
+      "read_at": "2026-11-12T21:10:04Z",
+      "body_sha256": "9d1295f9399a7d291fb82abe0d2f9e791a2032987c781cdf6401eabf3ec5909b",
+      "body_characters": 6310,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
+      "title": "ECB publishes consolidated banking data for end-June 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-06T09:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-11T16:29:03Z",
+      "body_sha256": "5d63ffb09003e052ea5c0fd742237462d9f2473fedd24eb55a87051dfec8e3ac",
+      "body_characters": 2315,
+      "model_context_characters": 2315,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "The ECB published consolidated banking data for EU credit institutions as of end-June 2026, covering 336 banking groups and 2283 credit institutions.",
+        "evidence_ids": [
+          "E5",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: ECB publishes banking data",
+          "financial_channel: If banking data improves, risk appetite may increase",
+          "asset_hypothesis: If risk appetite increases, gold may be down"
+        ],
+        "gold": {
+          "direction": "down",
+          "condition": "If banking data improves, risk appetite may increase, reducing demand for gold as a safe-haven."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If risk appetite increases, Bitcoin may be mixed as it competes with gold but lacks established safe-haven status."
+        },
+        "uncertainty": "If the banking data shows significant stress, risk appetite could decrease, increasing gold demand."
+      },
+      "evidence": {
+        "E5": "The data cover 336 banking groups and 2283 stand-alone credit institutions and",
+        "E7": "Source: ECB Note: Data for all reference periods relate to the EU27."
+      },
+      "analyzed_at": "2026-11-06T21:46:42Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.theguardian.com/business/2026/nov/10/oil-prices-fall-donald-trump-iran-war-ftse-100-markets",
@@ -69,7 +175,7 @@
       "body_sha256": "d073cbfad26e3795ecb455feeac9144ccc07a25c14aa622a2cbebeb9d2a10438",
       "body_characters": 5733,
       "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "Nvidia's shares fell by about 4% after an investigation into Jensen Huang's affair with an alleged Chinese spy.",
         "evidence_ids": [
@@ -110,7 +216,7 @@
       "body_sha256": "f5ee77c3406a0a7b90de15d7c36f85b656fd4b6eabe5e887f4127c8acf3dbf9a",
       "body_characters": 4035,
       "model_context_characters": 4035,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "The Office for Students warns universities to return to traditional exams and in-person presentations to combat AI misuse in coursework assessment.",
         "evidence_ids": [
@@ -188,11 +294,11 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-10T17:56:12Z",
       "historical": null,
-      "read_at": "2026-11-12T13:10:10Z",
+      "read_at": "2026-11-12T21:10:04Z",
       "body_sha256": "d45dccb8f97369a0be1a23787e8e7310407513b48ce8981c26eec5defbb97f99",
       "body_characters": 3353,
       "model_context_characters": 3353,
-      "status": "Unavailable: AI chain contains no financial transmission mechanism"
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html",
@@ -200,88 +306,11 @@
       "publisher": "European Central Bank",
       "published_at": "2026-11-10T16:45:00Z",
       "historical": null,
-      "read_at": "2026-11-12T13:14:50Z",
+      "read_at": "2026-11-12T21:10:06Z",
       "body_sha256": "9e55b8784bc179b527498a0a3753e8541b7019a73e5ae28640c4f41ce3fc6d3b",
       "body_characters": 18000,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
-      "title": "Nvidia shaken by scandal amid wider political new order for big tech",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-10T15:04:38Z",
-      "historical": null,
-      "read_at": "2026-11-12T13:14:50Z",
-      "body_sha256": "9a9c8c4a10de1e8c492da6f0c215aae55ed17c28fcd3be809792924a56aa6e0c",
-      "body_characters": 5901,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/10/october-inflation-report",
-      "title": "US inflation rose 0.4% in October as price increases cooled and gas costs dipped",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-10T15:38:48Z",
-      "historical": null,
-      "read_at": "2026-11-12T13:14:51Z",
-      "body_sha256": "f6df0970f7f2b080fa64899b072b611d4e5919f1bf5f87a3af10734b52289cef",
-      "body_characters": 3663,
-      "model_context_characters": 3663,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
-      "title": "US inflation higher than expected in October - here's what is happening with prices",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-10T14:45:46Z",
-      "historical": null,
-      "read_at": "2026-11-12T13:14:51Z",
-      "body_sha256": "9d1295f9399a7d291fb82abe0d2f9e791a2032987c781cdf6401eabf3ec5909b",
-      "body_characters": 6310,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
-      "title": "ECB publishes consolidated banking data for end-June 2026",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-06T09:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-11T16:29:03Z",
-      "body_sha256": "5d63ffb09003e052ea5c0fd742237462d9f2473fedd24eb55a87051dfec8e3ac",
-      "body_characters": 2315,
-      "model_context_characters": 2315,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The ECB published consolidated banking data for EU credit institutions as of end-June 2026, covering 336 banking groups and 2283 credit institutions.",
-        "evidence_ids": [
-          "E5",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: ECB publishes banking data",
-          "financial_channel: If banking data improves, risk appetite may increase",
-          "asset_hypothesis: If risk appetite increases, gold may be down"
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If banking data improves, risk appetite may increase, reducing demand for gold as a safe-haven."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If risk appetite increases, Bitcoin may be mixed as it competes with gold but lacks established safe-haven status."
-        },
-        "uncertainty": "If the banking data shows significant stress, risk appetite could decrease, increasing gold demand."
-      },
-      "evidence": {
-        "E5": "The data cover 336 banking groups and 2283 stand-alone credit institutions and",
-        "E7": "Source: ECB Note: Data for all reference periods relate to the EU27."
-      },
-      "analyzed_at": "2026-11-06T21:46:42Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     }
   ]
 }

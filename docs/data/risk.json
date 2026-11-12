@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-12T07:48:16Z",
-    "source_checked_at": "2026-11-12T07:48:11Z",
+    "built_at": "2026-11-12T16:20:30Z",
+    "source_checked_at": "2026-11-12T16:20:23Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -451,90 +451,6 @@
       "id": "bfe1623550a7917204203316",
       "first_observed_at": "2026-11-07T17:33:52Z",
       "digest": "01d49eb8a1a8d61ae09b81322eea6e8d5e79aff493b1ce22fdc0a23498f4f28a"
-    },
-    {
-      "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
-      "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-29T14:00:00Z",
-      "categories": [
-        "rates"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "GLD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "907b28408009fa7f5fc7af31",
-      "first_observed_at": "2026-11-07T17:33:52Z",
-      "digest": "e21790007ab7884ae69ab036496845e945fd2a8b46498ccc58c9fae185acdc51"
-    },
-    {
-      "title": "Monetary policy decisions",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-29T13:15:00Z",
-      "categories": [
-        "rates"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "GLD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "4c8cd8626d81216479579fa5",
-      "first_observed_at": "2026-11-07T17:33:52Z",
-      "digest": "0c9a285133d995219807bb07bbe5501087699e37b34aeda20defb207cc27b604"
-    },
-    {
-      "title": "ECB President Lagarde to step down on 7 February 2027",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-29T10:00:00Z",
-      "categories": [
-        "rates"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "GLD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "a2ffe0632e5c95f6fef2f21d",
-      "first_observed_at": "2026-11-07T17:33:52Z",
-      "digest": "2de5e0b3511c66a4364e51568bd1d7be66bfb9a7266e76b19bc7809fb924a3b1"
     }
   ],
   "categories": [
@@ -654,7 +570,7 @@
         "Check real yields, dollar funding and the policy response.",
         "Separate a growth shock from an inflation shock."
       ],
-      "event_count": 12,
+      "event_count": 9,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -981,8 +897,8 @@
       "id": "fomc",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "Fetched official schedule",
-      "last_success": "2026-11-12T07:48:16Z",
-      "attempted_at": "2026-11-12T07:48:16Z",
+      "last_success": "2026-11-12T16:20:30Z",
+      "attempted_at": "2026-11-12T16:20:30Z",
       "events": [
         {
           "title": "Scheduled FOMC meeting final day",
@@ -1272,7 +1188,7 @@
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-12T07:48:16Z",
+      "attempted_at": "2026-11-12T16:20:30Z",
       "events": [],
       "stale": true,
       "error": "HTTPError",
@@ -1284,47 +1200,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-12T07:48:11Z",
+      "checked_at": "2026-11-12T16:20:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T07:48:11Z",
+      "last_success": "2026-11-12T16:20:23Z",
       "matched": 0
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-12T07:48:11Z",
+      "checked_at": "2026-11-12T16:20:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T07:48:11Z",
-      "matched": 9
+      "last_success": "2026-11-12T16:20:23Z",
+      "matched": 6
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-12T07:48:11Z",
+      "checked_at": "2026-11-12T16:20:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T07:48:11Z",
-      "matched": 7
+      "last_success": "2026-11-12T16:20:23Z",
+      "matched": 8
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-12T07:48:11Z",
+      "checked_at": "2026-11-12T16:20:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T07:48:11Z",
+      "last_success": "2026-11-12T16:20:23Z",
       "matched": 4
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-12T07:48:11Z",
+      "checked_at": "2026-11-12T16:20:23Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1334,40 +1250,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-12T07:48:11Z",
+      "checked_at": "2026-11-12T16:20:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T07:48:11Z",
+      "last_success": "2026-11-12T16:20:23Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-12T07:48:11Z",
+      "checked_at": "2026-11-12T16:20:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T07:48:11Z",
-      "matched": 3
+      "last_success": "2026-11-12T16:20:23Z",
+      "matched": 4
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-12T07:48:11Z",
+      "checked_at": "2026-11-12T16:20:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T07:48:11Z",
+      "last_success": "2026-11-12T16:20:23Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-12T07:48:11Z",
+      "checked_at": "2026-11-12T16:20:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T07:48:11Z",
+      "last_success": "2026-11-12T16:20:23Z",
       "matched": 2
     }
   ],

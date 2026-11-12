@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-12T04:11:43Z",
-    "scan_started_at": "2026-11-12T04:02:58Z",
+    "checked_at": "2026-11-12T13:14:51Z",
+    "scan_started_at": "2026-11-12T13:07:11Z",
     "provider_requested": "local",
-    "article_reads": 9,
-    "ai_interpretations": 4,
-    "new_interpretations": 0,
+    "article_reads": 10,
+    "ai_interpretations": 5,
+    "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,12 +19,94 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.theguardian.com/business/2026/nov/10/oil-prices-fall-donald-trump-iran-war-ftse-100-markets",
+      "title": "Oil prices fall to lowest since August as Trump says Iran war is ‘effectively over’",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-10T10:28:47Z",
+      "historical": null,
+      "read_at": "2026-11-12T13:06:26Z",
+      "body_sha256": "3af605bc6ab77a171a4cb76bbead8b25f8e1f660fb26813445e5953065622fb9",
+      "body_characters": 2841,
+      "model_context_characters": 2841,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Oil prices fell to their lowest level since August, while stock markets climbed after Trump downplayed the need for further military action against Iran.",
+        "evidence_ids": [
+          "E8",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: Oil prices fell",
+          "financial_channel: If geopolitical tensions ease, risk appetite increases",
+          "asset_hypothesis: If risk appetite increases, stock markets climb"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If geopolitical tensions ease, gold may be seen as less of a safe haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite increases, Bitcoin may see mixed reactions as it competes with traditional assets."
+        },
+        "uncertainty": "If tensions flare up again, oil prices could rise and negatively impact stock markets."
+      },
+      "evidence": {
+        "E8": "Brent crude drops below $90 and markets climb after president downplays prospect",
+        "E3": "Airline stocks rose amid hopes that easing tensions could lead to lower"
+      },
+      "analyzed_at": "2026-11-11T01:32:30Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
+      "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-09T19:58:01Z",
+      "historical": null,
+      "read_at": "2026-11-12T13:07:12Z",
+      "body_sha256": "d073cbfad26e3795ecb455feeac9144ccc07a25c14aa622a2cbebeb9d2a10438",
+      "body_characters": 5733,
+      "model_context_characters": 4500,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Nvidia's shares fell by about 4% after an investigation into Jensen Huang's affair with an alleged Chinese spy.",
+        "evidence_ids": [
+          "E6",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: Nvidia shares fall",
+          "financial_channel: If risk appetite decreases",
+          "asset_hypothesis: If tech stocks are seen as riskier"
+        ],
+        "gold": {
+          "direction": "unclear",
+          "condition": "If gold is seen as a safer haven, investors might buy it, but if they focus on tech, gold could be ignored."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If Bitcoin is seen as a riskier alternative, investors might sell it, but if they focus on tech, Bitcoin could be unaffected."
+        },
+        "uncertainty": "If the affair is proven to be unrelated to national security, Nvidia's shares might recover quickly."
+      },
+      "evidence": {
+        "E6": "Hundreds of billions of dollars have been wiped off the value of",
+        "E7": "The tech firm saw its shares fall by about 4% by close"
+      },
+      "analyzed_at": "2026-11-12T13:10:10Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
       "url": "https://www.theguardian.com/education/2026/nov/11/ai-close-to-impossible-assess-university-coursework-regulator",
       "title": "AI has made it ‘close to impossible’ to assess university coursework, regulator says",
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-11T07:00:33Z",
       "historical": null,
-      "read_at": "2026-11-12T04:02:11Z",
+      "read_at": "2026-11-12T13:06:26Z",
       "body_sha256": "f5ee77c3406a0a7b90de15d7c36f85b656fd4b6eabe5e887f4127c8acf3dbf9a",
       "body_characters": 4035,
       "model_context_characters": 4035,
@@ -65,7 +147,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-10T14:49:32Z",
       "historical": null,
-      "read_at": "2026-11-12T04:02:11Z",
+      "read_at": "2026-11-12T13:06:27Z",
       "body_sha256": "ffa9d9f92ec96e0229bbd766091cf490417f55c01bf5378f8d7c3423a89243b8",
       "body_characters": 5686,
       "model_context_characters": 4500,
@@ -106,7 +188,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-10T17:56:12Z",
       "historical": null,
-      "read_at": "2026-11-12T04:02:59Z",
+      "read_at": "2026-11-12T13:10:10Z",
       "body_sha256": "d45dccb8f97369a0be1a23787e8e7310407513b48ce8981c26eec5defbb97f99",
       "body_characters": 3353,
       "model_context_characters": 3353,
@@ -118,11 +200,11 @@
       "publisher": "European Central Bank",
       "published_at": "2026-11-10T16:45:00Z",
       "historical": null,
-      "read_at": "2026-11-12T04:07:24Z",
+      "read_at": "2026-11-12T13:14:50Z",
       "body_sha256": "9e55b8784bc179b527498a0a3753e8541b7019a73e5ae28640c4f41ce3fc6d3b",
       "body_characters": 18000,
       "model_context_characters": 4500,
-      "status": "Unavailable: AI chain contains no financial transmission mechanism"
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
@@ -130,7 +212,7 @@
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-10T15:04:38Z",
       "historical": null,
-      "read_at": "2026-11-12T04:11:43Z",
+      "read_at": "2026-11-12T13:14:50Z",
       "body_sha256": "9a9c8c4a10de1e8c492da6f0c215aae55ed17c28fcd3be809792924a56aa6e0c",
       "body_characters": 5901,
       "model_context_characters": 4500,
@@ -142,7 +224,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-10T15:38:48Z",
       "historical": null,
-      "read_at": "2026-11-12T04:11:43Z",
+      "read_at": "2026-11-12T13:14:51Z",
       "body_sha256": "f6df0970f7f2b080fa64899b072b611d4e5919f1bf5f87a3af10734b52289cef",
       "body_characters": 3663,
       "model_context_characters": 3663,
@@ -154,7 +236,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-10T14:45:46Z",
       "historical": null,
-      "read_at": "2026-11-12T04:11:43Z",
+      "read_at": "2026-11-12T13:14:51Z",
       "body_sha256": "9d1295f9399a7d291fb82abe0d2f9e791a2032987c781cdf6401eabf3ec5909b",
       "body_characters": 6310,
       "model_context_characters": 4500,
@@ -197,55 +279,6 @@
         "E7": "Source: ECB Note: Data for all reference periods relate to the EU27."
       },
       "analyzed_at": "2026-11-06T21:46:42Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/video/2026/nov/10/mandatory-ai-safety-and-security-protections-announced-after-openai-breach-of-medicare-video",
-      "title": "Mandatory AI safety and security protections announced after OpenAI breach of Medicare – video",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-10T05:29:32Z",
-      "historical": null,
-      "status": "Unavailable: Insufficient public article text"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/10/oil-prices-fall-donald-trump-iran-war-ftse-100-markets",
-      "title": "Oil prices fall to lowest since August as Trump says Iran war is ‘effectively over’",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-10T10:28:47Z",
-      "historical": null,
-      "read_at": "2026-11-11T22:58:52Z",
-      "body_sha256": "3af605bc6ab77a171a4cb76bbead8b25f8e1f660fb26813445e5953065622fb9",
-      "body_characters": 2841,
-      "model_context_characters": 2841,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Oil prices fell to their lowest level since August, while stock markets climbed after Trump downplayed the need for further military action against Iran.",
-        "evidence_ids": [
-          "E8",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: Oil prices fell",
-          "financial_channel: If geopolitical tensions ease, risk appetite increases",
-          "asset_hypothesis: If risk appetite increases, stock markets climb"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If geopolitical tensions ease, gold may be seen as less of a safe haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite increases, Bitcoin may see mixed reactions as it competes with traditional assets."
-        },
-        "uncertainty": "If tensions flare up again, oil prices could rise and negatively impact stock markets."
-      },
-      "evidence": {
-        "E8": "Brent crude drops below $90 and markets climb after president downplays prospect",
-        "E3": "Airline stocks rose amid hopes that easing tensions could lead to lower"
-      },
-      "analyzed_at": "2026-11-11T01:32:30Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"

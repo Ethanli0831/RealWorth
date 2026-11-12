@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-12T00:50:07Z",
+    "checked_at": "2026-11-12T07:48:11Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-11-12T00:50:07Z",
+    "checked_at": "2026-11-12T07:48:11Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -123,9 +123,9 @@
   },
   "news": [
     {
-      "title": "'Not the answer': Labour MPs speak out against Rosebank as decision looms",
-      "url": "https://www.bbc.co.uk/news/articles/cqp9dr79jkrzo?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-11-11T21:42:20Z",
+      "title": "UK economy grows at fastest rate for more than two years",
+      "url": "https://www.bbc.co.uk/news/articles/ck3rgd429zd5o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-11-12T07:32:41Z",
       "source_id": "bbc",
       "publisher": "BBC Business",
       "source_kind": "Publisher headline",
@@ -138,10 +138,10 @@
       },
       "related_reports": [
         {
-          "title": "'Not the answer': Labour MPs speak out against Rosebank as decision looms",
-          "url": "https://www.bbc.co.uk/news/articles/cqp9dr79jkrzo?at_medium=RSS&at_campaign=rss",
+          "title": "UK economy grows at fastest rate for more than two years",
+          "url": "https://www.bbc.co.uk/news/articles/ck3rgd429zd5o?at_medium=RSS&at_campaign=rss",
           "publisher": "BBC Business",
-          "published_at": "2026-11-11T21:42:20Z"
+          "published_at": "2026-11-12T07:32:41Z"
         }
       ]
     },
@@ -365,31 +365,6 @@
           "url": "https://www.theguardian.com/business/2026/nov/10/oil-prices-fall-donald-trump-iran-war-ftse-100-markets",
           "publisher": "The Guardian Business",
           "published_at": "2026-11-10T10:28:47Z"
-        }
-      ]
-    },
-    {
-      "title": "Mandatory AI safety and security protections announced after OpenAI breach of Medicare – video",
-      "url": "https://www.theguardian.com/australia-news/video/2026/nov/10/mandatory-ai-safety-and-security-protections-announced-after-openai-breach-of-medicare-video",
-      "published_at": "2026-11-10T05:29:32Z",
-      "source_id": "guardian_technology",
-      "publisher": "The Guardian Technology",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "ai_regulation"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Mandatory AI safety and security protections announced after OpenAI breach of Medicare – video",
-          "url": "https://www.theguardian.com/australia-news/video/2026/nov/10/mandatory-ai-safety-and-security-protections-announced-after-openai-breach-of-medicare-video",
-          "publisher": "The Guardian Technology",
-          "published_at": "2026-11-10T05:29:32Z"
         }
       ]
     },
@@ -718,47 +693,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-12T00:50:07Z",
+      "checked_at": "2026-11-12T07:48:11Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T00:50:07Z",
+      "last_success": "2026-11-12T07:48:11Z",
       "matched": 0
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-12T00:50:07Z",
+      "checked_at": "2026-11-12T07:48:11Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T00:50:07Z",
+      "last_success": "2026-11-12T07:48:11Z",
       "matched": 9
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-12T00:50:07Z",
+      "checked_at": "2026-11-12T07:48:11Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T00:50:07Z",
+      "last_success": "2026-11-12T07:48:11Z",
       "matched": 7
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-12T00:50:07Z",
+      "checked_at": "2026-11-12T07:48:11Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T00:50:07Z",
+      "last_success": "2026-11-12T07:48:11Z",
       "matched": 4
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-12T00:50:07Z",
+      "checked_at": "2026-11-12T07:48:11Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -768,40 +743,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-12T00:50:07Z",
+      "checked_at": "2026-11-12T07:48:11Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T00:50:07Z",
+      "last_success": "2026-11-12T07:48:11Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-12T00:50:07Z",
+      "checked_at": "2026-11-12T07:48:11Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T00:50:07Z",
-      "matched": 4
+      "last_success": "2026-11-12T07:48:11Z",
+      "matched": 3
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-12T00:50:07Z",
+      "checked_at": "2026-11-12T07:48:11Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T00:50:07Z",
+      "last_success": "2026-11-12T07:48:11Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-12T00:50:07Z",
+      "checked_at": "2026-11-12T07:48:11Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-12T00:50:07Z",
+      "last_success": "2026-11-12T07:48:11Z",
       "matched": 2
     }
   ],

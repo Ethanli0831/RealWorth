@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-13T01:29:13.046732+00:00",
+    "checked_at": "2026-11-13T12:40:17.676376+00:00",
     "refresh": "Every four hours requested; source publication and GitHub delays apply.",
     "scope": "Selected free public sources. Missing/paid sources are not substituted with estimates."
   },
@@ -17,7 +17,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-13T01:29:13.046732+00:00",
+      "last_success": "2026-11-13T12:40:17.676376+00:00",
       "history": [
         {
           "date": "2026-10-22",
@@ -109,12 +109,12 @@
       "source": "https://docs.deribit.com/#public-get_book_summary_by_currency",
       "note": "Deribit BTC-PERPETUAL only; 8-hour funding is not annualised. Positive funding is not a directional forecast.",
       "unit": "% / 8 hours",
-      "value": 0.004646,
+      "value": -2.7e-05,
       "period": "2026-11-13",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-13T01:29:13.046732+00:00",
+      "last_success": "2026-11-13T12:40:17.676376+00:00",
       "history": [
         {
           "date": "2026-10-25",
@@ -194,7 +194,7 @@
         },
         {
           "date": "2026-11-13",
-          "value": 0.004646
+          "value": -2.7e-05
         }
       ],
       "percentile": null,
@@ -208,12 +208,12 @@
       "source": "https://docs.deribit.com/#public-get_book_summary_by_currency",
       "note": "USD notional can rise from price changes. One exchange does not measure all leverage.",
       "unit": "USD notional",
-      "value": 697501770.0,
+      "value": 685574190.0,
       "period": "2026-11-13",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-13T01:29:13.046732+00:00",
+      "last_success": "2026-11-13T12:40:17.676376+00:00",
       "history": [
         {
           "date": "2026-10-25",
@@ -293,7 +293,7 @@
         },
         {
           "date": "2026-11-13",
-          "value": 697501770.0
+          "value": 685574190.0
         }
       ],
       "percentile": null,
@@ -312,7 +312,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-13T01:29:13.046732+00:00",
+      "last_success": "2026-11-13T12:40:17.676376+00:00",
       "history": [
         {
           "date": "2025-11-11",
@@ -1794,17 +1794,13 @@
       "source": "https://docs.coinmetrics.io/asset-metrics/addresses/adractcnt",
       "note": "Coin Metrics community coverage. Addresses are not distinct people.",
       "unit": "addresses / day",
-      "value": 645477.0,
-      "period": "2026-11-11",
+      "value": 675769.0,
+      "period": "2026-11-12",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-13T01:29:13.046732+00:00",
+      "last_success": "2026-11-13T12:40:17.676376+00:00",
       "history": [
-        {
-          "date": "2025-11-10",
-          "value": 723219.0
-        },
         {
           "date": "2025-11-11",
           "value": 717240.0
@@ -3268,9 +3264,13 @@
         {
           "date": "2026-11-11",
           "value": 645477.0
+        },
+        {
+          "date": "2026-11-12",
+          "value": 675769.0
         }
       ],
-      "percentile": 53.7,
+      "percentile": 72.5,
       "percentile_minimum": 250,
       "observations": 367
     },
@@ -3281,17 +3281,13 @@
       "source": "https://docs.coinmetrics.io/asset-metrics/transactions/txcnt",
       "note": "Transactions include exchange and self transfers; not a direct adoption or valuation measure.",
       "unit": "transactions / day",
-      "value": 555762.0,
-      "period": "2026-11-11",
+      "value": 473684.0,
+      "period": "2026-11-12",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-13T01:29:13.046732+00:00",
+      "last_success": "2026-11-13T12:40:17.676376+00:00",
       "history": [
-        {
-          "date": "2025-11-10",
-          "value": 451762.0
-        },
         {
           "date": "2025-11-11",
           "value": 480595.0
@@ -4755,9 +4751,13 @@
         {
           "date": "2026-11-11",
           "value": 555762.0
+        },
+        {
+          "date": "2026-11-12",
+          "value": 473684.0
         }
       ],
-      "percentile": 47.1,
+      "percentile": 30.8,
       "percentile_minimum": 250,
       "observations": 367
     },
@@ -4768,17 +4768,13 @@
       "source": "https://docs.coinmetrics.io/asset-metrics/fees/feetotntv",
       "note": "BTC per day; fee changes can reflect congestion, not just demand.",
       "unit": "BTC / day",
-      "value": 3.164996,
-      "period": "2026-11-11",
+      "value": 2.970103,
+      "period": "2026-11-12",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-13T01:29:13.046732+00:00",
+      "last_success": "2026-11-13T12:40:17.676376+00:00",
       "history": [
-        {
-          "date": "2025-11-10",
-          "value": 3.744173
-        },
         {
           "date": "2025-11-11",
           "value": 2.740647
@@ -6242,9 +6238,13 @@
         {
           "date": "2026-11-11",
           "value": 3.164996
+        },
+        {
+          "date": "2026-11-12",
+          "value": 2.970103
         }
       ],
-      "percentile": 75.5,
+      "percentile": 64.6,
       "percentile_minimum": 250,
       "observations": 367
     },
@@ -6255,17 +6255,13 @@
       "source": "https://docs.coinmetrics.io/asset-metrics/mining/hashrate",
       "note": "Estimated network security input, not a price target.",
       "unit": "TH/s",
-      "value": 988282477.071995,
-      "period": "2026-11-11",
+      "value": 877653838.567121,
+      "period": "2026-11-12",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-13T01:29:13.046732+00:00",
+      "last_success": "2026-11-13T12:40:17.676376+00:00",
       "history": [
-        {
-          "date": "2025-11-10",
-          "value": 1085484605.477361
-        },
         {
           "date": "2025-11-11",
           "value": 1186279607.268898
@@ -7729,9 +7725,13 @@
         {
           "date": "2026-11-11",
           "value": 988282477.071995
+        },
+        {
+          "date": "2026-11-12",
+          "value": 877653838.567121
         }
       ],
-      "percentile": 55.9,
+      "percentile": 16.6,
       "percentile_minimum": 250,
       "observations": 367
     },
@@ -7747,7 +7747,7 @@
       "status": "Fetched",
       "error": null,
       "stale": true,
-      "last_success": "2026-11-13T01:29:13.046732+00:00",
+      "last_success": "2026-11-13T12:40:17.676376+00:00",
       "history": [
         {
           "date": "2025-09-01",
@@ -7818,7 +7818,7 @@
       "status": "Fetched",
       "error": null,
       "stale": true,
-      "last_success": "2026-11-13T01:29:13.046732+00:00",
+      "last_success": "2026-11-13T12:40:17.676376+00:00",
       "history": [
         {
           "date": "2025-11-05",
@@ -8845,7 +8845,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-13T01:29:13.046732+00:00",
+      "last_success": "2026-11-13T12:40:17.676376+00:00",
       "history": [
         {
           "date": "2026-10-20",

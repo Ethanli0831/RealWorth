@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-13T02:42:44Z",
+    "checked_at": "2026-11-13T10:05:18Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-11-13T02:42:44Z",
+    "checked_at": "2026-11-13T10:05:18Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -415,29 +415,6 @@
       ]
     },
     {
-      "title": "Qantas to outsource 850 local jobs with most roles moving to India",
-      "url": "https://www.bbc.co.uk/news/articles/cry838v4qzvyo?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-11-10T01:55:22Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "No clear macro impact",
-        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
-      },
-      "related_reports": [
-        {
-          "title": "Qantas to outsource 850 local jobs with most roles moving to India",
-          "url": "https://www.bbc.co.uk/news/articles/cry838v4qzvyo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-11-10T01:55:22Z"
-        }
-      ]
-    },
-    {
       "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
       "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-11-09T19:58:01Z",
@@ -632,31 +609,6 @@
           "published_at": "2026-10-30T14:00:00Z"
         }
       ]
-    },
-    {
-      "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
-      "published_at": "2026-10-30T09:00:00Z",
-      "source_id": "ecb",
-      "publisher": "European Central Bank",
-      "source_kind": "Primary institutional release",
-      "topics": [
-        "policy"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
-          "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
-          "publisher": "European Central Bank",
-          "published_at": "2026-10-30T09:00:00Z"
-        }
-      ]
     }
   ],
   "feed_health": [
@@ -664,47 +616,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-13T02:42:44Z",
+      "checked_at": "2026-11-13T10:05:18Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T02:42:44Z",
+      "last_success": "2026-11-13T10:05:18Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-13T02:42:44Z",
+      "checked_at": "2026-11-13T10:05:18Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T02:42:44Z",
-      "matched": 6
+      "last_success": "2026-11-13T10:05:18Z",
+      "matched": 5
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-13T02:42:44Z",
+      "checked_at": "2026-11-13T10:05:18Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T02:42:44Z",
-      "matched": 8
+      "last_success": "2026-11-13T10:05:18Z",
+      "matched": 7
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-13T02:42:44Z",
+      "checked_at": "2026-11-13T10:05:18Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T02:42:44Z",
+      "last_success": "2026-11-13T10:05:18Z",
       "matched": 4
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-13T02:42:44Z",
+      "checked_at": "2026-11-13T10:05:18Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -714,41 +666,41 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-13T02:42:44Z",
+      "checked_at": "2026-11-13T10:05:18Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T02:42:44Z",
+      "last_success": "2026-11-13T10:05:18Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-13T02:42:44Z",
+      "checked_at": "2026-11-13T10:05:18Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T02:42:44Z",
+      "last_success": "2026-11-13T10:05:18Z",
       "matched": 3
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-13T02:42:44Z",
+      "checked_at": "2026-11-13T10:05:18Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T02:42:44Z",
+      "last_success": "2026-11-13T10:05:18Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-13T02:42:44Z",
+      "checked_at": "2026-11-13T10:05:18Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T02:42:44Z",
-      "matched": 1
+      "last_success": "2026-11-13T10:05:18Z",
+      "matched": 0
     }
   ],
   "sources": [

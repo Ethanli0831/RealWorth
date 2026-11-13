@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-13T10:05:23Z",
-    "source_checked_at": "2026-11-13T10:05:18Z",
+    "built_at": "2026-11-13T17:40:06Z",
+    "source_checked_at": "2026-11-13T17:40:01Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -287,34 +287,6 @@
       "digest": "f9d47b267f322bcc25ac87546bd27686e993e87debc30dffe2ab59da04d27d14"
     },
     {
-      "title": "Oil prices fall to lowest since August as Trump says Iran war is ‘effectively over’",
-      "url": "https://www.theguardian.com/business/2026/nov/10/oil-prices-fall-donald-trump-iran-war-ftse-100-markets",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-10T10:28:47Z",
-      "categories": [
-        "energy"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "GLD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "d8bbcc3e2536f510751f3f7fc1417a5af288b2bec41ac3c65aa827eef6c5d064",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "48ebbc55813340537e56fea2",
-      "first_observed_at": "2026-11-10T18:10:53Z",
-      "digest": "57c1c9f4f26f5ea7ae3b2b531dbac2f4c5cea1e49ee02e23ad1ad1b7f59e7365"
-    },
-    {
       "title": "ECB publishes consolidated banking data for end-June 2026",
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
       "publisher": "European Central Bank",
@@ -397,34 +369,6 @@
       "id": "c0a9cfb19d0feb55955f9359",
       "first_observed_at": "2026-11-07T17:33:52Z",
       "digest": "fd3e5ab47d2a07758dcc3747f2b15df7757bfb3775d12c14885202c8452cdc23"
-    },
-    {
-      "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
-      "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
-      "publisher": "European Central Bank",
-      "published_at": "2026-10-30T14:00:00Z",
-      "categories": [
-        "rates"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "GLD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "cf21635d7ef72740e03583f4",
-      "first_observed_at": "2026-11-07T17:33:52Z",
-      "digest": "7e84bee68103762018d9d86000d3bb2995beb332e229a43f827355788b9331f9"
     }
   ],
   "categories": [
@@ -544,7 +488,7 @@
         "Check real yields, dollar funding and the policy response.",
         "Separate a growth shock from an inflation shock."
       ],
-      "event_count": 9,
+      "event_count": 8,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -594,7 +538,7 @@
         "Distinguish announcements from operating supply.",
         "Review power prices, water, transmission and customer location."
       ],
-      "event_count": 2,
+      "event_count": 1,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -871,8 +815,8 @@
       "id": "fomc",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "Fetched official schedule",
-      "last_success": "2026-11-13T10:05:23Z",
-      "attempted_at": "2026-11-13T10:05:23Z",
+      "last_success": "2026-11-13T17:40:06Z",
+      "attempted_at": "2026-11-13T17:40:06Z",
       "events": [
         {
           "title": "Scheduled FOMC meeting final day",
@@ -1162,7 +1106,7 @@
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-13T10:05:23Z",
+      "attempted_at": "2026-11-13T17:40:06Z",
       "events": [],
       "stale": true,
       "error": "HTTPError",
@@ -1174,47 +1118,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-13T10:05:18Z",
+      "checked_at": "2026-11-13T17:40:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T10:05:18Z",
+      "last_success": "2026-11-13T17:40:01Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-13T10:05:18Z",
+      "checked_at": "2026-11-13T17:40:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T10:05:18Z",
-      "matched": 5
+      "last_success": "2026-11-13T17:40:01Z",
+      "matched": 4
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-13T10:05:18Z",
+      "checked_at": "2026-11-13T17:40:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T10:05:18Z",
-      "matched": 7
+      "last_success": "2026-11-13T17:40:01Z",
+      "matched": 6
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-13T10:05:18Z",
+      "checked_at": "2026-11-13T17:40:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T10:05:18Z",
-      "matched": 4
+      "last_success": "2026-11-13T17:40:01Z",
+      "matched": 3
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-13T10:05:18Z",
+      "checked_at": "2026-11-13T17:40:01Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1224,40 +1168,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-13T10:05:18Z",
+      "checked_at": "2026-11-13T17:40:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T10:05:18Z",
+      "last_success": "2026-11-13T17:40:01Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-13T10:05:18Z",
+      "checked_at": "2026-11-13T17:40:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T10:05:18Z",
-      "matched": 3
+      "last_success": "2026-11-13T17:40:01Z",
+      "matched": 2
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-13T10:05:18Z",
+      "checked_at": "2026-11-13T17:40:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T10:05:18Z",
+      "last_success": "2026-11-13T17:40:01Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-13T10:05:18Z",
+      "checked_at": "2026-11-13T17:40:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T10:05:18Z",
+      "last_success": "2026-11-13T17:40:01Z",
       "matched": 0
     }
   ],

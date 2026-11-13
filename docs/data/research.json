@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-13T10:05:18Z",
+    "checked_at": "2026-11-13T17:40:01Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-11-13T10:05:18Z",
+    "checked_at": "2026-11-13T17:40:01Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -85,11 +85,11 @@
       {
         "id": "BAMLH0A0HYM2",
         "name": "US high-yield credit spread",
-        "value": 3.3,
+        "value": 3.2,
         "unit": "percentage points",
-        "period": "2026-11-11",
+        "period": "2026-11-12",
         "stale": false,
-        "change": 0.51,
+        "change": 0.38,
         "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
       },
       {
@@ -367,54 +367,6 @@
       ]
     },
     {
-      "title": "Civil servant who secretly held five jobs found guilty of fraud",
-      "url": "https://www.bbc.co.uk/news/articles/cm70pgnx891do?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-11-10T13:39:28Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "No clear macro impact",
-        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
-      },
-      "related_reports": [
-        {
-          "title": "Civil servant who secretly held five jobs found guilty of fraud",
-          "url": "https://www.bbc.co.uk/news/articles/cm70pgnx891do?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-11-10T13:39:28Z"
-        }
-      ]
-    },
-    {
-      "title": "Oil prices fall to lowest since August as Trump says Iran war is ‘effectively over’",
-      "url": "https://www.theguardian.com/business/2026/nov/10/oil-prices-fall-donald-trump-iran-war-ftse-100-markets",
-      "published_at": "2026-11-10T10:28:47Z",
-      "source_id": "guardian",
-      "publisher": "The Guardian Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "energy"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Oil prices fall to lowest since August as Trump says Iran war is ‘effectively over’",
-          "url": "https://www.theguardian.com/business/2026/nov/10/oil-prices-fall-donald-trump-iran-war-ftse-100-markets",
-          "publisher": "The Guardian Business",
-          "published_at": "2026-11-10T10:28:47Z"
-        }
-      ]
-    },
-    {
       "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
       "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-11-09T19:58:01Z",
@@ -484,29 +436,6 @@
           "url": "https://www.theguardian.com/us-news/2026/nov/09/democrats-midterms-economy-healthcare",
           "publisher": "The Guardian Business",
           "published_at": "2026-11-09T11:00:07Z"
-        }
-      ]
-    },
-    {
-      "title": "Fearing AI disruption, white-collar workers are quitting their jobs",
-      "url": "https://www.theguardian.com/technology/2026/nov/06/ai-disruption-job-quitting",
-      "published_at": "2026-11-06T14:00:45Z",
-      "source_id": "guardian_technology",
-      "publisher": "The Guardian Technology",
-      "source_kind": "Publisher headline",
-      "topics": [],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "No clear macro impact",
-        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
-      },
-      "related_reports": [
-        {
-          "title": "Fearing AI disruption, white-collar workers are quitting their jobs",
-          "url": "https://www.theguardian.com/technology/2026/nov/06/ai-disruption-job-quitting",
-          "publisher": "The Guardian Technology",
-          "published_at": "2026-11-06T14:00:45Z"
         }
       ]
     },
@@ -584,31 +513,6 @@
           "published_at": "2026-11-04T00:00:00Z"
         }
       ]
-    },
-    {
-      "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
-      "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
-      "published_at": "2026-10-30T14:00:00Z",
-      "source_id": "ecb",
-      "publisher": "European Central Bank",
-      "source_kind": "Primary institutional release",
-      "topics": [
-        "policy"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
-          "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
-          "publisher": "European Central Bank",
-          "published_at": "2026-10-30T14:00:00Z"
-        }
-      ]
     }
   ],
   "feed_health": [
@@ -616,47 +520,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-13T10:05:18Z",
+      "checked_at": "2026-11-13T17:40:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T10:05:18Z",
+      "last_success": "2026-11-13T17:40:01Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-13T10:05:18Z",
+      "checked_at": "2026-11-13T17:40:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T10:05:18Z",
-      "matched": 5
+      "last_success": "2026-11-13T17:40:01Z",
+      "matched": 4
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-13T10:05:18Z",
+      "checked_at": "2026-11-13T17:40:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T10:05:18Z",
-      "matched": 7
+      "last_success": "2026-11-13T17:40:01Z",
+      "matched": 6
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-13T10:05:18Z",
+      "checked_at": "2026-11-13T17:40:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T10:05:18Z",
-      "matched": 4
+      "last_success": "2026-11-13T17:40:01Z",
+      "matched": 3
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-13T10:05:18Z",
+      "checked_at": "2026-11-13T17:40:01Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -666,40 +570,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-13T10:05:18Z",
+      "checked_at": "2026-11-13T17:40:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T10:05:18Z",
+      "last_success": "2026-11-13T17:40:01Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-13T10:05:18Z",
+      "checked_at": "2026-11-13T17:40:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T10:05:18Z",
-      "matched": 3
+      "last_success": "2026-11-13T17:40:01Z",
+      "matched": 2
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-13T10:05:18Z",
+      "checked_at": "2026-11-13T17:40:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T10:05:18Z",
+      "last_success": "2026-11-13T17:40:01Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-13T10:05:18Z",
+      "checked_at": "2026-11-13T17:40:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-13T10:05:18Z",
+      "last_success": "2026-11-13T17:40:01Z",
       "matched": 0
     }
   ],

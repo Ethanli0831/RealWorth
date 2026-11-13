@@ -1,9 +1,9 @@
 {
   "meta": {
-    "checked_at": "2026-11-13T18:07:43Z",
-    "scan_started_at": "2026-11-13T17:59:02Z",
+    "checked_at": "2026-11-13T23:57:33Z",
+    "scan_started_at": "2026-11-13T23:48:18Z",
     "provider_requested": "local",
-    "article_reads": 8,
+    "article_reads": 9,
     "ai_interpretations": 3,
     "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
@@ -17,6 +17,168 @@
       "published_at": null,
       "historical": true,
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
+      "title": "US inflation higher than expected in October - here's what is happening with prices",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-10T14:45:46Z",
+      "historical": null,
+      "read_at": "2026-11-13T23:48:18Z",
+      "body_sha256": "9d1295f9399a7d291fb82abe0d2f9e791a2032987c781cdf6401eabf3ec5909b",
+      "body_characters": 6310,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI numerical statements require exact cited source support"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/10/october-inflation-report",
+      "title": "US inflation rose 0.4% in October as price increases cooled and gas costs dipped",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-10T15:38:48Z",
+      "historical": null,
+      "read_at": "2026-11-13T23:47:31Z",
+      "body_sha256": "f6df0970f7f2b080fa64899b072b611d4e5919f1bf5f87a3af10734b52289cef",
+      "body_characters": 3663,
+      "model_context_characters": 3663,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "US inflation rose 0.4% in October, slightly above expectations, as energy costs increased due to the Iran war.",
+        "evidence_ids": [
+          "E1",
+          "E2"
+        ],
+        "chain": [
+          "reported_event: US inflation rose 0.4% in October",
+          "financial_channel: If higher energy costs continue, it may affect inflation expectations",
+          "asset_hypothesis: If inflation expectations rise, gold may see increased demand as a hedge."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations rise due to energy costs, investors may seek gold as a hedge."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If risk appetite remains stable, Bitcoin may not see significant movement; otherwise, it could fluctuate."
+        },
+        "uncertainty": "If energy costs stabilize, the impact on inflation may be temporary, reducing pressure on the Fed to hike rates."
+      },
+      "evidence": {
+        "E1": "US inflation rose 0.4% from September to October, slightly above expectations but",
+        "E2": "Higher energy costs driven by the Iran war have been the main"
+      },
+      "analyzed_at": "2026-11-12T21:10:04Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
+      "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-09T19:58:01Z",
+      "historical": null,
+      "read_at": "2026-11-13T23:47:31Z",
+      "body_sha256": "d073cbfad26e3795ecb455feeac9144ccc07a25c14aa622a2cbebeb9d2a10438",
+      "body_characters": 5733,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Nvidia's shares fell by about 4% after an investigation into Jensen Huang's affair with an alleged Chinese spy.",
+        "evidence_ids": [
+          "E6",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: Nvidia shares fall",
+          "financial_channel: If risk appetite decreases",
+          "asset_hypothesis: If tech stocks are seen as riskier"
+        ],
+        "gold": {
+          "direction": "unclear",
+          "condition": "If gold is seen as a safer haven, investors might buy it, but if they focus on tech, gold could be ignored."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If Bitcoin is seen as a riskier alternative, investors might sell it, but if they focus on tech, Bitcoin could be unaffected."
+        },
+        "uncertainty": "If the affair is proven to be unrelated to national security, Nvidia's shares might recover quickly."
+      },
+      "evidence": {
+        "E6": "Hundreds of billions of dollars have been wiped off the value of",
+        "E7": "The tech firm saw its shares fall by about 4% by close"
+      },
+      "analyzed_at": "2026-11-13T09:55:44Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/09/democrats-midterms-economy-healthcare",
+      "title": "Economic relief is on the way, Democrats say. But what, how and when?",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-09T11:00:07Z",
+      "historical": null,
+      "read_at": "2026-11-13T23:53:05Z",
+      "body_sha256": "faf58747be924379caabe111a0c85c38af80e58269062f980d2ffd1f271e7a64",
+      "body_characters": 8101,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/13/global-oil-supply-returns-to-surplus-for-first-time-since-start-of-iran-war-says-iea",
+      "title": "Global oil supply returns to surplus for first time since start of Iran war, says IEA",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-13T13:35:45Z",
+      "historical": null,
+      "read_at": "2026-11-13T23:57:31Z",
+      "body_sha256": "4903697326b2785bcd1106238f44ddec5450dc7c9e497b001df42aa410f479c1",
+      "body_characters": 2663,
+      "model_context_characters": 2663,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "publisher": "Federal Reserve",
+      "published_at": "2026-11-12T17:45:00Z",
+      "historical": null,
+      "status": "Unavailable: Insufficient public article text"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
+      "title": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-10T17:56:12Z",
+      "historical": null,
+      "read_at": "2026-11-13T23:57:31Z",
+      "body_sha256": "d45dccb8f97369a0be1a23787e8e7310407513b48ce8981c26eec5defbb97f99",
+      "body_characters": 3353,
+      "model_context_characters": 3353,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html",
+      "title": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-10T16:45:00Z",
+      "historical": null,
+      "read_at": "2026-11-13T23:57:33Z",
+      "body_sha256": "9e55b8784bc179b527498a0a3753e8541b7019a73e5ae28640c4f41ce3fc6d3b",
+      "body_characters": 18000,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
+      "title": "Nvidia shaken by scandal amid wider political new order for big tech",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-10T15:04:38Z",
+      "historical": null,
+      "read_at": "2026-11-13T23:57:33Z",
+      "body_sha256": "9a9c8c4a10de1e8c492da6f0c215aae55ed17c28fcd3be809792924a56aa6e0c",
+      "body_characters": 5901,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.theguardian.com/world/2026/nov/10/uk-and-argentina-clash-over-falklands-oil-project-as-hamburg-tribunal-starts",
@@ -58,156 +220,6 @@
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
-      "title": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-10T17:56:12Z",
-      "historical": null,
-      "read_at": "2026-11-13T17:59:03Z",
-      "body_sha256": "d45dccb8f97369a0be1a23787e8e7310407513b48ce8981c26eec5defbb97f99",
-      "body_characters": 3353,
-      "model_context_characters": 3353,
-      "status": "Unavailable: AI chain contains no financial transmission mechanism"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html",
-      "title": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-10T16:45:00Z",
-      "historical": null,
-      "read_at": "2026-11-13T18:03:25Z",
-      "body_sha256": "9e55b8784bc179b527498a0a3753e8541b7019a73e5ae28640c4f41ce3fc6d3b",
-      "body_characters": 18000,
-      "model_context_characters": 4500,
-      "status": "Unavailable: AI chain contains no financial transmission mechanism"
-    },
-    {
-      "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
-      "title": "Nvidia shaken by scandal amid wider political new order for big tech",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-10T15:04:38Z",
-      "historical": null,
-      "read_at": "2026-11-13T18:07:42Z",
-      "body_sha256": "9a9c8c4a10de1e8c492da6f0c215aae55ed17c28fcd3be809792924a56aa6e0c",
-      "body_characters": 5901,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/10/october-inflation-report",
-      "title": "US inflation rose 0.4% in October as price increases cooled and gas costs dipped",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-10T15:38:48Z",
-      "historical": null,
-      "read_at": "2026-11-12T21:07:36Z",
-      "body_sha256": "f6df0970f7f2b080fa64899b072b611d4e5919f1bf5f87a3af10734b52289cef",
-      "body_characters": 3663,
-      "model_context_characters": 3663,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "US inflation rose 0.4% in October, slightly above expectations, as energy costs increased due to the Iran war.",
-        "evidence_ids": [
-          "E1",
-          "E2"
-        ],
-        "chain": [
-          "reported_event: US inflation rose 0.4% in October",
-          "financial_channel: If higher energy costs continue, it may affect inflation expectations",
-          "asset_hypothesis: If inflation expectations rise, gold may see increased demand as a hedge."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation expectations rise due to energy costs, investors may seek gold as a hedge."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If risk appetite remains stable, Bitcoin may not see significant movement; otherwise, it could fluctuate."
-        },
-        "uncertainty": "If energy costs stabilize, the impact on inflation may be temporary, reducing pressure on the Fed to hike rates."
-      },
-      "evidence": {
-        "E1": "US inflation rose 0.4% from September to October, slightly above expectations but",
-        "E2": "Higher energy costs driven by the Iran war have been the main"
-      },
-      "analyzed_at": "2026-11-12T21:10:04Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
-      "title": "US inflation higher than expected in October - here's what is happening with prices",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-10T14:45:46Z",
-      "historical": null,
-      "read_at": "2026-11-13T18:07:42Z",
-      "body_sha256": "9d1295f9399a7d291fb82abe0d2f9e791a2032987c781cdf6401eabf3ec5909b",
-      "body_characters": 6310,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/09/democrats-midterms-economy-healthcare",
-      "title": "Economic relief is on the way, Democrats say. But what, how and when?",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-09T11:00:07Z",
-      "historical": null,
-      "read_at": "2026-11-13T18:07:42Z",
-      "body_sha256": "faf58747be924379caabe111a0c85c38af80e58269062f980d2ffd1f271e7a64",
-      "body_characters": 8101,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
-      "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-09T19:58:01Z",
-      "historical": null,
-      "read_at": "2026-11-13T09:53:13Z",
-      "body_sha256": "d073cbfad26e3795ecb455feeac9144ccc07a25c14aa622a2cbebeb9d2a10438",
-      "body_characters": 5733,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Nvidia's shares fell by about 4% after an investigation into Jensen Huang's affair with an alleged Chinese spy.",
-        "evidence_ids": [
-          "E6",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: Nvidia shares fall",
-          "financial_channel: If risk appetite decreases",
-          "asset_hypothesis: If tech stocks are seen as riskier"
-        ],
-        "gold": {
-          "direction": "unclear",
-          "condition": "If gold is seen as a safer haven, investors might buy it, but if they focus on tech, gold could be ignored."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If Bitcoin is seen as a riskier alternative, investors might sell it, but if they focus on tech, Bitcoin could be unaffected."
-        },
-        "uncertainty": "If the affair is proven to be unrelated to national security, Nvidia's shares might recover quickly."
-      },
-      "evidence": {
-        "E6": "Hundreds of billions of dollars have been wiped off the value of",
-        "E7": "The tech firm saw its shares fall by about 4% by close"
-      },
-      "analyzed_at": "2026-11-13T09:55:44Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
-      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
-      "publisher": "Federal Reserve",
-      "published_at": "2026-11-12T17:45:00Z",
-      "historical": null,
-      "status": "Unavailable: Insufficient public article text"
     }
   ]
 }

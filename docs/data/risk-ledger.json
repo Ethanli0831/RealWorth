@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-12T22:19:23Z",
-    "record_count": 57,
+    "updated_at": "2026-11-13T22:55:30Z",
+    "record_count": 58,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -1675,6 +1675,36 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "d33702329dfd0ea5695000a92d2dcdd07d7d5bb859f5e94ba88871bd773a1d4b"
+    },
+    {
+      "id": "6654b3b90f5626e781e5d6c8",
+      "first_observed_at": "2026-11-13T22:55:30Z",
+      "snapshot": {
+        "title": "Global oil supply returns to surplus for first time since start of Iran war, says IEA",
+        "url": "https://www.theguardian.com/business/2026/nov/13/global-oil-supply-returns-to-surplus-for-first-time-since-start-of-iran-war-says-iea",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-13T13:35:45Z",
+        "categories": [
+          "energy"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d8bbcc3e2536f510751f3f7fc1417a5af288b2bec41ac3c65aa827eef6c5d064",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "e9a5af534927319f9885d34b59cb49a61760123782ca183d9546d3e793fa46d0"
     }
   ]
 }

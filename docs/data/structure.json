@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-14T11:47:11.889003+00:00",
+    "checked_at": "2026-11-14T18:31:33.186803+00:00",
     "refresh": "Every four hours requested; source publication and GitHub delays apply.",
     "scope": "Selected free public sources. Missing/paid sources are not substituted with estimates."
   },
@@ -17,7 +17,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-14T11:47:11.889003+00:00",
+      "last_success": "2026-11-14T18:31:33.186803+00:00",
       "history": [
         {
           "date": "2026-10-22",
@@ -113,12 +113,12 @@
       "source": "https://docs.deribit.com/#public-get_book_summary_by_currency",
       "note": "Deribit BTC-PERPETUAL only; 8-hour funding is not annualised. Positive funding is not a directional forecast.",
       "unit": "% / 8 hours",
-      "value": -9.6e-05,
+      "value": 3.2e-05,
       "period": "2026-11-14",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-14T11:47:11.889003+00:00",
+      "last_success": "2026-11-14T18:31:33.186803+00:00",
       "history": [
         {
           "date": "2026-10-25",
@@ -202,7 +202,7 @@
         },
         {
           "date": "2026-11-14",
-          "value": -9.6e-05
+          "value": 3.2e-05
         }
       ],
       "percentile": null,
@@ -216,12 +216,12 @@
       "source": "https://docs.deribit.com/#public-get_book_summary_by_currency",
       "note": "USD notional can rise from price changes. One exchange does not measure all leverage.",
       "unit": "USD notional",
-      "value": 720345600.0,
+      "value": 724149880.0,
       "period": "2026-11-14",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-14T11:47:11.889003+00:00",
+      "last_success": "2026-11-14T18:31:33.186803+00:00",
       "history": [
         {
           "date": "2026-10-25",
@@ -305,7 +305,7 @@
         },
         {
           "date": "2026-11-14",
-          "value": 720345600.0
+          "value": 724149880.0
         }
       ],
       "percentile": null,
@@ -324,7 +324,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-14T11:47:11.889003+00:00",
+      "last_success": "2026-11-14T18:31:33.186803+00:00",
       "history": [
         {
           "date": "2025-11-12",
@@ -1811,7 +1811,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-14T11:47:11.889003+00:00",
+      "last_success": "2026-11-14T18:31:33.186803+00:00",
       "history": [
         {
           "date": "2025-11-12",
@@ -3298,7 +3298,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-14T11:47:11.889003+00:00",
+      "last_success": "2026-11-14T18:31:33.186803+00:00",
       "history": [
         {
           "date": "2025-11-12",
@@ -4785,7 +4785,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-14T11:47:11.889003+00:00",
+      "last_success": "2026-11-14T18:31:33.186803+00:00",
       "history": [
         {
           "date": "2025-11-12",
@@ -6272,7 +6272,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-14T11:47:11.889003+00:00",
+      "last_success": "2026-11-14T18:31:33.186803+00:00",
       "history": [
         {
           "date": "2025-11-12",
@@ -7759,7 +7759,7 @@
       "status": "Fetched",
       "error": null,
       "stale": true,
-      "last_success": "2026-11-14T11:47:11.889003+00:00",
+      "last_success": "2026-11-14T18:31:33.186803+00:00",
       "history": [
         {
           "date": "2025-09-01",
@@ -7830,7 +7830,7 @@
       "status": "Fetched",
       "error": null,
       "stale": true,
-      "last_success": "2026-11-14T11:47:11.889003+00:00",
+      "last_success": "2026-11-14T18:31:33.186803+00:00",
       "history": [
         {
           "date": "2025-11-05",
@@ -8857,7 +8857,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-14T11:47:11.889003+00:00",
+      "last_success": "2026-11-14T18:31:33.186803+00:00",
       "history": [
         {
           "date": "2026-10-20",

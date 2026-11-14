@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-13T20:04:39.298490+00:00",
+    "checked_at": "2026-11-14T01:04:21.838668+00:00",
     "refresh": "Every four hours requested; source publication and GitHub delays apply.",
     "scope": "Selected free public sources. Missing/paid sources are not substituted with estimates."
   },
@@ -17,7 +17,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-13T20:04:39.298490+00:00",
+      "last_success": "2026-11-14T01:04:21.838668+00:00",
       "history": [
         {
           "date": "2026-10-22",
@@ -113,12 +113,12 @@
       "source": "https://docs.deribit.com/#public-get_book_summary_by_currency",
       "note": "Deribit BTC-PERPETUAL only; 8-hour funding is not annualised. Positive funding is not a directional forecast.",
       "unit": "% / 8 hours",
-      "value": 0.003345,
-      "period": "2026-11-13",
+      "value": 0.003728,
+      "period": "2026-11-14",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-13T20:04:39.298490+00:00",
+      "last_success": "2026-11-14T01:04:21.838668+00:00",
       "history": [
         {
           "date": "2026-10-25",
@@ -199,11 +199,15 @@
         {
           "date": "2026-11-13",
           "value": 0.003345
+        },
+        {
+          "date": "2026-11-14",
+          "value": 0.003728
         }
       ],
       "percentile": null,
       "percentile_minimum": 250,
-      "observations": 20
+      "observations": 21
     },
     {
       "id": "oi",
@@ -212,12 +216,12 @@
       "source": "https://docs.deribit.com/#public-get_book_summary_by_currency",
       "note": "USD notional can rise from price changes. One exchange does not measure all leverage.",
       "unit": "USD notional",
-      "value": 698940690.0,
-      "period": "2026-11-13",
+      "value": 715641370.0,
+      "period": "2026-11-14",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-13T20:04:39.298490+00:00",
+      "last_success": "2026-11-14T01:04:21.838668+00:00",
       "history": [
         {
           "date": "2026-10-25",
@@ -298,11 +302,15 @@
         {
           "date": "2026-11-13",
           "value": 698940690.0
+        },
+        {
+          "date": "2026-11-14",
+          "value": 715641370.0
         }
       ],
       "percentile": null,
       "percentile_minimum": 250,
-      "observations": 20
+      "observations": 21
     },
     {
       "id": "dvol",
@@ -311,17 +319,13 @@
       "source": "https://docs.deribit.com/#public-get_volatility_index_data",
       "note": "Deribit DVOL is annualised implied volatility, not a price direction or an observed future outcome.",
       "unit": "% annualised IV",
-      "value": 40.07,
-      "period": "2026-11-12",
+      "value": 39.87,
+      "period": "2026-11-13",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-13T20:04:39.298490+00:00",
+      "last_success": "2026-11-14T01:04:21.838668+00:00",
       "history": [
-        {
-          "date": "2025-11-11",
-          "value": 46.61
-        },
         {
           "date": "2025-11-12",
           "value": 46.07
@@ -1785,9 +1789,13 @@
         {
           "date": "2026-11-12",
           "value": 40.07
+        },
+        {
+          "date": "2026-11-13",
+          "value": 39.87
         }
       ],
-      "percentile": 43.9,
+      "percentile": 43.1,
       "percentile_minimum": 250,
       "observations": 367
     },
@@ -1803,7 +1811,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-13T20:04:39.298490+00:00",
+      "last_success": "2026-11-14T01:04:21.838668+00:00",
       "history": [
         {
           "date": "2025-11-11",
@@ -3290,7 +3298,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-13T20:04:39.298490+00:00",
+      "last_success": "2026-11-14T01:04:21.838668+00:00",
       "history": [
         {
           "date": "2025-11-11",
@@ -4777,7 +4785,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-13T20:04:39.298490+00:00",
+      "last_success": "2026-11-14T01:04:21.838668+00:00",
       "history": [
         {
           "date": "2025-11-11",
@@ -6264,7 +6272,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-13T20:04:39.298490+00:00",
+      "last_success": "2026-11-14T01:04:21.838668+00:00",
       "history": [
         {
           "date": "2025-11-11",
@@ -7751,7 +7759,7 @@
       "status": "Fetched",
       "error": null,
       "stale": true,
-      "last_success": "2026-11-13T20:04:39.298490+00:00",
+      "last_success": "2026-11-14T01:04:21.838668+00:00",
       "history": [
         {
           "date": "2025-09-01",
@@ -7822,7 +7830,7 @@
       "status": "Fetched",
       "error": null,
       "stale": true,
-      "last_success": "2026-11-13T20:04:39.298490+00:00",
+      "last_success": "2026-11-14T01:04:21.838668+00:00",
       "history": [
         {
           "date": "2025-11-05",
@@ -8849,7 +8857,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-13T20:04:39.298490+00:00",
+      "last_success": "2026-11-14T01:04:21.838668+00:00",
       "history": [
         {
           "date": "2026-10-20",

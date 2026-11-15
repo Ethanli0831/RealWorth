@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-15T07:46:01Z",
+    "checked_at": "2026-11-15T14:59:51Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-11-15T07:46:01Z",
+    "checked_at": "2026-11-15T14:59:51Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -123,27 +123,25 @@
   },
   "news": [
     {
-      "title": "Art ‘must not be sacrificed on the altar of corporate profit’, Liberal senator says as AI policy debate rages",
-      "url": "https://www.theguardian.com/australia-news/2026/nov/15/art-over-profit-ai-policy-debate-andrew-mclachlan",
-      "published_at": "2026-11-14T19:00:52Z",
+      "title": "‘Prove you are not a robot’: how the Captcha scam captures your computer",
+      "url": "https://www.theguardian.com/money/2026/nov/15/captcha-scam-computer-malicious-software",
+      "published_at": "2026-11-15T07:00:06Z",
       "source_id": "guardian_technology",
       "publisher": "The Guardian Technology",
       "source_kind": "Publisher headline",
-      "topics": [
-        "ai_economics"
-      ],
+      "topics": [],
       "cached": false,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
       "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
       },
       "related_reports": [
         {
-          "title": "Art ‘must not be sacrificed on the altar of corporate profit’, Liberal senator says as AI policy debate rages",
-          "url": "https://www.theguardian.com/australia-news/2026/nov/15/art-over-profit-ai-policy-debate-andrew-mclachlan",
+          "title": "‘Prove you are not a robot’: how the Captcha scam captures your computer",
+          "url": "https://www.theguardian.com/money/2026/nov/15/captcha-scam-computer-malicious-software",
           "publisher": "The Guardian Technology",
-          "published_at": "2026-11-14T19:00:52Z"
+          "published_at": "2026-11-15T07:00:06Z"
         }
       ]
     },
@@ -217,29 +215,6 @@
           "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
           "publisher": "Federal Reserve",
           "published_at": "2026-11-12T17:45:00Z"
-        }
-      ]
-    },
-    {
-      "title": "US public workers are fighting to protect their jobs from AI – and some are winning",
-      "url": "https://www.theguardian.com/technology/2026/nov/12/us-workers-governments-unions-ai",
-      "published_at": "2026-11-12T15:00:44Z",
-      "source_id": "guardian_technology",
-      "publisher": "The Guardian Technology",
-      "source_kind": "Publisher headline",
-      "topics": [],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "No clear macro impact",
-        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
-      },
-      "related_reports": [
-        {
-          "title": "US public workers are fighting to protect their jobs from AI – and some are winning",
-          "url": "https://www.theguardian.com/technology/2026/nov/12/us-workers-governments-unions-ai",
-          "publisher": "The Guardian Technology",
-          "published_at": "2026-11-12T15:00:44Z"
         }
       ]
     },
@@ -593,47 +568,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-15T07:46:01Z",
+      "checked_at": "2026-11-15T14:59:51Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-15T07:46:01Z",
+      "last_success": "2026-11-15T14:59:51Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-15T07:46:01Z",
+      "checked_at": "2026-11-15T14:59:51Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-15T07:46:01Z",
+      "last_success": "2026-11-15T14:59:51Z",
       "matched": 4
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-15T07:46:01Z",
+      "checked_at": "2026-11-15T14:59:51Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-15T07:46:01Z",
+      "last_success": "2026-11-15T14:59:51Z",
       "matched": 7
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-15T07:46:01Z",
+      "checked_at": "2026-11-15T14:59:51Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-15T07:46:01Z",
+      "last_success": "2026-11-15T14:59:51Z",
       "matched": 4
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-15T07:46:01Z",
+      "checked_at": "2026-11-15T14:59:51Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -643,40 +618,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-15T07:46:01Z",
+      "checked_at": "2026-11-15T14:59:51Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-15T07:46:01Z",
+      "last_success": "2026-11-15T14:59:51Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-15T07:46:01Z",
+      "checked_at": "2026-11-15T14:59:51Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-15T07:46:01Z",
-      "matched": 3
+      "last_success": "2026-11-15T14:59:51Z",
+      "matched": 2
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-15T07:46:01Z",
+      "checked_at": "2026-11-15T14:59:51Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-15T07:46:01Z",
+      "last_success": "2026-11-15T14:59:51Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-15T07:46:01Z",
+      "checked_at": "2026-11-15T14:59:51Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-15T07:46:01Z",
+      "last_success": "2026-11-15T14:59:51Z",
       "matched": 0
     }
   ],

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-15T07:46:08Z",
+    "checked_at": "2026-11-15T14:59:56Z",
     "model": "empirical-log-return-quantiles-v2",
     "timezone": "America/Toronto",
     "today": "2026-11-15",
@@ -13,8 +13,8 @@
     {
       "ticker": "BTC-USD",
       "asset": "Bitcoin / USD",
-      "quote": 63831.07,
-      "quote_at": "2026-11-15T07:46:00Z",
+      "quote": 64735.56,
+      "quote_at": "2026-11-15T14:59:52Z",
       "quote_stale": false,
       "market_status": "Continuous trading; quote may be delayed by provider",
       "tomorrow_has_session": true,
@@ -218,10 +218,10 @@
   ],
   "verification": {
     "invalidated": 1,
-    "verified_forecasts": 184,
-    "outer_band_coverage_percent": 73.37,
-    "mean_abs_median_error_percent": 0.997,
-    "pending": 10,
+    "verified_forecasts": 185,
+    "outer_band_coverage_percent": 72.97,
+    "mean_abs_median_error_percent": 1.006,
+    "pending": 9,
     "missed": 0
   }
 }

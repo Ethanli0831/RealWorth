@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-13T22:55:30Z",
-    "record_count": 58,
+    "updated_at": "2026-11-15T07:46:08Z",
+    "record_count": 59,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -1705,6 +1705,34 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "e9a5af534927319f9885d34b59cb49a61760123782ca183d9546d3e793fa46d0"
+    },
+    {
+      "id": "2ea5e0e5f9de8df89f4dd337",
+      "first_observed_at": "2026-11-15T07:46:08Z",
+      "snapshot": {
+        "title": "Art ‘must not be sacrificed on the altar of corporate profit’, Liberal senator says as AI policy debate rages",
+        "url": "https://www.theguardian.com/australia-news/2026/nov/15/art-over-profit-ai-policy-debate-andrew-mclachlan",
+        "publisher": "The Guardian Technology",
+        "published_at": "2026-11-14T19:00:52Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "a0e5a66513f2eb11ec47e61d224219cbed7cea39f166d68f498d0391870f8509"
     }
   ]
 }

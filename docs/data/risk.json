@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-15T00:58:45Z",
-    "source_checked_at": "2026-11-15T00:58:38Z",
+    "built_at": "2026-11-15T07:46:08Z",
+    "source_checked_at": "2026-11-15T07:46:01Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -10,9 +10,35 @@
     "disclosure": "Risk chains are transparent scenarios, not verified causal effects, probability forecasts or AI price targets. No warnings are backdated.",
     "feeds_fetched": 8,
     "feeds_total": 9,
-    "ledger_records": 58
+    "ledger_records": 59
   },
   "events": [
+    {
+      "title": "Art ‘must not be sacrificed on the altar of corporate profit’, Liberal senator says as AI policy debate rages",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/15/art-over-profit-ai-policy-debate-andrew-mclachlan",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-14T19:00:52Z",
+      "categories": [
+        "ai_economics"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "2ea5e0e5f9de8df89f4dd337",
+      "first_observed_at": "2026-11-15T07:46:08Z",
+      "digest": "a0e5a66513f2eb11ec47e61d224219cbed7cea39f166d68f498d0391870f8509"
+    },
     {
       "title": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
       "url": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
@@ -467,7 +493,7 @@
         "Check utilization, order cancellations, financing and customer concentration.",
         "Distinguish a lower share valuation from cash automatically moving to another country."
       ],
-      "event_count": 3,
+      "event_count": 4,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -843,8 +869,8 @@
       "id": "fomc",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "Fetched official schedule",
-      "last_success": "2026-11-15T00:58:45Z",
-      "attempted_at": "2026-11-15T00:58:45Z",
+      "last_success": "2026-11-15T07:46:08Z",
+      "attempted_at": "2026-11-15T07:46:08Z",
       "events": [
         {
           "title": "Scheduled FOMC meeting final day",
@@ -1134,7 +1160,7 @@
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-15T00:58:45Z",
+      "attempted_at": "2026-11-15T07:46:08Z",
       "events": [],
       "stale": true,
       "error": "HTTPError",
@@ -1146,47 +1172,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-15T00:58:38Z",
+      "checked_at": "2026-11-15T07:46:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-15T00:58:38Z",
+      "last_success": "2026-11-15T07:46:01Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-15T00:58:38Z",
+      "checked_at": "2026-11-15T07:46:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-15T00:58:38Z",
+      "last_success": "2026-11-15T07:46:01Z",
       "matched": 4
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-15T00:58:38Z",
+      "checked_at": "2026-11-15T07:46:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-15T00:58:38Z",
+      "last_success": "2026-11-15T07:46:01Z",
       "matched": 7
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-15T00:58:38Z",
+      "checked_at": "2026-11-15T07:46:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-15T00:58:38Z",
+      "last_success": "2026-11-15T07:46:01Z",
       "matched": 4
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-15T00:58:38Z",
+      "checked_at": "2026-11-15T07:46:01Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1196,40 +1222,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-15T00:58:38Z",
+      "checked_at": "2026-11-15T07:46:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-15T00:58:38Z",
+      "last_success": "2026-11-15T07:46:01Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-15T00:58:38Z",
+      "checked_at": "2026-11-15T07:46:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-15T00:58:38Z",
-      "matched": 2
+      "last_success": "2026-11-15T07:46:01Z",
+      "matched": 3
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-15T00:58:38Z",
+      "checked_at": "2026-11-15T07:46:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-15T00:58:38Z",
+      "last_success": "2026-11-15T07:46:01Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-15T00:58:38Z",
+      "checked_at": "2026-11-15T07:46:01Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-15T00:58:38Z",
+      "last_success": "2026-11-15T07:46:01Z",
       "matched": 0
     }
   ],

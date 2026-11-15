@@ -1,7 +1,7 @@
 {
   "meta": {
-    "checked_at": "2026-11-15T03:09:00Z",
-    "scan_started_at": "2026-11-15T02:58:40Z",
+    "checked_at": "2026-11-15T11:33:14Z",
+    "scan_started_at": "2026-11-15T11:24:27Z",
     "provider_requested": "local",
     "article_reads": 9,
     "ai_interpretations": 4,
@@ -19,12 +19,106 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.theguardian.com/business/2026/nov/10/october-inflation-report",
+      "title": "US inflation rose 0.4% in October as price increases cooled and gas costs dipped",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-10T15:38:48Z",
+      "historical": null,
+      "read_at": "2026-11-15T11:23:42Z",
+      "body_sha256": "f6df0970f7f2b080fa64899b072b611d4e5919f1bf5f87a3af10734b52289cef",
+      "body_characters": 3663,
+      "model_context_characters": 3663,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "US inflation rose 0.4% in October, slightly above expectations, as energy costs increased due to the Iran war.",
+        "evidence_ids": [
+          "E1",
+          "E2"
+        ],
+        "chain": [
+          "reported_event: US inflation rose 0.4% in October",
+          "financial_channel: If higher energy costs continue, it may affect inflation expectations",
+          "asset_hypothesis: If inflation expectations rise, gold may see increased demand as a hedge."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations rise due to energy costs, investors may seek gold as a hedge."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If risk appetite remains stable, Bitcoin may not see significant movement; otherwise, it could fluctuate."
+        },
+        "uncertainty": "If energy costs stabilize, the impact on inflation may be temporary, reducing pressure on the Fed to hike rates."
+      },
+      "evidence": {
+        "E1": "US inflation rose 0.4% from September to October, slightly above expectations but",
+        "E2": "Higher energy costs driven by the Iran war have been the main"
+      },
+      "analyzed_at": "2026-11-12T21:10:04Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
+      "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-09T19:58:01Z",
+      "historical": null,
+      "read_at": "2026-11-15T11:23:42Z",
+      "body_sha256": "d073cbfad26e3795ecb455feeac9144ccc07a25c14aa622a2cbebeb9d2a10438",
+      "body_characters": 5733,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Nvidia's shares fell by about 4% after an investigation into Jensen Huang's affair with an alleged Chinese spy.",
+        "evidence_ids": [
+          "E6",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: Nvidia shares fall",
+          "financial_channel: If risk appetite decreases",
+          "asset_hypothesis: If tech stocks are seen as riskier"
+        ],
+        "gold": {
+          "direction": "unclear",
+          "condition": "If gold is seen as a safer haven, investors might buy it, but if they focus on tech, gold could be ignored."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If Bitcoin is seen as a riskier alternative, investors might sell it, but if they focus on tech, Bitcoin could be unaffected."
+        },
+        "uncertainty": "If the affair is proven to be unrelated to national security, Nvidia's shares might recover quickly."
+      },
+      "evidence": {
+        "E6": "Hundreds of billions of dollars have been wiped off the value of",
+        "E7": "The tech firm saw its shares fall by about 4% by close"
+      },
+      "analyzed_at": "2026-11-13T09:55:44Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/nov/15/art-over-profit-ai-policy-debate-andrew-mclachlan",
+      "title": "Art ‘must not be sacrificed on the altar of corporate profit’, Liberal senator says as AI policy debate rages",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-14T19:00:52Z",
+      "historical": null,
+      "read_at": "2026-11-15T11:24:27Z",
+      "body_sha256": "2c7a8ca1e8a98178039ae6a271fb00f9293c9ed9f7cb0c88d29fcb3efbce2ad6",
+      "body_characters": 4337,
+      "model_context_characters": 4337,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
       "url": "https://www.theguardian.com/business/2026/nov/13/global-oil-supply-returns-to-surplus-for-first-time-since-start-of-iran-war-says-iea",
       "title": "Global oil supply returns to surplus for first time since start of Iran war, says IEA",
       "publisher": "The Guardian Business",
       "published_at": "2026-11-13T13:35:45Z",
       "historical": null,
-      "read_at": "2026-11-15T02:57:42Z",
+      "read_at": "2026-11-15T11:23:42Z",
       "body_sha256": "4903697326b2785bcd1106238f44ddec5450dc7c9e497b001df42aa410f479c1",
       "body_characters": 2663,
       "model_context_characters": 2663,
@@ -73,7 +167,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-10T17:56:12Z",
       "historical": null,
-      "read_at": "2026-11-15T02:58:42Z",
+      "read_at": "2026-11-15T11:29:11Z",
       "body_sha256": "d45dccb8f97369a0be1a23787e8e7310407513b48ce8981c26eec5defbb97f99",
       "body_characters": 3353,
       "model_context_characters": 3353,
@@ -85,11 +179,11 @@
       "publisher": "European Central Bank",
       "published_at": "2026-11-10T16:45:00Z",
       "historical": null,
-      "read_at": "2026-11-15T03:03:54Z",
+      "read_at": "2026-11-15T11:33:14Z",
       "body_sha256": "9e55b8784bc179b527498a0a3753e8541b7019a73e5ae28640c4f41ce3fc6d3b",
       "body_characters": 18000,
       "model_context_characters": 4500,
-      "status": "Unavailable: AI chain contains no financial transmission mechanism"
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
@@ -97,7 +191,7 @@
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-10T15:04:38Z",
       "historical": null,
-      "read_at": "2026-11-15T03:09:00Z",
+      "read_at": "2026-11-15T11:33:14Z",
       "body_sha256": "9a9c8c4a10de1e8c492da6f0c215aae55ed17c28fcd3be809792924a56aa6e0c",
       "body_characters": 5901,
       "model_context_characters": 4500,
@@ -150,103 +244,9 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-10T14:45:46Z",
       "historical": null,
-      "read_at": "2026-11-15T03:09:00Z",
+      "read_at": "2026-11-15T11:33:14Z",
       "body_sha256": "9d1295f9399a7d291fb82abe0d2f9e791a2032987c781cdf6401eabf3ec5909b",
       "body_characters": 6310,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/10/october-inflation-report",
-      "title": "US inflation rose 0.4% in October as price increases cooled and gas costs dipped",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-10T15:38:48Z",
-      "historical": null,
-      "read_at": "2026-11-14T19:24:48Z",
-      "body_sha256": "f6df0970f7f2b080fa64899b072b611d4e5919f1bf5f87a3af10734b52289cef",
-      "body_characters": 3663,
-      "model_context_characters": 3663,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "US inflation rose 0.4% in October, slightly above expectations, as energy costs increased due to the Iran war.",
-        "evidence_ids": [
-          "E1",
-          "E2"
-        ],
-        "chain": [
-          "reported_event: US inflation rose 0.4% in October",
-          "financial_channel: If higher energy costs continue, it may affect inflation expectations",
-          "asset_hypothesis: If inflation expectations rise, gold may see increased demand as a hedge."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation expectations rise due to energy costs, investors may seek gold as a hedge."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If risk appetite remains stable, Bitcoin may not see significant movement; otherwise, it could fluctuate."
-        },
-        "uncertainty": "If energy costs stabilize, the impact on inflation may be temporary, reducing pressure on the Fed to hike rates."
-      },
-      "evidence": {
-        "E1": "US inflation rose 0.4% from September to October, slightly above expectations but",
-        "E2": "Higher energy costs driven by the Iran war have been the main"
-      },
-      "analyzed_at": "2026-11-12T21:10:04Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
-      "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-09T19:58:01Z",
-      "historical": null,
-      "read_at": "2026-11-14T19:24:48Z",
-      "body_sha256": "d073cbfad26e3795ecb455feeac9144ccc07a25c14aa622a2cbebeb9d2a10438",
-      "body_characters": 5733,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Nvidia's shares fell by about 4% after an investigation into Jensen Huang's affair with an alleged Chinese spy.",
-        "evidence_ids": [
-          "E6",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: Nvidia shares fall",
-          "financial_channel: If risk appetite decreases",
-          "asset_hypothesis: If tech stocks are seen as riskier"
-        ],
-        "gold": {
-          "direction": "unclear",
-          "condition": "If gold is seen as a safer haven, investors might buy it, but if they focus on tech, gold could be ignored."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If Bitcoin is seen as a riskier alternative, investors might sell it, but if they focus on tech, Bitcoin could be unaffected."
-        },
-        "uncertainty": "If the affair is proven to be unrelated to national security, Nvidia's shares might recover quickly."
-      },
-      "evidence": {
-        "E6": "Hundreds of billions of dollars have been wiped off the value of",
-        "E7": "The tech firm saw its shares fall by about 4% by close"
-      },
-      "analyzed_at": "2026-11-13T09:55:44Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/09/democrats-midterms-economy-healthcare",
-      "title": "Economic relief is on the way, Democrats say. But what, how and when?",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-09T11:00:07Z",
-      "historical": null,
-      "read_at": "2026-11-15T03:09:00Z",
-      "body_sha256": "faf58747be924379caabe111a0c85c38af80e58269062f980d2ffd1f271e7a64",
-      "body_characters": 8101,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
     }

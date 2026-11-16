@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-15T07:46:08Z",
-    "record_count": 59,
+    "updated_at": "2026-11-16T06:10:25Z",
+    "record_count": 60,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -1733,6 +1733,36 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "a0e5a66513f2eb11ec47e61d224219cbed7cea39f166d68f498d0391870f8509"
+    },
+    {
+      "id": "41c1d4a68dcf9c3d4e9317bb",
+      "first_observed_at": "2026-11-16T06:10:25Z",
+      "snapshot": {
+        "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
+        "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
+        "publisher": "The Guardian Technology",
+        "published_at": "2026-11-15T21:06:03Z",
+        "categories": [
+          "rates"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Proposal or possibility reported; not enacted law",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "4b50eb2e82af6d1b7136bee2fa78493b8bb6c8221f14255be71e0dac29247571"
     }
   ]
 }

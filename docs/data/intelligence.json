@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-11-16T12:06:32Z",
-    "scan_started_at": "2026-11-16T11:57:05Z",
+    "checked_at": "2026-11-16T22:35:32Z",
+    "scan_started_at": "2026-11-16T22:27:23Z",
     "provider_requested": "local",
     "article_reads": 9,
-    "ai_interpretations": 3,
+    "ai_interpretations": 1,
     "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -19,130 +19,12 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.theguardian.com/world/2026/nov/10/uk-and-argentina-clash-over-falklands-oil-project-as-hamburg-tribunal-starts",
-      "title": "UK and Argentina clash over Falklands oil project as Hamburg tribunal starts",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-10T14:49:32Z",
-      "historical": null,
-      "read_at": "2026-11-16T11:55:58Z",
-      "body_sha256": "ffa9d9f92ec96e0229bbd766091cf490417f55c01bf5378f8d7c3423a89243b8",
-      "body_characters": 5686,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The UK and Argentina are clashing over the Falklands oil project at an international tribunal in Hamburg.",
-        "evidence_ids": [
-          "E2",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: UK and Argentina clash over Falklands oil project",
-          "financial_channel: If risk appetite decreases, investors may seek safety",
-          "asset_hypothesis: If geopolitical tensions rise, gold may benefit as a safe-haven"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If geopolitical tensions rise, investors may seek safety in gold."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite decreases, Bitcoin may underperform as a risky asset; if geopolitical tensions rise, it may gain as a hedge."
-        },
-        "uncertainty": "If the tribunal rules in favor of Argentina, the Falkland Islanders may not face the 'devastating consequences' mentioned."
-      },
-      "evidence": {
-        "E2": "Countries clash over Sea Lion project as Hamburg tribunal risks deepening sovereignty",
-        "E3": "The people of the Falkland Islands face “devastating consequences” if Argentina is"
-      },
-      "analyzed_at": "2026-11-10T21:00:24Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
-      "title": "US inflation higher than expected in October - here's what is happening with prices",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-10T14:45:46Z",
-      "historical": null,
-      "read_at": "2026-11-16T11:57:06Z",
-      "body_sha256": "9d1295f9399a7d291fb82abe0d2f9e791a2032987c781cdf6401eabf3ec5909b",
-      "body_characters": 6310,
-      "model_context_characters": 4500,
-      "status": "Unavailable: AI numerical statements require exact cited source support"
-    },
-    {
-      "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
-      "title": "Nvidia shaken by scandal amid wider political new order for big tech",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-10T15:04:38Z",
-      "historical": null,
-      "read_at": "2026-11-16T12:01:58Z",
-      "body_sha256": "9a9c8c4a10de1e8c492da6f0c215aae55ed17c28fcd3be809792924a56aa6e0c",
-      "body_characters": 5901,
-      "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/10/october-inflation-report",
-      "title": "US inflation rose 0.4% in October as price increases cooled and gas costs dipped",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-10T15:38:48Z",
-      "historical": null,
-      "read_at": "2026-11-16T02:58:15Z",
-      "body_sha256": "f6df0970f7f2b080fa64899b072b611d4e5919f1bf5f87a3af10734b52289cef",
-      "body_characters": 3663,
-      "model_context_characters": 3663,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "US inflation rose 0.4% in October, slightly above expectations, as energy costs increased due to the Iran war.",
-        "evidence_ids": [
-          "E1",
-          "E2"
-        ],
-        "chain": [
-          "reported_event: US inflation rose 0.4% in October",
-          "financial_channel: If higher energy costs continue, it may affect inflation expectations",
-          "asset_hypothesis: If inflation expectations rise, gold may see increased demand as a hedge."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation expectations rise due to energy costs, investors may seek gold as a hedge."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If risk appetite remains stable, Bitcoin may not see significant movement; otherwise, it could fluctuate."
-        },
-        "uncertainty": "If energy costs stabilize, the impact on inflation may be temporary, reducing pressure on the Fed to hike rates."
-      },
-      "evidence": {
-        "E1": "US inflation rose 0.4% from September to October, slightly above expectations but",
-        "E2": "Higher energy costs driven by the Iran war have been the main"
-      },
-      "analyzed_at": "2026-11-12T21:10:04Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
-      "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-15T21:06:03Z",
-      "historical": null,
-      "read_at": "2026-11-16T12:06:29Z",
-      "body_sha256": "6dda8d07ebf505fd888f31f8b8082e7de86d252506bb11bbcbd503243b85fb71",
-      "body_characters": 6965,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
       "url": "https://www.theguardian.com/business/2026/nov/13/global-oil-supply-returns-to-surplus-for-first-time-since-start-of-iran-war-says-iea",
       "title": "Global oil supply returns to surplus for first time since start of Iran war, says IEA",
       "publisher": "The Guardian Business",
       "published_at": "2026-11-13T13:35:45Z",
       "historical": null,
-      "read_at": "2026-11-16T02:58:16Z",
+      "read_at": "2026-11-16T22:26:16Z",
       "body_sha256": "4903697326b2785bcd1106238f44ddec5450dc7c9e497b001df42aa410f479c1",
       "body_characters": 2663,
       "model_context_characters": 2663,
@@ -178,6 +60,54 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
+      "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
+      "title": "Nvidia shaken by scandal amid wider political new order for big tech",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-10T15:04:38Z",
+      "historical": null,
+      "read_at": "2026-11-16T22:27:25Z",
+      "body_sha256": "9a9c8c4a10de1e8c492da6f0c215aae55ed17c28fcd3be809792924a56aa6e0c",
+      "body_characters": 5901,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
+      "url": "https://www.theguardian.com/business/live/2026/nov/16/ai-sell-off-resumes-jensen-huang-discusses-comeback-nvidia-ceo-dollar-stock-markets-latest-news-updates",
+      "title": "Trump says he wouldn’t mind Jensen Huang being reinstated as Nvidia CEO, as its shares fall again – as it happened",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-16T15:43:06Z",
+      "historical": null,
+      "read_at": "2026-11-16T22:32:18Z",
+      "body_sha256": "3a8625f4b9770fa78e5e42d7cced819a7398380edfcfb3de2e16c75640173077",
+      "body_characters": 2060,
+      "model_context_characters": 2060,
+      "status": "Unavailable: AI chain contains no financial transmission mechanism"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
+      "title": "Trump says he wouldn't mind seeing Huang return to Nvidia",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-16T15:31:20Z",
+      "historical": null,
+      "read_at": "2026-11-16T22:35:29Z",
+      "body_sha256": "614a185ea00ef437583d9975d5c6e09d8b17a609d9bc3c2525658402d63e0726",
+      "body_characters": 5997,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
+      "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-15T21:06:03Z",
+      "historical": null,
+      "read_at": "2026-11-16T22:35:30Z",
+      "body_sha256": "6dda8d07ebf505fd888f31f8b8082e7de86d252506bb11bbcbd503243b85fb71",
+      "body_characters": 6965,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
       "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
       "publisher": "Federal Reserve",
@@ -186,27 +116,39 @@
       "status": "Unavailable: Insufficient public article text"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
-      "title": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-10T17:56:12Z",
-      "historical": null,
-      "read_at": "2026-11-16T12:06:30Z",
-      "body_sha256": "d45dccb8f97369a0be1a23787e8e7310407513b48ce8981c26eec5defbb97f99",
-      "body_characters": 3353,
-      "model_context_characters": 3353,
-      "status": "Public body read; queued for AI"
-    },
-    {
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html",
       "title": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
       "publisher": "European Central Bank",
       "published_at": "2026-11-10T16:45:00Z",
       "historical": null,
-      "read_at": "2026-11-16T12:06:32Z",
+      "read_at": "2026-11-16T22:35:32Z",
       "body_sha256": "9e55b8784bc179b527498a0a3753e8541b7019a73e5ae28640c4f41ce3fc6d3b",
       "body_characters": 18000,
       "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/16/heating-oil-price-increase-winter",
+      "title": "Americans relying on heating oil brace for harsh winter: ‘We’re often cold in our own home’",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-16T11:00:58Z",
+      "historical": null,
+      "read_at": "2026-11-16T22:35:32Z",
+      "body_sha256": "eda1fdec61991980d002b703b71e5e948c5f5be64530875d7ddd01ba9e62983a",
+      "body_characters": 5541,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
+      "title": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-10T17:56:12Z",
+      "historical": null,
+      "read_at": "2026-11-16T22:35:32Z",
+      "body_sha256": "d45dccb8f97369a0be1a23787e8e7310407513b48ce8981c26eec5defbb97f99",
+      "body_characters": 3353,
+      "model_context_characters": 3353,
       "status": "Public body read; queued for AI"
     },
     {
@@ -215,7 +157,7 @@
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-14T19:00:52Z",
       "historical": null,
-      "read_at": "2026-11-16T12:06:32Z",
+      "read_at": "2026-11-16T22:35:32Z",
       "body_sha256": "2c7a8ca1e8a98178039ae6a271fb00f9293c9ed9f7cb0c88d29fcb3efbce2ad6",
       "body_characters": 4337,
       "model_context_characters": 4337,

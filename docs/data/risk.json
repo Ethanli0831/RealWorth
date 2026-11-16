@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-16T06:10:25Z",
-    "source_checked_at": "2026-11-16T06:10:21Z",
+    "built_at": "2026-11-16T16:02:41Z",
+    "source_checked_at": "2026-11-16T16:02:35Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -10,9 +10,61 @@
     "disclosure": "Risk chains are transparent scenarios, not verified causal effects, probability forecasts or AI price targets. No warnings are backdated.",
     "feeds_fetched": 8,
     "feeds_total": 9,
-    "ledger_records": 60
+    "ledger_records": 63
   },
   "events": [
+    {
+      "title": "Trump says he wouldn’t mind Jensen Huang being reinstated as Nvidia CEO, as its shares fall again – as it happened",
+      "url": "https://www.theguardian.com/business/live/2026/nov/16/ai-sell-off-resumes-jensen-huang-discusses-comeback-nvidia-ceo-dollar-stock-markets-latest-news-updates",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-16T15:43:06Z",
+      "categories": [
+        "ai_economics"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "f222fe40749c914c46ebc120",
+      "first_observed_at": "2026-11-16T16:02:41Z",
+      "digest": "cceb969750c6b407fba24a6b16c1316cb40ae59080aa76629d98d61d62172b3b"
+    },
+    {
+      "title": "Trump says he wouldn't mind seeing Huang return to Nvidia",
+      "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-16T15:31:20Z",
+      "categories": [
+        "ai_economics"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "be7d075e333074acbd88aae3",
+      "first_observed_at": "2026-11-16T16:02:41Z",
+      "digest": "2a052d09880457fa6ca39bbe9dca59fb26a3adeda450a9fdfa093eda63dc9976"
+    },
     {
       "title": "Art ‘must not be sacrificed on the altar of corporate profit’, Liberal senator says as AI policy debate rages",
       "url": "https://www.theguardian.com/australia-news/2026/nov/15/art-over-profit-ai-policy-debate-andrew-mclachlan",
@@ -92,33 +144,6 @@
       "digest": "465c8eaa04250dbd67cb53b61c2e74234a2f800d05c6d1fcff419fa01669697e"
     },
     {
-      "title": "Economic relief is on the way, Democrats say. But what, how and when?",
-      "url": "https://www.theguardian.com/us-news/2026/nov/09/democrats-midterms-economy-healthcare",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-09T11:00:07Z",
-      "categories": [
-        "elections"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "9081c5f5a2722698786fe4fc",
-      "first_observed_at": "2026-11-09T20:11:30Z",
-      "digest": "98426530c08dc71ad1cb960ea462523f22c2550a8890a8bb83a73aae2c39f6a8"
-    },
-    {
       "title": "Scheduled FOMC meeting final day",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "publisher": "Federal Reserve",
@@ -145,6 +170,34 @@
       "id": "2100a0292cd9b883191420e5",
       "first_observed_at": "2026-11-07T18:08:17Z",
       "digest": "479566df9a598e96ffb6d33a3fbe0615df7107cfdb112f53aa6a8b7530b121f0"
+    },
+    {
+      "title": "Americans relying on heating oil brace for harsh winter: ‘We’re often cold in our own home’",
+      "url": "https://www.theguardian.com/business/2026/nov/16/heating-oil-price-increase-winter",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-16T11:00:58Z",
+      "categories": [
+        "energy"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "d8bbcc3e2536f510751f3f7fc1417a5af288b2bec41ac3c65aa827eef6c5d064",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "5e9a2b5c4c3dffd0ea862f76",
+      "first_observed_at": "2026-11-16T16:02:41Z",
+      "digest": "0fd54a5de565658ee7c53a3879213623e9a084920174ab5ae3f9ea5eec0fb8b2"
     },
     {
       "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
@@ -231,34 +284,6 @@
       "digest": "d33702329dfd0ea5695000a92d2dcdd07d7d5bb859f5e94ba88871bd773a1d4b"
     },
     {
-      "title": "Falkland Islanders face ‘devastating consequences’ if Argentina blocks oil project, says UK",
-      "url": "https://www.theguardian.com/world/2026/nov/10/uk-and-argentina-clash-over-falklands-oil-project-as-hamburg-tribunal-starts",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-10T19:01:33Z",
-      "categories": [
-        "energy"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "GLD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "d8bbcc3e2536f510751f3f7fc1417a5af288b2bec41ac3c65aa827eef6c5d064",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "70691a5e700a97bbfeae4abe",
-      "first_observed_at": "2026-11-10T23:30:56Z",
-      "digest": "cfd03f1d50f723a576d91ab17c0905ec20ca02776d28867e0fb73124bc67adaa"
-    },
-    {
       "title": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html",
       "publisher": "European Central Bank",
@@ -285,62 +310,6 @@
       "id": "8d78f6242b1d2c2d1dd69325",
       "first_observed_at": "2026-11-10T18:10:53Z",
       "digest": "78e3974e191df6a85cd5c04eaa97790a99309a45ba8542bc9657cc470e63de40"
-    },
-    {
-      "title": "US inflation rose 0.4% in October as price increases cooled and gas costs dipped",
-      "url": "https://www.theguardian.com/business/2026/nov/10/october-inflation-report",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-10T15:38:48Z",
-      "categories": [
-        "rates"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "GLD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "bb1fa9e1dd179276793374f2",
-      "first_observed_at": "2026-11-10T18:10:53Z",
-      "digest": "08cc69f081b4c9d333f4638c7493158701c0a55f8494c2e9f04a04519f13d2b3"
-    },
-    {
-      "title": "US inflation higher than expected in October - here's what is happening with prices",
-      "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-10T14:45:46Z",
-      "categories": [
-        "rates"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "GLD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "cc278daec2f220580b2f6cb3",
-      "first_observed_at": "2026-11-10T18:10:53Z",
-      "digest": "f9d47b267f322bcc25ac87546bd27686e993e87debc30dffe2ab59da04d27d14"
     },
     {
       "title": "ECB publishes consolidated banking data for end-June 2026",
@@ -449,8 +418,8 @@
         "Separate campaign promises, introduced bills, enacted law and effective dates.",
         "Check company exposures rather than treating a party as an automatic buy/sell signal."
       ],
-      "event_count": 1,
-      "coverage": "Limited selected-headline coverage"
+      "event_count": 0,
+      "coverage": "No matching evidence in selected feeds; risk not ruled out"
     },
     {
       "id": "ai_regulation",
@@ -495,7 +464,7 @@
         "Check utilization, order cancellations, financing and customer concentration.",
         "Distinguish a lower share valuation from cash automatically moving to another country."
       ],
-      "event_count": 3,
+      "event_count": 5,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -544,7 +513,7 @@
         "Check real yields, dollar funding and the policy response.",
         "Separate a growth shock from an inflation shock."
       ],
-      "event_count": 9,
+      "event_count": 7,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -871,8 +840,8 @@
       "id": "fomc",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "Fetched official schedule",
-      "last_success": "2026-11-16T06:10:25Z",
-      "attempted_at": "2026-11-16T06:10:25Z",
+      "last_success": "2026-11-16T16:02:41Z",
+      "attempted_at": "2026-11-16T16:02:41Z",
       "events": [
         {
           "title": "Scheduled FOMC meeting final day",
@@ -1162,7 +1131,7 @@
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-16T06:10:25Z",
+      "attempted_at": "2026-11-16T16:02:41Z",
       "events": [],
       "stale": true,
       "error": "HTTPError",
@@ -1174,47 +1143,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-16T06:10:21Z",
+      "checked_at": "2026-11-16T16:02:35Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T06:10:21Z",
+      "last_success": "2026-11-16T16:02:35Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-16T06:10:21Z",
+      "checked_at": "2026-11-16T16:02:35Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T06:10:21Z",
-      "matched": 4
+      "last_success": "2026-11-16T16:02:35Z",
+      "matched": 5
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-16T06:10:21Z",
+      "checked_at": "2026-11-16T16:02:35Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T06:10:21Z",
+      "last_success": "2026-11-16T16:02:35Z",
       "matched": 8
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-16T06:10:21Z",
+      "checked_at": "2026-11-16T16:02:35Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T06:10:21Z",
-      "matched": 4
+      "last_success": "2026-11-16T16:02:35Z",
+      "matched": 3
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-16T06:10:21Z",
+      "checked_at": "2026-11-16T16:02:35Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1224,41 +1193,41 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-16T06:10:21Z",
+      "checked_at": "2026-11-16T16:02:35Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T06:10:21Z",
+      "last_success": "2026-11-16T16:02:35Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-16T06:10:21Z",
+      "checked_at": "2026-11-16T16:02:35Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T06:10:21Z",
+      "last_success": "2026-11-16T16:02:35Z",
       "matched": 4
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-16T06:10:21Z",
+      "checked_at": "2026-11-16T16:02:35Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T06:10:21Z",
+      "last_success": "2026-11-16T16:02:35Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-16T06:10:21Z",
+      "checked_at": "2026-11-16T16:02:35Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T06:10:21Z",
-      "matched": 0
+      "last_success": "2026-11-16T16:02:35Z",
+      "matched": 1
     }
   ],
   "gaps": [

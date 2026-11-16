@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-16T06:10:21Z",
+    "checked_at": "2026-11-16T16:02:35Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-11-16T06:10:21Z",
+    "checked_at": "2026-11-16T16:02:35Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -85,11 +85,11 @@
       {
         "id": "BAMLH0A0HYM2",
         "name": "US high-yield credit spread",
-        "value": 3.2,
+        "value": 3.23,
         "unit": "percentage points",
-        "period": "2026-11-12",
+        "period": "2026-11-13",
         "stale": false,
-        "change": 0.38,
+        "change": 0.41,
         "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
       },
       {
@@ -123,32 +123,59 @@
   },
   "news": [
     {
-      "title": "Black Friday and tax return scams - don't fall for these",
-      "url": "https://www.bbc.co.uk/news/articles/cm4gnlz2p61ko?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-11-16T00:50:39Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
+      "title": "Trump says he wouldn’t mind Jensen Huang being reinstated as Nvidia CEO, as its shares fall again – as it happened",
+      "url": "https://www.theguardian.com/business/live/2026/nov/16/ai-sell-off-resumes-jensen-huang-discusses-comeback-nvidia-ceo-dollar-stock-markets-latest-news-updates",
+      "published_at": "2026-11-16T15:43:06Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
       "source_kind": "Publisher headline",
-      "topics": [],
+      "topics": [
+        "ai_economics"
+      ],
       "cached": false,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
       "relevance": {
-        "status": "No clear macro impact",
-        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
       },
       "related_reports": [
         {
-          "title": "Black Friday and tax return scams - don't fall for these",
-          "url": "https://www.bbc.co.uk/news/articles/cm4gnlz2p61ko?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-11-16T00:50:39Z"
+          "title": "Trump says he wouldn’t mind Jensen Huang being reinstated as Nvidia CEO, as its shares fall again – as it happened",
+          "url": "https://www.theguardian.com/business/live/2026/nov/16/ai-sell-off-resumes-jensen-huang-discusses-comeback-nvidia-ceo-dollar-stock-markets-latest-news-updates",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-11-16T15:43:06Z"
         }
       ]
     },
     {
-      "title": "Cut national insurance for under-25s to create jobs, Milburn report to say",
+      "title": "Trump says he wouldn't mind seeing Huang return to Nvidia",
+      "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-11-16T15:31:20Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "ai_economics"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Trump says he wouldn't mind seeing Huang return to Nvidia",
+          "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-11-16T15:31:20Z"
+        }
+      ]
+    },
+    {
+      "title": "Create more jobs for under-25s by cutting National Insurance, key report urges",
       "url": "https://www.bbc.co.uk/news/articles/c6p9dzmj514ko?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-11-15T22:30:03Z",
+      "published_at": "2026-11-16T13:19:33Z",
       "source_id": "bbc",
       "publisher": "BBC Business",
       "source_kind": "Publisher headline",
@@ -161,10 +188,81 @@
       },
       "related_reports": [
         {
-          "title": "Cut national insurance for under-25s to create jobs, Milburn report to say",
+          "title": "Create more jobs for under-25s by cutting National Insurance, key report urges",
           "url": "https://www.bbc.co.uk/news/articles/c6p9dzmj514ko?at_medium=RSS&at_campaign=rss",
           "publisher": "BBC Business",
-          "published_at": "2026-11-15T22:30:03Z"
+          "published_at": "2026-11-16T13:19:33Z"
+        }
+      ]
+    },
+    {
+      "title": "Frank Elderson: Smart supervision for small banks",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261116_1~11dd7f62af.en.html",
+      "published_at": "2026-11-16T13:00:00Z",
+      "source_id": "ecb",
+      "publisher": "European Central Bank",
+      "source_kind": "Primary institutional release",
+      "topics": [],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "Frank Elderson: Smart supervision for small banks",
+          "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261116_1~11dd7f62af.en.html",
+          "publisher": "European Central Bank",
+          "published_at": "2026-11-16T13:00:00Z"
+        }
+      ]
+    },
+    {
+      "title": "Americans relying on heating oil brace for harsh winter: ‘We’re often cold in our own home’",
+      "url": "https://www.theguardian.com/business/2026/nov/16/heating-oil-price-increase-winter",
+      "published_at": "2026-11-16T11:00:58Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "energy"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Americans relying on heating oil brace for harsh winter: ‘We’re often cold in our own home’",
+          "url": "https://www.theguardian.com/business/2026/nov/16/heating-oil-price-increase-winter",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-11-16T11:00:58Z"
+        }
+      ]
+    },
+    {
+      "title": "Avoid this Black Friday scam - how to check it's a real deal",
+      "url": "https://www.bbc.co.uk/news/articles/cm4gnlz2p61ko?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-11-16T09:58:52Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "Avoid this Black Friday scam - how to check it's a real deal",
+          "url": "https://www.bbc.co.uk/news/articles/cm4gnlz2p61ko?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-11-16T09:58:52Z"
         }
       ]
     },
@@ -361,31 +459,6 @@
       ]
     },
     {
-      "title": "Falkland Islanders face ‘devastating consequences’ if Argentina blocks oil project, says UK",
-      "url": "https://www.theguardian.com/world/2026/nov/10/uk-and-argentina-clash-over-falklands-oil-project-as-hamburg-tribunal-starts",
-      "published_at": "2026-11-10T19:01:33Z",
-      "source_id": "guardian",
-      "publisher": "The Guardian Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "energy"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Falkland Islanders face ‘devastating consequences’ if Argentina blocks oil project, says UK",
-          "url": "https://www.theguardian.com/world/2026/nov/10/uk-and-argentina-clash-over-falklands-oil-project-as-hamburg-tribunal-starts",
-          "publisher": "The Guardian Business",
-          "published_at": "2026-11-10T19:01:33Z"
-        }
-      ]
-    },
-    {
       "title": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
       "url": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-11-10T17:56:12Z",
@@ -436,31 +509,6 @@
       ]
     },
     {
-      "title": "US inflation rose 0.4% in October as price increases cooled and gas costs dipped",
-      "url": "https://www.theguardian.com/business/2026/nov/10/october-inflation-report",
-      "published_at": "2026-11-10T15:38:48Z",
-      "source_id": "guardian",
-      "publisher": "The Guardian Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "inflation"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "US inflation rose 0.4% in October as price increases cooled and gas costs dipped",
-          "url": "https://www.theguardian.com/business/2026/nov/10/october-inflation-report",
-          "publisher": "The Guardian Business",
-          "published_at": "2026-11-10T15:38:48Z"
-        }
-      ]
-    },
-    {
       "title": "Nvidia shaken by scandal amid wider political new order for big tech",
       "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
       "published_at": "2026-11-10T15:04:38Z",
@@ -482,56 +530,6 @@
           "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
           "publisher": "The Guardian Technology",
           "published_at": "2026-11-10T15:04:38Z"
-        }
-      ]
-    },
-    {
-      "title": "US inflation higher than expected in October - here's what is happening with prices",
-      "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-11-10T14:45:46Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "inflation"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "US inflation higher than expected in October - here's what is happening with prices",
-          "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-11-10T14:45:46Z"
-        }
-      ]
-    },
-    {
-      "title": "Economic relief is on the way, Democrats say. But what, how and when?",
-      "url": "https://www.theguardian.com/us-news/2026/nov/09/democrats-midterms-economy-healthcare",
-      "published_at": "2026-11-09T11:00:07Z",
-      "source_id": "guardian",
-      "publisher": "The Guardian Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "elections"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Economic relief is on the way, Democrats say. But what, how and when?",
-          "url": "https://www.theguardian.com/us-news/2026/nov/09/democrats-midterms-economy-healthcare",
-          "publisher": "The Guardian Business",
-          "published_at": "2026-11-09T11:00:07Z"
         }
       ]
     },
@@ -616,47 +614,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-16T06:10:21Z",
+      "checked_at": "2026-11-16T16:02:35Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T06:10:21Z",
+      "last_success": "2026-11-16T16:02:35Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-16T06:10:21Z",
+      "checked_at": "2026-11-16T16:02:35Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T06:10:21Z",
-      "matched": 4
+      "last_success": "2026-11-16T16:02:35Z",
+      "matched": 5
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-16T06:10:21Z",
+      "checked_at": "2026-11-16T16:02:35Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T06:10:21Z",
+      "last_success": "2026-11-16T16:02:35Z",
       "matched": 8
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-16T06:10:21Z",
+      "checked_at": "2026-11-16T16:02:35Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T06:10:21Z",
-      "matched": 4
+      "last_success": "2026-11-16T16:02:35Z",
+      "matched": 3
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-16T06:10:21Z",
+      "checked_at": "2026-11-16T16:02:35Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -666,41 +664,41 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-16T06:10:21Z",
+      "checked_at": "2026-11-16T16:02:35Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T06:10:21Z",
+      "last_success": "2026-11-16T16:02:35Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-16T06:10:21Z",
+      "checked_at": "2026-11-16T16:02:35Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T06:10:21Z",
+      "last_success": "2026-11-16T16:02:35Z",
       "matched": 4
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-16T06:10:21Z",
+      "checked_at": "2026-11-16T16:02:35Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T06:10:21Z",
+      "last_success": "2026-11-16T16:02:35Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-16T06:10:21Z",
+      "checked_at": "2026-11-16T16:02:35Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T06:10:21Z",
-      "matched": 0
+      "last_success": "2026-11-16T16:02:35Z",
+      "matched": 1
     }
   ],
   "sources": [

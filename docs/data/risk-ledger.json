@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-16T06:10:25Z",
-    "record_count": 60,
+    "updated_at": "2026-11-16T16:02:41Z",
+    "record_count": 63,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -1763,6 +1763,92 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "4b50eb2e82af6d1b7136bee2fa78493b8bb6c8221f14255be71e0dac29247571"
+    },
+    {
+      "id": "f222fe40749c914c46ebc120",
+      "first_observed_at": "2026-11-16T16:02:41Z",
+      "snapshot": {
+        "title": "Trump says he wouldn’t mind Jensen Huang being reinstated as Nvidia CEO, as its shares fall again – as it happened",
+        "url": "https://www.theguardian.com/business/live/2026/nov/16/ai-sell-off-resumes-jensen-huang-discusses-comeback-nvidia-ceo-dollar-stock-markets-latest-news-updates",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-16T15:43:06Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "cceb969750c6b407fba24a6b16c1316cb40ae59080aa76629d98d61d62172b3b"
+    },
+    {
+      "id": "be7d075e333074acbd88aae3",
+      "first_observed_at": "2026-11-16T16:02:41Z",
+      "snapshot": {
+        "title": "Trump says he wouldn't mind seeing Huang return to Nvidia",
+        "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-16T15:31:20Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "2a052d09880457fa6ca39bbe9dca59fb26a3adeda450a9fdfa093eda63dc9976"
+    },
+    {
+      "id": "5e9a2b5c4c3dffd0ea862f76",
+      "first_observed_at": "2026-11-16T16:02:41Z",
+      "snapshot": {
+        "title": "Americans relying on heating oil brace for harsh winter: ‘We’re often cold in our own home’",
+        "url": "https://www.theguardian.com/business/2026/nov/16/heating-oil-price-increase-winter",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-16T11:00:58Z",
+        "categories": [
+          "energy"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d8bbcc3e2536f510751f3f7fc1417a5af288b2bec41ac3c65aa827eef6c5d064",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "0fd54a5de565658ee7c53a3879213623e9a084920174ab5ae3f9ea5eec0fb8b2"
     }
   ]
 }

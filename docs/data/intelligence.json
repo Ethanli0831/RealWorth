@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-16T22:35:32Z",
-    "scan_started_at": "2026-11-16T22:27:23Z",
+    "checked_at": "2026-11-17T04:51:59Z",
+    "scan_started_at": "2026-11-17T04:44:48Z",
     "provider_requested": "local",
-    "article_reads": 9,
-    "ai_interpretations": 1,
-    "new_interpretations": 0,
+    "article_reads": 7,
+    "ai_interpretations": 3,
+    "new_interpretations": 2,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -17,6 +17,144 @@
       "published_at": null,
       "historical": true,
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/live/2026/nov/16/donald-trump-asia-visit-democrats-republicans-elizabeth-warren-faa-air-disruption-latest-news-updates",
+      "title": "Trump defends commerce secretary Lutnick for allegedly slow-walking Nvidia chip export restrictions – live",
+      "publisher": "The Guardian US Politics",
+      "published_at": "2026-11-16T23:54:45Z",
+      "historical": null,
+      "read_at": "2026-11-17T04:44:50Z",
+      "body_sha256": "4ccaea565a28f2f068bc644789af6113b00e3cb1b29444a7aa50cbd3882d1d6e",
+      "body_characters": 2857,
+      "model_context_characters": 2857,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Trump defended his commerce secretary Lutnick amid export restrictions controversies.",
+        "evidence_ids": [
+          "E4",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: Trump defended his commerce secretary Lutnick",
+          "financial_channel: If real yields rise, gold may face selling pressure",
+          "asset_hypothesis: If risk appetite increases, Bitcoin may see mixed reactions"
+        ],
+        "gold": {
+          "direction": "down",
+          "condition": "If real yields rise, investors may shift from gold to bonds."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite increases, Bitcoin may gain as an alternative to gold."
+        },
+        "uncertainty": "If the export restrictions are resolved quickly, the controversy may not impact markets."
+      },
+      "evidence": {
+        "E4": "Donald Trump defended his commerce secretary Howard Lutnick today, after he came",
+        "E5": "This comes after treasury secretary Scott Bessent told CNBC last week that"
+      },
+      "analyzed_at": "2026-11-17T04:47:12Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/16/companies-trump-tariff-refunds-corporate-bonuses",
+      "title": "Several companies are using Trump tariff refunds for corporate bonuses",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-16T17:52:13Z",
+      "historical": null,
+      "read_at": "2026-11-17T04:47:12Z",
+      "body_sha256": "47b9f6f99b4baecadb573d1a1f321d1656815281abb5d1b475d4c5978ab0be3d",
+      "body_characters": 4250,
+      "model_context_characters": 4250,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Several companies are using Trump tariff refunds for corporate bonuses instead of reimbursing consumers.",
+        "evidence_ids": [
+          "E2",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: companies receiving refunds for tariffs",
+          "financial_channel: If companies use refunds for bonuses, it reduces liquidity for consumers.",
+          "asset_hypothesis: If bonuses are given, it indicates reduced risk appetite."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If companies have extra funds from refunds, they may increase gold purchases for safety."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite is reduced, Bitcoin may lose some hedge demand, but liquidity concerns could support it."
+        },
+        "uncertainty": "If companies continue to pass tariffs to consumers, there could be no need for refunds or bonuses."
+      },
+      "evidence": {
+        "E2": "Several companies that received refunds for paying Donald Trump ’s tariffs have",
+        "E7": "Republican candidates across the country were largely punished for Trump’s tariffs and"
+      },
+      "analyzed_at": "2026-11-17T04:51:56Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
+      "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-15T21:06:03Z",
+      "historical": null,
+      "read_at": "2026-11-17T04:51:57Z",
+      "body_sha256": "6dda8d07ebf505fd888f31f8b8082e7de86d252506bb11bbcbd503243b85fb71",
+      "body_characters": 6965,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "publisher": "Federal Reserve",
+      "published_at": "2026-11-12T17:45:00Z",
+      "historical": null,
+      "status": "Unavailable: Insufficient public article text"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html",
+      "title": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-10T16:45:00Z",
+      "historical": null,
+      "read_at": "2026-11-17T04:51:59Z",
+      "body_sha256": "9e55b8784bc179b527498a0a3753e8541b7019a73e5ae28640c4f41ce3fc6d3b",
+      "body_characters": 18000,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/16/heating-oil-price-increase-winter",
+      "title": "Americans relying on heating oil brace for harsh winter: ‘We’re often cold in our own home’",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-16T11:00:58Z",
+      "historical": null,
+      "read_at": "2026-11-17T04:51:59Z",
+      "body_sha256": "eda1fdec61991980d002b703b71e5e948c5f5be64530875d7ddd01ba9e62983a",
+      "body_characters": 5541,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
+      "title": "Nvidia shaken by scandal amid wider political new order for big tech",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-10T15:04:38Z",
+      "historical": null,
+      "read_at": "2026-11-17T04:51:59Z",
+      "body_sha256": "9a9c8c4a10de1e8c492da6f0c215aae55ed17c28fcd3be809792924a56aa6e0c",
+      "body_characters": 5901,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.theguardian.com/business/2026/nov/13/global-oil-supply-returns-to-surplus-for-first-time-since-start-of-iran-war-says-iea",
@@ -58,110 +196,6 @@
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
-      "title": "Nvidia shaken by scandal amid wider political new order for big tech",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-10T15:04:38Z",
-      "historical": null,
-      "read_at": "2026-11-16T22:27:25Z",
-      "body_sha256": "9a9c8c4a10de1e8c492da6f0c215aae55ed17c28fcd3be809792924a56aa6e0c",
-      "body_characters": 5901,
-      "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
-    },
-    {
-      "url": "https://www.theguardian.com/business/live/2026/nov/16/ai-sell-off-resumes-jensen-huang-discusses-comeback-nvidia-ceo-dollar-stock-markets-latest-news-updates",
-      "title": "Trump says he wouldn’t mind Jensen Huang being reinstated as Nvidia CEO, as its shares fall again – as it happened",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-16T15:43:06Z",
-      "historical": null,
-      "read_at": "2026-11-16T22:32:18Z",
-      "body_sha256": "3a8625f4b9770fa78e5e42d7cced819a7398380edfcfb3de2e16c75640173077",
-      "body_characters": 2060,
-      "model_context_characters": 2060,
-      "status": "Unavailable: AI chain contains no financial transmission mechanism"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
-      "title": "Trump says he wouldn't mind seeing Huang return to Nvidia",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-16T15:31:20Z",
-      "historical": null,
-      "read_at": "2026-11-16T22:35:29Z",
-      "body_sha256": "614a185ea00ef437583d9975d5c6e09d8b17a609d9bc3c2525658402d63e0726",
-      "body_characters": 5997,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
-      "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-15T21:06:03Z",
-      "historical": null,
-      "read_at": "2026-11-16T22:35:30Z",
-      "body_sha256": "6dda8d07ebf505fd888f31f8b8082e7de86d252506bb11bbcbd503243b85fb71",
-      "body_characters": 6965,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
-      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
-      "publisher": "Federal Reserve",
-      "published_at": "2026-11-12T17:45:00Z",
-      "historical": null,
-      "status": "Unavailable: Insufficient public article text"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html",
-      "title": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-10T16:45:00Z",
-      "historical": null,
-      "read_at": "2026-11-16T22:35:32Z",
-      "body_sha256": "9e55b8784bc179b527498a0a3753e8541b7019a73e5ae28640c4f41ce3fc6d3b",
-      "body_characters": 18000,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/16/heating-oil-price-increase-winter",
-      "title": "Americans relying on heating oil brace for harsh winter: ‘We’re often cold in our own home’",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-16T11:00:58Z",
-      "historical": null,
-      "read_at": "2026-11-16T22:35:32Z",
-      "body_sha256": "eda1fdec61991980d002b703b71e5e948c5f5be64530875d7ddd01ba9e62983a",
-      "body_characters": 5541,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
-      "title": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-10T17:56:12Z",
-      "historical": null,
-      "read_at": "2026-11-16T22:35:32Z",
-      "body_sha256": "d45dccb8f97369a0be1a23787e8e7310407513b48ce8981c26eec5defbb97f99",
-      "body_characters": 3353,
-      "model_context_characters": 3353,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/2026/nov/15/art-over-profit-ai-policy-debate-andrew-mclachlan",
-      "title": "Art ‘must not be sacrificed on the altar of corporate profit’, Liberal senator says as AI policy debate rages",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-14T19:00:52Z",
-      "historical": null,
-      "read_at": "2026-11-16T22:35:32Z",
-      "body_sha256": "2c7a8ca1e8a98178039ae6a271fb00f9293c9ed9f7cb0c88d29fcb3efbce2ad6",
-      "body_characters": 4337,
-      "model_context_characters": 4337,
-      "status": "Public body read; queued for AI"
     }
   ]
 }

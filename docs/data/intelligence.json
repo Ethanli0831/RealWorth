@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-17T14:59:37Z",
-    "scan_started_at": "2026-11-17T14:48:20Z",
+    "checked_at": "2026-11-17T23:12:57Z",
+    "scan_started_at": "2026-11-17T23:04:53Z",
     "provider_requested": "local",
-    "article_reads": 7,
+    "article_reads": 8,
     "ai_interpretations": 3,
-    "new_interpretations": 0,
+    "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,40 +19,16 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html",
-      "title": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-10T16:45:00Z",
-      "historical": null,
-      "read_at": "2026-11-17T14:48:22Z",
-      "body_sha256": "9e55b8784bc179b527498a0a3753e8541b7019a73e5ae28640c4f41ce3fc6d3b",
-      "body_characters": 18000,
-      "model_context_characters": 4500,
-      "status": "Unavailable: AI chain contains no financial transmission mechanism"
-    },
-    {
       "url": "https://www.theguardian.com/business/2026/nov/16/heating-oil-price-increase-winter",
       "title": "Americans relying on heating oil brace for harsh winter: ‘We’re often cold in our own home’",
       "publisher": "The Guardian Business",
       "published_at": "2026-11-16T11:00:58Z",
       "historical": null,
-      "read_at": "2026-11-17T14:53:57Z",
+      "read_at": "2026-11-17T23:04:55Z",
       "body_sha256": "eda1fdec61991980d002b703b71e5e948c5f5be64530875d7ddd01ba9e62983a",
       "body_characters": 5541,
       "model_context_characters": 4500,
       "status": "Unavailable: AI numerical statements require exact cited source support"
-    },
-    {
-      "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
-      "title": "Nvidia shaken by scandal amid wider political new order for big tech",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-10T15:04:38Z",
-      "historical": null,
-      "read_at": "2026-11-17T14:59:37Z",
-      "body_sha256": "9a9c8c4a10de1e8c492da6f0c215aae55ed17c28fcd3be809792924a56aa6e0c",
-      "body_characters": 5901,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.theguardian.com/business/2026/nov/13/global-oil-supply-returns-to-surplus-for-first-time-since-start-of-iran-war-says-iea",
@@ -60,7 +36,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-13T13:35:45Z",
       "historical": null,
-      "read_at": "2026-11-16T22:26:16Z",
+      "read_at": "2026-11-17T23:04:20Z",
       "body_sha256": "4903697326b2785bcd1106238f44ddec5450dc7c9e497b001df42aa410f479c1",
       "body_characters": 2663,
       "model_context_characters": 2663,
@@ -96,45 +72,89 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.theguardian.com/us-news/live/2026/nov/16/donald-trump-asia-visit-democrats-republicans-elizabeth-warren-faa-air-disruption-latest-news-updates",
-      "title": "Trump defends commerce secretary Lutnick for allegedly slow-walking Nvidia chip export restrictions – live",
-      "publisher": "The Guardian US Politics",
-      "published_at": "2026-11-16T23:54:45Z",
+      "url": "https://www.theguardian.com/business/live/2026/nov/17/uk-jobs-market-wage-growth-payrolls-unemployment-milburn-china-us-chips-latest-news-updates",
+      "title": "Markets drop ahead of Nvidia’s results; Jensen Huang says he’d be ‘honoured’ to return as CEO – as it happened",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-17T16:54:21Z",
       "historical": null,
-      "read_at": "2026-11-17T04:44:50Z",
-      "body_sha256": "4ccaea565a28f2f068bc644789af6113b00e3cb1b29444a7aa50cbd3882d1d6e",
-      "body_characters": 2857,
-      "model_context_characters": 2857,
-      "status": "Cached AI interpretation; awaiting re-read",
+      "read_at": "2026-11-17T23:10:59Z",
+      "body_sha256": "eae7bf5a4b919f17580a2ca8b9b9d2c0f26286f461e0a854f9eb038408271aeb",
+      "body_characters": 2669,
+      "model_context_characters": 2669,
+      "status": "AI interpretation generated · not independently verified",
       "analysis": {
-        "summary": "Trump defended his commerce secretary Lutnick amid export restrictions controversies.",
+        "summary": "Jensen Huang has expressed interest in returning as Nvidia's CEO, leading to market drops ahead of the company's earnings release.",
         "evidence_ids": [
-          "E4",
+          "E1",
           "E5"
         ],
         "chain": [
-          "reported_event: Trump defended his commerce secretary Lutnick",
-          "financial_channel: If real yields rise, gold may face selling pressure",
-          "asset_hypothesis: If risk appetite increases, Bitcoin may see mixed reactions"
+          "reported_event: Jensen Huang expresses interest in returning as CEO",
+          "financial_channel: If market sentiment improves, liquidity may increase",
+          "asset_hypothesis: If the Board decides Huang's return is beneficial, risk appetite may rise"
         ],
         "gold": {
-          "direction": "down",
-          "condition": "If real yields rise, investors may shift from gold to bonds."
+          "direction": "mixed",
+          "condition": "If geopolitical tensions ease, gold demand may decrease; otherwise, it may remain stable"
         },
         "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite increases, Bitcoin may gain as an alternative to gold."
+          "direction": "unclear",
+          "condition": "If Huang's return boosts tech sector confidence, Bitcoin may see mixed reactions; otherwise, it may remain unchanged"
         },
-        "uncertainty": "If the export restrictions are resolved quickly, the controversy may not impact markets."
+        "uncertainty": "China's response to the US investigation could lead to further market volatility, affecting both gold and Bitcoin."
       },
       "evidence": {
-        "E4": "Donald Trump defended his commerce secretary Howard Lutnick today, after he came",
-        "E5": "This comes after treasury secretary Scott Bessent told CNBC last week that"
+        "E1": "Jensen Huang has thrown his hat into the ring to return to",
+        "E5": "But Huang also indicated he would be happy to return to his"
       },
-      "analyzed_at": "2026-11-17T04:47:12Z",
+      "analyzed_at": "2026-11-17T23:12:56Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-jensen-huang-statement",
+      "title": "Jensen Huang says he would be ‘honored’ to return to Nvidia as CEO",
+      "publisher": "The Guardian US Politics",
+      "published_at": "2026-11-17T16:40:55Z",
+      "historical": null,
+      "read_at": "2026-11-17T23:12:56Z",
+      "body_sha256": "fa32253d77b45608d9f960663fef093539b5c90e8bffcf2ce0ef093fa5a0fa35",
+      "body_characters": 3355,
+      "model_context_characters": 3355,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cwq6e2qgvmlgo?at_medium=RSS&at_campaign=rss",
+      "title": "How new US chip restrictions on South East Asia will hit China",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-17T14:25:45Z",
+      "historical": null,
+      "read_at": "2026-11-17T23:12:57Z",
+      "body_sha256": "ce43e043f9744706f62dcafefa52128a4ea56194d14a79a4f17c6712b0f20e44",
+      "body_characters": 5944,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/17/millionaire-factory-anthropic-ipo-set-to-fuel-ai-gold-rush-in-londons-high-end-property-market",
+      "title": "Millionaire factory: Anthropic IPO set to fuel AI gold rush in London’s high-end property market",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-17T07:00:07Z",
+      "historical": null,
+      "read_at": "2026-11-17T23:12:57Z",
+      "body_sha256": "4798450d15eb1f1db0c0ba75f73e115730f6f86c8c8fe08ceacc4a8997173bd6",
+      "body_characters": 8330,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "publisher": "Federal Reserve",
+      "published_at": "2026-11-12T17:45:00Z",
+      "historical": null,
+      "status": "Unavailable: Insufficient public article text"
     },
     {
       "url": "https://www.theguardian.com/us-news/2026/nov/16/companies-trump-tariff-refunds-corporate-bonuses",
@@ -183,19 +203,11 @@
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-15T21:06:03Z",
       "historical": null,
-      "read_at": "2026-11-17T14:59:37Z",
+      "read_at": "2026-11-17T23:12:57Z",
       "body_sha256": "6dda8d07ebf505fd888f31f8b8082e7de86d252506bb11bbcbd503243b85fb71",
       "body_characters": 6965,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
-      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
-      "publisher": "Federal Reserve",
-      "published_at": "2026-11-12T17:45:00Z",
-      "historical": null,
-      "status": "Unavailable: Insufficient public article text"
     }
   ]
 }

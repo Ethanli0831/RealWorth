@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-17T00:09:59Z",
-    "record_count": 65,
+    "updated_at": "2026-11-17T08:06:28Z",
+    "record_count": 66,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -1908,6 +1908,36 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "199e552ee8e3847c1377437d9c3230ed56a3126bff292710c2c52c0c1de00095"
+    },
+    {
+      "id": "c68ce9710d19d0301b1410f2",
+      "first_observed_at": "2026-11-17T08:06:28Z",
+      "snapshot": {
+        "title": "Trump defends commerce secretary Lutnick for allegedly slow-walking Nvidia chip export restrictions – as it happened",
+        "url": "https://www.theguardian.com/us-news/live/2026/nov/16/donald-trump-asia-visit-democrats-republicans-elizabeth-warren-faa-air-disruption-latest-news-updates",
+        "publisher": "The Guardian US Politics",
+        "published_at": "2026-11-17T02:31:14Z",
+        "categories": [
+          "ai_regulation",
+          "trade"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "b610c8f0b7aaef76dc5c784839a6b421855c0f6a8538fb5858ccb6527972ee23",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "344c25d3a1a34bf2254564bf7fc74fe608efdc20240a43eb7265d135fe678542"
     }
   ]
 }

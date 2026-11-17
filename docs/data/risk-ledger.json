@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-17T08:06:28Z",
-    "record_count": 66,
+    "updated_at": "2026-11-17T17:35:23Z",
+    "record_count": 69,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -1938,6 +1938,90 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "344c25d3a1a34bf2254564bf7fc74fe608efdc20240a43eb7265d135fe678542"
+    },
+    {
+      "id": "fcb343a481015648a46578b0",
+      "first_observed_at": "2026-11-17T17:35:23Z",
+      "snapshot": {
+        "title": "Markets drop ahead of Nvidia’s results; Jensen Huang says he’d be ‘honoured’ to return as CEO – as it happened",
+        "url": "https://www.theguardian.com/business/live/2026/nov/17/uk-jobs-market-wage-growth-payrolls-unemployment-milburn-china-us-chips-latest-news-updates",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-17T16:54:21Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "a1f553c2fb6eb1a6b7657eb70a8d4bea3bc438ec46f00459967ab64c7637e4d7"
+    },
+    {
+      "id": "9235cb758f363582eab8921c",
+      "first_observed_at": "2026-11-17T17:35:23Z",
+      "snapshot": {
+        "title": "Jensen Huang says he would be ‘honored’ to return to Nvidia as CEO",
+        "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-jensen-huang-statement",
+        "publisher": "The Guardian US Politics",
+        "published_at": "2026-11-17T16:40:55Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Proposal or possibility reported; not enacted law",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "139f9b767337f7a2d7857a29269c8a809ad8a164782b6f79a6d9ca5243754900"
+    },
+    {
+      "id": "1c486c748c778a023c932595",
+      "first_observed_at": "2026-11-17T17:35:23Z",
+      "snapshot": {
+        "title": "How new US chip restrictions on South East Asia will hit China",
+        "url": "https://www.bbc.co.uk/news/articles/cwq6e2qgvmlgo?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-17T14:25:45Z",
+        "categories": [
+          "ai_regulation"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "897f5d72cfd89dfb8ee98d8117092ac4ed43a2e697c4dac21638f5486e473305",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "9656f575daeace94ab4f542b59b4f83f46d332e1dc90b6706c80377421a02c12"
     }
   ]
 }

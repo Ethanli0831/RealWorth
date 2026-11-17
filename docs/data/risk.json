@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-17T17:35:23Z",
-    "source_checked_at": "2026-11-17T17:35:17Z",
+    "built_at": "2026-11-17T23:56:47Z",
+    "source_checked_at": "2026-11-17T23:56:40Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -10,14 +10,14 @@
     "disclosure": "Risk chains are transparent scenarios, not verified causal effects, probability forecasts or AI price targets. No warnings are backdated.",
     "feeds_fetched": 8,
     "feeds_total": 9,
-    "ledger_records": 69
+    "ledger_records": 73
   },
   "events": [
     {
-      "title": "Markets drop ahead of Nvidia’s results; Jensen Huang says he’d be ‘honoured’ to return as CEO – as it happened",
-      "url": "https://www.theguardian.com/business/live/2026/nov/17/uk-jobs-market-wage-growth-payrolls-unemployment-milburn-china-us-chips-latest-news-updates",
+      "title": "Nvidia doubles revenue as board says it does not intend to reinstate Jensen Huang",
+      "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-third-quarter-revenue-jensen-huang",
       "publisher": "The Guardian Business",
-      "published_at": "2026-11-17T16:54:21Z",
+      "published_at": "2026-11-17T23:32:16Z",
       "categories": [
         "ai_economics"
       ],
@@ -35,15 +35,15 @@
       "framework_version": "event-risk-v1",
       "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
       "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "fcb343a481015648a46578b0",
-      "first_observed_at": "2026-11-17T17:35:23Z",
-      "digest": "a1f553c2fb6eb1a6b7657eb70a8d4bea3bc438ec46f00459967ab64c7637e4d7"
+      "id": "899fa547c954ec761b24db24",
+      "first_observed_at": "2026-11-17T23:56:47Z",
+      "digest": "b4f3cf16e7d1760d40e2a2e8297503d236157120cdfc1d8fedc9f784136269b5"
     },
     {
-      "title": "Jensen Huang says he would be ‘honored’ to return to Nvidia as CEO",
-      "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-jensen-huang-statement",
-      "publisher": "The Guardian US Politics",
-      "published_at": "2026-11-17T16:40:55Z",
+      "title": "Jensen Huang says he would be 'honoured' to return as Nvidia CEO if board asked him",
+      "url": "https://www.bbc.co.uk/news/articles/cwx2en2vrxmdo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-17T18:24:21Z",
       "categories": [
         "ai_economics"
       ],
@@ -61,9 +61,35 @@
       "framework_version": "event-risk-v1",
       "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
       "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "9235cb758f363582eab8921c",
-      "first_observed_at": "2026-11-17T17:35:23Z",
-      "digest": "139f9b767337f7a2d7857a29269c8a809ad8a164782b6f79a6d9ca5243754900"
+      "id": "77dd0beb7f907790e45e70d1",
+      "first_observed_at": "2026-11-17T23:56:47Z",
+      "digest": "63ace5ff76f90821b720bf5867043f77b68f6b1b34ed524d2d510d5fcf946b74"
+    },
+    {
+      "title": "Jensen Huang says he would be ‘honored’ to return to Nvidia as CEO",
+      "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-jensen-huang-statement",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-17T17:35:26Z",
+      "categories": [
+        "ai_economics"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Proposal or possibility reported; not enacted law",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "411f0875de96a83d72bc674d",
+      "first_observed_at": "2026-11-17T23:56:47Z",
+      "digest": "4784262a5dc88701becaf8ae751cd27408ef11f15eaed6d5d5a0c2ed9209e4c3"
     },
     {
       "title": "How new US chip restrictions on South East Asia will hit China",
@@ -171,6 +197,34 @@
       "id": "2100a0292cd9b883191420e5",
       "first_observed_at": "2026-11-07T18:08:17Z",
       "digest": "479566df9a598e96ffb6d33a3fbe0615df7107cfdb112f53aa6a8b7530b121f0"
+    },
+    {
+      "title": "Philip R. Lane: The practice and science of monetary policy communication: the ECB experience",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-17T18:30:00Z",
+      "categories": [
+        "rates"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "f7ec6f68617ddff1a2e2f064",
+      "first_observed_at": "2026-11-17T23:56:47Z",
+      "digest": "afd4fe49827c87135087ae17c33f52dc1940e938db136f0ef74803d91b3723b0"
     },
     {
       "title": "Americans relying on heating oil brace for harsh winter: ‘We’re often cold in our own home’",
@@ -465,7 +519,7 @@
         "Check utilization, order cancellations, financing and customer concentration.",
         "Distinguish a lower share valuation from cash automatically moving to another country."
       ],
-      "event_count": 3,
+      "event_count": 4,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -514,7 +568,7 @@
         "Check real yields, dollar funding and the policy response.",
         "Separate a growth shock from an inflation shock."
       ],
-      "event_count": 7,
+      "event_count": 8,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -841,8 +895,8 @@
       "id": "fomc",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "Fetched official schedule",
-      "last_success": "2026-11-17T17:35:23Z",
-      "attempted_at": "2026-11-17T17:35:23Z",
+      "last_success": "2026-11-17T23:56:47Z",
+      "attempted_at": "2026-11-17T23:56:47Z",
       "events": [
         {
           "title": "Scheduled FOMC meeting final day",
@@ -1132,7 +1186,7 @@
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-17T17:35:23Z",
+      "attempted_at": "2026-11-17T23:56:47Z",
       "events": [],
       "stale": true,
       "error": "HTTPError",
@@ -1144,47 +1198,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-17T17:35:17Z",
+      "checked_at": "2026-11-17T23:56:40Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T17:35:17Z",
+      "last_success": "2026-11-17T23:56:40Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-17T17:35:17Z",
+      "checked_at": "2026-11-17T23:56:40Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T17:35:17Z",
-      "matched": 5
+      "last_success": "2026-11-17T23:56:40Z",
+      "matched": 6
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-17T17:35:17Z",
+      "checked_at": "2026-11-17T23:56:40Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T17:35:17Z",
-      "matched": 7
+      "last_success": "2026-11-17T23:56:40Z",
+      "matched": 8
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-17T17:35:17Z",
+      "checked_at": "2026-11-17T23:56:40Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T17:35:17Z",
+      "last_success": "2026-11-17T23:56:40Z",
       "matched": 6
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-17T17:35:17Z",
+      "checked_at": "2026-11-17T23:56:40Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1194,40 +1248,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-17T17:35:17Z",
+      "checked_at": "2026-11-17T23:56:40Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T17:35:17Z",
+      "last_success": "2026-11-17T23:56:40Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-17T17:35:17Z",
+      "checked_at": "2026-11-17T23:56:40Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T17:35:17Z",
-      "matched": 5
+      "last_success": "2026-11-17T23:56:40Z",
+      "matched": 6
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-17T17:35:17Z",
+      "checked_at": "2026-11-17T23:56:40Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T17:35:17Z",
-      "matched": 1
+      "last_success": "2026-11-17T23:56:40Z",
+      "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-17T17:35:17Z",
+      "checked_at": "2026-11-17T23:56:40Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T17:35:17Z",
+      "last_success": "2026-11-17T23:56:40Z",
       "matched": 1
     }
   ],

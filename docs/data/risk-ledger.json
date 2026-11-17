@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-17T17:35:23Z",
-    "record_count": 69,
+    "updated_at": "2026-11-17T23:56:47Z",
+    "record_count": 73,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -2022,6 +2022,120 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "9656f575daeace94ab4f542b59b4f83f46d332e1dc90b6706c80377421a02c12"
+    },
+    {
+      "id": "899fa547c954ec761b24db24",
+      "first_observed_at": "2026-11-17T23:56:47Z",
+      "snapshot": {
+        "title": "Nvidia doubles revenue as board says it does not intend to reinstate Jensen Huang",
+        "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-third-quarter-revenue-jensen-huang",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-17T23:32:16Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "b4f3cf16e7d1760d40e2a2e8297503d236157120cdfc1d8fedc9f784136269b5"
+    },
+    {
+      "id": "f7ec6f68617ddff1a2e2f064",
+      "first_observed_at": "2026-11-17T23:56:47Z",
+      "snapshot": {
+        "title": "Philip R. Lane: The practice and science of monetary policy communication: the ECB experience",
+        "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf",
+        "publisher": "European Central Bank",
+        "published_at": "2026-11-17T18:30:00Z",
+        "categories": [
+          "rates"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "afd4fe49827c87135087ae17c33f52dc1940e938db136f0ef74803d91b3723b0"
+    },
+    {
+      "id": "77dd0beb7f907790e45e70d1",
+      "first_observed_at": "2026-11-17T23:56:47Z",
+      "snapshot": {
+        "title": "Jensen Huang says he would be 'honoured' to return as Nvidia CEO if board asked him",
+        "url": "https://www.bbc.co.uk/news/articles/cwx2en2vrxmdo?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-17T18:24:21Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Proposal or possibility reported; not enacted law",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "63ace5ff76f90821b720bf5867043f77b68f6b1b34ed524d2d510d5fcf946b74"
+    },
+    {
+      "id": "411f0875de96a83d72bc674d",
+      "first_observed_at": "2026-11-17T23:56:47Z",
+      "snapshot": {
+        "title": "Jensen Huang says he would be ‘honored’ to return to Nvidia as CEO",
+        "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-jensen-huang-statement",
+        "publisher": "The Guardian Technology",
+        "published_at": "2026-11-17T17:35:26Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Proposal or possibility reported; not enacted law",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "4784262a5dc88701becaf8ae751cd27408ef11f15eaed6d5d5a0c2ed9209e4c3"
     }
   ]
 }

@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-16T16:02:41Z",
-    "record_count": 63,
+    "updated_at": "2026-11-17T00:09:59Z",
+    "record_count": 65,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -1849,6 +1849,65 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "0fd54a5de565658ee7c53a3879213623e9a084920174ab5ae3f9ea5eec0fb8b2"
+    },
+    {
+      "id": "622041cde9ca757c424a96cb",
+      "first_observed_at": "2026-11-17T00:09:59Z",
+      "snapshot": {
+        "title": "Trump defends commerce secretary Lutnick for allegedly slow-walking Nvidia chip export restrictions – live",
+        "url": "https://www.theguardian.com/us-news/live/2026/nov/16/donald-trump-asia-visit-democrats-republicans-elizabeth-warren-faa-air-disruption-latest-news-updates",
+        "publisher": "The Guardian US Politics",
+        "published_at": "2026-11-16T23:54:45Z",
+        "categories": [
+          "ai_regulation",
+          "trade"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "b610c8f0b7aaef76dc5c784839a6b421855c0f6a8538fb5858ccb6527972ee23",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "b3aa34569b098f375949fe44a7e9aa34fff85f60b5bfbfa8ec53d278cb1e599c"
+    },
+    {
+      "id": "62e69e25c717c9e76f7cb1ab",
+      "first_observed_at": "2026-11-17T00:09:59Z",
+      "snapshot": {
+        "title": "Several companies are using Trump tariff refunds for corporate bonuses",
+        "url": "https://www.theguardian.com/us-news/2026/nov/16/companies-trump-tariff-refunds-corporate-bonuses",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-16T17:52:13Z",
+        "categories": [
+          "trade"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "3dd28088d5cd9fa6c2ddfd743c9cf5ec4b68eb099ba50df689f0464ff2d9c3bc",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "199e552ee8e3847c1377437d9c3230ed56a3126bff292710c2c52c0c1de00095"
     }
   ]
 }

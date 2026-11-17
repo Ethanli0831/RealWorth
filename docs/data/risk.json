@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-16T16:02:41Z",
-    "source_checked_at": "2026-11-16T16:02:35Z",
+    "built_at": "2026-11-17T00:09:59Z",
+    "source_checked_at": "2026-11-17T00:09:54Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -10,19 +10,48 @@
     "disclosure": "Risk chains are transparent scenarios, not verified causal effects, probability forecasts or AI price targets. No warnings are backdated.",
     "feeds_fetched": 8,
     "feeds_total": 9,
-    "ledger_records": 63
+    "ledger_records": 65
   },
   "events": [
     {
-      "title": "Trump says he wouldn’t mind Jensen Huang being reinstated as Nvidia CEO, as its shares fall again – as it happened",
-      "url": "https://www.theguardian.com/business/live/2026/nov/16/ai-sell-off-resumes-jensen-huang-discusses-comeback-nvidia-ceo-dollar-stock-markets-latest-news-updates",
+      "title": "Trump defends commerce secretary Lutnick for allegedly slow-walking Nvidia chip export restrictions – live",
+      "url": "https://www.theguardian.com/us-news/live/2026/nov/16/donald-trump-asia-visit-democrats-republicans-elizabeth-warren-faa-air-disruption-latest-news-updates",
+      "publisher": "The Guardian US Politics",
+      "published_at": "2026-11-16T23:54:45Z",
+      "categories": [
+        "ai_regulation",
+        "trade"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "b610c8f0b7aaef76dc5c784839a6b421855c0f6a8538fb5858ccb6527972ee23",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "622041cde9ca757c424a96cb",
+      "first_observed_at": "2026-11-17T00:09:59Z",
+      "digest": "b3aa34569b098f375949fe44a7e9aa34fff85f60b5bfbfa8ec53d278cb1e599c"
+    },
+    {
+      "title": "Several companies are using Trump tariff refunds for corporate bonuses",
+      "url": "https://www.theguardian.com/us-news/2026/nov/16/companies-trump-tariff-refunds-corporate-bonuses",
       "publisher": "The Guardian Business",
-      "published_at": "2026-11-16T15:43:06Z",
+      "published_at": "2026-11-16T17:52:13Z",
       "categories": [
-        "ai_economics"
+        "trade"
       ],
       "tickers": [
         "BTC-USD",
+        "GLD",
         "SPY"
       ],
       "regions": [
@@ -33,89 +62,11 @@
       "legal_effective_at": null,
       "scheduled_at": null,
       "framework_version": "event-risk-v1",
-      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+      "framework_digest": "3dd28088d5cd9fa6c2ddfd743c9cf5ec4b68eb099ba50df689f0464ff2d9c3bc",
       "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "f222fe40749c914c46ebc120",
-      "first_observed_at": "2026-11-16T16:02:41Z",
-      "digest": "cceb969750c6b407fba24a6b16c1316cb40ae59080aa76629d98d61d62172b3b"
-    },
-    {
-      "title": "Trump says he wouldn't mind seeing Huang return to Nvidia",
-      "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-16T15:31:20Z",
-      "categories": [
-        "ai_economics"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "be7d075e333074acbd88aae3",
-      "first_observed_at": "2026-11-16T16:02:41Z",
-      "digest": "2a052d09880457fa6ca39bbe9dca59fb26a3adeda450a9fdfa093eda63dc9976"
-    },
-    {
-      "title": "Art ‘must not be sacrificed on the altar of corporate profit’, Liberal senator says as AI policy debate rages",
-      "url": "https://www.theguardian.com/australia-news/2026/nov/15/art-over-profit-ai-policy-debate-andrew-mclachlan",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-14T19:00:52Z",
-      "categories": [
-        "ai_economics"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "2ea5e0e5f9de8df89f4dd337",
-      "first_observed_at": "2026-11-15T07:46:08Z",
-      "digest": "a0e5a66513f2eb11ec47e61d224219cbed7cea39f166d68f498d0391870f8509"
-    },
-    {
-      "title": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
-      "url": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-10T17:56:12Z",
-      "categories": [
-        "ai_economics"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "670d6f7962e27a1adb6a0948",
-      "first_observed_at": "2026-11-10T23:30:56Z",
-      "digest": "8bb24028a435ba3eb83d89c988780777d08e17aeb84bc0c6b37189814290a1b1"
+      "id": "62e69e25c717c9e76f7cb1ab",
+      "first_observed_at": "2026-11-17T00:09:59Z",
+      "digest": "199e552ee8e3847c1377437d9c3230ed56a3126bff292710c2c52c0c1de00095"
     },
     {
       "title": "Nvidia shaken by scandal amid wider political new order for big tech",
@@ -441,8 +392,8 @@
         "Check whether it concerns model use, chip exports, electricity costs or construction.",
         "Verify effective dates and company guidance; do not infer a global ban."
       ],
-      "event_count": 0,
-      "coverage": "No matching evidence in selected feeds; risk not ruled out"
+      "event_count": 1,
+      "coverage": "Limited selected-headline coverage"
     },
     {
       "id": "ai_economics",
@@ -464,7 +415,7 @@
         "Check utilization, order cancellations, financing and customer concentration.",
         "Distinguish a lower share valuation from cash automatically moving to another country."
       ],
-      "event_count": 5,
+      "event_count": 1,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -488,8 +439,8 @@
         "Map supplier revenue by customer and destination.",
         "Review retaliation, substitution and currency exposure."
       ],
-      "event_count": 0,
-      "coverage": "No matching evidence in selected feeds; risk not ruled out"
+      "event_count": 2,
+      "coverage": "Limited selected-headline coverage"
     },
     {
       "id": "rates",
@@ -840,8 +791,8 @@
       "id": "fomc",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "Fetched official schedule",
-      "last_success": "2026-11-16T16:02:41Z",
-      "attempted_at": "2026-11-16T16:02:41Z",
+      "last_success": "2026-11-17T00:09:59Z",
+      "attempted_at": "2026-11-17T00:09:59Z",
       "events": [
         {
           "title": "Scheduled FOMC meeting final day",
@@ -1131,7 +1082,7 @@
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-16T16:02:41Z",
+      "attempted_at": "2026-11-17T00:09:59Z",
       "events": [],
       "stale": true,
       "error": "HTTPError",
@@ -1143,47 +1094,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-16T16:02:35Z",
+      "checked_at": "2026-11-17T00:09:54Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T16:02:35Z",
+      "last_success": "2026-11-17T00:09:54Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-16T16:02:35Z",
+      "checked_at": "2026-11-17T00:09:54Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T16:02:35Z",
+      "last_success": "2026-11-17T00:09:54Z",
       "matched": 5
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-16T16:02:35Z",
+      "checked_at": "2026-11-17T00:09:54Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T16:02:35Z",
+      "last_success": "2026-11-17T00:09:54Z",
       "matched": 8
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-16T16:02:35Z",
+      "checked_at": "2026-11-17T00:09:54Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T16:02:35Z",
-      "matched": 3
+      "last_success": "2026-11-17T00:09:54Z",
+      "matched": 4
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-16T16:02:35Z",
+      "checked_at": "2026-11-17T00:09:54Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1193,41 +1144,41 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-16T16:02:35Z",
+      "checked_at": "2026-11-17T00:09:54Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T16:02:35Z",
+      "last_success": "2026-11-17T00:09:54Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-16T16:02:35Z",
+      "checked_at": "2026-11-17T00:09:54Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T16:02:35Z",
-      "matched": 4
+      "last_success": "2026-11-17T00:09:54Z",
+      "matched": 3
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-16T16:02:35Z",
+      "checked_at": "2026-11-17T00:09:54Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T16:02:35Z",
-      "matched": 0
+      "last_success": "2026-11-17T00:09:54Z",
+      "matched": 1
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-16T16:02:35Z",
+      "checked_at": "2026-11-17T00:09:54Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T16:02:35Z",
-      "matched": 1
+      "last_success": "2026-11-17T00:09:54Z",
+      "matched": 0
     }
   ],
   "gaps": [

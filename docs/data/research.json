@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-16T16:02:35Z",
+    "checked_at": "2026-11-17T00:09:54Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-11-16T16:02:35Z",
+    "checked_at": "2026-11-17T00:09:54Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -65,11 +65,11 @@
       {
         "id": "QUSPAM770A",
         "name": "Private non-financial credit / GDP",
-        "value": 140.3,
+        "value": 139.7,
         "unit": "%",
-        "period": "2025Q4",
+        "period": "2026Q1",
         "stale": true,
-        "change": -2.2,
+        "change": -1.9,
         "source": "https://fred.stlouisfed.org/series/QUSPAM770A"
       },
       {
@@ -95,21 +95,21 @@
       {
         "id": "DFII10",
         "name": "10-year Treasury real yield",
-        "value": 2.86,
+        "value": 2.91,
         "unit": "%",
-        "period": "2026-11-12",
+        "period": "2026-11-13",
         "stale": false,
-        "change": 0.87,
+        "change": 0.92,
         "source": "https://fred.stlouisfed.org/series/DFII10"
       },
       {
         "id": "T10Y3M",
         "name": "10-year minus 3-month Treasury yield",
-        "value": 0.83,
+        "value": 0.78,
         "unit": "percentage points",
-        "period": "2026-11-13",
+        "period": "2026-11-16",
         "stale": false,
-        "change": 0.06,
+        "change": -0.12,
         "source": "https://fred.stlouisfed.org/series/T10Y3M"
       }
     ],
@@ -123,39 +123,38 @@
   },
   "news": [
     {
-      "title": "Trump says he wouldn’t mind Jensen Huang being reinstated as Nvidia CEO, as its shares fall again – as it happened",
-      "url": "https://www.theguardian.com/business/live/2026/nov/16/ai-sell-off-resumes-jensen-huang-discusses-comeback-nvidia-ceo-dollar-stock-markets-latest-news-updates",
-      "published_at": "2026-11-16T15:43:06Z",
-      "source_id": "guardian",
-      "publisher": "The Guardian Business",
+      "title": "Aged 16-24 and looking for work? Use our look-up to find out which areas have the most jobs",
+      "url": "https://www.bbc.co.uk/news/articles/cw3djdjk5d7ko?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-11-17T00:00:03Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
       "source_kind": "Publisher headline",
-      "topics": [
-        "ai_economics"
-      ],
+      "topics": [],
       "cached": false,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
       "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
       },
       "related_reports": [
         {
-          "title": "Trump says he wouldn’t mind Jensen Huang being reinstated as Nvidia CEO, as its shares fall again – as it happened",
-          "url": "https://www.theguardian.com/business/live/2026/nov/16/ai-sell-off-resumes-jensen-huang-discusses-comeback-nvidia-ceo-dollar-stock-markets-latest-news-updates",
-          "publisher": "The Guardian Business",
-          "published_at": "2026-11-16T15:43:06Z"
+          "title": "Aged 16-24 and looking for work? Use our look-up to find out which areas have the most jobs",
+          "url": "https://www.bbc.co.uk/news/articles/cw3djdjk5d7ko?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-11-17T00:00:03Z"
         }
       ]
     },
     {
-      "title": "Trump says he wouldn't mind seeing Huang return to Nvidia",
-      "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-11-16T15:31:20Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
+      "title": "Trump defends commerce secretary Lutnick for allegedly slow-walking Nvidia chip export restrictions – live",
+      "url": "https://www.theguardian.com/us-news/live/2026/nov/16/donald-trump-asia-visit-democrats-republicans-elizabeth-warren-faa-air-disruption-latest-news-updates",
+      "published_at": "2026-11-16T23:54:45Z",
+      "source_id": "guardian_us_policy",
+      "publisher": "The Guardian US Politics",
       "source_kind": "Publisher headline",
       "topics": [
-        "ai_economics"
+        "ai_regulation",
+        "trade"
       ],
       "cached": false,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
@@ -165,10 +164,81 @@
       },
       "related_reports": [
         {
-          "title": "Trump says he wouldn't mind seeing Huang return to Nvidia",
-          "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
+          "title": "Trump defends commerce secretary Lutnick for allegedly slow-walking Nvidia chip export restrictions – live",
+          "url": "https://www.theguardian.com/us-news/live/2026/nov/16/donald-trump-asia-visit-democrats-republicans-elizabeth-warren-faa-air-disruption-latest-news-updates",
+          "publisher": "The Guardian US Politics",
+          "published_at": "2026-11-16T23:54:45Z"
+        }
+      ]
+    },
+    {
+      "title": "Customers report service outages at major US banks",
+      "url": "https://www.bbc.co.uk/news/articles/cj752wvqneq6o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-11-16T23:15:21Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "Customers report service outages at major US banks",
+          "url": "https://www.bbc.co.uk/news/articles/cj752wvqneq6o?at_medium=RSS&at_campaign=rss",
           "publisher": "BBC Business",
-          "published_at": "2026-11-16T15:31:20Z"
+          "published_at": "2026-11-16T23:15:21Z"
+        }
+      ]
+    },
+    {
+      "title": "Customers report difficulty accessing online services at major US banks",
+      "url": "https://www.theguardian.com/business/2026/nov/16/us-bank-outage-chase-wells-fargo",
+      "published_at": "2026-11-16T22:01:40Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
+      "source_kind": "Publisher headline",
+      "topics": [],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "Customers report difficulty accessing online services at major US banks",
+          "url": "https://www.theguardian.com/business/2026/nov/16/us-bank-outage-chase-wells-fargo",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-11-16T22:01:40Z"
+        }
+      ]
+    },
+    {
+      "title": "Several companies are using Trump tariff refunds for corporate bonuses",
+      "url": "https://www.theguardian.com/us-news/2026/nov/16/companies-trump-tariff-refunds-corporate-bonuses",
+      "published_at": "2026-11-16T17:52:13Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "trade"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Several companies are using Trump tariff refunds for corporate bonuses",
+          "url": "https://www.theguardian.com/us-news/2026/nov/16/companies-trump-tariff-refunds-corporate-bonuses",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-11-16T17:52:13Z"
         }
       ]
     },
@@ -338,31 +408,6 @@
       ]
     },
     {
-      "title": "Art ‘must not be sacrificed on the altar of corporate profit’, Liberal senator says as AI policy debate rages",
-      "url": "https://www.theguardian.com/australia-news/2026/nov/15/art-over-profit-ai-policy-debate-andrew-mclachlan",
-      "published_at": "2026-11-14T19:00:52Z",
-      "source_id": "guardian_technology",
-      "publisher": "The Guardian Technology",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "ai_economics"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Art ‘must not be sacrificed on the altar of corporate profit’, Liberal senator says as AI policy debate rages",
-          "url": "https://www.theguardian.com/australia-news/2026/nov/15/art-over-profit-ai-policy-debate-andrew-mclachlan",
-          "publisher": "The Guardian Technology",
-          "published_at": "2026-11-14T19:00:52Z"
-        }
-      ]
-    },
-    {
       "title": "Global oil supply returns to surplus for first time since start of Iran war, says IEA",
       "url": "https://www.theguardian.com/business/2026/nov/13/global-oil-supply-returns-to-surplus-for-first-time-since-start-of-iran-war-says-iea",
       "published_at": "2026-11-13T13:35:45Z",
@@ -455,31 +500,6 @@
           "url": "https://www.bbc.co.uk/news/articles/ck3rgd429zd5o?at_medium=RSS&at_campaign=rss",
           "publisher": "BBC Business",
           "published_at": "2026-11-12T11:20:25Z"
-        }
-      ]
-    },
-    {
-      "title": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
-      "url": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-11-10T17:56:12Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "ai_economics"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
-          "url": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-11-10T17:56:12Z"
         }
       ]
     },
@@ -614,47 +634,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-16T16:02:35Z",
+      "checked_at": "2026-11-17T00:09:54Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T16:02:35Z",
+      "last_success": "2026-11-17T00:09:54Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-16T16:02:35Z",
+      "checked_at": "2026-11-17T00:09:54Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T16:02:35Z",
+      "last_success": "2026-11-17T00:09:54Z",
       "matched": 5
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-16T16:02:35Z",
+      "checked_at": "2026-11-17T00:09:54Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T16:02:35Z",
+      "last_success": "2026-11-17T00:09:54Z",
       "matched": 8
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-16T16:02:35Z",
+      "checked_at": "2026-11-17T00:09:54Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T16:02:35Z",
-      "matched": 3
+      "last_success": "2026-11-17T00:09:54Z",
+      "matched": 4
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-16T16:02:35Z",
+      "checked_at": "2026-11-17T00:09:54Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -664,41 +684,41 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-16T16:02:35Z",
+      "checked_at": "2026-11-17T00:09:54Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T16:02:35Z",
+      "last_success": "2026-11-17T00:09:54Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-16T16:02:35Z",
+      "checked_at": "2026-11-17T00:09:54Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T16:02:35Z",
-      "matched": 4
+      "last_success": "2026-11-17T00:09:54Z",
+      "matched": 3
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-16T16:02:35Z",
+      "checked_at": "2026-11-17T00:09:54Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T16:02:35Z",
-      "matched": 0
+      "last_success": "2026-11-17T00:09:54Z",
+      "matched": 1
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-16T16:02:35Z",
+      "checked_at": "2026-11-17T00:09:54Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-16T16:02:35Z",
-      "matched": 1
+      "last_success": "2026-11-17T00:09:54Z",
+      "matched": 0
     }
   ],
   "sources": [

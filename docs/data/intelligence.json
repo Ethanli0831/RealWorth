@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-18T14:36:37Z",
-    "scan_started_at": "2026-11-18T14:28:44Z",
+    "checked_at": "2026-11-18T22:24:01Z",
+    "scan_started_at": "2026-11-18T22:17:02Z",
     "provider_requested": "local",
     "article_reads": 8,
     "ai_interpretations": 3,
-    "new_interpretations": 1,
+    "new_interpretations": 2,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,6 +19,104 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "publisher": "Federal Reserve",
+      "published_at": "2026-11-12T17:45:00Z",
+      "historical": null,
+      "status": "Unavailable: Insufficient public article text"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/ckq6eg55n221o?at_medium=RSS&at_campaign=rss",
+      "title": "Heating bills, chocolate and cat food: What the inflation figures mean for you",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-18T13:10:01Z",
+      "historical": null,
+      "read_at": "2026-11-18T22:17:05Z",
+      "body_sha256": "4017945f9784a5a1cb2f1701ac90235b18d1408f0365b2a783819afc9f9b7950",
+      "body_characters": 4528,
+      "model_context_characters": 4500,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The UK's inflation rate is rising, with energy bills expected to increase by £443, and food prices remaining relatively stable.",
+        "evidence_ids": [
+          "E4",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: Inflation rate rising",
+          "financial_channel: If energy costs persist, it may lead to higher food production and transportation costs",
+          "asset_hypothesis: If second-round effects occur, it could impact asset prices"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation continues to rise, gold may be seen as a hedge against currency depreciation."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite remains high, Bitcoin may be seen as a risky asset; if it declines, Bitcoin may lose appeal as a hedge."
+        },
+        "uncertainty": "If energy prices stabilize, the overall inflation rate may not rise as much, reducing pressure on other goods and services."
+      },
+      "evidence": {
+        "E4": "Typical energy bill forecast to go up by £443 a year from",
+        "E3": "While the rate of inflation in general was 3.6% in the year"
+      },
+      "analyzed_at": "2026-11-18T22:21:55Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf",
+      "title": "Philip R. Lane: The practice and science of monetary policy communication: the ECB experience",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-17T18:30:00Z",
+      "historical": null,
+      "status": "Unavailable: No readable article container"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/16/companies-trump-tariff-refunds-corporate-bonuses",
+      "title": "Several companies are using Trump tariff refunds for corporate bonuses",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-16T17:52:13Z",
+      "historical": null,
+      "read_at": "2026-11-18T22:21:58Z",
+      "body_sha256": "fddd4f9c06a098a1f8a1632460ee05e53ceb2c64535fb23fdf777ecfd5ef44b8",
+      "body_characters": 4261,
+      "model_context_characters": 4261,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Several companies are using Trump tariff refunds for corporate bonuses instead of reimbursing consumers.",
+        "evidence_ids": [
+          "E2",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: Companies receiving tariff refunds",
+          "financial_channel: If companies use refunds for bonuses, it reduces liquidity for consumers",
+          "asset_hypothesis: If consumer liquidity decreases, gold may see mixed demand"
+        ],
+        "gold": {
+          "direction": "mixed",
+          "condition": "If companies use refunds for bonuses, it reduces consumer liquidity, potentially increasing gold demand as a hedge."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If consumer liquidity decreases, Bitcoin may not see a clear reaction as it competes with gold for risk appetite."
+        },
+        "uncertainty": "If companies use refunds for bonuses, it could lead to increased consumer spending, reducing gold demand."
+      },
+      "evidence": {
+        "E2": "Several companies that received refunds for paying Donald Trump ’s tariffs have",
+        "E7": "Republican candidates across the country were largely punished for Trump’s tariffs and"
+      },
+      "analyzed_at": "2026-11-18T22:24:00Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
       "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
       "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
       "publisher": "The Guardian Technology",
@@ -28,7 +126,7 @@
       "body_sha256": "6dda8d07ebf505fd888f31f8b8082e7de86d252506bb11bbcbd503243b85fb71",
       "body_characters": 6965,
       "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "Palantir's software is used by the Australian Criminal Intelligence Commission to analyze sensitive data from at least 10 government agencies, including Centrelink and childcare workers' information.",
         "evidence_ids": [
@@ -60,45 +158,40 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.theguardian.com/business/2026/nov/13/global-oil-supply-returns-to-surplus-for-first-time-since-start-of-iran-war-says-iea",
-      "title": "Global oil supply returns to surplus for first time since start of Iran war, says IEA",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-13T13:35:45Z",
+      "url": "https://www.bbc.co.uk/news/articles/cm792dqz4qvyo?at_medium=RSS&at_campaign=rss",
+      "title": "MP urges council to speed up heating oil payments",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-18T08:48:26Z",
       "historical": null,
-      "read_at": "2026-11-18T14:28:45Z",
-      "body_sha256": "4903697326b2785bcd1106238f44ddec5450dc7c9e497b001df42aa410f479c1",
-      "body_characters": 2663,
-      "model_context_characters": 2663,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "Global oil supply returned to surplus for the first time since the start of the Iran war, according to the IEA.",
-        "evidence_ids": [
-          "E3",
-          "E4"
-        ],
-        "chain": [
-          "reported_event: Global oil supply returned to surplus",
-          "financial_channel: If supply exceeds demand, it can reduce prices",
-          "asset_hypothesis: If oil prices fall, it may reduce risk appetite"
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If oil prices fall, it may reduce inflation concerns, leading to lower gold demand"
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If oil prices fall, it may reduce risk appetite, but liquidity may improve, affecting Bitcoin's performance"
-        },
-        "uncertainty": "If the conflict in the Middle East escalates, oil supply could be disrupted again, reversing the surplus."
-      },
-      "evidence": {
-        "E3": "The world’s oil supply is swinging back to a surplus for the",
-        "E4": "Oil supplies outstripped demand by almost 2m barrels a day in October,"
-      },
-      "analyzed_at": "2026-11-18T14:31:15Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+      "read_at": "2026-11-18T22:24:00Z",
+      "body_sha256": "6eb853af1db9180ce305a50ce8106dee5ba76ddca25905c7dccd72c01ad15086",
+      "body_characters": 2264,
+      "model_context_characters": 2264,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo?at_medium=RSS&at_campaign=rss",
+      "title": "Typical energy bill forecast to go up by £443 a year from January as inflation rate rises again",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-18T13:17:06Z",
+      "historical": null,
+      "read_at": "2026-11-18T22:24:00Z",
+      "body_sha256": "4dc6d26ee09af956a8ba0a85bda79c4c51f0fc332e6800d2cd7e4377fcc76176",
+      "body_characters": 4521,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
+      "title": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-18T09:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-18T22:24:01Z",
+      "body_sha256": "7809043583865aa43991872e471e8a3513bc7e3361e5c4ffe1c25266bcc60b2c",
+      "body_characters": 2897,
+      "model_context_characters": 2897,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-third-quarter-revenue-jensen-huang",
@@ -106,92 +199,11 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-17T23:32:16Z",
       "historical": null,
-      "read_at": "2026-11-18T14:31:15Z",
+      "read_at": "2026-11-18T22:24:01Z",
       "body_sha256": "be0895378eee3c687c3194ed1daab1865329f9b49401953d72ffb0aef971d166",
       "body_characters": 4489,
       "model_context_characters": 4489,
-      "status": "Unavailable: AI numerical statements require exact cited source support"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf",
-      "title": "Philip R. Lane: The practice and science of monetary policy communication: the ECB experience",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-17T18:30:00Z",
-      "historical": null,
-      "status": "Unavailable: No readable article container"
-    },
-    {
-      "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-jensen-huang-statement",
-      "title": "Jensen Huang says he would be ‘honored’ to return to Nvidia as CEO",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-17T17:35:26Z",
-      "historical": null,
-      "read_at": "2026-11-18T14:36:36Z",
-      "body_sha256": "fa32253d77b45608d9f960663fef093539b5c90e8bffcf2ce0ef093fa5a0fa35",
-      "body_characters": 3355,
-      "model_context_characters": 3355,
       "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cwq6e2qgvmlgo?at_medium=RSS&at_campaign=rss",
-      "title": "How new US chip restrictions on South East Asia will hit China",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-17T14:25:45Z",
-      "historical": null,
-      "read_at": "2026-11-18T14:36:36Z",
-      "body_sha256": "ce43e043f9744706f62dcafefa52128a4ea56194d14a79a4f17c6712b0f20e44",
-      "body_characters": 5944,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
-      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
-      "publisher": "Federal Reserve",
-      "published_at": "2026-11-12T17:45:00Z",
-      "historical": null,
-      "status": "Unavailable: Insufficient public article text"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/16/companies-trump-tariff-refunds-corporate-bonuses",
-      "title": "Several companies are using Trump tariff refunds for corporate bonuses",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-16T17:52:13Z",
-      "historical": null,
-      "read_at": "2026-11-17T04:47:12Z",
-      "body_sha256": "47b9f6f99b4baecadb573d1a1f321d1656815281abb5d1b475d4c5978ab0be3d",
-      "body_characters": 4250,
-      "model_context_characters": 4250,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Several companies are using Trump tariff refunds for corporate bonuses instead of reimbursing consumers.",
-        "evidence_ids": [
-          "E2",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: companies receiving refunds for tariffs",
-          "financial_channel: If companies use refunds for bonuses, it reduces liquidity for consumers.",
-          "asset_hypothesis: If bonuses are given, it indicates reduced risk appetite."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If companies have extra funds from refunds, they may increase gold purchases for safety."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite is reduced, Bitcoin may lose some hedge demand, but liquidity concerns could support it."
-        },
-        "uncertainty": "If companies continue to pass tariffs to consumers, there could be no need for refunds or bonuses."
-      },
-      "evidence": {
-        "E2": "Several companies that received refunds for paying Donald Trump ’s tariffs have",
-        "E7": "Republican candidates across the country were largely punished for Trump’s tariffs and"
-      },
-      "analyzed_at": "2026-11-17T04:51:56Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.theguardian.com/business/2026/nov/17/millionaire-factory-anthropic-ipo-set-to-fuel-ai-gold-rush-in-londons-high-end-property-market",
@@ -199,21 +211,9 @@
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-17T07:00:07Z",
       "historical": null,
-      "read_at": "2026-11-18T14:36:37Z",
+      "read_at": "2026-11-18T22:24:01Z",
       "body_sha256": "4798450d15eb1f1db0c0ba75f73e115730f6f86c8c8fe08ceacc4a8997173bd6",
       "body_characters": 8330,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/16/heating-oil-price-increase-winter",
-      "title": "Americans relying on heating oil brace for harsh winter: ‘We’re often cold in our own home’",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-16T11:00:58Z",
-      "historical": null,
-      "read_at": "2026-11-18T14:36:37Z",
-      "body_sha256": "eda1fdec61991980d002b703b71e5e948c5f5be64530875d7ddd01ba9e62983a",
-      "body_characters": 5541,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
     }

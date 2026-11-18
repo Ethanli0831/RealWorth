@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-11-18T04:48:13Z",
-    "scan_started_at": "2026-11-18T04:39:38Z",
+    "checked_at": "2026-11-18T14:36:37Z",
+    "scan_started_at": "2026-11-18T14:28:44Z",
     "provider_requested": "local",
     "article_reads": 8,
-    "ai_interpretations": 2,
+    "ai_interpretations": 3,
     "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -19,24 +19,12 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.theguardian.com/business/2026/nov/16/heating-oil-price-increase-winter",
-      "title": "Americans relying on heating oil brace for harsh winter: ‘We’re often cold in our own home’",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-16T11:00:58Z",
-      "historical": null,
-      "read_at": "2026-11-18T04:39:38Z",
-      "body_sha256": "eda1fdec61991980d002b703b71e5e948c5f5be64530875d7ddd01ba9e62983a",
-      "body_characters": 5541,
-      "model_context_characters": 4500,
-      "status": "Unavailable: AI numerical statements require exact cited source support"
-    },
-    {
       "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
       "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-15T21:06:03Z",
       "historical": null,
-      "read_at": "2026-11-18T04:45:41Z",
+      "read_at": "2026-11-18T14:27:57Z",
       "body_sha256": "6dda8d07ebf505fd888f31f8b8082e7de86d252506bb11bbcbd503243b85fb71",
       "body_characters": 6965,
       "model_context_characters": 4500,
@@ -72,16 +60,57 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
+      "url": "https://www.theguardian.com/business/2026/nov/13/global-oil-supply-returns-to-surplus-for-first-time-since-start-of-iran-war-says-iea",
+      "title": "Global oil supply returns to surplus for first time since start of Iran war, says IEA",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-13T13:35:45Z",
+      "historical": null,
+      "read_at": "2026-11-18T14:28:45Z",
+      "body_sha256": "4903697326b2785bcd1106238f44ddec5450dc7c9e497b001df42aa410f479c1",
+      "body_characters": 2663,
+      "model_context_characters": 2663,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Global oil supply returned to surplus for the first time since the start of the Iran war, according to the IEA.",
+        "evidence_ids": [
+          "E3",
+          "E4"
+        ],
+        "chain": [
+          "reported_event: Global oil supply returned to surplus",
+          "financial_channel: If supply exceeds demand, it can reduce prices",
+          "asset_hypothesis: If oil prices fall, it may reduce risk appetite"
+        ],
+        "gold": {
+          "direction": "down",
+          "condition": "If oil prices fall, it may reduce inflation concerns, leading to lower gold demand"
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If oil prices fall, it may reduce risk appetite, but liquidity may improve, affecting Bitcoin's performance"
+        },
+        "uncertainty": "If the conflict in the Middle East escalates, oil supply could be disrupted again, reversing the surplus."
+      },
+      "evidence": {
+        "E3": "The world’s oil supply is swinging back to a surplus for the",
+        "E4": "Oil supplies outstripped demand by almost 2m barrels a day in October,"
+      },
+      "analyzed_at": "2026-11-18T14:31:15Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
       "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-third-quarter-revenue-jensen-huang",
       "title": "Nvidia doubles revenue as board says it does not intend to reinstate Jensen Huang",
       "publisher": "The Guardian Business",
       "published_at": "2026-11-17T23:32:16Z",
       "historical": null,
-      "read_at": "2026-11-18T04:48:11Z",
+      "read_at": "2026-11-18T14:31:15Z",
       "body_sha256": "be0895378eee3c687c3194ed1daab1865329f9b49401953d72ffb0aef971d166",
       "body_characters": 4489,
       "model_context_characters": 4489,
-      "status": "Public body read; queued for AI"
+      "status": "Unavailable: AI numerical statements require exact cited source support"
     },
     {
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf",
@@ -92,27 +121,27 @@
       "status": "Unavailable: No readable article container"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cwx2en2vrxmdo?at_medium=RSS&at_campaign=rss",
-      "title": "Jensen Huang says he would be 'honoured' to return as Nvidia CEO if board asked him",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-17T18:24:21Z",
-      "historical": null,
-      "read_at": "2026-11-18T04:48:13Z",
-      "body_sha256": "10710e2d488599971ae84618c68532764fd2b0a82a9793a543f5f4064ff337a5",
-      "body_characters": 2586,
-      "model_context_characters": 2586,
-      "status": "Public body read; queued for AI"
-    },
-    {
       "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-jensen-huang-statement",
       "title": "Jensen Huang says he would be ‘honored’ to return to Nvidia as CEO",
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-17T17:35:26Z",
       "historical": null,
-      "read_at": "2026-11-18T04:48:13Z",
+      "read_at": "2026-11-18T14:36:36Z",
       "body_sha256": "fa32253d77b45608d9f960663fef093539b5c90e8bffcf2ce0ef093fa5a0fa35",
       "body_characters": 3355,
       "model_context_characters": 3355,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cwq6e2qgvmlgo?at_medium=RSS&at_campaign=rss",
+      "title": "How new US chip restrictions on South East Asia will hit China",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-17T14:25:45Z",
+      "historical": null,
+      "read_at": "2026-11-18T14:36:36Z",
+      "body_sha256": "ce43e043f9744706f62dcafefa52128a4ea56194d14a79a4f17c6712b0f20e44",
+      "body_characters": 5944,
+      "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
     },
     {
@@ -165,26 +194,26 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cwq6e2qgvmlgo?at_medium=RSS&at_campaign=rss",
-      "title": "How new US chip restrictions on South East Asia will hit China",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-17T14:25:45Z",
-      "historical": null,
-      "read_at": "2026-11-18T04:48:13Z",
-      "body_sha256": "ce43e043f9744706f62dcafefa52128a4ea56194d14a79a4f17c6712b0f20e44",
-      "body_characters": 5944,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
       "url": "https://www.theguardian.com/business/2026/nov/17/millionaire-factory-anthropic-ipo-set-to-fuel-ai-gold-rush-in-londons-high-end-property-market",
       "title": "Millionaire factory: Anthropic IPO set to fuel AI gold rush in London’s high-end property market",
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-17T07:00:07Z",
       "historical": null,
-      "read_at": "2026-11-18T04:48:13Z",
+      "read_at": "2026-11-18T14:36:37Z",
       "body_sha256": "4798450d15eb1f1db0c0ba75f73e115730f6f86c8c8fe08ceacc4a8997173bd6",
       "body_characters": 8330,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/16/heating-oil-price-increase-winter",
+      "title": "Americans relying on heating oil brace for harsh winter: ‘We’re often cold in our own home’",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-16T11:00:58Z",
+      "historical": null,
+      "read_at": "2026-11-18T14:36:37Z",
+      "body_sha256": "eda1fdec61991980d002b703b71e5e948c5f5be64530875d7ddd01ba9e62983a",
+      "body_characters": 5541,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
     }

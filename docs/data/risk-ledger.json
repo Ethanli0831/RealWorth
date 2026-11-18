@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-17T23:56:47Z",
-    "record_count": 73,
+    "updated_at": "2026-11-18T16:32:20Z",
+    "record_count": 77,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -2136,6 +2136,126 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "4784262a5dc88701becaf8ae751cd27408ef11f15eaed6d5d5a0c2ed9209e4c3"
+    },
+    {
+      "id": "2ea372a80ea986a0444fa762",
+      "first_observed_at": "2026-11-18T16:32:20Z",
+      "snapshot": {
+        "title": "Typical energy bill forecast to go up by £443 a year from January as inflation rate rises again",
+        "url": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-18T13:17:06Z",
+        "categories": [
+          "rates"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "e14ae6e85c1b4efd96e67d66894a21e3a2563bb8f5625ac73beebdccc968bc0e"
+    },
+    {
+      "id": "06b0c1c073da4a7264efd2c1",
+      "first_observed_at": "2026-11-18T16:32:20Z",
+      "snapshot": {
+        "title": "Heating bills, chocolate and cat food: What the inflation figures mean for you",
+        "url": "https://www.bbc.co.uk/news/articles/ckq6eg55n221o?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-18T13:10:01Z",
+        "categories": [
+          "rates"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "f88739900a562c2627af6a59837fb360da31de86ec195d01e8f5c555ca18a79e"
+    },
+    {
+      "id": "c007a848b85ed60218c49245",
+      "first_observed_at": "2026-11-18T16:32:20Z",
+      "snapshot": {
+        "title": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
+        "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
+        "publisher": "European Central Bank",
+        "published_at": "2026-11-18T09:00:00Z",
+        "categories": [
+          "credit"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "f5f4760772f0c35a2d196bc569fef97edf52a7a0b595417ecebf49d00ed89304",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "c8a23326c0cd7d5b400491eace2df6f5f9aff0c393056c0a38fb8e516bfd93c6"
+    },
+    {
+      "id": "c31d62a789cbd2e0ffb56395",
+      "first_observed_at": "2026-11-18T16:32:20Z",
+      "snapshot": {
+        "title": "MP urges council to speed up heating oil payments",
+        "url": "https://www.bbc.co.uk/news/articles/cm792dqz4qvyo?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-18T08:48:26Z",
+        "categories": [
+          "energy"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d8bbcc3e2536f510751f3f7fc1417a5af288b2bec41ac3c65aa827eef6c5d064",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "72b1712be72df612d212310087ad99088179979c159c60d63b7bd0777500b4d8"
     }
   ]
 }

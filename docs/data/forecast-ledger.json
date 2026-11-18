@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-11-18T07:10:34Z",
+    "updated_at": "2026-11-18T16:32:19Z",
     "retention_days": 120,
     "verification": "Bitcoin: first completed 5-minute bar at/after target, at most 5 minutes late. ETFs: scheduled session close. Missing target data never becomes a fabricated outcome."
   },
@@ -311,7 +311,6 @@
       "issued_at": "2026-11-17T08:06:27Z",
       "target_at": "2026-11-18T08:10:00Z",
       "anchor_at": "2026-11-17T08:06:23Z",
-      "anchor_price": 64581.98,
       "levels": {
         "q10": 63044.5442,
         "q30": 64114.6189,
@@ -324,7 +323,7 @@
       "model": "empirical-log-return-quantiles-v2",
       "training_observations": 252,
       "horizon_sessions": 1,
-      "status": "Pending future observation",
+      "status": "Verified against later observation",
       "backtest": {
         "observations": 90,
         "coverage_percent": 82.22,
@@ -333,7 +332,13 @@
         "horizon_sessions": 1,
         "method": "Walk-forward: each 1-session prediction uses 252 prior completed matching-horizon log returns. Overlapping training outcomes are not independent. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
       },
-      "issued_digest": "4a0b580555643ff91526d3d7ac4030b2485a1376d331a47438fce6de5925c80b"
+      "issued_digest": "4a0b580555643ff91526d3d7ac4030b2485a1376d331a47438fce6de5925c80b",
+      "verified_at": "2026-11-18T16:32:16Z",
+      "realized_at": "2026-11-18T08:10:00Z",
+      "actual_return_percent": 0.0387,
+      "median_error_percent": -0.0413,
+      "inside_outer_band": true,
+      "observation_lag_seconds": 0
     },
     {
       "id": "GLD|2026-11-18T21:00:00Z|2026-11-16T21:00:00Z",

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-17T23:56:47Z",
-    "source_checked_at": "2026-11-17T23:56:40Z",
+    "built_at": "2026-11-18T07:10:35Z",
+    "source_checked_at": "2026-11-18T07:10:29Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -38,32 +38,6 @@
       "id": "899fa547c954ec761b24db24",
       "first_observed_at": "2026-11-17T23:56:47Z",
       "digest": "b4f3cf16e7d1760d40e2a2e8297503d236157120cdfc1d8fedc9f784136269b5"
-    },
-    {
-      "title": "Jensen Huang says he would be 'honoured' to return as Nvidia CEO if board asked him",
-      "url": "https://www.bbc.co.uk/news/articles/cwx2en2vrxmdo?at_medium=RSS&at_campaign=rss",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-17T18:24:21Z",
-      "categories": [
-        "ai_economics"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Proposal or possibility reported; not enacted law",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "77dd0beb7f907790e45e70d1",
-      "first_observed_at": "2026-11-17T23:56:47Z",
-      "digest": "63ace5ff76f90821b720bf5867043f77b68f6b1b34ed524d2d510d5fcf946b74"
     },
     {
       "title": "Jensen Huang says he would be ‘honored’ to return to Nvidia as CEO",
@@ -421,34 +395,6 @@
       "id": "ca963d9bd2274a5a0fbb4b49",
       "first_observed_at": "2026-11-07T17:33:52Z",
       "digest": "c753b46265eb796a03830dd450a9c712c7a0a88ff404e70219bb8e9fa87540fe"
-    },
-    {
-      "title": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-04T00:00:00Z",
-      "categories": [
-        "rates"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "GLD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "c0a9cfb19d0feb55955f9359",
-      "first_observed_at": "2026-11-07T17:33:52Z",
-      "digest": "fd3e5ab47d2a07758dcc3747f2b15df7757bfb3775d12c14885202c8452cdc23"
     }
   ],
   "categories": [
@@ -519,7 +465,7 @@
         "Check utilization, order cancellations, financing and customer concentration.",
         "Distinguish a lower share valuation from cash automatically moving to another country."
       ],
-      "event_count": 4,
+      "event_count": 3,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -568,7 +514,7 @@
         "Check real yields, dollar funding and the policy response.",
         "Separate a growth shock from an inflation shock."
       ],
-      "event_count": 8,
+      "event_count": 7,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -895,8 +841,8 @@
       "id": "fomc",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "Fetched official schedule",
-      "last_success": "2026-11-17T23:56:47Z",
-      "attempted_at": "2026-11-17T23:56:47Z",
+      "last_success": "2026-11-18T07:10:35Z",
+      "attempted_at": "2026-11-18T07:10:35Z",
       "events": [
         {
           "title": "Scheduled FOMC meeting final day",
@@ -1186,7 +1132,7 @@
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-17T23:56:47Z",
+      "attempted_at": "2026-11-18T07:10:35Z",
       "events": [],
       "stale": true,
       "error": "HTTPError",
@@ -1198,47 +1144,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-17T23:56:40Z",
+      "checked_at": "2026-11-18T07:10:29Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T23:56:40Z",
+      "last_success": "2026-11-18T07:10:29Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-17T23:56:40Z",
+      "checked_at": "2026-11-18T07:10:29Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T23:56:40Z",
-      "matched": 6
+      "last_success": "2026-11-18T07:10:29Z",
+      "matched": 5
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-17T23:56:40Z",
+      "checked_at": "2026-11-18T07:10:29Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T23:56:40Z",
-      "matched": 8
+      "last_success": "2026-11-18T07:10:29Z",
+      "matched": 4
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-17T23:56:40Z",
+      "checked_at": "2026-11-18T07:10:29Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T23:56:40Z",
+      "last_success": "2026-11-18T07:10:29Z",
       "matched": 6
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-17T23:56:40Z",
+      "checked_at": "2026-11-18T07:10:29Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1248,41 +1194,41 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-17T23:56:40Z",
+      "checked_at": "2026-11-18T07:10:29Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T23:56:40Z",
+      "last_success": "2026-11-18T07:10:29Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-17T23:56:40Z",
+      "checked_at": "2026-11-18T07:10:29Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T23:56:40Z",
-      "matched": 6
+      "last_success": "2026-11-18T07:10:29Z",
+      "matched": 7
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-17T23:56:40Z",
+      "checked_at": "2026-11-18T07:10:29Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T23:56:40Z",
+      "last_success": "2026-11-18T07:10:29Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-17T23:56:40Z",
+      "checked_at": "2026-11-18T07:10:29Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T23:56:40Z",
-      "matched": 1
+      "last_success": "2026-11-18T07:10:29Z",
+      "matched": 2
     }
   ],
   "gaps": [

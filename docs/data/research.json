@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-17T23:56:40Z",
+    "checked_at": "2026-11-18T07:10:29Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-11-17T23:56:40Z",
+    "checked_at": "2026-11-18T07:10:29Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -123,6 +123,29 @@
   },
   "news": [
     {
+      "title": "How important are Nvidia and Jensen Huang to the US economy?",
+      "url": "https://www.bbc.co.uk/news/articles/c68798vdprwpo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-11-18T06:04:21Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "How important are Nvidia and Jensen Huang to the US economy?",
+          "url": "https://www.bbc.co.uk/news/articles/c68798vdprwpo?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-11-18T06:04:21Z"
+        }
+      ]
+    },
+    {
       "title": "Nvidia doubles revenue as board says it does not intend to reinstate Jensen Huang",
       "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-third-quarter-revenue-jensen-huang",
       "published_at": "2026-11-17T23:32:16Z",
@@ -173,31 +196,6 @@
       ]
     },
     {
-      "title": "Jensen Huang says he would be 'honoured' to return as Nvidia CEO if board asked him",
-      "url": "https://www.bbc.co.uk/news/articles/cwx2en2vrxmdo?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-11-17T18:24:21Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "ai_economics"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Jensen Huang says he would be 'honoured' to return as Nvidia CEO if board asked him",
-          "url": "https://www.bbc.co.uk/news/articles/cwx2en2vrxmdo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-11-17T18:24:21Z"
-        }
-      ]
-    },
-    {
       "title": "Jensen Huang says he would be ‘honored’ to return to Nvidia as CEO",
       "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-jensen-huang-statement",
       "published_at": "2026-11-17T17:35:26Z",
@@ -219,29 +217,6 @@
           "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-jensen-huang-statement",
           "publisher": "The Guardian Technology",
           "published_at": "2026-11-17T17:35:26Z"
-        }
-      ]
-    },
-    {
-      "title": "US bank services returning to normal after major outage",
-      "url": "https://www.bbc.co.uk/news/articles/cj752wvqneq6o?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-11-17T15:04:24Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "No clear macro impact",
-        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
-      },
-      "related_reports": [
-        {
-          "title": "US bank services returning to normal after major outage",
-          "url": "https://www.bbc.co.uk/news/articles/cj752wvqneq6o?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-11-17T15:04:24Z"
         }
       ]
     },
@@ -390,29 +365,6 @@
       ]
     },
     {
-      "title": "Create more jobs for under-25s by cutting National Insurance, key report urges",
-      "url": "https://www.bbc.co.uk/news/articles/c6p9dzmj514ko?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-11-16T13:19:33Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "No clear macro impact",
-        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
-      },
-      "related_reports": [
-        {
-          "title": "Create more jobs for under-25s by cutting National Insurance, key report urges",
-          "url": "https://www.bbc.co.uk/news/articles/c6p9dzmj514ko?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-11-16T13:19:33Z"
-        }
-      ]
-    },
-    {
       "title": "Frank Elderson: Smart supervision for small banks",
       "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261116_1~11dd7f62af.en.html",
       "published_at": "2026-11-16T13:00:00Z",
@@ -505,29 +457,6 @@
           "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
           "publisher": "The Guardian Technology",
           "published_at": "2026-11-15T21:06:03Z"
-        }
-      ]
-    },
-    {
-      "title": "Minister backs legal right to job support for young people",
-      "url": "https://www.bbc.co.uk/news/articles/cqr7gn1zmlj1o?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-11-15T13:06:15Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "No clear macro impact",
-        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
-      },
-      "related_reports": [
-        {
-          "title": "Minister backs legal right to job support for young people",
-          "url": "https://www.bbc.co.uk/news/articles/cqr7gn1zmlj1o?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-11-15T13:06:15Z"
         }
       ]
     },
@@ -726,31 +655,6 @@
           "published_at": "2026-11-05T08:00:00Z"
         }
       ]
-    },
-    {
-      "title": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
-      "published_at": "2026-11-04T00:00:00Z",
-      "source_id": "ecb",
-      "publisher": "European Central Bank",
-      "source_kind": "Primary institutional release",
-      "topics": [
-        "policy"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
-          "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
-          "publisher": "European Central Bank",
-          "published_at": "2026-11-04T00:00:00Z"
-        }
-      ]
     }
   ],
   "feed_health": [
@@ -758,47 +662,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-17T23:56:40Z",
+      "checked_at": "2026-11-18T07:10:29Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T23:56:40Z",
+      "last_success": "2026-11-18T07:10:29Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-17T23:56:40Z",
+      "checked_at": "2026-11-18T07:10:29Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T23:56:40Z",
-      "matched": 6
+      "last_success": "2026-11-18T07:10:29Z",
+      "matched": 5
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-17T23:56:40Z",
+      "checked_at": "2026-11-18T07:10:29Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T23:56:40Z",
-      "matched": 8
+      "last_success": "2026-11-18T07:10:29Z",
+      "matched": 4
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-17T23:56:40Z",
+      "checked_at": "2026-11-18T07:10:29Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T23:56:40Z",
+      "last_success": "2026-11-18T07:10:29Z",
       "matched": 6
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-17T23:56:40Z",
+      "checked_at": "2026-11-18T07:10:29Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -808,41 +712,41 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-17T23:56:40Z",
+      "checked_at": "2026-11-18T07:10:29Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T23:56:40Z",
+      "last_success": "2026-11-18T07:10:29Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-17T23:56:40Z",
+      "checked_at": "2026-11-18T07:10:29Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T23:56:40Z",
-      "matched": 6
+      "last_success": "2026-11-18T07:10:29Z",
+      "matched": 7
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-17T23:56:40Z",
+      "checked_at": "2026-11-18T07:10:29Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T23:56:40Z",
+      "last_success": "2026-11-18T07:10:29Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-17T23:56:40Z",
+      "checked_at": "2026-11-18T07:10:29Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-17T23:56:40Z",
-      "matched": 1
+      "last_success": "2026-11-18T07:10:29Z",
+      "matched": 2
     }
   ],
   "sources": [

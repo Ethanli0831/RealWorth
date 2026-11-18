@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-18T16:32:20Z",
-    "record_count": 77,
+    "updated_at": "2026-11-18T23:04:06Z",
+    "record_count": 80,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -2256,6 +2256,92 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "72b1712be72df612d212310087ad99088179979c159c60d63b7bd0777500b4d8"
+    },
+    {
+      "id": "9dcf404f2c790ab7acb0432a",
+      "first_observed_at": "2026-11-18T23:04:06Z",
+      "snapshot": {
+        "title": "Can Anthropic's record breaking IPO stop the AI bubble bursting?",
+        "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-18T21:28:08Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "32566610dcda6ccae472ee8976d9a180243cbb18d2c38c2a6f9d6e8b6d402f74"
+    },
+    {
+      "id": "1bfdfa51e7e657b53f80f97e",
+      "first_observed_at": "2026-11-18T23:04:06Z",
+      "snapshot": {
+        "title": "How high is UK inflation and how will you be affected?",
+        "url": "https://www.bbc.co.uk/news/videos/cxp80q5pv4q5o?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-18T19:37:27Z",
+        "categories": [
+          "rates"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "92b6362bb38f71baa2745952bbd22be660e0ec59fbd07af199d79e0e7f28e559"
+    },
+    {
+      "id": "271d2c13c60eb5fffa76d1be",
+      "first_observed_at": "2026-11-18T23:04:06Z",
+      "snapshot": {
+        "title": "Democrats demand answers from Howard Lutnick about Nvidia and his family’s business",
+        "url": "https://www.theguardian.com/us-news/2026/nov/18/howard-lutnick-nvidia-cantor-fitzgerald",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-18T16:48:29Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "42606126ffed31cbf66c01ee4537a40bcbd1162799756991e7caf3f7168ee62a"
     }
   ]
 }

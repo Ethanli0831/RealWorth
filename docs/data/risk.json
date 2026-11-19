@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-19T04:06:02Z",
-    "source_checked_at": "2026-11-19T04:05:57Z",
+    "built_at": "2026-11-19T12:54:46Z",
+    "source_checked_at": "2026-11-19T12:54:39Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -10,37 +10,11 @@
     "disclosure": "Risk chains are transparent scenarios, not verified causal effects, probability forecasts or AI price targets. No warnings are backdated.",
     "feeds_fetched": 8,
     "feeds_total": 9,
-    "ledger_records": 83
+    "ledger_records": 84
   },
   "events": [
     {
-      "title": "AI giant Anthropic valued at up to $1.5tn ahead of stock market debut",
-      "url": "https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&at_campaign=rss",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-19T02:20:15Z",
-      "categories": [
-        "ai_economics"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "ce41c1ed4624e4dba2a7b9ab",
-      "first_observed_at": "2026-11-19T04:06:02Z",
-      "digest": "faa82a59cbd4ae781a03113b5ffd232380ec0c5842218d17e75388b791ebecce"
-    },
-    {
-      "title": "Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
+      "title": "Simon Jack: Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
       "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
       "publisher": "BBC Business",
       "published_at": "2026-11-18T21:28:08Z",
@@ -61,9 +35,9 @@
       "framework_version": "event-risk-v1",
       "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
       "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "f5ae80cf25b80cd8eca0de36",
-      "first_observed_at": "2026-11-19T04:06:02Z",
-      "digest": "d905cbd5c7a457edc45a84ded797e415ad39c811e55b3957ea016d9a2ca3e4c8"
+      "id": "49f3a7d7004be4e4c52344e2",
+      "first_observed_at": "2026-11-19T12:54:46Z",
+      "digest": "fd718ec494b9daacf58ff0bf8d79f15c566479c2b3d72754ad0166bb8cdced00"
     },
     {
       "title": "Democrats demand answers from Howard Lutnick about Nvidia and his family’s business",
@@ -144,32 +118,6 @@
       "id": "899fa547c954ec761b24db24",
       "first_observed_at": "2026-11-17T23:56:47Z",
       "digest": "b4f3cf16e7d1760d40e2a2e8297503d236157120cdfc1d8fedc9f784136269b5"
-    },
-    {
-      "title": "How new US chip restrictions on South East Asia will hit China",
-      "url": "https://www.bbc.co.uk/news/articles/cwq6e2qgvmlgo?at_medium=RSS&at_campaign=rss",
-      "publisher": "BBC Technology",
-      "published_at": "2026-11-17T14:25:45Z",
-      "categories": [
-        "ai_regulation"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "897f5d72cfd89dfb8ee98d8117092ac4ed43a2e697c4dac21638f5486e473305",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "2cb257905673062aa17fd386",
-      "first_observed_at": "2026-11-19T04:06:02Z",
-      "digest": "d3e56e944fe67be68559f3b62aa60ec64591750a580dd7a05eaa2480a0e12f04"
     },
     {
       "title": "Several companies are using Trump tariff refunds for corporate bonuses",
@@ -335,34 +283,6 @@
       "id": "06b0c1c073da4a7264efd2c1",
       "first_observed_at": "2026-11-18T16:32:20Z",
       "digest": "f88739900a562c2627af6a59837fb360da31de86ec195d01e8f5c555ca18a79e"
-    },
-    {
-      "title": "MP urges council to speed up heating oil payments",
-      "url": "https://www.bbc.co.uk/news/articles/cm792dqz4qvyo?at_medium=RSS&at_campaign=rss",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-18T08:48:26Z",
-      "categories": [
-        "energy"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "GLD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "d8bbcc3e2536f510751f3f7fc1417a5af288b2bec41ac3c65aa827eef6c5d064",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "c31d62a789cbd2e0ffb56395",
-      "first_observed_at": "2026-11-18T16:32:20Z",
-      "digest": "72b1712be72df612d212310087ad99088179979c159c60d63b7bd0777500b4d8"
     },
     {
       "title": "Philip R. Lane: The practice and science of monetary policy communication: the ECB experience",
@@ -531,34 +451,6 @@
       "id": "9d5ad0d6f53807f183416fa1",
       "first_observed_at": "2026-11-07T17:33:52Z",
       "digest": "fdfb6e37d1e9f6b06298b9554f2f9da5492674feeb45c2dceaae346b2500a9aa"
-    },
-    {
-      "title": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-05T08:00:00Z",
-      "categories": [
-        "rates"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "GLD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "ca963d9bd2274a5a0fbb4b49",
-      "first_observed_at": "2026-11-07T17:33:52Z",
-      "digest": "c753b46265eb796a03830dd450a9c712c7a0a88ff404e70219bb8e9fa87540fe"
     }
   ],
   "categories": [
@@ -606,8 +498,8 @@
         "Check whether it concerns model use, chip exports, electricity costs or construction.",
         "Verify effective dates and company guidance; do not infer a global ban."
       ],
-      "event_count": 1,
-      "coverage": "Limited selected-headline coverage"
+      "event_count": 0,
+      "coverage": "No matching evidence in selected feeds; risk not ruled out"
     },
     {
       "id": "ai_economics",
@@ -629,7 +521,7 @@
         "Check utilization, order cancellations, financing and customer concentration.",
         "Distinguish a lower share valuation from cash automatically moving to another country."
       ],
-      "event_count": 5,
+      "event_count": 4,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -678,7 +570,7 @@
         "Check real yields, dollar funding and the policy response.",
         "Separate a growth shock from an inflation shock."
       ],
-      "event_count": 9,
+      "event_count": 8,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -728,7 +620,7 @@
         "Distinguish announcements from operating supply.",
         "Review power prices, water, transmission and customer location."
       ],
-      "event_count": 3,
+      "event_count": 2,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -1005,8 +897,8 @@
       "id": "fomc",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "Fetched official schedule",
-      "last_success": "2026-11-19T04:06:02Z",
-      "attempted_at": "2026-11-19T04:06:02Z",
+      "last_success": "2026-11-19T12:54:46Z",
+      "attempted_at": "2026-11-19T12:54:46Z",
       "events": [
         {
           "title": "Scheduled FOMC meeting final day",
@@ -1296,7 +1188,7 @@
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-19T04:06:02Z",
+      "attempted_at": "2026-11-19T12:54:46Z",
       "events": [],
       "stale": true,
       "error": "HTTPError",
@@ -1308,47 +1200,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-19T04:05:57Z",
+      "checked_at": "2026-11-19T12:54:39Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-19T04:05:57Z",
+      "last_success": "2026-11-19T12:54:39Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-19T04:05:57Z",
+      "checked_at": "2026-11-19T12:54:39Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-19T04:05:57Z",
-      "matched": 6
+      "last_success": "2026-11-19T12:54:39Z",
+      "matched": 5
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-19T04:05:57Z",
+      "checked_at": "2026-11-19T12:54:39Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-19T04:05:57Z",
-      "matched": 11
+      "last_success": "2026-11-19T12:54:39Z",
+      "matched": 8
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-19T04:05:57Z",
+      "checked_at": "2026-11-19T12:54:39Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-19T04:05:57Z",
+      "last_success": "2026-11-19T12:54:39Z",
       "matched": 6
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-19T04:05:57Z",
+      "checked_at": "2026-11-19T12:54:39Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1358,41 +1250,41 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-19T04:05:57Z",
+      "checked_at": "2026-11-19T12:54:39Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-19T04:05:57Z",
+      "last_success": "2026-11-19T12:54:39Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-19T04:05:57Z",
+      "checked_at": "2026-11-19T12:54:39Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-19T04:05:57Z",
+      "last_success": "2026-11-19T12:54:39Z",
       "matched": 3
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-19T04:05:57Z",
+      "checked_at": "2026-11-19T12:54:39Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-19T04:05:57Z",
+      "last_success": "2026-11-19T12:54:39Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-19T04:05:57Z",
+      "checked_at": "2026-11-19T12:54:39Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-19T04:05:57Z",
-      "matched": 3
+      "last_success": "2026-11-19T12:54:39Z",
+      "matched": 2
     }
   ],
   "gaps": [

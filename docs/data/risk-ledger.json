@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-19T04:06:02Z",
-    "record_count": 83,
+    "updated_at": "2026-11-19T12:54:46Z",
+    "record_count": 84,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -2426,6 +2426,34 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "d3e56e944fe67be68559f3b62aa60ec64591750a580dd7a05eaa2480a0e12f04"
+    },
+    {
+      "id": "49f3a7d7004be4e4c52344e2",
+      "first_observed_at": "2026-11-19T12:54:46Z",
+      "snapshot": {
+        "title": "Simon Jack: Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
+        "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-18T21:28:08Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "fd718ec494b9daacf58ff0bf8d79f15c566479c2b3d72754ad0166bb8cdced00"
     }
   ]
 }

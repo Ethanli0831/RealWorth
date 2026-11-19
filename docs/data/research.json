@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-19T04:05:57Z",
+    "checked_at": "2026-11-19T12:54:39Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-11-19T04:05:57Z",
+    "checked_at": "2026-11-19T12:54:39Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -123,32 +123,30 @@
   },
   "news": [
     {
-      "title": "AI giant Anthropic valued at up to $1.5tn ahead of stock market debut",
-      "url": "https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-11-19T02:20:15Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
+      "title": "Bank your stolen cash, bring a change of clothes, go easy on the bloodshed: 15 tips for playing Grand Theft Auto VI",
+      "url": "https://www.theguardian.com/games/2026/nov/19/tips-for-playing-grand-theft-auto-vi",
+      "published_at": "2026-11-19T10:00:25Z",
+      "source_id": "guardian_technology",
+      "publisher": "The Guardian Technology",
       "source_kind": "Publisher headline",
-      "topics": [
-        "ai_economics"
-      ],
+      "topics": [],
       "cached": false,
       "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
       "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
       },
       "related_reports": [
         {
-          "title": "AI giant Anthropic valued at up to $1.5tn ahead of stock market debut",
-          "url": "https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-11-19T02:20:15Z"
+          "title": "Bank your stolen cash, bring a change of clothes, go easy on the bloodshed: 15 tips for playing Grand Theft Auto VI",
+          "url": "https://www.theguardian.com/games/2026/nov/19/tips-for-playing-grand-theft-auto-vi",
+          "publisher": "The Guardian Technology",
+          "published_at": "2026-11-19T10:00:25Z"
         }
       ]
     },
     {
-      "title": "Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
+      "title": "Simon Jack: Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
       "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-11-18T21:28:08Z",
       "source_id": "bbc",
@@ -165,7 +163,7 @@
       },
       "related_reports": [
         {
-          "title": "Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
+          "title": "Simon Jack: Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
           "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
           "publisher": "BBC Business",
           "published_at": "2026-11-18T21:28:08Z"
@@ -298,31 +296,6 @@
       ]
     },
     {
-      "title": "MP urges council to speed up heating oil payments",
-      "url": "https://www.bbc.co.uk/news/articles/cm792dqz4qvyo?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-11-18T08:48:26Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "energy"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "MP urges council to speed up heating oil payments",
-          "url": "https://www.bbc.co.uk/news/articles/cm792dqz4qvyo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-11-18T08:48:26Z"
-        }
-      ]
-    },
-    {
       "title": "How important are Nvidia and Jensen Huang to the US economy?",
       "url": "https://www.bbc.co.uk/news/articles/c68798vdprwpo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-11-18T06:04:21Z",
@@ -396,31 +369,6 @@
       ]
     },
     {
-      "title": "How new US chip restrictions on South East Asia will hit China",
-      "url": "https://www.bbc.co.uk/news/articles/cwq6e2qgvmlgo?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-11-17T14:25:45Z",
-      "source_id": "bbc_technology",
-      "publisher": "BBC Technology",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "ai_regulation"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "How new US chip restrictions on South East Asia will hit China",
-          "url": "https://www.bbc.co.uk/news/articles/cwq6e2qgvmlgo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Technology",
-          "published_at": "2026-11-17T14:25:45Z"
-        }
-      ]
-    },
-    {
       "title": "Deutsche Bank dismissed warnings about dealings with risky clients, reports claim",
       "url": "https://www.theguardian.com/business/2026/nov/17/deutsche-bank-dimissed-warnings-risky-clients-reports-claim",
       "published_at": "2026-11-17T13:35:39Z",
@@ -463,31 +411,6 @@
           "url": "https://www.bbc.co.uk/news/articles/cw3djdjk5d7ko?at_medium=RSS&at_campaign=rss",
           "publisher": "BBC Business",
           "published_at": "2026-11-17T12:35:53Z"
-        }
-      ]
-    },
-    {
-      "title": "Millionaire factory: Anthropic IPO set to fuel AI gold rush in London’s high-end property market",
-      "url": "https://www.theguardian.com/business/2026/nov/17/millionaire-factory-anthropic-ipo-set-to-fuel-ai-gold-rush-in-londons-high-end-property-market",
-      "published_at": "2026-11-17T07:00:07Z",
-      "source_id": "guardian_technology",
-      "publisher": "The Guardian Technology",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "gold"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Millionaire factory: Anthropic IPO set to fuel AI gold rush in London’s high-end property market",
-          "url": "https://www.theguardian.com/business/2026/nov/17/millionaire-factory-anthropic-ipo-set-to-fuel-ai-gold-rush-in-londons-high-end-property-market",
-          "publisher": "The Guardian Technology",
-          "published_at": "2026-11-17T07:00:07Z"
         }
       ]
     },
@@ -711,31 +634,6 @@
           "published_at": "2026-11-06T09:00:00Z"
         }
       ]
-    },
-    {
-      "title": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
-      "published_at": "2026-11-05T08:00:00Z",
-      "source_id": "ecb",
-      "publisher": "European Central Bank",
-      "source_kind": "Primary institutional release",
-      "topics": [
-        "policy"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
-          "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
-          "publisher": "European Central Bank",
-          "published_at": "2026-11-05T08:00:00Z"
-        }
-      ]
     }
   ],
   "feed_health": [
@@ -743,47 +641,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-19T04:05:57Z",
+      "checked_at": "2026-11-19T12:54:39Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-19T04:05:57Z",
+      "last_success": "2026-11-19T12:54:39Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-19T04:05:57Z",
+      "checked_at": "2026-11-19T12:54:39Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-19T04:05:57Z",
-      "matched": 6
+      "last_success": "2026-11-19T12:54:39Z",
+      "matched": 5
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-19T04:05:57Z",
+      "checked_at": "2026-11-19T12:54:39Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-19T04:05:57Z",
-      "matched": 11
+      "last_success": "2026-11-19T12:54:39Z",
+      "matched": 8
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-19T04:05:57Z",
+      "checked_at": "2026-11-19T12:54:39Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-19T04:05:57Z",
+      "last_success": "2026-11-19T12:54:39Z",
       "matched": 6
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-19T04:05:57Z",
+      "checked_at": "2026-11-19T12:54:39Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -793,41 +691,41 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-19T04:05:57Z",
+      "checked_at": "2026-11-19T12:54:39Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-19T04:05:57Z",
+      "last_success": "2026-11-19T12:54:39Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-19T04:05:57Z",
+      "checked_at": "2026-11-19T12:54:39Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-19T04:05:57Z",
+      "last_success": "2026-11-19T12:54:39Z",
       "matched": 3
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-19T04:05:57Z",
+      "checked_at": "2026-11-19T12:54:39Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-19T04:05:57Z",
+      "last_success": "2026-11-19T12:54:39Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-19T04:05:57Z",
+      "checked_at": "2026-11-19T12:54:39Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-19T04:05:57Z",
-      "matched": 3
+      "last_success": "2026-11-19T12:54:39Z",
+      "matched": 2
     }
   ],
   "sources": [

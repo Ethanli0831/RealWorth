@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-11-19T13:55:44Z",
-    "scan_started_at": "2026-11-19T13:45:29Z",
+    "checked_at": "2026-11-19T22:33:28Z",
+    "scan_started_at": "2026-11-19T22:23:42Z",
     "provider_requested": "local",
-    "article_reads": 7,
-    "ai_interpretations": 3,
+    "article_reads": 8,
+    "ai_interpretations": 2,
     "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -19,24 +19,69 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.bbc.co.uk/news/videos/cxp80q5pv4q5o?at_medium=RSS&at_campaign=rss",
-      "title": "How high is UK inflation and how will you be affected?",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-18T19:37:27Z",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
+      "title": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-18T09:00:00Z",
       "historical": null,
-      "status": "Unavailable: Insufficient public article text"
+      "read_at": "2026-11-19T22:23:45Z",
+      "body_sha256": "7809043583865aa43991872e471e8a3513bc7e3361e5c4ffe1c25266bcc60b2c",
+      "body_characters": 2897,
+      "model_context_characters": 2897,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The European Central Bank highlights risks to financial stability from AI valuations, fiscal imbalances, and geoeconomic tensions.",
+        "evidence_ids": [
+          "E1",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: AI valuations and geoeconomic tensions pose risks",
+          "financial_channel: If real yields rise, funding costs increase",
+          "asset_hypothesis: If risk appetite decreases, asset prices fall"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If real yields rise, investors seek safe-haven assets like gold."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If risk appetite decreases, Bitcoin may lose appeal as a hedge, but if liquidity tightens, it could gain traction."
+        },
+        "uncertainty": "If AI valuations prove sustainable, the risks to financial stability may diminish."
+      },
+      "evidence": {
+        "E1": "The euro area economy has continued to demonstrate resilience despite an energy",
+        "E5": "Geoeconomic uncertainty, higher energy prices and weak economic growth could further strain"
+      },
+      "analyzed_at": "2026-11-19T22:28:09Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-third-quarter-revenue-jensen-huang",
-      "title": "Nvidia doubles revenue as board says it does not intend to reinstate Jensen Huang",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-17T23:32:16Z",
+      "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
+      "title": "Simon Jack: Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-18T21:28:08Z",
       "historical": null,
-      "read_at": "2026-11-19T13:45:31Z",
-      "body_sha256": "be0895378eee3c687c3194ed1daab1865329f9b49401953d72ffb0aef971d166",
-      "body_characters": 4489,
-      "model_context_characters": 4489,
+      "read_at": "2026-11-19T22:28:09Z",
+      "body_sha256": "df907b69b41e1d543d78202f66f7c7d95128132274090264e4d8c49e58c77174",
+      "body_characters": 9390,
+      "model_context_characters": 4500,
       "status": "Unavailable: AI numerical statements require exact cited source support"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/19/bank-of-england-revamp",
+      "title": "Grade I interiors, gold bars, cost fears: Bank of England faces headache over £160m revamp",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-19T06:00:19Z",
+      "historical": null,
+      "read_at": "2026-11-19T22:33:27Z",
+      "body_sha256": "9cc65b5c7a6705072b2acaef54ab628f556c1e005ae294e227fe4a3731ba3e86",
+      "body_characters": 7017,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf",
@@ -45,6 +90,26 @@
       "published_at": "2026-11-17T18:30:00Z",
       "historical": null,
       "status": "Unavailable: No readable article container"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/videos/cxp80q5pv4q5o?at_medium=RSS&at_campaign=rss",
+      "title": "How high is UK inflation and how will you be affected?",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-18T19:37:27Z",
+      "historical": null,
+      "status": "Unavailable: Insufficient public article text"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/18/howard-lutnick-nvidia-cantor-fitzgerald",
+      "title": "Democrats demand answers from Howard Lutnick about Nvidia and his family’s business",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-18T16:48:29Z",
+      "historical": null,
+      "read_at": "2026-11-19T22:33:28Z",
+      "body_sha256": "0ea9f3f97c588f286912a16052c10de6ad9f0091b7e9eda0db7be0f2bcd4bc7a",
+      "body_characters": 4585,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo?at_medium=RSS&at_campaign=rss",
@@ -56,7 +121,7 @@
       "body_sha256": "4dc6d26ee09af956a8ba0a85bda79c4c51f0fc332e6800d2cd7e4377fcc76176",
       "body_characters": 4521,
       "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "UK energy bills are forecast to rise by £443 a year, with inflation at its highest level in a year.",
         "evidence_ids": [
@@ -88,130 +153,40 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/nov/16/companies-trump-tariff-refunds-corporate-bonuses",
-      "title": "Several companies are using Trump tariff refunds for corporate bonuses",
+      "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-third-quarter-revenue-jensen-huang",
+      "title": "Nvidia doubles revenue as board says it does not intend to reinstate Jensen Huang",
       "publisher": "The Guardian Business",
-      "published_at": "2026-11-16T17:52:13Z",
+      "published_at": "2026-11-17T23:32:16Z",
       "historical": null,
-      "read_at": "2026-11-19T13:44:32Z",
-      "body_sha256": "fddd4f9c06a098a1f8a1632460ee05e53ceb2c64535fb23fdf777ecfd5ef44b8",
-      "body_characters": 4261,
-      "model_context_characters": 4261,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Several companies are using Trump tariff refunds for corporate bonuses instead of reimbursing consumers.",
-        "evidence_ids": [
-          "E2",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: Companies receiving tariff refunds",
-          "financial_channel: If companies use refunds for bonuses, it reduces liquidity for consumers",
-          "asset_hypothesis: If consumer liquidity decreases, gold may see mixed demand"
-        ],
-        "gold": {
-          "direction": "mixed",
-          "condition": "If companies use refunds for bonuses, it reduces consumer liquidity, potentially increasing gold demand as a hedge."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If consumer liquidity decreases, Bitcoin may not see a clear reaction as it competes with gold for risk appetite."
-        },
-        "uncertainty": "If companies use refunds for bonuses, it could lead to increased consumer spending, reducing gold demand."
-      },
-      "evidence": {
-        "E2": "Several companies that received refunds for paying Donald Trump ’s tariffs have",
-        "E7": "Republican candidates across the country were largely punished for Trump’s tariffs and"
-      },
-      "analyzed_at": "2026-11-18T22:24:00Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/ckq6eg55n221o?at_medium=RSS&at_campaign=rss",
-      "title": "Heating bills, chocolate and cat food: What the inflation figures mean for you",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-18T13:10:01Z",
-      "historical": null,
-      "read_at": "2026-11-19T13:50:52Z",
-      "body_sha256": "4017945f9784a5a1cb2f1701ac90235b18d1408f0365b2a783819afc9f9b7950",
-      "body_characters": 4528,
-      "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "The UK's inflation rate is rising, with energy bills expected to increase by £443, and food prices remaining relatively stable.",
-        "evidence_ids": [
-          "E4",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: Inflation rate rising",
-          "financial_channel: If energy costs persist, it may lead to higher food production and transportation costs",
-          "asset_hypothesis: If second-round effects occur, it could impact asset prices"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation continues to rise, gold may be seen as a hedge against currency depreciation."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite remains high, Bitcoin may be seen as a risky asset; if it declines, Bitcoin may lose appeal as a hedge."
-        },
-        "uncertainty": "If energy prices stabilize, the overall inflation rate may not rise as much, reducing pressure on other goods and services."
-      },
-      "evidence": {
-        "E4": "Typical energy bill forecast to go up by £443 a year from",
-        "E3": "While the rate of inflation in general was 3.6% in the year"
-      },
-      "analyzed_at": "2026-11-19T13:55:42Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
-      "title": "Simon Jack: Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-18T21:28:08Z",
-      "historical": null,
-      "read_at": "2026-11-19T13:55:43Z",
-      "body_sha256": "fd2b906b13d32e527f4d73ab87b819a4bf2e2b9dc249f261fa67c3f12c6e3561",
-      "body_characters": 9372,
-      "model_context_characters": 4500,
+      "read_at": "2026-11-19T22:33:28Z",
+      "body_sha256": "be0895378eee3c687c3194ed1daab1865329f9b49401953d72ffb0aef971d166",
+      "body_characters": 4489,
+      "model_context_characters": 4489,
       "status": "Public body read; queued for AI"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/nov/18/howard-lutnick-nvidia-cantor-fitzgerald",
-      "title": "Democrats demand answers from Howard Lutnick about Nvidia and his family’s business",
+      "url": "https://www.bbc.co.uk/news/articles/cwm2mj7vezr3o?at_medium=RSS&at_campaign=rss",
+      "title": "More support for households reliant on heating oil",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-19T15:22:31Z",
+      "historical": null,
+      "read_at": "2026-11-19T22:33:28Z",
+      "body_sha256": "da5c6b7ad0ed4dce247af27964ea2d1d322f20cc1e99f1aeada0654a70598cff",
+      "body_characters": 1349,
+      "model_context_characters": 1349,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/19/imf-head-warns-ai-demand-push-up-interest-rates-apec",
+      "title": "AI demand will push up interest rates around the world, IMF head warns",
       "publisher": "The Guardian Business",
-      "published_at": "2026-11-18T16:48:29Z",
+      "published_at": "2026-11-19T15:15:14Z",
       "historical": null,
-      "read_at": "2026-11-19T13:55:43Z",
-      "body_sha256": "0ea9f3f97c588f286912a16052c10de6ad9f0091b7e9eda0db7be0f2bcd4bc7a",
-      "body_characters": 4585,
-      "model_context_characters": 4500,
+      "read_at": "2026-11-19T22:33:28Z",
+      "body_sha256": "5b020dfa6aed51d937533acff764116742cbad1e6f416e109a2912533f172c29",
+      "body_characters": 3437,
+      "model_context_characters": 3437,
       "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
-      "title": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-18T09:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-19T13:55:44Z",
-      "body_sha256": "7809043583865aa43991872e471e8a3513bc7e3361e5c4ffe1c25266bcc60b2c",
-      "body_characters": 2897,
-      "model_context_characters": 2897,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
-      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
-      "publisher": "Federal Reserve",
-      "published_at": "2026-11-12T17:45:00Z",
-      "historical": null,
-      "status": "Unavailable: Insufficient public article text"
     }
   ]
 }

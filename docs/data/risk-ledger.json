@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-19T12:54:46Z",
-    "record_count": 84,
+    "updated_at": "2026-11-19T21:23:51Z",
+    "record_count": 86,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -2454,6 +2454,67 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "fd718ec494b9daacf58ff0bf8d79f15c566479c2b3d72754ad0166bb8cdced00"
+    },
+    {
+      "id": "e5c2e9395d1d6b34167c06bb",
+      "first_observed_at": "2026-11-19T21:23:51Z",
+      "snapshot": {
+        "title": "More support for households reliant on heating oil",
+        "url": "https://www.bbc.co.uk/news/articles/cwm2mj7vezr3o?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-19T15:22:31Z",
+        "categories": [
+          "energy"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d8bbcc3e2536f510751f3f7fc1417a5af288b2bec41ac3c65aa827eef6c5d064",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "f00b4defc0732edebe6a1efdb04f78c5b2f885d5e892b9e429ef377f3bd5311d"
+    },
+    {
+      "id": "313c6456fcdb13e27c3954a3",
+      "first_observed_at": "2026-11-19T21:23:51Z",
+      "snapshot": {
+        "title": "AI demand will push up interest rates around the world, IMF head warns",
+        "url": "https://www.theguardian.com/world/2026/nov/19/imf-head-warns-ai-demand-push-up-interest-rates-apec",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-19T15:15:14Z",
+        "categories": [
+          "ai_economics",
+          "rates"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "5fee3fe9d46796a58c47825ce767e0ee0f5f351057c2046194672c86140a1ad2",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "ff6861cd0ad58c6a645030e5f8eda9298fcb61193d5bb407f1e7a0504fff9d84"
     }
   ]
 }

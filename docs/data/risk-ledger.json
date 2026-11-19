@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-18T23:04:06Z",
-    "record_count": 80,
+    "updated_at": "2026-11-19T04:06:02Z",
+    "record_count": 83,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -2342,6 +2342,90 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "42606126ffed31cbf66c01ee4537a40bcbd1162799756991e7caf3f7168ee62a"
+    },
+    {
+      "id": "ce41c1ed4624e4dba2a7b9ab",
+      "first_observed_at": "2026-11-19T04:06:02Z",
+      "snapshot": {
+        "title": "AI giant Anthropic valued at up to $1.5tn ahead of stock market debut",
+        "url": "https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-19T02:20:15Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "faa82a59cbd4ae781a03113b5ffd232380ec0c5842218d17e75388b791ebecce"
+    },
+    {
+      "id": "f5ae80cf25b80cd8eca0de36",
+      "first_observed_at": "2026-11-19T04:06:02Z",
+      "snapshot": {
+        "title": "Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
+        "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-18T21:28:08Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "d905cbd5c7a457edc45a84ded797e415ad39c811e55b3957ea016d9a2ca3e4c8"
+    },
+    {
+      "id": "2cb257905673062aa17fd386",
+      "first_observed_at": "2026-11-19T04:06:02Z",
+      "snapshot": {
+        "title": "How new US chip restrictions on South East Asia will hit China",
+        "url": "https://www.bbc.co.uk/news/articles/cwq6e2qgvmlgo?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Technology",
+        "published_at": "2026-11-17T14:25:45Z",
+        "categories": [
+          "ai_regulation"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "897f5d72cfd89dfb8ee98d8117092ac4ed43a2e697c4dac21638f5486e473305",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "d3e56e944fe67be68559f3b62aa60ec64591750a580dd7a05eaa2480a0e12f04"
     }
   ]
 }

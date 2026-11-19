@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-18T22:24:01Z",
-    "scan_started_at": "2026-11-18T22:17:02Z",
+    "checked_at": "2026-11-19T03:53:47Z",
+    "scan_started_at": "2026-11-19T03:46:33Z",
     "provider_requested": "local",
-    "article_reads": 8,
-    "ai_interpretations": 3,
-    "new_interpretations": 2,
+    "article_reads": 7,
+    "ai_interpretations": 2,
+    "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -27,45 +27,24 @@
       "status": "Unavailable: Insufficient public article text"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/ckq6eg55n221o?at_medium=RSS&at_campaign=rss",
-      "title": "Heating bills, chocolate and cat food: What the inflation figures mean for you",
+      "url": "https://www.bbc.co.uk/news/videos/cxp80q5pv4q5o?at_medium=RSS&at_campaign=rss",
+      "title": "How high is UK inflation and how will you be affected?",
       "publisher": "BBC Business",
-      "published_at": "2026-11-18T13:10:01Z",
+      "published_at": "2026-11-18T19:37:27Z",
       "historical": null,
-      "read_at": "2026-11-18T22:17:05Z",
-      "body_sha256": "4017945f9784a5a1cb2f1701ac90235b18d1408f0365b2a783819afc9f9b7950",
-      "body_characters": 4528,
-      "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "The UK's inflation rate is rising, with energy bills expected to increase by £443, and food prices remaining relatively stable.",
-        "evidence_ids": [
-          "E4",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: Inflation rate rising",
-          "financial_channel: If energy costs persist, it may lead to higher food production and transportation costs",
-          "asset_hypothesis: If second-round effects occur, it could impact asset prices"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation continues to rise, gold may be seen as a hedge against currency depreciation."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite remains high, Bitcoin may be seen as a risky asset; if it declines, Bitcoin may lose appeal as a hedge."
-        },
-        "uncertainty": "If energy prices stabilize, the overall inflation rate may not rise as much, reducing pressure on other goods and services."
-      },
-      "evidence": {
-        "E4": "Typical energy bill forecast to go up by £443 a year from",
-        "E3": "While the rate of inflation in general was 3.6% in the year"
-      },
-      "analyzed_at": "2026-11-18T22:21:55Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+      "status": "Unavailable: Insufficient public article text"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-third-quarter-revenue-jensen-huang",
+      "title": "Nvidia doubles revenue as board says it does not intend to reinstate Jensen Huang",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-17T23:32:16Z",
+      "historical": null,
+      "read_at": "2026-11-19T03:46:35Z",
+      "body_sha256": "be0895378eee3c687c3194ed1daab1865329f9b49401953d72ffb0aef971d166",
+      "body_characters": 4489,
+      "model_context_characters": 4489,
+      "status": "Unavailable: AI numerical statements require exact cited source support"
     },
     {
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf",
@@ -74,6 +53,47 @@
       "published_at": "2026-11-17T18:30:00Z",
       "historical": null,
       "status": "Unavailable: No readable article container"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo?at_medium=RSS&at_campaign=rss",
+      "title": "Typical energy bill forecast to go up by £443 a year from January as inflation rate rises again",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-18T13:17:06Z",
+      "historical": null,
+      "read_at": "2026-11-19T03:51:32Z",
+      "body_sha256": "4dc6d26ee09af956a8ba0a85bda79c4c51f0fc332e6800d2cd7e4377fcc76176",
+      "body_characters": 4521,
+      "model_context_characters": 4500,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "UK energy bills are forecast to rise by £443 a year, with inflation at its highest level in a year.",
+        "evidence_ids": [
+          "E6",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: Energy bill forecast to rise",
+          "financial_channel: If higher energy costs, then increased inflation",
+          "asset_hypothesis: If higher energy costs, then increased risk appetite"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation rises, then demand for gold as a hedge increases."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If inflation rises, then risk appetite may shift, but liquidity remains a concern."
+        },
+        "uncertainty": "If the conflict in the Middle East is resolved, then energy prices may stabilize, reducing inflation pressure."
+      },
+      "evidence": {
+        "E6": "Gas and electricity bills for a typical household are forecast to jump",
+        "E7": "Some households will get a £100 payment to help with the rising"
+      },
+      "analyzed_at": "2026-11-19T03:53:46Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.theguardian.com/us-news/2026/nov/16/companies-trump-tariff-refunds-corporate-bonuses",
@@ -85,7 +105,7 @@
       "body_sha256": "fddd4f9c06a098a1f8a1632460ee05e53ceb2c64535fb23fdf777ecfd5ef44b8",
       "body_characters": 4261,
       "model_context_characters": 4261,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "Several companies are using Trump tariff refunds for corporate bonuses instead of reimbursing consumers.",
         "evidence_ids": [
@@ -117,67 +137,26 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
-      "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-15T21:06:03Z",
-      "historical": null,
-      "read_at": "2026-11-18T14:27:57Z",
-      "body_sha256": "6dda8d07ebf505fd888f31f8b8082e7de86d252506bb11bbcbd503243b85fb71",
-      "body_characters": 6965,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Palantir's software is used by the Australian Criminal Intelligence Commission to analyze sensitive data from at least 10 government agencies, including Centrelink and childcare workers' information.",
-        "evidence_ids": [
-          "E2",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: Palantir's software is used",
-          "financial_channel: If data access increases, risk appetite may rise",
-          "asset_hypothesis: If risk appetite increases, gold may be down"
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If risk appetite increases due to data access concerns, investors may shift away from gold."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite increases, Bitcoin may be mixed as it competes with traditional safe-havens."
-        },
-        "uncertainty": "If the data access does not significantly impact risk appetite, gold and Bitcoin may remain unchanged."
-      },
-      "evidence": {
-        "E2": "Exclusive: Personal information of Centrelink clients and childcare workers is among data",
-        "E3": "T he personal information of Centrelink customers, taxpayers and childcare workers is"
-      },
-      "analyzed_at": "2026-11-18T04:48:11Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cm792dqz4qvyo?at_medium=RSS&at_campaign=rss",
-      "title": "MP urges council to speed up heating oil payments",
+      "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
+      "title": "Can Anthropic's record breaking IPO stop the AI bubble bursting?",
       "publisher": "BBC Business",
-      "published_at": "2026-11-18T08:48:26Z",
+      "published_at": "2026-11-18T21:28:08Z",
       "historical": null,
-      "read_at": "2026-11-18T22:24:00Z",
-      "body_sha256": "6eb853af1db9180ce305a50ce8106dee5ba76ddca25905c7dccd72c01ad15086",
-      "body_characters": 2264,
-      "model_context_characters": 2264,
+      "read_at": "2026-11-19T03:53:46Z",
+      "body_sha256": "3c593513e7d5bcca46e9ee53105a0e0755e92a907587e97b3e9ea310feaa4370",
+      "body_characters": 9315,
+      "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo?at_medium=RSS&at_campaign=rss",
-      "title": "Typical energy bill forecast to go up by £443 a year from January as inflation rate rises again",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-18T13:17:06Z",
+      "url": "https://www.theguardian.com/us-news/2026/nov/18/howard-lutnick-nvidia-cantor-fitzgerald",
+      "title": "Democrats demand answers from Howard Lutnick about Nvidia and his family’s business",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-18T16:48:29Z",
       "historical": null,
-      "read_at": "2026-11-18T22:24:00Z",
-      "body_sha256": "4dc6d26ee09af956a8ba0a85bda79c4c51f0fc332e6800d2cd7e4377fcc76176",
-      "body_characters": 4521,
+      "read_at": "2026-11-19T03:53:46Z",
+      "body_sha256": "0ea9f3f97c588f286912a16052c10de6ad9f0091b7e9eda0db7be0f2bcd4bc7a",
+      "body_characters": 4585,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
     },
@@ -187,22 +166,10 @@
       "publisher": "European Central Bank",
       "published_at": "2026-11-18T09:00:00Z",
       "historical": null,
-      "read_at": "2026-11-18T22:24:01Z",
+      "read_at": "2026-11-19T03:53:47Z",
       "body_sha256": "7809043583865aa43991872e471e8a3513bc7e3361e5c4ffe1c25266bcc60b2c",
       "body_characters": 2897,
       "model_context_characters": 2897,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-third-quarter-revenue-jensen-huang",
-      "title": "Nvidia doubles revenue as board says it does not intend to reinstate Jensen Huang",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-17T23:32:16Z",
-      "historical": null,
-      "read_at": "2026-11-18T22:24:01Z",
-      "body_sha256": "be0895378eee3c687c3194ed1daab1865329f9b49401953d72ffb0aef971d166",
-      "body_characters": 4489,
-      "model_context_characters": 4489,
       "status": "Public body read; queued for AI"
     },
     {
@@ -211,7 +178,7 @@
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-17T07:00:07Z",
       "historical": null,
-      "read_at": "2026-11-18T22:24:01Z",
+      "read_at": "2026-11-19T03:53:47Z",
       "body_sha256": "4798450d15eb1f1db0c0ba75f73e115730f6f86c8c8fe08ceacc4a8997173bd6",
       "body_characters": 8330,
       "model_context_characters": 4500,

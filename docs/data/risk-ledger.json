@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-20T10:24:02Z",
-    "record_count": 87,
+    "updated_at": "2026-11-20T18:46:39Z",
+    "record_count": 88,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -2544,6 +2544,34 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "464134352fdd795602eaceff83be55ab67f80820f50d41301876539ca87861aa"
+    },
+    {
+      "id": "8518cc37edad352c29de7625",
+      "first_observed_at": "2026-11-20T18:46:39Z",
+      "snapshot": {
+        "title": "Anthropic shares slump on second day of trading as markets reel from AI sell-off",
+        "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-20T16:26:07Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "8f350a7dd1bff829259989fcd8042a11887292076e92fc9970af96a55482f210"
     }
   ]
 }

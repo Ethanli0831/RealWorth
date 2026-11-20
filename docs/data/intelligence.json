@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-11-20T13:34:05Z",
-    "scan_started_at": "2026-11-20T13:28:39Z",
+    "checked_at": "2026-11-20T21:40:58Z",
+    "scan_started_at": "2026-11-20T21:29:43Z",
     "provider_requested": "local",
-    "article_reads": 8,
-    "ai_interpretations": 4,
+    "article_reads": 9,
+    "ai_interpretations": 6,
     "new_interpretations": 2,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -19,147 +19,12 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.theguardian.com/world/2026/nov/19/imf-head-warns-ai-demand-push-up-interest-rates-apec",
-      "title": "AI demand will push up interest rates around the world, IMF head warns",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-19T15:15:14Z",
-      "historical": null,
-      "read_at": "2026-11-20T13:28:40Z",
-      "body_sha256": "5b020dfa6aed51d937533acff764116742cbad1e6f416e109a2912533f172c29",
-      "body_characters": 3437,
-      "model_context_characters": 3437,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "IMF head warns that AI demand will push up interest rates globally, citing energy shocks from the Middle East war and AI hardware growth.",
-        "evidence_ids": [
-          "E4",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: AI demand pushes up interest rates",
-          "financial_channel: If AI demand increases, central banks will raise interest rates to combat inflation.",
-          "asset_hypothesis: If AI demand continues to grow, gold and Bitcoin will face mixed conditions due to competing risk appetites."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflationary pressures rise due to AI demand, central banks will likely raise interest rates, making gold a safer haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If Bitcoin's role as a hedge is unclear, its price could fluctuate as risk appetites and liquidity conditions vary."
-        },
-        "uncertainty": "If AI demand slows down, central banks might not need to raise interest rates, reducing inflationary pressures and potentially lowering gold prices."
-      },
-      "evidence": {
-        "E4": "Booming demand for artificial intelligence will force the world’s most powerful central",
-        "E5": "She said that, alongside the energy shock from the war in the"
-      },
-      "analyzed_at": "2026-11-20T13:32:17Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
-      "title": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-18T09:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-20T13:27:50Z",
-      "body_sha256": "7809043583865aa43991872e471e8a3513bc7e3361e5c4ffe1c25266bcc60b2c",
-      "body_characters": 2897,
-      "model_context_characters": 2897,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "The European Central Bank highlights risks to financial stability from AI valuations, fiscal imbalances, and geoeconomic tensions.",
-        "evidence_ids": [
-          "E1",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: AI valuations and geoeconomic tensions pose risks",
-          "financial_channel: If real yields rise, funding costs increase",
-          "asset_hypothesis: If risk appetite decreases, asset prices fall"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If real yields rise, investors seek safe-haven assets like gold."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If risk appetite decreases, Bitcoin may lose appeal as a hedge, but if liquidity tightens, it could gain traction."
-        },
-        "uncertainty": "If AI valuations prove sustainable, the risks to financial stability may diminish."
-      },
-      "evidence": {
-        "E1": "The euro area economy has continued to demonstrate resilience despite an energy",
-        "E5": "Geoeconomic uncertainty, higher energy prices and weak economic growth could further strain"
-      },
-      "analyzed_at": "2026-11-19T22:28:09Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
-      "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-15T21:06:03Z",
-      "historical": null,
-      "read_at": "2026-11-20T13:32:17Z",
-      "body_sha256": "6dda8d07ebf505fd888f31f8b8082e7de86d252506bb11bbcbd503243b85fb71",
-      "body_characters": 6965,
-      "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "Palantir's software is used by the Australian Criminal Intelligence Commission to analyze sensitive data from at least 10 government agencies, including Centrelink and childcare workers' information.",
-        "evidence_ids": [
-          "E2",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: Palantir's software is used",
-          "financial_channel: If data access increases, risk appetite may rise",
-          "asset_hypothesis: If risk appetite increases, gold may be down"
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If risk appetite increases due to data access concerns, investors may shift away from gold."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite increases, Bitcoin may be mixed as it competes with traditional safe-havens."
-        },
-        "uncertainty": "If the data access does not significantly impact risk appetite, gold and Bitcoin may remain unchanged."
-      },
-      "evidence": {
-        "E2": "Exclusive: Personal information of Centrelink clients and childcare workers is among data",
-        "E3": "T he personal information of Centrelink customers, taxpayers and childcare workers is"
-      },
-      "analyzed_at": "2026-11-20T13:34:02Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
-      "title": "Simon Jack: Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-18T21:28:08Z",
-      "historical": null,
-      "read_at": "2026-11-20T13:34:02Z",
-      "body_sha256": "df907b69b41e1d543d78202f66f7c7d95128132274090264e4d8c49e58c77174",
-      "body_characters": 9390,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
       "url": "https://www.theguardian.com/business/2026/nov/19/bank-of-england-revamp",
       "title": "Grade I interiors, gold bars, cost fears: Bank of England faces headache over £160m revamp",
       "publisher": "The Guardian Business",
       "published_at": "2026-11-19T06:00:19Z",
       "historical": null,
-      "read_at": "2026-11-20T03:46:09Z",
+      "read_at": "2026-11-20T21:28:52Z",
       "body_sha256": "9cc65b5c7a6705072b2acaef54ab628f556c1e005ae294e227fe4a3731ba3e86",
       "body_characters": 7017,
       "model_context_characters": 4500,
@@ -195,32 +60,86 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf",
-      "title": "Philip R. Lane: The practice and science of monetary policy communication: the ECB experience",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-17T18:30:00Z",
-      "historical": null,
-      "status": "Unavailable: No readable article container"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/videos/cxp80q5pv4q5o?at_medium=RSS&at_campaign=rss",
-      "title": "How high is UK inflation and how will you be affected?",
+      "url": "https://www.bbc.co.uk/news/articles/ckq6eg55n221o?at_medium=RSS&at_campaign=rss",
+      "title": "Heating bills, chocolate and cat food: What the inflation figures mean for you",
       "publisher": "BBC Business",
-      "published_at": "2026-11-18T19:37:27Z",
+      "published_at": "2026-11-18T13:10:01Z",
       "historical": null,
-      "status": "Unavailable: Insufficient public article text"
+      "read_at": "2026-11-20T21:29:44Z",
+      "body_sha256": "4017945f9784a5a1cb2f1701ac90235b18d1408f0365b2a783819afc9f9b7950",
+      "body_characters": 4528,
+      "model_context_characters": 4500,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The UK's inflation rate is rising, with energy bills expected to increase by £443, and food prices remaining relatively stable.",
+        "evidence_ids": [
+          "E4",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: Inflation rate rising",
+          "financial_channel: If energy costs persist, it may lead to higher food production and transportation costs",
+          "asset_hypothesis: If second-round effects occur, it could impact asset prices"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation continues to rise, gold may be seen as a hedge against currency depreciation."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite remains high, Bitcoin may be seen as a risky asset; if it declines, Bitcoin may lose appeal as a hedge."
+        },
+        "uncertainty": "If energy prices stabilize, the overall inflation rate may not rise as much, reducing pressure on other goods and services."
+      },
+      "evidence": {
+        "E4": "Typical energy bill forecast to go up by £443 a year from",
+        "E3": "While the rate of inflation in general was 3.6% in the year"
+      },
+      "analyzed_at": "2026-11-20T21:35:21Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/nov/18/howard-lutnick-nvidia-cantor-fitzgerald",
-      "title": "Democrats demand answers from Howard Lutnick about Nvidia and his family’s business",
+      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "title": "Anthropic shares slump on second day of trading as markets reel from AI sell-off",
       "publisher": "The Guardian Business",
-      "published_at": "2026-11-18T16:48:29Z",
+      "published_at": "2026-11-20T16:26:07Z",
       "historical": null,
-      "read_at": "2026-11-20T13:34:04Z",
-      "body_sha256": "0ea9f3f97c588f286912a16052c10de6ad9f0091b7e9eda0db7be0f2bcd4bc7a",
-      "body_characters": 4585,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
+      "read_at": "2026-11-20T21:35:22Z",
+      "body_sha256": "ec6df5b09a836c86f5a1bdc6569720873d9e33988dbcdc7001bcc9c8112c4eaa",
+      "body_characters": 4465,
+      "model_context_characters": 4465,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Tech and AI stocks, including Anthropic, experience a significant sell-off, erasing 2026 gains and causing Asian markets to record their worst week since 2020.",
+        "evidence_ids": [
+          "E7",
+          "E1"
+        ],
+        "chain": [
+          "reported_event: Tech and AI stocks sell-off",
+          "financial_channel: If risk appetite decreases, tech stocks face selling pressure",
+          "asset_hypothesis: If AI buildout concerns persist, Anthropic's valuation may decline"
+        ],
+        "gold": {
+          "direction": "down",
+          "condition": "If inflation fears persist, gold demand may increase, but US rate hikes could offset this."
+        },
+        "bitcoin": {
+          "direction": "down",
+          "condition": "If risk appetite decreases, investors may shift to safer assets like Bitcoin."
+        },
+        "uncertainty": "If central banks decide against raising interest rates, gold and Bitcoin could see a rebound."
+      },
+      "evidence": {
+        "E7": "Nasdaq erases 2026 gains and Asian markets record worst week since 2020",
+        "E1": "Fears that US central bankers may raise interest rates to fight inflation"
+      },
+      "analyzed_at": "2026-11-20T21:40:55Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china",
@@ -228,23 +147,166 @@
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-20T09:18:30Z",
       "historical": null,
-      "read_at": "2026-11-20T13:34:04Z",
+      "read_at": "2026-11-20T21:40:55Z",
       "body_sha256": "4255d724fa85b57138a512331f7a7e17508492038d6782f30dd9c65200f18aee",
       "body_characters": 3431,
       "model_context_characters": 3431,
       "status": "Public body read; queued for AI"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cwm2mj7vezr3o?at_medium=RSS&at_campaign=rss",
-      "title": "More support for households reliant on heating oil",
+      "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
+      "title": "Simon Jack: Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
       "publisher": "BBC Business",
-      "published_at": "2026-11-19T15:22:31Z",
+      "published_at": "2026-11-18T21:28:08Z",
       "historical": null,
-      "read_at": "2026-11-20T13:34:05Z",
-      "body_sha256": "da5c6b7ad0ed4dce247af27964ea2d1d322f20cc1e99f1aeada0654a70598cff",
-      "body_characters": 1349,
-      "model_context_characters": 1349,
+      "read_at": "2026-11-20T21:40:56Z",
+      "body_sha256": "df907b69b41e1d543d78202f66f7c7d95128132274090264e4d8c49e58c77174",
+      "body_characters": 9390,
+      "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
+      "title": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-18T09:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-20T13:27:50Z",
+      "body_sha256": "7809043583865aa43991872e471e8a3513bc7e3361e5c4ffe1c25266bcc60b2c",
+      "body_characters": 2897,
+      "model_context_characters": 2897,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "The European Central Bank highlights risks to financial stability from AI valuations, fiscal imbalances, and geoeconomic tensions.",
+        "evidence_ids": [
+          "E1",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: AI valuations and geoeconomic tensions pose risks",
+          "financial_channel: If real yields rise, funding costs increase",
+          "asset_hypothesis: If risk appetite decreases, asset prices fall"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If real yields rise, investors seek safe-haven assets like gold."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If risk appetite decreases, Bitcoin may lose appeal as a hedge, but if liquidity tightens, it could gain traction."
+        },
+        "uncertainty": "If AI valuations prove sustainable, the risks to financial stability may diminish."
+      },
+      "evidence": {
+        "E1": "The euro area economy has continued to demonstrate resilience despite an energy",
+        "E5": "Geoeconomic uncertainty, higher energy prices and weak economic growth could further strain"
+      },
+      "analyzed_at": "2026-11-19T22:28:09Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/19/imf-head-warns-ai-demand-push-up-interest-rates-apec",
+      "title": "AI demand will push up interest rates around the world, IMF head warns",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-19T15:15:14Z",
+      "historical": null,
+      "read_at": "2026-11-20T13:28:40Z",
+      "body_sha256": "5b020dfa6aed51d937533acff764116742cbad1e6f416e109a2912533f172c29",
+      "body_characters": 3437,
+      "model_context_characters": 3437,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "IMF head warns that AI demand will push up interest rates globally, citing energy shocks from the Middle East war and AI hardware growth.",
+        "evidence_ids": [
+          "E4",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: AI demand pushes up interest rates",
+          "financial_channel: If AI demand increases, central banks will raise interest rates to combat inflation.",
+          "asset_hypothesis: If AI demand continues to grow, gold and Bitcoin will face mixed conditions due to competing risk appetites."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflationary pressures rise due to AI demand, central banks will likely raise interest rates, making gold a safer haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If Bitcoin's role as a hedge is unclear, its price could fluctuate as risk appetites and liquidity conditions vary."
+        },
+        "uncertainty": "If AI demand slows down, central banks might not need to raise interest rates, reducing inflationary pressures and potentially lowering gold prices."
+      },
+      "evidence": {
+        "E4": "Booming demand for artificial intelligence will force the world’s most powerful central",
+        "E5": "She said that, alongside the energy shock from the war in the"
+      },
+      "analyzed_at": "2026-11-20T13:32:17Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
+      "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-15T21:06:03Z",
+      "historical": null,
+      "read_at": "2026-11-20T13:32:17Z",
+      "body_sha256": "6dda8d07ebf505fd888f31f8b8082e7de86d252506bb11bbcbd503243b85fb71",
+      "body_characters": 6965,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Palantir's software is used by the Australian Criminal Intelligence Commission to analyze sensitive data from at least 10 government agencies, including Centrelink and childcare workers' information.",
+        "evidence_ids": [
+          "E2",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: Palantir's software is used",
+          "financial_channel: If data access increases, risk appetite may rise",
+          "asset_hypothesis: If risk appetite increases, gold may be down"
+        ],
+        "gold": {
+          "direction": "down",
+          "condition": "If risk appetite increases due to data access concerns, investors may shift away from gold."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite increases, Bitcoin may be mixed as it competes with traditional safe-havens."
+        },
+        "uncertainty": "If the data access does not significantly impact risk appetite, gold and Bitcoin may remain unchanged."
+      },
+      "evidence": {
+        "E2": "Exclusive: Personal information of Centrelink clients and childcare workers is among data",
+        "E3": "T he personal information of Centrelink customers, taxpayers and childcare workers is"
+      },
+      "analyzed_at": "2026-11-20T13:34:02Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo?at_medium=RSS&at_campaign=rss",
+      "title": "Typical energy bill forecast to go up by £443 a year from January as inflation rate rises again",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-18T13:17:06Z",
+      "historical": null,
+      "read_at": "2026-11-20T21:40:56Z",
+      "body_sha256": "4dc6d26ee09af956a8ba0a85bda79c4c51f0fc332e6800d2cd7e4377fcc76176",
+      "body_characters": 4521,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf",
+      "title": "Philip R. Lane: The practice and science of monetary policy communication: the ECB experience",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-17T18:30:00Z",
+      "historical": null,
+      "status": "Unavailable: No readable article container"
     }
   ]
 }

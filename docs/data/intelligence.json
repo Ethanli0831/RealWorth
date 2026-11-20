@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-11-19T22:33:28Z",
-    "scan_started_at": "2026-11-19T22:23:42Z",
+    "checked_at": "2026-11-20T03:48:39Z",
+    "scan_started_at": "2026-11-20T03:41:08Z",
     "provider_requested": "local",
     "article_reads": 8,
-    "ai_interpretations": 2,
+    "ai_interpretations": 3,
     "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -24,7 +24,7 @@
       "publisher": "European Central Bank",
       "published_at": "2026-11-18T09:00:00Z",
       "historical": null,
-      "read_at": "2026-11-19T22:23:45Z",
+      "read_at": "2026-11-20T03:40:02Z",
       "body_sha256": "7809043583865aa43991872e471e8a3513bc7e3361e5c4ffe1c25266bcc60b2c",
       "body_characters": 2897,
       "model_context_characters": 2897,
@@ -65,7 +65,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-18T21:28:08Z",
       "historical": null,
-      "read_at": "2026-11-19T22:28:09Z",
+      "read_at": "2026-11-20T03:41:10Z",
       "body_sha256": "df907b69b41e1d543d78202f66f7c7d95128132274090264e4d8c49e58c77174",
       "body_characters": 9390,
       "model_context_characters": 4500,
@@ -77,11 +77,40 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-19T06:00:19Z",
       "historical": null,
-      "read_at": "2026-11-19T22:33:27Z",
+      "read_at": "2026-11-20T03:46:09Z",
       "body_sha256": "9cc65b5c7a6705072b2acaef54ab628f556c1e005ae294e227fe4a3731ba3e86",
       "body_characters": 7017,
       "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The Bank of England plans a £160m revamp of its historic headquarters, facing potential delays and cost overruns similar to the US Federal Reserve’s project.",
+        "evidence_ids": [
+          "E4",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: Bank of England's £160m revamp",
+          "financial_channel: If delays and cost overruns occur, it could affect gold and Bitcoin's liquidity and risk appetite.",
+          "asset_hypothesis: If the project is delayed, it could reduce gold and Bitcoin's liquidity."
+        ],
+        "gold": {
+          "direction": "down",
+          "condition": "If the project delays cause uncertainty in the market, investors might seek safer assets, reducing gold demand."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If the project delays reduce overall market liquidity, Bitcoin might face both increased and decreased trading volumes."
+        },
+        "uncertainty": "If the Bank of England successfully manages the project without delays, gold and Bitcoin's market reaction would remain stable."
+      },
+      "evidence": {
+        "E4": "Over the life of the Fed’s renovation project, construction costs have soared.",
+        "E5": "The final cost is likely to be nearer $2.5bn."
+      },
+      "analyzed_at": "2026-11-20T03:48:36Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf",
@@ -105,7 +134,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-18T16:48:29Z",
       "historical": null,
-      "read_at": "2026-11-19T22:33:28Z",
+      "read_at": "2026-11-20T03:48:39Z",
       "body_sha256": "0ea9f3f97c588f286912a16052c10de6ad9f0091b7e9eda0db7be0f2bcd4bc7a",
       "body_characters": 4585,
       "model_context_characters": 4500,
@@ -158,7 +187,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-17T23:32:16Z",
       "historical": null,
-      "read_at": "2026-11-19T22:33:28Z",
+      "read_at": "2026-11-20T03:48:39Z",
       "body_sha256": "be0895378eee3c687c3194ed1daab1865329f9b49401953d72ffb0aef971d166",
       "body_characters": 4489,
       "model_context_characters": 4489,
@@ -170,7 +199,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-19T15:22:31Z",
       "historical": null,
-      "read_at": "2026-11-19T22:33:28Z",
+      "read_at": "2026-11-20T03:48:39Z",
       "body_sha256": "da5c6b7ad0ed4dce247af27964ea2d1d322f20cc1e99f1aeada0654a70598cff",
       "body_characters": 1349,
       "model_context_characters": 1349,
@@ -182,7 +211,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-19T15:15:14Z",
       "historical": null,
-      "read_at": "2026-11-19T22:33:28Z",
+      "read_at": "2026-11-20T03:48:39Z",
       "body_sha256": "5b020dfa6aed51d937533acff764116742cbad1e6f416e109a2912533f172c29",
       "body_characters": 3437,
       "model_context_characters": 3437,

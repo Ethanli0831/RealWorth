@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-20T02:32:32Z",
-    "source_checked_at": "2026-11-20T02:32:28Z",
+    "built_at": "2026-11-20T10:24:02Z",
+    "source_checked_at": "2026-11-20T10:23:57Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -10,9 +10,36 @@
     "disclosure": "Risk chains are transparent scenarios, not verified causal effects, probability forecasts or AI price targets. No warnings are backdated.",
     "feeds_fetched": 8,
     "feeds_total": 9,
-    "ledger_records": 86
+    "ledger_records": 87
   },
   "events": [
+    {
+      "title": "California investigates Nvidia over whether chip exports ended up in China",
+      "url": "https://www.theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-20T09:18:30Z",
+      "categories": [
+        "trade"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "3dd28088d5cd9fa6c2ddfd743c9cf5ec4b68eb099ba50df689f0464ff2d9c3bc",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "4c94344dd4876a3e5f22f2be",
+      "first_observed_at": "2026-11-20T10:24:02Z",
+      "digest": "464134352fdd795602eaceff83be55ab67f80820f50d41301876539ca87861aa"
+    },
     {
       "title": "AI demand will push up interest rates around the world, IMF head warns",
       "url": "https://www.theguardian.com/world/2026/nov/19/imf-head-warns-ai-demand-push-up-interest-rates-apec",
@@ -343,6 +370,34 @@
       "digest": "afd4fe49827c87135087ae17c33f52dc1940e938db136f0ef74803d91b3723b0"
     },
     {
+      "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
+      "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-15T21:06:03Z",
+      "categories": [
+        "rates"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Proposal or possibility reported; not enacted law",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "41c1d4a68dcf9c3d4e9317bb",
+      "first_observed_at": "2026-11-16T06:10:25Z",
+      "digest": "4b50eb2e82af6d1b7136bee2fa78493b8bb6c8221f14255be71e0dac29247571"
+    },
+    {
       "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
       "publisher": "Federal Reserve",
@@ -397,34 +452,6 @@
       "id": "8d78f6242b1d2c2d1dd69325",
       "first_observed_at": "2026-11-10T18:10:53Z",
       "digest": "78e3974e191df6a85cd5c04eaa97790a99309a45ba8542bc9657cc470e63de40"
-    },
-    {
-      "title": "ECB publishes consolidated banking data for end-June 2026",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-06T09:00:00Z",
-      "categories": [
-        "rates"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "GLD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "9d5ad0d6f53807f183416fa1",
-      "first_observed_at": "2026-11-07T17:33:52Z",
-      "digest": "fdfb6e37d1e9f6b06298b9554f2f9da5492674feeb45c2dceaae346b2500a9aa"
     }
   ],
   "categories": [
@@ -519,8 +546,8 @@
         "Map supplier revenue by customer and destination.",
         "Review retaliation, substitution and currency exposure."
       ],
-      "event_count": 0,
-      "coverage": "No matching evidence in selected feeds; risk not ruled out"
+      "event_count": 1,
+      "coverage": "Limited selected-headline coverage"
     },
     {
       "id": "rates",
@@ -871,8 +898,8 @@
       "id": "fomc",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "Fetched official schedule",
-      "last_success": "2026-11-20T02:32:32Z",
-      "attempted_at": "2026-11-20T02:32:32Z",
+      "last_success": "2026-11-20T10:24:02Z",
+      "attempted_at": "2026-11-20T10:24:02Z",
       "events": [
         {
           "title": "Scheduled FOMC meeting final day",
@@ -1162,7 +1189,7 @@
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-20T02:32:32Z",
+      "attempted_at": "2026-11-20T10:24:02Z",
       "events": [],
       "stale": true,
       "error": "HTTPError",
@@ -1174,47 +1201,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-20T02:32:28Z",
+      "checked_at": "2026-11-20T10:23:57Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-20T02:32:28Z",
+      "last_success": "2026-11-20T10:23:57Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-20T02:32:28Z",
+      "checked_at": "2026-11-20T10:23:57Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-20T02:32:28Z",
-      "matched": 5
+      "last_success": "2026-11-20T10:23:57Z",
+      "matched": 4
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-20T02:32:28Z",
+      "checked_at": "2026-11-20T10:23:57Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-20T02:32:28Z",
-      "matched": 8
+      "last_success": "2026-11-20T10:23:57Z",
+      "matched": 6
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-20T02:32:28Z",
+      "checked_at": "2026-11-20T10:23:57Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-20T02:32:28Z",
+      "last_success": "2026-11-20T10:23:57Z",
       "matched": 5
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-20T02:32:28Z",
+      "checked_at": "2026-11-20T10:23:57Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1224,40 +1251,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-20T02:32:28Z",
+      "checked_at": "2026-11-20T10:23:57Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-20T02:32:28Z",
+      "last_success": "2026-11-20T10:23:57Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-20T02:32:28Z",
+      "checked_at": "2026-11-20T10:23:57Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-20T02:32:28Z",
-      "matched": 4
+      "last_success": "2026-11-20T10:23:57Z",
+      "matched": 5
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-20T02:32:28Z",
+      "checked_at": "2026-11-20T10:23:57Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-20T02:32:28Z",
+      "last_success": "2026-11-20T10:23:57Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-20T02:32:28Z",
+      "checked_at": "2026-11-20T10:23:57Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-20T02:32:28Z",
+      "last_success": "2026-11-20T10:23:57Z",
       "matched": 1
     }
   ],

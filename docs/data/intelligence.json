@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-21T11:42:58Z",
-    "scan_started_at": "2026-11-21T11:38:25Z",
+    "checked_at": "2026-11-21T19:46:36Z",
+    "scan_started_at": "2026-11-21T19:40:39Z",
     "provider_requested": "local",
     "article_reads": 9,
     "ai_interpretations": 8,
-    "new_interpretations": 2,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,12 +19,147 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china",
+      "title": "California investigates Nvidia over whether chip exports ended up in China",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-20T09:18:30Z",
+      "historical": null,
+      "read_at": "2026-11-21T19:39:49Z",
+      "body_sha256": "4255d724fa85b57138a512331f7a7e17508492038d6782f30dd9c65200f18aee",
+      "body_characters": 3431,
+      "model_context_characters": 3431,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "California is investigating Nvidia over potential export violations to China, following the resignation of CEO Jensen Huang.",
+        "evidence_ids": [
+          "E3",
+          "E4"
+        ],
+        "chain": [
+          "reported_event: California investigates Nvidia for export violations",
+          "financial_channel: If real yields decrease, risk appetite may increase, affecting tech stocks.",
+          "asset_hypothesis: If supply chain disruptions occur, demand for alternative semiconductors may rise."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If the investigation leads to stricter regulations, gold may be seen as a safer haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If the tech sector faces uncertainty, Bitcoin may be seen as a hedge, but if risk appetite remains high, it may underperform."
+        },
+        "uncertainty": "If Megaspeed is found to be a legitimate business, the investigation may not lead to significant changes in Nvidia's operations."
+      },
+      "evidence": {
+        "E3": "California has served an investigative subpoena on Nvidia after a scandal that",
+        "E4": "Rob Bonta, the US state’s attorney general, issued the subpoena as part"
+      },
+      "analyzed_at": "2026-11-21T11:42:58Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
+      "title": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-18T09:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-21T19:39:51Z",
+      "body_sha256": "7809043583865aa43991872e471e8a3513bc7e3361e5c4ffe1c25266bcc60b2c",
+      "body_characters": 2897,
+      "model_context_characters": 2897,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "The European Central Bank highlights risks to financial stability from AI valuations, fiscal imbalances, and geoeconomic tensions.",
+        "evidence_ids": [
+          "E1",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: AI valuations and geoeconomic tensions pose risks",
+          "financial_channel: If real yields rise, funding costs increase",
+          "asset_hypothesis: If risk appetite decreases, asset prices fall"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If real yields rise, investors seek safe-haven assets like gold."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If risk appetite decreases, Bitcoin may lose appeal as a hedge, but if liquidity tightens, it could gain traction."
+        },
+        "uncertainty": "If AI valuations prove sustainable, the risks to financial stability may diminish."
+      },
+      "evidence": {
+        "E1": "The euro area economy has continued to demonstrate resilience despite an energy",
+        "E5": "Geoeconomic uncertainty, higher energy prices and weak economic growth could further strain"
+      },
+      "analyzed_at": "2026-11-19T22:28:09Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/19/imf-head-warns-ai-demand-push-up-interest-rates-apec",
+      "title": "AI demand will push up interest rates around the world, IMF head warns",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-19T15:15:14Z",
+      "historical": null,
+      "read_at": "2026-11-21T19:39:51Z",
+      "body_sha256": "5b020dfa6aed51d937533acff764116742cbad1e6f416e109a2912533f172c29",
+      "body_characters": 3437,
+      "model_context_characters": 3437,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "IMF head warns that AI demand will push up interest rates globally, citing energy shocks from the Middle East war and AI hardware growth.",
+        "evidence_ids": [
+          "E4",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: AI demand pushes up interest rates",
+          "financial_channel: If AI demand increases, central banks will raise interest rates to combat inflation.",
+          "asset_hypothesis: If AI demand continues to grow, gold and Bitcoin will face mixed conditions due to competing risk appetites."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflationary pressures rise due to AI demand, central banks will likely raise interest rates, making gold a safer haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If Bitcoin's role as a hedge is unclear, its price could fluctuate as risk appetites and liquidity conditions vary."
+        },
+        "uncertainty": "If AI demand slows down, central banks might not need to raise interest rates, reducing inflationary pressures and potentially lowering gold prices."
+      },
+      "evidence": {
+        "E4": "Booming demand for artificial intelligence will force the world’s most powerful central",
+        "E5": "She said that, alongside the energy shock from the war in the"
+      },
+      "analyzed_at": "2026-11-20T13:32:17Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
+      "title": "Simon Jack: Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-18T21:28:08Z",
+      "historical": null,
+      "read_at": "2026-11-21T19:40:40Z",
+      "body_sha256": "df907b69b41e1d543d78202f66f7c7d95128132274090264e4d8c49e58c77174",
+      "body_characters": 9390,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI numerical statements require exact cited source support"
+    },
+    {
       "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
       "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-15T21:06:03Z",
       "historical": null,
-      "read_at": "2026-11-21T11:37:14Z",
+      "read_at": "2026-11-21T19:39:52Z",
       "body_sha256": "6dda8d07ebf505fd888f31f8b8082e7de86d252506bb11bbcbd503243b85fb71",
       "body_characters": 6965,
       "model_context_characters": 4500,
@@ -73,7 +208,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-19T06:00:19Z",
       "historical": null,
-      "read_at": "2026-11-21T11:37:16Z",
+      "read_at": "2026-11-21T19:39:54Z",
       "body_sha256": "9cc65b5c7a6705072b2acaef54ab628f556c1e005ae294e227fe4a3731ba3e86",
       "body_characters": 7017,
       "model_context_characters": 4500,
@@ -114,7 +249,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-18T13:17:06Z",
       "historical": null,
-      "read_at": "2026-11-21T11:37:16Z",
+      "read_at": "2026-11-21T19:39:54Z",
       "body_sha256": "4dc6d26ee09af956a8ba0a85bda79c4c51f0fc332e6800d2cd7e4377fcc76176",
       "body_characters": 4521,
       "model_context_characters": 4500,
@@ -155,7 +290,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-20T21:38:17Z",
       "historical": null,
-      "read_at": "2026-11-21T11:37:16Z",
+      "read_at": "2026-11-21T19:39:54Z",
       "body_sha256": "45b15af63dbb362c5c4c30a12e26a3442bfe8578a4a0cafc8a3fa3b915517ed4",
       "body_characters": 4622,
       "model_context_characters": 4500,
@@ -196,7 +331,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-20T20:54:12Z",
       "historical": null,
-      "read_at": "2026-11-21T11:38:28Z",
+      "read_at": "2026-11-21T19:39:54Z",
       "body_sha256": "3a7d4e967c6b36cc5091577a2d8037ae2d9c52c45d58fe2d19302c7d458ceb63",
       "body_characters": 3765,
       "model_context_characters": 3765,
@@ -230,141 +365,6 @@
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china",
-      "title": "California investigates Nvidia over whether chip exports ended up in China",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-20T09:18:30Z",
-      "historical": null,
-      "read_at": "2026-11-21T11:40:58Z",
-      "body_sha256": "4255d724fa85b57138a512331f7a7e17508492038d6782f30dd9c65200f18aee",
-      "body_characters": 3431,
-      "model_context_characters": 3431,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "California is investigating Nvidia over potential export violations to China, following the resignation of CEO Jensen Huang.",
-        "evidence_ids": [
-          "E3",
-          "E4"
-        ],
-        "chain": [
-          "reported_event: California investigates Nvidia for export violations",
-          "financial_channel: If real yields decrease, risk appetite may increase, affecting tech stocks.",
-          "asset_hypothesis: If supply chain disruptions occur, demand for alternative semiconductors may rise."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If the investigation leads to stricter regulations, gold may be seen as a safer haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If the tech sector faces uncertainty, Bitcoin may be seen as a hedge, but if risk appetite remains high, it may underperform."
-        },
-        "uncertainty": "If Megaspeed is found to be a legitimate business, the investigation may not lead to significant changes in Nvidia's operations."
-      },
-      "evidence": {
-        "E3": "California has served an investigative subpoena on Nvidia after a scandal that",
-        "E4": "Rob Bonta, the US state’s attorney general, issued the subpoena as part"
-      },
-      "analyzed_at": "2026-11-21T11:42:58Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
-      "title": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-18T09:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-20T13:27:50Z",
-      "body_sha256": "7809043583865aa43991872e471e8a3513bc7e3361e5c4ffe1c25266bcc60b2c",
-      "body_characters": 2897,
-      "model_context_characters": 2897,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The European Central Bank highlights risks to financial stability from AI valuations, fiscal imbalances, and geoeconomic tensions.",
-        "evidence_ids": [
-          "E1",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: AI valuations and geoeconomic tensions pose risks",
-          "financial_channel: If real yields rise, funding costs increase",
-          "asset_hypothesis: If risk appetite decreases, asset prices fall"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If real yields rise, investors seek safe-haven assets like gold."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If risk appetite decreases, Bitcoin may lose appeal as a hedge, but if liquidity tightens, it could gain traction."
-        },
-        "uncertainty": "If AI valuations prove sustainable, the risks to financial stability may diminish."
-      },
-      "evidence": {
-        "E1": "The euro area economy has continued to demonstrate resilience despite an energy",
-        "E5": "Geoeconomic uncertainty, higher energy prices and weak economic growth could further strain"
-      },
-      "analyzed_at": "2026-11-19T22:28:09Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/19/imf-head-warns-ai-demand-push-up-interest-rates-apec",
-      "title": "AI demand will push up interest rates around the world, IMF head warns",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-19T15:15:14Z",
-      "historical": null,
-      "read_at": "2026-11-20T13:28:40Z",
-      "body_sha256": "5b020dfa6aed51d937533acff764116742cbad1e6f416e109a2912533f172c29",
-      "body_characters": 3437,
-      "model_context_characters": 3437,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "IMF head warns that AI demand will push up interest rates globally, citing energy shocks from the Middle East war and AI hardware growth.",
-        "evidence_ids": [
-          "E4",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: AI demand pushes up interest rates",
-          "financial_channel: If AI demand increases, central banks will raise interest rates to combat inflation.",
-          "asset_hypothesis: If AI demand continues to grow, gold and Bitcoin will face mixed conditions due to competing risk appetites."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflationary pressures rise due to AI demand, central banks will likely raise interest rates, making gold a safer haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If Bitcoin's role as a hedge is unclear, its price could fluctuate as risk appetites and liquidity conditions vary."
-        },
-        "uncertainty": "If AI demand slows down, central banks might not need to raise interest rates, reducing inflationary pressures and potentially lowering gold prices."
-      },
-      "evidence": {
-        "E4": "Booming demand for artificial intelligence will force the world’s most powerful central",
-        "E5": "She said that, alongside the energy shock from the war in the"
-      },
-      "analyzed_at": "2026-11-20T13:32:17Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
-      "title": "Simon Jack: Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-18T21:28:08Z",
-      "historical": null,
-      "read_at": "2026-11-21T11:42:58Z",
-      "body_sha256": "df907b69b41e1d543d78202f66f7c7d95128132274090264e4d8c49e58c77174",
-      "body_characters": 9390,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
     }
   ]
 }

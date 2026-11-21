@@ -1,10 +1,40 @@
 {
   "meta": {
-    "updated_at": "2026-11-21T00:19:47Z",
+    "updated_at": "2026-11-21T07:26:08Z",
     "retention_days": 120,
     "verification": "Bitcoin: first completed 5-minute bar at/after target, at most 5 minutes late. ETFs: scheduled session close. Missing target data never becomes a fabricated outcome."
   },
   "records": [
+    {
+      "id": "BTC-USD|2026-11-21",
+      "ticker": "BTC-USD",
+      "issued_at": "2026-11-21T07:26:07Z",
+      "target_at": "2026-11-22T07:30:00Z",
+      "anchor_at": "2026-11-21T07:26:04Z",
+      "anchor_price": 58106.61,
+      "levels": {
+        "q10": 56672.9512,
+        "q30": 57658.1951,
+        "q40": 57928.664,
+        "q50": 58090.2675,
+        "q60": 58299.6751,
+        "q70": 58551.1929,
+        "q90": 59282.0374
+      },
+      "model": "empirical-log-return-quantiles-v2",
+      "training_observations": 252,
+      "horizon_sessions": 1,
+      "status": "Pending future observation",
+      "backtest": {
+        "observations": 90,
+        "coverage_percent": 83.33,
+        "mean_abs_price_error_percent": 1.459,
+        "random_walk_error_percent": 1.456,
+        "horizon_sessions": 1,
+        "method": "Walk-forward: each 1-session prediction uses 252 prior completed matching-horizon log returns. Overlapping training outcomes are not independent. Daily-close proxy for Bitcoin intraday 24h forecasts, not prospective accuracy."
+      },
+      "issued_digest": "9a029cc1d7e59e390831293d82033b6f1067c0451688c7800c2de95de8506154"
+    },
     {
       "id": "TLT|2026-11-23T21:00:00Z|2026-11-20T21:00:00Z",
       "ticker": "TLT",

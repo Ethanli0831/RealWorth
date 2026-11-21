@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-11-21T02:58:35Z",
-    "scan_started_at": "2026-11-21T02:46:19Z",
+    "checked_at": "2026-11-21T11:42:58Z",
+    "scan_started_at": "2026-11-21T11:38:25Z",
     "provider_requested": "local",
     "article_reads": 9,
-    "ai_interpretations": 6,
+    "ai_interpretations": 8,
     "new_interpretations": 2,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -19,12 +19,61 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
+      "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-15T21:06:03Z",
+      "historical": null,
+      "read_at": "2026-11-21T11:37:14Z",
+      "body_sha256": "6dda8d07ebf505fd888f31f8b8082e7de86d252506bb11bbcbd503243b85fb71",
+      "body_characters": 6965,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Palantir's software is used by the Australian Criminal Intelligence Commission to analyze sensitive data from at least 10 government agencies, including Centrelink and childcare workers' information.",
+        "evidence_ids": [
+          "E2",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: Palantir's software is used",
+          "financial_channel: If data access increases, risk appetite may rise",
+          "asset_hypothesis: If risk appetite increases, gold may be down"
+        ],
+        "gold": {
+          "direction": "down",
+          "condition": "If risk appetite increases due to data access concerns, investors may shift away from gold."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite increases, Bitcoin may be mixed as it competes with traditional safe-havens."
+        },
+        "uncertainty": "If the data access does not significantly impact risk appetite, gold and Bitcoin may remain unchanged."
+      },
+      "evidence": {
+        "E2": "Exclusive: Personal information of Centrelink clients and childcare workers is among data",
+        "E3": "T he personal information of Centrelink customers, taxpayers and childcare workers is"
+      },
+      "analyzed_at": "2026-11-20T13:34:02Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf",
+      "title": "Philip R. Lane: The practice and science of monetary policy communication: the ECB experience",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-17T18:30:00Z",
+      "historical": null,
+      "status": "Unavailable: No readable article container"
+    },
+    {
       "url": "https://www.theguardian.com/business/2026/nov/19/bank-of-england-revamp",
       "title": "Grade I interiors, gold bars, cost fears: Bank of England faces headache over £160m revamp",
       "publisher": "The Guardian Business",
       "published_at": "2026-11-19T06:00:19Z",
       "historical": null,
-      "read_at": "2026-11-21T02:45:45Z",
+      "read_at": "2026-11-21T11:37:16Z",
       "body_sha256": "9cc65b5c7a6705072b2acaef54ab628f556c1e005ae294e227fe4a3731ba3e86",
       "body_characters": 7017,
       "model_context_characters": 4500,
@@ -65,7 +114,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-18T13:17:06Z",
       "historical": null,
-      "read_at": "2026-11-21T02:46:20Z",
+      "read_at": "2026-11-21T11:37:16Z",
       "body_sha256": "4dc6d26ee09af956a8ba0a85bda79c4c51f0fc332e6800d2cd7e4377fcc76176",
       "body_characters": 4521,
       "model_context_characters": 4500,
@@ -106,7 +155,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-20T21:38:17Z",
       "historical": null,
-      "read_at": "2026-11-21T02:49:24Z",
+      "read_at": "2026-11-21T11:37:16Z",
       "body_sha256": "45b15af63dbb362c5c4c30a12e26a3442bfe8578a4a0cafc8a3fa3b915517ed4",
       "body_characters": 4622,
       "model_context_characters": 4500,
@@ -147,11 +196,40 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-20T20:54:12Z",
       "historical": null,
-      "read_at": "2026-11-21T02:58:34Z",
+      "read_at": "2026-11-21T11:38:28Z",
       "body_sha256": "3a7d4e967c6b36cc5091577a2d8037ae2d9c52c45d58fe2d19302c7d458ceb63",
       "body_characters": 3765,
       "model_context_characters": 3765,
-      "status": "Public body read; queued for AI"
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "US President Trump threatens to ban US firms from building AI data centres overseas, citing China as a competitor.",
+        "evidence_ids": [
+          "E1",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: Trump threatens ban on US firms building AI data centres overseas",
+          "financial_channel: If tech firms face restrictions, it could affect their liquidity and funding costs",
+          "asset_hypothesis: If data centres are restricted, it could impact tech asset valuations"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If the ban is implemented, it could reduce global supply of data centres, potentially increasing gold as a hedge."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If the ban affects tech firms, it could shift risk appetite, but Bitcoin's role as a hedge is unclear."
+        },
+        "uncertainty": "Tech giants like Meta and Google have already entered agreements to build data centres overseas, which could undermine the ban's enforcement."
+      },
+      "evidence": {
+        "E1": "Trump floated the policy after saying the US was leading on data",
+        "E5": "Trump says he won't allow American companies to build data centres \"outside\""
+      },
+      "analyzed_at": "2026-11-21T11:40:58Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china",
@@ -159,11 +237,40 @@
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-20T09:18:30Z",
       "historical": null,
-      "read_at": "2026-11-21T02:58:34Z",
+      "read_at": "2026-11-21T11:40:58Z",
       "body_sha256": "4255d724fa85b57138a512331f7a7e17508492038d6782f30dd9c65200f18aee",
       "body_characters": 3431,
       "model_context_characters": 3431,
-      "status": "Public body read; queued for AI"
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "California is investigating Nvidia over potential export violations to China, following the resignation of CEO Jensen Huang.",
+        "evidence_ids": [
+          "E3",
+          "E4"
+        ],
+        "chain": [
+          "reported_event: California investigates Nvidia for export violations",
+          "financial_channel: If real yields decrease, risk appetite may increase, affecting tech stocks.",
+          "asset_hypothesis: If supply chain disruptions occur, demand for alternative semiconductors may rise."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If the investigation leads to stricter regulations, gold may be seen as a safer haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If the tech sector faces uncertainty, Bitcoin may be seen as a hedge, but if risk appetite remains high, it may underperform."
+        },
+        "uncertainty": "If Megaspeed is found to be a legitimate business, the investigation may not lead to significant changes in Nvidia's operations."
+      },
+      "evidence": {
+        "E3": "California has served an investigative subpoena on Nvidia after a scandal that",
+        "E4": "Rob Bonta, the US state’s attorney general, issued the subpoena as part"
+      },
+      "analyzed_at": "2026-11-21T11:42:58Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
@@ -253,60 +360,11 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-18T21:28:08Z",
       "historical": null,
-      "read_at": "2026-11-21T02:58:34Z",
+      "read_at": "2026-11-21T11:42:58Z",
       "body_sha256": "df907b69b41e1d543d78202f66f7c7d95128132274090264e4d8c49e58c77174",
       "body_characters": 9390,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
-      "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-15T21:06:03Z",
-      "historical": null,
-      "read_at": "2026-11-20T13:32:17Z",
-      "body_sha256": "6dda8d07ebf505fd888f31f8b8082e7de86d252506bb11bbcbd503243b85fb71",
-      "body_characters": 6965,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Palantir's software is used by the Australian Criminal Intelligence Commission to analyze sensitive data from at least 10 government agencies, including Centrelink and childcare workers' information.",
-        "evidence_ids": [
-          "E2",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: Palantir's software is used",
-          "financial_channel: If data access increases, risk appetite may rise",
-          "asset_hypothesis: If risk appetite increases, gold may be down"
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If risk appetite increases due to data access concerns, investors may shift away from gold."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite increases, Bitcoin may be mixed as it competes with traditional safe-havens."
-        },
-        "uncertainty": "If the data access does not significantly impact risk appetite, gold and Bitcoin may remain unchanged."
-      },
-      "evidence": {
-        "E2": "Exclusive: Personal information of Centrelink clients and childcare workers is among data",
-        "E3": "T he personal information of Centrelink customers, taxpayers and childcare workers is"
-      },
-      "analyzed_at": "2026-11-20T13:34:02Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf",
-      "title": "Philip R. Lane: The practice and science of monetary policy communication: the ECB experience",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-17T18:30:00Z",
-      "historical": null,
-      "status": "Unavailable: No readable article container"
     }
   ]
 }

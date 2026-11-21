@@ -1,7 +1,7 @@
 {
   "meta": {
-    "checked_at": "2026-11-20T21:40:58Z",
-    "scan_started_at": "2026-11-20T21:29:43Z",
+    "checked_at": "2026-11-21T02:58:35Z",
+    "scan_started_at": "2026-11-21T02:46:19Z",
     "provider_requested": "local",
     "article_reads": 9,
     "ai_interpretations": 6,
@@ -24,7 +24,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-19T06:00:19Z",
       "historical": null,
-      "read_at": "2026-11-20T21:28:52Z",
+      "read_at": "2026-11-21T02:45:45Z",
       "body_sha256": "9cc65b5c7a6705072b2acaef54ab628f556c1e005ae294e227fe4a3731ba3e86",
       "body_characters": 7017,
       "model_context_characters": 4500,
@@ -60,86 +60,98 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/ckq6eg55n221o?at_medium=RSS&at_campaign=rss",
-      "title": "Heating bills, chocolate and cat food: What the inflation figures mean for you",
+      "url": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo?at_medium=RSS&at_campaign=rss",
+      "title": "Typical energy bill forecast to go up by £443 a year from January as inflation rate rises again",
       "publisher": "BBC Business",
-      "published_at": "2026-11-18T13:10:01Z",
+      "published_at": "2026-11-18T13:17:06Z",
       "historical": null,
-      "read_at": "2026-11-20T21:29:44Z",
-      "body_sha256": "4017945f9784a5a1cb2f1701ac90235b18d1408f0365b2a783819afc9f9b7950",
-      "body_characters": 4528,
+      "read_at": "2026-11-21T02:46:20Z",
+      "body_sha256": "4dc6d26ee09af956a8ba0a85bda79c4c51f0fc332e6800d2cd7e4377fcc76176",
+      "body_characters": 4521,
       "model_context_characters": 4500,
       "status": "AI interpretation generated · not independently verified",
       "analysis": {
-        "summary": "The UK's inflation rate is rising, with energy bills expected to increase by £443, and food prices remaining relatively stable.",
+        "summary": "UK energy bills are forecast to rise by £443 annually, with inflation at its highest level in a year.",
         "evidence_ids": [
-          "E4",
-          "E3"
+          "E6",
+          "E7"
         ],
         "chain": [
-          "reported_event: Inflation rate rising",
-          "financial_channel: If energy costs persist, it may lead to higher food production and transportation costs",
-          "asset_hypothesis: If second-round effects occur, it could impact asset prices"
+          "reported_event: Energy bill forecast to rise",
+          "financial_channel: If higher energy costs, then increased inflation",
+          "asset_hypothesis: If inflation rises, then risk appetite may decrease"
         ],
         "gold": {
           "direction": "up",
-          "condition": "If inflation continues to rise, gold may be seen as a hedge against currency depreciation."
+          "condition": "If inflation rises, then demand for gold as a hedge may increase."
         },
         "bitcoin": {
           "direction": "mixed",
-          "condition": "If risk appetite remains high, Bitcoin may be seen as a risky asset; if it declines, Bitcoin may lose appeal as a hedge."
+          "condition": "If inflation rises, then risk appetite may decrease, but liquidity may also decrease, affecting Bitcoin's performance."
         },
-        "uncertainty": "If energy prices stabilize, the overall inflation rate may not rise as much, reducing pressure on other goods and services."
+        "uncertainty": "If the conflict in the Middle East is resolved, energy prices may fall, reducing inflation pressure."
       },
       "evidence": {
-        "E4": "Typical energy bill forecast to go up by £443 a year from",
-        "E3": "While the rate of inflation in general was 3.6% in the year"
+        "E6": "Gas and electricity bills for a typical household are forecast to jump",
+        "E7": "Some households will get a £100 payment to help with the rising"
       },
-      "analyzed_at": "2026-11-20T21:35:21Z",
+      "analyzed_at": "2026-11-21T02:49:24Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-      "title": "Anthropic shares slump on second day of trading as markets reel from AI sell-off",
+      "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
       "publisher": "The Guardian Business",
-      "published_at": "2026-11-20T16:26:07Z",
+      "published_at": "2026-11-20T21:38:17Z",
       "historical": null,
-      "read_at": "2026-11-20T21:35:22Z",
-      "body_sha256": "ec6df5b09a836c86f5a1bdc6569720873d9e33988dbcdc7001bcc9c8112c4eaa",
-      "body_characters": 4465,
-      "model_context_characters": 4465,
+      "read_at": "2026-11-21T02:49:24Z",
+      "body_sha256": "45b15af63dbb362c5c4c30a12e26a3442bfe8578a4a0cafc8a3fa3b915517ed4",
+      "body_characters": 4622,
+      "model_context_characters": 4500,
       "status": "AI interpretation generated · not independently verified",
       "analysis": {
-        "summary": "Tech and AI stocks, including Anthropic, experience a significant sell-off, erasing 2026 gains and causing Asian markets to record their worst week since 2020.",
+        "summary": "The Nasdaq lost trillions in value as AI-related stocks, including Anthropic, experienced a sell-off, with the broader market entering correction territory.",
         "evidence_ids": [
-          "E7",
-          "E1"
+          "E1",
+          "E7"
         ],
         "chain": [
-          "reported_event: Tech and AI stocks sell-off",
-          "financial_channel: If risk appetite decreases, tech stocks face selling pressure",
-          "asset_hypothesis: If AI buildout concerns persist, Anthropic's valuation may decline"
+          "reported_event: AI-related sell-off",
+          "financial_channel: If tech stocks are selling off, liquidity is being drained from the market",
+          "asset_hypothesis: If investors are questioning AI valuations, risk appetite is decreasing"
         ],
         "gold": {
           "direction": "down",
-          "condition": "If inflation fears persist, gold demand may increase, but US rate hikes could offset this."
+          "condition": "If inflation fears persist, the dollar's strength may continue to push down gold prices."
         },
         "bitcoin": {
           "direction": "down",
-          "condition": "If risk appetite decreases, investors may shift to safer assets like Bitcoin."
+          "condition": "If the broader market is correcting, alternative-hedge demand may shift away from Bitcoin."
         },
-        "uncertainty": "If central banks decide against raising interest rates, gold and Bitcoin could see a rebound."
+        "uncertainty": "If the sell-off is short-lived and tech stocks recover, the Nasdaq could regain its value."
       },
       "evidence": {
-        "E7": "Nasdaq erases 2026 gains and Asian markets record worst week since 2020",
-        "E1": "Fears that US central bankers may raise interest rates to fight inflation"
+        "E1": "Fears that US central bankers may raise interest rates to fight inflation",
+        "E7": "The Nasdaq lost trillions in value, with the AI startup’s IPO failing"
       },
-      "analyzed_at": "2026-11-20T21:40:55Z",
+      "analyzed_at": "2026-11-21T02:58:34Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&at_campaign=rss",
+      "title": "Trump threatens ban on US firms building AI data centres overseas",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-20T20:54:12Z",
+      "historical": null,
+      "read_at": "2026-11-21T02:58:34Z",
+      "body_sha256": "3a7d4e967c6b36cc5091577a2d8037ae2d9c52c45d58fe2d19302c7d458ceb63",
+      "body_characters": 3765,
+      "model_context_characters": 3765,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china",
@@ -147,22 +159,10 @@
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-20T09:18:30Z",
       "historical": null,
-      "read_at": "2026-11-20T21:40:55Z",
+      "read_at": "2026-11-21T02:58:34Z",
       "body_sha256": "4255d724fa85b57138a512331f7a7e17508492038d6782f30dd9c65200f18aee",
       "body_characters": 3431,
       "model_context_characters": 3431,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
-      "title": "Simon Jack: Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-18T21:28:08Z",
-      "historical": null,
-      "read_at": "2026-11-20T21:40:56Z",
-      "body_sha256": "df907b69b41e1d543d78202f66f7c7d95128132274090264e4d8c49e58c77174",
-      "body_characters": 9390,
-      "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
     },
     {
@@ -248,6 +248,18 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
+      "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
+      "title": "Simon Jack: Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-18T21:28:08Z",
+      "historical": null,
+      "read_at": "2026-11-21T02:58:34Z",
+      "body_sha256": "df907b69b41e1d543d78202f66f7c7d95128132274090264e4d8c49e58c77174",
+      "body_characters": 9390,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
       "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
       "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
       "publisher": "The Guardian Technology",
@@ -287,18 +299,6 @@
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo?at_medium=RSS&at_campaign=rss",
-      "title": "Typical energy bill forecast to go up by £443 a year from January as inflation rate rises again",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-18T13:17:06Z",
-      "historical": null,
-      "read_at": "2026-11-20T21:40:56Z",
-      "body_sha256": "4dc6d26ee09af956a8ba0a85bda79c4c51f0fc332e6800d2cd7e4377fcc76176",
-      "body_characters": 4521,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf",

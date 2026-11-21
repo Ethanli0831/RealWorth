@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-20T18:46:32Z",
+    "checked_at": "2026-11-21T00:19:41Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-11-20T18:46:32Z",
+    "checked_at": "2026-11-21T00:19:41Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -97,19 +97,19 @@
         "name": "10-year Treasury real yield",
         "value": 2.88,
         "unit": "%",
-        "period": "2026-11-18",
+        "period": "2026-11-19",
         "stale": false,
-        "change": 0.75,
+        "change": 0.7,
         "source": "https://fred.stlouisfed.org/series/DFII10"
       },
       {
         "id": "T10Y3M",
         "name": "10-year minus 3-month Treasury yield",
-        "value": 0.7,
+        "value": 0.6,
         "unit": "percentage points",
-        "period": "2026-11-19",
+        "period": "2026-11-20",
         "stale": false,
-        "change": -0.3,
+        "change": -0.32,
         "source": "https://fred.stlouisfed.org/series/T10Y3M"
       }
     ],
@@ -123,9 +123,9 @@
   },
   "news": [
     {
-      "title": "Anthropic shares slump on second day of trading as markets reel from AI sell-off",
+      "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
       "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-      "published_at": "2026-11-20T16:26:07Z",
+      "published_at": "2026-11-20T21:38:17Z",
       "source_id": "guardian",
       "publisher": "The Guardian Business",
       "source_kind": "Publisher headline",
@@ -140,10 +140,35 @@
       },
       "related_reports": [
         {
-          "title": "Anthropic shares slump on second day of trading as markets reel from AI sell-off",
+          "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
           "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
           "publisher": "The Guardian Business",
-          "published_at": "2026-11-20T16:26:07Z"
+          "published_at": "2026-11-20T21:38:17Z"
+        }
+      ]
+    },
+    {
+      "title": "Trump threatens ban on US firms building AI data centres overseas",
+      "url": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-11-20T20:54:12Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "ai_regulation"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Trump threatens ban on US firms building AI data centres overseas",
+          "url": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-11-20T20:54:12Z"
         }
       ]
     },
@@ -642,47 +667,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-20T18:46:32Z",
+      "checked_at": "2026-11-21T00:19:41Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-20T18:46:32Z",
+      "last_success": "2026-11-21T00:19:41Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-20T18:46:32Z",
+      "checked_at": "2026-11-21T00:19:41Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-20T18:46:32Z",
+      "last_success": "2026-11-21T00:19:41Z",
       "matched": 4
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-20T18:46:32Z",
+      "checked_at": "2026-11-21T00:19:41Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-20T18:46:32Z",
-      "matched": 5
+      "last_success": "2026-11-21T00:19:41Z",
+      "matched": 6
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-20T18:46:32Z",
+      "checked_at": "2026-11-21T00:19:41Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-20T18:46:32Z",
+      "last_success": "2026-11-21T00:19:41Z",
       "matched": 7
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-20T18:46:32Z",
+      "checked_at": "2026-11-21T00:19:41Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -692,40 +717,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-20T18:46:32Z",
+      "checked_at": "2026-11-21T00:19:41Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-20T18:46:32Z",
+      "last_success": "2026-11-21T00:19:41Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-20T18:46:32Z",
+      "checked_at": "2026-11-21T00:19:41Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-20T18:46:32Z",
-      "matched": 5
+      "last_success": "2026-11-21T00:19:41Z",
+      "matched": 4
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-20T18:46:32Z",
+      "checked_at": "2026-11-21T00:19:41Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-20T18:46:32Z",
+      "last_success": "2026-11-21T00:19:41Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-20T18:46:32Z",
+      "checked_at": "2026-11-21T00:19:41Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-20T18:46:32Z",
+      "last_success": "2026-11-21T00:19:41Z",
       "matched": 1
     }
   ],

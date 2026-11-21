@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-20T18:46:39Z",
-    "record_count": 88,
+    "updated_at": "2026-11-21T00:19:47Z",
+    "record_count": 90,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -2572,6 +2572,62 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "8f350a7dd1bff829259989fcd8042a11887292076e92fc9970af96a55482f210"
+    },
+    {
+      "id": "6f9b923a70863fb7493efd0f",
+      "first_observed_at": "2026-11-21T00:19:47Z",
+      "snapshot": {
+        "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
+        "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-20T21:38:17Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "6f66f824481cb0ddad8ddf53b592e5ad01ca3d9a0e3f0c5636823c56a305c2cc"
+    },
+    {
+      "id": "7adac74862e117ba6ca5938e",
+      "first_observed_at": "2026-11-21T00:19:47Z",
+      "snapshot": {
+        "title": "Trump threatens ban on US firms building AI data centres overseas",
+        "url": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-20T20:54:12Z",
+        "categories": [
+          "ai_regulation"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "897f5d72cfd89dfb8ee98d8117092ac4ed43a2e697c4dac21638f5486e473305",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "a1fe24262a5a57b4590a9ff70290e7313c494d88988dce50108da23a3723a2bb"
     }
   ]
 }

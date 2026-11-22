@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-22T17:24:20Z",
-    "scan_started_at": "2026-11-22T17:18:32Z",
+    "checked_at": "2026-11-22T22:51:35Z",
+    "scan_started_at": "2026-11-22T22:43:07Z",
     "provider_requested": "local",
     "article_reads": 9,
     "ai_interpretations": 8,
-    "new_interpretations": 0,
+    "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -17,47 +17,6 @@
       "published_at": null,
       "historical": true,
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
-    },
-    {
-      "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
-      "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-15T21:06:03Z",
-      "historical": null,
-      "read_at": "2026-11-22T17:17:54Z",
-      "body_sha256": "6dda8d07ebf505fd888f31f8b8082e7de86d252506bb11bbcbd503243b85fb71",
-      "body_characters": 6965,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Palantir's software is used by the Australian Criminal Intelligence Commission to analyze sensitive data from at least 10 government agencies, including Centrelink and childcare workers' information.",
-        "evidence_ids": [
-          "E2",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: Palantir's software is used",
-          "financial_channel: If data access increases, risk appetite may rise",
-          "asset_hypothesis: If risk appetite increases, gold may be down"
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If risk appetite increases due to data access concerns, investors may shift away from gold."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite increases, Bitcoin may be mixed as it competes with traditional safe-havens."
-        },
-        "uncertainty": "If the data access does not significantly impact risk appetite, gold and Bitcoin may remain unchanged."
-      },
-      "evidence": {
-        "E2": "Exclusive: Personal information of Centrelink clients and childcare workers is among data",
-        "E3": "T he personal information of Centrelink customers, taxpayers and childcare workers is"
-      },
-      "analyzed_at": "2026-11-20T13:34:02Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf",
@@ -73,7 +32,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-19T06:00:19Z",
       "historical": null,
-      "read_at": "2026-11-22T17:17:55Z",
+      "read_at": "2026-11-22T22:42:17Z",
       "body_sha256": "9cc65b5c7a6705072b2acaef54ab628f556c1e005ae294e227fe4a3731ba3e86",
       "body_characters": 7017,
       "model_context_characters": 4500,
@@ -114,7 +73,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-18T13:17:06Z",
       "historical": null,
-      "read_at": "2026-11-22T17:17:56Z",
+      "read_at": "2026-11-22T22:42:18Z",
       "body_sha256": "4dc6d26ee09af956a8ba0a85bda79c4c51f0fc332e6800d2cd7e4377fcc76176",
       "body_characters": 4521,
       "model_context_characters": 4500,
@@ -150,12 +109,53 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
+      "url": "https://www.theguardian.com/us-news/2026/nov/18/howard-lutnick-nvidia-cantor-fitzgerald",
+      "title": "Democrats demand answers from Howard Lutnick about Nvidia and his family’s business",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-18T16:48:29Z",
+      "historical": null,
+      "read_at": "2026-11-22T22:43:11Z",
+      "body_sha256": "0ea9f3f97c588f286912a16052c10de6ad9f0091b7e9eda0db7be0f2bcd4bc7a",
+      "body_characters": 4585,
+      "model_context_characters": 4500,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Democratic lawmakers demand answers from Howard Lutnick regarding potential conflicts of interest involving Nvidia and his family’s business.",
+        "evidence_ids": [
+          "E5",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: Democratic lawmakers demand answers",
+          "financial_channel: If risk appetite changes, investors may shift",
+          "asset_hypothesis: If liquidity improves, assets may react"
+        ],
+        "gold": {
+          "direction": "mixed",
+          "condition": "If risk appetite changes, investors may shift between gold and other assets."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If liquidity improves, investors may choose between gold and Bitcoin as alternatives."
+        },
+        "uncertainty": "If Howard Lutnick's decisions were indeed influenced by his family's business, it could lead to a decrease in trust, affecting both gold and Bitcoin."
+      },
+      "evidence": {
+        "E5": "Democratic lawmakers ask if commerce secretary favored Nvidia to enrich his adult",
+        "E6": "The US commerce secretary, Howard Lutnick, faces mounting questions over his handling"
+      },
+      "analyzed_at": "2026-11-22T22:46:06Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
       "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
       "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
       "publisher": "The Guardian Business",
       "published_at": "2026-11-20T21:38:17Z",
       "historical": null,
-      "read_at": "2026-11-22T17:17:56Z",
+      "read_at": "2026-11-22T22:42:18Z",
       "body_sha256": "45b15af63dbb362c5c4c30a12e26a3442bfe8578a4a0cafc8a3fa3b915517ed4",
       "body_characters": 4622,
       "model_context_characters": 4500,
@@ -196,7 +196,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-20T20:54:12Z",
       "historical": null,
-      "read_at": "2026-11-22T17:17:56Z",
+      "read_at": "2026-11-22T22:42:18Z",
       "body_sha256": "3a7d4e967c6b36cc5091577a2d8037ae2d9c52c45d58fe2d19302c7d458ceb63",
       "body_characters": 3765,
       "model_context_characters": 3765,
@@ -237,7 +237,7 @@
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-20T09:18:30Z",
       "historical": null,
-      "read_at": "2026-11-22T17:17:56Z",
+      "read_at": "2026-11-22T22:42:18Z",
       "body_sha256": "4255d724fa85b57138a512331f7a7e17508492038d6782f30dd9c65200f18aee",
       "body_characters": 3431,
       "model_context_characters": 3431,
@@ -278,7 +278,7 @@
       "publisher": "European Central Bank",
       "published_at": "2026-11-18T09:00:00Z",
       "historical": null,
-      "read_at": "2026-11-22T17:17:56Z",
+      "read_at": "2026-11-22T22:42:19Z",
       "body_sha256": "7809043583865aa43991872e471e8a3513bc7e3361e5c4ffe1c25266bcc60b2c",
       "body_characters": 2897,
       "model_context_characters": 2897,
@@ -319,7 +319,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-19T15:15:14Z",
       "historical": null,
-      "read_at": "2026-11-22T17:17:56Z",
+      "read_at": "2026-11-22T22:42:19Z",
       "body_sha256": "5b020dfa6aed51d937533acff764116742cbad1e6f416e109a2912533f172c29",
       "body_characters": 3437,
       "model_context_characters": 3437,
@@ -360,7 +360,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-18T21:28:08Z",
       "historical": null,
-      "read_at": "2026-11-22T17:18:34Z",
+      "read_at": "2026-11-22T22:46:06Z",
       "body_sha256": "df907b69b41e1d543d78202f66f7c7d95128132274090264e4d8c49e58c77174",
       "body_characters": 9390,
       "model_context_characters": 4500,

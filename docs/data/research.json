@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-22T08:08:05Z",
+    "checked_at": "2026-11-22T16:24:36Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-11-22T08:08:05Z",
+    "checked_at": "2026-11-22T16:24:36Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -418,31 +418,6 @@
       ]
     },
     {
-      "title": "Nvidia doubles revenue as board says it does not intend to reinstate Jensen Huang",
-      "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-third-quarter-revenue-jensen-huang",
-      "published_at": "2026-11-17T23:32:16Z",
-      "source_id": "guardian",
-      "publisher": "The Guardian Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "ai_economics"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Nvidia doubles revenue as board says it does not intend to reinstate Jensen Huang",
-          "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-third-quarter-revenue-jensen-huang",
-          "publisher": "The Guardian Business",
-          "published_at": "2026-11-17T23:32:16Z"
-        }
-      ]
-    },
-    {
       "title": "Philip R. Lane: The practice and science of monetary policy communication: the ECB experience",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf",
       "published_at": "2026-11-17T18:30:00Z",
@@ -596,47 +571,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-22T08:08:05Z",
+      "checked_at": "2026-11-22T16:24:36Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-22T08:08:05Z",
+      "last_success": "2026-11-22T16:24:36Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-22T08:08:05Z",
+      "checked_at": "2026-11-22T16:24:36Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-22T08:08:05Z",
+      "last_success": "2026-11-22T16:24:36Z",
       "matched": 4
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-22T08:08:05Z",
+      "checked_at": "2026-11-22T16:24:36Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-22T08:08:05Z",
+      "last_success": "2026-11-22T16:24:36Z",
       "matched": 4
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-22T08:08:05Z",
+      "checked_at": "2026-11-22T16:24:36Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-22T08:08:05Z",
-      "matched": 6
+      "last_success": "2026-11-22T16:24:36Z",
+      "matched": 5
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-22T08:08:05Z",
+      "checked_at": "2026-11-22T16:24:36Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -646,40 +621,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-22T08:08:05Z",
+      "checked_at": "2026-11-22T16:24:36Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-22T08:08:05Z",
+      "last_success": "2026-11-22T16:24:36Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-22T08:08:05Z",
+      "checked_at": "2026-11-22T16:24:36Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-22T08:08:05Z",
+      "last_success": "2026-11-22T16:24:36Z",
       "matched": 5
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-22T08:08:05Z",
+      "checked_at": "2026-11-22T16:24:36Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-22T08:08:05Z",
+      "last_success": "2026-11-22T16:24:36Z",
       "matched": 0
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-22T08:08:05Z",
+      "checked_at": "2026-11-22T16:24:36Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-22T08:08:05Z",
+      "last_success": "2026-11-22T16:24:36Z",
       "matched": 1
     }
   ],

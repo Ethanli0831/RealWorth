@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-21T00:19:47Z",
-    "record_count": 90,
+    "updated_at": "2026-11-23T11:09:07Z",
+    "record_count": 91,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -2628,6 +2628,36 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "a1fe24262a5a57b4590a9ff70290e7313c494d88988dce50108da23a3723a2bb"
+    },
+    {
+      "id": "94dad8763baef9bc5c15a5fe",
+      "first_observed_at": "2026-11-23T11:09:07Z",
+      "snapshot": {
+        "title": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral",
+        "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
+        "publisher": "European Central Bank",
+        "published_at": "2026-11-23T10:00:00Z",
+        "categories": [
+          "rates"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "f44460ae1d2b3e6cd9a777d2cd6139a92a5031a5a0830cdbda3568988fbb6e7f"
     }
   ]
 }

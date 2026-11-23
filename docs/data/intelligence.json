@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-23T03:57:22Z",
-    "scan_started_at": "2026-11-23T03:55:20Z",
+    "checked_at": "2026-11-23T15:16:55Z",
+    "scan_started_at": "2026-11-23T15:12:13Z",
     "provider_requested": "local",
     "article_reads": 8,
     "ai_interpretations": 8,
-    "new_interpretations": 1,
+    "new_interpretations": 2,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,42 +19,165 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china",
-      "title": "California investigates Nvidia over whether chip exports ended up in China",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-20T09:18:30Z",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
+      "title": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-23T10:00:00Z",
       "historical": null,
-      "read_at": "2026-11-23T03:54:27Z",
-      "body_sha256": "4255d724fa85b57138a512331f7a7e17508492038d6782f30dd9c65200f18aee",
-      "body_characters": 3431,
-      "model_context_characters": 3431,
+      "read_at": "2026-11-23T15:12:16Z",
+      "body_sha256": "33be732f3bcbaa93f80c1c6c4733f8eb6971a6b0d0d9f6a26a877c6a216a67c1",
+      "body_characters": 3210,
+      "model_context_characters": 3210,
       "status": "AI interpretation generated · not independently verified",
       "analysis": {
-        "summary": "California is investigating Nvidia over potential export violations to China, following the resignation of CEO Jensen Huang.",
+        "summary": "The ECB has expanded the acceptance of DLT-based assets as Eurosystem collateral.",
         "evidence_ids": [
-          "E3",
-          "E4"
+          "E1",
+          "E3"
         ],
         "chain": [
-          "reported_event: California investigates Nvidia for export violations",
-          "financial_channel: If real yields decrease, risk appetite may increase, affecting tech stocks.",
-          "asset_hypothesis: If supply chain disruptions occur, demand for alternative semiconductors may rise."
+          "reported_event: ECB expands acceptance of DLT-based assets",
+          "financial_channel: If DLT adoption increases, liquidity improves",
+          "asset_hypothesis: If DLT assets become more accepted, risk appetite increases"
         ],
         "gold": {
           "direction": "up",
-          "condition": "If the investigation leads to stricter regulations, gold may be seen as a safer haven."
+          "condition": "If DLT adoption increases, gold may be seen as a safer haven."
         },
         "bitcoin": {
           "direction": "mixed",
-          "condition": "If the tech sector faces uncertainty, Bitcoin may be seen as a hedge, but if risk appetite remains high, it may underperform."
+          "condition": "If DLT adoption increases, Bitcoin may face competition as an alternative hedge."
         },
-        "uncertainty": "If Megaspeed is found to be a legitimate business, the investigation may not lead to significant changes in Nvidia's operations."
+        "uncertainty": "If traditional financial systems remain dominant, DLT assets may not significantly impact gold or Bitcoin."
       },
       "evidence": {
-        "E3": "California has served an investigative subpoena on Nvidia after a scandal that",
-        "E4": "Rob Bonta, the US state’s attorney general, issued the subpoena as part"
+        "E1": "The Governing Council of the European Central Bank (ECB) has approved the",
+        "E3": "This is a new milestone in the roadmap towards making the Eurosystem"
       },
-      "analyzed_at": "2026-11-21T11:42:58Z",
+      "analyzed_at": "2026-11-23T15:14:35Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/22/trump-cryptocurrency-gala-meme-coin",
+      "title": "Trump hosts third crypto gala for meme coin amid conflict of interest outcry",
+      "publisher": "The Guardian US Politics",
+      "published_at": "2026-11-23T08:33:10Z",
+      "historical": null,
+      "read_at": "2026-11-23T15:14:36Z",
+      "body_sha256": "99c13b0ee70c08566c394cf1a15903141cf1de8d9edce0f6c7cf2e10b46db623",
+      "body_characters": 3864,
+      "model_context_characters": 3864,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Donald Trump hosted his third crypto gala at his country club in Virginia, rewarding top $Trump coin holders with various prizes.",
+        "evidence_ids": [
+          "E5",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: Trump hosts crypto gala",
+          "financial_channel: If risk appetite increases, more attendees may participate",
+          "asset_hypothesis: If alternative-hedge channels are limited, $Trump may see increased demand"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If geopolitical tensions rise, gold may be seen as a safer haven"
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If liquidity improves, Bitcoin may see increased trading volume, but if risk appetite remains low, it may underperform"
+        },
+        "uncertainty": "If the event is seen as a conflict of interest, it could lead to regulatory scrutiny, potentially harming $Trump coin's value."
+      },
+      "evidence": {
+        "E5": "Donald Trump has headlined his third cryptocurrency gala at his ​country club",
+        "E6": "The dinner, which took place at the Trump National golf club in"
+      },
+      "analyzed_at": "2026-11-23T15:16:54Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-20T21:38:17Z",
+      "historical": null,
+      "read_at": "2026-11-23T03:54:30Z",
+      "body_sha256": "45b15af63dbb362c5c4c30a12e26a3442bfe8578a4a0cafc8a3fa3b915517ed4",
+      "body_characters": 4622,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "The Nasdaq lost trillions in value as AI-related stocks, including Anthropic, experienced a sell-off, with the broader market entering correction territory.",
+        "evidence_ids": [
+          "E1",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: AI-related sell-off",
+          "financial_channel: If tech stocks are selling off, liquidity is being drained from the market",
+          "asset_hypothesis: If investors are questioning AI valuations, risk appetite is decreasing"
+        ],
+        "gold": {
+          "direction": "down",
+          "condition": "If inflation fears persist, the dollar's strength may continue to push down gold prices."
+        },
+        "bitcoin": {
+          "direction": "down",
+          "condition": "If the broader market is correcting, alternative-hedge demand may shift away from Bitcoin."
+        },
+        "uncertainty": "If the sell-off is short-lived and tech stocks recover, the Nasdaq could regain its value."
+      },
+      "evidence": {
+        "E1": "Fears that US central bankers may raise interest rates to fight inflation",
+        "E7": "The Nasdaq lost trillions in value, with the AI startup’s IPO failing"
+      },
+      "analyzed_at": "2026-11-21T02:58:34Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&at_campaign=rss",
+      "title": "Trump threatens ban on US firms building AI data centres overseas",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-20T20:54:12Z",
+      "historical": null,
+      "read_at": "2026-11-23T03:54:31Z",
+      "body_sha256": "3a7d4e967c6b36cc5091577a2d8037ae2d9c52c45d58fe2d19302c7d458ceb63",
+      "body_characters": 3765,
+      "model_context_characters": 3765,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "US President Trump threatens to ban US firms from building AI data centres overseas, citing China as a competitor.",
+        "evidence_ids": [
+          "E1",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: Trump threatens ban on US firms building AI data centres overseas",
+          "financial_channel: If tech firms face restrictions, it could affect their liquidity and funding costs",
+          "asset_hypothesis: If data centres are restricted, it could impact tech asset valuations"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If the ban is implemented, it could reduce global supply of data centres, potentially increasing gold as a hedge."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If the ban affects tech firms, it could shift risk appetite, but Bitcoin's role as a hedge is unclear."
+        },
+        "uncertainty": "Tech giants like Meta and Google have already entered agreements to build data centres overseas, which could undermine the ban's enforcement."
+      },
+      "evidence": {
+        "E1": "Trump floated the policy after saying the US was leading on data",
+        "E5": "Trump says he won't allow American companies to build data centres \"outside\""
+      },
+      "analyzed_at": "2026-11-21T11:40:58Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
@@ -200,7 +323,7 @@
       "body_sha256": "0ea9f3f97c588f286912a16052c10de6ad9f0091b7e9eda0db7be0f2bcd4bc7a",
       "body_characters": 4585,
       "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "Democratic lawmakers demand answers from Howard Lutnick regarding potential conflicts of interest involving Nvidia and his family’s business.",
         "evidence_ids": [
@@ -227,129 +350,6 @@
         "E6": "The US commerce secretary, Howard Lutnick, faces mounting questions over his handling"
       },
       "analyzed_at": "2026-11-22T22:46:06Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/22/trump-cryptocurrency-gala-meme-coin",
-      "title": "Trump hosts third crypto gala for meme coin amid conflict of interest outcry",
-      "publisher": "The Guardian US Politics",
-      "published_at": "2026-11-23T00:31:31Z",
-      "historical": null,
-      "read_at": "2026-11-23T03:55:23Z",
-      "body_sha256": "004334666536ab554bb46a5fa26805fff40f0be88fcbde382a696ae4c6e3aba1",
-      "body_characters": 3667,
-      "model_context_characters": 3667,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "Donald Trump hosts his third crypto gala for meme coin holders amid Democratic accusations of improper profit from his crypto ventures.",
-        "evidence_ids": [
-          "E3",
-          "E4"
-        ],
-        "chain": [
-          "reported_event: Trump hosts crypto gala",
-          "financial_channel: If risk appetite increases, more attendees may buy $TRUMP",
-          "asset_hypothesis: If demand for $TRUMP increases, its price may rise"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If global risk appetite decreases, investors may seek gold as a safe haven"
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If Bitcoin is seen as a safe haven, its price may rise; otherwise, it may remain mixed due to competing risk appetite and liquidity channels"
-        },
-        "uncertainty": "The gala's attendees are mostly from foreign nationals, which may limit the impact on $TRUMP's price."
-      },
-      "evidence": {
-        "E3": "Virginia dinner comes as Democrats accuse president of improperly profiting from his",
-        "E4": "Donald Trump is scheduled to headline his third cryptocurrency gala on ⁠Sunday"
-      },
-      "analyzed_at": "2026-11-23T03:57:22Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-      "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-20T21:38:17Z",
-      "historical": null,
-      "read_at": "2026-11-23T03:54:30Z",
-      "body_sha256": "45b15af63dbb362c5c4c30a12e26a3442bfe8578a4a0cafc8a3fa3b915517ed4",
-      "body_characters": 4622,
-      "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "The Nasdaq lost trillions in value as AI-related stocks, including Anthropic, experienced a sell-off, with the broader market entering correction territory.",
-        "evidence_ids": [
-          "E1",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: AI-related sell-off",
-          "financial_channel: If tech stocks are selling off, liquidity is being drained from the market",
-          "asset_hypothesis: If investors are questioning AI valuations, risk appetite is decreasing"
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If inflation fears persist, the dollar's strength may continue to push down gold prices."
-        },
-        "bitcoin": {
-          "direction": "down",
-          "condition": "If the broader market is correcting, alternative-hedge demand may shift away from Bitcoin."
-        },
-        "uncertainty": "If the sell-off is short-lived and tech stocks recover, the Nasdaq could regain its value."
-      },
-      "evidence": {
-        "E1": "Fears that US central bankers may raise interest rates to fight inflation",
-        "E7": "The Nasdaq lost trillions in value, with the AI startup’s IPO failing"
-      },
-      "analyzed_at": "2026-11-21T02:58:34Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&at_campaign=rss",
-      "title": "Trump threatens ban on US firms building AI data centres overseas",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-20T20:54:12Z",
-      "historical": null,
-      "read_at": "2026-11-23T03:54:31Z",
-      "body_sha256": "3a7d4e967c6b36cc5091577a2d8037ae2d9c52c45d58fe2d19302c7d458ceb63",
-      "body_characters": 3765,
-      "model_context_characters": 3765,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "US President Trump threatens to ban US firms from building AI data centres overseas, citing China as a competitor.",
-        "evidence_ids": [
-          "E1",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: Trump threatens ban on US firms building AI data centres overseas",
-          "financial_channel: If tech firms face restrictions, it could affect their liquidity and funding costs",
-          "asset_hypothesis: If data centres are restricted, it could impact tech asset valuations"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If the ban is implemented, it could reduce global supply of data centres, potentially increasing gold as a hedge."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If the ban affects tech firms, it could shift risk appetite, but Bitcoin's role as a hedge is unclear."
-        },
-        "uncertainty": "Tech giants like Meta and Google have already entered agreements to build data centres overseas, which could undermine the ban's enforcement."
-      },
-      "evidence": {
-        "E1": "Trump floated the policy after saying the US was leading on data",
-        "E5": "Trump says he won't allow American companies to build data centres \"outside\""
-      },
-      "analyzed_at": "2026-11-21T11:40:58Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"

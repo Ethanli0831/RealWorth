@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-23T11:09:07Z",
-    "record_count": 91,
+    "updated_at": "2026-11-23T22:44:04Z",
+    "record_count": 98,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -2658,6 +2658,206 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "f44460ae1d2b3e6cd9a777d2cd6139a92a5031a5a0830cdbda3568988fbb6e7f"
+    },
+    {
+      "id": "2ea88612a83060f9dde375fd",
+      "first_observed_at": "2026-11-23T22:44:04Z",
+      "snapshot": {
+        "title": "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
+        "url": "https://www.bbc.co.uk/news/videos/ckp80d5nl586o?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-23T21:40:30Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "fd22a5ae4319a6577a6fcccb8e8d3cac779db8f006a53ac567c43f24cf2d6d5f"
+    },
+    {
+      "id": "5c29a5b55c3dd8fca1e630a7",
+      "first_observed_at": "2026-11-23T22:44:04Z",
+      "snapshot": {
+        "title": "Nvidia’s value jumped by $950bn as shares close at $165.05 after surprise return of CEO Jensen Huang – as it happened",
+        "url": "https://www.theguardian.com/business/live/2026/nov/23/tech-sell-off-ai-stock-market-support-measures-deployed-south-korea-taiwan-china-ftse-nasdaq-latest-news-updates",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-23T21:24:07Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "cc85935116cdf2c4d7173babd48e7a654ea0b21a3e85d9c83248b86546de9bf8"
+    },
+    {
+      "id": "1f96d6c874ca95a8786ac0c3",
+      "first_observed_at": "2026-11-23T22:44:04Z",
+      "snapshot": {
+        "title": "Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns",
+        "url": "https://www.bbc.co.uk/news/articles/cq62pn6j42jko?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-23T21:23:42Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "a477b18ae4f76985b5702d39bd20216d882a1daf51ef94ba4a6028b92552ad0f"
+    },
+    {
+      "id": "05730bda7d9726d958b017e1",
+      "first_observed_at": "2026-11-23T22:44:04Z",
+      "snapshot": {
+        "title": "'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia",
+        "url": "https://www.bbc.co.uk/news/videos/cq8r7e35mkzlo?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-23T18:43:00Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "ce8aa7966be769dfcedfeee12d7c90aa749ed60e18e5dbad542b0d2811427277"
+    },
+    {
+      "id": "66b59729e811e5bc1d858eec",
+      "first_observed_at": "2026-11-23T22:44:04Z",
+      "snapshot": {
+        "title": "Child safety groups urge Amazon and eBay to stop selling AI toys until proved safe",
+        "url": "https://www.theguardian.com/technology/2026/nov/23/child-safety-groups-urge-amazon-ebay-stop-selling-ai-toys-until-proved-safe",
+        "publisher": "The Guardian Technology",
+        "published_at": "2026-11-23T17:18:06Z",
+        "categories": [
+          "ai_regulation"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "897f5d72cfd89dfb8ee98d8117092ac4ed43a2e697c4dac21638f5486e473305",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "738d327ce2e0f911c8112050c61c9671db006fbf958f04de53da981442080db8"
+    },
+    {
+      "id": "39304adb8a321a1b3f195c8c",
+      "first_observed_at": "2026-11-23T22:44:04Z",
+      "snapshot": {
+        "title": "Philip R. Lane: Climate change and monetary policy",
+        "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf",
+        "publisher": "European Central Bank",
+        "published_at": "2026-11-23T14:30:00Z",
+        "categories": [
+          "rates"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "7aa0f461386eb98eddc95919c01fbc6bb191e099b46ea24876d58f972ea1cfdb"
+    },
+    {
+      "id": "7b21c27ec919e0e1897e881c",
+      "first_observed_at": "2026-11-23T22:44:04Z",
+      "snapshot": {
+        "title": "‘Once installed, there’s no getting rid of it’: what Falklands oil plans mean for its seals, whales and penguins",
+        "url": "https://www.theguardian.com/global-development/2026/nov/23/falkland-islands-argentina-sea-lion-oil-environment-sovereignty-wildlife-pollution",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-23T06:00:49Z",
+        "categories": [
+          "energy"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d8bbcc3e2536f510751f3f7fc1417a5af288b2bec41ac3c65aa827eef6c5d064",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "d05169c7d5b9bec2e9370c9fb5dc3ea31cc18a7f0f84cb81f55f0fe368ced7cf"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-24T06:30:22Z",
-    "source_checked_at": "2026-11-24T06:30:17Z",
+    "built_at": "2026-11-24T18:12:33Z",
+    "source_checked_at": "2026-11-24T18:12:26Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -10,9 +10,165 @@
     "disclosure": "Risk chains are transparent scenarios, not verified causal effects, probability forecasts or AI price targets. No warnings are backdated.",
     "feeds_fetched": 8,
     "feeds_total": 9,
-    "ledger_records": 98
+    "ledger_records": 105
   },
   "events": [
+    {
+      "title": "Nvidia shares slide as Trump's role in Jensen Huang's comeback questioned by US politicians",
+      "url": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-24T17:04:20Z",
+      "categories": [
+        "ai_economics"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "aa51adf28ef3b9841d4dd6bd",
+      "first_observed_at": "2026-11-24T18:12:33Z",
+      "digest": "729ba916fea371f7d78b21e17e426d98ee689dfb15103b9f692796da41419a8f"
+    },
+    {
+      "title": "Jensen Huang’s return to Nvidia is elite impunity | Moira Donegan",
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/24/jensen-huang-nvidia-return",
+      "publisher": "The Guardian US Politics",
+      "published_at": "2026-11-24T16:39:00Z",
+      "categories": [
+        "ai_economics"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "f18152923a370590061d085f",
+      "first_observed_at": "2026-11-24T18:12:33Z",
+      "digest": "64c70c8aef1781c207e0819ae4042b64b384a5c4ca2dc32a5e6d574a812bd152"
+    },
+    {
+      "title": "Mamdani questions AI economy as Jensen Huang returns to Nvidia – video",
+      "url": "https://www.theguardian.com/technology/video/2026/nov/24/mamdani-questions-ai-economy-as-jensen-huang-returns-to-nvidia-video",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-24T16:30:07Z",
+      "categories": [
+        "ai_economics"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "a126261a9f8d718013c76e35",
+      "first_observed_at": "2026-11-24T18:12:33Z",
+      "digest": "c5f91d09eb83be00fe2db1c8c9862fe45eff7c2e5b1cb34e3afc3d18cf82c643"
+    },
+    {
+      "title": "Jimmy Kimmel on Jensen Huang’s return to Nvidia: ‘What a profoundly stupid time to be alive’",
+      "url": "https://www.theguardian.com/culture/2026/nov/24/jimmy-kimmel-jensen-huang-nvidia-trump",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-24T15:51:00Z",
+      "categories": [
+        "ai_economics"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "eca82675e1538f8dcd766c16",
+      "first_observed_at": "2026-11-24T18:12:33Z",
+      "digest": "c975c26799d7c0cc855ee5cf96148255d8aa2de76ececd48f2b4da2de70dd2bf"
+    },
+    {
+      "title": "Chinese media hail Huang’s Nvidia return with warning over ‘witch-hunts’",
+      "url": "https://www.theguardian.com/technology/2026/nov/24/china-media-jensen-huang-nvidia-ceo",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-24T14:45:03Z",
+      "categories": [
+        "ai_economics"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "4094e59b1a15cc40a277f15f",
+      "first_observed_at": "2026-11-24T18:12:33Z",
+      "digest": "d7469f05d17ff22205ec45061c6fc6806aca32d0f4ef9073fdb63724f526bbef"
+    },
+    {
+      "title": "Mamdani says Nvidia drama shows stock market is overly dependent on AI",
+      "url": "https://www.theguardian.com/us-news/2026/nov/24/mamdani-nvidia-stock-market-ai",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-24T14:22:17Z",
+      "categories": [
+        "ai_economics"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "3a8aedd8fd905fb9f7e3b0be",
+      "first_observed_at": "2026-11-24T18:12:33Z",
+      "digest": "caa37b88b8d8aae2847e18ed4bb83a948833e604c1a60d4dab6568b302020131"
+    },
     {
       "title": "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
       "url": "https://www.bbc.co.uk/news/videos/ckp80d5nl586o?at_medium=RSS&at_campaign=rss",
@@ -116,6 +272,33 @@
       "id": "66b59729e811e5bc1d858eec",
       "first_observed_at": "2026-11-23T22:44:04Z",
       "digest": "738d327ce2e0f911c8112050c61c9671db006fbf958f04de53da981442080db8"
+    },
+    {
+      "title": "Millennial Democrats used social media in the midterms to sell their policies – and their personalities",
+      "url": "https://www.theguardian.com/us-news/2026/nov/23/social-media-us-politics-midterms",
+      "publisher": "The Guardian US Politics",
+      "published_at": "2026-11-23T14:00:48Z",
+      "categories": [
+        "elections"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "ade04250c94bc9eb9b217051",
+      "first_observed_at": "2026-11-24T18:12:33Z",
+      "digest": "542475edb833ae09bedc7608b09c41a3d4efacb5a6a70b68bd3ca6e12079ce49"
     },
     {
       "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
@@ -225,32 +408,6 @@
       "id": "c007a848b85ed60218c49245",
       "first_observed_at": "2026-11-18T16:32:20Z",
       "digest": "c8a23326c0cd7d5b400491eace2df6f5f9aff0c393056c0a38fb8e516bfd93c6"
-    },
-    {
-      "title": "Nvidia shaken by scandal amid wider political new order for big tech",
-      "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-10T15:04:38Z",
-      "categories": [
-        "ai_economics"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "c1885c1de70e33363de87d53",
-      "first_observed_at": "2026-11-10T18:10:53Z",
-      "digest": "465c8eaa04250dbd67cb53b61c2e74234a2f800d05c6d1fcff419fa01669697e"
     },
     {
       "title": "Scheduled FOMC meeting final day",
@@ -447,34 +604,6 @@
       "id": "70b67d36477c853201f8d630",
       "first_observed_at": "2026-11-12T22:19:23Z",
       "digest": "d33702329dfd0ea5695000a92d2dcdd07d7d5bb859f5e94ba88871bd773a1d4b"
-    },
-    {
-      "title": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-10T16:45:00Z",
-      "categories": [
-        "rates"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "GLD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "8d78f6242b1d2c2d1dd69325",
-      "first_observed_at": "2026-11-10T18:10:53Z",
-      "digest": "78e3974e191df6a85cd5c04eaa97790a99309a45ba8542bc9657cc470e63de40"
     }
   ],
   "categories": [
@@ -499,8 +628,8 @@
         "Separate campaign promises, introduced bills, enacted law and effective dates.",
         "Check company exposures rather than treating a party as an automatic buy/sell signal."
       ],
-      "event_count": 0,
-      "coverage": "No matching evidence in selected feeds; risk not ruled out"
+      "event_count": 1,
+      "coverage": "Limited selected-headline coverage"
     },
     {
       "id": "ai_regulation",
@@ -545,7 +674,7 @@
         "Check utilization, order cancellations, financing and customer concentration.",
         "Distinguish a lower share valuation from cash automatically moving to another country."
       ],
-      "event_count": 6,
+      "event_count": 11,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -594,7 +723,7 @@
         "Check real yields, dollar funding and the policy response.",
         "Separate a growth shock from an inflation shock."
       ],
-      "event_count": 8,
+      "event_count": 7,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -921,8 +1050,8 @@
       "id": "fomc",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "Fetched official schedule",
-      "last_success": "2026-11-24T06:30:22Z",
-      "attempted_at": "2026-11-24T06:30:22Z",
+      "last_success": "2026-11-24T18:12:33Z",
+      "attempted_at": "2026-11-24T18:12:33Z",
       "events": [
         {
           "title": "Scheduled FOMC meeting final day",
@@ -1212,7 +1341,7 @@
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-24T06:30:22Z",
+      "attempted_at": "2026-11-24T18:12:33Z",
       "events": [],
       "stale": true,
       "error": "HTTPError",
@@ -1224,47 +1353,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-24T06:30:17Z",
+      "checked_at": "2026-11-24T18:12:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-24T06:30:17Z",
+      "last_success": "2026-11-24T18:12:26Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-24T06:30:17Z",
+      "checked_at": "2026-11-24T18:12:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-24T06:30:17Z",
-      "matched": 6
+      "last_success": "2026-11-24T18:12:26Z",
+      "matched": 5
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-24T06:30:17Z",
+      "checked_at": "2026-11-24T18:12:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-24T06:30:17Z",
-      "matched": 6
+      "last_success": "2026-11-24T18:12:26Z",
+      "matched": 7
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-24T06:30:17Z",
+      "checked_at": "2026-11-24T18:12:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-24T06:30:17Z",
-      "matched": 5
+      "last_success": "2026-11-24T18:12:26Z",
+      "matched": 4
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-24T06:30:17Z",
+      "checked_at": "2026-11-24T18:12:26Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1274,41 +1403,41 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-24T06:30:17Z",
+      "checked_at": "2026-11-24T18:12:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-24T06:30:17Z",
+      "last_success": "2026-11-24T18:12:26Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-24T06:30:17Z",
+      "checked_at": "2026-11-24T18:12:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-24T06:30:17Z",
-      "matched": 4
+      "last_success": "2026-11-24T18:12:26Z",
+      "matched": 6
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-24T06:30:17Z",
+      "checked_at": "2026-11-24T18:12:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-24T06:30:17Z",
-      "matched": 0
+      "last_success": "2026-11-24T18:12:26Z",
+      "matched": 3
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-24T06:30:17Z",
+      "checked_at": "2026-11-24T18:12:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-24T06:30:17Z",
-      "matched": 3
+      "last_success": "2026-11-24T18:12:26Z",
+      "matched": 4
     }
   ],
   "gaps": [

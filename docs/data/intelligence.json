@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-11-23T15:16:55Z",
-    "scan_started_at": "2026-11-23T15:12:13Z",
+    "checked_at": "2026-11-24T02:35:50Z",
+    "scan_started_at": "2026-11-24T02:30:24Z",
     "provider_requested": "local",
     "article_reads": 8,
-    "ai_interpretations": 8,
+    "ai_interpretations": 5,
     "new_interpretations": 2,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -19,6 +19,108 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.theguardian.com/technology/2026/nov/23/child-safety-groups-urge-amazon-ebay-stop-selling-ai-toys-until-proved-safe",
+      "title": "Child safety groups urge Amazon and eBay to stop selling AI toys until proved safe",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-23T17:18:06Z",
+      "historical": null,
+      "read_at": "2026-11-24T02:30:25Z",
+      "body_sha256": "d0fda8959382b1645f0de45314efaab691f59b00c5dac5f2a789d57ac625c380",
+      "body_characters": 4424,
+      "model_context_characters": 4424,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Child safety groups urge Amazon and eBay to stop selling AI toys until they are proven safe.",
+        "evidence_ids": [
+          "E4",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: child safety groups urge retailers to stop selling AI toys",
+          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
+          "asset_hypothesis: If liquidity improves, alternative assets may attract interest."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If risk appetite decreases, investors may seek gold as a safe haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If liquidity improves, investors may look for alternative-hedge channels; if risk appetite decreases, Bitcoin may be seen as a riskier alternative to gold."
+        },
+        "uncertainty": "The study by the University of Cambridge found no evidence on possible benefits to children’s development, which could be a countercase against the call for safety."
+      },
+      "evidence": {
+        "E4": "More than 150 child safety groups and experts across six continents have",
+        "E5": "In a letter sent to Amazon’s president, Andy Jassy, and eBay’s president,"
+      },
+      "analyzed_at": "2026-11-24T02:33:23Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf",
+      "title": "Philip R. Lane: Climate change and monetary policy",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-23T14:30:00Z",
+      "historical": null,
+      "status": "Unavailable: No readable article container"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cq62pn6j42jko?at_medium=RSS&at_campaign=rss",
+      "title": "Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-23T21:23:42Z",
+      "historical": null,
+      "read_at": "2026-11-24T02:33:25Z",
+      "body_sha256": "721dabcacc6004859318fa65d3b7a89176ab52da717429ae7709dfe2c117f874",
+      "body_characters": 3788,
+      "model_context_characters": 3788,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Nvidia's market value surged by nearly $1 trillion after Jensen Huang was reinstated as CEO, driving tech stocks higher.",
+        "evidence_ids": [
+          "E3",
+          "E4"
+        ],
+        "chain": [
+          "reported_event: Nvidia reinstated Jensen Huang as CEO",
+          "financial_channel: If tech stocks rally, liquidity improves",
+          "asset_hypothesis: If Huang's return boosts investor confidence, tech assets will rise"
+        ],
+        "gold": {
+          "direction": "unclear",
+          "condition": "If global economic sentiment improves, gold demand may increase, but if tech stocks outperform, gold may be seen as less attractive."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If tech stocks rally, risk appetite may shift away from Bitcoin, but if gold demand increases, Bitcoin could be seen as a hedge."
+        },
+        "uncertainty": "If Huang's return does not improve Nvidia's performance, tech stocks could fall again, affecting both gold and Bitcoin."
+      },
+      "evidence": {
+        "E3": "Nvidia's market value rose by nearly $1 trillion as its share price",
+        "E4": "His shock reinstatement comes less than two weeks after Huang resigned after"
+      },
+      "analyzed_at": "2026-11-24T02:35:49Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/global-development/2026/nov/23/falkland-islands-argentina-sea-lion-oil-environment-sovereignty-wildlife-pollution",
+      "title": "‘Once installed, there’s no getting rid of it’: what Falklands oil plans mean for its seals, whales and penguins",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-23T06:00:49Z",
+      "historical": null,
+      "read_at": "2026-11-24T02:35:49Z",
+      "body_sha256": "cfe8ebbd7e9c2adb467cf596dd84dfe037c71e919db4c92677355a8305bee562",
+      "body_characters": 8799,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
       "title": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral",
       "publisher": "European Central Bank",
@@ -28,7 +130,7 @@
       "body_sha256": "33be732f3bcbaa93f80c1c6c4733f8eb6971a6b0d0d9f6a26a877c6a216a67c1",
       "body_characters": 3210,
       "model_context_characters": 3210,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "The ECB has expanded the acceptance of DLT-based assets as Eurosystem collateral.",
         "evidence_ids": [
@@ -60,45 +162,16 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/nov/22/trump-cryptocurrency-gala-meme-coin",
-      "title": "Trump hosts third crypto gala for meme coin amid conflict of interest outcry",
-      "publisher": "The Guardian US Politics",
-      "published_at": "2026-11-23T08:33:10Z",
+      "url": "https://www.bbc.co.uk/news/videos/cq8r7e35mkzlo?at_medium=RSS&at_campaign=rss",
+      "title": "'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-23T18:43:00Z",
       "historical": null,
-      "read_at": "2026-11-23T15:14:36Z",
-      "body_sha256": "99c13b0ee70c08566c394cf1a15903141cf1de8d9edce0f6c7cf2e10b46db623",
-      "body_characters": 3864,
-      "model_context_characters": 3864,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "Donald Trump hosted his third crypto gala at his country club in Virginia, rewarding top $Trump coin holders with various prizes.",
-        "evidence_ids": [
-          "E5",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: Trump hosts crypto gala",
-          "financial_channel: If risk appetite increases, more attendees may participate",
-          "asset_hypothesis: If alternative-hedge channels are limited, $Trump may see increased demand"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If geopolitical tensions rise, gold may be seen as a safer haven"
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If liquidity improves, Bitcoin may see increased trading volume, but if risk appetite remains low, it may underperform"
-        },
-        "uncertainty": "If the event is seen as a conflict of interest, it could lead to regulatory scrutiny, potentially harming $Trump coin's value."
-      },
-      "evidence": {
-        "E5": "Donald Trump has headlined his third cryptocurrency gala at his ​country club",
-        "E6": "The dinner, which took place at the Trump National golf club in"
-      },
-      "analyzed_at": "2026-11-23T15:16:54Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+      "read_at": "2026-11-24T02:35:49Z",
+      "body_sha256": "abd8f269e1fd5ea7280aa85825e6f235b91196b238af8d9f1e8cc7a952aaff49",
+      "body_characters": 621,
+      "model_context_characters": 621,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
@@ -137,47 +210,6 @@
         "E7": "The Nasdaq lost trillions in value, with the AI startup’s IPO failing"
       },
       "analyzed_at": "2026-11-21T02:58:34Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&at_campaign=rss",
-      "title": "Trump threatens ban on US firms building AI data centres overseas",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-20T20:54:12Z",
-      "historical": null,
-      "read_at": "2026-11-23T03:54:31Z",
-      "body_sha256": "3a7d4e967c6b36cc5091577a2d8037ae2d9c52c45d58fe2d19302c7d458ceb63",
-      "body_characters": 3765,
-      "model_context_characters": 3765,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "US President Trump threatens to ban US firms from building AI data centres overseas, citing China as a competitor.",
-        "evidence_ids": [
-          "E1",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: Trump threatens ban on US firms building AI data centres overseas",
-          "financial_channel: If tech firms face restrictions, it could affect their liquidity and funding costs",
-          "asset_hypothesis: If data centres are restricted, it could impact tech asset valuations"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If the ban is implemented, it could reduce global supply of data centres, potentially increasing gold as a hedge."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If the ban affects tech firms, it could shift risk appetite, but Bitcoin's role as a hedge is unclear."
-        },
-        "uncertainty": "Tech giants like Meta and Google have already entered agreements to build data centres overseas, which could undermine the ban's enforcement."
-      },
-      "evidence": {
-        "E1": "Trump floated the policy after saying the US was leading on data",
-        "E5": "Trump says he won't allow American companies to build data centres \"outside\""
-      },
-      "analyzed_at": "2026-11-21T11:40:58Z",
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
@@ -224,135 +256,24 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.theguardian.com/world/2026/nov/19/imf-head-warns-ai-demand-push-up-interest-rates-apec",
-      "title": "AI demand will push up interest rates around the world, IMF head warns",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-19T15:15:14Z",
+      "url": "https://www.bbc.co.uk/news/videos/ckp80d5nl586o?at_medium=RSS&at_campaign=rss",
+      "title": "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-23T21:40:30Z",
       "historical": null,
-      "read_at": "2026-11-23T03:54:29Z",
-      "body_sha256": "5b020dfa6aed51d937533acff764116742cbad1e6f416e109a2912533f172c29",
-      "body_characters": 3437,
-      "model_context_characters": 3437,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "IMF head warns that AI demand will push up interest rates globally, citing energy shocks from the Middle East war and AI hardware growth.",
-        "evidence_ids": [
-          "E4",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: AI demand pushes up interest rates",
-          "financial_channel: If AI demand increases, central banks will raise interest rates to combat inflation.",
-          "asset_hypothesis: If AI demand continues to grow, gold and Bitcoin will face mixed conditions due to competing risk appetites."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflationary pressures rise due to AI demand, central banks will likely raise interest rates, making gold a safer haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If Bitcoin's role as a hedge is unclear, its price could fluctuate as risk appetites and liquidity conditions vary."
-        },
-        "uncertainty": "If AI demand slows down, central banks might not need to raise interest rates, reducing inflationary pressures and potentially lowering gold prices."
-      },
-      "evidence": {
-        "E4": "Booming demand for artificial intelligence will force the world’s most powerful central",
-        "E5": "She said that, alongside the energy shock from the war in the"
-      },
-      "analyzed_at": "2026-11-20T13:32:17Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+      "status": "Unavailable: Insufficient public article text"
     },
     {
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf",
-      "title": "Philip R. Lane: The practice and science of monetary policy communication: the ECB experience",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-17T18:30:00Z",
-      "historical": null,
-      "status": "Unavailable: No readable article container"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/19/bank-of-england-revamp",
-      "title": "Grade I interiors, gold bars, cost fears: Bank of England faces headache over £160m revamp",
+      "url": "https://www.theguardian.com/business/live/2026/nov/23/tech-sell-off-ai-stock-market-support-measures-deployed-south-korea-taiwan-china-ftse-nasdaq-latest-news-updates",
+      "title": "Nvidia’s value jumped by $950bn as shares close at $165.05 after surprise return of CEO Jensen Huang – as it happened",
       "publisher": "The Guardian Business",
-      "published_at": "2026-11-19T06:00:19Z",
+      "published_at": "2026-11-23T21:24:07Z",
       "historical": null,
-      "read_at": "2026-11-23T03:54:30Z",
-      "body_sha256": "9cc65b5c7a6705072b2acaef54ab628f556c1e005ae294e227fe4a3731ba3e86",
-      "body_characters": 7017,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The Bank of England plans a £160m revamp of its historic headquarters, facing potential delays and cost overruns similar to the US Federal Reserve’s project.",
-        "evidence_ids": [
-          "E4",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: Bank of England's £160m revamp",
-          "financial_channel: If delays and cost overruns occur, it could affect gold and Bitcoin's liquidity and risk appetite.",
-          "asset_hypothesis: If the project is delayed, it could reduce gold and Bitcoin's liquidity."
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If the project delays cause uncertainty in the market, investors might seek safer assets, reducing gold demand."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If the project delays reduce overall market liquidity, Bitcoin might face both increased and decreased trading volumes."
-        },
-        "uncertainty": "If the Bank of England successfully manages the project without delays, gold and Bitcoin's market reaction would remain stable."
-      },
-      "evidence": {
-        "E4": "Over the life of the Fed’s renovation project, construction costs have soared.",
-        "E5": "The final cost is likely to be nearer $2.5bn."
-      },
-      "analyzed_at": "2026-11-20T03:48:36Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/18/howard-lutnick-nvidia-cantor-fitzgerald",
-      "title": "Democrats demand answers from Howard Lutnick about Nvidia and his family’s business",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-18T16:48:29Z",
-      "historical": null,
-      "read_at": "2026-11-23T03:54:30Z",
-      "body_sha256": "0ea9f3f97c588f286912a16052c10de6ad9f0091b7e9eda0db7be0f2bcd4bc7a",
-      "body_characters": 4585,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Democratic lawmakers demand answers from Howard Lutnick regarding potential conflicts of interest involving Nvidia and his family’s business.",
-        "evidence_ids": [
-          "E5",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: Democratic lawmakers demand answers",
-          "financial_channel: If risk appetite changes, investors may shift",
-          "asset_hypothesis: If liquidity improves, assets may react"
-        ],
-        "gold": {
-          "direction": "mixed",
-          "condition": "If risk appetite changes, investors may shift between gold and other assets."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If liquidity improves, investors may choose between gold and Bitcoin as alternatives."
-        },
-        "uncertainty": "If Howard Lutnick's decisions were indeed influenced by his family's business, it could lead to a decrease in trust, affecting both gold and Bitcoin."
-      },
-      "evidence": {
-        "E5": "Democratic lawmakers ask if commerce secretary favored Nvidia to enrich his adult",
-        "E6": "The US commerce secretary, Howard Lutnick, faces mounting questions over his handling"
-      },
-      "analyzed_at": "2026-11-22T22:46:06Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+      "read_at": "2026-11-24T02:35:50Z",
+      "body_sha256": "5f859704b90cfe5716662be05cf6b8643c18bf214c274b348327fee433170a9f",
+      "body_characters": 653,
+      "model_context_characters": 653,
+      "status": "Public body read; queued for AI"
     }
   ]
 }

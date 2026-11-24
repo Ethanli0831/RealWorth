@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-24T02:35:50Z",
-    "scan_started_at": "2026-11-24T02:30:24Z",
+    "checked_at": "2026-11-24T14:14:55Z",
+    "scan_started_at": "2026-11-24T14:09:35Z",
     "provider_requested": "local",
     "article_reads": 8,
-    "ai_interpretations": 5,
-    "new_interpretations": 2,
+    "ai_interpretations": 6,
+    "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,6 +19,149 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-20T21:38:17Z",
+      "historical": null,
+      "read_at": "2026-11-24T14:08:37Z",
+      "body_sha256": "45b15af63dbb362c5c4c30a12e26a3442bfe8578a4a0cafc8a3fa3b915517ed4",
+      "body_characters": 4622,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "The Nasdaq lost trillions in value as AI-related stocks, including Anthropic, experienced a sell-off, with the broader market entering correction territory.",
+        "evidence_ids": [
+          "E1",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: AI-related sell-off",
+          "financial_channel: If tech stocks are selling off, liquidity is being drained from the market",
+          "asset_hypothesis: If investors are questioning AI valuations, risk appetite is decreasing"
+        ],
+        "gold": {
+          "direction": "down",
+          "condition": "If inflation fears persist, the dollar's strength may continue to push down gold prices."
+        },
+        "bitcoin": {
+          "direction": "down",
+          "condition": "If the broader market is correcting, alternative-hedge demand may shift away from Bitcoin."
+        },
+        "uncertainty": "If the sell-off is short-lived and tech stocks recover, the Nasdaq could regain its value."
+      },
+      "evidence": {
+        "E1": "Fears that US central bankers may raise interest rates to fight inflation",
+        "E7": "The Nasdaq lost trillions in value, with the AI startup’s IPO failing"
+      },
+      "analyzed_at": "2026-11-21T02:58:34Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/videos/cq8r7e35mkzlo?at_medium=RSS&at_campaign=rss",
+      "title": "'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-23T18:43:00Z",
+      "historical": null,
+      "read_at": "2026-11-24T14:09:36Z",
+      "body_sha256": "abd8f269e1fd5ea7280aa85825e6f235b91196b238af8d9f1e8cc7a952aaff49",
+      "body_characters": 621,
+      "model_context_characters": 621,
+      "status": "Unavailable: AI numerical statements require exact cited source support"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
+      "title": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-18T09:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-24T14:08:39Z",
+      "body_sha256": "7809043583865aa43991872e471e8a3513bc7e3361e5c4ffe1c25266bcc60b2c",
+      "body_characters": 2897,
+      "model_context_characters": 2897,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "The European Central Bank highlights risks to financial stability from AI valuations, fiscal imbalances, and geoeconomic tensions.",
+        "evidence_ids": [
+          "E1",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: AI valuations and geoeconomic tensions pose risks",
+          "financial_channel: If real yields rise, funding costs increase",
+          "asset_hypothesis: If risk appetite decreases, asset prices fall"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If real yields rise, investors seek safe-haven assets like gold."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If risk appetite decreases, Bitcoin may lose appeal as a hedge, but if liquidity tightens, it could gain traction."
+        },
+        "uncertainty": "If AI valuations prove sustainable, the risks to financial stability may diminish."
+      },
+      "evidence": {
+        "E1": "The euro area economy has continued to demonstrate resilience despite an energy",
+        "E5": "Geoeconomic uncertainty, higher energy prices and weak economic growth could further strain"
+      },
+      "analyzed_at": "2026-11-19T22:28:09Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/19/imf-head-warns-ai-demand-push-up-interest-rates-apec",
+      "title": "AI demand will push up interest rates around the world, IMF head warns",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-19T15:15:14Z",
+      "historical": null,
+      "read_at": "2026-11-24T14:11:40Z",
+      "body_sha256": "5b020dfa6aed51d937533acff764116742cbad1e6f416e109a2912533f172c29",
+      "body_characters": 3437,
+      "model_context_characters": 3437,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "IMF head warns that AI demand will push up interest rates globally, citing energy shocks from the Middle East war and AI hardware growth.",
+        "evidence_ids": [
+          "E4",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: AI demand pushes up interest rates",
+          "financial_channel: If AI demand increases, central banks will raise interest rates to combat inflation.",
+          "asset_hypothesis: If AI demand continues to grow, gold and Bitcoin will face mixed conditions due to competing risk appetites."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflationary pressures rise due to AI demand, central banks will likely raise interest rates, making gold a safer haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If Bitcoin's role as a hedge is unclear, its price could fluctuate as risk appetites and liquidity conditions vary."
+        },
+        "uncertainty": "If AI demand slows down, central banks might not need to raise interest rates, reducing inflationary pressures and potentially lowering gold prices."
+      },
+      "evidence": {
+        "E4": "Booming demand for artificial intelligence will force the world’s most powerful central",
+        "E5": "She said that, alongside the energy shock from the war in the"
+      },
+      "analyzed_at": "2026-11-24T14:14:52Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/videos/ckp80d5nl586o?at_medium=RSS&at_campaign=rss",
+      "title": "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-23T21:40:30Z",
+      "historical": null,
+      "status": "Unavailable: Insufficient public article text"
+    },
+    {
       "url": "https://www.theguardian.com/technology/2026/nov/23/child-safety-groups-urge-amazon-ebay-stop-selling-ai-toys-until-proved-safe",
       "title": "Child safety groups urge Amazon and eBay to stop selling AI toys until proved safe",
       "publisher": "The Guardian Technology",
@@ -28,7 +171,7 @@
       "body_sha256": "d0fda8959382b1645f0de45314efaab691f59b00c5dac5f2a789d57ac625c380",
       "body_characters": 4424,
       "model_context_characters": 4424,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "Child safety groups urge Amazon and eBay to stop selling AI toys until they are proven safe.",
         "evidence_ids": [
@@ -68,6 +211,18 @@
       "status": "Unavailable: No readable article container"
     },
     {
+      "url": "https://www.theguardian.com/global-development/2026/nov/23/falkland-islands-argentina-sea-lion-oil-environment-sovereignty-wildlife-pollution",
+      "title": "‘Once installed, there’s no getting rid of it’: what Falklands oil plans mean for its seals, whales and penguins",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-23T06:00:49Z",
+      "historical": null,
+      "read_at": "2026-11-24T14:14:55Z",
+      "body_sha256": "cfe8ebbd7e9c2adb467cf596dd84dfe037c71e919db4c92677355a8305bee562",
+      "body_characters": 8799,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
       "url": "https://www.bbc.co.uk/news/articles/cq62pn6j42jko?at_medium=RSS&at_campaign=rss",
       "title": "Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns",
       "publisher": "BBC Business",
@@ -77,7 +232,7 @@
       "body_sha256": "721dabcacc6004859318fa65d3b7a89176ab52da717429ae7709dfe2c117f874",
       "body_characters": 3788,
       "model_context_characters": 3788,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "Nvidia's market value surged by nearly $1 trillion after Jensen Huang was reinstated as CEO, driving tech stocks higher.",
         "evidence_ids": [
@@ -107,18 +262,6 @@
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/global-development/2026/nov/23/falkland-islands-argentina-sea-lion-oil-environment-sovereignty-wildlife-pollution",
-      "title": "‘Once installed, there’s no getting rid of it’: what Falklands oil plans mean for its seals, whales and penguins",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-23T06:00:49Z",
-      "historical": null,
-      "read_at": "2026-11-24T02:35:49Z",
-      "body_sha256": "cfe8ebbd7e9c2adb467cf596dd84dfe037c71e919db4c92677355a8305bee562",
-      "body_characters": 8799,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
@@ -160,120 +303,6 @@
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/videos/cq8r7e35mkzlo?at_medium=RSS&at_campaign=rss",
-      "title": "'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-23T18:43:00Z",
-      "historical": null,
-      "read_at": "2026-11-24T02:35:49Z",
-      "body_sha256": "abd8f269e1fd5ea7280aa85825e6f235b91196b238af8d9f1e8cc7a952aaff49",
-      "body_characters": 621,
-      "model_context_characters": 621,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-      "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-20T21:38:17Z",
-      "historical": null,
-      "read_at": "2026-11-23T03:54:30Z",
-      "body_sha256": "45b15af63dbb362c5c4c30a12e26a3442bfe8578a4a0cafc8a3fa3b915517ed4",
-      "body_characters": 4622,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The Nasdaq lost trillions in value as AI-related stocks, including Anthropic, experienced a sell-off, with the broader market entering correction territory.",
-        "evidence_ids": [
-          "E1",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: AI-related sell-off",
-          "financial_channel: If tech stocks are selling off, liquidity is being drained from the market",
-          "asset_hypothesis: If investors are questioning AI valuations, risk appetite is decreasing"
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If inflation fears persist, the dollar's strength may continue to push down gold prices."
-        },
-        "bitcoin": {
-          "direction": "down",
-          "condition": "If the broader market is correcting, alternative-hedge demand may shift away from Bitcoin."
-        },
-        "uncertainty": "If the sell-off is short-lived and tech stocks recover, the Nasdaq could regain its value."
-      },
-      "evidence": {
-        "E1": "Fears that US central bankers may raise interest rates to fight inflation",
-        "E7": "The Nasdaq lost trillions in value, with the AI startup’s IPO failing"
-      },
-      "analyzed_at": "2026-11-21T02:58:34Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
-      "title": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-18T09:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-23T03:54:28Z",
-      "body_sha256": "7809043583865aa43991872e471e8a3513bc7e3361e5c4ffe1c25266bcc60b2c",
-      "body_characters": 2897,
-      "model_context_characters": 2897,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The European Central Bank highlights risks to financial stability from AI valuations, fiscal imbalances, and geoeconomic tensions.",
-        "evidence_ids": [
-          "E1",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: AI valuations and geoeconomic tensions pose risks",
-          "financial_channel: If real yields rise, funding costs increase",
-          "asset_hypothesis: If risk appetite decreases, asset prices fall"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If real yields rise, investors seek safe-haven assets like gold."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If risk appetite decreases, Bitcoin may lose appeal as a hedge, but if liquidity tightens, it could gain traction."
-        },
-        "uncertainty": "If AI valuations prove sustainable, the risks to financial stability may diminish."
-      },
-      "evidence": {
-        "E1": "The euro area economy has continued to demonstrate resilience despite an energy",
-        "E5": "Geoeconomic uncertainty, higher energy prices and weak economic growth could further strain"
-      },
-      "analyzed_at": "2026-11-19T22:28:09Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/videos/ckp80d5nl586o?at_medium=RSS&at_campaign=rss",
-      "title": "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-23T21:40:30Z",
-      "historical": null,
-      "status": "Unavailable: Insufficient public article text"
-    },
-    {
-      "url": "https://www.theguardian.com/business/live/2026/nov/23/tech-sell-off-ai-stock-market-support-measures-deployed-south-korea-taiwan-china-ftse-nasdaq-latest-news-updates",
-      "title": "Nvidia’s value jumped by $950bn as shares close at $165.05 after surprise return of CEO Jensen Huang – as it happened",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-23T21:24:07Z",
-      "historical": null,
-      "read_at": "2026-11-24T02:35:50Z",
-      "body_sha256": "5f859704b90cfe5716662be05cf6b8643c18bf214c274b348327fee433170a9f",
-      "body_characters": 653,
-      "model_context_characters": 653,
-      "status": "Public body read; queued for AI"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-24T05:00:07.341860+00:00",
+    "checked_at": "2026-11-24T19:43:22.898564+00:00",
     "refresh": "Every four hours requested; source publication and GitHub delays apply.",
     "scope": "Selected free public sources. Missing/paid sources are not substituted with estimates."
   },
@@ -12,12 +12,12 @@
       "source": "https://www.ishares.com/us/products/333011/ishares-bitcoin-trust-etf",
       "note": "Fund bitcoins are not net flows. AUM changes include price effects.",
       "unit": "BTC",
-      "value": 760926.2371,
-      "period": "2026-11-20",
+      "value": 752596.7169,
+      "period": "2026-11-23",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-24T05:00:07.341860+00:00",
+      "last_success": "2026-11-24T19:43:22.898564+00:00",
       "history": [
         {
           "date": "2026-10-22",
@@ -106,11 +106,15 @@
         {
           "date": "2026-11-20",
           "value": 760926.2371
+        },
+        {
+          "date": "2026-11-23",
+          "value": 752596.7169
         }
       ],
       "percentile": null,
       "percentile_minimum": 250,
-      "observations": 22
+      "observations": 23
     },
     {
       "id": "gld",
@@ -137,12 +141,12 @@
       "source": "https://docs.deribit.com/#public-get_book_summary_by_currency",
       "note": "Deribit BTC-PERPETUAL only; 8-hour funding is not annualised. Positive funding is not a directional forecast.",
       "unit": "% / 8 hours",
-      "value": 0.000355,
+      "value": 7e-05,
       "period": "2026-11-24",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-24T05:00:07.341860+00:00",
+      "last_success": "2026-11-24T19:43:22.898564+00:00",
       "history": [
         {
           "date": "2026-10-25",
@@ -266,7 +270,7 @@
         },
         {
           "date": "2026-11-24",
-          "value": 0.000355
+          "value": 7e-05
         }
       ],
       "percentile": null,
@@ -280,12 +284,12 @@
       "source": "https://docs.deribit.com/#public-get_book_summary_by_currency",
       "note": "USD notional can rise from price changes. One exchange does not measure all leverage.",
       "unit": "USD notional",
-      "value": 853757060.0,
+      "value": 820887200.0,
       "period": "2026-11-24",
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-24T05:00:07.341860+00:00",
+      "last_success": "2026-11-24T19:43:22.898564+00:00",
       "history": [
         {
           "date": "2026-10-25",
@@ -409,7 +413,7 @@
         },
         {
           "date": "2026-11-24",
-          "value": 853757060.0
+          "value": 820887200.0
         }
       ],
       "percentile": null,
@@ -428,7 +432,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-24T05:00:07.341860+00:00",
+      "last_success": "2026-11-24T19:43:22.898564+00:00",
       "history": [
         {
           "date": "2025-11-22",
@@ -1915,7 +1919,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-24T05:00:07.341860+00:00",
+      "last_success": "2026-11-24T19:43:22.898564+00:00",
       "history": [
         {
           "date": "2025-11-22",
@@ -3402,7 +3406,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-24T05:00:07.341860+00:00",
+      "last_success": "2026-11-24T19:43:22.898564+00:00",
       "history": [
         {
           "date": "2025-11-22",
@@ -4889,7 +4893,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-24T05:00:07.341860+00:00",
+      "last_success": "2026-11-24T19:43:22.898564+00:00",
       "history": [
         {
           "date": "2025-11-22",
@@ -6376,7 +6380,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-24T05:00:07.341860+00:00",
+      "last_success": "2026-11-24T19:43:22.898564+00:00",
       "history": [
         {
           "date": "2025-11-22",
@@ -7858,17 +7862,13 @@
       "source": "https://fred.stlouisfed.org/series/M2SL",
       "note": "Year-over-year US money growth; publication lags and revisions apply. Correlation is not causation.",
       "unit": "% YoY",
-      "value": 5.709913,
-      "period": "2026-09-01",
+      "value": 5.893417,
+      "period": "2026-10-01",
       "status": "Fetched",
       "error": null,
-      "stale": true,
-      "last_success": "2026-11-24T05:00:07.341860+00:00",
+      "stale": false,
+      "last_success": "2026-11-24T19:43:22.898564+00:00",
       "history": [
-        {
-          "date": "2025-09-01",
-          "value": 4.23202
-        },
         {
           "date": "2025-10-01",
           "value": 4.27946
@@ -7883,7 +7883,7 @@
         },
         {
           "date": "2026-01-01",
-          "value": 4.057898
+          "value": 4.058363
         },
         {
           "date": "2026-02-01",
@@ -7899,23 +7899,27 @@
         },
         {
           "date": "2026-05-01",
-          "value": 5.374436
+          "value": 5.373977
         },
         {
           "date": "2026-06-01",
-          "value": 5.300213
+          "value": 5.299757
         },
         {
           "date": "2026-07-01",
-          "value": 5.360918
+          "value": 5.360463
         },
         {
           "date": "2026-08-01",
-          "value": 5.596871
+          "value": 5.596418
         },
         {
           "date": "2026-09-01",
-          "value": 5.709913
+          "value": 5.711719
+        },
+        {
+          "date": "2026-10-01",
+          "value": 5.893417
         }
       ],
       "percentile": 100.0,
@@ -7934,7 +7938,7 @@
       "status": "Fetched",
       "error": null,
       "stale": true,
-      "last_success": "2026-11-24T05:00:07.341860+00:00",
+      "last_success": "2026-11-24T19:43:22.898564+00:00",
       "history": [
         {
           "date": "2025-11-19",
@@ -8961,7 +8965,7 @@
       "status": "Fetched",
       "error": null,
       "stale": false,
-      "last_success": "2026-11-24T05:00:07.341860+00:00",
+      "last_success": "2026-11-24T19:43:22.898564+00:00",
       "history": [
         {
           "date": "2026-10-20",

@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-11-24T14:14:55Z",
-    "scan_started_at": "2026-11-24T14:09:35Z",
+    "checked_at": "2026-11-24T23:45:41Z",
+    "scan_started_at": "2026-11-24T23:37:24Z",
     "provider_requested": "local",
     "article_reads": 8,
-    "ai_interpretations": 6,
+    "ai_interpretations": 3,
     "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -17,6 +17,120 @@
       "published_at": null,
       "historical": true,
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
+    },
+    {
+      "url": "https://www.theguardian.com/global-development/2026/nov/23/falkland-islands-argentina-sea-lion-oil-environment-sovereignty-wildlife-pollution",
+      "title": "‘Once installed, there’s no getting rid of it’: what Falklands oil plans mean for its seals, whales and penguins",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-23T06:00:49Z",
+      "historical": null,
+      "read_at": "2026-11-24T23:37:26Z",
+      "body_sha256": "cfe8ebbd7e9c2adb467cf596dd84dfe037c71e919db4c92677355a8305bee562",
+      "body_characters": 8799,
+      "model_context_characters": 4500,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The Falkland Islands plan to develop oil reserves, threatening local wildlife and ecosystems.",
+        "evidence_ids": [
+          "E2",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: Falkland Islands plan oil development",
+          "financial_channel: If oil supply increases, risk appetite may decrease",
+          "asset_hypothesis: If risk appetite decreases, gold may up"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If risk appetite decreases due to environmental concerns, investors may seek gold as a safe haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite decreases, Bitcoin may underperform as a risk asset; however, if liquidity demands shift, it could see gains."
+        },
+        "uncertainty": "If the project proceeds without major accidents, the environmental impact may be mitigated."
+      },
+      "evidence": {
+        "E2": "Operated by Navitas Petroleum, with Rockhopper Exploration, the project plans 23 wells",
+        "E7": "The archipelago, a British overseas territory claimed by Argentina , is home"
+      },
+      "analyzed_at": "2026-11-24T23:40:16Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/videos/ckp80d5nl586o?at_medium=RSS&at_campaign=rss",
+      "title": "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-23T21:40:30Z",
+      "historical": null,
+      "status": "Unavailable: Insufficient public article text"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/23/social-media-us-politics-midterms",
+      "title": "Millennial Democrats used social media in the midterms to sell their policies – and their personalities",
+      "publisher": "The Guardian US Politics",
+      "published_at": "2026-11-23T14:00:48Z",
+      "historical": null,
+      "read_at": "2026-11-24T23:40:16Z",
+      "body_sha256": "717c1c74acfe4d0b410fd6cff04247329f789dddb1ce433050f91f2a67da7983",
+      "body_characters": 10205,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI chain contains no financial transmission mechanism"
+    },
+    {
+      "url": "https://www.theguardian.com/culture/2026/nov/24/jimmy-kimmel-jensen-huang-nvidia-trump",
+      "title": "Jimmy Kimmel on Jensen Huang’s return to Nvidia: ‘What a profoundly stupid time to be alive’",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-24T15:51:00Z",
+      "historical": null,
+      "read_at": "2026-11-24T23:45:39Z",
+      "body_sha256": "12353e36465c59ba20b17412877cf61a2f66e5e25867a7eb95d618a344181879",
+      "body_characters": 3806,
+      "model_context_characters": 3806,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
+      "title": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-23T10:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-23T15:12:16Z",
+      "body_sha256": "33be732f3bcbaa93f80c1c6c4733f8eb6971a6b0d0d9f6a26a877c6a216a67c1",
+      "body_characters": 3210,
+      "model_context_characters": 3210,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "The ECB has expanded the acceptance of DLT-based assets as Eurosystem collateral.",
+        "evidence_ids": [
+          "E1",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: ECB expands acceptance of DLT-based assets",
+          "financial_channel: If DLT adoption increases, liquidity improves",
+          "asset_hypothesis: If DLT assets become more accepted, risk appetite increases"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If DLT adoption increases, gold may be seen as a safer haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If DLT adoption increases, Bitcoin may face competition as an alternative hedge."
+        },
+        "uncertainty": "If traditional financial systems remain dominant, DLT assets may not significantly impact gold or Bitcoin."
+      },
+      "evidence": {
+        "E1": "The Governing Council of the European Central Bank (ECB) has approved the",
+        "E3": "This is a new milestone in the roadmap towards making the Eurosystem"
+      },
+      "analyzed_at": "2026-11-23T15:14:35Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
@@ -60,147 +174,40 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.bbc.co.uk/news/videos/cq8r7e35mkzlo?at_medium=RSS&at_campaign=rss",
-      "title": "'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia",
+      "url": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
+      "title": "Nvidia shares slide as Trump's role in Jensen Huang's comeback questioned by US politicians",
       "publisher": "BBC Business",
-      "published_at": "2026-11-23T18:43:00Z",
+      "published_at": "2026-11-24T17:04:20Z",
       "historical": null,
-      "read_at": "2026-11-24T14:09:36Z",
-      "body_sha256": "abd8f269e1fd5ea7280aa85825e6f235b91196b238af8d9f1e8cc7a952aaff49",
-      "body_characters": 621,
-      "model_context_characters": 621,
-      "status": "Unavailable: AI numerical statements require exact cited source support"
+      "read_at": "2026-11-24T23:45:39Z",
+      "body_sha256": "235f5c809e168036d8b5ae17b0f9fcd47377cad68c00ff1ddcfba6388792502b",
+      "body_characters": 3698,
+      "model_context_characters": 3698,
+      "status": "Public body read; queued for AI"
     },
     {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
-      "title": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-18T09:00:00Z",
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/24/jensen-huang-nvidia-return",
+      "title": "Jensen Huang’s return to Nvidia is elite impunity | Moira Donegan",
+      "publisher": "The Guardian US Politics",
+      "published_at": "2026-11-24T16:39:00Z",
       "historical": null,
-      "read_at": "2026-11-24T14:08:39Z",
-      "body_sha256": "7809043583865aa43991872e471e8a3513bc7e3361e5c4ffe1c25266bcc60b2c",
-      "body_characters": 2897,
-      "model_context_characters": 2897,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The European Central Bank highlights risks to financial stability from AI valuations, fiscal imbalances, and geoeconomic tensions.",
-        "evidence_ids": [
-          "E1",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: AI valuations and geoeconomic tensions pose risks",
-          "financial_channel: If real yields rise, funding costs increase",
-          "asset_hypothesis: If risk appetite decreases, asset prices fall"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If real yields rise, investors seek safe-haven assets like gold."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If risk appetite decreases, Bitcoin may lose appeal as a hedge, but if liquidity tightens, it could gain traction."
-        },
-        "uncertainty": "If AI valuations prove sustainable, the risks to financial stability may diminish."
-      },
-      "evidence": {
-        "E1": "The euro area economy has continued to demonstrate resilience despite an energy",
-        "E5": "Geoeconomic uncertainty, higher energy prices and weak economic growth could further strain"
-      },
-      "analyzed_at": "2026-11-19T22:28:09Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+      "read_at": "2026-11-24T23:45:39Z",
+      "body_sha256": "ddbc3758f45cc94a4321ceda371142e84bbf5461cf8d38b09ec9065e906a2094",
+      "body_characters": 5775,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
     },
     {
-      "url": "https://www.theguardian.com/world/2026/nov/19/imf-head-warns-ai-demand-push-up-interest-rates-apec",
-      "title": "AI demand will push up interest rates around the world, IMF head warns",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-19T15:15:14Z",
-      "historical": null,
-      "read_at": "2026-11-24T14:11:40Z",
-      "body_sha256": "5b020dfa6aed51d937533acff764116742cbad1e6f416e109a2912533f172c29",
-      "body_characters": 3437,
-      "model_context_characters": 3437,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "IMF head warns that AI demand will push up interest rates globally, citing energy shocks from the Middle East war and AI hardware growth.",
-        "evidence_ids": [
-          "E4",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: AI demand pushes up interest rates",
-          "financial_channel: If AI demand increases, central banks will raise interest rates to combat inflation.",
-          "asset_hypothesis: If AI demand continues to grow, gold and Bitcoin will face mixed conditions due to competing risk appetites."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflationary pressures rise due to AI demand, central banks will likely raise interest rates, making gold a safer haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If Bitcoin's role as a hedge is unclear, its price could fluctuate as risk appetites and liquidity conditions vary."
-        },
-        "uncertainty": "If AI demand slows down, central banks might not need to raise interest rates, reducing inflationary pressures and potentially lowering gold prices."
-      },
-      "evidence": {
-        "E4": "Booming demand for artificial intelligence will force the world’s most powerful central",
-        "E5": "She said that, alongside the energy shock from the war in the"
-      },
-      "analyzed_at": "2026-11-24T14:14:52Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/videos/ckp80d5nl586o?at_medium=RSS&at_campaign=rss",
-      "title": "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-23T21:40:30Z",
-      "historical": null,
-      "status": "Unavailable: Insufficient public article text"
-    },
-    {
-      "url": "https://www.theguardian.com/technology/2026/nov/23/child-safety-groups-urge-amazon-ebay-stop-selling-ai-toys-until-proved-safe",
-      "title": "Child safety groups urge Amazon and eBay to stop selling AI toys until proved safe",
+      "url": "https://www.theguardian.com/technology/video/2026/nov/24/mamdani-questions-ai-economy-as-jensen-huang-returns-to-nvidia-video",
+      "title": "Mamdani questions AI economy as Jensen Huang returns to Nvidia – video",
       "publisher": "The Guardian Technology",
-      "published_at": "2026-11-23T17:18:06Z",
+      "published_at": "2026-11-24T16:30:07Z",
       "historical": null,
-      "read_at": "2026-11-24T02:30:25Z",
-      "body_sha256": "d0fda8959382b1645f0de45314efaab691f59b00c5dac5f2a789d57ac625c380",
-      "body_characters": 4424,
-      "model_context_characters": 4424,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Child safety groups urge Amazon and eBay to stop selling AI toys until they are proven safe.",
-        "evidence_ids": [
-          "E4",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: child safety groups urge retailers to stop selling AI toys",
-          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
-          "asset_hypothesis: If liquidity improves, alternative assets may attract interest."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If risk appetite decreases, investors may seek gold as a safe haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If liquidity improves, investors may look for alternative-hedge channels; if risk appetite decreases, Bitcoin may be seen as a riskier alternative to gold."
-        },
-        "uncertainty": "The study by the University of Cambridge found no evidence on possible benefits to children’s development, which could be a countercase against the call for safety."
-      },
-      "evidence": {
-        "E4": "More than 150 child safety groups and experts across six continents have",
-        "E5": "In a letter sent to Amazon’s president, Andy Jassy, and eBay’s president,"
-      },
-      "analyzed_at": "2026-11-24T02:33:23Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+      "read_at": "2026-11-24T23:45:39Z",
+      "body_sha256": "02b5baa7708bdb2e3869e846a79c6021a9d679d3fe7a67c44cc87ad248344348",
+      "body_characters": 582,
+      "model_context_characters": 582,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf",
@@ -209,100 +216,6 @@
       "published_at": "2026-11-23T14:30:00Z",
       "historical": null,
       "status": "Unavailable: No readable article container"
-    },
-    {
-      "url": "https://www.theguardian.com/global-development/2026/nov/23/falkland-islands-argentina-sea-lion-oil-environment-sovereignty-wildlife-pollution",
-      "title": "‘Once installed, there’s no getting rid of it’: what Falklands oil plans mean for its seals, whales and penguins",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-23T06:00:49Z",
-      "historical": null,
-      "read_at": "2026-11-24T14:14:55Z",
-      "body_sha256": "cfe8ebbd7e9c2adb467cf596dd84dfe037c71e919db4c92677355a8305bee562",
-      "body_characters": 8799,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cq62pn6j42jko?at_medium=RSS&at_campaign=rss",
-      "title": "Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-23T21:23:42Z",
-      "historical": null,
-      "read_at": "2026-11-24T02:33:25Z",
-      "body_sha256": "721dabcacc6004859318fa65d3b7a89176ab52da717429ae7709dfe2c117f874",
-      "body_characters": 3788,
-      "model_context_characters": 3788,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Nvidia's market value surged by nearly $1 trillion after Jensen Huang was reinstated as CEO, driving tech stocks higher.",
-        "evidence_ids": [
-          "E3",
-          "E4"
-        ],
-        "chain": [
-          "reported_event: Nvidia reinstated Jensen Huang as CEO",
-          "financial_channel: If tech stocks rally, liquidity improves",
-          "asset_hypothesis: If Huang's return boosts investor confidence, tech assets will rise"
-        ],
-        "gold": {
-          "direction": "unclear",
-          "condition": "If global economic sentiment improves, gold demand may increase, but if tech stocks outperform, gold may be seen as less attractive."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If tech stocks rally, risk appetite may shift away from Bitcoin, but if gold demand increases, Bitcoin could be seen as a hedge."
-        },
-        "uncertainty": "If Huang's return does not improve Nvidia's performance, tech stocks could fall again, affecting both gold and Bitcoin."
-      },
-      "evidence": {
-        "E3": "Nvidia's market value rose by nearly $1 trillion as its share price",
-        "E4": "His shock reinstatement comes less than two weeks after Huang resigned after"
-      },
-      "analyzed_at": "2026-11-24T02:35:49Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
-      "title": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-23T10:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-23T15:12:16Z",
-      "body_sha256": "33be732f3bcbaa93f80c1c6c4733f8eb6971a6b0d0d9f6a26a877c6a216a67c1",
-      "body_characters": 3210,
-      "model_context_characters": 3210,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The ECB has expanded the acceptance of DLT-based assets as Eurosystem collateral.",
-        "evidence_ids": [
-          "E1",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: ECB expands acceptance of DLT-based assets",
-          "financial_channel: If DLT adoption increases, liquidity improves",
-          "asset_hypothesis: If DLT assets become more accepted, risk appetite increases"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If DLT adoption increases, gold may be seen as a safer haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If DLT adoption increases, Bitcoin may face competition as an alternative hedge."
-        },
-        "uncertainty": "If traditional financial systems remain dominant, DLT assets may not significantly impact gold or Bitcoin."
-      },
-      "evidence": {
-        "E1": "The Governing Council of the European Central Bank (ECB) has approved the",
-        "E3": "This is a new milestone in the roadmap towards making the Eurosystem"
-      },
-      "analyzed_at": "2026-11-23T15:14:35Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     }
   ]
 }

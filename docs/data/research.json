@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-25T02:35:23Z",
+    "checked_at": "2026-11-25T11:40:47Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-11-25T02:35:23Z",
+    "checked_at": "2026-11-25T11:40:47Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -123,6 +123,31 @@
   },
   "news": [
     {
+      "title": "Interest rate affect on Guernsey's housing market",
+      "url": "https://www.bbc.co.uk/news/videos/c6x29vne7lnko?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-11-25T09:56:33Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "policy"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Interest rate affect on Guernsey's housing market",
+          "url": "https://www.bbc.co.uk/news/videos/c6x29vne7lnko?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-11-25T09:56:33Z"
+        }
+      ]
+    },
+    {
       "title": "Tidal bans 100% AI-generated music with plans to delete more than 27m tracks",
       "url": "https://www.theguardian.com/music/2026/nov/25/tidal-streaming-service-bans-ai-generated-music",
       "published_at": "2026-11-25T02:12:22Z",
@@ -148,7 +173,7 @@
       ]
     },
     {
-      "title": "US preparing to unveil new tariffs on global trading partners",
+      "title": "US preparing to unveil plan for new tariffs on global trading partners",
       "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-11-25T00:38:01Z",
       "source_id": "bbc",
@@ -165,7 +190,7 @@
       },
       "related_reports": [
         {
-          "title": "US preparing to unveil new tariffs on global trading partners",
+          "title": "US preparing to unveil plan for new tariffs on global trading partners",
           "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
           "publisher": "BBC Business",
           "published_at": "2026-11-25T00:38:01Z"
@@ -394,31 +419,6 @@
           "url": "https://www.bbc.co.uk/news/videos/cq8r7e35mkzlo?at_medium=RSS&at_campaign=rss",
           "publisher": "BBC Business",
           "published_at": "2026-11-23T18:43:00Z"
-        }
-      ]
-    },
-    {
-      "title": "Child safety groups urge Amazon and eBay to stop selling AI toys until proved safe",
-      "url": "https://www.theguardian.com/technology/2026/nov/23/child-safety-groups-urge-amazon-ebay-stop-selling-ai-toys-until-proved-safe",
-      "published_at": "2026-11-23T17:18:06Z",
-      "source_id": "guardian_technology",
-      "publisher": "The Guardian Technology",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "ai_regulation"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Child safety groups urge Amazon and eBay to stop selling AI toys until proved safe",
-          "url": "https://www.theguardian.com/technology/2026/nov/23/child-safety-groups-urge-amazon-ebay-stop-selling-ai-toys-until-proved-safe",
-          "publisher": "The Guardian Technology",
-          "published_at": "2026-11-23T17:18:06Z"
         }
       ]
     },
@@ -670,31 +670,6 @@
       ]
     },
     {
-      "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
-      "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
-      "published_at": "2026-11-15T21:06:03Z",
-      "source_id": "guardian_technology",
-      "publisher": "The Guardian Technology",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "policy"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
-          "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
-          "publisher": "The Guardian Technology",
-          "published_at": "2026-11-15T21:06:03Z"
-        }
-      ]
-    },
-    {
       "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
       "published_at": "2026-11-12T17:45:00Z",
@@ -725,47 +700,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-25T02:35:23Z",
+      "checked_at": "2026-11-25T11:40:47Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T02:35:23Z",
+      "last_success": "2026-11-25T11:40:47Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-25T02:35:23Z",
+      "checked_at": "2026-11-25T11:40:47Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T02:35:23Z",
+      "last_success": "2026-11-25T11:40:47Z",
       "matched": 5
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-25T02:35:23Z",
+      "checked_at": "2026-11-25T11:40:47Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T02:35:23Z",
-      "matched": 5
+      "last_success": "2026-11-25T11:40:47Z",
+      "matched": 6
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-25T02:35:23Z",
+      "checked_at": "2026-11-25T11:40:47Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T02:35:23Z",
+      "last_success": "2026-11-25T11:40:47Z",
       "matched": 5
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-25T02:35:23Z",
+      "checked_at": "2026-11-25T11:40:47Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -775,40 +750,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-25T02:35:23Z",
+      "checked_at": "2026-11-25T11:40:47Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T02:35:23Z",
+      "last_success": "2026-11-25T11:40:47Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-25T02:35:23Z",
+      "checked_at": "2026-11-25T11:40:47Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T02:35:23Z",
-      "matched": 8
+      "last_success": "2026-11-25T11:40:47Z",
+      "matched": 6
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-25T02:35:23Z",
+      "checked_at": "2026-11-25T11:40:47Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T02:35:23Z",
+      "last_success": "2026-11-25T11:40:47Z",
       "matched": 2
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-25T02:35:23Z",
+      "checked_at": "2026-11-25T11:40:47Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T02:35:23Z",
+      "last_success": "2026-11-25T11:40:47Z",
       "matched": 2
     }
   ],

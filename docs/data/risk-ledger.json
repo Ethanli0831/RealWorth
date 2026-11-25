@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-25T02:35:30Z",
-    "record_count": 108,
+    "updated_at": "2026-11-25T11:40:53Z",
+    "record_count": 110,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -3140,6 +3140,65 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "1b042745033b6365947d94987341182b2178402d82e4931a01a6dd80043c374c"
+    },
+    {
+      "id": "020360e14d0b7cb2722ef7c0",
+      "first_observed_at": "2026-11-25T11:40:53Z",
+      "snapshot": {
+        "title": "Interest rate affect on Guernsey's housing market",
+        "url": "https://www.bbc.co.uk/news/videos/c6x29vne7lnko?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-25T09:56:33Z",
+        "categories": [
+          "rates"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "37d795c038aed3305b2d8d8093e573ab4cc432dea695eaa86ffa4a5d2426fb3c"
+    },
+    {
+      "id": "4b3e4bbe3c6e57dab0a0f4cf",
+      "first_observed_at": "2026-11-25T11:40:53Z",
+      "snapshot": {
+        "title": "US preparing to unveil plan for new tariffs on global trading partners",
+        "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-25T00:38:01Z",
+        "categories": [
+          "trade"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "3dd28088d5cd9fa6c2ddfd743c9cf5ec4b68eb099ba50df689f0464ff2d9c3bc",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "ccc9c2fb35cd27ca99f2040aab853e86ea796031416ddce3a4d69c4696f33405"
     }
   ]
 }

@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-24T18:12:33Z",
-    "record_count": 105,
+    "updated_at": "2026-11-25T02:35:30Z",
+    "record_count": 108,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -3055,6 +3055,91 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "542475edb833ae09bedc7608b09c41a3d4efacb5a6a70b68bd3ca6e12079ce49"
+    },
+    {
+      "id": "c39a27be54fb855e9db40361",
+      "first_observed_at": "2026-11-25T02:35:30Z",
+      "snapshot": {
+        "title": "Tidal bans 100% AI-generated music with plans to delete more than 27m tracks",
+        "url": "https://www.theguardian.com/music/2026/nov/25/tidal-streaming-service-bans-ai-generated-music",
+        "publisher": "The Guardian Technology",
+        "published_at": "2026-11-25T02:12:22Z",
+        "categories": [
+          "ai_regulation"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Proposal or possibility reported; not enacted law",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "897f5d72cfd89dfb8ee98d8117092ac4ed43a2e697c4dac21638f5486e473305",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "c71b948a5c095c678e2ef3ffe8f207f4f6a9721358ca58b965f77a9311f06628"
+    },
+    {
+      "id": "29ae8486e0ed6c3e0c290143",
+      "first_observed_at": "2026-11-25T02:35:30Z",
+      "snapshot": {
+        "title": "US preparing to unveil new tariffs on global trading partners",
+        "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-25T00:38:01Z",
+        "categories": [
+          "trade"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "3dd28088d5cd9fa6c2ddfd743c9cf5ec4b68eb099ba50df689f0464ff2d9c3bc",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "2e5bc7c2e4d4f413a0cfc03ef45688b4c72a3bd88a88789451dee8dfd32e801f"
+    },
+    {
+      "id": "0a7d9ebfdec969c2df69380c",
+      "first_observed_at": "2026-11-25T02:35:30Z",
+      "snapshot": {
+        "title": "Tech sell-off resumes as euphoria from Jensen Huang’s Nvidia return subsides",
+        "url": "https://www.theguardian.com/business/2026/nov/24/nvidia-stock-falls-jensen-huang",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-24T22:05:21Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "1b042745033b6365947d94987341182b2178402d82e4931a01a6dd80043c374c"
     }
   ]
 }

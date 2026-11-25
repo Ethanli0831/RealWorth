@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-24T18:12:33Z",
-    "source_checked_at": "2026-11-24T18:12:26Z",
+    "built_at": "2026-11-25T02:35:30Z",
+    "source_checked_at": "2026-11-25T02:35:23Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -10,14 +10,67 @@
     "disclosure": "Risk chains are transparent scenarios, not verified causal effects, probability forecasts or AI price targets. No warnings are backdated.",
     "feeds_fetched": 8,
     "feeds_total": 9,
-    "ledger_records": 105
+    "ledger_records": 108
   },
   "events": [
     {
-      "title": "Nvidia shares slide as Trump's role in Jensen Huang's comeback questioned by US politicians",
-      "url": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
+      "title": "Tidal bans 100% AI-generated music with plans to delete more than 27m tracks",
+      "url": "https://www.theguardian.com/music/2026/nov/25/tidal-streaming-service-bans-ai-generated-music",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-25T02:12:22Z",
+      "categories": [
+        "ai_regulation"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Proposal or possibility reported; not enacted law",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "897f5d72cfd89dfb8ee98d8117092ac4ed43a2e697c4dac21638f5486e473305",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "c39a27be54fb855e9db40361",
+      "first_observed_at": "2026-11-25T02:35:30Z",
+      "digest": "c71b948a5c095c678e2ef3ffe8f207f4f6a9721358ca58b965f77a9311f06628"
+    },
+    {
+      "title": "US preparing to unveil new tariffs on global trading partners",
+      "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
       "publisher": "BBC Business",
-      "published_at": "2026-11-24T17:04:20Z",
+      "published_at": "2026-11-25T00:38:01Z",
+      "categories": [
+        "trade"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "3dd28088d5cd9fa6c2ddfd743c9cf5ec4b68eb099ba50df689f0464ff2d9c3bc",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "29ae8486e0ed6c3e0c290143",
+      "first_observed_at": "2026-11-25T02:35:30Z",
+      "digest": "2e5bc7c2e4d4f413a0cfc03ef45688b4c72a3bd88a88789451dee8dfd32e801f"
+    },
+    {
+      "title": "Tech sell-off resumes as euphoria from Jensen Huang’s Nvidia return subsides",
+      "url": "https://www.theguardian.com/business/2026/nov/24/nvidia-stock-falls-jensen-huang",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-24T22:05:21Z",
       "categories": [
         "ai_economics"
       ],
@@ -35,9 +88,9 @@
       "framework_version": "event-risk-v1",
       "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
       "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "aa51adf28ef3b9841d4dd6bd",
-      "first_observed_at": "2026-11-24T18:12:33Z",
-      "digest": "729ba916fea371f7d78b21e17e426d98ee689dfb15103b9f692796da41419a8f"
+      "id": "0a7d9ebfdec969c2df69380c",
+      "first_observed_at": "2026-11-25T02:35:30Z",
+      "digest": "1b042745033b6365947d94987341182b2178402d82e4931a01a6dd80043c374c"
     },
     {
       "title": "Jensen Huang’s return to Nvidia is elite impunity | Moira Donegan",
@@ -274,33 +327,6 @@
       "digest": "738d327ce2e0f911c8112050c61c9671db006fbf958f04de53da981442080db8"
     },
     {
-      "title": "Millennial Democrats used social media in the midterms to sell their policies – and their personalities",
-      "url": "https://www.theguardian.com/us-news/2026/nov/23/social-media-us-politics-midterms",
-      "publisher": "The Guardian US Politics",
-      "published_at": "2026-11-23T14:00:48Z",
-      "categories": [
-        "elections"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "d79379ec91755314977a0d11f665340ed09d3587c8c18078753684e5006357d4",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "ade04250c94bc9eb9b217051",
-      "first_observed_at": "2026-11-24T18:12:33Z",
-      "digest": "542475edb833ae09bedc7608b09c41a3d4efacb5a6a70b68bd3ca6e12079ce49"
-    },
-    {
       "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
       "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
       "publisher": "The Guardian Business",
@@ -325,32 +351,6 @@
       "id": "6f9b923a70863fb7493efd0f",
       "first_observed_at": "2026-11-21T00:19:47Z",
       "digest": "6f66f824481cb0ddad8ddf53b592e5ad01ca3d9a0e3f0c5636823c56a305c2cc"
-    },
-    {
-      "title": "Trump threatens ban on US firms building AI data centres overseas",
-      "url": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&at_campaign=rss",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-20T20:54:12Z",
-      "categories": [
-        "ai_regulation"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "897f5d72cfd89dfb8ee98d8117092ac4ed43a2e697c4dac21638f5486e473305",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "7adac74862e117ba6ca5938e",
-      "first_observed_at": "2026-11-21T00:19:47Z",
-      "digest": "a1fe24262a5a57b4590a9ff70290e7313c494d88988dce50108da23a3723a2bb"
     },
     {
       "title": "AI demand will push up interest rates around the world, IMF head warns",
@@ -628,8 +628,8 @@
         "Separate campaign promises, introduced bills, enacted law and effective dates.",
         "Check company exposures rather than treating a party as an automatic buy/sell signal."
       ],
-      "event_count": 1,
-      "coverage": "Limited selected-headline coverage"
+      "event_count": 0,
+      "coverage": "No matching evidence in selected feeds; risk not ruled out"
     },
     {
       "id": "ai_regulation",
@@ -698,8 +698,8 @@
         "Map supplier revenue by customer and destination.",
         "Review retaliation, substitution and currency exposure."
       ],
-      "event_count": 0,
-      "coverage": "No matching evidence in selected feeds; risk not ruled out"
+      "event_count": 1,
+      "coverage": "Limited selected-headline coverage"
     },
     {
       "id": "rates",
@@ -1050,8 +1050,8 @@
       "id": "fomc",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "Fetched official schedule",
-      "last_success": "2026-11-24T18:12:33Z",
-      "attempted_at": "2026-11-24T18:12:33Z",
+      "last_success": "2026-11-25T02:35:30Z",
+      "attempted_at": "2026-11-25T02:35:30Z",
       "events": [
         {
           "title": "Scheduled FOMC meeting final day",
@@ -1341,7 +1341,7 @@
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-24T18:12:33Z",
+      "attempted_at": "2026-11-25T02:35:30Z",
       "events": [],
       "stale": true,
       "error": "HTTPError",
@@ -1353,47 +1353,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-24T18:12:26Z",
+      "checked_at": "2026-11-25T02:35:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-24T18:12:26Z",
+      "last_success": "2026-11-25T02:35:23Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-24T18:12:26Z",
+      "checked_at": "2026-11-25T02:35:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-24T18:12:26Z",
+      "last_success": "2026-11-25T02:35:23Z",
       "matched": 5
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-24T18:12:26Z",
+      "checked_at": "2026-11-25T02:35:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-24T18:12:26Z",
-      "matched": 7
+      "last_success": "2026-11-25T02:35:23Z",
+      "matched": 5
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-24T18:12:26Z",
+      "checked_at": "2026-11-25T02:35:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-24T18:12:26Z",
-      "matched": 4
+      "last_success": "2026-11-25T02:35:23Z",
+      "matched": 5
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-24T18:12:26Z",
+      "checked_at": "2026-11-25T02:35:23Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1403,41 +1403,41 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-24T18:12:26Z",
+      "checked_at": "2026-11-25T02:35:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-24T18:12:26Z",
+      "last_success": "2026-11-25T02:35:23Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-24T18:12:26Z",
+      "checked_at": "2026-11-25T02:35:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-24T18:12:26Z",
-      "matched": 6
+      "last_success": "2026-11-25T02:35:23Z",
+      "matched": 8
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-24T18:12:26Z",
+      "checked_at": "2026-11-25T02:35:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-24T18:12:26Z",
-      "matched": 3
+      "last_success": "2026-11-25T02:35:23Z",
+      "matched": 2
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-24T18:12:26Z",
+      "checked_at": "2026-11-25T02:35:23Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-24T18:12:26Z",
-      "matched": 4
+      "last_success": "2026-11-25T02:35:23Z",
+      "matched": 2
     }
   ],
   "gaps": [

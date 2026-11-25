@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-25T11:40:53Z",
-    "source_checked_at": "2026-11-25T11:40:47Z",
+    "built_at": "2026-11-25T20:41:50Z",
+    "source_checked_at": "2026-11-25T20:41:44Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -10,9 +10,196 @@
     "disclosure": "Risk chains are transparent scenarios, not verified causal effects, probability forecasts or AI price targets. No warnings are backdated.",
     "feeds_fetched": 8,
     "feeds_total": 9,
-    "ledger_records": 110
+    "ledger_records": 121
   },
   "events": [
+    {
+      "title": "What we know about Trump's Thanksgiving tariffs",
+      "url": "https://www.bbc.co.uk/news/videos/c3x29v11ed1xo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-25T19:38:05Z",
+      "categories": [
+        "trade"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "3dd28088d5cd9fa6c2ddfd743c9cf5ec4b68eb099ba50df689f0464ff2d9c3bc",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "4a77a9284038c8a0c0784e4d",
+      "first_observed_at": "2026-11-25T20:41:50Z",
+      "digest": "982bb19a3b4fb8855a3fce3fc651b2612f5643190438875bf47ed9b0f85cf845"
+    },
+    {
+      "title": "US stocks fall further as fears over AI intensify",
+      "url": "https://www.bbc.co.uk/news/articles/cq0md8g14zryo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-25T17:48:09Z",
+      "categories": [
+        "ai_economics"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "6554031735972533fc642b9a",
+      "first_observed_at": "2026-11-25T20:41:50Z",
+      "digest": "6d086185309e6d1e3bda284c2b473f5bece50c0e7bba0efbf59698276d353957"
+    },
+    {
+      "title": "Trump's accounts traded Nvidia shares 44 times this year, records show",
+      "url": "https://www.bbc.co.uk/news/articles/cq772vk664yvo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-25T16:42:11Z",
+      "categories": [
+        "ai_economics"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "e8824b8085793fca86008b0a",
+      "first_observed_at": "2026-11-25T20:41:50Z",
+      "digest": "3d324005992a6c8750137e8f8c378ead4abdaee07b12a356675eaa44cdac2216"
+    },
+    {
+      "title": "US announces new tariffs on host of countries including China",
+      "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-25T16:21:34Z",
+      "categories": [
+        "trade"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "3dd28088d5cd9fa6c2ddfd743c9cf5ec4b68eb099ba50df689f0464ff2d9c3bc",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "db068fcfbe93bec23c9f34fa",
+      "first_observed_at": "2026-11-25T20:41:50Z",
+      "digest": "4da58ab1bf902de3f2f0777b377e24f813e7f3b280dd982a4d0568dcb95971e3"
+    },
+    {
+      "title": "New York bans AI toys, including those using internet to talk to children",
+      "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-25T15:29:21Z",
+      "categories": [
+        "ai_regulation"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "897f5d72cfd89dfb8ee98d8117092ac4ed43a2e697c4dac21638f5486e473305",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "eb5ce1c63f6004d4605566c0",
+      "first_observed_at": "2026-11-25T20:41:50Z",
+      "digest": "f766bbefb73eb8686d182b969758b54a2ddf0b58fc8d5cff2c9852fbdb49f40e"
+    },
+    {
+      "title": "Trump proposing new tariffs on 14 partners including China and EU",
+      "url": "https://www.theguardian.com/us-news/2026/nov/25/trump-new-china-tariffs-europe",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-25T14:59:44Z",
+      "categories": [
+        "trade"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Proposal or possibility reported; not enacted law",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "3dd28088d5cd9fa6c2ddfd743c9cf5ec4b68eb099ba50df689f0464ff2d9c3bc",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "830562d3fcee9a92c395881f",
+      "first_observed_at": "2026-11-25T20:41:50Z",
+      "digest": "ffceb76bb5a901d78475d966abe3e7a4bc025ed87ab63e2f8eef2e1d921af931"
+    },
+    {
+      "title": "Democrats must unite on AI regulation. Here’s our three-point plan | Nathan E Sanders and Bruce Schneier",
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/25/democrats-ai-regulation-plan",
+      "publisher": "The Guardian US Politics",
+      "published_at": "2026-11-25T13:00:26Z",
+      "categories": [
+        "elections",
+        "ai_regulation"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "ec9cde2c91967cbe26a76fde3fc6f6c7e590c4423ff07adf3a5d9540eca997a3",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "88ff4e0f24d282966cc88aef",
+      "first_observed_at": "2026-11-25T20:41:50Z",
+      "digest": "1fcbed221a0ffd387fe5fd7bc404b3591f6effb15eaa5f19c721bb8863284f7d"
+    },
     {
       "title": "Tidal bans 100% AI-generated music with plans to delete more than 27m tracks",
       "url": "https://www.theguardian.com/music/2026/nov/25/tidal-streaming-service-bans-ai-generated-music",
@@ -38,33 +225,6 @@
       "id": "c39a27be54fb855e9db40361",
       "first_observed_at": "2026-11-25T02:35:30Z",
       "digest": "c71b948a5c095c678e2ef3ffe8f207f4f6a9721358ca58b965f77a9311f06628"
-    },
-    {
-      "title": "US preparing to unveil plan for new tariffs on global trading partners",
-      "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-25T00:38:01Z",
-      "categories": [
-        "trade"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "GLD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "3dd28088d5cd9fa6c2ddfd743c9cf5ec4b68eb099ba50df689f0464ff2d9c3bc",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "4b3e4bbe3c6e57dab0a0f4cf",
-      "first_observed_at": "2026-11-25T11:40:53Z",
-      "digest": "ccc9c2fb35cd27ca99f2040aab853e86ea796031416ddce3a4d69c4696f33405"
     },
     {
       "title": "Tech sell-off resumes as euphoria from Jensen Huang’s Nvidia return subsides",
@@ -119,35 +279,9 @@
       "digest": "64c70c8aef1781c207e0819ae4042b64b384a5c4ca2dc32a5e6d574a812bd152"
     },
     {
-      "title": "Mamdani questions AI economy as Jensen Huang returns to Nvidia – video",
-      "url": "https://www.theguardian.com/technology/video/2026/nov/24/mamdani-questions-ai-economy-as-jensen-huang-returns-to-nvidia-video",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-24T16:30:07Z",
-      "categories": [
-        "ai_economics"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "a126261a9f8d718013c76e35",
-      "first_observed_at": "2026-11-24T18:12:33Z",
-      "digest": "c5f91d09eb83be00fe2db1c8c9862fe45eff7c2e5b1cb34e3afc3d18cf82c643"
-    },
-    {
       "title": "Jimmy Kimmel on Jensen Huang’s return to Nvidia: ‘What a profoundly stupid time to be alive’",
       "url": "https://www.theguardian.com/culture/2026/nov/24/jimmy-kimmel-jensen-huang-nvidia-trump",
-      "publisher": "The Guardian Technology",
+      "publisher": "The Guardian US Politics",
       "published_at": "2026-11-24T15:51:00Z",
       "categories": [
         "ai_economics"
@@ -166,9 +300,9 @@
       "framework_version": "event-risk-v1",
       "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
       "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "eca82675e1538f8dcd766c16",
-      "first_observed_at": "2026-11-24T18:12:33Z",
-      "digest": "c975c26799d7c0cc855ee5cf96148255d8aa2de76ececd48f2b4da2de70dd2bf"
+      "id": "ff2fca29b41c68f1e154cd6f",
+      "first_observed_at": "2026-11-25T20:41:50Z",
+      "digest": "c806ccddeb8313dc6700261733e533967582e66fe86761b810d75bf5c2df2897"
     },
     {
       "title": "Chinese media hail Huang’s Nvidia return with warning over ‘witch-hunts’",
@@ -197,58 +331,6 @@
       "digest": "d7469f05d17ff22205ec45061c6fc6806aca32d0f4ef9073fdb63724f526bbef"
     },
     {
-      "title": "Mamdani says Nvidia drama shows stock market is overly dependent on AI",
-      "url": "https://www.theguardian.com/us-news/2026/nov/24/mamdani-nvidia-stock-market-ai",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-24T14:22:17Z",
-      "categories": [
-        "ai_economics"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "3a8aedd8fd905fb9f7e3b0be",
-      "first_observed_at": "2026-11-24T18:12:33Z",
-      "digest": "caa37b88b8d8aae2847e18ed4bb83a948833e604c1a60d4dab6568b302020131"
-    },
-    {
-      "title": "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
-      "url": "https://www.bbc.co.uk/news/videos/ckp80d5nl586o?at_medium=RSS&at_campaign=rss",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-23T21:40:30Z",
-      "categories": [
-        "ai_economics"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "2ea88612a83060f9dde375fd",
-      "first_observed_at": "2026-11-23T22:44:04Z",
-      "digest": "fd22a5ae4319a6577a6fcccb8e8d3cac779db8f006a53ac567c43f24cf2d6d5f"
-    },
-    {
       "title": "Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns",
       "url": "https://www.bbc.co.uk/news/articles/cq62pn6j42jko?at_medium=RSS&at_campaign=rss",
       "publisher": "BBC Business",
@@ -273,58 +355,6 @@
       "id": "1f96d6c874ca95a8786ac0c3",
       "first_observed_at": "2026-11-23T22:44:04Z",
       "digest": "a477b18ae4f76985b5702d39bd20216d882a1daf51ef94ba4a6028b92552ad0f"
-    },
-    {
-      "title": "'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia",
-      "url": "https://www.bbc.co.uk/news/videos/cq8r7e35mkzlo?at_medium=RSS&at_campaign=rss",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-23T18:43:00Z",
-      "categories": [
-        "ai_economics"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "05730bda7d9726d958b017e1",
-      "first_observed_at": "2026-11-23T22:44:04Z",
-      "digest": "ce8aa7966be769dfcedfeee12d7c90aa749ed60e18e5dbad542b0d2811427277"
-    },
-    {
-      "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
-      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-20T21:38:17Z",
-      "categories": [
-        "ai_economics"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "6f9b923a70863fb7493efd0f",
-      "first_observed_at": "2026-11-21T00:19:47Z",
-      "digest": "6f66f824481cb0ddad8ddf53b592e5ad01ca3d9a0e3f0c5636823c56a305c2cc"
     },
     {
       "title": "AI demand will push up interest rates around the world, IMF head warns",
@@ -410,6 +440,90 @@
       "id": "2100a0292cd9b883191420e5",
       "first_observed_at": "2026-11-07T18:08:17Z",
       "digest": "479566df9a598e96ffb6d33a3fbe0615df7107cfdb112f53aa6a8b7530b121f0"
+    },
+    {
+      "title": "ECB and Sveriges Riksbank conclude agreement for Sweden to join T2",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-25T17:30:00Z",
+      "categories": [
+        "rates"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "1a489d2b9891596528ae4aac",
+      "first_observed_at": "2026-11-25T20:41:50Z",
+      "digest": "49fe003ccd6169f9c9df9f3dcc84c87318fc061d7a9d75e0436e2edca385cd7b"
+    },
+    {
+      "title": "Scots react to news of rising energy prices",
+      "url": "https://www.bbc.co.uk/news/videos/cmqlq07d71yko?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-25T16:56:47Z",
+      "categories": [
+        "energy"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "d8bbcc3e2536f510751f3f7fc1417a5af288b2bec41ac3c65aa827eef6c5d064",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "f3b6d8a33170bc15ad694191",
+      "first_observed_at": "2026-11-25T20:41:50Z",
+      "digest": "79bf28598a3a677bb2ec54a8c528928cd712ef22f029242afe8a20ccd574479c"
+    },
+    {
+      "title": "US inflation hits highest since May after prices climb 3.8% over the last year",
+      "url": "https://www.theguardian.com/business/2026/nov/25/consumer-prices-september-october-energy-inflation",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-25T15:46:15Z",
+      "categories": [
+        "rates"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Proposal or possibility reported; not enacted law",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "2615ddd948d2ab8bff7a6d56",
+      "first_observed_at": "2026-11-25T20:41:50Z",
+      "digest": "7a569d62b364ce8d13ad14d2c9d0fd12660c59561348bb496fd2e480df928e68"
     },
     {
       "title": "Interest rate affect on Guernsey's housing market",
@@ -602,8 +716,8 @@
         "Separate campaign promises, introduced bills, enacted law and effective dates.",
         "Check company exposures rather than treating a party as an automatic buy/sell signal."
       ],
-      "event_count": 0,
-      "coverage": "No matching evidence in selected feeds; risk not ruled out"
+      "event_count": 1,
+      "coverage": "Limited selected-headline coverage"
     },
     {
       "id": "ai_regulation",
@@ -625,7 +739,7 @@
         "Check whether it concerns model use, chip exports, electricity costs or construction.",
         "Verify effective dates and company guidance; do not infer a global ban."
       ],
-      "event_count": 1,
+      "event_count": 3,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -648,7 +762,7 @@
         "Check utilization, order cancellations, financing and customer concentration.",
         "Distinguish a lower share valuation from cash automatically moving to another country."
       ],
-      "event_count": 11,
+      "event_count": 8,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -672,7 +786,7 @@
         "Map supplier revenue by customer and destination.",
         "Review retaliation, substitution and currency exposure."
       ],
-      "event_count": 1,
+      "event_count": 3,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -697,7 +811,7 @@
         "Check real yields, dollar funding and the policy response.",
         "Separate a growth shock from an inflation shock."
       ],
-      "event_count": 7,
+      "event_count": 9,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -747,7 +861,7 @@
         "Distinguish announcements from operating supply.",
         "Review power prices, water, transmission and customer location."
       ],
-      "event_count": 1,
+      "event_count": 2,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -1024,8 +1138,8 @@
       "id": "fomc",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "Fetched official schedule",
-      "last_success": "2026-11-25T11:40:53Z",
-      "attempted_at": "2026-11-25T11:40:53Z",
+      "last_success": "2026-11-25T20:41:50Z",
+      "attempted_at": "2026-11-25T20:41:50Z",
       "events": [
         {
           "title": "Scheduled FOMC meeting final day",
@@ -1315,7 +1429,7 @@
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-25T11:40:53Z",
+      "attempted_at": "2026-11-25T20:41:50Z",
       "events": [],
       "stale": true,
       "error": "HTTPError",
@@ -1327,47 +1441,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-25T11:40:47Z",
+      "checked_at": "2026-11-25T20:41:44Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T11:40:47Z",
+      "last_success": "2026-11-25T20:41:44Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-25T11:40:47Z",
+      "checked_at": "2026-11-25T20:41:44Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T11:40:47Z",
-      "matched": 5
+      "last_success": "2026-11-25T20:41:44Z",
+      "matched": 6
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-25T11:40:47Z",
+      "checked_at": "2026-11-25T20:41:44Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T11:40:47Z",
-      "matched": 6
+      "last_success": "2026-11-25T20:41:44Z",
+      "matched": 10
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-25T11:40:47Z",
+      "checked_at": "2026-11-25T20:41:44Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T11:40:47Z",
-      "matched": 5
+      "last_success": "2026-11-25T20:41:44Z",
+      "matched": 6
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-25T11:40:47Z",
+      "checked_at": "2026-11-25T20:41:44Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1377,40 +1491,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-25T11:40:47Z",
+      "checked_at": "2026-11-25T20:41:44Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T11:40:47Z",
+      "last_success": "2026-11-25T20:41:44Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-25T11:40:47Z",
+      "checked_at": "2026-11-25T20:41:44Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T11:40:47Z",
-      "matched": 6
+      "last_success": "2026-11-25T20:41:44Z",
+      "matched": 3
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-25T11:40:47Z",
+      "checked_at": "2026-11-25T20:41:44Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T11:40:47Z",
-      "matched": 2
+      "last_success": "2026-11-25T20:41:44Z",
+      "matched": 4
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-25T11:40:47Z",
+      "checked_at": "2026-11-25T20:41:44Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T11:40:47Z",
+      "last_success": "2026-11-25T20:41:44Z",
       "matched": 2
     }
   ],

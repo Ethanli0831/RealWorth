@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-25T09:06:02Z",
-    "scan_started_at": "2026-11-25T09:00:28Z",
+    "checked_at": "2026-11-25T19:36:19Z",
+    "scan_started_at": "2026-11-25T19:31:26Z",
     "provider_requested": "local",
-    "article_reads": 8,
-    "ai_interpretations": 3,
-    "new_interpretations": 1,
+    "article_reads": 7,
+    "ai_interpretations": 5,
+    "new_interpretations": 2,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -27,12 +27,53 @@
       "status": "Unavailable: No readable article container"
     },
     {
+      "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+      "title": "US preparing to unveil plan for new tariffs on global trading partners",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-25T00:38:01Z",
+      "historical": null,
+      "read_at": "2026-11-25T19:31:28Z",
+      "body_sha256": "84d8563dcf9aa766f13ed5943e44e277f5bcc88a99ce5f9ca5f7306d9d840227",
+      "body_characters": 3715,
+      "model_context_characters": 3715,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The US announces new tariffs on global trading partners, including China and the EU, with rates up to 40%. Trump's signature policy continues despite midterm election results.",
+        "evidence_ids": [
+          "E3",
+          "E4"
+        ],
+        "chain": [
+          "reported_event: US announces new tariffs",
+          "financial_channel: If trade tensions increase, risk appetite may decrease",
+          "asset_hypothesis: If risk appetite decreases, gold may see an up direction"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If trade tensions increase, risk appetite may decrease, leading to a flight to safety"
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite decreases, Bitcoin may lose some appeal as a safe-haven, but liquidity concerns could also drive interest"
+        },
+        "uncertainty": "If the tariffs are effectively reduced due to caps, the impact on trade and risk appetite may be limited."
+      },
+      "evidence": {
+        "E3": "The US has announced a fresh raft of tariffs as President Donald",
+        "E4": "China is facing the highest rate of up to 40%, followed by"
+      },
+      "analyzed_at": "2026-11-25T19:34:10Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
       "url": "https://www.theguardian.com/technology/video/2026/nov/24/mamdani-questions-ai-economy-as-jensen-huang-returns-to-nvidia-video",
       "title": "Mamdani questions AI economy as Jensen Huang returns to Nvidia – video",
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-24T16:30:07Z",
       "historical": null,
-      "read_at": "2026-11-25T09:00:31Z",
+      "read_at": "2026-11-25T19:30:48Z",
       "body_sha256": "02b5baa7708bdb2e3869e846a79c6021a9d679d3fe7a67c44cc87ad248344348",
       "body_characters": 582,
       "model_context_characters": 582,
@@ -68,20 +109,12 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.bbc.co.uk/news/videos/ckp80d5nl586o?at_medium=RSS&at_campaign=rss",
-      "title": "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-23T21:40:30Z",
-      "historical": null,
-      "status": "Unavailable: Insufficient public article text"
-    },
-    {
       "url": "https://www.theguardian.com/global-development/2026/nov/23/falkland-islands-argentina-sea-lion-oil-environment-sovereignty-wildlife-pollution",
       "title": "‘Once installed, there’s no getting rid of it’: what Falklands oil plans mean for its seals, whales and penguins",
       "publisher": "The Guardian Business",
       "published_at": "2026-11-23T06:00:49Z",
       "historical": null,
-      "read_at": "2026-11-25T09:01:57Z",
+      "read_at": "2026-11-25T19:30:48Z",
       "body_sha256": "cfe8ebbd7e9c2adb467cf596dd84dfe037c71e919db4c92677355a8305bee562",
       "body_characters": 8799,
       "model_context_characters": 4500,
@@ -122,7 +155,7 @@
       "publisher": "European Central Bank",
       "published_at": "2026-11-23T10:00:00Z",
       "historical": null,
-      "read_at": "2026-11-25T09:01:58Z",
+      "read_at": "2026-11-25T19:30:49Z",
       "body_sha256": "33be732f3bcbaa93f80c1c6c4733f8eb6971a6b0d0d9f6a26a877c6a216a67c1",
       "body_characters": 3210,
       "model_context_characters": 3210,
@@ -158,16 +191,20 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.theguardian.com/culture/2026/nov/24/jimmy-kimmel-jensen-huang-nvidia-trump",
-      "title": "Jimmy Kimmel on Jensen Huang’s return to Nvidia: ‘What a profoundly stupid time to be alive’",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-24T15:51:00Z",
+      "url": "https://www.bbc.co.uk/news/videos/ckp80d5nl586o?at_medium=RSS&at_campaign=rss",
+      "title": "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-23T21:40:30Z",
       "historical": null,
-      "read_at": "2026-11-25T09:01:58Z",
-      "body_sha256": "12353e36465c59ba20b17412877cf61a2f66e5e25867a7eb95d618a344181879",
-      "body_characters": 3806,
-      "model_context_characters": 3806,
-      "status": "Unavailable: AI chain contains no financial transmission mechanism"
+      "status": "Unavailable: Insufficient public article text"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/videos/c6x29vne7lnko?at_medium=RSS&at_campaign=rss",
+      "title": "Interest rate affect on Guernsey's housing market",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-25T09:56:33Z",
+      "historical": null,
+      "status": "Unavailable: Insufficient public article text"
     },
     {
       "url": "https://www.theguardian.com/music/2026/nov/25/tidal-streaming-service-bans-ai-generated-music",
@@ -175,23 +212,40 @@
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-25T02:12:22Z",
       "historical": null,
-      "read_at": "2026-11-25T09:06:02Z",
+      "read_at": "2026-11-25T19:34:11Z",
       "body_sha256": "44a94ff944bedaaf129ba95eef414a7b422f5cc1ca2549b910838db82b9f6853",
       "body_characters": 2835,
       "model_context_characters": 2835,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
-      "title": "US preparing to unveil new tariffs on global trading partners",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-25T00:38:01Z",
-      "historical": null,
-      "read_at": "2026-11-25T09:06:02Z",
-      "body_sha256": "0c2de5b8744c6e901c677f10cc73cbef10fe6330bb1e1a3e84f56d8eb07ca6d4",
-      "body_characters": 2248,
-      "model_context_characters": 2248,
-      "status": "Public body read; queued for AI"
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Tidal bans 100% AI-generated music and plans to remove 27m tracks, citing issues with streams and royalties.",
+        "evidence_ids": [
+          "E2",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: Tidal bans AI-generated music",
+          "financial_channel: If supply of non-AI music increases, liquidity improves",
+          "asset_hypothesis: If demand for original music rises, prices may increase"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If global economic uncertainty increases, gold is seen as a safe-haven"
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite shifts, Bitcoin may be seen as a hedge; if liquidity improves, it may be affected negatively"
+        },
+        "uncertainty": "If AI-generated music becomes more popular elsewhere, Tidal's ban may not significantly impact overall market trends."
+      },
+      "evidence": {
+        "E2": "The music streaming service Tidal has announced it will ban entirely AI-generated",
+        "E6": "In the past 90 days, 43% of tracks distributed on the platform"
+      },
+      "analyzed_at": "2026-11-25T19:36:19Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
       "url": "https://www.theguardian.com/business/2026/nov/24/nvidia-stock-falls-jensen-huang",
@@ -199,10 +253,10 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-24T22:05:21Z",
       "historical": null,
-      "read_at": "2026-11-25T09:06:02Z",
-      "body_sha256": "4e96821a46be0ba531c3f6c90f6343a7bb27dd00ec0facfa07ca423216cd2507",
-      "body_characters": 2338,
-      "model_context_characters": 2338,
+      "read_at": "2026-11-25T19:36:19Z",
+      "body_sha256": "cd2200a123eb59c74d89c56a433c1055c4f9aaa1277d5a9378d14f85c1b7cd61",
+      "body_characters": 2344,
+      "model_context_characters": 2344,
       "status": "Public body read; queued for AI"
     },
     {
@@ -211,8 +265,8 @@
       "publisher": "The Guardian US Politics",
       "published_at": "2026-11-24T16:39:00Z",
       "historical": null,
-      "read_at": "2026-11-25T09:06:02Z",
-      "body_sha256": "ddbc3758f45cc94a4321ceda371142e84bbf5461cf8d38b09ec9065e906a2094",
+      "read_at": "2026-11-25T19:36:19Z",
+      "body_sha256": "0209e0b39af8e0d777bbf2da34e9407b2772c352ef2d06eb64b24db06203ce0d",
       "body_characters": 5775,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"

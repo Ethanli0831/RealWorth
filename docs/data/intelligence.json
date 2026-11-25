@@ -1,7 +1,7 @@
 {
   "meta": {
-    "checked_at": "2026-11-24T23:45:41Z",
-    "scan_started_at": "2026-11-24T23:37:24Z",
+    "checked_at": "2026-11-25T09:06:02Z",
+    "scan_started_at": "2026-11-25T09:00:28Z",
     "provider_requested": "local",
     "article_reads": 8,
     "ai_interpretations": 3,
@@ -19,16 +19,73 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf",
+      "title": "Philip R. Lane: Climate change and monetary policy",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-23T14:30:00Z",
+      "historical": null,
+      "status": "Unavailable: No readable article container"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/video/2026/nov/24/mamdani-questions-ai-economy-as-jensen-huang-returns-to-nvidia-video",
+      "title": "Mamdani questions AI economy as Jensen Huang returns to Nvidia – video",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-24T16:30:07Z",
+      "historical": null,
+      "read_at": "2026-11-25T09:00:31Z",
+      "body_sha256": "02b5baa7708bdb2e3869e846a79c6021a9d679d3fe7a67c44cc87ad248344348",
+      "body_characters": 582,
+      "model_context_characters": 582,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "New York City mayor Zohran Mamdani criticizes Nvidia's stock market dependence on AI due to CEO's personal scandal.",
+        "evidence_ids": [
+          "E1",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: CEO scandal impacts stock price",
+          "financial_channel: If real yields rise, risk appetite falls, affecting tech stocks",
+          "asset_hypothesis: If AI investment slows, tech stocks like Nvidia may decline"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations rise, gold may be seen as a hedge against uncertainty."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If Bitcoin is seen as a safe-haven, it may rise; otherwise, it could follow tech stocks' decline."
+        },
+        "uncertainty": "If the AI market remains strong, Mamdani's concerns may be unfounded, and tech stocks could recover."
+      },
+      "evidence": {
+        "E1": "New York City mayor Zohran Mamdani weighed in on the corporate turbulence",
+        "E3": "Mamdani says Nvidia drama shows stock market is overly dependent on AI"
+      },
+      "analyzed_at": "2026-11-25T09:01:56Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/videos/ckp80d5nl586o?at_medium=RSS&at_campaign=rss",
+      "title": "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-23T21:40:30Z",
+      "historical": null,
+      "status": "Unavailable: Insufficient public article text"
+    },
+    {
       "url": "https://www.theguardian.com/global-development/2026/nov/23/falkland-islands-argentina-sea-lion-oil-environment-sovereignty-wildlife-pollution",
       "title": "‘Once installed, there’s no getting rid of it’: what Falklands oil plans mean for its seals, whales and penguins",
       "publisher": "The Guardian Business",
       "published_at": "2026-11-23T06:00:49Z",
       "historical": null,
-      "read_at": "2026-11-24T23:37:26Z",
+      "read_at": "2026-11-25T09:01:57Z",
       "body_sha256": "cfe8ebbd7e9c2adb467cf596dd84dfe037c71e919db4c92677355a8305bee562",
       "body_characters": 8799,
       "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "The Falkland Islands plan to develop oil reserves, threatening local wildlife and ecosystems.",
         "evidence_ids": [
@@ -60,44 +117,12 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.bbc.co.uk/news/videos/ckp80d5nl586o?at_medium=RSS&at_campaign=rss",
-      "title": "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-23T21:40:30Z",
-      "historical": null,
-      "status": "Unavailable: Insufficient public article text"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/23/social-media-us-politics-midterms",
-      "title": "Millennial Democrats used social media in the midterms to sell their policies – and their personalities",
-      "publisher": "The Guardian US Politics",
-      "published_at": "2026-11-23T14:00:48Z",
-      "historical": null,
-      "read_at": "2026-11-24T23:40:16Z",
-      "body_sha256": "717c1c74acfe4d0b410fd6cff04247329f789dddb1ce433050f91f2a67da7983",
-      "body_characters": 10205,
-      "model_context_characters": 4500,
-      "status": "Unavailable: AI chain contains no financial transmission mechanism"
-    },
-    {
-      "url": "https://www.theguardian.com/culture/2026/nov/24/jimmy-kimmel-jensen-huang-nvidia-trump",
-      "title": "Jimmy Kimmel on Jensen Huang’s return to Nvidia: ‘What a profoundly stupid time to be alive’",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-24T15:51:00Z",
-      "historical": null,
-      "read_at": "2026-11-24T23:45:39Z",
-      "body_sha256": "12353e36465c59ba20b17412877cf61a2f66e5e25867a7eb95d618a344181879",
-      "body_characters": 3806,
-      "model_context_characters": 3806,
-      "status": "Public body read; queued for AI"
-    },
-    {
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
       "title": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral",
       "publisher": "European Central Bank",
       "published_at": "2026-11-23T10:00:00Z",
       "historical": null,
-      "read_at": "2026-11-23T15:12:16Z",
+      "read_at": "2026-11-25T09:01:58Z",
       "body_sha256": "33be732f3bcbaa93f80c1c6c4733f8eb6971a6b0d0d9f6a26a877c6a216a67c1",
       "body_characters": 3210,
       "model_context_characters": 3210,
@@ -133,56 +158,51 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-      "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-20T21:38:17Z",
+      "url": "https://www.theguardian.com/culture/2026/nov/24/jimmy-kimmel-jensen-huang-nvidia-trump",
+      "title": "Jimmy Kimmel on Jensen Huang’s return to Nvidia: ‘What a profoundly stupid time to be alive’",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-24T15:51:00Z",
       "historical": null,
-      "read_at": "2026-11-24T14:08:37Z",
-      "body_sha256": "45b15af63dbb362c5c4c30a12e26a3442bfe8578a4a0cafc8a3fa3b915517ed4",
-      "body_characters": 4622,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The Nasdaq lost trillions in value as AI-related stocks, including Anthropic, experienced a sell-off, with the broader market entering correction territory.",
-        "evidence_ids": [
-          "E1",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: AI-related sell-off",
-          "financial_channel: If tech stocks are selling off, liquidity is being drained from the market",
-          "asset_hypothesis: If investors are questioning AI valuations, risk appetite is decreasing"
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If inflation fears persist, the dollar's strength may continue to push down gold prices."
-        },
-        "bitcoin": {
-          "direction": "down",
-          "condition": "If the broader market is correcting, alternative-hedge demand may shift away from Bitcoin."
-        },
-        "uncertainty": "If the sell-off is short-lived and tech stocks recover, the Nasdaq could regain its value."
-      },
-      "evidence": {
-        "E1": "Fears that US central bankers may raise interest rates to fight inflation",
-        "E7": "The Nasdaq lost trillions in value, with the AI startup’s IPO failing"
-      },
-      "analyzed_at": "2026-11-21T02:58:34Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+      "read_at": "2026-11-25T09:01:58Z",
+      "body_sha256": "12353e36465c59ba20b17412877cf61a2f66e5e25867a7eb95d618a344181879",
+      "body_characters": 3806,
+      "model_context_characters": 3806,
+      "status": "Unavailable: AI chain contains no financial transmission mechanism"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
-      "title": "Nvidia shares slide as Trump's role in Jensen Huang's comeback questioned by US politicians",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-24T17:04:20Z",
+      "url": "https://www.theguardian.com/music/2026/nov/25/tidal-streaming-service-bans-ai-generated-music",
+      "title": "Tidal bans 100% AI-generated music with plans to delete more than 27m tracks",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-25T02:12:22Z",
       "historical": null,
-      "read_at": "2026-11-24T23:45:39Z",
-      "body_sha256": "235f5c809e168036d8b5ae17b0f9fcd47377cad68c00ff1ddcfba6388792502b",
-      "body_characters": 3698,
-      "model_context_characters": 3698,
+      "read_at": "2026-11-25T09:06:02Z",
+      "body_sha256": "44a94ff944bedaaf129ba95eef414a7b422f5cc1ca2549b910838db82b9f6853",
+      "body_characters": 2835,
+      "model_context_characters": 2835,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+      "title": "US preparing to unveil new tariffs on global trading partners",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-25T00:38:01Z",
+      "historical": null,
+      "read_at": "2026-11-25T09:06:02Z",
+      "body_sha256": "0c2de5b8744c6e901c677f10cc73cbef10fe6330bb1e1a3e84f56d8eb07ca6d4",
+      "body_characters": 2248,
+      "model_context_characters": 2248,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/24/nvidia-stock-falls-jensen-huang",
+      "title": "Tech sell-off resumes as euphoria from Jensen Huang’s Nvidia return subsides",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-24T22:05:21Z",
+      "historical": null,
+      "read_at": "2026-11-25T09:06:02Z",
+      "body_sha256": "4e96821a46be0ba531c3f6c90f6343a7bb27dd00ec0facfa07ca423216cd2507",
+      "body_characters": 2338,
+      "model_context_characters": 2338,
       "status": "Public body read; queued for AI"
     },
     {
@@ -191,31 +211,11 @@
       "publisher": "The Guardian US Politics",
       "published_at": "2026-11-24T16:39:00Z",
       "historical": null,
-      "read_at": "2026-11-24T23:45:39Z",
+      "read_at": "2026-11-25T09:06:02Z",
       "body_sha256": "ddbc3758f45cc94a4321ceda371142e84bbf5461cf8d38b09ec9065e906a2094",
       "body_characters": 5775,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/technology/video/2026/nov/24/mamdani-questions-ai-economy-as-jensen-huang-returns-to-nvidia-video",
-      "title": "Mamdani questions AI economy as Jensen Huang returns to Nvidia – video",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-24T16:30:07Z",
-      "historical": null,
-      "read_at": "2026-11-24T23:45:39Z",
-      "body_sha256": "02b5baa7708bdb2e3869e846a79c6021a9d679d3fe7a67c44cc87ad248344348",
-      "body_characters": 582,
-      "model_context_characters": 582,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf",
-      "title": "Philip R. Lane: Climate change and monetary policy",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-23T14:30:00Z",
-      "historical": null,
-      "status": "Unavailable: No readable article container"
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-25T19:36:19Z",
-    "scan_started_at": "2026-11-25T19:31:26Z",
+    "checked_at": "2026-11-26T03:06:47Z",
+    "scan_started_at": "2026-11-26T03:00:26Z",
     "provider_requested": "local",
-    "article_reads": 7,
-    "ai_interpretations": 5,
-    "new_interpretations": 2,
+    "article_reads": 8,
+    "ai_interpretations": 2,
+    "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,6 +19,103 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.bbc.co.uk/news/videos/c3x29v11ed1xo?at_medium=RSS&at_campaign=rss",
+      "title": "What we know about Trump's Thanksgiving tariffs",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-25T19:38:05Z",
+      "historical": null,
+      "status": "Unavailable: Insufficient public article text"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
+      "title": "ECB and Sveriges Riksbank conclude agreement for Sweden to join T2",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-25T17:30:00Z",
+      "historical": null,
+      "read_at": "2026-11-26T03:00:29Z",
+      "body_sha256": "9ec7b3c11538fd00fcdc3ebcd5197841460188bcee22d901e72e6610fe6b80f1",
+      "body_characters": 2270,
+      "model_context_characters": 2270,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/25/consumer-prices-september-october-energy-inflation",
+      "title": "US inflation hits highest since May after prices climb 3.8% over the last year",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-25T15:46:15Z",
+      "historical": null,
+      "read_at": "2026-11-26T03:04:42Z",
+      "body_sha256": "2c2a0a3d224c06c2c6ff38004b6eb2c5e6ddca01d26337163eb1c58aedf88cab",
+      "body_characters": 2845,
+      "model_context_characters": 2845,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "US inflation hit the highest rate since May, rising 3.8% annually, before the Fed's crucial meeting.",
+        "evidence_ids": [
+          "E5",
+          "E7"
+        ],
+        "chain": [
+          "reported_event: Inflation rose to highest rate since May",
+          "financial_channel: If inflation remains high, it may lead to higher interest rates",
+          "asset_hypothesis: If higher interest rates persist, gold may be seen as a hedge against inflation"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation remains high, gold may be seen as a hedge against inflation"
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If higher interest rates persist, Bitcoin may face selling pressure but could also attract risk-seeking investors"
+        },
+        "uncertainty": "If energy prices continue to fall, the inflation rate may not remain at its current high level."
+      },
+      "evidence": {
+        "E5": "Rise occurs amid soaring energy prices, according to last inflation reading before",
+        "E7": "New data released on Wednesday had shown consumer prices rose an annualized"
+      },
+      "analyzed_at": "2026-11-26T03:06:44Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys",
+      "title": "New York bans AI toys, including those using internet to talk to children",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-25T15:29:21Z",
+      "historical": null,
+      "read_at": "2026-11-26T03:06:44Z",
+      "body_sha256": "b495facbabd39d61cccb0cef592fc1a8317476371501ed69ab2fc89f1da59a70",
+      "body_characters": 4191,
+      "model_context_characters": 4191,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/25/democrats-ai-regulation-plan",
+      "title": "Democrats must unite on AI regulation. Here’s our three-point plan | Nathan E Sanders and Bruce Schneier",
+      "publisher": "The Guardian US Politics",
+      "published_at": "2026-11-25T13:00:26Z",
+      "historical": null,
+      "read_at": "2026-11-26T03:06:44Z",
+      "body_sha256": "2b7d187aaa2757dbbad4be504652b928948b814c72cfcc3cc7a74b8bab9b2764",
+      "body_characters": 12565,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cq0md8g14zryo?at_medium=RSS&at_campaign=rss",
+      "title": "US stocks fall further as fears over AI intensify",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-25T17:48:09Z",
+      "historical": null,
+      "read_at": "2026-11-26T03:06:45Z",
+      "body_sha256": "3f2dfc91ffb5dcafccd84bd9a0e6bf9348858f621c33407096d59464fa9d5d94",
+      "body_characters": 2700,
+      "model_context_characters": 2700,
+      "status": "Public body read; queued for AI"
+    },
+    {
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf",
       "title": "Philip R. Lane: Climate change and monetary policy",
       "publisher": "European Central Bank",
@@ -27,184 +124,16 @@
       "status": "Unavailable: No readable article container"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
-      "title": "US preparing to unveil plan for new tariffs on global trading partners",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-25T00:38:01Z",
-      "historical": null,
-      "read_at": "2026-11-25T19:31:28Z",
-      "body_sha256": "84d8563dcf9aa766f13ed5943e44e277f5bcc88a99ce5f9ca5f7306d9d840227",
-      "body_characters": 3715,
-      "model_context_characters": 3715,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "The US announces new tariffs on global trading partners, including China and the EU, with rates up to 40%. Trump's signature policy continues despite midterm election results.",
-        "evidence_ids": [
-          "E3",
-          "E4"
-        ],
-        "chain": [
-          "reported_event: US announces new tariffs",
-          "financial_channel: If trade tensions increase, risk appetite may decrease",
-          "asset_hypothesis: If risk appetite decreases, gold may see an up direction"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If trade tensions increase, risk appetite may decrease, leading to a flight to safety"
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite decreases, Bitcoin may lose some appeal as a safe-haven, but liquidity concerns could also drive interest"
-        },
-        "uncertainty": "If the tariffs are effectively reduced due to caps, the impact on trade and risk appetite may be limited."
-      },
-      "evidence": {
-        "E3": "The US has announced a fresh raft of tariffs as President Donald",
-        "E4": "China is facing the highest rate of up to 40%, followed by"
-      },
-      "analyzed_at": "2026-11-25T19:34:10Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/technology/video/2026/nov/24/mamdani-questions-ai-economy-as-jensen-huang-returns-to-nvidia-video",
-      "title": "Mamdani questions AI economy as Jensen Huang returns to Nvidia – video",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-24T16:30:07Z",
-      "historical": null,
-      "read_at": "2026-11-25T19:30:48Z",
-      "body_sha256": "02b5baa7708bdb2e3869e846a79c6021a9d679d3fe7a67c44cc87ad248344348",
-      "body_characters": 582,
-      "model_context_characters": 582,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "New York City mayor Zohran Mamdani criticizes Nvidia's stock market dependence on AI due to CEO's personal scandal.",
-        "evidence_ids": [
-          "E1",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: CEO scandal impacts stock price",
-          "financial_channel: If real yields rise, risk appetite falls, affecting tech stocks",
-          "asset_hypothesis: If AI investment slows, tech stocks like Nvidia may decline"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation expectations rise, gold may be seen as a hedge against uncertainty."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If Bitcoin is seen as a safe-haven, it may rise; otherwise, it could follow tech stocks' decline."
-        },
-        "uncertainty": "If the AI market remains strong, Mamdani's concerns may be unfounded, and tech stocks could recover."
-      },
-      "evidence": {
-        "E1": "New York City mayor Zohran Mamdani weighed in on the corporate turbulence",
-        "E3": "Mamdani says Nvidia drama shows stock market is overly dependent on AI"
-      },
-      "analyzed_at": "2026-11-25T09:01:56Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/global-development/2026/nov/23/falkland-islands-argentina-sea-lion-oil-environment-sovereignty-wildlife-pollution",
-      "title": "‘Once installed, there’s no getting rid of it’: what Falklands oil plans mean for its seals, whales and penguins",
+      "url": "https://www.theguardian.com/us-news/2026/nov/25/trump-new-china-tariffs-europe",
+      "title": "Trump proposing new tariffs on 14 partners including China and EU",
       "publisher": "The Guardian Business",
-      "published_at": "2026-11-23T06:00:49Z",
+      "published_at": "2026-11-25T14:59:44Z",
       "historical": null,
-      "read_at": "2026-11-25T19:30:48Z",
-      "body_sha256": "cfe8ebbd7e9c2adb467cf596dd84dfe037c71e919db4c92677355a8305bee562",
-      "body_characters": 8799,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The Falkland Islands plan to develop oil reserves, threatening local wildlife and ecosystems.",
-        "evidence_ids": [
-          "E2",
-          "E7"
-        ],
-        "chain": [
-          "reported_event: Falkland Islands plan oil development",
-          "financial_channel: If oil supply increases, risk appetite may decrease",
-          "asset_hypothesis: If risk appetite decreases, gold may up"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If risk appetite decreases due to environmental concerns, investors may seek gold as a safe haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite decreases, Bitcoin may underperform as a risk asset; however, if liquidity demands shift, it could see gains."
-        },
-        "uncertainty": "If the project proceeds without major accidents, the environmental impact may be mitigated."
-      },
-      "evidence": {
-        "E2": "Operated by Navitas Petroleum, with Rockhopper Exploration, the project plans 23 wells",
-        "E7": "The archipelago, a British overseas territory claimed by Argentina , is home"
-      },
-      "analyzed_at": "2026-11-24T23:40:16Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
-      "title": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-23T10:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-25T19:30:49Z",
-      "body_sha256": "33be732f3bcbaa93f80c1c6c4733f8eb6971a6b0d0d9f6a26a877c6a216a67c1",
-      "body_characters": 3210,
-      "model_context_characters": 3210,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The ECB has expanded the acceptance of DLT-based assets as Eurosystem collateral.",
-        "evidence_ids": [
-          "E1",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: ECB expands acceptance of DLT-based assets",
-          "financial_channel: If DLT adoption increases, liquidity improves",
-          "asset_hypothesis: If DLT assets become more accepted, risk appetite increases"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If DLT adoption increases, gold may be seen as a safer haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If DLT adoption increases, Bitcoin may face competition as an alternative hedge."
-        },
-        "uncertainty": "If traditional financial systems remain dominant, DLT assets may not significantly impact gold or Bitcoin."
-      },
-      "evidence": {
-        "E1": "The Governing Council of the European Central Bank (ECB) has approved the",
-        "E3": "This is a new milestone in the roadmap towards making the Eurosystem"
-      },
-      "analyzed_at": "2026-11-23T15:14:35Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/videos/ckp80d5nl586o?at_medium=RSS&at_campaign=rss",
-      "title": "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-23T21:40:30Z",
-      "historical": null,
-      "status": "Unavailable: Insufficient public article text"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/videos/c6x29vne7lnko?at_medium=RSS&at_campaign=rss",
-      "title": "Interest rate affect on Guernsey's housing market",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-25T09:56:33Z",
-      "historical": null,
-      "status": "Unavailable: Insufficient public article text"
+      "read_at": "2026-11-26T03:06:47Z",
+      "body_sha256": "8cf5ebf19d566249a0e9fdd2d64c4e437c68126a5024e2fc41d64cc62d3116f7",
+      "body_characters": 3176,
+      "model_context_characters": 3176,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.theguardian.com/music/2026/nov/25/tidal-streaming-service-bans-ai-generated-music",
@@ -212,7 +141,7 @@
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-25T02:12:22Z",
       "historical": null,
-      "read_at": "2026-11-25T19:34:11Z",
+      "read_at": "2026-11-26T02:59:21Z",
       "body_sha256": "44a94ff944bedaaf129ba95eef414a7b422f5cc1ca2549b910838db82b9f6853",
       "body_characters": 2835,
       "model_context_characters": 2835,
@@ -248,24 +177,12 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.theguardian.com/business/2026/nov/24/nvidia-stock-falls-jensen-huang",
-      "title": "Tech sell-off resumes as euphoria from Jensen Huang’s Nvidia return subsides",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-24T22:05:21Z",
-      "historical": null,
-      "read_at": "2026-11-25T19:36:19Z",
-      "body_sha256": "cd2200a123eb59c74d89c56a433c1055c4f9aaa1277d5a9378d14f85c1b7cd61",
-      "body_characters": 2344,
-      "model_context_characters": 2344,
-      "status": "Public body read; queued for AI"
-    },
-    {
       "url": "https://www.theguardian.com/commentisfree/2026/nov/24/jensen-huang-nvidia-return",
       "title": "Jensen Huang’s return to Nvidia is elite impunity | Moira Donegan",
       "publisher": "The Guardian US Politics",
       "published_at": "2026-11-24T16:39:00Z",
       "historical": null,
-      "read_at": "2026-11-25T19:36:19Z",
+      "read_at": "2026-11-26T03:06:47Z",
       "body_sha256": "0209e0b39af8e0d777bbf2da34e9407b2772c352ef2d06eb64b24db06203ce0d",
       "body_characters": 5775,
       "model_context_characters": 4500,

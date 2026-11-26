@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-26T12:50:46Z",
-    "record_count": 127,
+    "updated_at": "2026-11-26T21:59:01Z",
+    "record_count": 129,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -3690,6 +3690,64 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "780ac7467ae62448e9e889b5f0ed536b96e92f42f20425a0ecc3c843c15a8c7a"
+    },
+    {
+      "id": "534b4c275de7c2b0ebf7849b",
+      "first_observed_at": "2026-11-26T21:59:01Z",
+      "snapshot": {
+        "title": "Faisal Islam: Why Trump's new tariffs are less of a threat",
+        "url": "https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-26T19:55:58Z",
+        "categories": [
+          "trade"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "3dd28088d5cd9fa6c2ddfd743c9cf5ec4b68eb099ba50df689f0464ff2d9c3bc",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "6e26805e2660389ab10cc39936d97843ce860a873c8fb9e2dc21861d39c1e2cc"
+    },
+    {
+      "id": "643a903adec640835c835c24",
+      "first_observed_at": "2026-11-26T21:59:01Z",
+      "snapshot": {
+        "title": "China reserves right to take ‘necessary measures’ after Trump’s new tariff proposals",
+        "url": "https://www.theguardian.com/us-news/2026/nov/26/brazil-china-react-to-new-trump-tariffs-threat",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-26T12:00:22Z",
+        "categories": [
+          "trade"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Proposal or possibility reported; not enacted law",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "3dd28088d5cd9fa6c2ddfd743c9cf5ec4b68eb099ba50df689f0464ff2d9c3bc",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "6345222e8a0b358088c9749b71f07178b13e645af3e3a81caaefa50f12293874"
     }
   ]
 }

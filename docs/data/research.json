@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-26T12:50:41Z",
+    "checked_at": "2026-11-26T21:58:56Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-11-26T12:50:41Z",
+    "checked_at": "2026-11-26T21:58:56Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -122,6 +122,56 @@
     "outlook": "If growth keeps slowing while inflation rises, watch for a policy trade-off. If inflation eases without worsening credit or employment, a softer adjustment is more plausible. These are conditional scenarios, not probability forecasts."
   },
   "news": [
+    {
+      "title": "Faisal Islam: Why Trump's new tariffs are less of a threat",
+      "url": "https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-11-26T19:55:58Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "trade"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Faisal Islam: Why Trump's new tariffs are less of a threat",
+          "url": "https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-11-26T19:55:58Z"
+        }
+      ]
+    },
+    {
+      "title": "China reserves right to take ‘necessary measures’ after Trump’s new tariff proposals",
+      "url": "https://www.theguardian.com/us-news/2026/nov/26/brazil-china-react-to-new-trump-tariffs-threat",
+      "published_at": "2026-11-26T12:00:22Z",
+      "source_id": "guardian",
+      "publisher": "The Guardian Business",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "trade"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "China reserves right to take ‘necessary measures’ after Trump’s new tariff proposals",
+          "url": "https://www.theguardian.com/us-news/2026/nov/26/brazil-china-react-to-new-trump-tariffs-threat",
+          "publisher": "The Guardian Business",
+          "published_at": "2026-11-26T12:00:22Z"
+        }
+      ]
+    },
     {
       "title": "A vocal cohort of tech leaders celebrates Huang’s Nvidia return, but others are keeping quiet",
       "url": "https://www.theguardian.com/technology/2026/nov/26/jensen-huang-nvidia-tech",
@@ -397,31 +447,6 @@
       ]
     },
     {
-      "title": "Trump proposing new tariffs on 14 partners including China and EU",
-      "url": "https://www.theguardian.com/us-news/2026/nov/25/trump-new-china-tariffs-europe",
-      "published_at": "2026-11-25T14:59:44Z",
-      "source_id": "guardian",
-      "publisher": "The Guardian Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "trade"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Trump proposing new tariffs on 14 partners including China and EU",
-          "url": "https://www.theguardian.com/us-news/2026/nov/25/trump-new-china-tariffs-europe",
-          "publisher": "The Guardian Business",
-          "published_at": "2026-11-25T14:59:44Z"
-        }
-      ]
-    },
-    {
       "title": "Democrats must unite on AI regulation. Here’s our three-point plan | Nathan E Sanders and Bruce Schneier",
       "url": "https://www.theguardian.com/commentisfree/2026/nov/25/democrats-ai-regulation-plan",
       "published_at": "2026-11-25T13:00:26Z",
@@ -473,6 +498,31 @@
       ]
     },
     {
+      "title": "Tidal bans 100% AI-generated music with plans to delete more than 27m tracks",
+      "url": "https://www.theguardian.com/music/2026/nov/25/tidal-streaming-service-bans-ai-generated-music",
+      "published_at": "2026-11-25T02:12:22Z",
+      "source_id": "guardian_technology",
+      "publisher": "The Guardian Technology",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "ai_regulation"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Tidal bans 100% AI-generated music with plans to delete more than 27m tracks",
+          "url": "https://www.theguardian.com/music/2026/nov/25/tidal-streaming-service-bans-ai-generated-music",
+          "publisher": "The Guardian Technology",
+          "published_at": "2026-11-25T02:12:22Z"
+        }
+      ]
+    },
+    {
       "title": "Tech sell-off resumes as euphoria from Jensen Huang’s Nvidia return subsides",
       "url": "https://www.theguardian.com/business/2026/nov/24/nvidia-stock-falls-jensen-huang",
       "published_at": "2026-11-24T22:05:21Z",
@@ -519,31 +569,6 @@
           "url": "https://www.theguardian.com/commentisfree/2026/nov/24/jensen-huang-nvidia-return",
           "publisher": "The Guardian US Politics",
           "published_at": "2026-11-24T16:39:00Z"
-        }
-      ]
-    },
-    {
-      "title": "Jimmy Kimmel on Jensen Huang’s return to Nvidia: ‘What a profoundly stupid time to be alive’",
-      "url": "https://www.theguardian.com/culture/2026/nov/24/jimmy-kimmel-jensen-huang-nvidia-trump",
-      "published_at": "2026-11-24T15:51:00Z",
-      "source_id": "guardian_us_policy",
-      "publisher": "The Guardian US Politics",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "ai_economics"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Jimmy Kimmel on Jensen Huang’s return to Nvidia: ‘What a profoundly stupid time to be alive’",
-          "url": "https://www.theguardian.com/culture/2026/nov/24/jimmy-kimmel-jensen-huang-nvidia-trump",
-          "publisher": "The Guardian US Politics",
-          "published_at": "2026-11-24T15:51:00Z"
         }
       ]
     },
@@ -767,31 +792,6 @@
           "published_at": "2026-11-16T13:00:00Z"
         }
       ]
-    },
-    {
-      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
-      "published_at": "2026-11-12T17:45:00Z",
-      "source_id": "fed",
-      "publisher": "Federal Reserve",
-      "source_kind": "Primary institutional release",
-      "topics": [
-        "policy"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
-          "publisher": "Federal Reserve",
-          "published_at": "2026-11-12T17:45:00Z"
-        }
-      ]
     }
   ],
   "feed_health": [
@@ -799,47 +799,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-26T12:50:41Z",
+      "checked_at": "2026-11-26T21:58:56Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-26T12:50:41Z",
-      "matched": 1
+      "last_success": "2026-11-26T21:58:56Z",
+      "matched": 0
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-26T12:50:41Z",
+      "checked_at": "2026-11-26T21:58:56Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-26T12:50:41Z",
+      "last_success": "2026-11-26T21:58:56Z",
       "matched": 6
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-26T12:50:41Z",
+      "checked_at": "2026-11-26T21:58:56Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-26T12:50:41Z",
-      "matched": 7
+      "last_success": "2026-11-26T21:58:56Z",
+      "matched": 8
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-26T12:50:41Z",
+      "checked_at": "2026-11-26T21:58:56Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-26T12:50:41Z",
+      "last_success": "2026-11-26T21:58:56Z",
       "matched": 6
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-26T12:50:41Z",
+      "checked_at": "2026-11-26T21:58:56Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -849,40 +849,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-26T12:50:41Z",
+      "checked_at": "2026-11-26T21:58:56Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-26T12:50:41Z",
+      "last_success": "2026-11-26T21:58:56Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-26T12:50:41Z",
+      "checked_at": "2026-11-26T21:58:56Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-26T12:50:41Z",
-      "matched": 2
+      "last_success": "2026-11-26T21:58:56Z",
+      "matched": 3
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-26T12:50:41Z",
+      "checked_at": "2026-11-26T21:58:56Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-26T12:50:41Z",
-      "matched": 3
+      "last_success": "2026-11-26T21:58:56Z",
+      "matched": 2
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-26T12:50:41Z",
+      "checked_at": "2026-11-26T21:58:56Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-26T12:50:41Z",
+      "last_success": "2026-11-26T21:58:56Z",
       "matched": 2
     }
   ],

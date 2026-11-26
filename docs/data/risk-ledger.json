@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-26T03:13:42Z",
-    "record_count": 125,
+    "updated_at": "2026-11-26T12:50:46Z",
+    "record_count": 127,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -3633,6 +3633,63 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "df83962a968aef7e082d926eca372f5bf3fc2562f3f99d352a50bf7e782e1d96"
+    },
+    {
+      "id": "843923e6ed52bc59e2b173d7",
+      "first_observed_at": "2026-11-26T12:50:46Z",
+      "snapshot": {
+        "title": "A vocal cohort of tech leaders celebrates Huang’s Nvidia return, but others are keeping quiet",
+        "url": "https://www.theguardian.com/technology/2026/nov/26/jensen-huang-nvidia-tech",
+        "publisher": "The Guardian Technology",
+        "published_at": "2026-11-26T10:00:52Z",
+        "categories": [
+          "ai_economics"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "7c1905c3830165fb97e09797be7f85ed2a7e66500de85b12c894400124b846c0"
+    },
+    {
+      "id": "bf0cd8a1652192fb78f52dc4",
+      "first_observed_at": "2026-11-26T12:50:46Z",
+      "snapshot": {
+        "title": "US announces new tariffs on host of countries including China",
+        "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+        "publisher": "BBC Business",
+        "published_at": "2026-11-26T04:10:58Z",
+        "categories": [
+          "trade"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "3dd28088d5cd9fa6c2ddfd743c9cf5ec4b68eb099ba50df689f0464ff2d9c3bc",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "780ac7467ae62448e9e889b5f0ed536b96e92f42f20425a0ecc3c843c15a8c7a"
     }
   ]
 }

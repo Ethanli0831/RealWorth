@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-25T20:41:50Z",
-    "source_checked_at": "2026-11-25T20:41:44Z",
+    "built_at": "2026-11-26T03:13:42Z",
+    "source_checked_at": "2026-11-26T03:13:36Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -10,9 +10,62 @@
     "disclosure": "Risk chains are transparent scenarios, not verified causal effects, probability forecasts or AI price targets. No warnings are backdated.",
     "feeds_fetched": 8,
     "feeds_total": 9,
-    "ledger_records": 121
+    "ledger_records": 125
   },
   "events": [
+    {
+      "title": "US announces new tariffs on host of countries including China",
+      "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-26T03:01:40Z",
+      "categories": [
+        "trade"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "3dd28088d5cd9fa6c2ddfd743c9cf5ec4b68eb099ba50df689f0464ff2d9c3bc",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "305c47a4d3cfd378b784247d",
+      "first_observed_at": "2026-11-26T03:13:42Z",
+      "digest": "0fe7eb34cff05ca487c61702f8c5bcdb9a9fe8a1253b3d6392d2c5b75fcee9d6"
+    },
+    {
+      "title": "US stocks fall further as fears over AI intensify",
+      "url": "https://www.bbc.co.uk/news/articles/cq0md8g14zryo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-25T21:43:18Z",
+      "categories": [
+        "ai_economics"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "abe9195d624d20cae2f5314e",
+      "first_observed_at": "2026-11-26T03:13:42Z",
+      "digest": "39b711dc517871e27310748a11bb95f048e251116bcf53579aa5dbf0bb399d20"
+    },
     {
       "title": "What we know about Trump's Thanksgiving tariffs",
       "url": "https://www.bbc.co.uk/news/videos/c3x29v11ed1xo?at_medium=RSS&at_campaign=rss",
@@ -41,32 +94,6 @@
       "digest": "982bb19a3b4fb8855a3fce3fc651b2612f5643190438875bf47ed9b0f85cf845"
     },
     {
-      "title": "US stocks fall further as fears over AI intensify",
-      "url": "https://www.bbc.co.uk/news/articles/cq0md8g14zryo?at_medium=RSS&at_campaign=rss",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-25T17:48:09Z",
-      "categories": [
-        "ai_economics"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "6554031735972533fc642b9a",
-      "first_observed_at": "2026-11-25T20:41:50Z",
-      "digest": "6d086185309e6d1e3bda284c2b473f5bece50c0e7bba0efbf59698276d353957"
-    },
-    {
       "title": "Trump's accounts traded Nvidia shares 44 times this year, records show",
       "url": "https://www.bbc.co.uk/news/articles/cq772vk664yvo?at_medium=RSS&at_campaign=rss",
       "publisher": "BBC Business",
@@ -91,33 +118,6 @@
       "id": "e8824b8085793fca86008b0a",
       "first_observed_at": "2026-11-25T20:41:50Z",
       "digest": "3d324005992a6c8750137e8f8c378ead4abdaee07b12a356675eaa44cdac2216"
-    },
-    {
-      "title": "US announces new tariffs on host of countries including China",
-      "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-25T16:21:34Z",
-      "categories": [
-        "trade"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "GLD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "3dd28088d5cd9fa6c2ddfd743c9cf5ec4b68eb099ba50df689f0464ff2d9c3bc",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "db068fcfbe93bec23c9f34fa",
-      "first_observed_at": "2026-11-25T20:41:50Z",
-      "digest": "4da58ab1bf902de3f2f0777b377e24f813e7f3b280dd982a4d0568dcb95971e3"
     },
     {
       "title": "New York bans AI toys, including those using internet to talk to children",
@@ -333,7 +333,7 @@
     {
       "title": "Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns",
       "url": "https://www.bbc.co.uk/news/articles/cq62pn6j42jko?at_medium=RSS&at_campaign=rss",
-      "publisher": "BBC Business",
+      "publisher": "BBC Technology",
       "published_at": "2026-11-23T21:23:42Z",
       "categories": [
         "ai_economics"
@@ -352,9 +352,9 @@
       "framework_version": "event-risk-v1",
       "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
       "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "1f96d6c874ca95a8786ac0c3",
-      "first_observed_at": "2026-11-23T22:44:04Z",
-      "digest": "a477b18ae4f76985b5702d39bd20216d882a1daf51ef94ba4a6028b92552ad0f"
+      "id": "7ea8d77c9baa00e52cc2c226",
+      "first_observed_at": "2026-11-26T03:13:42Z",
+      "digest": "df83962a968aef7e082d926eca372f5bf3fc2562f3f99d352a50bf7e782e1d96"
     },
     {
       "title": "AI demand will push up interest rates around the world, IMF head warns",
@@ -440,6 +440,34 @@
       "id": "2100a0292cd9b883191420e5",
       "first_observed_at": "2026-11-07T18:08:17Z",
       "digest": "479566df9a598e96ffb6d33a3fbe0615df7107cfdb112f53aa6a8b7530b121f0"
+    },
+    {
+      "title": "UK food inflation could hit 5% next year, Bank of England says",
+      "url": "https://www.theguardian.com/business/2026/nov/25/uk-food-inflation-sharp-rise-next-year-mounting-cost-pressures-bank-of-england",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-25T19:25:57Z",
+      "categories": [
+        "rates"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Proposal or possibility reported; not enacted law",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "bbb9f45b1be6f5c1a0cc8b24",
+      "first_observed_at": "2026-11-26T03:13:42Z",
+      "digest": "cead89556204b889b09461a39901199cc88a4ec59940c2e88054586cbd03f49c"
     },
     {
       "title": "ECB and Sveriges Riksbank conclude agreement for Sweden to join T2",
@@ -811,7 +839,7 @@
         "Check real yields, dollar funding and the policy response.",
         "Separate a growth shock from an inflation shock."
       ],
-      "event_count": 9,
+      "event_count": 10,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -1138,8 +1166,8 @@
       "id": "fomc",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "Fetched official schedule",
-      "last_success": "2026-11-25T20:41:50Z",
-      "attempted_at": "2026-11-25T20:41:50Z",
+      "last_success": "2026-11-26T03:13:42Z",
+      "attempted_at": "2026-11-26T03:13:42Z",
       "events": [
         {
           "title": "Scheduled FOMC meeting final day",
@@ -1429,7 +1457,7 @@
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-25T20:41:50Z",
+      "attempted_at": "2026-11-26T03:13:42Z",
       "events": [],
       "stale": true,
       "error": "HTTPError",
@@ -1441,47 +1469,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-25T20:41:44Z",
+      "checked_at": "2026-11-26T03:13:36Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T20:41:44Z",
+      "last_success": "2026-11-26T03:13:36Z",
       "matched": 1
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-25T20:41:44Z",
+      "checked_at": "2026-11-26T03:13:36Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T20:41:44Z",
+      "last_success": "2026-11-26T03:13:36Z",
       "matched": 6
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-25T20:41:44Z",
+      "checked_at": "2026-11-26T03:13:36Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T20:41:44Z",
-      "matched": 10
+      "last_success": "2026-11-26T03:13:36Z",
+      "matched": 8
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-25T20:41:44Z",
+      "checked_at": "2026-11-26T03:13:36Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T20:41:44Z",
+      "last_success": "2026-11-26T03:13:36Z",
       "matched": 6
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-25T20:41:44Z",
+      "checked_at": "2026-11-26T03:13:36Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1491,40 +1519,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-25T20:41:44Z",
+      "checked_at": "2026-11-26T03:13:36Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T20:41:44Z",
+      "last_success": "2026-11-26T03:13:36Z",
       "matched": 0
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-25T20:41:44Z",
+      "checked_at": "2026-11-26T03:13:36Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T20:41:44Z",
+      "last_success": "2026-11-26T03:13:36Z",
       "matched": 3
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-25T20:41:44Z",
+      "checked_at": "2026-11-26T03:13:36Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T20:41:44Z",
-      "matched": 4
+      "last_success": "2026-11-26T03:13:36Z",
+      "matched": 3
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-25T20:41:44Z",
+      "checked_at": "2026-11-26T03:13:36Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-25T20:41:44Z",
+      "last_success": "2026-11-26T03:13:36Z",
       "matched": 2
     }
   ],

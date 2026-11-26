@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-26T03:06:47Z",
-    "scan_started_at": "2026-11-26T03:00:26Z",
+    "checked_at": "2026-11-26T13:06:23Z",
+    "scan_started_at": "2026-11-26T13:01:33Z",
     "provider_requested": "local",
-    "article_reads": 8,
-    "ai_interpretations": 2,
-    "new_interpretations": 1,
+    "article_reads": 9,
+    "ai_interpretations": 3,
+    "new_interpretations": 2,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,12 +19,98 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.bbc.co.uk/news/videos/c3x29v11ed1xo?at_medium=RSS&at_campaign=rss",
-      "title": "What we know about Trump's Thanksgiving tariffs",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-25T19:38:05Z",
+      "url": "https://www.theguardian.com/technology/2026/nov/26/jensen-huang-nvidia-tech",
+      "title": "A vocal cohort of tech leaders celebrates Huang’s Nvidia return, but others are keeping quiet",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-26T10:00:52Z",
       "historical": null,
-      "status": "Unavailable: Insufficient public article text"
+      "read_at": "2026-11-26T13:01:34Z",
+      "body_sha256": "c160b5832c94a6958b395e982e5eec1ab0c6930ac829c2aa813b9eb7462ac2a2",
+      "body_characters": 5308,
+      "model_context_characters": 4500,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Nvidia's board unanimously voted to reinstate CEO Jensen Huang, reversing his ouster due to extramarital affairs.",
+        "evidence_ids": [
+          "E5",
+          "E6"
+        ],
+        "chain": [
+          "reported_event: Nvidia's board voted to reinstate Jensen Huang",
+          "financial_channel: If tech leaders' support increases Nvidia's stock, it could affect gold and Bitcoin demand.",
+          "asset_hypothesis: If tech leaders' support increases Nvidia's stock, it could affect gold and Bitcoin demand."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If tech leaders' support increases Nvidia's stock, it could attract risk-seeking investors away from gold."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If tech leaders' support increases Nvidia's stock, it could attract risk-seeking investors away from Bitcoin, but also increase liquidity."
+        },
+        "uncertainty": "If Nvidia's stock does not rebound, tech leaders' support may not significantly impact gold or Bitcoin."
+      },
+      "evidence": {
+        "E5": "T he phrase “return of the king” rippled across social media on",
+        "E6": "A vocal subsection of the tech industry was celebrating the resurrection of"
+      },
+      "analyzed_at": "2026-11-26T13:04:16Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+      "title": "US announces new tariffs on host of countries including China",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-26T04:10:58Z",
+      "historical": null,
+      "read_at": "2026-11-26T13:04:16Z",
+      "body_sha256": "098c8354768df5d6605292008c71fd2a4a158abbc1b4e51ed61c46dbb7076efd",
+      "body_characters": 6880,
+      "model_context_characters": 4500,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "US announces new tariffs on China, EU, and other countries, with rates up to 40%. ",
+        "evidence_ids": [
+          "E3",
+          "E4"
+        ],
+        "chain": [
+          "reported_event: US announces new tariffs",
+          "financial_channel: If trade tensions increase, risk appetite may decrease",
+          "asset_hypothesis: If risk appetite decreases, gold may see an up direction"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If trade tensions increase, risk appetite may decrease, leading to a flight to safety"
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite decreases, Bitcoin may also see some inflows, but liquidity and alternative-hedge channels may divert some interest"
+        },
+        "uncertainty": "If the tariffs are effectively reduced due to caps, the impact on gold and Bitcoin may be limited."
+      },
+      "evidence": {
+        "E3": "The US has announced a fresh raft of tariffs as President Donald",
+        "E4": "China is facing the highest tariff rate of up to 40%, followed"
+      },
+      "analyzed_at": "2026-11-26T13:06:20Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/25/uk-food-inflation-sharp-rise-next-year-mounting-cost-pressures-bank-of-england",
+      "title": "UK food inflation could hit 5% next year, Bank of England says",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-25T19:25:57Z",
+      "historical": null,
+      "read_at": "2026-11-26T13:06:20Z",
+      "body_sha256": "23756bd95f03e9892dd30204f6dbd3d0c914980e941d23a4007b69a89b70b307",
+      "body_characters": 3938,
+      "model_context_characters": 3938,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
@@ -32,11 +118,59 @@
       "publisher": "European Central Bank",
       "published_at": "2026-11-25T17:30:00Z",
       "historical": null,
-      "read_at": "2026-11-26T03:00:29Z",
+      "read_at": "2026-11-26T13:06:22Z",
       "body_sha256": "9ec7b3c11538fd00fcdc3ebcd5197841460188bcee22d901e72e6610fe6b80f1",
       "body_characters": 2270,
       "model_context_characters": 2270,
-      "status": "Unavailable: AI reported event does not match the article topic"
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/25/democrats-ai-regulation-plan",
+      "title": "Democrats must unite on AI regulation. Here’s our three-point plan | Nathan E Sanders and Bruce Schneier",
+      "publisher": "The Guardian US Politics",
+      "published_at": "2026-11-25T13:00:26Z",
+      "historical": null,
+      "read_at": "2026-11-26T13:06:22Z",
+      "body_sha256": "2b7d187aaa2757dbbad4be504652b928948b814c72cfcc3cc7a74b8bab9b2764",
+      "body_characters": 12565,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cq62pn6j42jko?at_medium=RSS&at_campaign=rss",
+      "title": "Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns",
+      "publisher": "BBC Technology",
+      "published_at": "2026-11-23T21:23:42Z",
+      "historical": null,
+      "read_at": "2026-11-26T13:06:22Z",
+      "body_sha256": "721dabcacc6004859318fa65d3b7a89176ab52da717429ae7709dfe2c117f874",
+      "body_characters": 3788,
+      "model_context_characters": 3788,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys",
+      "title": "New York bans AI toys, including those using internet to talk to children",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-25T15:29:21Z",
+      "historical": null,
+      "read_at": "2026-11-26T13:06:22Z",
+      "body_sha256": "b495facbabd39d61cccb0cef592fc1a8317476371501ed69ab2fc89f1da59a70",
+      "body_characters": 4191,
+      "model_context_characters": 4191,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cq0md8g14zryo?at_medium=RSS&at_campaign=rss",
+      "title": "US stocks fall further as fears over AI intensify",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-25T21:43:18Z",
+      "historical": null,
+      "read_at": "2026-11-26T13:06:22Z",
+      "body_sha256": "3f2dfc91ffb5dcafccd84bd9a0e6bf9348858f621c33407096d59464fa9d5d94",
+      "body_characters": 2700,
+      "model_context_characters": 2700,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.theguardian.com/business/2026/nov/25/consumer-prices-september-october-energy-inflation",
@@ -48,7 +182,7 @@
       "body_sha256": "2c2a0a3d224c06c2c6ff38004b6eb2c5e6ddca01d26337163eb1c58aedf88cab",
       "body_characters": 2845,
       "model_context_characters": 2845,
-      "status": "AI interpretation generated · not independently verified",
+      "status": "Cached AI interpretation; awaiting re-read",
       "analysis": {
         "summary": "US inflation hit the highest rate since May, rising 3.8% annually, before the Fed's crucial meeting.",
         "evidence_ids": [
@@ -80,113 +214,12 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys",
-      "title": "New York bans AI toys, including those using internet to talk to children",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-25T15:29:21Z",
-      "historical": null,
-      "read_at": "2026-11-26T03:06:44Z",
-      "body_sha256": "b495facbabd39d61cccb0cef592fc1a8317476371501ed69ab2fc89f1da59a70",
-      "body_characters": 4191,
-      "model_context_characters": 4191,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/commentisfree/2026/nov/25/democrats-ai-regulation-plan",
-      "title": "Democrats must unite on AI regulation. Here’s our three-point plan | Nathan E Sanders and Bruce Schneier",
-      "publisher": "The Guardian US Politics",
-      "published_at": "2026-11-25T13:00:26Z",
-      "historical": null,
-      "read_at": "2026-11-26T03:06:44Z",
-      "body_sha256": "2b7d187aaa2757dbbad4be504652b928948b814c72cfcc3cc7a74b8bab9b2764",
-      "body_characters": 12565,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cq0md8g14zryo?at_medium=RSS&at_campaign=rss",
-      "title": "US stocks fall further as fears over AI intensify",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-25T17:48:09Z",
-      "historical": null,
-      "read_at": "2026-11-26T03:06:45Z",
-      "body_sha256": "3f2dfc91ffb5dcafccd84bd9a0e6bf9348858f621c33407096d59464fa9d5d94",
-      "body_characters": 2700,
-      "model_context_characters": 2700,
-      "status": "Public body read; queued for AI"
-    },
-    {
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf",
       "title": "Philip R. Lane: Climate change and monetary policy",
       "publisher": "European Central Bank",
       "published_at": "2026-11-23T14:30:00Z",
       "historical": null,
       "status": "Unavailable: No readable article container"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/25/trump-new-china-tariffs-europe",
-      "title": "Trump proposing new tariffs on 14 partners including China and EU",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-25T14:59:44Z",
-      "historical": null,
-      "read_at": "2026-11-26T03:06:47Z",
-      "body_sha256": "8cf5ebf19d566249a0e9fdd2d64c4e437c68126a5024e2fc41d64cc62d3116f7",
-      "body_characters": 3176,
-      "model_context_characters": 3176,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.theguardian.com/music/2026/nov/25/tidal-streaming-service-bans-ai-generated-music",
-      "title": "Tidal bans 100% AI-generated music with plans to delete more than 27m tracks",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-25T02:12:22Z",
-      "historical": null,
-      "read_at": "2026-11-26T02:59:21Z",
-      "body_sha256": "44a94ff944bedaaf129ba95eef414a7b422f5cc1ca2549b910838db82b9f6853",
-      "body_characters": 2835,
-      "model_context_characters": 2835,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "Tidal bans 100% AI-generated music and plans to remove 27m tracks, citing issues with streams and royalties.",
-        "evidence_ids": [
-          "E2",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: Tidal bans AI-generated music",
-          "financial_channel: If supply of non-AI music increases, liquidity improves",
-          "asset_hypothesis: If demand for original music rises, prices may increase"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If global economic uncertainty increases, gold is seen as a safe-haven"
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite shifts, Bitcoin may be seen as a hedge; if liquidity improves, it may be affected negatively"
-        },
-        "uncertainty": "If AI-generated music becomes more popular elsewhere, Tidal's ban may not significantly impact overall market trends."
-      },
-      "evidence": {
-        "E2": "The music streaming service Tidal has announced it will ban entirely AI-generated",
-        "E6": "In the past 90 days, 43% of tracks distributed on the platform"
-      },
-      "analyzed_at": "2026-11-25T19:36:19Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/commentisfree/2026/nov/24/jensen-huang-nvidia-return",
-      "title": "Jensen Huang’s return to Nvidia is elite impunity | Moira Donegan",
-      "publisher": "The Guardian US Politics",
-      "published_at": "2026-11-24T16:39:00Z",
-      "historical": null,
-      "read_at": "2026-11-26T03:06:47Z",
-      "body_sha256": "0209e0b39af8e0d777bbf2da34e9407b2772c352ef2d06eb64b24db06203ce0d",
-      "body_characters": 5775,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-27T04:06:22Z",
-    "source_checked_at": "2026-11-27T04:06:15Z",
+    "built_at": "2026-11-27T13:46:31Z",
+    "source_checked_at": "2026-11-27T13:46:26Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -10,9 +10,35 @@
     "disclosure": "Risk chains are transparent scenarios, not verified causal effects, probability forecasts or AI price targets. No warnings are backdated.",
     "feeds_fetched": 8,
     "feeds_total": 9,
-    "ledger_records": 129
+    "ledger_records": 132
   },
   "events": [
+    {
+      "title": "‘It’s not helping’: calls for guardrails and regulations as AI use rises at US retailers",
+      "url": "https://www.theguardian.com/us-news/2026/nov/27/ai-retailer-consumer-guardrails",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-27T10:00:02Z",
+      "categories": [
+        "ai_regulation"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "SPY"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Proposal or possibility reported; not enacted law",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "897f5d72cfd89dfb8ee98d8117092ac4ed43a2e697c4dac21638f5486e473305",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "d48fbd5a038abd7051c6c6d0",
+      "first_observed_at": "2026-11-27T13:46:31Z",
+      "digest": "33b514a8bfdfc564c4db46a6efe2e0b13d0c1340b051789358003697b3fe2500"
+    },
     {
       "title": "Faisal Islam: Why Trump's new tariffs are less of a threat",
       "url": "https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o?at_medium=RSS&at_campaign=rss",
@@ -174,32 +200,6 @@
       "digest": "982bb19a3b4fb8855a3fce3fc651b2612f5643190438875bf47ed9b0f85cf845"
     },
     {
-      "title": "New York bans AI toys, including those using internet to talk to children",
-      "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-25T15:29:21Z",
-      "categories": [
-        "ai_regulation"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "897f5d72cfd89dfb8ee98d8117092ac4ed43a2e697c4dac21638f5486e473305",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "eb5ce1c63f6004d4605566c0",
-      "first_observed_at": "2026-11-25T20:41:50Z",
-      "digest": "f766bbefb73eb8686d182b969758b54a2ddf0b58fc8d5cff2c9852fbdb49f40e"
-    },
-    {
       "title": "Democrats must unite on AI regulation. Here’s our three-point plan | Nathan E Sanders and Bruce Schneier",
       "url": "https://www.theguardian.com/commentisfree/2026/nov/25/democrats-ai-regulation-plan",
       "publisher": "The Guardian US Politics",
@@ -226,32 +226,6 @@
       "id": "88ff4e0f24d282966cc88aef",
       "first_observed_at": "2026-11-25T20:41:50Z",
       "digest": "1fcbed221a0ffd387fe5fd7bc404b3591f6effb15eaa5f19c721bb8863284f7d"
-    },
-    {
-      "title": "Tidal bans 100% AI-generated music with plans to delete more than 27m tracks",
-      "url": "https://www.theguardian.com/music/2026/nov/25/tidal-streaming-service-bans-ai-generated-music",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-25T02:12:22Z",
-      "categories": [
-        "ai_regulation"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Proposal or possibility reported; not enacted law",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "897f5d72cfd89dfb8ee98d8117092ac4ed43a2e697c4dac21638f5486e473305",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "c39a27be54fb855e9db40361",
-      "first_observed_at": "2026-11-25T02:35:30Z",
-      "digest": "c71b948a5c095c678e2ef3ffe8f207f4f6a9721358ca58b965f77a9311f06628"
     },
     {
       "title": "Tech sell-off resumes as euphoria from Jensen Huang’s Nvidia return subsides",
@@ -417,6 +391,62 @@
       "digest": "479566df9a598e96ffb6d33a3fbe0615df7107cfdb112f53aa6a8b7530b121f0"
     },
     {
+      "title": "Scientists turn one of the world’s hardest-to-recycle plastics into high-performance lubricating oil",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261126033501.htm",
+      "publisher": "ScienceDaily Physics",
+      "published_at": "2026-11-27T09:52:24Z",
+      "categories": [
+        "energy"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "d8bbcc3e2536f510751f3f7fc1417a5af288b2bec41ac3c65aa827eef6c5d064",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "fdce009f5ea343d1a451e8bc",
+      "first_observed_at": "2026-11-27T13:46:31Z",
+      "digest": "741b8369ae86cf3e6d15cc14671286c179de16430aa2f7b2cc212210de7e86da"
+    },
+    {
+      "title": "ECB Consumer Expectations Survey results – October 2026",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261127~2e53af695e.en.html",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-27T09:00:00Z",
+      "categories": [
+        "rates"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "6d6accbf6d7234c62e3112b9",
+      "first_observed_at": "2026-11-27T13:46:31Z",
+      "digest": "d551ce5a8562257538060b4ab81fd4effe27c22cd2fffd96fc1831b858bdf4c4"
+    },
+    {
       "title": "UK food inflation could hit 5% next year, Bank of England says",
       "url": "https://www.theguardian.com/business/2026/nov/25/uk-food-inflation-sharp-rise-next-year-mounting-cost-pressures-bank-of-england",
       "publisher": "The Guardian Business",
@@ -527,34 +557,6 @@
       "id": "2615ddd948d2ab8bff7a6d56",
       "first_observed_at": "2026-11-25T20:41:50Z",
       "digest": "7a569d62b364ce8d13ad14d2c9d0fd12660c59561348bb496fd2e480df928e68"
-    },
-    {
-      "title": "Interest rate affect on Guernsey's housing market",
-      "url": "https://www.bbc.co.uk/news/videos/c6x29vne7lnko?at_medium=RSS&at_campaign=rss",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-25T09:56:33Z",
-      "categories": [
-        "rates"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "GLD",
-        "SPY",
-        "TLT"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "020360e14d0b7cb2722ef7c0",
-      "first_observed_at": "2026-11-25T11:40:53Z",
-      "digest": "37d795c038aed3305b2d8d8093e573ab4cc432dea695eaa86ffa4a5d2426fb3c"
     },
     {
       "title": "Philip R. Lane: Climate change and monetary policy",
@@ -714,7 +716,7 @@
         "Check whether it concerns model use, chip exports, electricity costs or construction.",
         "Verify effective dates and company guidance; do not infer a global ban."
       ],
-      "event_count": 3,
+      "event_count": 2,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -836,7 +838,7 @@
         "Distinguish announcements from operating supply.",
         "Review power prices, water, transmission and customer location."
       ],
-      "event_count": 2,
+      "event_count": 3,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -1113,8 +1115,8 @@
       "id": "fomc",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "Fetched official schedule",
-      "last_success": "2026-11-27T04:06:22Z",
-      "attempted_at": "2026-11-27T04:06:22Z",
+      "last_success": "2026-11-27T13:46:31Z",
+      "attempted_at": "2026-11-27T13:46:31Z",
       "events": [
         {
           "title": "Scheduled FOMC meeting final day",
@@ -1404,7 +1406,7 @@
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-27T04:06:22Z",
+      "attempted_at": "2026-11-27T13:46:31Z",
       "events": [],
       "stale": true,
       "error": "HTTPError",
@@ -1416,47 +1418,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-27T04:06:15Z",
+      "checked_at": "2026-11-27T13:46:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T04:06:15Z",
+      "last_success": "2026-11-27T13:46:26Z",
       "matched": 0
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-27T04:06:15Z",
+      "checked_at": "2026-11-27T13:46:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T04:06:15Z",
-      "matched": 6
+      "last_success": "2026-11-27T13:46:26Z",
+      "matched": 7
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-27T04:06:15Z",
+      "checked_at": "2026-11-27T13:46:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T04:06:15Z",
-      "matched": 7
+      "last_success": "2026-11-27T13:46:26Z",
+      "matched": 8
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-27T04:06:15Z",
+      "checked_at": "2026-11-27T13:46:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T04:06:15Z",
+      "last_success": "2026-11-27T13:46:26Z",
       "matched": 6
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-27T04:06:15Z",
+      "checked_at": "2026-11-27T13:46:26Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1466,40 +1468,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-27T04:06:15Z",
+      "checked_at": "2026-11-27T13:46:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T04:06:15Z",
-      "matched": 0
+      "last_success": "2026-11-27T13:46:26Z",
+      "matched": 1
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-27T04:06:15Z",
+      "checked_at": "2026-11-27T13:46:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T04:06:15Z",
-      "matched": 3
+      "last_success": "2026-11-27T13:46:26Z",
+      "matched": 2
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-27T04:06:15Z",
+      "checked_at": "2026-11-27T13:46:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T04:06:15Z",
+      "last_success": "2026-11-27T13:46:26Z",
       "matched": 2
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-27T04:06:15Z",
+      "checked_at": "2026-11-27T13:46:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T04:06:15Z",
+      "last_success": "2026-11-27T13:46:26Z",
       "matched": 2
     }
   ],

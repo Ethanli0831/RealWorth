@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-26T21:59:01Z",
-    "record_count": 129,
+    "updated_at": "2026-11-27T13:46:31Z",
+    "record_count": 132,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -3748,6 +3748,94 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "6345222e8a0b358088c9749b71f07178b13e645af3e3a81caaefa50f12293874"
+    },
+    {
+      "id": "d48fbd5a038abd7051c6c6d0",
+      "first_observed_at": "2026-11-27T13:46:31Z",
+      "snapshot": {
+        "title": "‘It’s not helping’: calls for guardrails and regulations as AI use rises at US retailers",
+        "url": "https://www.theguardian.com/us-news/2026/nov/27/ai-retailer-consumer-guardrails",
+        "publisher": "The Guardian Technology",
+        "published_at": "2026-11-27T10:00:02Z",
+        "categories": [
+          "ai_regulation"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Proposal or possibility reported; not enacted law",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "897f5d72cfd89dfb8ee98d8117092ac4ed43a2e697c4dac21638f5486e473305",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "33b514a8bfdfc564c4db46a6efe2e0b13d0c1340b051789358003697b3fe2500"
+    },
+    {
+      "id": "fdce009f5ea343d1a451e8bc",
+      "first_observed_at": "2026-11-27T13:46:31Z",
+      "snapshot": {
+        "title": "Scientists turn one of the world’s hardest-to-recycle plastics into high-performance lubricating oil",
+        "url": "https://www.sciencedaily.com/releases/2026/11/261126033501.htm",
+        "publisher": "ScienceDaily Physics",
+        "published_at": "2026-11-27T09:52:24Z",
+        "categories": [
+          "energy"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "d8bbcc3e2536f510751f3f7fc1417a5af288b2bec41ac3c65aa827eef6c5d064",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "741b8369ae86cf3e6d15cc14671286c179de16430aa2f7b2cc212210de7e86da"
+    },
+    {
+      "id": "6d6accbf6d7234c62e3112b9",
+      "first_observed_at": "2026-11-27T13:46:31Z",
+      "snapshot": {
+        "title": "ECB Consumer Expectations Survey results – October 2026",
+        "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261127~2e53af695e.en.html",
+        "publisher": "European Central Bank",
+        "published_at": "2026-11-27T09:00:00Z",
+        "categories": [
+          "rates"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "d551ce5a8562257538060b4ab81fd4effe27c22cd2fffd96fc1831b858bdf4c4"
     }
   ]
 }

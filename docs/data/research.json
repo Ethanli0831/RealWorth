@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checked_at": "2026-11-27T04:06:15Z",
+    "checked_at": "2026-11-27T13:46:26Z",
     "region": "United States",
     "refresh": "15-minute scheduled scan; GitHub queue and publisher delays apply.",
     "model": "Transparent heuristic signals inspired by Dalio; not a Bridgewater model or official cycle call.",
@@ -8,7 +8,7 @@
     "analysis": "Headline-matched mechanism templates, not full-article reading, AI reporting or verified causal effects."
   },
   "macro": {
-    "checked_at": "2026-11-27T04:06:15Z",
+    "checked_at": "2026-11-27T13:46:26Z",
     "stale": false,
     "failures": [],
     "indicators": [
@@ -122,6 +122,127 @@
     "outlook": "If growth keeps slowing while inflation rises, watch for a policy trade-off. If inflation eases without worsening credit or employment, a softer adjustment is more plausible. These are conditional scenarios, not probability forecasts."
   },
   "news": [
+    {
+      "title": "‘It’s not helping’: calls for guardrails and regulations as AI use rises at US retailers",
+      "url": "https://www.theguardian.com/us-news/2026/nov/27/ai-retailer-consumer-guardrails",
+      "published_at": "2026-11-27T10:00:02Z",
+      "source_id": "guardian_technology",
+      "publisher": "The Guardian Technology",
+      "source_kind": "Publisher headline",
+      "topics": [
+        "ai_regulation"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "‘It’s not helping’: calls for guardrails and regulations as AI use rises at US retailers",
+          "url": "https://www.theguardian.com/us-news/2026/nov/27/ai-retailer-consumer-guardrails",
+          "publisher": "The Guardian Technology",
+          "published_at": "2026-11-27T10:00:02Z"
+        }
+      ]
+    },
+    {
+      "title": "Scientists turn one of the world’s hardest-to-recycle plastics into high-performance lubricating oil",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261126033501.htm",
+      "published_at": "2026-11-27T09:52:24Z",
+      "source_id": "science",
+      "publisher": "ScienceDaily Physics",
+      "source_kind": "Science publisher headline",
+      "topics": [
+        "energy"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "Scientists turn one of the world’s hardest-to-recycle plastics into high-performance lubricating oil",
+          "url": "https://www.sciencedaily.com/releases/2026/11/261126033501.htm",
+          "publisher": "ScienceDaily Physics",
+          "published_at": "2026-11-27T09:52:24Z"
+        }
+      ]
+    },
+    {
+      "title": "ECB Consumer Expectations Survey results – October 2026",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261127~2e53af695e.en.html",
+      "published_at": "2026-11-27T09:00:00Z",
+      "source_id": "ecb",
+      "publisher": "European Central Bank",
+      "source_kind": "Primary institutional release",
+      "topics": [
+        "policy"
+      ],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "Relevant",
+        "reason": "Specific asset or macro context in the headline; article verification still required."
+      },
+      "related_reports": [
+        {
+          "title": "ECB Consumer Expectations Survey results – October 2026",
+          "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261127~2e53af695e.en.html",
+          "publisher": "European Central Bank",
+          "published_at": "2026-11-27T09:00:00Z"
+        }
+      ]
+    },
+    {
+      "title": "The food bank helping pet owners with rising bills",
+      "url": "https://www.bbc.co.uk/news/articles/c623jgz7zmg8o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-11-27T06:11:13Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "The food bank helping pet owners with rising bills",
+          "url": "https://www.bbc.co.uk/news/articles/c623jgz7zmg8o?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-11-27T06:11:13Z"
+        }
+      ]
+    },
+    {
+      "title": "From £250 job to £9,000 bill: Inside the rogue trader networks scamming customers at scale",
+      "url": "https://www.bbc.co.uk/news/articles/c65yme31k7m2o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-11-27T00:58:49Z",
+      "source_id": "bbc",
+      "publisher": "BBC Business",
+      "source_kind": "Publisher headline",
+      "topics": [],
+      "cached": false,
+      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
+      "relevance": {
+        "status": "No clear macro impact",
+        "reason": "Personal, career or company-level story without an established economy-wide or asset transmission channel. No impact chain generated."
+      },
+      "related_reports": [
+        {
+          "title": "From £250 job to £9,000 bill: Inside the rogue trader networks scamming customers at scale",
+          "url": "https://www.bbc.co.uk/news/articles/c65yme31k7m2o?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Business",
+          "published_at": "2026-11-27T00:58:49Z"
+        }
+      ]
+    },
     {
       "title": "Faisal Islam: Why Trump's new tariffs are less of a threat",
       "url": "https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o?at_medium=RSS&at_campaign=rss",
@@ -397,31 +518,6 @@
       ]
     },
     {
-      "title": "New York bans AI toys, including those using internet to talk to children",
-      "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys",
-      "published_at": "2026-11-25T15:29:21Z",
-      "source_id": "guardian_technology",
-      "publisher": "The Guardian Technology",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "ai_regulation"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "New York bans AI toys, including those using internet to talk to children",
-          "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys",
-          "publisher": "The Guardian Technology",
-          "published_at": "2026-11-25T15:29:21Z"
-        }
-      ]
-    },
-    {
       "title": "Democrats must unite on AI regulation. Here’s our three-point plan | Nathan E Sanders and Bruce Schneier",
       "url": "https://www.theguardian.com/commentisfree/2026/nov/25/democrats-ai-regulation-plan",
       "published_at": "2026-11-25T13:00:26Z",
@@ -444,56 +540,6 @@
           "url": "https://www.theguardian.com/commentisfree/2026/nov/25/democrats-ai-regulation-plan",
           "publisher": "The Guardian US Politics",
           "published_at": "2026-11-25T13:00:26Z"
-        }
-      ]
-    },
-    {
-      "title": "Interest rate affect on Guernsey's housing market",
-      "url": "https://www.bbc.co.uk/news/videos/c6x29vne7lnko?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-11-25T09:56:33Z",
-      "source_id": "bbc",
-      "publisher": "BBC Business",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "policy"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Interest rate affect on Guernsey's housing market",
-          "url": "https://www.bbc.co.uk/news/videos/c6x29vne7lnko?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Business",
-          "published_at": "2026-11-25T09:56:33Z"
-        }
-      ]
-    },
-    {
-      "title": "Tidal bans 100% AI-generated music with plans to delete more than 27m tracks",
-      "url": "https://www.theguardian.com/music/2026/nov/25/tidal-streaming-service-bans-ai-generated-music",
-      "published_at": "2026-11-25T02:12:22Z",
-      "source_id": "guardian_technology",
-      "publisher": "The Guardian Technology",
-      "source_kind": "Publisher headline",
-      "topics": [
-        "ai_regulation"
-      ],
-      "cached": false,
-      "evidence": "Attributed publisher headline; article claims and causal effects have not been independently verified.",
-      "relevance": {
-        "status": "Relevant",
-        "reason": "Specific asset or macro context in the headline; article verification still required."
-      },
-      "related_reports": [
-        {
-          "title": "Tidal bans 100% AI-generated music with plans to delete more than 27m tracks",
-          "url": "https://www.theguardian.com/music/2026/nov/25/tidal-streaming-service-bans-ai-generated-music",
-          "publisher": "The Guardian Technology",
-          "published_at": "2026-11-25T02:12:22Z"
         }
       ]
     },
@@ -774,47 +820,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-27T04:06:15Z",
+      "checked_at": "2026-11-27T13:46:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T04:06:15Z",
+      "last_success": "2026-11-27T13:46:26Z",
       "matched": 0
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-27T04:06:15Z",
+      "checked_at": "2026-11-27T13:46:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T04:06:15Z",
-      "matched": 6
+      "last_success": "2026-11-27T13:46:26Z",
+      "matched": 7
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-27T04:06:15Z",
+      "checked_at": "2026-11-27T13:46:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T04:06:15Z",
-      "matched": 7
+      "last_success": "2026-11-27T13:46:26Z",
+      "matched": 8
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-27T04:06:15Z",
+      "checked_at": "2026-11-27T13:46:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T04:06:15Z",
+      "last_success": "2026-11-27T13:46:26Z",
       "matched": 6
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-27T04:06:15Z",
+      "checked_at": "2026-11-27T13:46:26Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -824,40 +870,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-27T04:06:15Z",
+      "checked_at": "2026-11-27T13:46:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T04:06:15Z",
-      "matched": 0
+      "last_success": "2026-11-27T13:46:26Z",
+      "matched": 1
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-27T04:06:15Z",
+      "checked_at": "2026-11-27T13:46:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T04:06:15Z",
-      "matched": 3
+      "last_success": "2026-11-27T13:46:26Z",
+      "matched": 2
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-27T04:06:15Z",
+      "checked_at": "2026-11-27T13:46:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T04:06:15Z",
+      "last_success": "2026-11-27T13:46:26Z",
       "matched": 2
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-27T04:06:15Z",
+      "checked_at": "2026-11-27T13:46:26Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T04:06:15Z",
+      "last_success": "2026-11-27T13:46:26Z",
       "matched": 2
     }
   ],

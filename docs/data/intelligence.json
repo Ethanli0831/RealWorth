@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-26T22:37:13Z",
-    "scan_started_at": "2026-11-26T22:31:35Z",
+    "checked_at": "2026-11-27T05:26:31Z",
+    "scan_started_at": "2026-11-27T05:16:56Z",
     "provider_requested": "local",
     "article_reads": 9,
     "ai_interpretations": 4,
-    "new_interpretations": 2,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,114 +19,12 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys",
-      "title": "New York bans AI toys, including those using internet to talk to children",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-25T15:29:21Z",
-      "historical": null,
-      "read_at": "2026-11-26T22:31:37Z",
-      "body_sha256": "b495facbabd39d61cccb0cef592fc1a8317476371501ed69ab2fc89f1da59a70",
-      "body_characters": 4191,
-      "model_context_characters": 4191,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "New York bans AI toys, including those using internet to talk to children, due to safety concerns and inappropriate content.",
-        "evidence_ids": [
-          "E4",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: New York bans AI toys",
-          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
-          "asset_hypothesis: If safety concerns rise, gold may be seen as a safer haven."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If risk appetite decreases, investors may seek safer assets like gold."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If safety concerns rise, Bitcoin may be seen as a safer haven, but if risk appetite decreases, it may underperform traditional assets."
-        },
-        "uncertainty": "If the ban is lifted or modified, the demand for AI toys could increase, reducing the pressure on gold and Bitcoin."
-      },
-      "evidence": {
-        "E4": "The New York governor, Kathy Hochul , signed legislation on Wednesday that",
-        "E5": "The recently re-elected governor, who has also placed a one-year moratorium AI"
-      },
-      "analyzed_at": "2026-11-26T22:34:28Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf",
-      "title": "Philip R. Lane: Climate change and monetary policy",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-23T14:30:00Z",
-      "historical": null,
-      "status": "Unavailable: No readable article container"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o?at_medium=RSS&at_campaign=rss",
-      "title": "Faisal Islam: Why Trump's new tariffs are less of a threat",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-26T19:55:58Z",
-      "historical": null,
-      "read_at": "2026-11-26T22:34:31Z",
-      "body_sha256": "27603a9f92b2b94568bf605cef43fd09c1806ef0d5d0c0d0a12fd393cb1c50df",
-      "body_characters": 4542,
-      "model_context_characters": 4500,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "Trump announces new tariffs, but the announcement is more about legal underpinning than a fundamental change in trade policy.",
-        "evidence_ids": [
-          "E1",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: Trump announces new tariffs",
-          "financial_channel: If the tariffs are seen as less of a threat, risk appetite may increase",
-          "asset_hypothesis: If risk appetite increases, gold may be seen as less of a safe haven"
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If the tariffs are seen as less of a threat, risk appetite may increase, reducing gold's appeal as a safe haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite increases, Bitcoin may also see gains, but if the tariffs are seen as less impactful, Bitcoin's appeal as a hedge may wane."
-        },
-        "uncertainty": "If the tariffs are indeed seen as a significant threat, risk appetite could decrease, benefiting gold and Bitcoin."
-      },
-      "evidence": {
-        "E1": "The Chinese rate of 20% is the truce rate from last year's",
-        "E5": "There was none of last April's fanfare, the Rose Garden reveal, the"
-      },
-      "analyzed_at": "2026-11-26T22:37:12Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/26/brazil-china-react-to-new-trump-tariffs-threat",
-      "title": "China reserves right to take ‘necessary measures’ after Trump’s new tariff proposals",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-26T12:00:22Z",
-      "historical": null,
-      "read_at": "2026-11-26T22:37:12Z",
-      "body_sha256": "f719bfda9fd4f744723580f46aea4afbab3d4e333d79732f7409dc20c634ac9f",
-      "body_characters": 6974,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
-    },
-    {
       "url": "https://www.theguardian.com/technology/2026/nov/26/jensen-huang-nvidia-tech",
       "title": "A vocal cohort of tech leaders celebrates Huang’s Nvidia return, but others are keeping quiet",
       "publisher": "The Guardian Technology",
       "published_at": "2026-11-26T10:00:52Z",
       "historical": null,
-      "read_at": "2026-11-26T13:01:34Z",
+      "read_at": "2026-11-27T05:16:01Z",
       "body_sha256": "c160b5832c94a6958b395e982e5eec1ab0c6930ac829c2aa813b9eb7462ac2a2",
       "body_characters": 5308,
       "model_context_characters": 4500,
@@ -167,11 +65,11 @@
       "publisher": "European Central Bank",
       "published_at": "2026-11-25T17:30:00Z",
       "historical": null,
-      "read_at": "2026-11-26T22:37:13Z",
+      "read_at": "2026-11-27T05:16:58Z",
       "body_sha256": "9ec7b3c11538fd00fcdc3ebcd5197841460188bcee22d901e72e6610fe6b80f1",
       "body_characters": 2270,
       "model_context_characters": 2270,
-      "status": "Public body read; queued for AI"
+      "status": "Unavailable: AI reported event does not match the article topic"
     },
     {
       "url": "https://www.theguardian.com/commentisfree/2026/nov/25/democrats-ai-regulation-plan",
@@ -179,11 +77,11 @@
       "publisher": "The Guardian US Politics",
       "published_at": "2026-11-25T13:00:26Z",
       "historical": null,
-      "read_at": "2026-11-26T22:37:13Z",
+      "read_at": "2026-11-27T05:21:15Z",
       "body_sha256": "2b7d187aaa2757dbbad4be504652b928948b814c72cfcc3cc7a74b8bab9b2764",
       "body_characters": 12565,
       "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
+      "status": "Unavailable: AI numerical statements require exact cited source support"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/cq62pn6j42jko?at_medium=RSS&at_campaign=rss",
@@ -191,7 +89,7 @@
       "publisher": "BBC Technology",
       "published_at": "2026-11-23T21:23:42Z",
       "historical": null,
-      "read_at": "2026-11-26T22:37:13Z",
+      "read_at": "2026-11-27T05:26:29Z",
       "body_sha256": "721dabcacc6004859318fa65d3b7a89176ab52da717429ae7709dfe2c117f874",
       "body_characters": 3788,
       "model_context_characters": 3788,
@@ -244,10 +142,112 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-25T19:25:57Z",
       "historical": null,
-      "read_at": "2026-11-26T22:37:13Z",
+      "read_at": "2026-11-27T05:26:29Z",
       "body_sha256": "23756bd95f03e9892dd30204f6dbd3d0c914980e941d23a4007b69a89b70b307",
       "body_characters": 3938,
       "model_context_characters": 3938,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys",
+      "title": "New York bans AI toys, including those using internet to talk to children",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-25T15:29:21Z",
+      "historical": null,
+      "read_at": "2026-11-26T22:31:37Z",
+      "body_sha256": "b495facbabd39d61cccb0cef592fc1a8317476371501ed69ab2fc89f1da59a70",
+      "body_characters": 4191,
+      "model_context_characters": 4191,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "New York bans AI toys, including those using internet to talk to children, due to safety concerns and inappropriate content.",
+        "evidence_ids": [
+          "E4",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: New York bans AI toys",
+          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
+          "asset_hypothesis: If safety concerns rise, gold may be seen as a safer haven."
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If risk appetite decreases, investors may seek safer assets like gold."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If safety concerns rise, Bitcoin may be seen as a safer haven, but if risk appetite decreases, it may underperform traditional assets."
+        },
+        "uncertainty": "If the ban is lifted or modified, the demand for AI toys could increase, reducing the pressure on gold and Bitcoin."
+      },
+      "evidence": {
+        "E4": "The New York governor, Kathy Hochul , signed legislation on Wednesday that",
+        "E5": "The recently re-elected governor, who has also placed a one-year moratorium AI"
+      },
+      "analyzed_at": "2026-11-26T22:34:28Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf",
+      "title": "Philip R. Lane: Climate change and monetary policy",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-23T14:30:00Z",
+      "historical": null,
+      "status": "Unavailable: No readable article container"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o?at_medium=RSS&at_campaign=rss",
+      "title": "Faisal Islam: Why Trump's new tariffs are less of a threat",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-26T19:55:58Z",
+      "historical": null,
+      "read_at": "2026-11-26T22:34:31Z",
+      "body_sha256": "27603a9f92b2b94568bf605cef43fd09c1806ef0d5d0c0d0a12fd393cb1c50df",
+      "body_characters": 4542,
+      "model_context_characters": 4500,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "Trump announces new tariffs, but the announcement is more about legal underpinning than a fundamental change in trade policy.",
+        "evidence_ids": [
+          "E1",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: Trump announces new tariffs",
+          "financial_channel: If the tariffs are seen as less of a threat, risk appetite may increase",
+          "asset_hypothesis: If risk appetite increases, gold may be seen as less of a safe haven"
+        ],
+        "gold": {
+          "direction": "down",
+          "condition": "If the tariffs are seen as less of a threat, risk appetite may increase, reducing gold's appeal as a safe haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite increases, Bitcoin may also see gains, but if the tariffs are seen as less impactful, Bitcoin's appeal as a hedge may wane."
+        },
+        "uncertainty": "If the tariffs are indeed seen as a significant threat, risk appetite could decrease, benefiting gold and Bitcoin."
+      },
+      "evidence": {
+        "E1": "The Chinese rate of 20% is the truce rate from last year's",
+        "E5": "There was none of last April's fanfare, the Rose Garden reveal, the"
+      },
+      "analyzed_at": "2026-11-26T22:37:12Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/26/brazil-china-react-to-new-trump-tariffs-threat",
+      "title": "China reserves right to take ‘necessary measures’ after Trump’s new tariff proposals",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-26T12:00:22Z",
+      "historical": null,
+      "read_at": "2026-11-27T05:26:31Z",
+      "body_sha256": "f719bfda9fd4f744723580f46aea4afbab3d4e333d79732f7409dc20c634ac9f",
+      "body_characters": 6974,
+      "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
     }
   ]

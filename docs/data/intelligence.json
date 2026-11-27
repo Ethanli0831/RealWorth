@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-27T05:26:31Z",
-    "scan_started_at": "2026-11-27T05:16:56Z",
+    "checked_at": "2026-11-27T15:35:03Z",
+    "scan_started_at": "2026-11-27T15:29:35Z",
     "provider_requested": "local",
-    "article_reads": 9,
+    "article_reads": 10,
     "ai_interpretations": 4,
-    "new_interpretations": 0,
+    "new_interpretations": 2,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -17,6 +17,124 @@
       "published_at": null,
       "historical": true,
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261127~2e53af695e.en.html",
+      "title": "ECB Consumer Expectations Survey results – October 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-27T09:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-27T15:29:37Z",
+      "body_sha256": "d62fad4a72b5d87b7ea0c48cadd2614199bbb8268b557ddcf5d6b167a2d71c85",
+      "body_characters": 4156,
+      "model_context_characters": 4156,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "The ECB's October Consumer Expectations Survey showed higher inflation and spending expectations, with bottom income quintile respondents reporting higher inflation perceptions.",
+        "evidence_ids": [
+          "E1",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: Inflation and spending expectations rose",
+          "financial_channel: If inflation expectations rise, gold demand may increase",
+          "asset_hypothesis: If spending expectations rise, Bitcoin may be seen as a better store of value"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations rise, gold demand may increase due to its traditional role as a hedge against inflation."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If spending expectations rise, Bitcoin may be seen as a better store of value, but overall risk appetite is mixed."
+        },
+        "uncertainty": "If the economy improves, spending and inflation expectations may fall, reducing demand for both gold and Bitcoin."
+      },
+      "evidence": {
+        "E1": "In October the median rate of perceived inflation over the previous 12",
+        "E3": "As observed in previous months, households in the bottom income quintile expected"
+      },
+      "analyzed_at": "2026-11-27T15:32:29Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o?at_medium=RSS&at_campaign=rss",
+      "title": "Faisal Islam: Why Trump's new tariffs are less of a threat",
+      "publisher": "BBC Business",
+      "published_at": "2026-11-26T19:55:58Z",
+      "historical": null,
+      "read_at": "2026-11-27T15:32:29Z",
+      "body_sha256": "08bb33c3ec446bc98ef8dc7155a181d45435518177ba0b0bc6fa3febb7c3cef4",
+      "body_characters": 4541,
+      "model_context_characters": 4500,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Trump announces new tariffs but the announcement is more about legal underpinning than a fundamental change in trade policy.",
+        "evidence_ids": [
+          "E1",
+          "E5"
+        ],
+        "chain": [
+          "reported_event: Trump announces new tariffs",
+          "financial_channel: If the tariffs are seen as less of a threat, risk appetite may increase",
+          "asset_hypothesis: If risk appetite increases, gold may be seen as less of a safe haven"
+        ],
+        "gold": {
+          "direction": "down",
+          "condition": "If the tariffs are seen as less of a threat, risk appetite may increase, reducing demand for gold as a safe haven."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If risk appetite increases, Bitcoin may also see some gains as an alternative to traditional assets, but if the tariffs are seen as less impactful, Bitcoin may underperform."
+        },
+        "uncertainty": "If the tariffs are indeed seen as a significant threat, risk appetite could decrease, leading to an increase in gold and Bitcoin demand."
+      },
+      "evidence": {
+        "E1": "The Chinese rate of 20% is the truce rate from last year's",
+        "E5": "There was none of last April's fanfare, the Rose Garden reveal, the"
+      },
+      "analyzed_at": "2026-11-27T15:35:01Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/26/brazil-china-react-to-new-trump-tariffs-threat",
+      "title": "China reserves right to take ‘necessary measures’ after Trump’s new tariff proposals",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-26T12:00:22Z",
+      "historical": null,
+      "read_at": "2026-11-27T15:35:02Z",
+      "body_sha256": "f719bfda9fd4f744723580f46aea4afbab3d4e333d79732f7409dc20c634ac9f",
+      "body_characters": 6974,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/25/democrats-ai-regulation-plan",
+      "title": "Democrats must unite on AI regulation. Here’s our three-point plan | Nathan E Sanders and Bruce Schneier",
+      "publisher": "The Guardian US Politics",
+      "published_at": "2026-11-25T13:00:26Z",
+      "historical": null,
+      "read_at": "2026-11-27T15:35:02Z",
+      "body_sha256": "2b7d187aaa2757dbbad4be504652b928948b814c72cfcc3cc7a74b8bab9b2764",
+      "body_characters": 12565,
+      "model_context_characters": 4500,
+      "status": "Public body read; queued for AI"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cq62pn6j42jko?at_medium=RSS&at_campaign=rss",
+      "title": "Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns",
+      "publisher": "BBC Technology",
+      "published_at": "2026-11-23T21:23:42Z",
+      "historical": null,
+      "read_at": "2026-11-27T15:35:02Z",
+      "body_sha256": "721dabcacc6004859318fa65d3b7a89176ab52da717429ae7709dfe2c117f874",
+      "body_characters": 3788,
+      "model_context_characters": 3788,
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.theguardian.com/technology/2026/nov/26/jensen-huang-nvidia-tech",
@@ -65,34 +183,10 @@
       "publisher": "European Central Bank",
       "published_at": "2026-11-25T17:30:00Z",
       "historical": null,
-      "read_at": "2026-11-27T05:16:58Z",
+      "read_at": "2026-11-27T15:35:02Z",
       "body_sha256": "9ec7b3c11538fd00fcdc3ebcd5197841460188bcee22d901e72e6610fe6b80f1",
       "body_characters": 2270,
       "model_context_characters": 2270,
-      "status": "Unavailable: AI reported event does not match the article topic"
-    },
-    {
-      "url": "https://www.theguardian.com/commentisfree/2026/nov/25/democrats-ai-regulation-plan",
-      "title": "Democrats must unite on AI regulation. Here’s our three-point plan | Nathan E Sanders and Bruce Schneier",
-      "publisher": "The Guardian US Politics",
-      "published_at": "2026-11-25T13:00:26Z",
-      "historical": null,
-      "read_at": "2026-11-27T05:21:15Z",
-      "body_sha256": "2b7d187aaa2757dbbad4be504652b928948b814c72cfcc3cc7a74b8bab9b2764",
-      "body_characters": 12565,
-      "model_context_characters": 4500,
-      "status": "Unavailable: AI numerical statements require exact cited source support"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cq62pn6j42jko?at_medium=RSS&at_campaign=rss",
-      "title": "Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns",
-      "publisher": "BBC Technology",
-      "published_at": "2026-11-23T21:23:42Z",
-      "historical": null,
-      "read_at": "2026-11-27T05:26:29Z",
-      "body_sha256": "721dabcacc6004859318fa65d3b7a89176ab52da717429ae7709dfe2c117f874",
-      "body_characters": 3788,
-      "model_context_characters": 3788,
       "status": "Public body read; queued for AI"
     },
     {
@@ -137,116 +231,26 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
-      "url": "https://www.theguardian.com/business/2026/nov/25/uk-food-inflation-sharp-rise-next-year-mounting-cost-pressures-bank-of-england",
-      "title": "UK food inflation could hit 5% next year, Bank of England says",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-25T19:25:57Z",
+      "url": "https://www.theguardian.com/us-news/2026/nov/27/ai-retailer-consumer-guardrails",
+      "title": "‘It’s not helping’: calls for guardrails and regulations as AI use rises at US retailers",
+      "publisher": "The Guardian Technology",
+      "published_at": "2026-11-27T10:00:02Z",
       "historical": null,
-      "read_at": "2026-11-27T05:26:29Z",
-      "body_sha256": "23756bd95f03e9892dd30204f6dbd3d0c914980e941d23a4007b69a89b70b307",
-      "body_characters": 3938,
-      "model_context_characters": 3938,
+      "read_at": "2026-11-27T15:35:03Z",
+      "body_sha256": "2e96bdcb3a1a8f84d1235cb4dd7d67520e203332dec7f73fd946275adceb89fa",
+      "body_characters": 10205,
+      "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys",
-      "title": "New York bans AI toys, including those using internet to talk to children",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-25T15:29:21Z",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261126033501.htm",
+      "title": "Scientists turn one of the world’s hardest-to-recycle plastics into high-performance lubricating oil",
+      "publisher": "ScienceDaily Physics",
+      "published_at": "2026-11-27T09:52:24Z",
       "historical": null,
-      "read_at": "2026-11-26T22:31:37Z",
-      "body_sha256": "b495facbabd39d61cccb0cef592fc1a8317476371501ed69ab2fc89f1da59a70",
-      "body_characters": 4191,
-      "model_context_characters": 4191,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "New York bans AI toys, including those using internet to talk to children, due to safety concerns and inappropriate content.",
-        "evidence_ids": [
-          "E4",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: New York bans AI toys",
-          "financial_channel: If risk appetite decreases, investors may seek safer assets.",
-          "asset_hypothesis: If safety concerns rise, gold may be seen as a safer haven."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If risk appetite decreases, investors may seek safer assets like gold."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If safety concerns rise, Bitcoin may be seen as a safer haven, but if risk appetite decreases, it may underperform traditional assets."
-        },
-        "uncertainty": "If the ban is lifted or modified, the demand for AI toys could increase, reducing the pressure on gold and Bitcoin."
-      },
-      "evidence": {
-        "E4": "The New York governor, Kathy Hochul , signed legislation on Wednesday that",
-        "E5": "The recently re-elected governor, who has also placed a one-year moratorium AI"
-      },
-      "analyzed_at": "2026-11-26T22:34:28Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf",
-      "title": "Philip R. Lane: Climate change and monetary policy",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-23T14:30:00Z",
-      "historical": null,
-      "status": "Unavailable: No readable article container"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o?at_medium=RSS&at_campaign=rss",
-      "title": "Faisal Islam: Why Trump's new tariffs are less of a threat",
-      "publisher": "BBC Business",
-      "published_at": "2026-11-26T19:55:58Z",
-      "historical": null,
-      "read_at": "2026-11-26T22:34:31Z",
-      "body_sha256": "27603a9f92b2b94568bf605cef43fd09c1806ef0d5d0c0d0a12fd393cb1c50df",
-      "body_characters": 4542,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Trump announces new tariffs, but the announcement is more about legal underpinning than a fundamental change in trade policy.",
-        "evidence_ids": [
-          "E1",
-          "E5"
-        ],
-        "chain": [
-          "reported_event: Trump announces new tariffs",
-          "financial_channel: If the tariffs are seen as less of a threat, risk appetite may increase",
-          "asset_hypothesis: If risk appetite increases, gold may be seen as less of a safe haven"
-        ],
-        "gold": {
-          "direction": "down",
-          "condition": "If the tariffs are seen as less of a threat, risk appetite may increase, reducing gold's appeal as a safe haven."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If risk appetite increases, Bitcoin may also see gains, but if the tariffs are seen as less impactful, Bitcoin's appeal as a hedge may wane."
-        },
-        "uncertainty": "If the tariffs are indeed seen as a significant threat, risk appetite could decrease, benefiting gold and Bitcoin."
-      },
-      "evidence": {
-        "E1": "The Chinese rate of 20% is the truce rate from last year's",
-        "E5": "There was none of last April's fanfare, the Rose Garden reveal, the"
-      },
-      "analyzed_at": "2026-11-26T22:37:12Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/26/brazil-china-react-to-new-trump-tariffs-threat",
-      "title": "China reserves right to take ‘necessary measures’ after Trump’s new tariff proposals",
-      "publisher": "The Guardian Business",
-      "published_at": "2026-11-26T12:00:22Z",
-      "historical": null,
-      "read_at": "2026-11-27T05:26:31Z",
-      "body_sha256": "f719bfda9fd4f744723580f46aea4afbab3d4e333d79732f7409dc20c634ac9f",
-      "body_characters": 6974,
+      "read_at": "2026-11-27T15:35:03Z",
+      "body_sha256": "28a345a81c5be60f91b00720cea9d63973db12562a31db9fbc32c4c28f2cafb6",
+      "body_characters": 7453,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
     }

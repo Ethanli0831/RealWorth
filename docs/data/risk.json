@@ -1,7 +1,7 @@
 {
   "meta": {
-    "built_at": "2026-11-27T13:46:31Z",
-    "source_checked_at": "2026-11-27T13:46:26Z",
+    "built_at": "2026-11-27T22:22:51Z",
+    "source_checked_at": "2026-11-27T22:22:47Z",
     "tracking_started_at": "2026-11-07T17:33:52Z",
     "framework": "event-risk-v1",
     "news_stale": false,
@@ -10,13 +10,13 @@
     "disclosure": "Risk chains are transparent scenarios, not verified causal effects, probability forecasts or AI price targets. No warnings are backdated.",
     "feeds_fetched": 8,
     "feeds_total": 9,
-    "ledger_records": 132
+    "ledger_records": 134
   },
   "events": [
     {
       "title": "‘It’s not helping’: calls for guardrails and regulations as AI use rises at US retailers",
       "url": "https://www.theguardian.com/us-news/2026/nov/27/ai-retailer-consumer-guardrails",
-      "publisher": "The Guardian Technology",
+      "publisher": "The Guardian Business",
       "published_at": "2026-11-27T10:00:02Z",
       "categories": [
         "ai_regulation"
@@ -35,9 +35,9 @@
       "framework_version": "event-risk-v1",
       "framework_digest": "897f5d72cfd89dfb8ee98d8117092ac4ed43a2e697c4dac21638f5486e473305",
       "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "d48fbd5a038abd7051c6c6d0",
-      "first_observed_at": "2026-11-27T13:46:31Z",
-      "digest": "33b514a8bfdfc564c4db46a6efe2e0b13d0c1340b051789358003697b3fe2500"
+      "id": "c4095153ef43e1168f72fd72",
+      "first_observed_at": "2026-11-27T22:22:51Z",
+      "digest": "5745033c51f91cf20a578470da9ce7d2854b8b61573fac0d17cab026779634f7"
     },
     {
       "title": "Faisal Islam: Why Trump's new tariffs are less of a threat",
@@ -254,32 +254,6 @@
       "digest": "1b042745033b6365947d94987341182b2178402d82e4931a01a6dd80043c374c"
     },
     {
-      "title": "Jensen Huang’s return to Nvidia is elite impunity | Moira Donegan",
-      "url": "https://www.theguardian.com/commentisfree/2026/nov/24/jensen-huang-nvidia-return",
-      "publisher": "The Guardian US Politics",
-      "published_at": "2026-11-24T16:39:00Z",
-      "categories": [
-        "ai_economics"
-      ],
-      "tickers": [
-        "BTC-USD",
-        "SPY"
-      ],
-      "regions": [
-        "All"
-      ],
-      "kind": "Headline watch",
-      "stage": "Reported development; implementation and legal status unverified",
-      "legal_effective_at": null,
-      "scheduled_at": null,
-      "framework_version": "event-risk-v1",
-      "framework_digest": "99fa17b2b75c805dc4040c307183a9b484aae37a8f93aa087665508cab945de7",
-      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
-      "id": "f18152923a370590061d085f",
-      "first_observed_at": "2026-11-24T18:12:33Z",
-      "digest": "64c70c8aef1781c207e0819ae4042b64b384a5c4ca2dc32a5e6d574a812bd152"
-    },
-    {
       "title": "Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns",
       "url": "https://www.bbc.co.uk/news/articles/cq62pn6j42jko?at_medium=RSS&at_campaign=rss",
       "publisher": "BBC Technology",
@@ -389,6 +363,34 @@
       "id": "2100a0292cd9b883191420e5",
       "first_observed_at": "2026-11-07T18:08:17Z",
       "digest": "479566df9a598e96ffb6d33a3fbe0615df7107cfdb112f53aa6a8b7530b121f0"
+    },
+    {
+      "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+      "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261127~13ecadc0f2.en.html",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-27T14:00:00Z",
+      "categories": [
+        "rates"
+      ],
+      "tickers": [
+        "BTC-USD",
+        "GLD",
+        "SPY",
+        "TLT"
+      ],
+      "regions": [
+        "All"
+      ],
+      "kind": "Headline watch",
+      "stage": "Reported development; implementation and legal status unverified",
+      "legal_effective_at": null,
+      "scheduled_at": null,
+      "framework_version": "event-risk-v1",
+      "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+      "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified.",
+      "id": "47b714888fd98ebd2eabc188",
+      "first_observed_at": "2026-11-27T22:22:51Z",
+      "digest": "f9461e2e8f189aad0d920a05ddee7e1ee1c5348fb342fa9c03c76e548c898884"
     },
     {
       "title": "Scientists turn one of the world’s hardest-to-recycle plastics into high-performance lubricating oil",
@@ -739,7 +741,7 @@
         "Check utilization, order cancellations, financing and customer concentration.",
         "Distinguish a lower share valuation from cash automatically moving to another country."
       ],
-      "event_count": 6,
+      "event_count": 5,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -788,7 +790,7 @@
         "Check real yields, dollar funding and the policy response.",
         "Separate a growth shock from an inflation shock."
       ],
-      "event_count": 9,
+      "event_count": 10,
       "coverage": "Limited selected-headline coverage"
     },
     {
@@ -1115,8 +1117,8 @@
       "id": "fomc",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "Fetched official schedule",
-      "last_success": "2026-11-27T13:46:31Z",
-      "attempted_at": "2026-11-27T13:46:31Z",
+      "last_success": "2026-11-27T22:22:51Z",
+      "attempted_at": "2026-11-27T22:22:51Z",
       "events": [
         {
           "title": "Scheduled FOMC meeting final day",
@@ -1406,7 +1408,7 @@
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "Unavailable; dates not assumed",
       "last_success": null,
-      "attempted_at": "2026-11-27T13:46:31Z",
+      "attempted_at": "2026-11-27T22:22:51Z",
       "events": [],
       "stale": true,
       "error": "HTTPError",
@@ -1418,47 +1420,47 @@
       "id": "fed",
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
-      "checked_at": "2026-11-27T13:46:26Z",
+      "checked_at": "2026-11-27T22:22:47Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T13:46:26Z",
+      "last_success": "2026-11-27T22:22:47Z",
       "matched": 0
     },
     {
       "id": "ecb",
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "checked_at": "2026-11-27T13:46:26Z",
+      "checked_at": "2026-11-27T22:22:47Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T13:46:26Z",
-      "matched": 7
+      "last_success": "2026-11-27T22:22:47Z",
+      "matched": 8
     },
     {
       "id": "bbc",
       "name": "BBC Business",
       "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
-      "checked_at": "2026-11-27T13:46:26Z",
+      "checked_at": "2026-11-27T22:22:47Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T13:46:26Z",
+      "last_success": "2026-11-27T22:22:47Z",
       "matched": 8
     },
     {
       "id": "guardian",
       "name": "The Guardian Business",
       "url": "https://www.theguardian.com/business/rss",
-      "checked_at": "2026-11-27T13:46:26Z",
+      "checked_at": "2026-11-27T22:22:47Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T13:46:26Z",
-      "matched": 6
+      "last_success": "2026-11-27T22:22:47Z",
+      "matched": 7
     },
     {
       "id": "cnbc",
       "name": "CNBC Economy",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "checked_at": "2026-11-27T13:46:26Z",
+      "checked_at": "2026-11-27T22:22:47Z",
       "status": "Unavailable; retained dated headlines",
       "error": "HTTPError",
       "last_success": "2026-10-17T22:56:28Z",
@@ -1468,40 +1470,40 @@
       "id": "science",
       "name": "ScienceDaily Physics",
       "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
-      "checked_at": "2026-11-27T13:46:26Z",
+      "checked_at": "2026-11-27T22:22:47Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T13:46:26Z",
+      "last_success": "2026-11-27T22:22:47Z",
       "matched": 1
     },
     {
       "id": "guardian_technology",
       "name": "The Guardian Technology",
       "url": "https://www.theguardian.com/technology/rss",
-      "checked_at": "2026-11-27T13:46:26Z",
+      "checked_at": "2026-11-27T22:22:47Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T13:46:26Z",
+      "last_success": "2026-11-27T22:22:47Z",
       "matched": 2
     },
     {
       "id": "guardian_us_policy",
       "name": "The Guardian US Politics",
       "url": "https://www.theguardian.com/us-news/us-politics/rss",
-      "checked_at": "2026-11-27T13:46:26Z",
+      "checked_at": "2026-11-27T22:22:47Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T13:46:26Z",
-      "matched": 2
+      "last_success": "2026-11-27T22:22:47Z",
+      "matched": 1
     },
     {
       "id": "bbc_technology",
       "name": "BBC Technology",
       "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-      "checked_at": "2026-11-27T13:46:26Z",
+      "checked_at": "2026-11-27T22:22:47Z",
       "status": "Fetched",
       "error": null,
-      "last_success": "2026-11-27T13:46:26Z",
+      "last_success": "2026-11-27T22:22:47Z",
       "matched": 2
     }
   ],

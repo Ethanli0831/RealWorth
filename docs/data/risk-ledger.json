@@ -2,8 +2,8 @@
   "meta": {
     "framework": "event-risk-v1",
     "tracking_started_at": "2026-11-07T17:33:52Z",
-    "updated_at": "2026-11-27T13:46:31Z",
-    "record_count": 132,
+    "updated_at": "2026-11-27T22:22:51Z",
+    "record_count": 134,
     "disclosure": "Append-only first-observed records. Digests detect changes relative to retained versions, not trusted third-party timestamp certification."
   },
   "records": [
@@ -3836,6 +3836,64 @@
         "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
       },
       "digest": "d551ce5a8562257538060b4ab81fd4effe27c22cd2fffd96fc1831b858bdf4c4"
+    },
+    {
+      "id": "47b714888fd98ebd2eabc188",
+      "first_observed_at": "2026-11-27T22:22:51Z",
+      "snapshot": {
+        "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+        "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261127~13ecadc0f2.en.html",
+        "publisher": "European Central Bank",
+        "published_at": "2026-11-27T14:00:00Z",
+        "categories": [
+          "rates"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "GLD",
+          "SPY",
+          "TLT"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Reported development; implementation and legal status unverified",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "877a6aae490c1c82248ffe7103e8412f485c0dc5120d1f7de221cc9f125174b4",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "f9461e2e8f189aad0d920a05ddee7e1ee1c5348fb342fa9c03c76e548c898884"
+    },
+    {
+      "id": "c4095153ef43e1168f72fd72",
+      "first_observed_at": "2026-11-27T22:22:51Z",
+      "snapshot": {
+        "title": "‘It’s not helping’: calls for guardrails and regulations as AI use rises at US retailers",
+        "url": "https://www.theguardian.com/us-news/2026/nov/27/ai-retailer-consumer-guardrails",
+        "publisher": "The Guardian Business",
+        "published_at": "2026-11-27T10:00:02Z",
+        "categories": [
+          "ai_regulation"
+        ],
+        "tickers": [
+          "BTC-USD",
+          "SPY"
+        ],
+        "regions": [
+          "All"
+        ],
+        "kind": "Headline watch",
+        "stage": "Proposal or possibility reported; not enacted law",
+        "legal_effective_at": null,
+        "scheduled_at": null,
+        "framework_version": "event-risk-v1",
+        "framework_digest": "897f5d72cfd89dfb8ee98d8117092ac4ed43a2e697c4dac21638f5486e473305",
+        "evidence": "Attributed headline only; article facts, legal effect and market causation are not independently verified."
+      },
+      "digest": "5745033c51f91cf20a578470da9ce7d2854b8b61573fac0d17cab026779634f7"
     }
   ]
 }

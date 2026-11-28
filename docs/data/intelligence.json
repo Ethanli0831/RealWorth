@@ -1,11 +1,11 @@
 {
   "meta": {
-    "checked_at": "2026-11-28T08:24:26Z",
-    "scan_started_at": "2026-11-28T08:18:35Z",
+    "checked_at": "2026-11-28T17:15:26Z",
+    "scan_started_at": "2026-11-28T17:07:11Z",
     "provider_requested": "local",
     "article_reads": 10,
-    "ai_interpretations": 6,
-    "new_interpretations": 1,
+    "ai_interpretations": 4,
+    "new_interpretations": 0,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
   },
@@ -19,45 +19,16 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cq62pn6j42jko?at_medium=RSS&at_campaign=rss",
-      "title": "Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns",
-      "publisher": "BBC Technology",
-      "published_at": "2026-11-23T21:23:42Z",
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/25/democrats-ai-regulation-plan",
+      "title": "Democrats must unite on AI regulation. Here’s our three-point plan | Nathan E Sanders and Bruce Schneier",
+      "publisher": "The Guardian US Politics",
+      "published_at": "2026-11-25T13:00:26Z",
       "historical": null,
-      "read_at": "2026-11-28T08:18:36Z",
-      "body_sha256": "721dabcacc6004859318fa65d3b7a89176ab52da717429ae7709dfe2c117f874",
-      "body_characters": 3788,
-      "model_context_characters": 3788,
-      "status": "AI interpretation generated · not independently verified",
-      "analysis": {
-        "summary": "Nvidia's market value surged by nearly $1 trillion after Jensen Huang was reinstated as CEO, driving tech stocks higher.",
-        "evidence_ids": [
-          "E3",
-          "E4"
-        ],
-        "chain": [
-          "reported_event: Nvidia CEO reinstatement",
-          "financial_channel: If tech stocks rally, it indicates increased risk appetite",
-          "asset_hypothesis: If Huang's return is seen positively, it could boost tech sector confidence"
-        ],
-        "gold": {
-          "direction": "unclear",
-          "condition": "If the market remains focused on tech stocks, gold could be seen as a safer haven, but if risk appetite increases, gold may be sold off."
-        },
-        "bitcoin": {
-          "direction": "unclear",
-          "condition": "If risk appetite increases, Bitcoin may face competition from other tech stocks, but if it remains a safe haven, Bitcoin could also rise."
-        },
-        "uncertainty": "If Huang's return is seen as a political move, it could lead to increased regulatory scrutiny, potentially harming tech stocks and gold."
-      },
-      "evidence": {
-        "E3": "Nvidia's market value rose by nearly $1 trillion as its share price",
-        "E4": "His shock reinstatement comes less than two weeks after Huang resigned after"
-      },
-      "analyzed_at": "2026-11-28T08:20:31Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+      "read_at": "2026-11-28T17:07:12Z",
+      "body_sha256": "2b7d187aaa2757dbbad4be504652b928948b814c72cfcc3cc7a74b8bab9b2764",
+      "body_characters": 12565,
+      "model_context_characters": 4500,
+      "status": "Unavailable: AI numerical statements require exact cited source support"
     },
     {
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261127~2e53af695e.en.html",
@@ -65,7 +36,7 @@
       "publisher": "European Central Bank",
       "published_at": "2026-11-27T09:00:00Z",
       "historical": null,
-      "read_at": "2026-11-28T08:17:47Z",
+      "read_at": "2026-11-28T17:06:26Z",
       "body_sha256": "d62fad4a72b5d87b7ea0c48cadd2614199bbb8268b557ddcf5d6b167a2d71c85",
       "body_characters": 4156,
       "model_context_characters": 4156,
@@ -106,7 +77,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-26T12:00:22Z",
       "historical": null,
-      "read_at": "2026-11-28T08:17:47Z",
+      "read_at": "2026-11-28T17:06:26Z",
       "body_sha256": "f719bfda9fd4f744723580f46aea4afbab3d4e333d79732f7409dc20c634ac9f",
       "body_characters": 6974,
       "model_context_characters": 4500,
@@ -147,7 +118,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-26T04:10:58Z",
       "historical": null,
-      "read_at": "2026-11-28T08:17:47Z",
+      "read_at": "2026-11-28T17:06:26Z",
       "body_sha256": "098c8354768df5d6605292008c71fd2a4a158abbc1b4e51ed61c46dbb7076efd",
       "body_characters": 6880,
       "model_context_characters": 4500,
@@ -183,16 +154,40 @@
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     },
     {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
+      "title": "ECB and Sveriges Riksbank conclude agreement for Sweden to join T2",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-25T17:30:00Z",
+      "historical": null,
+      "read_at": "2026-11-28T17:12:10Z",
+      "body_sha256": "9ec7b3c11538fd00fcdc3ebcd5197841460188bcee22d901e72e6610fe6b80f1",
+      "body_characters": 2270,
+      "model_context_characters": 2270,
+      "status": "Unavailable: AI reported event does not match the article topic"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/25/uk-food-inflation-sharp-rise-next-year-mounting-cost-pressures-bank-of-england",
+      "title": "UK food inflation could hit 5% next year, Bank of England says",
+      "publisher": "The Guardian Business",
+      "published_at": "2026-11-25T19:25:57Z",
+      "historical": null,
+      "read_at": "2026-11-28T17:15:25Z",
+      "body_sha256": "23756bd95f03e9892dd30204f6dbd3d0c914980e941d23a4007b69a89b70b307",
+      "body_characters": 3938,
+      "model_context_characters": 3938,
+      "status": "Public body read; queued for AI"
+    },
+    {
       "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261127~13ecadc0f2.en.html",
       "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
       "publisher": "European Central Bank",
       "published_at": "2026-11-27T14:00:00Z",
       "historical": null,
-      "read_at": "2026-11-28T08:20:32Z",
+      "read_at": "2026-11-28T17:15:26Z",
       "body_sha256": "c1d2b9c96e7a44398611125f6e1b320afe5b4b9d7826eee3328cdb50ea7b631f",
       "body_characters": 7169,
       "model_context_characters": 4500,
-      "status": "Unavailable: AI reported event does not match the article topic"
+      "status": "Public body read; queued for AI"
     },
     {
       "url": "https://www.theguardian.com/us-news/2026/nov/27/ai-retailer-consumer-guardrails",
@@ -200,7 +195,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-27T10:00:02Z",
       "historical": null,
-      "read_at": "2026-11-28T08:24:26Z",
+      "read_at": "2026-11-28T17:15:26Z",
       "body_sha256": "213f8f7f1b43fbfd3f5410a322a12658c447ed4af4600eead53e9c253b8b20a1",
       "body_characters": 10211,
       "model_context_characters": 4500,
@@ -212,9 +207,9 @@
       "publisher": "ScienceDaily Physics",
       "published_at": "2026-11-27T09:52:24Z",
       "historical": null,
-      "read_at": "2026-11-28T08:24:26Z",
-      "body_sha256": "28a345a81c5be60f91b00720cea9d63973db12562a31db9fbc32c4c28f2cafb6",
-      "body_characters": 7453,
+      "read_at": "2026-11-28T17:15:26Z",
+      "body_sha256": "00be6d73cc9ca29753b6e4c6d1052dd0e7c1f3daf8150ea3534f41577cc188e4",
+      "body_characters": 7495,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
     },
@@ -258,59 +253,6 @@
       "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
       "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
       "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/technology/2026/nov/26/jensen-huang-nvidia-tech",
-      "title": "A vocal cohort of tech leaders celebrates Huang’s Nvidia return, but others are keeping quiet",
-      "publisher": "The Guardian Technology",
-      "published_at": "2026-11-26T10:00:52Z",
-      "historical": null,
-      "read_at": "2026-11-27T05:16:01Z",
-      "body_sha256": "c160b5832c94a6958b395e982e5eec1ab0c6930ac829c2aa813b9eb7462ac2a2",
-      "body_characters": 5308,
-      "model_context_characters": 4500,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "Nvidia's board unanimously voted to reinstate CEO Jensen Huang, reversing his ouster due to extramarital affairs.",
-        "evidence_ids": [
-          "E5",
-          "E6"
-        ],
-        "chain": [
-          "reported_event: Nvidia's board voted to reinstate Jensen Huang",
-          "financial_channel: If tech leaders' support increases Nvidia's stock, it could affect gold and Bitcoin demand.",
-          "asset_hypothesis: If tech leaders' support increases Nvidia's stock, it could affect gold and Bitcoin demand."
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If tech leaders' support increases Nvidia's stock, it could attract risk-seeking investors away from gold."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If tech leaders' support increases Nvidia's stock, it could attract risk-seeking investors away from Bitcoin, but also increase liquidity."
-        },
-        "uncertainty": "If Nvidia's stock does not rebound, tech leaders' support may not significantly impact gold or Bitcoin."
-      },
-      "evidence": {
-        "E5": "T he phrase “return of the king” rippled across social media on",
-        "E6": "A vocal subsection of the tech industry was celebrating the resurrection of"
-      },
-      "analyzed_at": "2026-11-26T13:04:16Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
-    },
-    {
-      "url": "https://www.theguardian.com/commentisfree/2026/nov/25/democrats-ai-regulation-plan",
-      "title": "Democrats must unite on AI regulation. Here’s our three-point plan | Nathan E Sanders and Bruce Schneier",
-      "publisher": "The Guardian US Politics",
-      "published_at": "2026-11-25T13:00:26Z",
-      "historical": null,
-      "read_at": "2026-11-28T08:24:26Z",
-      "body_sha256": "2b7d187aaa2757dbbad4be504652b928948b814c72cfcc3cc7a74b8bab9b2764",
-      "body_characters": 12565,
-      "model_context_characters": 4500,
-      "status": "Public body read; queued for AI"
     }
   ]
 }

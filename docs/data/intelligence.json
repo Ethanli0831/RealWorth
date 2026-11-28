@@ -1,10 +1,10 @@
 {
   "meta": {
-    "checked_at": "2026-11-27T23:49:13Z",
-    "scan_started_at": "2026-11-27T23:41:37Z",
+    "checked_at": "2026-11-28T08:24:26Z",
+    "scan_started_at": "2026-11-28T08:18:35Z",
     "provider_requested": "local",
     "article_reads": 10,
-    "ai_interpretations": 5,
+    "ai_interpretations": 6,
     "new_interpretations": 1,
     "coverage": "Selected readable public articles; robots/paywalls and model limits can leave headlines unanalyzed.",
     "disclosure": "Real model output with quoted source evidence. Evidence links do not prove that an interpretation is correct. No full publisher bodies are published."
@@ -19,12 +19,94 @@
       "status": "Unavailable: Article URL outside publisher allowlist: home.cern"
     },
     {
+      "url": "https://www.bbc.co.uk/news/articles/cq62pn6j42jko?at_medium=RSS&at_campaign=rss",
+      "title": "Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns",
+      "publisher": "BBC Technology",
+      "published_at": "2026-11-23T21:23:42Z",
+      "historical": null,
+      "read_at": "2026-11-28T08:18:36Z",
+      "body_sha256": "721dabcacc6004859318fa65d3b7a89176ab52da717429ae7709dfe2c117f874",
+      "body_characters": 3788,
+      "model_context_characters": 3788,
+      "status": "AI interpretation generated · not independently verified",
+      "analysis": {
+        "summary": "Nvidia's market value surged by nearly $1 trillion after Jensen Huang was reinstated as CEO, driving tech stocks higher.",
+        "evidence_ids": [
+          "E3",
+          "E4"
+        ],
+        "chain": [
+          "reported_event: Nvidia CEO reinstatement",
+          "financial_channel: If tech stocks rally, it indicates increased risk appetite",
+          "asset_hypothesis: If Huang's return is seen positively, it could boost tech sector confidence"
+        ],
+        "gold": {
+          "direction": "unclear",
+          "condition": "If the market remains focused on tech stocks, gold could be seen as a safer haven, but if risk appetite increases, gold may be sold off."
+        },
+        "bitcoin": {
+          "direction": "unclear",
+          "condition": "If risk appetite increases, Bitcoin may face competition from other tech stocks, but if it remains a safe haven, Bitcoin could also rise."
+        },
+        "uncertainty": "If Huang's return is seen as a political move, it could lead to increased regulatory scrutiny, potentially harming tech stocks and gold."
+      },
+      "evidence": {
+        "E3": "Nvidia's market value rose by nearly $1 trillion as its share price",
+        "E4": "His shock reinstatement comes less than two weeks after Huang resigned after"
+      },
+      "analyzed_at": "2026-11-28T08:20:31Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261127~2e53af695e.en.html",
+      "title": "ECB Consumer Expectations Survey results – October 2026",
+      "publisher": "European Central Bank",
+      "published_at": "2026-11-27T09:00:00Z",
+      "historical": null,
+      "read_at": "2026-11-28T08:17:47Z",
+      "body_sha256": "d62fad4a72b5d87b7ea0c48cadd2614199bbb8268b557ddcf5d6b167a2d71c85",
+      "body_characters": 4156,
+      "model_context_characters": 4156,
+      "status": "Cached AI interpretation; awaiting re-read",
+      "analysis": {
+        "summary": "The ECB's October Consumer Expectations Survey showed higher inflation and spending expectations, with bottom income quintile respondents reporting higher inflation perceptions.",
+        "evidence_ids": [
+          "E1",
+          "E3"
+        ],
+        "chain": [
+          "reported_event: Inflation and spending expectations rose",
+          "financial_channel: If inflation expectations rise, gold demand may increase",
+          "asset_hypothesis: If spending expectations rise, Bitcoin may be seen as a better store of value"
+        ],
+        "gold": {
+          "direction": "up",
+          "condition": "If inflation expectations rise, gold demand may increase due to its traditional role as a hedge against inflation."
+        },
+        "bitcoin": {
+          "direction": "mixed",
+          "condition": "If spending expectations rise, Bitcoin may be seen as a better store of value, but overall risk appetite is mixed."
+        },
+        "uncertainty": "If the economy improves, spending and inflation expectations may fall, reducing demand for both gold and Bitcoin."
+      },
+      "evidence": {
+        "E1": "In October the median rate of perceived inflation over the previous 12",
+        "E3": "As observed in previous months, households in the bottom income quintile expected"
+      },
+      "analyzed_at": "2026-11-27T15:32:29Z",
+      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
+    },
+    {
       "url": "https://www.theguardian.com/us-news/2026/nov/26/brazil-china-react-to-new-trump-tariffs-threat",
       "title": "China reserves right to take ‘necessary measures’ after Trump’s new tariff proposals",
       "publisher": "The Guardian Business",
       "published_at": "2026-11-26T12:00:22Z",
       "historical": null,
-      "read_at": "2026-11-27T23:41:38Z",
+      "read_at": "2026-11-28T08:17:47Z",
       "body_sha256": "f719bfda9fd4f744723580f46aea4afbab3d4e333d79732f7409dc20c634ac9f",
       "body_characters": 6974,
       "model_context_characters": 4500,
@@ -65,7 +147,7 @@
       "publisher": "BBC Business",
       "published_at": "2026-11-26T04:10:58Z",
       "historical": null,
-      "read_at": "2026-11-27T23:40:57Z",
+      "read_at": "2026-11-28T08:17:47Z",
       "body_sha256": "098c8354768df5d6605292008c71fd2a4a158abbc1b4e51ed61c46dbb7076efd",
       "body_characters": 6880,
       "model_context_characters": 4500,
@@ -106,7 +188,7 @@
       "publisher": "European Central Bank",
       "published_at": "2026-11-27T14:00:00Z",
       "historical": null,
-      "read_at": "2026-11-27T23:44:17Z",
+      "read_at": "2026-11-28T08:20:32Z",
       "body_sha256": "c1d2b9c96e7a44398611125f6e1b320afe5b4b9d7826eee3328cdb50ea7b631f",
       "body_characters": 7169,
       "model_context_characters": 4500,
@@ -118,7 +200,7 @@
       "publisher": "The Guardian Business",
       "published_at": "2026-11-27T10:00:02Z",
       "historical": null,
-      "read_at": "2026-11-27T23:49:12Z",
+      "read_at": "2026-11-28T08:24:26Z",
       "body_sha256": "213f8f7f1b43fbfd3f5410a322a12658c447ed4af4600eead53e9c253b8b20a1",
       "body_characters": 10211,
       "model_context_characters": 4500,
@@ -130,7 +212,7 @@
       "publisher": "ScienceDaily Physics",
       "published_at": "2026-11-27T09:52:24Z",
       "historical": null,
-      "read_at": "2026-11-27T23:49:13Z",
+      "read_at": "2026-11-28T08:24:26Z",
       "body_sha256": "28a345a81c5be60f91b00720cea9d63973db12562a31db9fbc32c4c28f2cafb6",
       "body_characters": 7453,
       "model_context_characters": 4500,
@@ -224,64 +306,11 @@
       "publisher": "The Guardian US Politics",
       "published_at": "2026-11-25T13:00:26Z",
       "historical": null,
-      "read_at": "2026-11-27T23:49:13Z",
+      "read_at": "2026-11-28T08:24:26Z",
       "body_sha256": "2b7d187aaa2757dbbad4be504652b928948b814c72cfcc3cc7a74b8bab9b2764",
       "body_characters": 12565,
       "model_context_characters": 4500,
       "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cq62pn6j42jko?at_medium=RSS&at_campaign=rss",
-      "title": "Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns",
-      "publisher": "BBC Technology",
-      "published_at": "2026-11-23T21:23:42Z",
-      "historical": null,
-      "read_at": "2026-11-27T23:49:13Z",
-      "body_sha256": "721dabcacc6004859318fa65d3b7a89176ab52da717429ae7709dfe2c117f874",
-      "body_characters": 3788,
-      "model_context_characters": 3788,
-      "status": "Public body read; queued for AI"
-    },
-    {
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261127~2e53af695e.en.html",
-      "title": "ECB Consumer Expectations Survey results – October 2026",
-      "publisher": "European Central Bank",
-      "published_at": "2026-11-27T09:00:00Z",
-      "historical": null,
-      "read_at": "2026-11-27T15:29:37Z",
-      "body_sha256": "d62fad4a72b5d87b7ea0c48cadd2614199bbb8268b557ddcf5d6b167a2d71c85",
-      "body_characters": 4156,
-      "model_context_characters": 4156,
-      "status": "Cached AI interpretation; awaiting re-read",
-      "analysis": {
-        "summary": "The ECB's October Consumer Expectations Survey showed higher inflation and spending expectations, with bottom income quintile respondents reporting higher inflation perceptions.",
-        "evidence_ids": [
-          "E1",
-          "E3"
-        ],
-        "chain": [
-          "reported_event: Inflation and spending expectations rose",
-          "financial_channel: If inflation expectations rise, gold demand may increase",
-          "asset_hypothesis: If spending expectations rise, Bitcoin may be seen as a better store of value"
-        ],
-        "gold": {
-          "direction": "up",
-          "condition": "If inflation expectations rise, gold demand may increase due to its traditional role as a hedge against inflation."
-        },
-        "bitcoin": {
-          "direction": "mixed",
-          "condition": "If spending expectations rise, Bitcoin may be seen as a better store of value, but overall risk appetite is mixed."
-        },
-        "uncertainty": "If the economy improves, spending and inflation expectations may fall, reducing demand for both gold and Bitcoin."
-      },
-      "evidence": {
-        "E1": "In October the median rate of perceived inflation over the previous 12",
-        "E3": "As observed in previous months, households in the bottom income quintile expected"
-      },
-      "analyzed_at": "2026-11-27T15:32:29Z",
-      "model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-      "provider": "Local open-weight CPU inference · llama.cpp GGUF Q4_K_M",
-      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f"
     }
   ]
 }
